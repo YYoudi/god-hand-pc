@@ -1,6 +1,7 @@
 [
   ".github/workflows/check.yml",
   ".gitignore",
+  "AGENTS.md",
   "LICENSE",
   "NOTICE.md",
   "PUBLIC_FILES.json",
