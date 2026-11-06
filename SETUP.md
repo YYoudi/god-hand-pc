@@ -19,7 +19,10 @@ python pc.py setup --iso "G:\path\God Hand (USA).iso" --vsroot "C:\Program Files
 ```
 
 Use `--prepare-only` to verify/fetch prerequisites and create the private disc
-copy without generating or compiling game code. `--jobs` defaults to two; child
+copy without generating or compiling game code. Use `--workspace-name retail-setup-v2`
+for a separate preserved experiment rather than deleting an earlier workspace.
+Only a single `retail-*` name is accepted, never an arbitrary output path.
+`--jobs` defaults to two; child
 builds run hidden and below-normal priority. Setup does not launch the game.
 
 ## What happens locally
@@ -32,7 +35,12 @@ builds run hidden and below-normal priority. Setup does not launch the game.
    path required by upstream's overlay emitter. Never hardlink or change attributes
    on the original. A partial/mismatched existing copy is refused, not overwritten.
 4. Generate the boot program, extract all 81 overlays, link their inputs, generate
-   their C++ packs, then build the native executable. The `snr2 --iso` option is
+   their C++ packs, **reconfigure the game target**, then build the native executable.
+   The first actual fresh attempt reached all generation gates but failed with
+   `unknown target 'godhand'`: its existing Ninja file had been configured before
+   game sources existed. The explicit second configure addresses that build-graph
+   boundary; an invented CMake regression reproduces the stale-target failure.
+   The complete corrected fresh run is still under validation. The `snr2 --iso` option is
    deliberately before `extract`; upstream's README order does not parse at this pin.
 5. Check the extracted boot identity, overlay count/hashes, generated pack presence,
    source status and executable hash. Reverify the owner's original ISO afterward.

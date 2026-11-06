@@ -3,6 +3,8 @@ from pathlib import Path
 import copy
 import hashlib
 import json
+import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -92,11 +94,32 @@ class SetupTests(unittest.TestCase):
     def test_build_plan_orders_global_iso_option_correctly(self):
         steps = s.build_steps(self.root / "checkout", self.root / "a space.iso")
         self.assertEqual([x[0] for x in steps], ["boot-generate", "overlay-extract", "overlay-link",
-                                               "overlay-generate", "game-build"])
+                                               "overlay-generate", "game-configure", "game-build"])
         argv = steps[1][1]
         self.assertLess(argv.index("--iso"), argv.index("extract"))
         self.assertEqual(argv[argv.index("--iso") + 1], str(self.root / "a space.iso"))
         self.assertTrue(all(argv[:2] == [sys.executable, "-I"] for _, argv in steps))
+
+    @unittest.skipUnless(shutil.which("cmake") and shutil.which("ninja"), "Synthetic CMake regression needs cmake/ninja")
+    def test_existing_ninja_file_is_not_proof_of_new_game_target(self):
+        # Invented project: no compiler, disc, upstream source or game code.
+        source = self.root / "invented-project"
+        source.mkdir()
+        (source / "CMakeLists.txt").write_text('''cmake_minimum_required(VERSION 3.21)
+project(OriginalSyntheticTargetCheck NONE)
+if(EXISTS "${CMAKE_SOURCE_DIR}/invented-input.txt")
+  add_custom_target(invented-target)
+endif()
+''', encoding="utf-8")
+        build = self.root / "build"
+        configure = ["cmake", "-S", str(source), "-B", str(build), "-G", "Ninja"]
+        subprocess.run(configure, check=True, capture_output=True)
+        self.assertTrue((build / "build.ninja").exists())
+        (source / "invented-input.txt").write_text("Invented readiness marker, not game input.\n", encoding="utf-8")
+        command = ["cmake", "--build", str(build), "--target", "invented-target"]
+        self.assertNotEqual(subprocess.run(command, capture_output=True).returncode, 0)
+        subprocess.run(configure, check=True, capture_output=True)
+        self.assertEqual(subprocess.run(command, capture_output=True).returncode, 0)
 
     def test_run_logs_real_synthetic_child_exit(self):
         run = s.Run(self.root)

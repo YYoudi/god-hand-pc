@@ -113,6 +113,7 @@ def main():
     setup.add_argument("--vsroot", required=True, type=Path)
     setup.add_argument("--jobs", type=int, default=2)
     setup.add_argument("--prepare-only", action="store_true")
+    setup.add_argument("--workspace-name", default="retail-setup")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -130,7 +131,7 @@ def main():
         result = resource_plan(args.iso, args.pack)
     elif args.command == "setup":
         from setup_pc import setup
-        result = setup(args.iso, args.vsroot, args.jobs, ROOT, args.prepare_only)
+        result = setup(args.iso, args.vsroot, args.jobs, ROOT, args.prepare_only, args.workspace_name)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

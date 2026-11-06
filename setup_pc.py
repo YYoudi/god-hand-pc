@@ -82,6 +82,9 @@ def build_steps(checkout, iso):
         ("overlay-extract", [python, "-I", "tools/snr2/snr2.py", "--iso", str(iso), "extract"]),
         ("overlay-link", [python, "-I", "tools/snr2/gen_modules.py"]),
         ("overlay-generate", [python, "-I", "build.py", "modules"]),
+        # The first configure only exposed the recompiler (no boot code yet).
+        # Merely having build.ninja is not proof that a game target now exists.
+        ("game-configure", [python, "-I", "build.py", "configure"]),
         ("game-build", [python, "-I", "build.py", "build"]),
     ]
 
@@ -155,11 +158,13 @@ class Run:
         require(code == 0, f"{name} failed ({code}); retained evidence: {self.directory}")
 
 
-def setup(iso, vsroot, jobs, root, prepare_only=False):
+def setup(iso, vsroot, jobs, root, prepare_only=False, workspace_name="retail-setup"):
     # Import here to avoid a module cycle with the CLI.
     import pc
     require(os.name == "nt", "This pinned native build recipe currently requires Windows/MSVC")
     require(type(jobs) is int and 1 <= jobs <= 16, "Jobs must be between 1 and 16")
+    require(type(workspace_name) is str and re.fullmatch(r"retail-[a-z0-9][a-z0-9-]{0,40}", workspace_name),
+            "Workspace name must be a single retail-* identifier")
     root = Path(root).resolve()
     # Upstream's nested cmd/batch invocations are not certified for shell
     # metacharacters or spaces in the checkout path. Refuse instead of guessing.
@@ -173,7 +178,7 @@ def setup(iso, vsroot, jobs, root, prepare_only=False):
     pin = pc.load_pin(root)
     identity = pc.verify_disc(iso, pin["retail_profile"])
     dependencies = load_dependencies(root)
-    workspace = contained(pc.private_dir(root), pc.private_dir(root) / "retail-setup")
+    workspace = contained(pc.private_dir(root), pc.private_dir(root) / workspace_name)
     workspace.mkdir(exist_ok=True)
     # Refuse a live OR unexplained stale lock. A client observation timeout never
     # authorizes another build. Inspect its PID/child receipt before manual recovery.
