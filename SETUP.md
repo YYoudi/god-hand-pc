@@ -2,7 +2,9 @@
 
 The original orchestrator follows the pinned retail generation pipeline. It
 does not download a game, bypass disc checks, install a compiler or publish outputs.
-The complete fresh build is **under local validation**, not yet a verified installer.
+The complete corrected fresh build and bounded local startup have now been
+reproduced on the evaluation machine. This is a verified local build recipe,
+not a general installer, clean-translation certificate or full-game fidelity claim.
 
 ## Prerequisites and command
 
@@ -40,7 +42,8 @@ builds run hidden and below-normal priority. Setup does not launch the game.
    `unknown target 'godhand'`: its existing Ninja file had been configured before
    game sources existed. The explicit second configure addresses that build-graph
    boundary; an invented CMake regression reproduces the stale-target failure.
-   The complete corrected fresh run is still under validation. The `snr2 --iso` option is
+   A second entirely fresh workspace subsequently completes the corrected sequence
+   and reaches the opening/first-fight scene. The `snr2 --iso` option is
    deliberately before `extract`; upstream's README order does not parse at this pin.
 5. Check the extracted boot identity, overlay count/hashes, generated pack presence,
    source status and executable hash. Reverify the owner's original ISO afterward.
@@ -66,7 +69,34 @@ is labeled **built, not runtime validated**, not a clean translation or fidelity
 The earlier tested retail generation log itself reports one unresolved instruction;
 that does not erase the limited gameplay observations, or prove all paths work.
 
-Fresh executable boot/scene/input testing is a separate gate. This recipe does not
+## Locally observed result, 6 November 2026
+
+Recipe revision `3bc0f7ae7f462dc49e1813ca0b02883999c2def2`, upstream
+`14e956a1274332440273845fbab2c1f1e30c4a5a`: all six generation/configure/build
+steps return zero in a second empty workspace. The original disc hash and source
+status remain unchanged. This was tested with Python 3.11.9, MSVC 19.44,
+CMake 4.4.4 and Ninja 1.13.2, four below-normal-priority build jobs.
+
+The resulting 168,848,384-byte executable has SHA-256
+`8220c547266025a94c33f8362f2cad0549094858c786e0e2a9ea8edf637706ad`.
+Independent hidden 100/220-second runs produce 30/40 original PNGs and exit at
+their deadlines. The first shows the opening; the longer run reaches the first
+fight scene. A selected original's 640x480 content matches the earlier evaluated
+build exactly, with the upstream screenshot padding retained, not cropped away.
+This is one sampled scene, not general visual parity or performance coverage.
+
+After setup, a manual launch can use the generated executable and the owner's ISO:
+
+```powershell
+& ".local\retail-setup\upstream\build\port\bin\godhand.exe" --iso "G:\path\God Hand (USA).iso"
+```
+
+If a different `--workspace-name` was used, substitute that directory. The game
+opens a window only when the owner launches it; setup itself does not start it.
+No earlier generated game C++, runtime libraries or VU1 AOT captures were imported
+from the old research build. No cold shader-cache or real-time-speed claim is made.
+
+Further input/gameplay testing remains separate. This recipe does not
 yet install the private external-texture adapter, validate real game Save/Load,
 support prototype discs or promise bit-identical compiler output across toolchains.
 Nothing generated from the game belongs in this public repository or CI.
