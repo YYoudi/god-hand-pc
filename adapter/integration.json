@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "upstream_revision": "14e956a1274332440273845fbab2c1f1e30c4a5a",
+  "provenance": "Original integration additions against exact normalized LF source hashes. Offsets index fetched open-source host files, NOT the game ISO. No generated game function or guest instruction patch.",
+  "files": [
+    {
+      "path": "src/CMakeLists.txt",
+      "before_sha256": "cfd17014ff26dacc0c1798b371ad0931bd80dbc7faa0380b70f9e02db96a233c",
+      "after_sha256": "9f703762f5921d4c7e5d3c00930a4d16b4a51f047d35aa8f622f113f58d76af7",
+      "edits": [
+        {
+          "start": 13554,
+          "end": 13554,
+          "insert": "\n# Original God Hand PC resource bridge, not generated game code.\ntarget_sources(godhand PRIVATE godhand_pc_pack_bridge.cpp)\ntarget_include_directories(godhand PRIVATE \"${CMAKE_SOURCE_DIR}/runtime/ps2xRuntime/src/lib\")\n"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_cd_image.cpp",
+      "before_sha256": "55a7f70a7365b8e5b2568e8184ab2effe750b8753a501603912d680282945615",
+      "after_sha256": "277cc5d3c8c962d17e54d792f6bcc6aaa4f9829ad16584870bdcf06b08546c91",
+      "edits": [
+        {
+          "start": 59,
+          "end": 59,
+          "insert": "#include \"godhand_pc_packs/bridge.hpp\"\n"
+        },
+        {
+          "start": 6044,
+          "end": 6118,
+          "insert": "    if (size != 0 && std::fread(destination, 1u, size, m_file) != size) return false;\n    godhand_pc_packs::apply(offset, destination, size, m_size, \"cd-image\");\n    return true;"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_iop_host.h",
+      "before_sha256": "759156ca56e456a977b5576a295a0d4297654f7a207d5e659cf6ff90006a2fe4",
+      "after_sha256": "b87ea1810d81fd0e0297f3196c14989b4290fafbffb81c4b66a67f87e8ea6350",
+      "edits": [
+        {
+          "start": 4703,
+          "end": 4703,
+          "insert": "        bool godhandPcRawIso = false; // Positively identified full-disc stream only.\n"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_iop_host.cpp",
+      "before_sha256": "3997046792b5a713a021c96af7a4d210f8193b0b17dd84e9c52e8a19919d4f17",
+      "after_sha256": "42a25ffda7864bb99fc14bdd8da311b852b93a0a3ae02e16703bee2e6e862e17",
+      "edits": [
+        {
+          "start": 26,
+          "end": 26,
+          "insert": "#include \"godhand_pc_packs/bridge.hpp\"\n"
+        },
+        {
+          "start": 10647,
+          "end": 10703,
+          "insert": "    HostFile packFile{stream, size};\n    const auto &packIso = PS2Runtime::getIoPaths().cdImage;\n    std::error_code packError;\n    packFile.godhandPcRawIso = !packIso.empty() &&\n        std::filesystem::equivalent(hostPath, packIso, packError) && !packError;\n    m_hostFiles.emplace(handle, packFile);"
+        },
+        {
+          "start": 12738,
+          "end": 12738,
+          "insert": "    if (it->second.godhandPcRawIso)\n        godhand_pc_packs::apply(offset, destination, bytesRead, it->second.size, \"iop-raw-iso\");\n"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/Kernel/Stubs/Helpers/Support.h",
+      "before_sha256": "8ac0126d370c2f5dde2f724e60a42e66649713b64ff2b4d34385c2faf86aa255",
+      "after_sha256": "964e01d1bc957daab5521e6a6f86f27615423dca756c1f620f19b92a81090e16",
+      "edits": [
+        {
+          "start": 34,
+          "end": 34,
+          "insert": "#include \"../../../godhand_pc_packs/bridge.hpp\"\n"
+        },
+        {
+          "start": 16600,
+          "end": 16666,
+          "insert": "            const bool packReadOk = readHostRange(cdImage, offset, dst, byteCount);\n            if (packReadOk)\n                godhand_pc_packs::apply(offset, dst, byteCount, g_cdImageSizeBytes, \"ee-sectors\");\n            return packReadOk;"
+        }
+      ]
+    }
+  ],
+  "copies": {
+    "adapter/overlay.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_packs/overlay.hpp",
+    "adapter/settings.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_packs/settings.hpp",
+    "adapter/bridge.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_packs/bridge.hpp",
+    "adapter/bridge.cpp": "src/godhand_pc_pack_bridge.cpp"
+  }
+}

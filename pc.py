@@ -114,6 +114,8 @@ def main():
     setup.add_argument("--jobs", type=int, default=2)
     setup.add_argument("--prepare-only", action="store_true")
     setup.add_argument("--workspace-name", default="retail-setup")
+    install = sub.add_parser("install-packs")
+    install.add_argument("--workspace-name", default="retail-setup")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -132,6 +134,9 @@ def main():
     elif args.command == "setup":
         from setup_pc import setup
         result = setup(args.iso, args.vsroot, args.jobs, ROOT, args.prepare_only, args.workspace_name)
+    elif args.command == "install-packs":
+        from runtime_packs import install
+        result = install(ROOT, args.workspace_name)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

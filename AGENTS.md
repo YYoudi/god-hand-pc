@@ -1,4 +1,4 @@
-# God Hand PC continuation — agent instructions
+# God Hand PC continuation â€” agent instructions
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.
@@ -26,8 +26,9 @@ build result and does not justify restarting a live job.
 ## Development direction
 
 Prioritize reproducible personal-disc setup and bounded named-resource
-replacement with original-asset fallback. The initial bootstrap is not a tested
-one-command fresh game rebuild. Do not pretend same-size texture replacement
+replacement with original-asset fallback. The corrected personal-disc recipe has been built and observed through a
+bounded opening/first-fight scene on the evaluation machine. The new native
+pack bridge still needs its separate actual build and rendered fallback gates. Do not pretend same-size texture replacement
 proves HD-size support. Keep object compilation, linking, actual boot, behavior
 and reference fidelity as separate validation gates.
 
