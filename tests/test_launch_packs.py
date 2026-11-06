@@ -5,6 +5,8 @@ import hashlib
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 import launch_packs as l
 from test_resources import invented_disc, TARGET
@@ -16,6 +18,7 @@ class LaunchTests(unittest.TestCase):
         self.root = Path(self.temp.name).resolve()
         assert self.root.is_relative_to(Path(tempfile.gettempdir()).resolve())
         self.addCleanup(self.temp.cleanup)
+        (self.root / "upstream.json").write_text(json.dumps(l.pc.load_pin()), encoding="utf-8")
         self.disc = self.root / "invented-disc.txt"
         self.disc.write_bytes(invented_disc())
         self.payload = self.root / "original.txt"
@@ -72,6 +75,32 @@ class LaunchTests(unittest.TestCase):
             self.assertEqual(env, {})
             with self.assertRaises(ValueError):
                 l.pack_protocol(self.disc, path, self.run, strict=True)
+
+    def test_invalid_disc_never_enters_pack_fallback_or_spawns(self):
+        with patch.object(l, "os", SimpleNamespace(name="nt")), \
+             patch.object(l.runtime_packs, "verified_install", return_value={}), \
+             patch.object(l.pc, "verify_disc", side_effect=ValueError("invented wrong disc")), \
+             patch.object(l, "pack_protocol") as pack, patch.object(l.subprocess, "Popen") as child:
+            with self.assertRaises(ValueError):
+                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10)
+            pack.assert_not_called()
+            child.assert_not_called()
+
+    def test_invalid_runtime_identity_never_enters_pack_fallback_or_spawns(self):
+        with patch.object(l, "os", SimpleNamespace(name="nt")), \
+             patch.object(l.runtime_packs, "verified_install", side_effect=ValueError("invented wrong runtime")), \
+             patch.object(l, "pack_protocol") as pack, patch.object(l.subprocess, "Popen") as child:
+            with self.assertRaises(ValueError):
+                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10)
+            pack.assert_not_called()
+            child.assert_not_called()
+
+    def test_headless_without_deadline_or_invalid_limits_never_spawn(self):
+        with patch.object(l, "os", SimpleNamespace(name="nt")), patch.object(l.subprocess, "Popen") as child:
+            for seconds in [None, 0, 601, True]:
+                with self.subTest(seconds=seconds), self.assertRaises(ValueError):
+                    l.launch(self.root, "retail-test", self.disc, headless=True, seconds=seconds)
+            child.assert_not_called()
 
 
 if __name__ == "__main__":

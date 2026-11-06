@@ -37,18 +37,23 @@ An original [Windows personal-disc setup recipe](SETUP.md) now fetches pinned
 dependencies and orchestrates the complete boot/81-overlay build in a separate
 ignored workspace. Fresh source/dependency acquisition, all generation/build
 steps and a bounded opening/first-fight scene are now locally verified. It does
-not install the private texture adapter or claim a tested game-save round trip.
+not install the pack adapter implicitly or claim a tested game-save round trip.
 
 The underlying retail executable has already been built and tested in the
 [research journal](https://yyoudi.github.io/god-hand-rs/dashboard/), including an
 original same-size external texture experiment. The corrected personal-disc
 command now reproduces the full boot/81-overlay build on the evaluation machine;
 generation still reports one unresolved error, not a clean translation.
-Next work is a bounded named-resource launcher with original-asset fallback.
-A tested metadata-only
-[named-resource planner](RESOURCE_PACK.md) is now available; it is not yet a
-public runtime integration. HD texture
-dimensions, full playthrough and genuine game-save round trip are not claimed.
+The [named-resource planner](RESOURCE_PACK.md) and separate
+[public runtime bridge/launcher](RUNTIME_PACKS.md) are locally tested: an original
+magenta ground replacement renders, disabling it restores original assets, and an
+invalid pack automatically falls back to the byte-identical sampled original PNG.
+Use `python pc.py install-packs`, then create the game-free example with
+`python make_example_pack.py --output .local/example-pack` and launch with
+`python pc.py run --iso "G:\path\God Hand (USA).iso" --pack .local/example-pack/pack.json`.
+See the contract for workspace selection, prerequisites and exact limits.
+HD texture dimensions, full playthrough and genuine game-save round trip remain
+open. The personal disc is verified before every launch.
 
 Prototype generation/build/debug-menu research stays separate. Discovery output
 is not a linked executable or a validated retail behavior. Do not attempt to beat

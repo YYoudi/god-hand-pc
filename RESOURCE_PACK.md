@@ -45,7 +45,9 @@ pixel-plus-CLUT span; its own SHA-256 must match. The payload path must resolve
 inside the pack directory. Unknown/duplicate fields, unsafe paths, wrong profiles,
 malformed metadata and unsupported texture formats fail without producing a plan.
 There is no silent retry with a guessed offset. Run without a pack for original
-assets; automatic in-game fallback/reloading is not implemented by this planner.
+assets. The planner alone does not run the game; the separately installed
+[public runtime bridge](RUNTIME_PACKS.md) now provides tested original-asset
+fallback. Hot reload is not implemented.
 
 Supported TIM3: version 4, one picture, 48-byte picture header, no mipmaps,
 RGBA32 CSM1 palette, 4/8-bit indices, linear selector 0 or the bounded native

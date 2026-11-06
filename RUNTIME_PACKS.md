@@ -1,15 +1,17 @@
 # Native pack bridge contract, version 1
 
-Status: implementation/validation in progress. The metadata planner is already
-tested; this document does not claim that the new public bridge runs yet.
+Status: locally built and rendered on 6 November 2026. Three separate 220-second
+hidden runs verify enabled replacement, disabled original assets and invalid-pack
+original-asset fallback. This is a bounded same-size texture MVP, not a remaster.
 
-## Commands under validation
+## Commands
 
 After the successful personal-disc setup, install the original bridge and relink:
 
 ```powershell
 python pc.py install-packs --workspace-name retail-setup
-python pc.py run --workspace-name retail-setup --iso "G:\path\God Hand (USA).iso" --pack "G:\my-pack\pack.json"
+python make_example_pack.py --output .local/example-pack
+python pc.py run --workspace-name retail-setup --iso "G:\path\God Hand (USA).iso" --pack .local/example-pack/pack.json
 ```
 
 Installation checks and backs up the baseline first, then creates a private
@@ -80,3 +82,34 @@ against an owner deliberately altering their own executable or environment.
 One same-size native pixel/CLUT replacement only. No HD resizing, decoded RGBA
 import, new material API, hot reload, prototype compatibility, physical-input,
 full-game persistence or general remaster-fidelity claim follows from this MVP.
+
+## Reproduced result and limits
+
+Pinned upstream `14e956a1274332440273845fbab2c1f1e30c4a5a`, original integration
+recipe and the personal retail ISO produced private runtime source revision
+`193076584e277c95644dcbbb4a6922c3a59ca2b8`. The native bridge relink completed
+with exit 0; the original executable was backed up first. All three fresh
+220-second runs ended at the runtime deadline (124), not a crash or a playthrough.
+The enabled run logs application through the EE sector reader and visibly changes
+the ground. With the pack omitted or its SHA-256 deliberately invalid, the
+selected original field-4741 PNG is byte-identical to the preserved fresh baseline.
+The same invalid pack with `--strict-pack` refuses before spawning (exit 1);
+a wrong prototype disc also refuses (exit 1), never a fallback around ownership.
+
+`make_example_pack.py` writes an original uniform magenta diagnostic payload and
+manifest into a new/empty directory. It reads no game assets and will not overwrite
+an existing file. Its output matches the tested 8,256-byte payload exactly; this
+is synthetic proof of replacement, not remaster artwork. Full-resolution
+unchanged captures and provenance are in the
+[English journal](https://yyoudi.github.io/god-hand-rs/dashboard/).
+
+The original synthetic suite now has 81 tests, including a real portable C++
+compile/run of 608,256 overlap/canary cases and malformed configuration checks.
+The unit digest callback is a test double; the actual native bridge uses the
+pinned runtime's SHA implementation and accepted the original diagnostic payload.
+No game material is in tests or CI.
+
+Known upstream capture padding is retained: original PNGs are 800x600 with
+640x480 visible content. Generation still reports one unresolved error despite
+exit 0. Neither this experiment nor a compiled binary proves complete translation,
+real-time speed, hardware fidelity or full-game stability.

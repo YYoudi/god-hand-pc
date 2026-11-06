@@ -27,8 +27,10 @@ build result and does not justify restarting a live job.
 
 Prioritize reproducible personal-disc setup and bounded named-resource
 replacement with original-asset fallback. The corrected personal-disc recipe has been built and observed through a
-bounded opening/first-fight scene on the evaluation machine. The new native
-pack bridge still needs its separate actual build and rendered fallback gates. Do not pretend same-size texture replacement
+bounded opening/first-fight scene on the evaluation machine. The public native
+pack bridge now links and passes three fresh enabled/disabled/invalid-pack rendered
+runs; selected disabled/fallback originals equal the baseline byte-for-byte.
+See RUNTIME_PACKS.md; retain the sampled-scene and same-size limits. Do not pretend same-size texture replacement
 proves HD-size support. Keep object compilation, linking, actual boot, behavior
 and reference fidelity as separate validation gates.
 
