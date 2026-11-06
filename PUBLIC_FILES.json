@@ -6,8 +6,11 @@
   "NOTICE.md",
   "PUBLIC_FILES.json",
   "README.md",
+  "RESOURCE_PACK.md",
   "pc.py",
+  "resources.py",
   "scripts/check_public_tree.py",
   "tests/test_bootstrap.py",
+  "tests/test_resources.py",
   "upstream.json"
 ]

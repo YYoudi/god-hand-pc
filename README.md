@@ -38,7 +38,9 @@ The underlying retail executable has already been built and tested in the
 original same-size external texture experiment. This new repository's bootstrap
 is not yet a tested one-command fresh rebuild. Next work is to reproduce the
 whole boot/81-overlay generation pipeline here, then add a bounded named-resource
-interface with original synthetic tests and original-asset fallback. HD texture
+launcher with original-asset fallback. A tested metadata-only
+[named-resource planner](RESOURCE_PACK.md) is now available; it is not yet a
+public runtime integration. HD texture
 dimensions, full playthrough and genuine game-save round trip are not claimed.
 
 Prototype generation/build/debug-menu research stays separate. Discovery output

@@ -5,6 +5,9 @@ import hashlib
 import json
 import re
 import subprocess
+import uuid
+
+import resources
 
 ROOT = Path(__file__).resolve().parent
 
@@ -75,6 +78,24 @@ def store_checkout(record, root=ROOT):
     p.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
 
 
+def resource_plan(iso, pack, root=ROOT):
+    """Verify the exact retail disc, then store metadata only in private storage."""
+    identity = verify_disc(iso, load_pin(root)["retail_profile"])
+    with Path(identity["path"]).open("rb") as stream:
+        plan = resources.compile_pack(resources.Window(stream), pack)
+    plan["disc"] = identity
+    directory = private_dir(root) / "plans"
+    directory.mkdir(exist_ok=True)
+    destination = directory / (uuid.uuid4().hex + ".json")
+    if not destination.resolve().is_relative_to(private_dir(root)):
+        raise ValueError("Plan storage escapes private directory")
+    # Exclusive creation preserves previous plans; a pack never supplies a path.
+    with destination.open("x", encoding="utf-8") as output:
+        json.dump(plan, output, indent=2)
+        output.write("\n")
+    return {"plan": str(destination), **plan}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -84,6 +105,9 @@ def main():
     adopt.add_argument("--revision", required=True)
     disc = sub.add_parser("verify-disc")
     disc.add_argument("--iso", required=True, type=Path)
+    resource = sub.add_parser("resource-plan")
+    resource.add_argument("--iso", required=True, type=Path)
+    resource.add_argument("--pack", required=True, type=Path)
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -97,6 +121,8 @@ def main():
         store_checkout(result)
     elif args.command == "verify-disc":
         result = verify_disc(args.iso, pin["retail_profile"])
+    elif args.command == "resource-plan":
+        result = resource_plan(args.iso, args.pack)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():
