@@ -1,0 +1,17 @@
+.local/
+__pycache__/
+*.pyc
+generated/
+generated_modules/
+*.iso
+*.bin
+*.cue
+*.elf
+*.afs
+*.rel
+*.irx
+*.exe
+*.dll
+*.ps2
+*.state
+*.log

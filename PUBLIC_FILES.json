@@ -1,0 +1,12 @@
+[
+  ".github/workflows/check.yml",
+  ".gitignore",
+  "LICENSE",
+  "NOTICE.md",
+  "PUBLIC_FILES.json",
+  "README.md",
+  "pc.py",
+  "scripts/check_public_tree.py",
+  "tests/test_bootstrap.py",
+  "upstream.json"
+]
