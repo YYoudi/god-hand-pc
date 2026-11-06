@@ -7,10 +7,14 @@
   "PUBLIC_FILES.json",
   "README.md",
   "RESOURCE_PACK.md",
+  "SETUP.md",
+  "dependencies.json",
   "pc.py",
   "resources.py",
+  "setup_pc.py",
   "scripts/check_public_tree.py",
   "tests/test_bootstrap.py",
   "tests/test_resources.py",
+  "tests/test_setup.py",
   "upstream.json"
 ]

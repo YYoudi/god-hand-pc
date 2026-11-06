@@ -108,6 +108,11 @@ def main():
     resource = sub.add_parser("resource-plan")
     resource.add_argument("--iso", required=True, type=Path)
     resource.add_argument("--pack", required=True, type=Path)
+    setup = sub.add_parser("setup")
+    setup.add_argument("--iso", required=True, type=Path)
+    setup.add_argument("--vsroot", required=True, type=Path)
+    setup.add_argument("--jobs", type=int, default=2)
+    setup.add_argument("--prepare-only", action="store_true")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -123,6 +128,9 @@ def main():
         result = verify_disc(args.iso, pin["retail_profile"])
     elif args.command == "resource-plan":
         result = resource_plan(args.iso, args.pack)
+    elif args.command == "setup":
+        from setup_pc import setup
+        result = setup(args.iso, args.vsroot, args.jobs, ROOT, args.prepare_only)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "scope": "Exact dependency revisions from the locally evaluated upstream build; original sources/licenses fetched privately, not vendored. SDL/FFmpeg/PCSX2 optional backends remain disabled.",
+  "dependencies": [
+    {
+      "name": "elfio",
+      "repository": "https://github.com/serge1/ELFIO.git",
+      "revision": "8ae6cec5d60495822ecd57d736f66149da9b1830",
+      "license": {
+        "file": "LICENSE.txt",
+        "sha256": "a15b5135eae48f2f6f6572ac4d7baf678761fdfde530344e9202fceb9e4e5014"
+      }
+    },
+    {
+      "name": "fmt",
+      "repository": "https://github.com/fmtlib/fmt.git",
+      "revision": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+      "license": {
+        "file": "LICENSE",
+        "sha256": "25b5db04aa6070c12ac518b91cbd0a59725c050ecb091456e6ebc3d3eeb369cf"
+      }
+    },
+    {
+      "name": "imgui",
+      "repository": "https://github.com/ocornut/imgui.git",
+      "revision": "b1bcb12a624af7509894c8e77dd47416997777fa",
+      "license": {
+        "file": "LICENSE.txt",
+        "sha256": "f20418b409e53c8c9f4e90917ff395554a60320d4dfbf833da89b339cad8628a"
+      }
+    },
+    {
+      "name": "libdwarf",
+      "repository": "https://github.com/davea42/libdwarf-code.git",
+      "revision": "2e088b983562860f497b4fd789a3e61524eb857c",
+      "license": {
+        "file": "COPYING",
+        "sha256": "44dc4ead817905700ba519c13301d5d860e2823741d7193492b4bfc9bbbb6dac"
+      }
+    },
+    {
+      "name": "rabbitizer",
+      "repository": "https://github.com/Decompollaborate/rabbitizer.git",
+      "revision": "d5804fa488474830a47fbf9f3693048ec1e45589",
+      "license": {
+        "file": "LICENSE",
+        "sha256": "f0df1d4bd58eb60274ae4a8d34e71acd7295903dae9b3b0a4872346ddd87846d"
+      }
+    },
+    {
+      "name": "raylib",
+      "repository": "https://github.com/raysan5/raylib.git",
+      "revision": "c1ab645ca298a2801097931d1079b10ff7eb9df8",
+      "license": {
+        "file": "LICENSE",
+        "sha256": "a56f6edb2e1094ccc49a95d6795d79a53af05543c68732f8a1018dc5319fa477"
+      }
+    },
+    {
+      "name": "rlimgui",
+      "repository": "https://github.com/raylib-extras/rlImGui.git",
+      "revision": "118221c8a532501a3c2c236b62950877cbefc2b4",
+      "license": {
+        "file": "LICENSE",
+        "sha256": "c164de59090013dbac90d06c0eeafef29705d08aad5b7535071acd6f80bda7c8"
+      }
+    },
+    {
+      "name": "toml11",
+      "repository": "https://github.com/ToruNiina/toml11.git",
+      "revision": "be08ba2be2a964edcdb3d3e3ea8d100abc26f286",
+      "license": {
+        "file": "LICENSE",
+        "sha256": "439a1243939edbcfbea05d467069371c7097b74f3e011f97a43c0bfe13b7ea85"
+      }
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "declared_license": "GPL-3.0",
   "retail_profile": {
     "serial": "SLUS-21503",
+    "boot_elf_sha256": "1742f95bef65bdb2aa57b7a77df4ac7619a092e9646e1ea325bc32ec8a64f3cd",
     "bytes": 1567686656,
     "sha256": "268b8e284619bb9e07d5c522d7e7cfa14cb0498623d7fba04a97d18b63bc0a7c"
   }

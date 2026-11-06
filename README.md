@@ -33,6 +33,12 @@ commands do not grant a modified checkout the same validation as the baseline.
 
 ## Build boundary and next work
 
+An original [Windows personal-disc setup recipe](SETUP.md) now fetches pinned
+dependencies and orchestrates the complete boot/81-overlay build in a separate
+ignored workspace. Fresh source/dependency acquisition and preparation are
+locally verified; its full fresh compilation is still under validation. It does
+not install the private texture adapter or claim a tested game-save round trip.
+
 The underlying retail executable has already been built and tested in the
 [research journal](https://yyoudi.github.io/god-hand-rs/dashboard/), including an
 original same-size external texture experiment. This new repository's bootstrap
