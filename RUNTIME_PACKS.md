@@ -3,6 +3,35 @@
 Status: implementation/validation in progress. The metadata planner is already
 tested; this document does not claim that the new public bridge runs yet.
 
+## Commands under validation
+
+After the successful personal-disc setup, install the original bridge and relink:
+
+```powershell
+python pc.py install-packs --workspace-name retail-setup
+python pc.py run --workspace-name retail-setup --iso "G:\path\God Hand (USA).iso" --pack "G:\my-pack\pack.json"
+```
+
+Installation checks and backs up the baseline first, then creates a private
+`codex/named-resource-packs` source revision with exactly nine reviewed host/bridge
+paths. No generated game code is committed. Existing source or failed installer
+attempts require inspection, not a silent reset/retry. Repeating a successful
+unchanged installation verifies its receipt without rebuilding. Use a fresh
+workspace for the clean setup recipe after creating this derived runtime revision.
+
+Run without `--pack` for original assets. By default an invalid pack warns and
+falls back to original assets; `--strict-pack` refuses launch instead. Invalid
+disc/source/binary identity always refuses launch, even without strict-pack mode.
+Inherited legacy/runtime override environment variables are removed.
+
+Game cards persist under the workspace's ignored `userdata/memcards`; this is not
+a claim that real game Save/Load is validated. Quick snapshots are scoped to the
+runtime source revision and are not automatically imported from old experiments.
+For a bounded hidden test use `--headless --seconds 220 --capture --fresh-user-data`.
+This keeps test cards separate and mutes audio. Optional `--pad-script` is an
+upstream input-test string, not a physical-controller test or an instruction to
+attempt autonomous combat completion. Captures/logs stay private per run.
+
 ## Scope and provenance
 
 Install original GPL bridge code only into the isolated, successfully built

@@ -98,6 +98,10 @@ def verified_install(root, name):
     build.require(record["adapter_fingerprint"] == fingerprint(root, recipe), "Installed adapter version differs")
     source = build.contained(workspace, workspace / "upstream")
     pc.inspect_checkout(source, pc.load_pin(root)["revision"], record["source_revision"])
+    expected_paths = MODIFIED | set(COPIES.values())
+    build.require(set(record["source_files"]) == expected_paths and set(pc.git(
+        "diff", "--name-only", pc.load_pin(root)["revision"], record["source_revision"], cwd=source
+    ).splitlines()) == expected_paths, "Derived revision contains unreviewed source paths")
     exe = build.contained(source, source / "build/port/bin/godhand.exe")
     build.require(str(exe) == record["executable"]["path"] and build.digest(exe) == record["executable"]["sha256"],
                   "Installed executable identity differs")
