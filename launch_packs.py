@@ -97,7 +97,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                     "GODHAND_ISO_PREFETCH": "0", "GODHAND_DUMP_ON_TIME_LIMIT": "0",
                     "GODHAND_LOG_FILE": "", "GODHAND_DLL_LOG": str(directory / "dll-loads.csv"),
                     "PS2X_AUDIO_MUTE": "1" if headless else "0", "PS2X_SHOW_FPS": "0"})
-        env["GODHAND_CONTROLS_FILE"] = str(user / "controls.ini")
+        env.update(user_data.controls_environment(user))
         if pad_script:
             env.update(PS2X_PAD_SCRIPT=pad_script, PS2X_FAKE_PADS="1")
         if capture:

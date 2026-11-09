@@ -89,6 +89,11 @@ class UserDataTests(unittest.TestCase):
         self.assertEqual(command[-2:],['--time-limit','0'])
         self.assertIn('--window',command)
 
+    def test_public_launch_disables_ini_driven_mutating_control_selftest(self):
+        env=user_data.controls_environment(self.user)
+        self.assertEqual(env['GODHAND_CONTROLS_SELFTEST'],'0')
+        self.assertEqual(Path(env['GODHAND_CONTROLS_FILE']),self.target)
+
     def test_bounded_command_retains_hidden_deadline(self):
         command=launch_packs.runtime_command('invented.exe','invented.iso',True,37)
         self.assertEqual(command[-2:],['--time-limit','37'])

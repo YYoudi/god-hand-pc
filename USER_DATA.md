@@ -25,6 +25,9 @@ destinations and resolved paths outside the owned user-data directory. Copy with
 exclusive creation; refuse a concurrent destination instead of overwriting it.
 The launcher explicitly sets GODHAND_CONTROLS_FILE after cleaning inherited
 private environment variables, and records controls metadata before/after exit.
+Normal launches explicitly disable the mutating upstream controls self-test,
+including an accidental INI setting. Native UI tests require a separate guarded
+private driver and scratch file, never the player's preferences.
 
 ## Evidence gates and limits
 

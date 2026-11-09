@@ -6,6 +6,13 @@ import stat
 LIMIT = 1024 * 1024
 
 
+def controls_environment(user):
+    # The launcher is not a self-test: an upstream INI must not activate a
+    # destructive UI diagnostic now that a non-default controls file is set.
+    return {'GODHAND_CONTROLS_FILE': str(Path(user) / 'controls.ini'),
+            'GODHAND_CONTROLS_SELFTEST': '0'}
+
+
 def _regular(path, destination=False):
     if path.is_symlink():
         raise ValueError("Controls symlinks are not supported")
