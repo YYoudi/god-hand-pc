@@ -212,7 +212,7 @@ def render(data, migration, read):
         roadmap_html+='</section>';roadmap.append('')
     outputs['ROADMAP.md']='\n'.join(roadmap).rstrip()+'\n'
     outputs['docs/roadmap.html']=shell('Roadmap',roadmap_html)
-    gallery='<h1>Selected comparisons</h1><p>Previously reviewed original screenshots, migrated byte-for-byte. Dates, implementations, revisions, alignment and limitations are retained. These are native-port experiments, not Bevy or PS2 hardware captures. Game imagery belongs to its rights holders; publication is the owner’s selected-screenshot request, not rights-holder permission.</p>'
+    gallery='<h1>Selected comparisons</h1><p>Reviewed native screenshots: new experiments and preserved historical records. Each entry names its runtime, date, alignment and limitations. Historical migration is not a new result. Full-resolution original files are unretouched and individually downloadable. These are native-port experiments, not Bevy or PS2 hardware captures. Game imagery belongs to its rights holders; publication is the owner’s selected-screenshot request, not rights-holder permission.</p>'
     for pair in data['comparisons']:
         gallery+='<article id="'+pair['id']+'"><time>'+pair['date']+'</time><h2>'+escape(pair['title'])+'</h2><p>'+escape(pair['scenario'])+'</p><p>Alignment: <strong>'+pair['alignment']+'</strong>.</p><div class="pair">'
         for side in ('reference','bevy'):

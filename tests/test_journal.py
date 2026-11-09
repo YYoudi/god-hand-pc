@@ -67,6 +67,8 @@ class JournalTests(unittest.TestCase):
         result=journal.render(data,{'reports':{},'entries':{}},lambda p:b'')
         self.assertIn(url,result['docs/reports/index.html'])
         self.assertIn('Migrated historical reports',result['docs/reports/index.html'])
+        self.assertIn('new experiments and preserved historical records',result['docs/comparisons.html'])
+        self.assertNotIn('Previously reviewed original screenshots, migrated byte-for-byte.',result['docs/comparisons.html'])
 
     def test_fresh_autocrlf_checkout_preserves_original_report_bytes(self):
         with tempfile.TemporaryDirectory(prefix='godhand-journal-eol-synthetic-') as name:
