@@ -145,5 +145,7 @@ more scenes and genuine game Save → exit → Load remain open. This is not a f
 PC settings menu, HD support, FPS unlock or full-game accuracy claim.
 For audio-v2, the exact installed native source is
 `1ded3f337a7e9a711cf24521e81eeca10ce7abb4`; its native and retained failed
-controls are described separately in AUDIO_HOLD.md. A natural nonempty-buffer
-hold and audible/device-buffer transitions are still unproven.
+controls are described separately in AUDIO_HOLD.md. Its later private diagnostic
+holds one ordinary nonempty queue at an earlier retail point without forced
+callback scheduling. This is not the exact public executable, an audible-output
+result or proof of device-buffer transitions or broader scene coverage.

@@ -39,8 +39,9 @@ public opt-in/pack and default-restoration controls locally. It is experimental;
 default launch remains the unchanged evaluated executable, not an implicit relink.
 The separately selected [audio-v2 boundary](AUDIO_HOLD.md) now excludes an
 already-admitted callback at acknowledgement, with native interleaving controls
-and preserved v1/Original rollback. It is still experimental: natural nonempty
-buffer, audible output and device transitions remain unverified.
+and preserved v1/Original rollback. A separate private diagnostic also holds one
+ordinary nonempty queue at an earlier retail point. It is still experimental:
+audible output, device transitions and broader scene coverage remain unverified.
 
 ## Bootstrap commands (Python 3.11+, Git)
 

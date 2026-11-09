@@ -67,6 +67,7 @@ there are no attacks, level-beating loops or save imports. Native output is mute
 | v1-style callback, deliberately forced interleaving, 240s | An already-admitted callback runs after acknowledgement: queued samples6144→5186, read8192→9150, requested output frames+480, produced frames unchanged. Guest counters/RAM digests and held original PNGs remain stable. UI3 checks pass; hold7685ms. |
 | Corrected callback, same forced diagnostic, 240s | Freeze is refused while the earlier consumer holds its lease. That callback completes with parked0, then the hold acknowledges. The nonempty queue2314 and all tracked read/request/production/priming/fade/gap counters remain equal across7699ms. UI3 and original-scene controls pass. |
 | Corrected callback, no forced callback schedule, 240s | Hold/resume/UI3 and original-scene controls pass; queue counters remain equal across7689ms. **The queue is empty at this hold.** The extra nonempty-buffer assertion correctly fails and is retained; this is NOT unforced nonempty-queue proof. |
+| Later corrected callback, ordinary earlier hold, 100s | With no forced callback schedule or guest-pad progression, the hold acknowledges at field1003. The queue has7196 samples; all tracked counters remain equal across7839ms. UI3 and held-original equality pass. This is a separate early, black-background control, not a rerun of the failed first-fight nonempty assertion or an audible-output result. |
 | Exact installed public audio-v2, 240s | Actual17-file public recipe builds and runs; UI3 passes, hold7692ms, guest counters/RAM digests stable, two held originals byte-identical. Bare field4741 PNG equals the preserved baseline. No private audio diagnostic code is installed. |
 | Exact public audio-v2 stop-open, 25s | Native deadline124 exits an acknowledged hold without closing controls first or forcibly killing the process. The retry control holds24676ms with probe0; no RAM-digest claim in that mode. |
 | Public audio-v2 + strict named pack, 220s | Correct version/executable selected; the original diagnostic texture renders. Field4741 PNG equals the earlier enabled-pack original byte-for-byte. Mutating probes remain disabled despite stale inherited variables. |
@@ -77,6 +78,39 @@ launchers return0. The first public policy attempt failed **before its new nativ
 launch**, with a UTF-8 decoding error in preflight; its preceding stop control
 passed. Both failed attempts above remain in private evidence, not overwritten
 by a successful retry or counted as successful nonempty/launch controls.
+
+### Follow-up: one ordinary buffered hold
+
+A later, separate100s run uses the **unchanged private corrected diagnostic**
+`313e55ff1aa5e01fc7bda19c91f2a87a1b32c89d`, executable SHA-256
+`e5caf086973fa60425320edaa1559d07e73be69a89b3924e3e21a4752ae92123`.
+It does not relink or replace the exact installed public audio-v2 executable.
+The activity header remains byte-identical to the checked public implementation.
+
+The guarded controls test requests the earlier field1001 rather than4800:
+`GODHAND_PC_CONTROLS_PROBE=1`, `GODHAND_PC_CONTROLS_PROBE_FIELD=1001`,
+`GODHAND_PC_AUDIO_AUDIT=1`, **`GODHAND_PC_AUDIO_FORCE=0`** and an empty
+`PS2X_PAD_SCRIPT`. Native arguments are `--iso <personal-disc> --headless
+--time-limit 100`. The existing injected UI rebind/save/live/hold checks use
+fresh scratch preferences/cards, not owner data. The run is muted; it reuses
+the private shader cache and provides no performance measurement.
+
+The hold acknowledges and resumes at field1003/cycle4934847807 after7839ms.
+Both passive boundary snapshots report read3044, queued7196, requested798240,
+produced799744, primed1, fade128 and gap0. No forced callback delay, injected
+queue data or readiness condition is used to manufacture a nonempty queue.
+All three UI checks pass; the two held PNG originals are byte-identical, and
+the diagnostic EE/IOP digests stay equal. The native process ends at deadline124,
+the validation driver returns0 and no forced termination is needed.
+
+This establishes one naturally buffered boundary in that **earlier** retail run,
+not all scenes or a natural race occurrence rate. The observed controls background
+is black; no specific cinematic or gameplay identity is asserted. The snapshots
+do not inspect PCM content, nonzero samples or a device's already queued output:
+the buffer may contain digital silence. Audible output and click-free transitions
+are still unverified. The earlier first-fight empty-queue failure is preserved,
+not relabeled as this successful case. No visual comparison is invented for a
+queue-counter result; its new captures remain private.
 
 Source provenance:
 
@@ -124,6 +158,7 @@ observations or synthetic button tests with a hardware/focus certificate.
 Genuine game Save/Load, hardware input, audible output, later scenes and the full
 campaign remain open. No new Rust work, game assets, generated game code, native
 binaries, raw PCM or private traces are published by this investigation.
-Natural nonempty-buffer holds, already queued device buffers, audible transitions
-and broader producer/peripheral ownership remain separate gates, not silently
-satisfied by the empty unforced control or the forced schedule.
+The one ordinary nonempty-buffer result above does not establish already queued
+device-buffer ownership, audible transitions, broader producer/peripheral
+ownership or other scene coverage. Those remain separate gates; neither the
+earlier empty control nor the forced schedule silently satisfies them.

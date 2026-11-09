@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Target a natural nonempty audio-buffer hold and focus/held-input release with explicit evidence; then broaden representative scenes. Preserve baseline and both opt-in versions; hardware/audible output and genuine game saving remain separate gates.",
+  "next": "Broaden focus/held-input and device/audio acceptance without autonomous level-beating; specify resource-to-host upload ownership before any HD implementation. Keep Original, v1 and audio-v2 explicit and preserved. Genuine game saving and human campaign coverage remain open.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -13,7 +13,7 @@
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
-    "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 closes that interleaving, not natural nonempty-buffer, audible/device, focus, peripheral or full-machine/campaign gates. Original remains unchanged."
+    "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged."
   ],
   "milestones": [
     {
@@ -85,7 +85,7 @@
           "title": "Make the native controls pause boundary reproducible",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Checked coexisting v1/audio-v2 source/executable/PDB preservation and explicit version selection; original-scene, UI/stop/pack/startup rollback controls. Reproduced admitted-consumer race and corrected forced nonempty-queue hold. Remains in progress: unforced nonempty control had empty queue; natural buffered holds, focus/held physical input, audible/device transitions, more peripherals/scenes remain unverified. Not full-machine/campaign proof."
+          "acceptance": "Checked coexisting v1/audio-v2 source/executable/PDB preservation and explicit version selection; original-scene, UI/stop/pack/startup rollback controls. Reproduced admitted-consumer race and corrected forced nonempty-queue hold. Later separate private diagnostic passes one ordinary buffered hold at field1003; earlier first-fight empty-queue assertion remains failed. Focus/held physical input, PCM content/audible/device transitions and more peripherals/scenes remain unverified. Not full-machine/campaign proof."
         }
       ]
     },
@@ -280,6 +280,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "An ordinary buffered hold, at an earlier retail point",
+      "summary": "A separate 100-second control now holds a nonempty audio queue without forcing callback timing. This narrows one gap; it does not verify audible output or the whole game.",
+      "changes": [
+        "Reused unchanged private diagnostic source313e55ff and its existing executable, with forced callback scheduling off, no guest-pad progression and fresh scratch preferences/cards. No installed public source or executable was replaced.",
+        "Requested the controls test at field1001 rather than the previous first-fight point. At acknowledged field1003,7196 queued samples and all tracked read/request/production/priming/fade/gap counters stay equal across7839ms.",
+        "Retained the earlier unforced empty-queue assertion as failed. This is a new earlier-point observation, not a corrected description of that old result; its black background is not assigned an unverified scene identity.",
+        "Checked upstream main against the exact existing pin14e956a: unchanged, so no identical clone/build or automatic repin was performed."
+      ],
+      "validation": "Native100s exits124 at its intended deadline, driver0, UI3 checks pass, held original PNGs byte-identical and diagnostic EE/IOP digests equal. The personal ISO and installed baseline/v1 remain verified. No forced termination, attacks, queue injection or callback stall. No public implementation changed; portable synthetic checks are rerun for publication.",
+      "limits": "One ordinary buffered boundary in a muted private diagnostic, not the exact installed public executable or all-scene coverage. PCM content is not examined and may be digital silence; no audible-quality, device buffering, hardware-input, genuine game-save or campaign claim. No visual pair is invented for a queue-counter result; these game captures stay private.",
+      "link": {
+        "label": "Exact follow-up controls, provenance and retained failed case",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/AUDIO_HOLD.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",

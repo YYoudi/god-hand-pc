@@ -36,9 +36,14 @@ Read AUDIO_HOLD.md before changing audio ownership. The naked v1 callback state
 check now has a reproduced forced pause-boundary race in the actual callback;
 generic tests alone are not native or audible proof. Separate audio-v2 tooling
 now has clean public build, actual UI/stop/pack and startup rollback controls.
-Its corrected forced native case freezes a nonempty queue; the unforced control
-had an EMPTY queue and failed the extra nonempty assertion. Preserve that failure
-and do not claim natural nonempty/audio/device coverage. Keep v1 files/fingerprint immutable and
+Its corrected forced native case freezes a nonempty queue; the first unforced
+control had an EMPTY queue and failed the extra nonempty assertion. Preserve it.
+A later separate100s ordinary early hold (field1003, no forced callback or pad
+progression) preserves7196 queued samples across7839ms; UI3/held originals pass.
+This uses unchanged private diagnostic313e55ff, NOT the exact public binary;
+black background and unexamined PCM content do not prove gameplay/audio/device
+coverage. See .local/audio-ordinary-2026-11-09/early-1001/validation.json.
+Keep v1 files/fingerprint immutable and
 preserved; no automatic upgrade or default-policy change. Private forced callback
 controls are under .local/audio-boundary-2026-11-09; poll actual handles, not logs
 as a reason to restart. Queue counters, audible output and device buffering are
