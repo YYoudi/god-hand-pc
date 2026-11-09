@@ -64,8 +64,21 @@ wrong-hash control rejects before upload. All terminal, no forced kill. Evidence
 .local/checked-hd-native-2026-11-09/. Preserve14-file identity and every prior
 source/exe/PDB/pointer. HD+controls/same-size pack is deliberately unsupported
 and refused. Strict-HD covers preflight only, not GPU application. One512x512
-source proof, not general HD or performance acceptance. Next measure matcher
-overhead/invalidation before caching; no guessed VRAM/file identity.
+source proof, not general HD or performance acceptance.
+
+Read HD_TIMING.md before optimizing: separate private source2a2bb918/exe7d71ba86
+with exact original public totals helper now has four terminal native controls.
+Timing-on/off valid PNGs equal c0720b6a, interior-reference-negative is original
+fd53182e with0matches. Earlier measurement overlapped synthetic suites; later
+valid300s has no concurrent owned compiler/test job. Wall readback and GPU command
+intervals are DIFFERENT scopes, not a speedup/frame-budget/FPS claim. Periodic
+windows omit the trailing partial; no fake destructor total. All installed
+identities remain unchanged. PC10 remains incomplete: epoch/state/CLUT reuse
+does not prove cache invalidation. Next test removing the synchronous diagnostic
+readback while retaining per-batch GPU matching, before a persistent cache.
+That optimization is NOT implemented; keep enabled/disabled/negative originals.
+Private evidence .local/hd-timing-2026-11-09/, first failed hook build/inventory
+and all captures preserved. No guessed VRAM/file identity, Rust or delegation.
 
 Read HD_TEXTURES.md for the earlier separate private size-aware GPU trial. An original
 512x512 diagnostic now renders through full128x128 decoded-content matching,

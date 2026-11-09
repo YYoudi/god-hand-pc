@@ -18,6 +18,10 @@ checked-hd-native-2026-11-09 receipts. Keep public build/launcher validation
 separate from the earlier private proof, and planned/requested/uploaded/matched/
 rendered outcomes separate. HD strict mode is preflight-only. Preserve Original,
 v1 and audio-v2 identities; HD composition is refused until separately proven.
+For matcher timing, read HD_TIMING.md: the separate private measurement trial
+does not update an installed variant. Periodic samples, wall waits and GPU
+command intervals have distinct scopes; no speedup or cache acceptance follows.
+Keep the test-overlap limitation and later owned-tests-idle repeat separate.
 
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and

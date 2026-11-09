@@ -60,10 +60,62 @@ commands, native logs and receipts remain under the local ignored
 `hd-timing-2026-11-09` workspace. Do not mistake a public totals header for a
 public profiling installer.
 
-## Observations
+## Observed native controls
 
-Pending terminal native controls; no measured improvement or cache acceptance
-is claimed by this document's initial implementation revision.
+All four starts finish at native deadline124 with driver0 and no forced kill.
+The two 300-second valid measurements and the timing-off220s control produce
+the same unretouched field4741 PNG:
+`c0720b6a89b05bed007fa76060029f8db542f69365df6270c4cedafff94428b2`.
+The 300-second negative changes one interior byte of the **private source
+reference**, not the disc/VRAM/authored image. It reports zero matches and
+reproduces the original-assets PNG:
+`fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e`.
+Shader-error lists are empty; valid and negative inputs remain unchanged.
+
+The first valid measurement overlaps our synthetic suites. It is retained with
+that limitation, not silently presented as isolated performance evidence. A
+separate later valid repeat starts after those suites are terminal, with no
+concurrent owned compiler/unittest job. That is still **not** full-machine,
+background-GPU, thermal or clock isolation. The native renderer reports an
+NVIDIA GeForce RTX5080; one machine is not a portability/performance result.
+
+These are sums of the **collected periodic windows only**, rounded to0.001ms.
+The timings have different scopes and must not be added/subtracted as a frame
+budget. Counts differ across processes; rows are not a comparative benchmark.
+
+| Measurement | Calls / windows | Timestamped dispatches | Candidate states / exact matches | Prepare wall ms | Readback wall ms | GPU command interval ms |
+| --- | --- | --- | --- | --- | --- | --- |
+| Valid300s, synthetic suites overlap | 113408 /443 | 4759 | 48941 /1226 | 11852.337 | 11623.591 | 133.951 |
+| Interior-reference negative300s | 113664 /444 | 4742 | 48941 /0 | 11642.697 | 11464.271 | 143.185 |
+| Valid300s, owned tests/compiler idle | 114432 /447 | 4834 | 49841 /1277 | 12015.230 | 11829.474 | 139.371 |
+
+The final collected window ends at uptime299195/299286/299295ms respectively;
+the trailing partial window is not included. Timing-off has **no timing rows**,
+not a measured zero cost. In the later valid repeat the largest observed single
+readback wall interval is27.774ms; the largest GPU command interval is2.615ms.
+Those maxima need not be from the same call, and are not latency percentiles.
+
+The wall wait is much larger than the timestamped command interval in these
+observations. **Inference:** investigate synchronous diagnostic readback before
+introducing a persistent match cache. This does not establish how much time a
+readback-free implementation would save: queued rendering and CPU scheduling
+may simply move the wait elsewhere. No optimized binary, FPS gain or lower-
+latency claim has been demonstrated.
+
+The original header is tested with invented times only:178 tests locally and
+in a fresh public autocrlf checkout,176pass/two Windows symlink-privilege skips.
+Actual query creation/use and the unchanged native image controls are separate
+runtime evidence. The first inventory regex was overescaped; its receipt is
+retained and an exact tasklist-name/Python-command check is recorded separately.
+Known owned test handles were already terminal before the later valid repeat.
+
+Native build/source snapshots, all four original captures, inputs, logs, exact
+commands and JSON window summaries remain private under `hd-timing-2026-11-09`.
+The installed sources/executables/pointers, prior baseline PDB, personal ISO and
+historical Rust WIP are preserved. No new image comparison is manufactured for
+this nonvisual change: the fresh captures reproduce the already reviewed bytes.
+The [existing checked-HD pair](https://yyoudi.github.io/god-hand-pc/comparisons.html#2026-11-09-checked-hd-workflow)
+keeps its original timestamps/revisions; it is not relabeled as this trial.
 
 ## Why not cache by texture address or epoch yet?
 
@@ -82,8 +134,12 @@ Before a persistent match cache, prove all relevant transfer, palette, copy,
 render-target, reset/load and plane invalidation paths with invented mutation
 controls and actual unchanged/reference-negative rendering. A more local next
 experiment is to decouple the CPU diagnostic result readback from the GPU match
-buffer while still classifying every batch. That needs its own native controls;
-it is not implemented or a promised performance gain here.
+buffer while still classifying every batch. The current original
+[host adapter](adapter/hd_runtime.inc) reads those results for counters/logging;
+the sampler consumes the GPU match buffer, not a CPU texture-choice decision.
+That source finding does not prove a safe optimized implementation: preserve
+ordering/binding/error behavior and test actual matched/unmatched rendering,
+then measure without promising a gain. This is not implemented here.
 
 True game SaveExitLoad, physical input/audible audio, wider resources/scenes,
 filtering, campaign accuracy, HD/controls composition and prototype kernel

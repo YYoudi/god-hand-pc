@@ -49,6 +49,13 @@ rollback controls cover that boundary. The activity barrier closes one reproduce
 admitted-consumer race, not producer/device quiescence or audible quality; see
 [the retained native controls](AUDIO_HOLD.md).
 
+## HD match-result lifetime
+
+Before caching native HD match results, read [the actual matcher measurement](HD_TIMING.md).
+Epoch/state/CLUT slots are not persistent content identity. The current CPU
+readback is diagnostic; removing its synchronous wait while retaining GPU
+classification is the next experiment, not an implemented optimization.
+
 ## Future readable function replacements
 
 Before adding one: record the disc/revision, provenance, verified function or

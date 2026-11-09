@@ -99,6 +99,9 @@ not general HD/remaster support: aliases, performance, other scenes and HD with
 controls-pause/same-size packs remain open (those combinations are refused).
 Full playthrough and genuine game-save round trip remain open. The personal disc
 is verified before every launch; game-derived references remain private.
+The [separate matcher timing trial](HD_TIMING.md) distinguishes CPU readback
+waits from GPU command intervals. It does not change the installed HD binary
+or claim an optimization/FPS gain; safe invalidation remains open.
 
 Prototype generation/build/debug-menu research stays separate. Discovery output
 is not a linked executable or a validated retail behavior. Do not attempt to beat

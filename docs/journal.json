@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Measure the HD matcher/readback cost and prove VRAM/CLUT invalidation before a cache; specify a separately checked HD+audio-v2 composition rather than silently dropping features. True game SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
+  "next": "Test decoupling the synchronous CPU diagnostic readback while retaining fresh per-batch GPU matching, with actual enabled/disabled/reference-negative image controls and measured intervals. No speedup promised; persistent-cache invalidation, HD+audio-v2 composition, true SaveExitLoad, physical input/audio and human campaign validation remain open.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -170,9 +170,9 @@
         {
           "id": "PC10",
           "title": "Measure and safely cache HD content matching",
-          "status": "planned",
+          "status": "in_progress",
           "area": "rendering",
-          "acceptance": "Measure actual classifier/readback cost first; prove VRAM/CLUT/epoch identity and invalidation with invented mutation/alias controls, then actual enabled/disabled/negative originals. No stale matches or invented FPS."
+          "acceptance": "Actual private timing on/off/negative and later owned-tests-idle repeat pass with unchanged originals; scoped wall readback and GPU command intervals are distinct, not a speedup/FPS benchmark. Persistent cache is NOT implemented: prove VRAM/CLUT/epoch/copy/render/reset/load/plane invalidation and aliases with synthetic mutation plus native controls before adopting one. A repeated address/state/epoch is insufficient."
         },
         {
           "id": "PC11",
@@ -180,6 +180,13 @@
           "status": "planned",
           "area": "pc",
           "acceptance": "Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused."
+        },
+        {
+          "id": "PC12",
+          "title": "Decouple HD diagnostic readback without stale GPU matches",
+          "status": "planned",
+          "area": "rendering",
+          "acceptance": "Retain fresh full-source GPU matching and original sampler fallback while removing/defering synchronous CPU-only diagnostic readback; precise ordering/binding/error controls, native valid/absent/interior-negative original images and measured intervals before any gain claim. Not a persistent cache or default upgrade."
         }
       ]
     },
@@ -301,6 +308,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "Timing the texture matcher before changing it",
+      "summary": "A separate native trial now separates wall time in diagnostic readback from the GPU classifier interval. No optimization or new installed variant is being announced.",
+      "changes": [
+        "Added original invariant-checked timing totals and invented overflow/reset controls. Compiled the exact public helper into private host hooks over unchanged hd-v1 shaders/sampling; no game functions, disc data or existing installed binary are changed.",
+        "Completed timing-on300s, timing-off220s and interior-reference-negative300s controls on the same private executable. Valid captures match the existing larger-texture original; the one-byte reference negative has zero matches and restores the original-assets PNG.",
+        "Retained the first timing run with its overlapping synthetic-suite workload. Repeated the valid300s case after owned test/compiler jobs were terminal; it is still not full-machine, GPU-background or thermal isolation.",
+        "The observed wall readback intervals are much larger than the GPU command interval. This changes the next experiment: test decoupling CPU-only diagnostic readback before introducing a persistent cache. Epoch/state/CLUT reuse alone cannot prove cache identity."
+      ],
+      "validation": "178 invented-data tests locally and in a fresh public autocrlf checkout:176pass/two Windows symlink-privilege skips. Private configure0/build0; all four native starts exit124 at their deadlines, drivers0, no forced termination or shader errors. Timing-on/off/repeat field4741 PNGs equal c0720b6a; reference-negative equals baselinefd53182e. Later valid periodic windows cover114432 calls/4834 dispatches; wall readback11829.474ms versus GPU command139.371ms, DIFFERENT scopes and not removable frame time. Trailing partial windows are not fabricated. Prior installed variants/PDB, ISO and historical lab/WIP remain exact.",
+      "limits": "Private diagnostic hooks, not a public profiling installer, optimized release or FPS benchmark. Timing/query/logging overhead and other desktop/GPU activity remain; queued earlier rendering and scheduling can dominate the CPU wait. No speedup follows by subtracting scopes. Cache invalidation and readback decoupling are NOT implemented, composition and wider scenes remain open. No true game saving, physical input/audible audio, campaign, widescreen/FPS/lighting or multiplayer claim. No new comparison is invented for a nonvisual change.",
+      "link": {
+        "label": "Measurement protocol, native provenance, collected windows and next experiment",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/HD_TIMING.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",

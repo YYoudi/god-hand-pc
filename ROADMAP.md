@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Measure the HD matcher/readback cost and prove VRAM/CLUT invalidation before a cache; specify a separately checked HD+audio-v2 composition rather than silently dropping features. True game SaveExitLoad, physical input/audio and human campaign validation remain separate gates.
+Test decoupling the synchronous CPU diagnostic readback while retaining fresh per-batch GPU matching, with actual enabled/disabled/reference-negative image controls and measured intervals. No speedup promised; persistent-cache invalidation, HD+audio-v2 composition, true SaveExitLoad, physical input/audio and human campaign validation remain open.
 
 ## M8 — Active: verified original PC baseline
 
@@ -34,8 +34,9 @@ Keep original behavior as a control; readable original host/function replacement
 - **RM06 Improve renderer/material/light control incrementally — Planned:** Document resource-to-render path and material/light inputs; prove each original/enhanced change at fixed viewpoints. Whole-engine migration requires a reproduced justification.
 - **RM07 Trial upstream updates without losing extensions — Planned:** Separate fresh pinned workspace, reviewed dependencies/preimages, build and relevant behavior/profile/pack regression controls before repinning.
 - **PC09 Package the size-aware boundary as a checked opt-in workflow — Verified for stated scope:** Scoped checked additive hd-v1 workflow: exact public8201 recipe configures/links, original source/exe/PDB restored,14-file manifest and ISO verified. Named original512x512 RGBA snapshot renders; same-binary absent/invalid and default originals are baseline-exact. Strict invalid/Original+HD refuse native spawn; direct exact-native checksum negative rejects. Legacy v1/audio-v2 startup pointers remain intact. Not fresh generation, general HD, performance or composition acceptance.
-- **PC10 Measure and safely cache HD content matching — Planned:** Measure actual classifier/readback cost first; prove VRAM/CLUT/epoch identity and invalidation with invented mutation/alias controls, then actual enabled/disabled/negative originals. No stale matches or invented FPS.
+- **PC10 Measure and safely cache HD content matching — In progress:** Actual private timing on/off/negative and later owned-tests-idle repeat pass with unchanged originals; scoped wall readback and GPU command intervals are distinct, not a speedup/FPS benchmark. Persistent cache is NOT implemented: prove VRAM/CLUT/epoch/copy/render/reset/load/plane invalidation and aliases with synthetic mutation plus native controls before adopting one. A repeated address/state/epoch is insufficient.
 - **PC11 Validate an explicit HD and audio-v2 composite variant — Planned:** Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused.
+- **PC12 Decouple HD diagnostic readback without stale GPU matches — Planned:** Retain fresh full-source GPU matching and original sampler fallback while removing/defering synchronous CPU-only diagnostic readback; precise ordering/binding/error controls, native valid/absent/interior-negative original images and measured intervals before any gain claim. Not a persistent cache or default upgrade.
 
 ## M10 — Later research: multiplayer feasibility
 
