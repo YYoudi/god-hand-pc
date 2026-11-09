@@ -5,14 +5,15 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Resume the preserved opt-in controls-pause experiment: linked native trial still needs freeze, responsive-menu, resume, disabled-baseline and stop validation before public installation. Preserve all original baseline/fidelity gates.",
+  "next": "Make the sampled host-pause integration reproducible through checked public tooling, without changing generated game functions or the preserved baseline. Then test focus, held physical input, audio transitions and additional scenes before default policy.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "The named external texture proof covers one same-size stored resource, not HD dimensions, hot reload or a general graphics remaster.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
-    "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence."
+    "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
+    "The private host-pause trial now has bounded native hold/resume/UI/stop evidence; it is not installed by the public setup/launcher or a full-machine/campaign guarantee."
   ],
   "milestones": [
     {
@@ -78,6 +79,13 @@
           "status": "done",
           "area": "pc",
           "acceptance": "Retained original error/counter and unchanged native build; exact generated C++ body/entry audit and compiler reachability checks under both return modes. Three original ELF controls and four native return/throw outcomes; clean committed public recipe and portable synthetic CI. Not full guest-PC/ISA/game coverage."
+        },
+        {
+          "id": "PC08",
+          "title": "Make the native controls pause boundary reproducible",
+          "status": "in_progress",
+          "area": "pc",
+          "acceptance": "Cooperative ready/acknowledged hold, responsive existing UI, resume/stop and original-disabled controls; portable primitive tests plus targeted native evidence. Sampled intro/first-fight proof exists, but checked public installation/regeneration, focus/held-input/audio and additional scenarios still need validation. Do not equate this with full PC settings or campaign fidelity."
         }
       ]
     },
@@ -272,6 +280,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "Testing a host pause behind the controls screen",
+      "summary": "A separate native trial pauses the sampled first-fight scene while the existing controls screen remains usable. It is experimental evidence, not a feature installed by the public launcher.",
+      "changes": [
+        "Verified an acknowledged 7,709 ms first-fight hold: native field/cycle counters and EE/IOP RAM digests stay stable; two held original PNGs are byte-identical. UI editing/save completes and fields advance after close.",
+        "Compared the same executable with pause disabled. Both pre-overlay original PNGs reproduce the preserved baseline byte-for-byte; native UI file/live/hold checks pass in both processes.",
+        "Verified early-scene repeated holds and a native stop with controls still open, without forced process termination. Retained the incomplete cold control and a rejected diagnostic method.",
+        "Published the original generic GPL coordination primitive and invented thread/clock tests, plus two explicitly reviewed unchanged native screenshot originals. Checked public installation remains open."
+      ],
+      "validation": "127 local synthetic tests: 126 pass, one Windows symlink-privilege skip. Two 240-second first-fight cases finish at their intended native deadline 124; both UI scripts pass three checks. Early 70/25-second trials cover repeated holds and stop-open. No game data is supplied to CI; public CI/deployment are checked separately.",
+      "limits": "Sampled retail scenes only. Noncryptographic RAM digests do not establish all-device equality; screenshots are same-landmark, not same-frame. No physical-input, audible-audio, actual game-save or campaign result. Existing public F1 behavior remains unchanged.",
+      "link": {
+        "label": "Experimental contract, actual controls, retained failures and remaining integration",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/CONTROLS_PAUSE.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "title": "One active home for the PC continuation",
@@ -532,6 +558,53 @@
   ],
   "comparisons": [
     {
+      "id": "2026-11-09-native-controls-host-pause",
+      "date": "2026-11-09",
+      "title": "A private host-pause trial in the first-fight controls screen",
+      "feature": "PC08",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Same native build — host pause disabled",
+        "bevy": "Same native build — experimental host pause enabled"
+      },
+      "scenario": "Two new 240-second retail processes, same private native executable, no asset pack and only title/start inputs. Injected controls steps begin after native field 4800; no attacks or autonomous level-completion. Reused warm private shader cache, scratch cards/preferences. The two displayed controls captures are not the same game frame.",
+      "observations": [
+        "The enabled trial reports a 7,709 ms hold at field 4801 with invariant field/cycle counters and equal EE/IOP RAM digests. Two retained original screenshots within that hold are byte-identical; host rendering and UI commands continue.",
+        "Both injected UI sequences pass three file/live/hold checks after a U rebind and save. Fields advance after the enabled hold; the disabled background continues while its controls overlay is open.",
+        "Before the overlay, both selected field 4741 PNGs equal the preserved original baseline byte-for-byte. This is a separate unchanged-control measurement, not a same-frame claim about the displayed pair.",
+        "The underlying controls UI is upstream work. Only the private opt-in host coordination and diagnostics are ours; no generated game function is edited."
+      ],
+      "limits": [
+        "Both images are the same third-party native C++ trial, NOT Bevy or PS2 hardware. Same-landmark only: game actors/background can differ; known black screenshot padding is retained.",
+        "This native integration is NOT installed by the public setup/launcher. Its ordinary evaluated F1 overlay still keeps running; do not infer a released pause feature.",
+        "RAM checks are noncryptographic digests, not exact equality of every emulated device/register. Diagnostic hashing adds overhead; no performance, audio-quality or wall-time fidelity claim.",
+        "No physical keyboard/controller, audible audio, actual game Save/Load, later-stage or full-campaign verification. Game imagery is not GPL/MIT; ISO, ELF/cache, binaries, generated game code, dumps and other captures stay private."
+      ],
+      "reference": {
+        "path": "media/02752f3d18c7f9ca3cd17fe1fc7ac0027eaeaa8653c61a45f253c94455166eb0.png",
+        "sha256": "02752f3d18c7f9ca3cd17fe1fc7ac0027eaeaa8653c61a45f253c94455166eb0",
+        "width": 800,
+        "height": 600,
+        "caption": "Upstream controls with host pause off; native background continues. Unretouched full original.",
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + original host-pause research trial; base14e956a, private4d7ebfc; guarded UI injection, no asset pack; pause disabled",
+        "revision": "4d7ebfceb28c7bba1558d4e4dbe83e96cd469b4f",
+        "captured_at": "2026-11-09T14:30:23.673538+00:00"
+      },
+      "bevy": {
+        "path": "media/697448e22f9a2490a2efea0678174eb2bcfef402eda90c6836affca849b45b76.png",
+        "sha256": "697448e22f9a2490a2efea0678174eb2bcfef402eda90c6836affca849b45b76",
+        "width": 800,
+        "height": 600,
+        "caption": "Private trial acknowledges a host hold; upstream controls remain responsive. Unretouched full original.",
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + original host-pause research trial; base14e956a, private4d7ebfc; guarded UI injection, no asset pack; pause enabled",
+        "revision": "4d7ebfceb28c7bba1558d4e4dbe83e96cd469b4f",
+        "captured_at": "2026-11-09T14:34:11.069504+00:00"
+      }
+    },
+    {
       "id": "2026-11-09-native-controls-persistence",
       "date": "2026-11-09",
       "title": "Reusing the native controls screen: a saved binding reloaded",
@@ -767,6 +840,17 @@
     }
   ],
   "captures": [
+    {
+      "kind": "journal",
+      "date": "2026-11-09",
+      "captured_at": "2026-11-09T14:46:57.055248+00:00",
+      "path": "captures/e47cd7de21a70bd7a1eb7fc1cbfc48f7803af2cc3b544717f432c49667f6a041.jpg",
+      "sha256": "e47cd7de21a70bd7a1eb7fc1cbfc48f7803af2cc3b544717f432c49667f6a041",
+      "reviewed": true,
+      "revision": "uncommitted",
+      "caption": "Experimental native controls pause: observed hold/resume and explicitly pending public installation",
+      "source": "Unretouched actual hidden-browser capture of the English native host-pause journal entry. No game imagery, raw hashes, generated code or unrelated desktop pixels. Earlier drafts remain private."
+    },
     {
       "kind": "journal",
       "path": "captures/8da4c8e58207752daf1a306659d4e4dac35c95a6be5f4610b4f8dfa6dbef7af6.jpg",

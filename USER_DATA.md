@@ -37,6 +37,10 @@ preferences, exercise the existing controls UI's edit/save/new-process reload
 in isolated files, and verify timer behavior separately from visual/input claims.
 Upstream's guarded self-test injects UI commands: it is not physical keyboard or
 controller evidence. Controls persistence is **not in-game Save/Load**.
+The evaluated public executable still keeps running behind F1. The separate
+[host-pause experiment](CONTROLS_PAUSE.md) has bounded native evidence but is not
+installed by the public setup/launcher. Do not infer changed default behavior
+from an experimental screenshot, or a safe pause before its acknowledgment.
 
 This contract isolates input preferences only. General video/runtime INI still
 belongs to upstream; no complete settings UI, audio usability, widescreen, FPS

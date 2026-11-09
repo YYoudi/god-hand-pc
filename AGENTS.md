@@ -13,8 +13,13 @@ Selected historical reports/entries/comparisons are editorial migrations, not
 newly reproduced results. Preserve their hashes/provenance and separate licenses.
 The full PC goal remains active; migration is not completion of the port.
 No new Rust, delegation, ISO edits, evidence deletion or history rewriting.
-The opt-in controls-pause trial linked privately but is NOT runtime-validated or
-shipped; native baseline source/executable were restored, trial/WIP preserved.
+Read CONTROLS_PAUSE.md: the separate opt-in native trial now has bounded early-
+scene/first-fight hold, resume, UI and stop evidence. This is NOT a shipped public
+installer feature or full-machine/campaign proof. Keep baseline1930765/exeeaed174
+unchanged, preserve failed/cold trials and the rejected whole-hostTick delay.
+The tested diagnostic delays only injected self-test steps, never input polling.
+Generic Gate tests are not a native readiness oracle; keep hardware/audio and
+genuine game-save gates open. Next is a reproducible checked host integration.
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.

@@ -31,6 +31,9 @@ See [user-data and launch-lifetime behavior](USER_DATA.md): normal launch withou
 `--seconds` explicitly requests no diagnostic timeout. The existing upstream F1
 controls screen edits workspace-local preferences, not the executable's file.
 Physical input, audible audio and actual game Save/Load remain separate gates.
+The [experimental controls-pause boundary](CONTROLS_PAUSE.md) now has bounded
+native hold/resume/UI/stop evidence; its generic original primitive is public,
+but the native integration is not yet a public installer feature.
 
 ## Bootstrap commands (Python 3.11+, Git)
 

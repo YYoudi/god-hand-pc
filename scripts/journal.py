@@ -169,8 +169,14 @@ def markdown(text, migration):
 
 def render(data, migration, read):
     outputs={}
+    current_reports={e['link']['url']:e['link']['label'] for e in data['updates'] if
+                     e.get('link',{}).get('url','').startswith(data['repo']+'/blob/main/') and
+                     e['link']['url'].endswith('.md')}
+    current_section=('<h2>Current development reports</h2><ul>'+''.join(
+        '<li><a href="'+escape(url,quote=True)+'">'+escape(label)+'</a></li>'
+        for url,label in current_reports.items())+'</ul>') if current_reports else ''
     report_links="".join(f'<li><a href="{name[:-3]}.html">{escape(name[:-3].replace("-"," "))}</a> · <a href="{name}" download>Unchanged Markdown</a></li>' for name in migration["reports"])
-    outputs['docs/reports/index.html']=shell("Reports",'<h1>Reports</h1><p>Editorial migration on '+data['migration_date']+'. These dated reports are unchanged historical evidence, not rerun experiments. Later journal entries may supersede their pending statuses.</p><ul>'+report_links+'</ul>',"../")
+    outputs['docs/reports/index.html']=shell("Reports",'<h1>Reports</h1>'+current_section+'<h2>Migrated historical reports</h2><p>Editorial migration on '+data['migration_date']+'. These dated reports are unchanged historical evidence, not rerun experiments. Later journal entries may supersede their pending statuses.</p><ul>'+report_links+'</ul>',"../")
     for name,meta in migration["reports"].items():
         body=f'<p class="notice">Historical report, migrated unchanged on {data["migration_date"]}. Not a new technical result. Original <a href="{escape(meta["source_url"])}">source at the recorded revision</a>; <a href="{name}" download>download unchanged Markdown</a>. Current direction and limitations live in the journal/roadmap. Text retains its <a href="../IMPORTED_MIT_LICENSE.txt">MIT notice</a>.</p>'
         body+=markdown(read('docs/reports/'+name).decode('utf-8-sig'),migration)

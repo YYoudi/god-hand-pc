@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Resume the preserved opt-in controls-pause experiment: linked native trial still needs freeze, responsive-menu, resume, disabled-baseline and stop validation before public installation. Preserve all original baseline/fidelity gates.
+Make the sampled host-pause integration reproducible through checked public tooling, without changing generated game functions or the preserved baseline. Then test focus, held physical input, audio transitions and additional scenes before default policy.
 
 ## M8 — Active: verified original PC baseline
 
@@ -18,6 +18,7 @@ A reproducible native original-game baseline with explicit fidelity and usabilit
 - **OB05 Organize human campaign validation — Planned:** Legitimate saves and human playthrough checklist, progression/save regression matrix; no autonomous level-beating loops or untested full-game claim.
 - **PC07 Remove inherited timeout and preserve persistent controls — Verified for stated scope:** Explicit unlimited normal-launch intent; bounded hidden policy retained. Workspace controls with byte-copy adoption/reuse and isolated diagnostics; guarded native UI edit/save/new-process reload; timer120s/explicit-zero controls; public220s scene regression and unchanged originals. No hardware/game-save claim.
 - **OB06 Bound retained diagnostic with native negative controls — Verified for stated scope:** Retained original error/counter and unchanged native build; exact generated C++ body/entry audit and compiler reachability checks under both return modes. Three original ELF controls and four native return/throw outcomes; clean committed public recipe and portable synthetic CI. Not full guest-PC/ISA/game coverage.
+- **PC08 Make the native controls pause boundary reproducible — In progress:** Cooperative ready/acknowledged hold, responsive existing UI, resume/stop and original-disabled controls; portable primitive tests plus targeted native evidence. Sampled intro/first-fight proof exists, but checked public installation/regeneration, focus/held-input/audio and additional scenarios still need validation. Do not equate this with full PC settings or campaign fidelity.
 
 ## M9 — Active architecture: maintainable, reversible PC enhancements
 

@@ -56,6 +56,18 @@ class JournalTests(unittest.TestCase):
         self.assertNotIn('\u00c2',text)
         self.assertNotIn('\u00e2\u20ac',text)
 
+    def test_new_report_links_do_not_replace_historical_report_index(self):
+        url='https://github.com/YYoudi/god-hand-pc/blob/main/INVENTED.md'
+        entry={'date':'2026-11-09','title':'Invented current result','summary':'Invented',
+               'changes':['Invented change'],'validation':'Invented check','limits':'Invented limit',
+               'link':{'url':url,'label':'Invented current report'}}
+        data={'repo':'https://github.com/YYoudi/god-hand-pc','migration_date':'2026-11-09',
+              'known_limits':[],'next':'Invented next step','updates':[entry],
+              'milestones':[],'comparisons':[],'captures':[]}
+        result=journal.render(data,{'reports':{},'entries':{}},lambda p:b'')
+        self.assertIn(url,result['docs/reports/index.html'])
+        self.assertIn('Migrated historical reports',result['docs/reports/index.html'])
+
     def test_fresh_autocrlf_checkout_preserves_original_report_bytes(self):
         with tempfile.TemporaryDirectory(prefix='godhand-journal-eol-synthetic-') as name:
             root=Path(name);source=root/'source';source.mkdir()
