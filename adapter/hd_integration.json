@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "version": "hd-v1",
+  "upstream_revision": "14e956a1274332440273845fbab2c1f1e30c4a5a",
+  "provenance": "Original GPL host integration over checked named-pack base. Exact file preimages and owned additions only; offsets index open-source host files, not guest code or disc. No game functions or assets.",
+  "files": [
+    {
+      "path": "src/CMakeLists.txt",
+      "before_sha256": "9f703762f5921d4c7e5d3c00930a4d16b4a51f047d35aa8f622f113f58d76af7",
+      "after_sha256": "f6aae43f21d240ce56abd06961112a33939de0307a690b322f544ac08086212b",
+      "edits": [
+        {
+          "start": 16674,
+          "end": 16674,
+          "insert": "\n# Original checked larger-texture host bridge; no generated game code.\ntarget_sources(godhand PRIVATE godhand_pc_hd_bridge.cpp)\n"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/gs/gpu/gs_gpu_backend.cpp",
+      "before_sha256": "e2f3bceb8225203ed8a3382de739cf1322beb5f9aa491b17c13e050177753dd0",
+      "after_sha256": "6544f1164baeb745520b142e2be9049dcbebbc31dde21c17a80f76bafbcf2a98",
+      "edits": [
+        {
+          "start": 260,
+          "end": 278,
+          "insert": "#include \"gs_gl.h\"\n#include \"../../godhand_pc_hd/runtime.hpp\""
+        },
+        {
+          "start": 7934,
+          "end": 7953,
+          "insert": "    godhand_hd::Input hdInput;\n    Program hdClassifier;\n    GLuint hdInputBuffer=0,hdMatchBuffer=0;\n    uint32_t hdChecks=0,hdMatches=0;\n    Program raster;"
+        },
+        {
+          "start": 25949,
+          "end": 26016,
+          "insert": "dataBuffer, clutOpBuffer, pageMapBuffer, hiresBuffer, scaleBuffer, hdInputBuffer, hdMatchBuffer};"
+        },
+        {
+          "start": 26098,
+          "end": 26153,
+          "insert": "            if(hdInput) std::fprintf(stderr,\"[pc-hd] final classifier_batches=%u matched_states=%u\\n\",hdChecks,hdMatches);\n            for (Program *program : {&hdClassifier, &raster, &clutLoad"
+        },
+        {
+          "start": 57683,
+          "end": 57744,
+          "insert": "        std::string body = shaderText(hdRasterText().c_str());"
+        },
+        {
+          "start": 65884,
+          "end": 65970,
+          "insert": "        hdInitialize(prefix);\n        const std::string hdRasterBody=hdRasterText();\n        const bool ok = compile(raster, prefix, hdRasterBody.c_str(), {\"uRaster\"}) &&"
+        },
+        {
+          "start": 72479,
+          "end": 72500,
+          "insert": "#include \"../../godhand_pc_hd/runtime.inc\"\n\n    void resetBatch()"
+        },
+        {
+          "start": 80648,
+          "end": 80711,
+          "insert": "                hdPrepare();\n                g.BindFramebuffer(kFramebuffer, hwFramebuffer);"
+        },
+        {
+          "start": 84934,
+          "end": 84970,
+          "insert": "            hdPrepare();\n            g.UseProgram(raster.id);"
+        }
+      ]
+    }
+  ],
+  "copies": {
+    "adapter/hd_texture.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_hd/hd_texture.hpp",
+    "adapter/hd_runtime.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_hd/runtime.hpp",
+    "adapter/hd_runtime.inc": "runtime/ps2xRuntime/src/lib/godhand_pc_hd/runtime.inc",
+    "adapter/hd_bridge.cpp": "src/godhand_pc_hd_bridge.cpp"
+  }
+}

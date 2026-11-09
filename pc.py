@@ -121,6 +121,8 @@ def main():
     pause.add_argument("--workspace-name", default="retail-setup")
     pause.add_argument("--version", choices=("v1", "audio-v2"), default="v1",
                        help="Separate versioned install; does not overwrite or implicitly upgrade v1")
+    hd = sub.add_parser("install-hd-textures", help="Build a separate experimental hd-v1 host variant")
+    hd.add_argument("--workspace-name", default="retail-setup")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -137,6 +139,10 @@ def main():
                       help="Explicit experimental host pause; requires enhanced and install-controls-pause")
     play.add_argument("--controls-pause-version", choices=("v1", "audio-v2"),
                       help="Explicit version selection; requires --controls-pause (default v1 unchanged)")
+    play.add_argument("--hd-textures", action="store_true",
+                      help="Explicit experimental hd-v1 variant; requires enhanced and install-hd-textures")
+    play.add_argument("--hd-pack", type=Path, help="Named original raw-RGBA pack; requires --hd-textures")
+    play.add_argument("--strict-hd-pack", action="store_true", help="Refuse invalid HD pack instead of original fallback")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -161,12 +167,16 @@ def main():
     elif args.command == "install-controls-pause":
         from controls_pause import install
         result = install(ROOT, args.workspace_name, args.version)
+    elif args.command == "install-hd-textures":
+        from hd_textures import install
+        result = install(ROOT, args.workspace_name)
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
                         args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script,
                         profile=args.profile, controls_pause=args.controls_pause,
-                        controls_pause_version=args.controls_pause_version)
+                        controls_pause_version=args.controls_pause_version,
+                        hd_textures=args.hd_textures, hd_pack=args.hd_pack, strict_hd=args.strict_hd_pack)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():
