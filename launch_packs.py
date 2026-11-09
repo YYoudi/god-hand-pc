@@ -80,15 +80,22 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
     tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
     build.require("godhand.exe" not in tasks.lower(), "A game instance is already running")
+    if controls_pause and version == "v1":
+        print("WARNING: legacy controls v1 does not drain an already admitted audio callback. "
+              "audio-v2 requires its own install and explicit version selection; see AUDIO_HOLD.md.", flush=True)
     directory = build.contained(workspace, workspace / "packs/launches" / uuid.uuid4().hex)
     directory.mkdir(parents=True)
     record = {"started_at": build.now(), "status": "preparing", "disc": identity,
               "runtime": installed["executable"], "source_revision": installed["source_revision"],
               "adapter_fingerprint": installed["adapter_fingerprint"],
-              "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root)}
+              "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root),
+              "tooling_dirty": bool(pc.git("status", "--porcelain", cwd=root))}
     record["profile"] = policy
     record["controls_pause"] = {"requested": controls_pause,
                                 "version": version if controls_pause else None,
+                                "audio_scope": ("consumer admission; device buffering/audibility unverified"
+                                                if controls_pause and version == "audio-v2" else
+                                                "legacy/no consumer-admission guarantee"),
                                 "acknowledged_hold": "not inferred from launch request",
                                 "fingerprint": installed.get("controls_fingerprint")}
     receipt = directory / "receipt.json"
