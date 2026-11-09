@@ -8,6 +8,25 @@ tests nor these sampled native controls prove a full machine or campaign.
 
 ## Explicit installation and launch
 
+Version selection is additive: existing commands and installed receipts continue
+to mean **v1**. Its fingerprint, source, executable and private directory are
+preserved. The new **audio-v2** recipe has synthetic coexistence/refusal controls;
+its exact public build/runtime validation is still pending at this implementation
+boundary. Do not call a private diagnostic build an installed audio-v2 result.
+
+```powershell
+python pc.py install-controls-pause --workspace-name retail-setup-v2 --version audio-v2
+python pc.py run --workspace-name retail-setup-v2 --iso "G:\path\God Hand (USA).iso" --profile enhanced --controls-pause --controls-pause-version audio-v2
+```
+
+audio-v2 lives in `controls-audio-v2/`, with a separate pointer, source worktree,
+executable/PDB and composite **17-file** manifest. v1 remains in `controls/` with
+its original 16-file manifest, including older receipts without a version field.
+No pointer or previous variant is overwritten. Omitting the pause flag selects
+the baseline; omitting the version while requesting pause still selects v1.
+A version argument without `--controls-pause`, or any pause with Original, is
+refused before runtime/disc access. See [the audio contract](AUDIO_HOLD.md).
+
 Prerequisite: a successful personal USA retail ISO setup and `install-packs` in
 the same workspace, with the pinned source and recorded executable unchanged.
 Windows/MSVC and the previously recorded setup environment are required.

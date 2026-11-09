@@ -21,13 +21,27 @@ MODIFIED = {PREFIX + name for name in (
     "Kernel/EeScheduler.cpp", "ps2_runtime.cpp", "ps2_controls_screen.cpp", "ps2_audio.cpp")}
 COPIES = {"adapter/" + name: PREFIX + "godhand_pc_controls/" + name for name in (
     "host_pause.hpp", "controls_probe.hpp", "controls_pause.inc")}
+VERSIONS = ("v1", "audio-v2")
+AUDIO_COPIES = dict(COPIES)
+del AUDIO_COPIES["adapter/controls_pause.inc"]
+AUDIO_COPIES.update({"adapter/audio_controls_pause.inc": PREFIX + "godhand_pc_controls/controls_pause.inc",
+                     "adapter/audio_activity.hpp": PREFIX + "godhand_pc_controls/audio_activity.hpp"})
 
 
-def integration(root):
-    recipe = json.loads((Path(root) / "adapter/controls_integration.json").read_text(encoding="utf-8"))
+def layer_name(version):
+    build.require(version in VERSIONS, "Unknown controls version; choose v1 or audio-v2")
+    return "controls" if version == "v1" else "controls-audio-v2"
+
+
+def integration(root, version="v1"):
+    layer_name(version)
+    filename = "controls_integration.json" if version == "v1" else "audio_controls_integration.json"
+    copies = COPIES if version == "v1" else AUDIO_COPIES
+    recipe = json.loads((Path(root) / "adapter" / filename).read_text(encoding="utf-8"))
     build.require(recipe["schema"] == 1 and recipe["upstream_revision"] == pc.load_pin(root)["revision"] and
+                  recipe.get("version", "v1") == version and
                   len(recipe["files"]) == len(MODIFIED) and
-                  {item["path"] for item in recipe["files"]} == MODIFIED and recipe["copies"] == COPIES,
+                  {item["path"] for item in recipe["files"]} == MODIFIED and recipe["copies"] == copies,
                   "Unreviewed controls integration profile/paths")
     return recipe
 
@@ -35,7 +49,7 @@ def integration(root):
 def fingerprint(root, recipe):
     data = json.dumps(recipe, sort_keys=True, separators=(",", ":")).encode()
     data += packs.fingerprint(root, packs.integration(root)).encode()
-    for path in sorted(COPIES):
+    for path in sorted(recipe["copies"]):
         data += path.encode() + b"\0" + packs.normalized((Path(root) / path).read_bytes())
     return packs.sha(data)
 
@@ -45,7 +59,7 @@ def plan_sources(source, root, recipe):
     for item in recipe["files"]:
         path = build.contained(source, Path(source) / item["path"])
         planned[path] = packs.transform(path.read_bytes(), item)
-    for own, relative in COPIES.items():
+    for own, relative in recipe["copies"].items():
         path = build.contained(source, Path(source) / relative)
         build.require(not path.exists(), "Controls destination already exists; preserve/review it")
         planned[path] = packs.normalized((Path(root) / own).read_bytes())
@@ -65,23 +79,25 @@ def baseline_identity(record):
     return {key: record[key] for key in ("source_revision", "adapter_fingerprint", "executable")}
 
 
-def verified_install(root, name):
+def verified_install(root, name, version="v1"):
+    layer_id = layer_name(version)
     base = packs.verified_install(root, name)
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace / "controls")
+    layer = build.contained(workspace, workspace / layer_id)
     pointer = json.loads((layer / "installed.json").read_text(encoding="utf-8"))
     run_id = pointer["run"]
     build.require(type(run_id) is str and re.fullmatch(r"[a-f0-9]{32}", run_id), "Invalid controls run pointer")
     run = build.contained(layer, layer / "runs" / run_id)
     record = json.loads((run / "receipt.json").read_text(encoding="utf-8"))
-    recipe = integration(root)
+    recipe = integration(root, version)
     build.require(record["status"] == "installed-not-runtime-validated" and record["baseline_restored"] and
+                  record.get("controls_version", "v1") == version and
                   record["controls_fingerprint"] == fingerprint(root, recipe) and
                   record["base_identity"] == baseline_identity(base), "Controls install/base version differs")
     source = build.contained(run, run / "source")
     pc.inspect_checkout(source, base["source_revision"], record["source_revision"])
     changed = set(pc.git("diff", "--name-only", base["source_revision"], record["source_revision"], cwd=source).splitlines())
-    build.require(changed == MODIFIED | set(COPIES.values()), "Unreviewed controls derived source paths")
+    build.require(changed == MODIFIED | set(recipe["copies"].values()), "Unreviewed controls derived source paths")
     # Recompute expected content from the *verified operational base*, not just
     # arbitrary hashes in the variant receipt. This also checks regeneration drift.
     planned = plan_sources(workspace / "upstream", root, recipe)
@@ -126,11 +142,12 @@ def restore_baseline(source, base, run, original_branch):
     run.save()
 
 
-def install(root, name):
+def install(root, name, version="v1"):
+    layer_id = layer_name(version)
     root = Path(root).resolve()
     build.require(os.name == "nt", "Controls variant currently requires Windows/MSVC")
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace / "controls")
+    layer = build.contained(workspace, workspace / layer_id)
     layer.mkdir(exist_ok=True)
     locks, run, mutated, terminal = [], None, False, True
     token = json.dumps({"pid": os.getpid(), "token": uuid.uuid4().hex, "at": build.now()})
@@ -142,12 +159,12 @@ def install(root, name):
             locks.append(path)
         build.require(not (workspace / "packs/install.lock").exists(), "Pack installer requires inspection")
         if (layer / "installed.json").exists():
-            return verified_install(root, name)
+            return verified_install(root, name, version)
         build.require(not (layer / "attempt.json").exists(), "Previous controls attempt requires review; retained evidence")
         tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
         build.require("godhand.exe" not in tasks.lower(), "Close the game before building a variant")
         base = packs.verified_install(root, name)
-        recipe = integration(root)
+        recipe = integration(root, version)
         source = build.contained(workspace, workspace / "upstream")
         planned = plan_sources(source, root, recipe)
         setup = json.loads(Path(base["setup_receipt"]).read_text(encoding="utf-8"))
@@ -155,6 +172,7 @@ def install(root, name):
         original_branch = pc.git("rev-parse", "--abbrev-ref", "HEAD", cwd=source)
         run = build.Run(layer)
         run.record.update(base_identity=baseline_identity(base), baseline_restored=False,
+                          controls_version=version,
                           adapter_fingerprint=base["adapter_fingerprint"], controls_fingerprint=fingerprint(root, recipe),
                           tooling_revision=pc.git("rev-parse", "HEAD", cwd=root),
                           tooling_dirty=bool(pc.git("status", "--porcelain", cwd=root)),
@@ -168,7 +186,7 @@ def install(root, name):
         run.save()
         with (layer / "attempt.json").open("x", encoding="utf-8") as stream:
             json.dump({"receipt": str(run.directory / "receipt.json")}, stream)
-        branch = "codex/controls-pause-" + run.directory.name
+        branch = "codex/controls-" + version + "-" + run.directory.name
         pc.git("checkout", "-b", branch, cwd=source)
         mutated = True
         for path, data in planned.items():
@@ -208,7 +226,7 @@ def install(root, name):
         run.save()
         with (layer / "installed.json").open("x", encoding="utf-8") as stream:
             json.dump({"run": run.directory.name}, stream, indent=2)
-        return verified_install(root, name)
+        return verified_install(root, name, version)
     except BaseException as error:
         if run:
             terminal = run.child is None or run.child.poll() is not None

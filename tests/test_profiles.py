@@ -58,6 +58,22 @@ class ProfileTests(unittest.TestCase):
             pc.main()
         self.assertEqual(launch.call_args.kwargs['profile'], 'enhanced')
 
+    def test_cli_controls_version_is_explicit_without_changing_default(self):
+        for args, expected in [([], None), (['--controls-pause', '--controls-pause-version', 'audio-v2'], 'audio-v2')]:
+            with patch.object(sys, 'argv', ['pc.py', 'run', '--iso', 'invented.iso',
+                                           '--profile', 'enhanced'] + args), \
+                 patch.object(launch_packs, 'launch', return_value={}) as launch, patch('builtins.print'):
+                pc.main()
+            self.assertEqual(launch.call_args.kwargs['controls_pause_version'], expected)
+
+    def test_cli_install_version_routes_to_separate_layer(self):
+        import controls_pause
+        for args, expected in [([], 'v1'), (['--version', 'audio-v2'], 'audio-v2')]:
+            with patch.object(sys, 'argv', ['pc.py', 'install-controls-pause'] + args), \
+                 patch.object(controls_pause, 'install', return_value={}) as install, patch('builtins.print'):
+                pc.main()
+            self.assertEqual(install.call_args.args[2], expected)
+
     def test_cli_invalid_profile_refused(self):
         result = subprocess.run([sys.executable, str(pc.ROOT/'pc.py'), 'run',
                                  '--iso', 'invented.iso', '--profile', 'unknown'],

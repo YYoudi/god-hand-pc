@@ -101,10 +101,10 @@ class ControlsInstallTests(unittest.TestCase):
             self.exe.with_suffix(".pdb").write_bytes(b"Invented derived symbols.")
         run.save()
 
-    def install(self, step=None):
+    def install(self, step=None, version="v1"):
         with patch.object(c, "os", self.platform), patch.object(c.subprocess, "check_output", side_effect=self.output), \
              patch.object(c.build.Run, "step", autospec=True, side_effect=step or self.fake_build):
-            return c.install(self.root, "retail-fixture")
+            return c.install(self.root, "retail-fixture", version)
 
     def assert_baseline(self):
         self.assertEqual(c.packs.verified_install(self.root, "retail-fixture"), self.base)
@@ -174,6 +174,52 @@ class ControlsInstallTests(unittest.TestCase):
             finally: path.write_bytes(raw)
         self.assert_baseline()
 
+    def audio_recipe(self):
+        module = SimpleNamespace(MODIFIED=c.MODIFIED, COPIES=c.AUDIO_COPIES)
+        recipe = self.make_recipe(module, "adapter/audio_controls_integration.json",
+                                  b"// Invented audio admission integration.\n")
+        recipe["version"] = "audio-v2"
+        (self.root / "adapter/audio_controls_integration.json").write_text(json.dumps(recipe))
+        self.commit(self.root)
+
+    def test_versioned_installs_coexist_and_never_overwrite_legacy_v1(self):
+        v1 = self.install()
+        legacy_receipt = Path(v1["receipt"])
+        # The actual older v1 receipt predates the explicit version field.
+        legacy = json.loads(legacy_receipt.read_text())
+        del legacy["controls_version"]
+        legacy_receipt.write_text(json.dumps(legacy))
+        self.audio_recipe()
+        v2 = self.install(version="audio-v2")
+        self.assert_baseline()
+        self.assertEqual(v2["controls_version"], "audio-v2")
+        self.assertEqual(len(v2["source_files"]), 17)
+        self.assertEqual(c.verified_install(self.root, "retail-fixture")["executable"], v1["executable"])
+        self.assertNotEqual(v1["executable"]["path"], v2["executable"]["path"])
+        self.assertEqual(json.loads(legacy_receipt.read_text()), legacy)
+        self.assertTrue((self.workspace / "controls/installed.json").is_file())
+        self.assertTrue((self.workspace / "controls-audio-v2/installed.json").is_file())
+        again = self.install(step=lambda *args: self.fail("Must not rebuild"), version="audio-v2")
+        self.assertEqual(again["source_revision"], v2["source_revision"])
+        # Explicitly changed v2 metadata never qualifies as v1 or a silent upgrade.
+        receipt = Path(v2["receipt"]); data = json.loads(receipt.read_text())
+        data["controls_version"] = "v1"; receipt.write_text(json.dumps(data))
+        with self.assertRaisesRegex(ValueError, "install/base version"):
+            c.verified_install(self.root, "retail-fixture", "audio-v2")
+        c.verified_install(self.root, "retail-fixture")
+
+    def test_unknown_version_refuses_before_creating_storage(self):
+        for version in ("future", "../v1", "", None, 1):
+            with self.subTest(version=version), self.assertRaisesRegex(ValueError, "Unknown controls version"):
+                c.install(self.root / "not-created", "retail-fixture", version)
+        self.assertFalse((self.root / "not-created").exists())
+
+    def test_public_audio_recipe_has_extra_original_consumer_barrier_only(self):
+        recipe = c.integration(pc.ROOT, "audio-v2")
+        self.assertEqual(recipe["version"], "audio-v2")
+        self.assertEqual(set(recipe["copies"]), set(c.AUDIO_COPIES))
+        self.assertEqual(len(recipe["files"]), 4)
+
     def test_recipe_drift_wrong_paths_and_last_preimage_fail_without_writes(self):
         first = self.source / self.recipe["files"][0]["path"]
         last = self.source / self.recipe["files"][-1]["path"]
@@ -202,8 +248,20 @@ class ControlsInstallTests(unittest.TestCase):
         self.assertEqual(profiles.resolve("enhanced", controls_pause=True)["requested_extensions"],
                          ["experimental-controls-pause"])
 
+    def test_explicit_version_needs_pause_and_enhanced_before_runtime(self):
+        for pause, profile in ((False, "enhanced"), (True, "original")):
+            with patch.object(c, "verified_install") as check, self.assertRaises(ValueError):
+                launch_packs.launch(self.root, "retail-fixture", "absent", profile=profile,
+                                   controls_pause=pause, controls_pause_version="audio-v2")
+            check.assert_not_called()
+        self.assertEqual(profiles.resolve("enhanced", controls_pause=True,
+                         controls_pause_version="audio-v2")["requested_extensions"],
+                         ["experimental-controls-pause-audio-v2"])
+
     def test_full_launcher_selects_variant_only_on_request_and_never_leaks_probes(self):
         variant = self.install()
+        audio = dict(variant, source_revision="2" * 40, controls_version="audio-v2",
+                     executable=dict(variant["executable"], path=str(self.root / "invented-audio-v2.exe")))
         calls = []
         def popen(command, **kwargs):
             calls.append((command, kwargs))
@@ -217,13 +275,15 @@ class ControlsInstallTests(unittest.TestCase):
         with patch.object(launch_packs, "os", platform), patch.object(launch_packs, "subprocess", native), \
              patch.object(pc, "git", return_value="1" * 40), \
              patch.object(c.packs, "verified_install", return_value=self.base) as base_check, \
-             patch.object(c, "verified_install", return_value=variant) as variant_check:
-            for requested in (False, True):
+             patch.object(c, "verified_install", side_effect=lambda root, name, version:
+                          audio if version == "audio-v2" else variant) as variant_check:
+            for requested, version in ((False, None), (True, None), (True, "audio-v2")):
                 receipt = launch_packs.launch(self.root, "retail-fixture",
                     self.workspace / "invented-disc.txt", headless=True, seconds=10,
-                    fresh_user_data=True, profile="enhanced", controls_pause=requested)
+                    fresh_user_data=True, profile="enhanced", controls_pause=requested,
+                    controls_pause_version=version)
                 command, kwargs = calls[-1]
-                expected = variant if requested else self.base
+                expected = (audio if version == "audio-v2" else variant) if requested else self.base
                 self.assertEqual(command[0], expected["executable"]["path"])
                 self.assertEqual(receipt["source_revision"], expected["source_revision"])
                 env = kwargs["env"]
@@ -232,9 +292,11 @@ class ControlsInstallTests(unittest.TestCase):
                 self.assertEqual(env["GODHAND_CONTROLS_SELFTEST"], "0")
                 self.assertNotIn("PS2X_STATE_LOAD_AT", env)
                 self.assertEqual(receipt["controls_pause"]["requested"], requested)
+                self.assertEqual(receipt["controls_pause"]["version"], (version or "v1") if requested else None)
                 self.assertEqual(receipt["controls_pause"]["acknowledged_hold"], "not inferred from launch request")
             self.assertEqual(base_check.call_count, 1)
-            self.assertEqual(variant_check.call_count, 1)
+            self.assertEqual(variant_check.call_count, 2)
+            self.assertEqual([call.args[2] for call in variant_check.call_args_list], ["v1", "audio-v2"])
 
 
 class ProbeRoutingTests(unittest.TestCase):

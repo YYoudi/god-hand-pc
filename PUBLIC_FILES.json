@@ -21,6 +21,8 @@
   "TRANSLATION_DIAGNOSTICS.md",
   "USER_DATA.md",
   "adapter/audio_activity.hpp",
+  "adapter/audio_controls_integration.json",
+  "adapter/audio_controls_pause.inc",
   "adapter/bridge.cpp",
   "adapter/bridge.hpp",
   "adapter/controls_integration.json",

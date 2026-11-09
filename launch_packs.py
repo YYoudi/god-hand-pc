@@ -61,8 +61,9 @@ def pack_protocol(iso, manifest, directory, strict=False):
 
 
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
-           capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False):
-    policy = profiles.resolve(profile, pack, strict, controls_pause)
+           capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False,
+           controls_pause_version=None):
+    policy = profiles.resolve(profile, pack, strict, controls_pause, controls_pause_version)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -73,7 +74,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
     workspace = runtime_packs.workspace_path(root, name)
     build.require(not (workspace / "setup.lock").exists() and not (workspace / "packs/install.lock").exists(),
                   "Build/installer lock requires inspection before launch")
-    installed = pause.verified_install(root, name) if controls_pause else runtime_packs.verified_install(root, name)
+    version = controls_pause_version or "v1"
+    installed = pause.verified_install(root, name, version) if controls_pause else runtime_packs.verified_install(root, name)
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
     tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
@@ -86,6 +88,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
               "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root)}
     record["profile"] = policy
     record["controls_pause"] = {"requested": controls_pause,
+                                "version": version if controls_pause else None,
                                 "acknowledged_hold": "not inferred from launch request",
                                 "fingerprint": installed.get("controls_fingerprint")}
     receipt = directory / "receipt.json"

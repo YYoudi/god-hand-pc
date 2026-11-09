@@ -14,8 +14,9 @@ newly reproduced results. Preserve their hashes/provenance and separate licenses
 The full PC goal remains active; migration is not completion of the port.
 No new Rust, delegation, ISO edits, evidence deletion or history rewriting.
 Read CONTROLS_PAUSE.md: the separate opt-in native trial now has bounded early-
-scene/first-fight hold, resume, UI and stop evidence. This is NOT a shipped public
-installer feature or full-machine/campaign proof. Keep baseline1930765/exeeaed174
+scene/first-fight hold, resume, UI and stop evidence. That initial private result
+alone was not public-installer or full-machine/campaign proof; the checked v1
+installation below has distinct later evidence. Keep baseline1930765/exeeaed174
 unchanged, preserve failed/cold trials and the rejected whole-hostTick delay.
 The tested diagnostic delays only injected self-test steps, never input polling.
 Generic Gate tests are not a native readiness oracle; keep hardware/audio and
@@ -30,6 +31,16 @@ Native receipts: .local/public-controls-native-2026-11-09/validation.json and
 .local/public-controls-policy-2026-11-09/validation.json. Keep PC08 in progress:
 focus/physical held input, audible audio, more scenes/peripherals and true saves
 remain separate gates. No automatic enable/default policy change.
+
+Read AUDIO_HOLD.md before changing audio ownership. The naked v1 callback state
+check admits a possible pause-boundary race; generic activity admission tests
+must not be sold as native or audible proof. Separate versioned audio-v2 tooling
+is implemented with synthetic coexistence/refusal controls, but its exact public
+build/runtime remains pending. Keep v1 native files/fingerprint immutable and
+preserved; no automatic upgrade or default-policy change. Private forced callback
+controls are under .local/audio-boundary-2026-11-09; poll actual handles, not logs
+as a reason to restart. Queue counters, audible output and device buffering are
+different gates; no raw PCM/game audio in public or CI.
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.

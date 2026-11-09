@@ -119,6 +119,8 @@ def main():
     install.add_argument("--workspace-name", default="retail-setup")
     pause = sub.add_parser("install-controls-pause", help="Build a separate checked experimental host-pause variant")
     pause.add_argument("--workspace-name", default="retail-setup")
+    pause.add_argument("--version", choices=("v1", "audio-v2"), default="v1",
+                       help="Separate versioned install; does not overwrite or implicitly upgrade v1")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -133,6 +135,8 @@ def main():
     play.add_argument("--pad-script")
     play.add_argument("--controls-pause", action="store_true",
                       help="Explicit experimental host pause; requires enhanced and install-controls-pause")
+    play.add_argument("--controls-pause-version", choices=("v1", "audio-v2"),
+                      help="Explicit version selection; requires --controls-pause (default v1 unchanged)")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -156,12 +160,13 @@ def main():
         result = install(ROOT, args.workspace_name)
     elif args.command == "install-controls-pause":
         from controls_pause import install
-        result = install(ROOT, args.workspace_name)
+        result = install(ROOT, args.workspace_name, args.version)
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
                         args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script,
-                        profile=args.profile, controls_pause=args.controls_pause)
+                        profile=args.profile, controls_pause=args.controls_pause,
+                        controls_pause_version=args.controls_pause_version)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():
