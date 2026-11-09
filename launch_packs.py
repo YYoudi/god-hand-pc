@@ -8,6 +8,7 @@ import uuid
 
 import pc
 import resources
+import profiles
 import runtime_packs
 import setup_pc as build
 
@@ -44,7 +45,8 @@ def pack_protocol(iso, manifest, directory, strict=False):
 
 
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
-           capture=False, fresh_user_data=False, pad_script=None):
+           capture=False, fresh_user_data=False, pad_script=None, profile="original"):
+    policy = profiles.resolve(profile, pack, strict)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -66,6 +68,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
               "runtime": installed["executable"], "source_revision": installed["source_revision"],
               "adapter_fingerprint": installed["adapter_fingerprint"],
               "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root)}
+    record["profile"] = policy
     receipt = directory / "receipt.json"
     def save():
         receipt.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")

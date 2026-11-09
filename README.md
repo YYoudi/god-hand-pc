@@ -11,7 +11,15 @@ the prototype is a different research profile, never silently accepted as retail
 Generated game code, discs, ELFs, extracted assets, saves and executables remain
 local. The project license covers its original tooling, not the game or its art.
 
-## Current commands (Python 3.11+, Git)
+## Active direction
+
+Continue LasVola toward a faithful original PC baseline, then add reversible PC
+features without rewriting the entire engine. Read [the medium-term gates](DIRECTION.md),
+[extension architecture](ARCHITECTURE.md) and [Original/Enhanced policies](PROFILES.md).
+The default launch refuses packs; use `--profile enhanced` to opt into one.
+This is not yet an in-game settings menu or a complete accuracy claim.
+
+## Bootstrap commands (Python 3.11+, Git)
 
 ```powershell
 python pc.py fetch
@@ -50,7 +58,7 @@ magenta ground replacement renders, disabling it restores original assets, and a
 invalid pack automatically falls back to the byte-identical sampled original PNG.
 Use `python pc.py install-packs`, then create the game-free example with
 `python make_example_pack.py --output .local/example-pack` and launch with
-`python pc.py run --iso "G:\path\God Hand (USA).iso" --pack .local/example-pack/pack.json`.
+`python pc.py run --iso "G:\path\God Hand (USA).iso" --profile enhanced --pack .local/example-pack/pack.json`.
 See the contract for workspace selection, prerequisites and exact limits.
 HD texture dimensions, full playthrough and genuine game-save round trip remain
 open. The personal disc is verified before every launch.

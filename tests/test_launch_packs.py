@@ -82,7 +82,8 @@ class LaunchTests(unittest.TestCase):
              patch.object(l.pc, "verify_disc", side_effect=ValueError("invented wrong disc")), \
              patch.object(l, "pack_protocol") as pack, patch.object(l.subprocess, "Popen") as child:
             with self.assertRaises(ValueError):
-                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10)
+                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10,
+                         profile="enhanced")
             pack.assert_not_called()
             child.assert_not_called()
 
@@ -91,7 +92,8 @@ class LaunchTests(unittest.TestCase):
              patch.object(l.runtime_packs, "verified_install", side_effect=ValueError("invented wrong runtime")), \
              patch.object(l, "pack_protocol") as pack, patch.object(l.subprocess, "Popen") as child:
             with self.assertRaises(ValueError):
-                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10)
+                l.launch(self.root, "retail-test", self.disc, self.manifest, headless=True, seconds=10,
+                         profile="enhanced")
             pack.assert_not_called()
             child.assert_not_called()
 

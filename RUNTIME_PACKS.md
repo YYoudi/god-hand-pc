@@ -11,7 +11,7 @@ After the successful personal-disc setup, install the original bridge and relink
 ```powershell
 python pc.py install-packs --workspace-name retail-setup
 python make_example_pack.py --output .local/example-pack
-python pc.py run --workspace-name retail-setup --iso "G:\path\God Hand (USA).iso" --pack .local/example-pack/pack.json
+python pc.py run --workspace-name retail-setup --iso "G:\path\God Hand (USA).iso" --profile enhanced --pack .local/example-pack/pack.json
 ```
 
 Installation checks and backs up the baseline first, then creates a private
@@ -33,6 +33,10 @@ For a bounded hidden test use `--headless --seconds 220 --capture --fresh-user-d
 This keeps test cards separate and mutes audio. Optional `--pad-script` is an
 upstream input-test string, not a physical-controller test or an instruction to
 attempt autonomous combat completion. Captures/logs stay private per run.
+
+Pack runs now require explicit `--profile enhanced`; the default Original policy
+refuses packs before runtime/disc checks. See [profile policy](PROFILES.md). This
+is launch isolation, not a new in-game menu or certified accuracy mode.
 
 ## Scope and provenance
 

@@ -23,7 +23,19 @@ artifact paths, pending process identities and the next falsifiable experiment
 in ignored local checkpoints. Poll actual jobs; a timeout is not a terminal
 build result and does not justify restarting a live job.
 
-## Development direction
+## Execution direction — owner decision, 2026-11-09
+
+Read DIRECTION.md, ARCHITECTURE.md and PROFILES.md. Continue the tested LasVola
+base toward a faithful original PC baseline, then reversible enhancements; no
+whole-engine Rust/Bevy rewrite. Real Save/Load, physical input/audio and broader
+reference validation remain gates, not completed features. Keep Original default
+and refuse packs there; Enhanced permits only explicitly implemented extensions.
+No FPS unlock, HD dimensions, modern lighting or multiplayer claims without
+their own experiments. Keep durable original replacements out of generated code.
+Prototype mining is bounded private research, not a retail/debug-menu result.
+Preserve snapshots, failed hypotheses and paused MIT WIP; do not delegate.
+
+## Proven foundation and remaining limits
 
 Prioritize reproducible personal-disc setup and bounded named-resource
 replacement with original-asset fallback. The corrected personal-disc recipe has been built and observed through a

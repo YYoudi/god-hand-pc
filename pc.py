@@ -8,6 +8,7 @@ import subprocess
 import uuid
 
 import resources
+import profiles
 
 ROOT = Path(__file__).resolve().parent
 
@@ -120,6 +121,8 @@ def main():
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
     play.add_argument("--pack", type=Path)
+    play.add_argument("--profile", choices=profiles.NAMES, default="original",
+                      help="Original refuses packs; enhanced explicitly permits reviewed extensions")
     play.add_argument("--strict-pack", action="store_true")
     play.add_argument("--headless", action="store_true")
     play.add_argument("--seconds", type=int)
@@ -150,7 +153,8 @@ def main():
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
-                        args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script)
+                        args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script,
+                        profile=args.profile)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():
