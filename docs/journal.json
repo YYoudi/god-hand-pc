@@ -1015,6 +1015,17 @@
     {
       "kind": "journal",
       "date": "2026-11-09",
+      "captured_at": "2026-11-09T18:01:01.495Z",
+      "path": "captures/7110393a4e3761f7e6e07f25f139354052318873ec8bf1af2f6fe087be2c9ac6.jpg",
+      "sha256": "7110393a4e3761f7e6e07f25f139354052318873ec8bf1af2f6fe087be2c9ac6",
+      "reviewed": true,
+      "revision": "39aa38a5eda65ba04e68c63de1ba0f7032e9bfdf",
+      "caption": "Larger-texture trial - actual published journal excerpt",
+      "source": "Unretouched actual published #journal screenshot in the current default/narrow browser viewport. Title, summary and beginning of the article only, not a full-page capture or HD/fidelity proof. No viewport override, resizing, crop, game imagery, game-derived reference data or desktop pixels. Full evidence and limitations remain in the article/report; renderer originals are separately registered as a comparison."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-09",
       "captured_at": "2026-11-09T17:07:32.634Z",
       "path": "captures/f8ae4191e89c08a7586752b257dc41235312ea3f1296fe69dc4cf4edd09ae71b.jpg",
       "sha256": "f8ae4191e89c08a7586752b257dc41235312ea3f1296fe69dc4cf4edd09ae71b",
