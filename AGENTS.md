@@ -33,14 +33,23 @@ focus/physical held input, audible audio, more scenes/peripherals and true saves
 remain separate gates. No automatic enable/default policy change.
 
 Read AUDIO_HOLD.md before changing audio ownership. The naked v1 callback state
-check admits a possible pause-boundary race; generic activity admission tests
-must not be sold as native or audible proof. Separate versioned audio-v2 tooling
-is implemented with synthetic coexistence/refusal controls, but its exact public
-build/runtime remains pending. Keep v1 native files/fingerprint immutable and
+check now has a reproduced forced pause-boundary race in the actual callback;
+generic tests alone are not native or audible proof. Separate audio-v2 tooling
+now has clean public build, actual UI/stop/pack and startup rollback controls.
+Its corrected forced native case freezes a nonempty queue; the unforced control
+had an EMPTY queue and failed the extra nonempty assertion. Preserve that failure
+and do not claim natural nonempty/audio/device coverage. Keep v1 files/fingerprint immutable and
 preserved; no automatic upgrade or default-policy change. Private forced callback
 controls are under .local/audio-boundary-2026-11-09; poll actual handles, not logs
 as a reason to restart. Queue counters, audible output and device buffering are
 different gates; no raw PCM/game audio in public or CI.
+Use explicit --version audio-v2 / --controls-pause-version audio-v2 to select it;
+v1/default Original still mean their preserved old binaries, not a silent upgrade.
+The corrected public source is1ded3f33/exe0b2d0ca7, with17 checked source files.
+Read .local/public-audio-v2-policy-retry-2026-11-09/validation.json: initial policy
+failed on preflight decoding before native launch; shared raw-byte CSV inventory
+and a live concurrent-launch refusal now pass. Exact transient encoding cause is
+not reproduced. No all-Windows, audible-quality or full-campaign claim.
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.

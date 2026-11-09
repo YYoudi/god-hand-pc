@@ -10,9 +10,10 @@ tests nor these sampled native controls prove a full machine or campaign.
 
 Version selection is additive: existing commands and installed receipts continue
 to mean **v1**. Its fingerprint, source, executable and private directory are
-preserved. The new **audio-v2** recipe has synthetic coexistence/refusal controls;
-its exact public build/runtime validation is still pending at this implementation
-boundary. Do not call a private diagnostic build an installed audio-v2 result.
+preserved. The new **audio-v2** recipe has synthetic coexistence/refusal controls
+AND a separately reproduced clean build, native UI hold/resume/stop, public pack
+and startup rollback controls. It remains experimental, not an audible-output or
+full-machine result. Do not relabel the private diagnostic as the public build.
 
 ```powershell
 python pc.py install-controls-pause --workspace-name retail-setup-v2 --version audio-v2
@@ -26,6 +27,8 @@ No pointer or previous variant is overwritten. Omitting the pause flag selects
 the baseline; omitting the version while requesting pause still selects v1.
 A version argument without `--controls-pause`, or any pause with Original, is
 refused before runtime/disc access. See [the audio contract](AUDIO_HOLD.md).
+The launcher warns when v1 is explicitly requested without the audio-v2 version:
+v1 does not drain an already-admitted consumer. No automatic upgrade occurs.
 
 Prerequisite: a successful personal USA retail ISO setup and `install-packs` in
 the same workspace, with the pinned source and recorded executable unchanged.
@@ -98,7 +101,7 @@ Actual C++ controls verify that field-delay routing requires both a diagnostic
 flag and a nonzero self-test script; only injected test steps are delayed, never
 ordinary host/input/focus polling. These tests use no game inputs.
 
-## Reproduced native controls
+## Reproduced v1 native controls (retained)
 
 The exact clean installer tooling revision was
 `691388c6555b98109c447b4a8b0da0d7030d3307` (later tests/docs do not change its
@@ -140,3 +143,7 @@ default selection gates above pass locally. Additional focus/held physical input
 audible audio/queue transitions, peripherals,
 more scenes and genuine game Save → exit → Load remain open. This is not a full
 PC settings menu, HD support, FPS unlock or full-game accuracy claim.
+For audio-v2, the exact installed native source is
+`1ded3f337a7e9a711cf24521e81eeca10ce7abb4`; its native and retained failed
+controls are described separately in AUDIO_HOLD.md. A natural nonempty-buffer
+hold and audible/device-buffer transitions are still unproven.

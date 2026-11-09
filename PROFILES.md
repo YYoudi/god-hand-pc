@@ -42,3 +42,12 @@ silently enabled through an inherited environment or INI. See
 has now linked and passed bounded native UI hold/resume/stop and public pack/
 default-restoration controls. It remains experimental, not a complete settings
 menu, hardware/audio result or full-machine/campaign fidelity claim.
+
+The new audio-v2 consumer-admission layer requires both explicit installation
+`install-controls-pause --version audio-v2` and launch
+`--profile enhanced --controls-pause --controls-pause-version audio-v2`.
+Without the version, a pause request still selects preserved v1 and warns about
+its admitted-callback boundary. Without a pause request, Original/Enhanced keep
+the unchanged baseline. A version without its pause flag is refused, never
+silently ignored. The actual selected version, fingerprint, executable and
+tooling cleanliness are recorded separately from an acknowledged native hold.

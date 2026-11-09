@@ -37,6 +37,14 @@ experimental sampled evidence, not full-machine/campaign fidelity. Original
 still rejects this host extension; future upstream changes need fresh preimage,
 regeneration/build and behavior controls, not automatic replay.
 
+Controls versions are additive private layers: legacy v1 retains its original
+16-file identity, audio-v2 has17 files and an explicit separate installed pointer.
+The existing no-version flag does not change meaning; audio-v2 requires explicit
+installation/selection. Synthetic coexistence/drift and actual native startup
+rollback controls cover that boundary. The activity barrier closes one reproduced
+admitted-consumer race, not producer/device quiescence or audible quality; see
+[the retained native controls](AUDIO_HOLD.md).
+
 ## Future readable function replacements
 
 Before adding one: record the disc/revision, provenance, verified function or

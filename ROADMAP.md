@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Validate focus/release and held-input/audio transitions across the experimental controls hold, then broaden representative scene coverage; keep Original default and the preserved baseline. Do not treat private snapshots or preferences as game saves.
+Target a natural nonempty audio-buffer hold and focus/held-input release with explicit evidence; then broaden representative scenes. Preserve baseline and both opt-in versions; hardware/audible output and genuine game saving remain separate gates.
 
 ## M8 — Active: verified original PC baseline
 
@@ -18,7 +18,7 @@ A reproducible native original-game baseline with explicit fidelity and usabilit
 - **OB05 Organize human campaign validation — Planned:** Legitimate saves and human playthrough checklist, progression/save regression matrix; no autonomous level-beating loops or untested full-game claim.
 - **PC07 Remove inherited timeout and preserve persistent controls — Verified for stated scope:** Explicit unlimited normal-launch intent; bounded hidden policy retained. Workspace controls with byte-copy adoption/reuse and isolated diagnostics; guarded native UI edit/save/new-process reload; timer120s/explicit-zero controls; public220s scene regression and unchanged originals. No hardware/game-save claim.
 - **OB06 Bound retained diagnostic with native negative controls — Verified for stated scope:** Retained original error/counter and unchanged native build; exact generated C++ body/entry audit and compiler reachability checks under both return modes. Three original ELF controls and four native return/throw outcomes; clean committed public recipe and portable synthetic CI. Not full guest-PC/ISA/game coverage.
-- **PC08 Make the native controls pause boundary reproducible — In progress:** Exact-preimage public variant installer with source/executable/PDB preservation and composite drift checks, targeted native hold/resume/UI/stop, separate public opt-in+pack/default controls and original-scene byte equality now reproduced. Keep in progress for focus, held physical input, audio transitions and additional peripherals/scenes; not full-machine or campaign fidelity.
+- **PC08 Make the native controls pause boundary reproducible — In progress:** Checked coexisting v1/audio-v2 source/executable/PDB preservation and explicit version selection; original-scene, UI/stop/pack/startup rollback controls. Reproduced admitted-consumer race and corrected forced nonempty-queue hold. Remains in progress: unforced nonempty control had empty queue; natural buffered holds, focus/held physical input, audible/device transitions, more peripherals/scenes remain unverified. Not full-machine/campaign proof.
 
 ## M9 — Active architecture: maintainable, reversible PC enhancements
 
