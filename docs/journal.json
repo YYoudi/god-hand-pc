@@ -924,6 +924,17 @@
   ],
   "captures": [
     {
+      "kind": "journal",
+      "date": "2026-11-09",
+      "captured_at": "2026-11-09T16:45:47.533378+00:00",
+      "path": "captures/220be150394ddbb7baea7867a5cb588dc3201371a4fed4a0ce7d8460988f2670.jpg",
+      "sha256": "220be150394ddbb7baea7867a5cb588dc3201371a4fed4a0ce7d8460988f2670",
+      "reviewed": true,
+      "revision": "34fc1bb77fb0c71709d7a8c6475d12f2e95c6528",
+      "caption": "Audio ownership and explicit audio-v2 - actual journal excerpt",
+      "source": "Unretouched actual published #journal screenshot in the current narrow/default browser viewport. Title, summary and beginning of article only, not a full-page or audio/visual fidelity proof. No viewport override, resize, crop, game imagery, raw PCM, generated code or desktop pixels. Full article and failed controls remain readable on the site."
+    },
+    {
       "date": "2026-11-09",
       "path": "captures/3fb4efcf6682f1cdd11b1e40977d0db79f5821d1f910f83dd33d0309e7966255.jpg",
       "sha256": "3fb4efcf6682f1cdd11b1e40977d0db79f5821d1f910f83dd33d0309e7966255",
