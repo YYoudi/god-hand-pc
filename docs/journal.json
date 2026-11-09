@@ -1118,6 +1118,17 @@
     {
       "kind": "journal",
       "date": "2026-11-09",
+      "captured_at": "2026-11-09T19:40:16.366Z",
+      "path": "captures/a65afd46f0811d6928f9569ac0c2f571bbbe5549dd3e3f413cc16eaa1b7dade7.jpg",
+      "sha256": "a65afd46f0811d6928f9569ac0c2f571bbbe5549dd3e3f413cc16eaa1b7dade7",
+      "reviewed": true,
+      "revision": "ffd060bd2102ed286c2cfd41c032362b66e1fbd0",
+      "caption": "Matcher timing - actual published journal excerpt",
+      "source": "Unretouched actual published #journal screenshot in the existing default narrow browser viewport. Title, summary and first part of the article only, not a full-page capture or performance/fidelity proof. No viewport override, crop, resizing, game imagery or private desktop. Full native evidence, workload overlap and scope limitations remain in the article/report. No new renderer comparison is invented for this nonvisual change."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-09",
       "captured_at": "2026-11-09T19:03:53.250Z",
       "path": "captures/46e52b230998231e1b754ff81408d5897016c1617cd5cdf51bd2564256131fe7.jpg",
       "sha256": "46e52b230998231e1b754ff81408d5897016c1617cd5cdf51bd2564256131fe7",
