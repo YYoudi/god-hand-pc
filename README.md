@@ -34,8 +34,9 @@ Physical input, audible audio and actual game Save/Load remain separate gates.
 The [experimental controls-pause boundary](CONTROLS_PAUSE.md) now has bounded
 native hold/resume/UI/stop evidence; its generic original primitive is public,
 and a [checked opt-in variant installer](CONTROLS_INSTALL.md) is now implemented.
-Its exact public recipe still awaits native build/runtime validation; default
-launch remains the unchanged evaluated executable.
+Its exact public recipe has linked and passed bounded native hold/resume/stop,
+public opt-in/pack and default-restoration controls locally. It is experimental;
+default launch remains the unchanged evaluated executable, not an implicit relink.
 
 ## Bootstrap commands (Python 3.11+, Git)
 

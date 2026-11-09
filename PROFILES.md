@@ -38,5 +38,7 @@ Follow-up: `--profile enhanced --controls-pause` explicitly requests a separate
 experimental host-runtime variant. It requires `install-controls-pause`; Original
 refuses the flag, Enhanced without it retains the baseline, and no host pause is
 silently enabled through an inherited environment or INI. See
-[the implementation/validation boundary](CONTROLS_INSTALL.md). This is not yet
-native validation of the new public recipe or a complete settings-menu feature.
+[the implementation/validation boundary](CONTROLS_INSTALL.md). The exact recipe
+has now linked and passed bounded native UI hold/resume/stop and public pack/
+default-restoration controls. It remains experimental, not a complete settings
+menu, hardware/audio result or full-machine/campaign fidelity claim.

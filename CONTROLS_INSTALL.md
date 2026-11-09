@@ -1,8 +1,10 @@
 # Checked experimental controls-pause variant
 
-9 November 2026. **Implementation awaiting native validation of this exact public
-recipe.** Earlier private evidence is in [CONTROLS_PAUSE.md](CONTROLS_PAUSE.md).
-Portable tests are not a native runtime, full-machine or campaign proof.
+9 November 2026. **Locally built and observed, experimental and opt-in.** The
+exact clean public recipe now reproduces the bounded host-pause experiment in a
+separate variant, while preserving the operational baseline. Earlier private
+evidence is retained in [CONTROLS_PAUSE.md](CONTROLS_PAUSE.md). Neither portable
+tests nor these sampled native controls prove a full machine or campaign.
 
 ## Explicit installation and launch
 
@@ -75,12 +77,47 @@ verification, terminal failure, live-child interruption, unrelated-edit
 preservation, fingerprint/source/executable drift and default policy refusal.
 Actual C++ controls verify that field-delay routing requires both a diagnostic
 flag and a nonzero self-test script; only injected test steps are delayed, never
-ordinary host/input/focus polling. Native integration must still be built/run.
+ordinary host/input/focus polling. These tests use no game inputs.
+
+## Reproduced native controls
+
+The exact clean installer tooling revision was
+`691388c6555b98109c447b4a8b0da0d7030d3307` (later tests/docs do not change its
+native recipe). Pinned upstream remains `14e956a1274332440273845fbab2c1f1e30c4a5a`;
+the preserved operational pack-bridge source is
+`193076584e277c95644dcbbb4a6922c3a59ca2b8`. The new private derived host source is
+`ec1e2f83a6c2f372f96172ce67b81b3767841c98`, executable SHA-256
+`9f5a5f36c9575c5a0d950906b1e39461c3db086396ba243281b3f7913cbb4068`.
+These identifiers are provenance, not downloadable game source/binaries.
+
+Both public configure/build steps return zero. The separate 16-file source
+worktree and executable pass composite verification. The original source,
+executable **and prior PDB bytes** are restored; the ISO and baseline INI/controls
+are unchanged. This uses existing private generation/build inputs, not a fresh
+generation or a claim that the restored older PDB matches the baseline exe.
+
+| Actual control | Observed result |
+| --- | --- |
+| Same new variant, host pause disabled, 240-second bound | No host hold; the background continues. Guarded upstream UI rebind/save/live/release checks pass. Bare field-4741 PNG equals the preserved original baseline byte-for-byte. |
+| Same variant, host pause enabled, 240-second bound | A 7,740 ms acknowledged first-fight hold at field 4801; field/cycle counters stable, EE/IOP RAM digests equal, two held original PNGs byte-identical. UI checks pass and fields advance after close. Bare field-4741 PNG also equals the original baseline. |
+| Stop while controls remain open, 25-second bound | A 24,593 ms hold at field 2 escapes through native stop/time-limit, exit 124 without forced kill; counters and diagnostic RAM digests remain equal. |
+| Diagnostic hashing and field delay disabled, 30-second bound | An early 7,428 ms hold/resume completes with responsive injected UI and byte-identical held PNGs, then native deadline124. Log explicitly records probe0: no RAM-digest equality is asserted in this mode. |
+| Actual public Enhanced + controls-pause + strict named pack, 220-second bound | Launcher selects the verified variant, explicitly disables all mutating probes despite stale inherited values, and renders the original magenta diagnostic. Field-4741 PNG equals the earlier enabled-pack original byte-for-byte. No F1/self-test is injected in this public run. |
+| Subsequent actual public default Original, 220-second bound | Launcher selects the preserved baseline, requests no host pause/probe/pack, and reproduces the preserved original field-4741 PNG byte-for-byte without relinking. |
+
+Every listed native process ends at its intended deadline (124); both public
+launchers return zero, with no forced process termination. The long targeted
+tests use only title/start inputs, not attacks or autonomous level completion.
+RAM checks are noncryptographic digests, not every device/register's exact bytes.
+Hash diagnostics and reused warm private shader cache are not performance/audio
+evidence. Screenshots in the new [comparison](https://yyoudi.github.io/god-hand-pc/comparisons.html#2026-11-09-checked-controls-install)
+are actual unretouched 800x600 originals, same-landmark rather than same-frame;
+known black padding is retained. The controls UI itself remains upstream work.
 
 ## Remaining acceptance
 
-Build this exact clean public recipe, run disabled/enabled/stop controls, compare
-the original sampled scene, and verify baseline restoration/normal launch.
-Additional focus/held physical input, audible audio/queue transitions, peripherals,
+The checked build, sampled controls, baseline restoration and public opt-in/
+default selection gates above pass locally. Additional focus/held physical input,
+audible audio/queue transitions, peripherals,
 more scenes and genuine game Save → exit → Load remain open. This is not a full
 PC settings menu, HD support, FPS unlock or full-game accuracy claim.

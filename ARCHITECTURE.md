@@ -31,8 +31,11 @@ capture options are diagnostic controls and must remain explicit in evidence.
 The experimental controls-pause host layer is a separately built/verified variant
 over that same base, never an implicit default relink. Enhanced plus an explicit
 flag selects it; see [its checked installation contract](CONTROLS_INSTALL.md).
-Its exact public integration remains implemented/unverified until native controls
-reproduce the earlier private result. Original still rejects this host extension.
+Its exact public integration now has a locally reproduced build, targeted native
+hold/resume/stop, pack compatibility and default-baseline controls. This remains
+experimental sampled evidence, not full-machine/campaign fidelity. Original
+still rejects this host extension; future upstream changes need fresh preimage,
+regeneration/build and behavior controls, not automatic replay.
 
 ## Future readable function replacements
 

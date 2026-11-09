@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Make the sampled host-pause integration reproducible through checked public tooling, without changing generated game functions or the preserved baseline. Then test focus, held physical input, audio transitions and additional scenes before default policy.",
+  "next": "Validate focus/release and held-input/audio transitions across the experimental controls hold, then broaden representative scene coverage; keep Original default and the preserved baseline. Do not treat private snapshots or preferences as game saves.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -13,7 +13,7 @@
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
-    "The private host-pause trial now has bounded native hold/resume/UI/stop evidence; it is not installed by the public setup/launcher or a full-machine/campaign guarantee."
+    "Host pause is locally reproduced but experimental and opt-in through a separate checked variant. Focus/physical held input, audible audio, more peripherals/scenes and full-machine/campaign correctness remain unverified; default runtime is unchanged."
   ],
   "milestones": [
     {
@@ -85,7 +85,7 @@
           "title": "Make the native controls pause boundary reproducible",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Cooperative ready/acknowledged hold, responsive existing UI, resume/stop and original-disabled controls; portable primitive tests plus targeted native evidence. Sampled intro/first-fight proof exists, but checked public installation/regeneration, focus/held-input/audio and additional scenarios still need validation. Do not equate this with full PC settings or campaign fidelity."
+          "acceptance": "Exact-preimage public variant installer with source/executable/PDB preservation and composite drift checks, targeted native hold/resume/UI/stop, separate public opt-in+pack/default controls and original-scene byte equality now reproduced. Keep in progress for focus, held physical input, audio transitions and additional peripherals/scenes; not full-machine or campaign fidelity."
         }
       ]
     },
@@ -280,6 +280,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "Installing the controls pause without replacing the baseline",
+      "summary": "The experimental host-pause boundary can now be built through checked public tooling as a separate native variant. Normal launches still use the preserved baseline.",
+      "changes": [
+        "Built the exact clean public host integration, preserving the original source, executable and prior PDB. Reused private generated inputs; no game functions are edited or published.",
+        "Reproduced a 7,740 ms first-fight hold, responsive upstream controls, resume and a stop with controls still open. A separate no-digest hold also passes; physical input and audible audio are not tested.",
+        "Verified actual public Enhanced+pause+pack and subsequent default Original starts. Their sampled replacement/original PNGs equal the earlier originals byte-for-byte. Stale inherited mutating self-tests are explicitly disabled.",
+        "Added synthetic Git/source/sidecar preservation, interrupted/failed-build, drift refusal and launch-selection controls. Selected new native originals retain full dimensions, hashes and separate provenance."
+      ],
+      "validation": "Clean tooling691388c configures/builds0 into private sourceec1e2f83. Guarded first-fight runs (240s each), stop-open (25s), no-digest hold/resume (30s) and two public launcher runs (220s each) all end at native deadline124 without forced kill; public launchers0. Local and fresh Windows checkout:138 tests collected,137pass/1symlink-privilege skip. No game input goes to CI.",
+      "limits": "Experimental opt-in only; reused build cache is not a fresh game-generation proof. RAM digests do not prove full-machine equality. Genuine Save/Load, physical input, audible audio, focus/held input, more peripherals/scenes and campaign fidelity remain open. No FPS, HD or complete settings-menu claim.",
+      "link": {
+        "label": "Checked variant contract, actual native controls and preservation limits",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/CONTROLS_INSTALL.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",
@@ -557,6 +575,53 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-09-checked-controls-install",
+      "date": "2026-11-09",
+      "title": "The checked controls-pause variant: disabled and enabled",
+      "feature": "PC08",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Installed variant - host pause disabled",
+        "bevy": "Installed variant - experimental host pause enabled"
+      },
+      "scenario": "Two separate 240-second retail starts from the same executable built by clean public tooling691388c, derived host source ec1e2f83. Guarded UI commands begin after field4800; only title/start inputs, scratch cards/preferences, no asset pack, attacks or autonomous level completion. Same opening landmark, not the same game frame. Reused warm private shader cache.",
+      "observations": [
+        "The enabled run acknowledges a 7,740 ms hold at field4801; field/cycle counters and EE/IOP RAM digests stay stable. Two retained originals inside the hold are byte-identical, while the existing upstream UI stays usable.",
+        "Disabled and enabled guarded UI edit/save/live/release sequences both pass three checks; the disabled background runs, and native fields advance after the enabled hold.",
+        "Both pre-overlay field4741 PNGs equal the preserved original baseline byte-for-byte. The disabled controls original also independently reproduces the earlier private trial image byte-for-byte; its reused content-addressed file has this new capture's own provenance.",
+        "The public installer restores the operational source/executable/prior PDB and stores this variant separately. Actual public Enhanced+pause+pack and subsequent default Original launches reproduce the historical replacement/original scene PNGs respectively."
+      ],
+      "limits": [
+        "These are native LasVola/host-variant screenshots, not Bevy, hardware PS2 captures or a remaster art comparison. Same-landmark only; black screenshot padding is retained.",
+        "The existing controls UI is upstream work. Our host pause is experimental and requires a separate checked installation plus --profile enhanced --controls-pause. Default launch still uses the unchanged baseline; installing is not enabling.",
+        "RAM checks are noncryptographic digests, not every emulated register/device's exact bytes. Diagnostic hashing adds overhead; no performance, audio quality, physical input, genuine game-save, later-stage or campaign fidelity claim.",
+        "ISO, ELF, generated game code, assets, saves, binaries/PDB and unselected private evidence are not published. Game imagery is neither GPL nor MIT."
+      ],
+      "reference": {
+        "path": "media/02752f3d18c7f9ca3cd17fe1fc7ac0027eaeaa8653c61a45f253c94455166eb0.png",
+        "sha256": "02752f3d18c7f9ca3cd17fe1fc7ac0027eaeaa8653c61a45f253c94455166eb0",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL plus original checked public controls-pause variant; upstream14e956a, derived ec1e2f83; executable9f5a5f36; guarded self-test, no asset pack; pause disabled",
+        "revision": "ec1e2f83a6c2f372f96172ce67b81b3767841c98",
+        "captured_at": "2026-11-09T15:26:32.464372+00:00",
+        "caption": "Host pause disabled; the upstream overlay says the game keeps running. Full unretouched original."
+      },
+      "bevy": {
+        "path": "media/13cff9dad8a16636b54e80651eaabcce051922e11e3f21660d36230c9bad1161.png",
+        "sha256": "13cff9dad8a16636b54e80651eaabcce051922e11e3f21660d36230c9bad1161",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL plus original checked public controls-pause variant; upstream14e956a, derived ec1e2f83; executable9f5a5f36; guarded self-test, no asset pack; pause enabled",
+        "revision": "ec1e2f83a6c2f372f96172ce67b81b3767841c98",
+        "captured_at": "2026-11-09T15:30:28.588389+00:00",
+        "caption": "The installed experimental variant acknowledges the hold while the upstream controls remain responsive. Full unretouched original."
+      }
+    },
     {
       "id": "2026-11-09-native-controls-host-pause",
       "date": "2026-11-09",
