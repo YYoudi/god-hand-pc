@@ -944,6 +944,17 @@
     {
       "kind": "journal",
       "date": "2026-11-09",
+      "captured_at": "2026-11-09T17:07:32.634Z",
+      "path": "captures/f8ae4191e89c08a7586752b257dc41235312ea3f1296fe69dc4cf4edd09ae71b.jpg",
+      "sha256": "f8ae4191e89c08a7586752b257dc41235312ea3f1296fe69dc4cf4edd09ae71b",
+      "reviewed": true,
+      "revision": "4ec4169144c0ebbebbccd59d3a1ef6fa53e86ea3",
+      "caption": "Ordinary buffered-hold follow-up - actual published journal excerpt",
+      "source": "Unretouched actual published #journal screenshot in the current default/narrow browser viewport. Shows title, summary and beginning of the article, not a full-page capture or audio/fidelity proof. No viewport override, resizing, crop, game imagery, PCM, generated code or desktop pixels. Complete evidence and retained failures remain in the article/report."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-09",
       "captured_at": "2026-11-09T16:45:47.533378+00:00",
       "path": "captures/220be150394ddbb7baea7867a5cb588dc3201371a4fed4a0ce7d8460988f2670.jpg",
       "sha256": "220be150394ddbb7baea7867a5cb588dc3201371a4fed4a0ce7d8460988f2670",
