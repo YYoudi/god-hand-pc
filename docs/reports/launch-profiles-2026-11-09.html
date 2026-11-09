@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>launch profiles 2026 11 09 · God Hand PC</title><link rel="stylesheet" href="../style.css"></head>
+<body><header><a class="name" href="../index.html">God Hand PC</a><nav aria-label="Main navigation">
+<a href="../index.html#journal">Journal</a><a href="../roadmap.html">Roadmap</a>
+<a href="../comparisons.html">Comparisons</a><a href="../reports/index.html">Reports</a>
+<a href="https://github.com/YYoudi/god-hand-pc">Source</a></nav></header><main><p class="notice">Historical report, migrated unchanged on 2026-11-09. Not a new technical result. Original <a href="https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/launch-profiles-2026-11-09.md">source at the recorded revision</a>; <a href="launch-profiles-2026-11-09.md" download>download unchanged Markdown</a>. Current direction and limitations live in the journal/roadmap. Text retains its <a href="../IMPORTED_MIT_LICENSE.txt">MIT notice</a>.</p><h2 id="original-enhanced-launch-policy-validation">Original/Enhanced launch-policy validation</h2>
+<p>Date: 9 November 2026. Original GPL continuation tooling revision: <code>cc62cb780a703629c2ccc88b4ba53d9b59a4e8a3</code>. Pinned LasVola base: <code>14e956a1274332440273845fbab2c1f1e30c4a5a</code>. The private native source remains <code>193076584e277c95644dcbbb4a6922c3a59ca2b8</code>; this Python policy increment does not relink or alter generated game functions.</p>
+<h3 id="reproduced-checks">Reproduced checks</h3>
+<ul>
+<li>All 89 original synthetic continuation tests pass on the evaluation machine;</li>
+</ul>
+<p>  the public continuation CI passes at the same tooling revision. Eight new   tests cover default/explicit policies, rejection before runtime/disc/process   access, CLI forwarding and invalid choices. No game material is a fixture.</p>
+<ul>
+<li>An actual Original+pack CLI request returns 1 with a policy refusal, before</li>
+</ul>
+<p>  native launch. An invalid pack is not silently ignored in Original mode.</p>
+<ul>
+<li>Two independent fresh hidden 220-second native starts use the same executable</li>
+</ul>
+<p>  and title/start script, separate empty private user data, captures and explicit   audio muting. Original has no pack; Enhanced requests the original diagnostic   pack in strict mode. No attack/level-completion script or old snapshot is used.</p>
+<ul>
+<li>Both native processes end at their configured deadline (124); both launchers</li>
+</ul>
+<p>  return 0 and finalize receipts. These are bounded controls, not hours of stable   gameplay or performance measurements.</p>
+<ul>
+<li>Both selected actual full-resolution field-4741 PNGs were inspected unchanged.</li>
+</ul>
+<p>  The Original PNG is byte-identical to the retained disabled/pre-adapter baseline;   the Enhanced PNG is byte-identical to the earlier enabled magenta control.   The bridge logs applying the original 8,256-byte payload.</p>
+<p>Selected original SHA-256: <code>fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e</code>. Selected enhanced SHA-256: <code>96a8c748aeca15e321ac53a61d36ab068325851fcec76c395d52d3d88020f809</code>. These are the same image bytes already published with their historical capture provenance in the <a href="https://yyoudi.github.io/god-hand-rs/dashboard/#comparison-2026-11-06-public-native-pack-bridge">earlier comparison</a>. That old gallery record is not relabeled as a new capture. New originals and their timestamps/commands/receipts remain preserved privately. Known 800x600 readback padding remains visible; no crop or recolor is used.</p>
+<h3 id="reproduction">Reproduction</h3>
+<p>Use the successful setup/bridge workspace, exact personal retail ISO and original example pack described in the separate GPL repository:</p>
+<pre><code>python pc.py run --workspace-name retail-setup-v2 --iso &quot;G:\path\God Hand (USA).iso&quot; --headless --seconds 220 --capture --fresh-user-data --pad-script &quot;1800v:start:20,2100v:cross:20,2400v:cross:20,4200v:start:20,4800v:start:20&quot;</code></pre>
+<p>For the second control add <code>--profile enhanced --pack .local/published-example/pack.json --strict-pack</code>. Each launch verifies the original ISO, source and binary before starting, cleans inherited GODHAND_/PS2X_ settings, and verifies the disc again after exit. Do not copy private cards/states into CI or assume another workspace is equivalent.</p>
+<h3 id="limits-and-next-gate">Limits and next gate</h3>
+<p>The profile names are policy, <strong>not a PS2 fidelity certificate</strong>. Both retain upstream settings/timing and the previously built native runtime. This does not implement an in-game settings menu, readable game-function replacement, HD dimensions, widescreen, FPS changes, new lighting or multiplayer. Same-size resource replacement and one sampled scene remain the only enhancement proof.</p>
+<p>Genuine game Save/exit/Load, physical input, audible audio, later-stage behavior and translation diagnostics remain explicit gates. Next audit existing upstream PC settings and actual card persistence paths, rather than invent another menu or attempting to beat levels. The prototype&#x27;s native kernel blocker is unchanged.</p></main>
+<footer>Unofficial LasVola continuation. Personal ISO required; no game distributed.<br>
+Original continuation code: GPL-3.0-only. Migrated text retains its MIT notice. Game imagery is neither MIT nor GPL.<br>
+<a href="https://yyoudi.github.io/god-hand-rs/dashboard/">Historical independent Rust/Bevy lab — paused, not achieved</a> · Free GitHub Pages</footer></body></html>

@@ -14,6 +14,12 @@ redistribute game assets, program images, generated game code or saves. No such
 material may be added to this repository, its releases, Actions artifacts or CI.
 
 The old independent MIT lab remains separate and paused, not completed.
+Selected earlier original reports/entries retain their MIT notice in
+docs/IMPORTED_MIT_LICENSE.txt and exact source provenance in docs/migration.json.
+The new static generator/publication workflow is original GPL continuation code.
+Only explicitly selected already-reviewed rendered screenshots are republished
+unchanged; game imagery is neither MIT nor GPL, nor rights-holder-authorized by
+our repository license. No extracted asset sheets or game data are migrated.
 
 The original native resource bridge calls the privately fetched upstream generic
 SHA-256 helper; that implementation is not vendored here. Integration metadata

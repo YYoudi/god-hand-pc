@@ -10,9 +10,12 @@ behavior baseline, real persistence and usability checks, and separately enabled
 PC extensions. Continue the evaluated LasVola base; do not rebuild combat and AI
 in a different engine just to retain a language preference.
 
-The canonical task/status registry and English journal remain in
-[god-hand-rs](https://github.com/YYoudi/god-hand-rs/blob/main/docs/dashboard/data.json),
-with its generated [roadmap](https://github.com/YYoudi/god-hand-rs/blob/main/ROADMAP.md).
+The canonical task/status registry and English journal are now local
+[docs/journal.json](docs/journal.json), with the generated [roadmap](ROADMAP.md)
+and [free Pages blog](https://yyoudi.github.io/god-hand-pc/).
+god-hand-rs is historical, paused and not achieved; it receives no future PC
+progress commits. Its original pages/evidence remain available. Selected earlier
+port reports are migrated unchanged and explicitly marked historical, not rerun.
 This document defines acceptance, not a competing completion ledger or schedule.
 
 ## 1. Original baseline gate

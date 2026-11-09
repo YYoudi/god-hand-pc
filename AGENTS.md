@@ -1,5 +1,21 @@
 # God Hand PC continuation â€” agent instructions
 
+## Canonical repository — owner decision, 2026-11-09
+
+This is the sole active PC-port code/documentation/roadmap/blog repository.
+Read PROGRESS.md and docs/journal.json on every resume alongside the active goal,
+Git state and .local/progress-checkpoint.json. The public journal is free Pages:
+https://yyoudi.github.io/god-hand-pc/. Generate with scripts/journal.py; verify
+the exact public allowlist, tests, CI, actual live site and original downloads.
+Do not publish new PC progress to god-hand-rs. That MIT lab is historical,
+paused and not achieved; retain all its WIP, evidence, original pages and history.
+Selected historical reports/entries/comparisons are editorial migrations, not
+newly reproduced results. Preserve their hashes/provenance and separate licenses.
+The full PC goal remains active; migration is not completion of the port.
+No new Rust, delegation, ISO edits, evidence deletion or history rewriting.
+The opt-in controls-pause trial linked privately but is NOT runtime-validated or
+shipped; native baseline source/executable were restored, trial/WIP preserved.
+
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.
 Read README.md, NOTICE.md, upstream.json and PUBLIC_FILES.json before changes.
@@ -62,8 +78,8 @@ error because the tool returned zero. No delegation without an explicit request.
 
 Run python -m unittest discover -s tests -p 'test_*.py', stage reviewed paths
 explicitly, then python scripts/check_public_tree.py. Check CI after pushing.
-Substantial results update the existing English journal and roadmap at
-YYoudi/god-hand-rs (docs/dashboard/data.json); avoid competing completion claims.
-Keep that journal on free github.io Pages/main:/docs and standard public runners,
+Substantial results update the canonical English journal/roadmap in
+docs/journal.json here, never god-hand-rs. Read PROGRESS.md before publication.
+Keep this journal on free github.io Pages/main:/docs and standard public runners,
 with no custom artifact uploads or persistent caches. Only reviewed original
 comparison screenshots may publish through its comparison protocol.

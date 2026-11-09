@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "date": "2026-11-09",
+  "source_repository": "https://github.com/YYoudi/god-hand-rs",
+  "source_revision": "de0091371f9d405abb02bb82ca57ac2f11ab245e",
+  "source_manifest_sha256": "73e91bf87742da7c3e76b9dbd0527aac1176c0625a6dd48d096c214a51546165",
+  "method": "Explicit editorial migration of selected already-public original reports/entries and reviewed native-port comparison records. No new game-runtime result. Original files unchanged; old pages/evidence retained.",
+  "reports": {
+    "native-evaluation-2026-11-03.md": {
+      "source_path": "docs/native-evaluation-2026-11-03.md",
+      "sha256": "c2096b23bd8beafa83af1ba17478b738be684aa7d301f812ec05039af16a9532",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/native-evaluation-2026-11-03.md"
+    },
+    "native-backend-outputs.md": {
+      "source_path": "docs/native-backend-outputs.md",
+      "sha256": "08bf3c8cd6fd6a5419e130c7ca02abbd43b54dd0b573d57ade200c00c29d3e08",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/native-backend-outputs.md"
+    },
+    "pc-port-evaluation-2026-11-05.md": {
+      "source_path": "docs/pc-port-evaluation-2026-11-05.md",
+      "sha256": "30f30756500db50fd886f7f9619a504f3bb6dc23976ed338a2226ed81080b542",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/pc-port-evaluation-2026-11-05.md"
+    },
+    "matching-evaluation-2026-11-05.md": {
+      "source_path": "docs/matching-evaluation-2026-11-05.md",
+      "sha256": "fd9f291b3771e9c1ee585d9308dd977eb3f53fa16cbe261c90386ab7a156ce75",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/matching-evaluation-2026-11-05.md"
+    },
+    "input-evaluation-2026-11-05.md": {
+      "source_path": "docs/input-evaluation-2026-11-05.md",
+      "sha256": "d32f12b3428ac5ef305ca38df7716d6721b611c4e0d628a88301e6bf89b920e8",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/input-evaluation-2026-11-05.md"
+    },
+    "capture-readback-2026-11-06.md": {
+      "source_path": "docs/capture-readback-2026-11-06.md",
+      "sha256": "a85958c9fb441064d90a45f4fc5494d38887f8003564cc00eb15fefe298fa5f0",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/capture-readback-2026-11-06.md"
+    },
+    "named-resource-plans-2026-11-06.md": {
+      "source_path": "docs/named-resource-plans-2026-11-06.md",
+      "sha256": "b5ecd2e332fddc575af43f083967d5f13abe83c9d68cd63a75cca7a8d613b6d7",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/named-resource-plans-2026-11-06.md"
+    },
+    "prototype-native-feasibility-2026-11-06.md": {
+      "source_path": "docs/prototype-native-feasibility-2026-11-06.md",
+      "sha256": "1d5d17455b4b6f51ca5aa1996bb455a4fb3085476a70569434ed6166ce4ec536",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/prototype-native-feasibility-2026-11-06.md"
+    },
+    "retail-setup-2026-11-06.md": {
+      "source_path": "docs/retail-setup-2026-11-06.md",
+      "sha256": "4bab4dc6b90377a2e9edcbd90035cc915270e852e4e213cbe2246d518760a090",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/retail-setup-2026-11-06.md"
+    },
+    "public-pack-bridge-2026-11-06.md": {
+      "source_path": "docs/public-pack-bridge-2026-11-06.md",
+      "sha256": "a539f5438c9a822c7e1050c7674f5bb493df753dd93f9535bd78bc1d7dd85070",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/public-pack-bridge-2026-11-06.md"
+    },
+    "launch-profiles-2026-11-09.md": {
+      "source_path": "docs/launch-profiles-2026-11-09.md",
+      "sha256": "ab52ad150e6e33678db23a28205af6c58dd8dddb11116d94cf78abe3ca38de4a",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/launch-profiles-2026-11-09.md"
+    },
+    "pc-direction-2026-11-09.md": {
+      "source_path": "docs/pc-direction-2026-11-09.md",
+      "sha256": "6653b8fb03eb1ee735b823d00cc89a2dccc86c892bec6a70fc5b72cb583a246e",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/pc-direction-2026-11-09.md"
+    },
+    "pc-usability-2026-11-09.md": {
+      "source_path": "docs/pc-usability-2026-11-09.md",
+      "sha256": "de302049377d7fd33a74aa1e70c33ddddd9ebefc80b7070ce8631516912dd828",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/pc-usability-2026-11-09.md"
+    },
+    "prototype-datamining-2026-11-09.md": {
+      "source_path": "docs/prototype-datamining-2026-11-09.md",
+      "sha256": "08c54fc4ecd619fff21ff3d8414887645331032c67b38d256553554fa3146d26",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/prototype-datamining-2026-11-09.md"
+    },
+    "translation-diagnostic-2026-11-09.md": {
+      "source_path": "docs/translation-diagnostic-2026-11-09.md",
+      "sha256": "3596f5e484e37812394787b2ff7c0d1f9162a2e843593d9b07c419b7831101be",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/translation-diagnostic-2026-11-09.md"
+    },
+    "port-evaluation-workflow.md": {
+      "source_path": "docs/port-evaluation-workflow.md",
+      "sha256": "b8954bc193f7779f62a9a54a12fd42b04d69310fd85b437a5a474ac95ede9ddf",
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/port-evaluation-workflow.md"
+    }
+  },
+  "entries": {
+    "0": {
+      "source_index": 0,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "d246c1bd4fba21af4a13e9abe8a6348ff48128ee79c5712b6f7e78079ca1b431"
+    },
+    "1": {
+      "source_index": 1,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "2b3ee144846a84f247d7f131d6417b93c3ba72ef8bb836da4896aa0cb124c8bc"
+    },
+    "2": {
+      "source_index": 2,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "6e21e94222bbbfbe038ecd63f902f92c71922396df0f40f2e58aab013b52ff84"
+    },
+    "3": {
+      "source_index": 3,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "d58b8f2676da1a9bd0a27f7156a4ae6a0405fc136a58d260e66314359c7c10e2"
+    },
+    "4": {
+      "source_index": 4,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "3d9b5d16e5dd25cfe315b93129a074e778893fd2751a3410944761878c0dc787"
+    },
+    "5": {
+      "source_index": 5,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "eb4da3757868abc75cd1060b47c9c51316ee77715c7b801e38a79536a2b26279"
+    },
+    "6": {
+      "source_index": 6,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "449a9d8105abb6b6bbab8926018907d485ff14c479477e41876776232dd40511"
+    },
+    "7": {
+      "source_index": 7,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "c3d3e03f2c121ec69a32ce4aea6d731a39883d3455768b28908c75ffbef4eec4"
+    },
+    "8": {
+      "source_index": 8,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "242f63551b16ef32292a0d2d33cc1bf6fc408a9adfd10cfb9ec0edb06a2b206f"
+    },
+    "9": {
+      "source_index": 9,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "ba384d6031a995eb7fcc8d37821d8b77ff4df0b66f5648f241addf8ed7d2008c"
+    },
+    "10": {
+      "source_index": 10,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "4f3147228eafa3cf09cfbcac10be1df5e0198ef75b60adfb92a87e4f908a09d6"
+    },
+    "11": {
+      "source_index": 11,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "cbcbeadbf6a8fdef95130fcdc545661a1fea2e05cb148ffd4bb19f29d2263f1e"
+    },
+    "12": {
+      "source_index": 12,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "974a5dabe43d9f93b3e4997da09d94b87e8e3f0954e7e50243978f15260d9170"
+    },
+    "13": {
+      "source_index": 31,
+      "source_url": "https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/dashboard/data.json",
+      "sha256": "681af58449fce3845a757538b0251e09c601f1c975d32670262eb5784f3b1cca"
+    }
+  },
+  "comparisons": {
+    "2026-11-09-native-controls-persistence": {
+      "source_path": "docs/dashboard/data.json",
+      "sha256": "bc1429823d9e7b9b03b0145480b5ff222b5433455e8bd9101fb2c9f98b9b66cd"
+    },
+    "2026-11-06-public-native-pack-bridge": {
+      "source_path": "docs/dashboard/data.json",
+      "sha256": "232756ab340e42485de6f68c01068b2fc59b64dfb568bcf216898c457ad3240e"
+    },
+    "2026-11-06-fresh-build-first-scene": {
+      "source_path": "docs/dashboard/data.json",
+      "sha256": "c7235686b44c6413ca559449a836eb06f732920def80cf9b9eda9f05165bb419"
+    },
+    "2026-11-06-named-texture-plan": {
+      "source_path": "docs/dashboard/data.json",
+      "sha256": "8601c1130df28cbeb06b28a08ba58a9d481cc6b05f81d44224851fd3c1746a8e"
+    },
+    "2026-11-05-lasvola-external-texture": {
+      "source_path": "docs/dashboard/data.json",
+      "sha256": "8ea847078bfa7f9f924dd242b4f4926ff4ff9ce43440f820748659776bb8c676"
+    }
+  },
+  "media": {
+    "media/d85d28ee5c79e0e89495a7cc2608c137f10cddccd8d0891f1a6069fa94f69f54.png": {
+      "source_path": "docs/dashboard/media/d85d28ee5c79e0e89495a7cc2608c137f10cddccd8d0891f1a6069fa94f69f54.png",
+      "sha256": "d85d28ee5c79e0e89495a7cc2608c137f10cddccd8d0891f1a6069fa94f69f54"
+    },
+    "media/2418115da133adcbe5086081fbe9e9e7157c0336749f9f2e8c9d9ba6e8f340ce.png": {
+      "source_path": "docs/dashboard/media/2418115da133adcbe5086081fbe9e9e7157c0336749f9f2e8c9d9ba6e8f340ce.png",
+      "sha256": "2418115da133adcbe5086081fbe9e9e7157c0336749f9f2e8c9d9ba6e8f340ce"
+    },
+    "media/fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e.png": {
+      "source_path": "docs/dashboard/media/fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e.png",
+      "sha256": "fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e"
+    },
+    "media/96a8c748aeca15e321ac53a61d36ab068325851fcec76c395d52d3d88020f809.png": {
+      "source_path": "docs/dashboard/media/96a8c748aeca15e321ac53a61d36ab068325851fcec76c395d52d3d88020f809.png",
+      "sha256": "96a8c748aeca15e321ac53a61d36ab068325851fcec76c395d52d3d88020f809"
+    },
+    "media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png": {
+      "source_path": "docs/dashboard/media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png",
+      "sha256": "9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be"
+    },
+    "media/14c2afdd449d1a78473bbb39564385eee53c7a324931fb5aae1cd44bb5e11a65.png": {
+      "source_path": "docs/dashboard/media/14c2afdd449d1a78473bbb39564385eee53c7a324931fb5aae1cd44bb5e11a65.png",
+      "sha256": "14c2afdd449d1a78473bbb39564385eee53c7a324931fb5aae1cd44bb5e11a65"
+    },
+    "media/e080502ff878d0d13abcf39dc6c0359d1a1c0e4868b3209684211b6ad67062fe.png": {
+      "source_path": "docs/dashboard/media/e080502ff878d0d13abcf39dc6c0359d1a1c0e4868b3209684211b6ad67062fe.png",
+      "sha256": "e080502ff878d0d13abcf39dc6c0359d1a1c0e4868b3209684211b6ad67062fe"
+    },
+    "media/7107cd89a0276f3b2e3d6d86c79afc231c6d85ff05842b8961bae488187fac6c.png": {
+      "source_path": "docs/dashboard/media/7107cd89a0276f3b2e3d6d86c79afc231c6d85ff05842b8961bae488187fac6c.png",
+      "sha256": "7107cd89a0276f3b2e3d6d86c79afc231c6d85ff05842b8961bae488187fac6c"
+    }
+  }
+}

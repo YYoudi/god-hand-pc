@@ -11,6 +11,15 @@ the prototype is a different research profile, never silently accepted as retail
 Generated game code, discs, ELFs, extracted assets, saves and executables remain
 local. The project license covers its original tooling, not the game or its art.
 
+**This is the sole active home for the PC port and its public communication.**
+Read the [development journal](https://yyoudi.github.io/god-hand-pc/),
+[roadmap](https://yyoudi.github.io/god-hand-pc/roadmap.html),
+[dated reports](https://yyoudi.github.io/god-hand-pc/reports/index.html) and
+[reviewed original comparisons](https://yyoudi.github.io/god-hand-pc/comparisons.html).
+The independent MIT [Rust/Bevy lab](https://github.com/YYoudi/god-hand-rs) is
+historical, paused and not achieved. Old results migrated here are labeled as
+editorial migration, not new runtime validation. See [the workflow](PROGRESS.md).
+
 ## Active direction
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC
@@ -58,7 +67,7 @@ steps and a bounded opening/first-fight scene are now locally verified. It does
 not install the pack adapter implicitly or claim a tested game-save round trip.
 
 The underlying retail executable has already been built and tested in the
-[research journal](https://yyoudi.github.io/god-hand-rs/dashboard/), including an
+[research journal](https://yyoudi.github.io/god-hand-pc/), including an
 original same-size external texture experiment. The corrected personal-disc
 command now reproduces the full boot/81-overlay build on the evaluation machine;
 generation still reports one unresolved error, not a clean translation.
@@ -85,5 +94,6 @@ python scripts/check_public_tree.py
 ```
 
 Only files in `PUBLIC_FILES.json` may be staged. CI uses no game input, custom
-cache or retained build artifact. The journal remains on the existing free
-GitHub Pages site; no second hosting service is introduced.
+cache or custom retained build artifact. The canonical journal uses this
+repository's free GitHub Pages at github.io, main:/docs. The old lab's Pages
+remain historical; no paid or third-party hosting service is introduced.

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>prototype datamining 2026 11 09 · God Hand PC</title><link rel="stylesheet" href="../style.css"></head>
+<body><header><a class="name" href="../index.html">God Hand PC</a><nav aria-label="Main navigation">
+<a href="../index.html#journal">Journal</a><a href="../roadmap.html">Roadmap</a>
+<a href="../comparisons.html">Comparisons</a><a href="../reports/index.html">Reports</a>
+<a href="https://github.com/YYoudi/god-hand-pc">Source</a></nav></header><main><p class="notice">Historical report, migrated unchanged on 2026-11-09. Not a new technical result. Original <a href="https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/prototype-datamining-2026-11-09.md">source at the recorded revision</a>; <a href="prototype-datamining-2026-11-09.md" download>download unchanged Markdown</a>. Current direction and limitations live in the journal/roadmap. Text retains its <a href="../IMPORTED_MIT_LICENSE.txt">MIT notice</a>.</p><h2 id="bounded-prototype-metadata-inventory">Bounded prototype metadata inventory</h2>
+<p>Date: 9 November 2026. Scope: read-only, offline discovery on the owner&#x27;s saved prototype and separately identified retail ELF. No new native boot, debug-menu operation, gameplay patch, instruction disassembly or decompilation was performed.</p>
+<h3 id="inputs-and-method">Inputs and method</h3>
+<p>The prototype is the previously profiled June 2006 image, boot SLPM_665.50; the retail comparison is SLUS_215.03. The unchanged prototype ELF is 3,450,144 bytes and the retail ELF is 3,607,008 bytes. Both match their prior SHA-256 profiles. The original prototype image also matches its prior complete digest. The saved TCRF HTML was parsed locally, not replaced with a current web page.</p>
+<p>Ordinary Python inspected ELF32 little-endian MIPS section metadata and stored NUL-terminated ASCII in allocated, non-executable PROGBITS sections. This excludes executable-flagged data sections, other encodings, overlays and runtime strings; the counts below are <strong>bounded keyword matches</strong>, not all strings/functions. REA tools were absent in the session; the read-only CLI doctor reported missing Codex registration. No configuration was changed. These are ordinary local byte inspection results, <strong>not REA Evidence</strong> or a disassembler&#x27;s function analysis.</p>
+<h3 id="observations">Observations</h3>
+<p>| Bounded selection | Prototype | Retail | | --- | ---: | ---: | | Distinct stored-string records matching selected categories | 464 | 317 | | Debug/menu category matches | 44 | 10 | | Camera category matches | 48 | 35 | | Rendering category matches | 47 | 28 | | Timing category matches | 29 | 15 |</p>
+<p>Categories overlap; they must not be summed as unique coverage. There are 284 exact common selected texts. Prototype-only diagnostics include room selection, camera tools, collision-related labels, light/fog toggles and lighting-loader diagnostics. Their presence is useful for choosing investigations, not proof that a menu, resource format or runtime flag is usable in retail.</p>
+<p><strong>An important correction to “stripped means no names”:</strong> neither input has a normal ELF symbol table, but both retain an allocated metadata section containing function-like names and repeated name-pointer/code-address candidate records. A conservative probe accepts only contiguous runs of at least ten 12-byte-spaced records, bounded name pointers, restricted printable names and aligned targets inside that input&#x27;s text section:</p>
+<ul>
+<li>Prototype: 659 candidate records; longest accepted run: 53.</li>
+<li>Retail: 743 candidate records; longest accepted run: 73.</li>
+<li>Exact common names in accepted records: 556; prototype-only: 103, retail-only: 187.</li>
+</ul>
+<p>These are <strong>inferred registry associations</strong>, not 659/743 understood functions, full symbol recovery or recovered C++. Nonaccepted records are not evidence of missing functions. The third word and registry consumers are not decoded. Different builds have different addresses: no map was transplanted to retail. Three invented-data tests check record stride, isolated-pointer rejection and invalid name/target rejection; they do not validate game semantics.</p>
+<h3 id="useful-next-investigations-not-implemented-features">Useful next investigations, not implemented features</h3>
+<ul>
+<li>Verify one name/address association against a bounded actual runtime call</li>
+</ul>
+<p>   before using it as a function-replacement boundary; handle overlays and ABI.</p>
+<ul>
+<li>Use camera/light diagnostic vocabulary to focus private format and subsystem</li>
+</ul>
+<p>   investigation rather than guessing a new renderer API.</p>
+<ul>
+<li>Preserve a terminology trap: <strong>FPS in camera labels can mean first-person</strong>,</li>
+</ul>
+<p>   not frames per second. No variable-frame-rate mechanism was discovered.</p>
+<ul>
+<li>The HTML&#x27;s room-jump/debug controls remain reported leads. Static labels do</li>
+</ul>
+<p>   not bypass the separately reproduced native prototype syscall-0x7a blocker.</p>
+<h3 id="provenance-and-publication">Provenance and publication</h3>
+<p>Private scripts, exact file/VA ranges, raw strings, candidate maps, input digests and the saved-page text remain in ignored research storage. No extracted text table, address map, game code, program image, screenshot or asset is published with this report. Only aggregate observations and methodological limitations are public. Metadata/name exposure is explicitly recorded; this work is not being passed off as a newly clean-room implementation. No Rust feature was changed.</p></main>
+<footer>Unofficial LasVola continuation. Personal ISO required; no game distributed.<br>
+Original continuation code: GPL-3.0-only. Migrated text retains its MIT notice. Game imagery is neither MIT nor GPL.<br>
+<a href="https://yyoudi.github.io/god-hand-rs/dashboard/">Historical independent Rust/Bevy lab — paused, not achieved</a> · Free GitHub Pages</footer></body></html>

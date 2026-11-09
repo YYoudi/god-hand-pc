@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>native backend outputs · God Hand PC</title><link rel="stylesheet" href="../style.css"></head>
+<body><header><a class="name" href="../index.html">God Hand PC</a><nav aria-label="Main navigation">
+<a href="../index.html#journal">Journal</a><a href="../roadmap.html">Roadmap</a>
+<a href="../comparisons.html">Comparisons</a><a href="../reports/index.html">Reports</a>
+<a href="https://github.com/YYoudi/god-hand-pc">Source</a></nav></header><main><p class="notice">Historical report, migrated unchanged on 2026-11-09. Not a new technical result. Original <a href="https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/native-backend-outputs.md">source at the recorded revision</a>; <a href="native-backend-outputs.md" download>download unchanged Markdown</a>. Current direction and limitations live in the journal/roadmap. Text retains its <a href="../IMPORTED_MIT_LICENSE.txt">MIT notice</a>.</p><h2 id="what-ps2-native-recomp-produces">What ps2-native-recomp produces</h2>
+<p>This describes files observed in our local trial at commit cba42f57913d181b3ff2fd3064ca48ab0cbeea11. Paths below are relative to the ignored backend checkout under recomp/backends/ps2-native-recomp/.</p>
+<h3 id="build-and-runtime-outputs">Build and runtime outputs</h3>
+<p>| Output | Local location | Contents | | --- | --- | --- | | Extracted inputs | games/godhand/disc/ and modules/ | Boot ELF and relocatable modules from the personal ISO | | Translated EE code | generated/godhand/ | C++ units, supporting declarations and registration table; 265 units emitted in our build | | Compiled game archive | build/native-godhand/libps2game.a | Native object code compiled from the translated game | | Runtime library | build/runtime-native-*/libps2runtime.a | Console services and hardware implementation | | Windows runner | build/native-godhand/ps2run.exe | Translated game linked with the runtime; dependency DLLs alongside it | | Recorded VU programs and compiled cache | games/godhand/vu1/ and vu1-live/ | Captured vector programs and native libraries; 31 additional programs compiled in our first windowed run | | EE live cache, when needed | games/godhand/ee-live/ | Native libraries for newly discovered code; no EE-window translation reported in this trial | | Test artifacts | Local experiment directory | Frame images, raw logs, memory snapshots, input schedules and timing metadata |</p>
+<p>Generated C++ preserves machine-level behavior. It is not the original game source and does not supply documented high-level player, combat or level systems ready to transplant into Bevy.</p>
+<h3 id="how-it-can-help-the-independent-engine">How it can help the independent engine</h3>
+<ul>
+<li><strong>Executable observations:</strong> replay a known sequence, inspect visible behavior</li>
+</ul>
+<p>  and document timings before the whole independent engine exists.</p>
+<ul>
+<li><strong>Repeatable experiments:</strong> save a runtime state and apply controlled inputs.</li>
+</ul>
+<p>  State files remain private and backend/version-specific.</p>
+<ul>
+<li><strong>Comparison:</strong> compare our engine&#x27;s outputs with observations. Cross-check against</li>
+</ul>
+<p>  PCSX2 or a console; the experimental native backend can have its own bugs.</p>
+<ul>
+<li><strong>Generic tools:</strong> ISO access, capture and replay infrastructure may help after</li>
+</ul>
+<p>  source and license review. MIT tooling requires attribution and does not license   translated game code.</p>
+<p>These benefits do not automatically provide independent specifications of AFS/FST, models, animation, scripts, AI or combat. Reaching gameplay in the backend does not implement those systems in Rust/Bevy.</p>
+<h3 id="provenance-boundary">Provenance boundary</h3>
+<p>The backend&#x27;s original MIT source and code/data generated from the user&#x27;s game are different categories. Keep translated C++, linked game binaries, raw modules, VU program copies, memory dumps and gameplay captures out of the public repository.</p>
+<p>Do not convert generated C++ to Rust line by line and call it clean room. An implementer under strict separation should receive reviewed behavioral contracts rather than that code. Preserve the boundary in <a href="https://github.com/YYoudi/god-hand-rs/blob/de0091371f9d405abb02bb82ca57ac2f11ab245e/docs/clean-room.md">the method</a>.</p>
+<p>For rapid playable recompilation, the runner is already useful locally. For our selected independent public engine, its main role is observation and validation. Adopting a different engine architecture would be a separate scope change.</p></main>
+<footer>Unofficial LasVola continuation. Personal ISO required; no game distributed.<br>
+Original continuation code: GPL-3.0-only. Migrated text retains its MIT notice. Game imagery is neither MIT nor GPL.<br>
+<a href="https://yyoudi.github.io/god-hand-rs/dashboard/">Historical independent Rust/Bevy lab — paused, not achieved</a> · Free GitHub Pages</footer></body></html>
