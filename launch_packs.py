@@ -10,6 +10,7 @@ import pc
 import resources
 import profiles
 import runtime_packs
+import controls_pause as pause
 import setup_pc as build
 import user_data
 
@@ -22,6 +23,14 @@ def runtime_command(executable, iso, headless, seconds):
     # A missing CLI limit must not inherit a generated diagnostic INI timeout.
     return [str(executable), "--iso", str(iso), "--headless" if headless else "--window",
             "--time-limit", str(0 if seconds is None else seconds)]
+
+
+def controls_pause_environment(enabled):
+    build.require(type(enabled) is bool, "controls-pause must be a boolean")
+    # Explicit zero overrides INI pass-through too, not just inherited variables.
+    # Public launches never activate the mutating UI probe or its field delay.
+    return {"GODHAND_PC_CONTROLS_PAUSE": "1" if enabled else "0",
+            "GODHAND_PC_CONTROLS_PROBE": "0", "GODHAND_PC_CONTROLS_PROBE_FIELD": "0"}
 
 
 def pack_protocol(iso, manifest, directory, strict=False):
@@ -52,8 +61,8 @@ def pack_protocol(iso, manifest, directory, strict=False):
 
 
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
-           capture=False, fresh_user_data=False, pad_script=None, profile="original"):
-    policy = profiles.resolve(profile, pack, strict)
+           capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False):
+    policy = profiles.resolve(profile, pack, strict, controls_pause)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -64,7 +73,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
     workspace = runtime_packs.workspace_path(root, name)
     build.require(not (workspace / "setup.lock").exists() and not (workspace / "packs/install.lock").exists(),
                   "Build/installer lock requires inspection before launch")
-    installed = runtime_packs.verified_install(root, name)
+    installed = pause.verified_install(root, name) if controls_pause else runtime_packs.verified_install(root, name)
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
     tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
@@ -76,6 +85,9 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
               "adapter_fingerprint": installed["adapter_fingerprint"],
               "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root)}
     record["profile"] = policy
+    record["controls_pause"] = {"requested": controls_pause,
+                                "acknowledged_hold": "not inferred from launch request",
+                                "fingerprint": installed.get("controls_fingerprint")}
     receipt = directory / "receipt.json"
     def save():
         receipt.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
@@ -90,7 +102,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         states = build.contained(user, user / "quickstates" / installed["source_revision"])
         cards.mkdir(parents=True, exist_ok=True)
         states.mkdir(parents=True, exist_ok=True)
-        record["controls"] = user_data.prepare_controls(user, installed["executable"]["path"], fresh_user_data)
+        record["controls"] = user_data.prepare_controls(user, installed.get("controls_adoption_executable",
+                                                        installed["executable"]["path"]), fresh_user_data)
         env = clean_environment(os.environ)
         env.update({"GODHAND_ISO": identity["path"], "GODHAND_MC_DIR": str(cards),
                     "GODHAND_QUICK_STATE": str(states / "quick.state"),
@@ -98,6 +111,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                     "GODHAND_LOG_FILE": "", "GODHAND_DLL_LOG": str(directory / "dll-loads.csv"),
                     "PS2X_AUDIO_MUTE": "1" if headless else "0", "PS2X_SHOW_FPS": "0"})
         env.update(user_data.controls_environment(user))
+        env.update(controls_pause_environment(controls_pause))
         if pad_script:
             env.update(PS2X_PAD_SCRIPT=pad_script, PS2X_FAKE_PADS="1")
         if capture:

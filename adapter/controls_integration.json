@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "upstream_revision": "14e956a1274332440273845fbab2c1f1e30c4a5a",
+  "files": [
+    {
+      "path": "runtime/ps2xRuntime/src/lib/Kernel/EeScheduler.cpp",
+      "before_sha256": "0cb989c0231c796dfa04884bb863b5b2dd0c3ad6c76cc9dfe9fded3a6dc0a1c5",
+      "after_sha256": "ecba627b4290f354ad7b6e38e4eb22303c77e300d285e58a05610cb81847c142",
+      "edits": [
+        {
+          "start": 0,
+          "end": 33,
+          "insert": "#include \"runtime/ee_scheduler.h\"\n#include \"../godhand_pc_controls/host_pause.hpp\"\n#include \"../godhand_pc_controls/controls_probe.hpp\"\n#include \"ps2_runtime.h\"\n#include \"ps2x/iop/iop_subsystem.h\"\n#include \"runtime/gs/ps2_gif_arbiter.h\"\nbool ps2xGsStallActive();\nbool ps2xGsSignalQueuePending();"
+        },
+        {
+          "start": 23756,
+          "end": 23801,
+          "insert": "#include \"../godhand_pc_controls/controls_pause.inc\"\n\n        if (m_currentThreadId == 0)\n        {"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_runtime.cpp",
+      "before_sha256": "8aae5f841ef01b5026f07307c6e35f2e99bc7040427fc34f06a55b73e883f9a2",
+      "after_sha256": "af111ed9190bc3c41a1000842f4f2bde324996b456d9f03db939fbb84b65893a",
+      "edits": [
+        {
+          "start": 0,
+          "end": 34,
+          "insert": "#include \"runtime/ps2_async_vif.h\"\n#include \"godhand_pc_controls/host_pause.hpp\"\n#include \"godhand_pc_controls/controls_probe.hpp\""
+        },
+        {
+          "start": 116216,
+          "end": 116276,
+          "insert": "        godhand_pc_probe::observed_field.store(eeScheduler().currentVSyncTick(), std::memory_order_relaxed);\n        ps2x::controls::hostTick(!GSPcsx2Backend::Active());"
+        },
+        {
+          "start": 116277,
+          "end": 116336,
+          "insert": "        const bool controlsOpen = ps2x::controls::isOpen();\n        if (godhand_pc_pause::enabled()) godhand_pc_pause::gate().request(controlsOpen);"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_controls_screen.cpp",
+      "before_sha256": "0bab0c3d91ff1c5db03ca0fc9996752d2ebd662284e65c8b231aff8f2b132336",
+      "after_sha256": "c838c7e5a40a4adc4cf7e622410d7972d4c769a74ebe2b3975f5fc9bfd071d7b",
+      "edits": [
+        {
+          "start": 322,
+          "end": 362,
+          "insert": "#include \"runtime/ps2_controls_screen.h\"\n#include \"godhand_pc_controls/host_pause.hpp\"\n#include \"godhand_pc_controls/controls_probe.hpp\""
+        },
+        {
+          "start": 35625,
+          "end": 35671,
+          "insert": "        void testTick(bool drawable)\n        {\n            if (!godhand_pc_probe::ready()) return; // Delay injected steps only, never input polling."
+        },
+        {
+          "start": 45963,
+          "end": 46045,
+          "insert": "drawText(godhand_pc_pause::enabled() ? (godhand_pc_pause::gate().parked() ? \"Simulation paused by PC host (experimental).\" : \"Waiting for a safe simulation boundary...\") : \"The game keeps running: pause it first (Start).\", innerX, y, size, dim);"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_audio.cpp",
+      "before_sha256": "d16a93369780a746db0e953eb5907625236d4b14f113f67f1751f53eefc740ae",
+      "after_sha256": "26322946bbc35a5085e0d6c1a20064b90a698daaa5c1a52285947ce8b72a7ce3",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"godhand_pc_controls/host_pause.hpp\"\n"
+        },
+        {
+          "start": 10234,
+          "end": 10266,
+          "insert": "godhand_pc_pause::now()"
+        },
+        {
+          "start": 10544,
+          "end": 10578,
+          "insert": "        if (godhand_pc_pause::enabled() && godhand_pc_pause::gate().parked()) return;\n        Impl *owner = streamOwner;"
+        },
+        {
+          "start": 16191,
+          "end": 16223,
+          "insert": "godhand_pc_pause::now()"
+        },
+        {
+          "start": 18523,
+          "end": 18555,
+          "insert": "godhand_pc_pause::now()"
+        },
+        {
+          "start": 19808,
+          "end": 19840,
+          "insert": "godhand_pc_pause::now()"
+        },
+        {
+          "start": 20301,
+          "end": 20333,
+          "insert": "godhand_pc_pause::now()"
+        },
+        {
+          "start": 24485,
+          "end": 24517,
+          "insert": "godhand_pc_pause::now()"
+        }
+      ]
+    }
+  ],
+  "copies": {
+    "adapter/host_pause.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_controls/host_pause.hpp",
+    "adapter/controls_probe.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_controls/controls_probe.hpp",
+    "adapter/controls_pause.inc": "runtime/ps2xRuntime/src/lib/godhand_pc_controls/controls_pause.inc"
+  }
+}

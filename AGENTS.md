@@ -19,7 +19,10 @@ installer feature or full-machine/campaign proof. Keep baseline1930765/exeeaed17
 unchanged, preserve failed/cold trials and the rejected whole-hostTick delay.
 The tested diagnostic delays only injected self-test steps, never input polling.
 Generic Gate tests are not a native readiness oracle; keep hardware/audio and
-genuine game-save gates open. Next is a reproducible checked host integration.
+genuine game-save gates open. Read CONTROLS_INSTALL.md: the checked opt-in variant
+implementation now has synthetic preservation/failure controls, but its exact
+public recipe still needs native build/runtime verification. Default stays the
+baseline; do not conflate the earlier private build with this new installation.
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.

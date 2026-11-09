@@ -117,6 +117,8 @@ def main():
     setup.add_argument("--workspace-name", default="retail-setup")
     install = sub.add_parser("install-packs")
     install.add_argument("--workspace-name", default="retail-setup")
+    pause = sub.add_parser("install-controls-pause", help="Build a separate checked experimental host-pause variant")
+    pause.add_argument("--workspace-name", default="retail-setup")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -129,6 +131,8 @@ def main():
     play.add_argument("--capture", action="store_true")
     play.add_argument("--fresh-user-data", action="store_true")
     play.add_argument("--pad-script")
+    play.add_argument("--controls-pause", action="store_true",
+                      help="Explicit experimental host pause; requires enhanced and install-controls-pause")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -150,11 +154,14 @@ def main():
     elif args.command == "install-packs":
         from runtime_packs import install
         result = install(ROOT, args.workspace_name)
+    elif args.command == "install-controls-pause":
+        from controls_pause import install
+        result = install(ROOT, args.workspace_name)
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
                         args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script,
-                        profile=args.profile)
+                        profile=args.profile, controls_pause=args.controls_pause)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

@@ -28,6 +28,12 @@ Upstream's own baseline may already differ from hardware in resolution/timing.
 Neither profile claims full-game fidelity. Test input, headless audio muting and
 capture options are diagnostic controls and must remain explicit in evidence.
 
+The experimental controls-pause host layer is a separately built/verified variant
+over that same base, never an implicit default relink. Enhanced plus an explicit
+flag selects it; see [its checked installation contract](CONTROLS_INSTALL.md).
+Its exact public integration remains implemented/unverified until native controls
+reproduce the earlier private result. Original still rejects this host extension.
+
 ## Future readable function replacements
 
 Before adding one: record the disc/revision, provenance, verified function or

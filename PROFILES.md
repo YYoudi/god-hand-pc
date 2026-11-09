@@ -33,3 +33,10 @@ The launcher cleans inherited GODHAND_/PS2X_ environment settings in both modes.
 Headless limits, scripted controls and captures remain explicitly recorded test
 options, not claims about physical input, audible audio or simulation accuracy.
 No runtime relink is required for this Python policy increment.
+
+Follow-up: `--profile enhanced --controls-pause` explicitly requests a separate
+experimental host-runtime variant. It requires `install-controls-pause`; Original
+refuses the flag, Enhanced without it retains the baseline, and no host pause is
+silently enabled through an inherited environment or INI. See
+[the implementation/validation boundary](CONTROLS_INSTALL.md). This is not yet
+native validation of the new public recipe or a complete settings-menu feature.

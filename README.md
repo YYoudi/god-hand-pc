@@ -33,7 +33,9 @@ controls screen edits workspace-local preferences, not the executable's file.
 Physical input, audible audio and actual game Save/Load remain separate gates.
 The [experimental controls-pause boundary](CONTROLS_PAUSE.md) now has bounded
 native hold/resume/UI/stop evidence; its generic original primitive is public,
-but the native integration is not yet a public installer feature.
+and a [checked opt-in variant installer](CONTROLS_INSTALL.md) is now implemented.
+Its exact public recipe still awaits native build/runtime validation; default
+launch remains the unchanged evaluated executable.
 
 ## Bootstrap commands (Python 3.11+, Git)
 

@@ -1,5 +1,9 @@
 # Experimental host pause while editing controls
 
+Follow-up: [the checked opt-in variant contract](CONTROLS_INSTALL.md) describes
+the new public integration implementation. Its native validation is a separate
+gate; the original private observations below are not silently relabeled.
+
 Date: 9 November 2026. **Research result, not an installed public feature.**
 `pc.py run` still uses the preserved evaluated native executable. Its existing
 F1 controls overlay keeps the game running. The sampled experiment below uses
