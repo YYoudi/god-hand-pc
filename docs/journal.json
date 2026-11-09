@@ -279,9 +279,10 @@
       "changes": [
         "Selected earlier PC-port reports and journal entries retain their original dates, revisions, attribution and limitations.",
         "Five already-reviewed native-port comparison records retain their original metadata; only their explicitly selected screenshot files are copied unchanged.",
-        "The independent MIT Rust/Bevy lab remains historical, paused and not achieved. Existing pages and original evidence are preserved."
+        "The independent MIT Rust/Bevy lab remains historical, paused and not achieved. Existing pages and original evidence are preserved.",
+        "Protected unchanged imported report bytes against Windows line-ending conversion; an invented fresh-checkout regression covers core.autocrlf=true."
       ],
-      "validation": "Static generation, publication guards, CI and actual free Pages deployment are checked separately from the historical runtime experiments. No new ISO build, game execution, hardware input, audio or Save/Load result is claimed by this migration.",
+      "validation": "Static generation, publication guards, CI and actual free Pages deployment are checked separately from the historical runtime experiments. No new ISO build, game execution, hardware input, audio or Save/Load result is claimed by this migration. The final Windows checkout check exposed automatic LF-to-CRLF conversion in local historical report files; Git/live originals were unchanged. Explicit no-conversion attributes preserve the bytes in future checkouts without relaxing the SHA-256 guard.",
       "limits": "The pending private controls-pause trial links but has not been executed; it is not shipped or called safe. Genuine game Save/Load, hardware input/audio, later-stage fidelity, HD dimensions, FPS changes and multiplayer remain unverified.",
       "link": {
         "label": "Migration selection, provenance and unchanged-file hashes",

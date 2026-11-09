@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 import struct
 import sys
+import subprocess
+import tempfile
 import unittest
 import zlib
 
@@ -53,6 +55,22 @@ class JournalTests(unittest.TestCase):
         self.assertIn(' · God Hand PC',text)
         self.assertNotIn('\u00c2',text)
         self.assertNotIn('\u00e2\u20ac',text)
+
+    def test_fresh_autocrlf_checkout_preserves_original_report_bytes(self):
+        with tempfile.TemporaryDirectory(prefix='godhand-journal-eol-synthetic-') as name:
+            root=Path(name);source=root/'source';source.mkdir()
+            def git(*args,cwd=source):
+                return subprocess.check_output(['git',*args],cwd=cwd,stderr=subprocess.STDOUT)
+            git('init','-b','main');git('config','core.autocrlf','true')
+            (source/'.gitattributes').write_bytes((pc.ROOT/'.gitattributes').read_bytes())
+            invented=b'# Invented historical text\n\nNo game data.\n'
+            path=source/'docs/reports/invented.md';path.parent.mkdir(parents=True);path.write_bytes(invented)
+            git('add','--','.gitattributes','docs/reports/invented.md')
+            git('-c','user.name=Synthetic Journal Test','-c','user.email=test@example.invalid',
+                'commit','-m','Invented immutable report')
+            target=root/'clone'
+            git('-c','core.autocrlf=true','clone',str(source),str(target))
+            self.assertEqual((target/'docs/reports/invented.md').read_bytes(),invented)
 
     def test_broken_navigation_and_traversal_refused(self):
         for url in ['missing.html','../../outside.html']:

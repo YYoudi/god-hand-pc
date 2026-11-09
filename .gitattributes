@@ -1,0 +1,5 @@
+# Unchanged historical originals: never normalize bytes on add or checkout.
+docs/reports/*.md -text
+docs/IMPORTED_MIT_LICENSE.txt -text
+docs/media/*.png -text
+docs/captures/*.jpg -text

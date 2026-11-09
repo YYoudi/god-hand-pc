@@ -28,6 +28,10 @@ Historical entries/reports imported in docs/migration.json retain their exact
 original text, dates, attribution and scope. Their migration is not a rerun.
 Keep corrections/superseding results in new entries rather than rewriting history.
 Source reports are unchanged Markdown; generated HTML adds an editorial banner.
+Their exact raw bytes are protected with explicit `-text` Git attributes, even
+under Windows `core.autocrlf=true`. Do not normalize/rewrite them or weaken the
+SHA-256 check to hide checkout differences. A fresh invented-data clone regression
+tests this boundary; generated HTML and new journal entries remain editable.
 
 Publish only explicitly reviewed screenshot originals, never a directory sweep.
 Register both sides, implementation labels, same-frame/same-landmark/unmatched
