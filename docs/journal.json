@@ -1093,6 +1093,17 @@
     {
       "kind": "journal",
       "date": "2026-11-09",
+      "captured_at": "2026-11-09T19:03:53.250Z",
+      "path": "captures/46e52b230998231e1b754ff81408d5897016c1617cd5cdf51bd2564256131fe7.jpg",
+      "sha256": "46e52b230998231e1b754ff81408d5897016c1617cd5cdf51bd2564256131fe7",
+      "reviewed": true,
+      "revision": "a149feecf1492cb8d46f2c9ead91d9606c0f54d7",
+      "caption": "Checked HD workflow - actual published journal excerpt",
+      "source": "Unretouched actual published #journal screenshot in the existing default narrow viewport. Title, summary and beginning of the article only, not full-page or rendering/fidelity proof. No viewport override, resizing, crop, game pixels or private desktop. Complete native evidence and limitations remain in the article/report; renderer originals have their own comparison."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-09",
       "captured_at": "2026-11-09T18:01:01.495Z",
       "path": "captures/7110393a4e3761f7e6e07f25f139354052318873ec8bf1af2f6fe087be2c9ac6.jpg",
       "sha256": "7110393a4e3761f7e6e07f25f139354052318873ec8bf1af2f6fe087be2c9ac6",
