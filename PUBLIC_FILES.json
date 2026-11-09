@@ -12,6 +12,7 @@
   "RESOURCE_PACK.md",
   "RUNTIME_PACKS.md",
   "SETUP.md",
+  "USER_DATA.md",
   "adapter/bridge.cpp",
   "adapter/bridge.hpp",
   "adapter/integration.json",
@@ -35,5 +36,7 @@
   "tests/test_resources.py",
   "tests/test_runtime_packs.py",
   "tests/test_setup.py",
-  "upstream.json"
+  "tests/test_user_data.py",
+  "upstream.json",
+  "user_data.py"
 ]

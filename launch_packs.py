@@ -11,10 +11,17 @@ import resources
 import profiles
 import runtime_packs
 import setup_pc as build
+import user_data
 
 
 def clean_environment(environment):
     return {k: v for k, v in environment.items() if not k.startswith(("GODHAND_", "PS2X_"))}
+
+
+def runtime_command(executable, iso, headless, seconds):
+    # A missing CLI limit must not inherit a generated diagnostic INI timeout.
+    return [str(executable), "--iso", str(iso), "--headless" if headless else "--window",
+            "--time-limit", str(0 if seconds is None else seconds)]
 
 
 def pack_protocol(iso, manifest, directory, strict=False):
@@ -83,12 +90,14 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         states = build.contained(user, user / "quickstates" / installed["source_revision"])
         cards.mkdir(parents=True, exist_ok=True)
         states.mkdir(parents=True, exist_ok=True)
+        record["controls"] = user_data.prepare_controls(user, installed["executable"]["path"], fresh_user_data)
         env = clean_environment(os.environ)
         env.update({"GODHAND_ISO": identity["path"], "GODHAND_MC_DIR": str(cards),
                     "GODHAND_QUICK_STATE": str(states / "quick.state"),
                     "GODHAND_ISO_PREFETCH": "0", "GODHAND_DUMP_ON_TIME_LIMIT": "0",
                     "GODHAND_LOG_FILE": "", "GODHAND_DLL_LOG": str(directory / "dll-loads.csv"),
                     "PS2X_AUDIO_MUTE": "1" if headless else "0", "PS2X_SHOW_FPS": "0"})
+        env["GODHAND_CONTROLS_FILE"] = str(user / "controls.ini")
         if pad_script:
             env.update(PS2X_PAD_SCRIPT=pad_script, PS2X_FAKE_PADS="1")
         if capture:
@@ -96,13 +105,11 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
             env.update(PS2X_SCREENSHOT_DIR=str(directory / "frames"),
                        PS2X_SCREENSHOT_FIELDS=",".join(map(str, range(180, 42001, 120))))
         env.update(pack_environment)
-        command = [installed["executable"]["path"], "--iso", identity["path"],
-                   "--headless" if headless else "--window"]
-        if seconds is not None:
-            command += ["--time-limit", str(seconds)]
+        command = runtime_command(installed["executable"]["path"], identity["path"], headless, seconds)
         record.update(command=command, environment={k: v for k, v in env.items()
                        if k.startswith(("GODHAND_", "PS2X_"))},
                       fresh_user_data=fresh_user_data,
+                      time_limit_seconds=0 if seconds is None else seconds,
                       scope="Named native payload MVP, not HD resizing, physical input, audio, Save/Load or full-game fidelity")
         with (directory / "runtime.log").open("xb") as log:
             child = subprocess.Popen(command, cwd=Path(command[0]).parent, env=env, stdout=log,
@@ -121,6 +128,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         record.update(status="terminal", ended_at=build.now(), captures=[
             {"path": str(p), "sha256": build.digest(p)} for p in sorted((directory / "frames").glob("*.png"))])
         record["disc_after"] = pc.verify_disc(identity["path"], pc.load_pin(root)["retail_profile"])
+        record["controls"]["after"] = user_data.snapshot(user / "controls.ini")
         save()
         return dict(record, receipt=str(receipt))
     except BaseException as error:
