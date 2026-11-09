@@ -64,9 +64,10 @@ def pack_protocol(iso, manifest, directory, strict=False):
 
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
            capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False,
-           controls_pause_version=None, hd_textures=False, hd_pack=None, strict_hd=False):
+           controls_pause_version=None, hd_textures=False, hd_pack=None, strict_hd=False,
+           hd_textures_version=None):
     policy = profiles.resolve(profile, pack, strict, controls_pause, controls_pause_version,
-                              hd_textures, hd_pack, strict_hd)
+                              hd_textures, hd_pack, strict_hd, hd_textures_version)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -78,7 +79,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
     build.require(not (workspace / "setup.lock").exists() and not (workspace / "packs/install.lock").exists(),
                   "Build/installer lock requires inspection before launch")
     version = controls_pause_version or "v1"
-    installed = (hd.verified_install(root, name) if hd_textures else
+    hd_version = hd_textures_version or "v1"
+    installed = (hd.verified_install(root, name, hd_version) if hd_textures else
                  pause.verified_install(root, name, version) if controls_pause else runtime_packs.verified_install(root, name))
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
@@ -112,9 +114,11 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
             print("WARNING: invalid pack; using original assets:", pack_record["error"], flush=True)
         hd_record, hd_environment = hd_packs.protocol(identity["path"], hd_pack, directory, strict_hd)
         record["hd_textures"] = dict(hd_record, requested=hd_textures,
-                                     version=hd.VERSION if hd_textures else None,
+                                     version=hd.layer_name(hd_version) if hd_textures else None,
                                      fingerprint=installed.get("hd_fingerprint"),
-                                     runtime_application="not inferred; inspect native exact-match logs and rendered controls")
+                                     runtime_application="not inferred; GPU-only result counts are unread; inspect rendered controls"
+                                                         if hd_textures and hd_version == "gpu-v2" else
+                                                         "not inferred; inspect native exact-match logs and rendered controls")
         if hd_record["mode"] == "original-fallback":
             print("WARNING: invalid HD pack; using original assets:", hd_record["error"], flush=True)
         user = directory / "userdata" if fresh_user_data else build.contained(workspace, workspace / "userdata")

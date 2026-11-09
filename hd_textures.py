@@ -1,4 +1,4 @@
-"""Original GPL checked additive hd-v1 host variant; no game code generation."""
+"""Original GPL checked additive HD host variants; no game code generation."""
 from pathlib import Path
 import json
 import os
@@ -20,14 +20,29 @@ COPIES = {"adapter/hd_texture.hpp": PREFIX + "godhand_pc_hd/hd_texture.hpp",
           "adapter/hd_runtime.hpp": PREFIX + "godhand_pc_hd/runtime.hpp",
           "adapter/hd_runtime.inc": PREFIX + "godhand_pc_hd/runtime.inc",
           "adapter/hd_bridge.cpp": "src/godhand_pc_hd_bridge.cpp"}
+VERSIONS = ("v1", "gpu-v2")
 
 
-def integration(root):
-    recipe = json.loads((Path(root)/"adapter/hd_integration.json").read_text(encoding="utf-8"))
-    build.require(recipe["schema"] == 1 and recipe["version"] == VERSION and
+def layer_name(version="v1"):
+    build.require(type(version) is str and version in VERSIONS, "Unknown HD version")
+    return VERSION if version == "v1" else "hd-gpu-v2"
+
+
+def copies(version="v1"):
+    layer_name(version)
+    if version == "v1": return dict(COPIES)
+    return {("adapter/hd_runtime_gpu.inc" if p == "adapter/hd_runtime.inc" else p): target
+            for p, target in COPIES.items()}
+
+
+def integration(root, version="v1"):
+    layer = layer_name(version)
+    filename = "adapter/hd_integration.json" if version == "v1" else "adapter/hd_gpu_integration.json"
+    recipe = json.loads((Path(root)/filename).read_text(encoding="utf-8"))
+    build.require(recipe["schema"] == 1 and recipe["version"] == layer and
                   recipe["upstream_revision"] == pc.load_pin(root)["revision"] and
                   len(recipe["files"]) == len(MODIFIED) and
-                  {x["path"] for x in recipe["files"]} == MODIFIED and recipe["copies"] == COPIES,
+                  {x["path"] for x in recipe["files"]} == MODIFIED and recipe["copies"] == copies(version),
                   "Unreviewed HD integration profile/paths")
     return recipe
 
@@ -45,18 +60,19 @@ def plan_sources(source, root, recipe):
     return variants.plan_sources(source, root, recipe)
 
 
-def verified_install(root, name):
+def verified_install(root, name, version="v1"):
+    layer_id = layer_name(version)
     base = packs.verified_install(root, name)
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace/VERSION)
+    layer = build.contained(workspace, workspace/layer_id)
     pointer = json.loads((layer/"installed.json").read_text(encoding="utf-8"))
     run_id = pointer["run"]
     build.require(type(run_id) is str and re.fullmatch(r"[a-f0-9]{32}", run_id), "Invalid HD run pointer")
     run = build.contained(layer, layer/"runs"/run_id)
     record = json.loads((run/"receipt.json").read_text(encoding="utf-8"))
-    recipe = integration(root)
+    recipe = integration(root, version)
     build.require(record["status"] == "installed-not-runtime-validated" and record["baseline_restored"] and
-                  record["hd_version"] == VERSION and record["hd_fingerprint"] == fingerprint(root, recipe) and
+                  record["hd_version"] == layer_id and record["hd_fingerprint"] == fingerprint(root, recipe) and
                   record["base_identity"] == variants.baseline_identity(base), "HD install/base identity differs")
     source = build.contained(run, run/"source")
     pc.inspect_checkout(source, base["source_revision"], record["source_revision"])
@@ -75,11 +91,12 @@ def verified_install(root, name):
     return dict(record, receipt=str(run/"receipt.json"), controls_adoption_executable=base["executable"]["path"])
 
 
-def install(root, name):
+def install(root, name, version="v1"):
+    layer_id = layer_name(version)
     root = Path(root).resolve()
     build.require(os.name == "nt", "HD variant currently requires Windows/MSVC")
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace/VERSION)
+    layer = build.contained(workspace, workspace/layer_id)
     layer.mkdir(exist_ok=True)
     locks, run, mutated, terminal = [], None, False, True
     token = json.dumps({"pid": os.getpid(), "token": uuid.uuid4().hex, "at": build.now()})
@@ -88,11 +105,11 @@ def install(root, name):
             with path.open("x", encoding="utf-8") as stream: stream.write(token)
             locks.append(path)
         build.require(not (workspace/"packs/install.lock").exists(), "Pack installer requires inspection")
-        if (layer/"installed.json").exists(): return verified_install(root, name)
+        if (layer/"installed.json").exists(): return verified_install(root, name, version)
         build.require(not (layer/"attempt.json").exists(), "Previous HD attempt retained; inspect before retry")
         build.require_no_game(subprocess.check_output)
         base = packs.verified_install(root, name)
-        recipe = integration(root)
+        recipe = integration(root, version)
         source = build.contained(workspace, workspace/"upstream")
         planned = plan_sources(source, root, recipe)
         setup = json.loads(Path(base["setup_receipt"]).read_text(encoding="utf-8"))
@@ -100,11 +117,13 @@ def install(root, name):
         original_branch = pc.git("rev-parse", "--abbrev-ref", "HEAD", cwd=source)
         run = build.Run(layer)
         run.record.update(base_identity=variants.baseline_identity(base), baseline_restored=False,
-                          hd_version=VERSION, adapter_fingerprint=base["adapter_fingerprint"],
+                          hd_version=layer_id, adapter_fingerprint=base["adapter_fingerprint"],
                           hd_fingerprint=fingerprint(root, recipe), tooling_revision=pc.git("rev-parse", "HEAD", cwd=root),
                           tooling_dirty=bool(pc.git("status", "--porcelain", cwd=root)),
                           setup_receipt=base["setup_receipt"], original_branch=original_branch,
-                          scope="Experimental checked HD host layer; reused private build cache, not fresh generation or full fidelity",
+                          scope="Experimental checked HD host layer; " +
+                                ("GPU-resident results, no CPU match readback; " if version == "gpu-v2" else "") +
+                                "reused private build cache, not fresh generation, performance or full fidelity",
                           baseline_backups={})
         for filename in ("godhand.exe", "godhand.pdb"):
             path = source/"build/port/bin"/filename
@@ -113,7 +132,7 @@ def install(root, name):
         run.save()
         with (layer/"attempt.json").open("x", encoding="utf-8") as stream:
             json.dump({"receipt": str(run.directory/"receipt.json")}, stream)
-        pc.git("checkout", "-b", "codex/hd-v1-" + run.directory.name, cwd=source)
+        pc.git("checkout", "-b", "codex/" + layer_id + "-" + run.directory.name, cwd=source)
         mutated = True
         for path, data in planned.items():
             path.parent.mkdir(parents=True, exist_ok=True); path.write_bytes(data)
@@ -145,7 +164,7 @@ def install(root, name):
         run.record.update(status="installed-not-runtime-validated", ended_at=build.now()); run.save()
         with (layer/"installed.json").open("x", encoding="utf-8") as stream:
             json.dump({"run": run.directory.name}, stream, indent=2)
-        return verified_install(root, name)
+        return verified_install(root, name, version)
     except BaseException as error:
         if run:
             terminal = run.child is None or run.child.poll() is not None

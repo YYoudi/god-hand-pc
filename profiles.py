@@ -3,7 +3,7 @@ NAMES = ("original", "enhanced")
 
 
 def resolve(name="original", pack=None, strict=False, controls_pause=False, controls_pause_version=None,
-            hd_textures=False, hd_pack=None, strict_hd=False):
+            hd_textures=False, hd_pack=None, strict_hd=False, hd_textures_version=None):
     """Validate before any filesystem, disc, installer or subprocess operation."""
     if name not in NAMES:
         raise ValueError("Unknown launch profile; choose original or enhanced")
@@ -23,6 +23,10 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
         raise ValueError("strict-pack requires a pack")
     if type(hd_textures) is not bool or type(strict_hd) is not bool:
         raise ValueError("HD capability and strict mode must be booleans")
+    if hd_textures_version not in (None, "v1", "gpu-v2"):
+        raise ValueError("Unknown HD version")
+    if hd_textures_version is not None and not hd_textures:
+        raise ValueError("hd-textures-version requires --hd-textures")
     if (hd_pack is not None or strict_hd) and not hd_textures:
         raise ValueError("HD pack options require --hd-textures")
     if name == "original" and hd_textures:
@@ -36,6 +40,8 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
                                     (["experimental-controls-pause" +
                                       ("-audio-v2" if controls_pause_version == "audio-v2" else "")]
                                      if controls_pause else []) +
-                                    (["experimental-hd-textures"] if hd_textures else []),
+                                    (["experimental-hd-textures" +
+                                      ("-gpu-v2" if hd_textures_version == "gpu-v2" else "")]
+                                     if hd_textures else []),
             "baseline": "pinned native runtime; upstream settings/timing unchanged by this policy",
             "fidelity": "not certified; full-game, persistence, physical input and audio gates remain open"}

@@ -121,8 +121,10 @@ def main():
     pause.add_argument("--workspace-name", default="retail-setup")
     pause.add_argument("--version", choices=("v1", "audio-v2"), default="v1",
                        help="Separate versioned install; does not overwrite or implicitly upgrade v1")
-    hd = sub.add_parser("install-hd-textures", help="Build a separate experimental hd-v1 host variant")
+    hd = sub.add_parser("install-hd-textures", help="Build a separate experimental HD host variant")
     hd.add_argument("--workspace-name", default="retail-setup")
+    hd.add_argument("--version", choices=("v1", "gpu-v2"), default="v1",
+                    help="Explicit additive version; default v1 is unchanged")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -140,8 +142,10 @@ def main():
     play.add_argument("--controls-pause-version", choices=("v1", "audio-v2"),
                       help="Explicit version selection; requires --controls-pause (default v1 unchanged)")
     play.add_argument("--hd-textures", action="store_true",
-                      help="Explicit experimental hd-v1 variant; requires enhanced and install-hd-textures")
+                      help="Explicit experimental HD variant; requires enhanced and install-hd-textures (default v1)")
     play.add_argument("--hd-pack", type=Path, help="Named original raw-RGBA pack; requires --hd-textures")
+    play.add_argument("--hd-textures-version", choices=("v1", "gpu-v2"), default=None,
+                      help="Requires --hd-textures; no version still selects preserved v1")
     play.add_argument("--strict-hd-pack", action="store_true", help="Refuse invalid HD pack instead of original fallback")
     sub.add_parser("status")
     args = parser.parse_args()
@@ -169,14 +173,15 @@ def main():
         result = install(ROOT, args.workspace_name, args.version)
     elif args.command == "install-hd-textures":
         from hd_textures import install
-        result = install(ROOT, args.workspace_name)
+        result = install(ROOT, args.workspace_name, args.version)
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
                         args.headless, args.seconds, args.capture, args.fresh_user_data, args.pad_script,
                         profile=args.profile, controls_pause=args.controls_pause,
                         controls_pause_version=args.controls_pause_version,
-                        hd_textures=args.hd_textures, hd_pack=args.hd_pack, strict_hd=args.strict_hd_pack)
+                        hd_textures=args.hd_textures, hd_pack=args.hd_pack, strict_hd=args.strict_hd_pack,
+                        hd_textures_version=args.hd_textures_version)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():
