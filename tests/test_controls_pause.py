@@ -202,6 +202,40 @@ class ControlsInstallTests(unittest.TestCase):
         self.assertEqual(profiles.resolve("enhanced", controls_pause=True)["requested_extensions"],
                          ["experimental-controls-pause"])
 
+    def test_full_launcher_selects_variant_only_on_request_and_never_leaks_probes(self):
+        variant = self.install()
+        calls = []
+        def popen(command, **kwargs):
+            calls.append((command, kwargs))
+            return SimpleNamespace(pid=123456, wait=lambda **ignored: 124)
+        native = SimpleNamespace(check_output=lambda *args, **kwargs: "No invented game",
+                                 Popen=popen, CREATE_NO_WINDOW=0, BELOW_NORMAL_PRIORITY_CLASS=0,
+                                 TimeoutExpired=subprocess.TimeoutExpired, STDOUT=subprocess.STDOUT)
+        dirty_env = dict(os.environ, GODHAND_PC_CONTROLS_PAUSE="1", GODHAND_PC_CONTROLS_PROBE="1",
+                         GODHAND_CONTROLS_SELFTEST="f1,done", PS2X_STATE_LOAD_AT="invented-stale")
+        platform = SimpleNamespace(name="nt", environ=dirty_env)
+        with patch.object(launch_packs, "os", platform), patch.object(launch_packs, "subprocess", native), \
+             patch.object(pc, "git", return_value="1" * 40), \
+             patch.object(c.packs, "verified_install", return_value=self.base) as base_check, \
+             patch.object(c, "verified_install", return_value=variant) as variant_check:
+            for requested in (False, True):
+                receipt = launch_packs.launch(self.root, "retail-fixture",
+                    self.workspace / "invented-disc.txt", headless=True, seconds=10,
+                    fresh_user_data=True, profile="enhanced", controls_pause=requested)
+                command, kwargs = calls[-1]
+                expected = variant if requested else self.base
+                self.assertEqual(command[0], expected["executable"]["path"])
+                self.assertEqual(receipt["source_revision"], expected["source_revision"])
+                env = kwargs["env"]
+                self.assertEqual(env["GODHAND_PC_CONTROLS_PAUSE"], str(int(requested)))
+                self.assertEqual(env["GODHAND_PC_CONTROLS_PROBE"], "0")
+                self.assertEqual(env["GODHAND_CONTROLS_SELFTEST"], "0")
+                self.assertNotIn("PS2X_STATE_LOAD_AT", env)
+                self.assertEqual(receipt["controls_pause"]["requested"], requested)
+                self.assertEqual(receipt["controls_pause"]["acknowledged_hold"], "not inferred from launch request")
+            self.assertEqual(base_check.call_count, 1)
+            self.assertEqual(variant_check.call_count, 1)
+
 
 class ProbeRoutingTests(unittest.TestCase):
     @unittest.skipUnless(shutil.which("g++") or shutil.which("clang++"), "C++20 needed")
