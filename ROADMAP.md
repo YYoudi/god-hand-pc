@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Make the proven private larger-texture boundary reproducible as a checked opt-in variant/pack workflow, preserving Original/v1/audio-v2 and keeping game-derived references private. Broader hardware/focus/audio, true game saving and human campaign validation remain separate gates.
+Measure the HD matcher/readback cost and prove VRAM/CLUT invalidation before a cache; specify a separately checked HD+audio-v2 composition rather than silently dropping features. True game SaveExitLoad, physical input/audio and human campaign validation remain separate gates.
 
 ## M8 — Active: verified original PC baseline
 
@@ -33,7 +33,9 @@ Keep original behavior as a control; readable original host/function replacement
 - **RM05 Prove simulation-safe presentation cadence changes — Planned:** Separate rendering cadence from simulation; verify animation, timers, physics, hit windows and AI at multiple cadences before FPS unlock claims.
 - **RM06 Improve renderer/material/light control incrementally — Planned:** Document resource-to-render path and material/light inputs; prove each original/enhanced change at fixed viewpoints. Whole-engine migration requires a reproduced justification.
 - **RM07 Trial upstream updates without losing extensions — Planned:** Separate fresh pinned workspace, reviewed dependencies/preimages, build and relevant behavior/profile/pack regression controls before repinning.
-- **PC09 Package the size-aware boundary as a checked opt-in workflow — Planned:** Separate versioned native variant and stable named external-image schema; ISO/profile/source/binary verification, original reference kept local, immutable payload, baseline/exe/PDB preservation, explicit Enhanced opt-in, invalid/disabled fallback and exact public-recipe native controls. Do not silently replace any current executable or call a private probe an installer.
+- **PC09 Package the size-aware boundary as a checked opt-in workflow — Verified for stated scope:** Scoped checked additive hd-v1 workflow: exact public8201 recipe configures/links, original source/exe/PDB restored,14-file manifest and ISO verified. Named original512x512 RGBA snapshot renders; same-binary absent/invalid and default originals are baseline-exact. Strict invalid/Original+HD refuse native spawn; direct exact-native checksum negative rejects. Legacy v1/audio-v2 startup pointers remain intact. Not fresh generation, general HD, performance or composition acceptance.
+- **PC10 Measure and safely cache HD content matching — Planned:** Measure actual classifier/readback cost first; prove VRAM/CLUT/epoch identity and invalidation with invented mutation/alias controls, then actual enabled/disabled/negative originals. No stale matches or invented FPS.
+- **PC11 Validate an explicit HD and audio-v2 composite variant — Planned:** Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused.
 
 ## M10 — Later research: multiplayer feasibility
 

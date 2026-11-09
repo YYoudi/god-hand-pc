@@ -1,5 +1,10 @@
 # Experimental size-aware texture boundary
 
+**Later follow-up:** [HD_PACKS.md](HD_PACKS.md) records a distinct checked public
+installer/pack build and actual launcher controls. The original private-trial
+report below retains its own historical revisions, results and limitations;
+statements about missing public integration describe that earlier milestone.
+
 9 November 2026. **Private native trial; no public HD installer or launch flag.**
 The ordinary installed baseline and both controls variants are unchanged. The
 current public named-pack command still supports same-size stored bytes only.

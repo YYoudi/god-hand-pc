@@ -5,11 +5,11 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Make the proven private larger-texture boundary reproducible as a checked opt-in variant/pack workflow, preserving Original/v1/audio-v2 and keeping game-derived references private. Broader hardware/focus/audio, true game saving and human campaign validation remain separate gates.",
+  "next": "Measure the HD matcher/readback cost and prove VRAM/CLUT invalidation before a cache; specify a separately checked HD+audio-v2 composition rather than silently dropping features. True game SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Public named packs still cover one same-size stored resource. A separate private 512x512 GPU proof now works on that128x128 source without changing guest bytes, but public HD installation, unique file identity/aliases, other resources/scenes and a general remaster remain unverified.",
+    "Checked hd-v1 now builds locally and renders one authored512x512 image on the documented128x128 source. General HD coverage, content aliases, matcher/readback performance and other resources/scenes remain open. HD+controls/same-size packs is refused until a separate composite variant is tested.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -163,9 +163,23 @@
         {
           "id": "PC09",
           "title": "Package the size-aware boundary as a checked opt-in workflow",
+          "status": "done",
+          "area": "rendering",
+          "acceptance": "Scoped checked additive hd-v1 workflow: exact public8201 recipe configures/links, original source/exe/PDB restored,14-file manifest and ISO verified. Named original512x512 RGBA snapshot renders; same-binary absent/invalid and default originals are baseline-exact. Strict invalid/Original+HD refuse native spawn; direct exact-native checksum negative rejects. Legacy v1/audio-v2 startup pointers remain intact. Not fresh generation, general HD, performance or composition acceptance."
+        },
+        {
+          "id": "PC10",
+          "title": "Measure and safely cache HD content matching",
           "status": "planned",
           "area": "rendering",
-          "acceptance": "Separate versioned native variant and stable named external-image schema; ISO/profile/source/binary verification, original reference kept local, immutable payload, baseline/exe/PDB preservation, explicit Enhanced opt-in, invalid/disabled fallback and exact public-recipe native controls. Do not silently replace any current executable or call a private probe an installer."
+          "acceptance": "Measure actual classifier/readback cost first; prove VRAM/CLUT/epoch identity and invalidation with invented mutation/alias controls, then actual enabled/disabled/negative originals. No stale matches or invented FPS."
+        },
+        {
+          "id": "PC11",
+          "title": "Validate an explicit HD and audio-v2 composite variant",
+          "status": "planned",
+          "area": "pc",
+          "acceptance": "Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused."
         }
       ]
     },
@@ -287,6 +301,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "A checked opt-in workflow for the larger texture",
+      "summary": "The public hd-v1 installer and named external-image launcher now reproduce the512x512 diagnostic locally. This is a separate later build, not a relabeling of the private trial or general HD/remaster support.",
+      "changes": [
+        "Added a versioned native installer with exact host preimages,14-file identity, baseline source/executable/PDB restoration and additive pointers. The existing Original, v1 and audio-v2 binaries remain selectable and unchanged.",
+        "Added a bounded named raw-RGBA manifest, original example generator, immutable per-run inputs and private ISO-backed source reference. Invalid data falls back unless strict preflight refusal is requested. HD with controls/same-size packs is explicitly refused.",
+        "Built from clean public8201 tooling, then exercised six actual public CLI controls. The same HD binary renders the original512x512 image when enabled and the baseline when absent/invalid; default Original still selects its old binary. Legacy v1/audio-v2 startup checks pass.",
+        "Registered new same-field provenance for the enabled/absent originals. Their bytes exactly equal the prior reviewed PNGs, so no duplicate media or old timestamp/revision rewrite was needed. Retained failed compile/fixture attempts."
+      ],
+      "validation": "177 invented-data tests locally and in an actual fresh autocrlf public checkout:175pass/two Windows symlink-privilege skips. Native build configure0/build0. Public enabled400s, absent220s, invalid220s, default220s, v1/audio-v2 startup30s each finish native124/launcher0 without forced kill. Actual strict-invalid and Original+HD refuse before native spawn. A separate direct-native30s deliberately wrong whole-input hash rejects before HD upload; startup only. Personal ISO, baseline/PDB, old variants and historical Rust WIP remain exact.",
+      "limits": "Only one512x512 resource/view and the existing default GPU path. Strict-HD is preflight-only, not proof of GPU matching/application. Classification/readback performance, aliases, wider dimensions/scenes/filtering and HD+controls composition remain open. Additive cache reuse, not fresh ISO generation. No genuine SaveExitLoad, physical input/audible audio, full campaign, FPS/widescreen/lighting or multiplayer claim.",
+      "link": {
+        "label": "Commands, exact native provenance, six controls and limitations",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/HD_PACKS.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",
@@ -636,6 +668,52 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-09-checked-hd-workflow",
+      "date": "2026-11-09",
+      "title": "Checked public HD workflow: original and larger diagnostic image",
+      "feature": "PC09",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Checked hd-v1 - no pack",
+        "bevy": "Checked hd-v1 - authored 512x512 pack"
+      },
+      "scenario": "Two new fresh public CLI starts using the same installed hd-v1 binary f17d67d6/source8dec495: enabled400s and absent220s, clean tooling8201ea1, identical title/start then pause inputs and native field4741. Muted/headless with fresh isolated preferences/cards, existing private generated inputs/object/shader caches; no attacks, imported saves, camera/object/internal-scale edits or autonomous level completion. These are new observations, not a redated private proof.",
+      "observations": [
+        "The exact committed public installer configures and links the separate variant, restores the operational baseline source/executable/prior PDB, and retains legacy v1/audio-v2 pointers. The public launcher verifies disc, source and binary before planning the pack.",
+        "The enabled native verifies the frozen input, uploads1048576 original authored bytes and matches all16384 decoded source texels before sampling512x512. Same-binary absent and invalid-preflight fallback controls reproduce the baseline PNG; default Original selects its old executable and reproduces it too.",
+        "These new field4741 originals are byte-for-byte equal to the previously reviewed PNG files, reused without rewriting their earlier provenance. All74290 changed pixels remain inside x0..639/y419..599; three facade/sky regions are exact. Full800x600 files retain black readback padding."
+      ],
+      "limits": [
+        "One resource, one512x512 diagnostic, default native GPU path and sampled opening view only. Content matching is not unique filename ownership; identical aliases, other dimensions/scenes/filter paths and performance remain open.",
+        "HD combined with controls-pause or same-size packs is explicitly refused, not implemented. Strict-HD refuses invalid preflight data only; native capability/match/failure fallback can still render original assets. Launcher replacement-planned does not prove visual application.",
+        "Both images are native LasVola continuation output, not Bevy, PS2 hardware or a remaster artwork upgrade. No full-machine determinism, physical-input/audible-audio, true game SaveExitLoad, later-stage or campaign fidelity claim.",
+        "Only reviewed full renderer screenshots are public. Raw source reference/envelopes, authored raw payload, generated game code, ISO, executable, PDB, saves and private research remain local. Game imagery is neither GPL nor MIT."
+      ],
+      "reference": {
+        "path": "media/fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e.png",
+        "sha256": "fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + checked hd-v1; upstream14e956a, source8dec495, exef17d67d6; clean public tooling8201ea1b3c0bbeabfe6cc15de617bd3051ba21e7; field4741, scale3, fresh muted headless start; hd-no-pack",
+        "revision": "8dec4950b15f7fffe5e97b580dcc10fb758c8503",
+        "captured_at": "2026-11-09T18:43:24.830898+00:00",
+        "caption": "Original assets on the checked HD binary, no pack; full unretouched renderer PNG."
+      },
+      "bevy": {
+        "path": "media/c0720b6a89b05bed007fa76060029f8db542f69365df6270c4cedafff94428b2.png",
+        "sha256": "c0720b6a89b05bed007fa76060029f8db542f69365df6270c4cedafff94428b2",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + checked hd-v1; upstream14e956a, source8dec495, exef17d67d6; clean public tooling8201ea1b3c0bbeabfe6cc15de617bd3051ba21e7; field4741, scale3, fresh muted headless start; hd-enabled",
+        "revision": "8dec4950b15f7fffe5e97b580dcc10fb758c8503",
+        "captured_at": "2026-11-09T18:36:49.275132+00:00",
+        "caption": "Public checked HD pack renders an original authored512x512 grid; full unretouched renderer PNG, not remaster art."
+      }
+    },
     {
       "id": "2026-11-09-native-size-aware-upload",
       "date": "2026-11-09",

@@ -22,8 +22,12 @@ Original public continuation code
 | External original packs | Named resource schema | Exact disc/profile check, immutable per-run payload, original-asset fallback unless strict mode was requested. |
 
 `Original` is the default launch policy: no continuation pack overrides.
-`Enhanced` currently permits only the existing same-size named texture extension;
-it does not turn on widescreen, HD dimensions, frame-rate changes or a new renderer.
+`Enhanced` permits explicitly selected extensions, not an automatic bundle:
+the same-size bridge, checked controls versions, or separate experimental
+[hd-v1](HD_PACKS.md). HD+controls/same-size packs currently refuse combination;
+they require a separately tested composite recipe. Only one512x512 authored
+replacement on a128x128 source has HD runtime evidence. None enables widescreen,
+frame-rate changes or a new renderer.
 Upstream's own baseline may already differ from hardware in resolution/timing.
 Neither profile claims full-game fidelity. Test input, headless audio muting and
 capture options are diagnostic controls and must remain explicit in evidence.

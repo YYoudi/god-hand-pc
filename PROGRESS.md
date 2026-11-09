@@ -13,6 +13,12 @@ public source for future entries, tasks and reviewed comparisons. Generate
 ROADMAP.md and the static Pages HTML with `python scripts/journal.py`.
 The full PC-port goal remains active; the editorial migration is only a milestone.
 
+Latest checked larger-texture milestone: read HD_PACKS.md and the local
+checked-hd-native-2026-11-09 receipts. Keep public build/launcher validation
+separate from the earlier private proof, and planned/requested/uploaded/matched/
+rendered outcomes separate. HD strict mode is preflight-only. Preserve Original,
+v1 and audio-v2 identities; HD composition is refused until separately proven.
+
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and
 the next falsifiable experiment. Poll confirmed live jobs before restarting.

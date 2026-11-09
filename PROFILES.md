@@ -16,9 +16,10 @@ Each private launch receipt records the policy schema/name and requested
 extensions separately from the actual `pack.mode`. A requested extension is not
 a successful application; check the runtime log and rendered result too.
 
-This first increment is launch-policy isolation, **not an in-game PC settings
-menu**, function replacement or full PS2 fidelity. The only current extension is
-the previously tested same-size named texture bridge. Both profiles preserve the
+This first increment was launch-policy isolation, **not an in-game PC settings
+menu**, function replacement or full PS2 fidelity. The initial extension was
+the tested same-size named texture bridge; later opt-ins are recorded below.
+Both profiles preserve the
 existing pinned runtime, its upstream settings/timing and private user data.
 The policy does not reset general native configuration or turn a runtime snapshot
 into a real game save. [Controls preferences](USER_DATA.md) now live in workspace
@@ -51,3 +52,11 @@ its admitted-callback boundary. Without a pause request, Original/Enhanced keep
 the unchanged baseline. A version without its pause flag is refused, never
 silently ignored. The actual selected version, fingerprint, executable and
 tooling cleanliness are recorded separately from an acknowledged native hold.
+
+The separate checked [hd-v1 workflow](HD_PACKS.md) requires
+`install-hd-textures`, then `--profile enhanced --hd-textures --hd-pack <manifest>`.
+Only a512x512 original image on the documented128x128 source is natively verified.
+No pack means original assets on the HD binary; no HD flags means the old binary.
+HD combined with controls-pause or same-size packs is refused before disc/process
+access, not silently downgraded. Strict HD is a **preflight** refusal policy, not
+proof that GPU matching/upload/rendering succeeded; inspect native evidence.
