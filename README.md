@@ -18,6 +18,10 @@ features without rewriting the entire engine. Read [the medium-term gates](DIREC
 [extension architecture](ARCHITECTURE.md) and [Original/Enhanced policies](PROFILES.md).
 The default launch refuses packs; use `--profile enhanced` to opt into one.
 This is not yet an in-game settings menu or a complete accuracy claim.
+See [user-data and launch-lifetime behavior](USER_DATA.md): normal launch without
+`--seconds` explicitly requests no diagnostic timeout. The existing upstream F1
+controls screen edits workspace-local preferences, not the executable's file.
+Physical input, audible audio and actual game Save/Load remain separate gates.
 
 ## Bootstrap commands (Python 3.11+, Git)
 

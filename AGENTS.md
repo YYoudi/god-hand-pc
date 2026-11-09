@@ -34,6 +34,12 @@ No FPS unlock, HD dimensions, modern lighting or multiplayer claims without
 their own experiments. Keep durable original replacements out of generated code.
 Prototype mining is bounded private research, not a retail/debug-menu result.
 Preserve snapshots, failed hypotheses and paused MIT WIP; do not delegate.
+Read USER_DATA.md: launch without --seconds must explicitly disable the INI
+diagnostic timeout; hidden public runs stay bounded. Reuse upstream's existing
+F1 controls screen with workspace-local input preferences and byte-preserving
+first adoption, not a duplicate UI. Normal launches disable mutating upstream
+controls self-tests; guarded native UI probes use separate scratch files only.
+Controls preference persistence is not game Save/Load or physical-input proof.
 
 ## Proven foundation and remaining limits
 

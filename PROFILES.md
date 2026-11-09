@@ -20,9 +20,14 @@ This first increment is launch-policy isolation, **not an in-game PC settings
 menu**, function replacement or full PS2 fidelity. The only current extension is
 the previously tested same-size named texture bridge. Both profiles preserve the
 existing pinned runtime, its upstream settings/timing and private user data.
-The policy does not reset native configuration or turn a runtime snapshot into
-a real game save. Use `--fresh-user-data` for separate diagnostics, never delete
-an owner's cards to create a clean test.
+The policy does not reset general native configuration or turn a runtime snapshot
+into a real game save. [Controls preferences](USER_DATA.md) now live in workspace
+user data; an existing executable-local controls file is adopted byte-for-byte
+only when the workspace file is absent. Fresh diagnostics use separate defaults,
+not the owner's controls/cards. Never delete preferences or cards to clean a test.
+Without `--seconds`, normal launch explicitly requests native limit zero, rather
+than inheriting a diagnostic timeout from the runtime INI. Hidden public runs
+still require a bounded deadline. These are host-usability changes in both profiles.
 
 The launcher cleans inherited GODHAND_/PS2X_ environment settings in both modes.
 Headless limits, scripted controls and captures remain explicitly recorded test
