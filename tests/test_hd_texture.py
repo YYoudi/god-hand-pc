@@ -1,5 +1,6 @@
 """Original invented transfer/envelope controls, not native fidelity proof."""
 from pathlib import Path
+import hashlib
 import shutil
 import struct
 import subprocess
@@ -11,6 +12,13 @@ import pc
 
 
 class ReferenceTests(unittest.TestCase):
+    def test_original_example_is_reproducible_not_game_art(self):
+        data = hd_reference.example_rgba()
+        self.assertEqual(len(data), 512*512*4)
+        self.assertEqual(set(data[3::4]), {128})
+        self.assertEqual(hashlib.sha256(data).hexdigest(),
+                         'b3d871e3d5c6e76bf1c8343c099024033b38058de805c07f83ca6a33a6203b04')
+
     def test_all_slots_are_bijective_and_known_transfer_vectors(self):
         pairs = [hd_reference.transfer_address(x, y) for y in range(128) for x in range(128)]
         self.assertEqual(len(set(pairs)), 16384)

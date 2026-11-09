@@ -5,11 +5,11 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Broaden focus/held-input and device/audio acceptance without autonomous level-beating; specify resource-to-host upload ownership before any HD implementation. Keep Original, v1 and audio-v2 explicit and preserved. Genuine game saving and human campaign coverage remain open.",
+  "next": "Make the proven private larger-texture boundary reproducible as a checked opt-in variant/pack workflow, preserving Original/v1/audio-v2 and keeping game-derived references private. Broader hardware/focus/audio, true game saving and human campaign validation remain separate gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "The named external texture proof covers one same-size stored resource, not HD dimensions, hot reload or a general graphics remaster.",
+    "Public named packs still cover one same-size stored resource. A separate private 512x512 GPU proof now works on that128x128 source without changing guest bytes, but public HD installation, unique file identity/aliases, other resources/scenes and a general remaster remain unverified.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -128,9 +128,9 @@
         {
           "id": "PC05",
           "title": "Prove a size-aware HD asset upload boundary",
-          "status": "planned",
+          "status": "done",
           "area": "rendering",
-          "acceptance": "Specify resource-to-host upload ownership; import an original larger texture without republishing game assets, actually render and compare from one viewpoint. Same-size replacement is not acceptance."
+          "acceptance": "Proof-only scope: actual named128x128 resource -> full16384texel GPU content match -> authored512x512 host image visibly sampled, same-field unretouched originals. Disabled, one-interior-reference-texel and invalid-input hash restore the baseline PNG. Exact public helpers also reproduce the private result. No public HD installer/general pack API; seePC09. Aliases, performance and wider coverage remain open."
         },
         {
           "id": "RM04",
@@ -159,6 +159,13 @@
           "status": "planned",
           "area": "pc",
           "acceptance": "Separate fresh pinned workspace, reviewed dependencies/preimages, build and relevant behavior/profile/pack regression controls before repinning."
+        },
+        {
+          "id": "PC09",
+          "title": "Package the size-aware boundary as a checked opt-in workflow",
+          "status": "planned",
+          "area": "rendering",
+          "acceptance": "Separate versioned native variant and stable named external-image schema; ISO/profile/source/binary verification, original reference kept local, immutable payload, baseline/exe/PDB preservation, explicit Enhanced opt-in, invalid/disabled fallback and exact public-recipe native controls. Do not silently replace any current executable or call a private probe an installer."
         }
       ]
     },
@@ -280,6 +287,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-09",
+      "kind": "progress",
+      "title": "A larger external texture in the native renderer",
+      "summary": "An original 512x512 test pattern now replaces one 128x128 street texture in a private native trial, without changing the disc or guest asset bytes. This is not public HD-pack support.",
+      "changes": [
+        "Traced the actual GS buffer/sampler boundary instead of mistaking framebuffer upload for a decoded texture cache. Compare every source texel before selecting the larger host image; no guessed VRAM address or source marker.",
+        "Published original GPL reference/envelope/shader building blocks and an original reproducible test-pattern generator. Game-derived reference pixels remain private; no Rust or whole-engine rewrite.",
+        "Reproduced the native result using the exact public helpers. Disabled, changed-interior-reference and invalid-input controls restore the sampled original PNG byte-for-byte. All five bounded native starts finish without forced termination.",
+        "Registered the unchanged original/replacement PNG pair at the same native field/viewpoint. Kept the first failed mnemonic fixtures and GL-wrapper build; a passing build is not the whole proof."
+      ],
+      "validation": "155 original synthetic tests locally:154pass/1Windows symlink-privilege skip. Native enabled 300s, disabled 220s, exact-public-helper enabled 300s, interior-reference negative 300s and invalid-input hash 220s all end at deadline 124; validation drivers0. Full16384texel matching and actual 512x512/1048576byte upload/render observed. Later public-helper output equals the first replacement PNG; all three original/fallback controls equal the preserved baseline. Original source/executable/PDB, both controls variants, personal ISO and paused Rust WIP are preserved.",
+      "limits": "One private size-aware proof, not an installed public enhancement, remaster artwork or general asset API. Content aliases, other dimensions/resources/scenes/filter paths and performance remain open. No full-game accuracy, physical-input/audible-audio, genuine Save/Load, FPS/widescreen/lighting or multiplayer claim. Public commands still use the preserved existing binaries.",
+      "link": {
+        "label": "Size-aware boundary, exact native provenance, controls and remaining integration",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/HD_TEXTURES.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",
@@ -611,6 +636,52 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-09-native-size-aware-upload",
+      "date": "2026-11-09",
+      "title": "Original street texture and an authored larger-image test",
+      "feature": "PC05",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Native control - original asset",
+        "bevy": "Private native trial - authored 512x512 image"
+      },
+      "scenario": "Two separate fresh retail starts from the same private native source 9cdde7d / executable eb1b5bf7: HD enabled 300s and disabled 220s, identical title/start script and field4741. Existing internal scale3, no camera/object edits, guest resource overlay, attacks, save import or autonomous level completion. Muted/hidden, fresh scratch cards/preferences; existing private shader cache reused and new variants compiled. This is a native-port modification experiment, not a PS2 hardware reference.",
+      "observations": [
+        "The runtime uploads a separate 512x512 authored RGBA image (1048576bytes), compares all 16,384 source texels against the private named 128x128 resource reference and samples the larger image only for exact decoded-content matches. Original disc, guest asset bytes and GS VRAM are not patched.",
+        "Both PNGs are unchanged 800x600 originals from native field4741. All 74,290 changed pixels are within x0..639/y419..599; three saloon/pharmacy/sky rectangles match exactly. Known black screenshot padding is retained.",
+        "The disabled original equals the preserved baseline PNG byte-for-byte. A later private source9167a9c built with exact public helper0ce2bc3 reproduces the same larger-image PNG. Its interior-one-texel reference negative and invalid-input hash controls each restore the baseline original exactly."
+      ],
+      "limits": [
+        "One 512x512 proof on one 128x128 resource/view; this is original diagnostic artwork, not a remaster art upgrade or complete HD asset system. There is no public HD installer/launch flag; existing public pack commands remain same-size only.",
+        "Matching is complete decoded-content identity, not unique file ownership at GPU time. Identical aliases, other resources/scenes/dimensions/filter paths, performance and broader fidelity require separate acceptance.",
+        "These are native screenshots, not Bevy or PS2 hardware captures. Same native field and untouched above-band image do not prove full-machine determinism, real game saving, physical input/audible audio or campaign accuracy.",
+        "Only these reviewed full renderer originals are public. Input envelopes/referenceRGBA, original texture data, dumps, generated game code and executables/PDB stay private. Game imagery is neither GPL nor MIT."
+      ],
+      "reference": {
+        "path": "media/fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e.png",
+        "sha256": "fd53182e7a2982021e5c5008d2e5dbab4dbd907cf9dfe52edc520c9a5d02315e",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL GPU backend, upstream14e956a, private host9cdde7d/exeeb1b5bf7; field4741, scale3, fresh hidden/muted start, HD disabled",
+        "revision": "9cdde7db753cb84c869dcbff61f9720cf21e11b2",
+        "captured_at": "2026-11-09T17:32:34.932415+00:00",
+        "caption": "Original asset with the private HD extension disabled; full unretouched native renderer capture."
+      },
+      "bevy": {
+        "path": "media/c0720b6a89b05bed007fa76060029f8db542f69365df6270c4cedafff94428b2.png",
+        "sha256": "c0720b6a89b05bed007fa76060029f8db542f69365df6270c4cedafff94428b2",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL GPU backend, upstream14e956a, private host9cdde7d/exeeb1b5bf7; field4741, scale3, fresh hidden/muted start, HD enabled",
+        "revision": "9cdde7db753cb84c869dcbff61f9720cf21e11b2",
+        "captured_at": "2026-11-09T17:28:45.386348+00:00",
+        "caption": "Original authored 512x512 grid sampled by the private native extension; not remaster artwork."
+      }
+    },
     {
       "id": "2026-11-09-checked-controls-install",
       "date": "2026-11-09",

@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Broaden focus/held-input and device/audio acceptance without autonomous level-beating; specify resource-to-host upload ownership before any HD implementation. Keep Original, v1 and audio-v2 explicit and preserved. Genuine game saving and human campaign coverage remain open.
+Make the proven private larger-texture boundary reproducible as a checked opt-in variant/pack workflow, preserving Original/v1/audio-v2 and keeping game-derived references private. Broader hardware/focus/audio, true game saving and human campaign validation remain separate gates.
 
 ## M8 — Active: verified original PC baseline
 
@@ -28,11 +28,12 @@ Keep original behavior as a control; readable original host/function replacement
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.
 - **RM03 Audit and expose coherent PC settings — In progress:** Reuse existing upstream options; implement validated persistent settings/menu and reversible capabilities without claiming unimplemented features.
 - **PC04 Verify another named resource and restoration — Planned:** A second named resource/scene, original authored payload, exact supported storage contract and actual enabled/disabled/fallback controls; no guessed offsets or expanded format claims.
-- **PC05 Prove a size-aware HD asset upload boundary — Planned:** Specify resource-to-host upload ownership; import an original larger texture without republishing game assets, actually render and compare from one viewpoint. Same-size replacement is not acceptance.
+- **PC05 Prove a size-aware HD asset upload boundary — Verified for stated scope:** Proof-only scope: actual named128x128 resource -> full16384texel GPU content match -> authored512x512 host image visibly sampled, same-field unretouched originals. Disabled, one-interior-reference-texel and invalid-input hash restore the baseline PNG. Exact public helpers also reproduce the private result. No public HD installer/general pack API; seePC09. Aliases, performance and wider coverage remain open.
 - **RM04 Validate widescreen — Planned:** Projection/FOV, HUD, cinematics and culling verified against 4:3 controls; no image stretching.
 - **RM05 Prove simulation-safe presentation cadence changes — Planned:** Separate rendering cadence from simulation; verify animation, timers, physics, hit windows and AI at multiple cadences before FPS unlock claims.
 - **RM06 Improve renderer/material/light control incrementally — Planned:** Document resource-to-render path and material/light inputs; prove each original/enhanced change at fixed viewpoints. Whole-engine migration requires a reproduced justification.
 - **RM07 Trial upstream updates without losing extensions — Planned:** Separate fresh pinned workspace, reviewed dependencies/preimages, build and relevant behavior/profile/pack regression controls before repinning.
+- **PC09 Package the size-aware boundary as a checked opt-in workflow — Planned:** Separate versioned native variant and stable named external-image schema; ISO/profile/source/binary verification, original reference kept local, immutable payload, baseline/exe/PDB preservation, explicit Enhanced opt-in, invalid/disabled fallback and exact public-recipe native controls. Do not silently replace any current executable or call a private probe an installer.
 
 ## M10 — Later research: multiplayer feasibility
 

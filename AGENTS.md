@@ -1,4 +1,4 @@
-# God Hand PC continuation â€” agent instructions
+# God Hand PC continuation - agent instructions
 
 ## Canonical repository — owner decision, 2026-11-09
 
@@ -55,6 +55,17 @@ Read .local/public-audio-v2-policy-retry-2026-11-09/validation.json: initial pol
 failed on preflight decoding before native launch; shared raw-byte CSV inventory
 and a live concurrent-launch refusal now pass. Exact transient encoding cause is
 not reproduced. No all-Windows, audible-quality or full-campaign claim.
+
+Read HD_TEXTURES.md for the separate private size-aware GPU trial. An original
+512x512 diagnostic now renders through full128x128 decoded-content matching,
+without a source/VRAM marker, camera edits or framebuffer-size changes. Disabling
+it and an interior-one-texel reference negative reproduce the baseline PNG.
+Exact public helper0ce2bc347c05364b277c0bdef85023f762506053 is compiled in private
+source9167a9c; this is NOT a public HD installer/pack flag or a default upgrade.
+Its envelope contains original reference pixels: keep it PRIVATE. Preserve all
+base/v1/audio-v2 source/exe/PDB and failed build/vector controls. Private evidence:
+.local/hd-native-2026-11-09/. Content aliases, other scenes/dimensions/filter paths,
+performance and public opt-in installation remain separate gates. No new Rust.
 
 Reply to the owner in French; maintain public material in English. This project
 contains original GPL-3.0-only continuation tooling, not a new independent engine.

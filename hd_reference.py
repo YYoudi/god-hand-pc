@@ -51,3 +51,22 @@ def envelope(reference, rgba, width, height):
                       "Unsupported external dimensions")
     resources.require(type(rgba) is bytes and len(rgba) == width*height*4, "External raw RGBA length differs")
     return b"GHHD001\0" + struct.pack("<6I", 128, 128, width, height, 128*128, width*height) + reference + rgba
+
+
+def example_rgba():
+    """Original512x512 grid/checker diagnostic; no game data is read or copied."""
+    out = bytearray()
+    for y in range(512):
+        for x in range(512):
+            if x % 64 == 0 or y % 64 == 0:
+                color = (255, 255, 255, 128)
+            elif (x // 8 + y // 8) % 2:
+                color = (24, 180, 225, 128)
+            else:
+                color = (240, 48, 160, 128)
+            if x % 128 == 1:
+                color = (255, 235, 0, 128)
+            if y % 128 == 2:
+                color = (12, 12, 12, 128)
+            out.extend(color)
+    return bytes(out)

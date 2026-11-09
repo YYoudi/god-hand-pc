@@ -90,8 +90,11 @@ Use `python pc.py install-packs`, then create the game-free example with
 `python make_example_pack.py --output .local/example-pack` and launch with
 `python pc.py run --iso "G:\path\God Hand (USA).iso" --profile enhanced --pack .local/example-pack/pack.json`.
 See the contract for workspace selection, prerequisites and exact limits.
-HD texture dimensions, full playthrough and genuine game-save round trip remain
-open. The personal disc is verified before every launch.
+The separate [private larger-texture experiment](HD_TEXTURES.md) now samples an
+original 512x512 test image in place of one 128x128 texture, without changing the
+guest resource. This is not installed by these public commands or a general HD
+pack API. General HD integration, full playthrough and genuine game-save round
+trip remain open. The personal disc is verified before every launch.
 
 Prototype generation/build/debug-menu research stays separate. Discovery output
 is not a linked executable or a validated retail behavior. Do not attempt to beat
