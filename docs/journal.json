@@ -1135,6 +1135,17 @@
   "captures": [
     {
       "kind": "journal",
+      "date": "2026-11-10",
+      "captured_at": "2026-11-09T23:42:33.187Z",
+      "path": "captures/5fab6ee3ea0365e43d49f1bf1148f48878846a597174b4d8788c955876556bc1.jpg",
+      "sha256": "5fab6ee3ea0365e43d49f1bf1148f48878846a597174b4d8788c955876556bc1",
+      "reviewed": true,
+      "revision": "e8d367b09cb10b841d68886878a1b7471801bf8c",
+      "caption": "GPU-resident results - actual published journal excerpt",
+      "source": "Unretouched actual published #journal screenshot, existing default narrow viewport; no crop, resizing or viewport override. Client date10November Europe/Paris, exact capture instant recorded in UTC. Title/summary/first part only, not full-page, game-render or FPS/fidelity proof. No game imagery/private desktop. Complete evidence/limits remain in article and HD_GPU_RESULTS.md; no new renderer comparison is invented for this nonvisual change."
+    },
+    {
+      "kind": "journal",
       "date": "2026-11-09",
       "captured_at": "2026-11-09T19:40:16.366Z",
       "path": "captures/a65afd46f0811d6928f9569ac0c2f571bbbe5549dd3e3f413cc16eaa1b7dade7.jpg",
