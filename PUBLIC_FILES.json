@@ -12,6 +12,7 @@
   "RESOURCE_PACK.md",
   "RUNTIME_PACKS.md",
   "SETUP.md",
+  "TRANSLATION_DIAGNOSTICS.md",
   "USER_DATA.md",
   "adapter/bridge.cpp",
   "adapter/bridge.hpp",
@@ -36,7 +37,11 @@
   "tests/test_resources.py",
   "tests/test_runtime_packs.py",
   "tests/test_setup.py",
+  "tests/test_translation_fixtures.py",
+  "tests/test_translation_probe.py",
   "tests/test_user_data.py",
+  "translation_fixtures.py",
+  "translation_probe.py",
   "upstream.json",
   "user_data.py"
 ]

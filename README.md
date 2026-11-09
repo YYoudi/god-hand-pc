@@ -25,6 +25,12 @@ Physical input, audible audio and actual game Save/Load remain separate gates.
 
 ## Bootstrap commands (Python 3.11+, Git)
 
+The [game-free translation controls](TRANSLATION_DIAGNOSTICS.md) reproduce
+return-tail versus reachable-failure behavior using original invented inputs.
+They help investigate retained diagnostics, not certify a clean game translation
+or silently replace unsupported instructions. Native integration uses an existing
+private recompiler/MSVC toolchain; portable CI never uses game inputs.
+
 ```powershell
 python pc.py fetch
 python pc.py verify-disc --iso "G:\path\God Hand (USA).iso"
