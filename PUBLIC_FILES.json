@@ -109,6 +109,7 @@
   "tests/test_host_pause.py",
   "tests/test_journal.py",
   "tests/test_launch_packs.py",
+  "tests/test_process_inventory.py",
   "tests/test_profiles.py",
   "tests/test_resources.py",
   "tests/test_runtime_packs.py",

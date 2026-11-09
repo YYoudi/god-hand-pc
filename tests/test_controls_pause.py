@@ -91,7 +91,7 @@ class ControlsInstallTests(unittest.TestCase):
         return data
 
     def output(self, command, **kwargs):
-        if command[0] == "tasklist": return "No invented game process."
+        if command[0] == "tasklist": return b"No invented game process."
         return self.original_check_output(command, **kwargs)
 
     def fake_build(self, run, name, command, checkout, env):
@@ -266,7 +266,7 @@ class ControlsInstallTests(unittest.TestCase):
         def popen(command, **kwargs):
             calls.append((command, kwargs))
             return SimpleNamespace(pid=123456, wait=lambda **ignored: 124)
-        native = SimpleNamespace(check_output=lambda *args, **kwargs: "No invented game",
+        native = SimpleNamespace(check_output=lambda *args, **kwargs: b"No invented game",
                                  Popen=popen, CREATE_NO_WINDOW=0, BELOW_NORMAL_PRIORITY_CLASS=0,
                                  TimeoutExpired=subprocess.TimeoutExpired, STDOUT=subprocess.STDOUT)
         dirty_env = dict(os.environ, GODHAND_PC_CONTROLS_PAUSE="1", GODHAND_PC_CONTROLS_PROBE="1",

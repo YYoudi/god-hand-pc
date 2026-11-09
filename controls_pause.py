@@ -161,8 +161,7 @@ def install(root, name, version="v1"):
         if (layer / "installed.json").exists():
             return verified_install(root, name, version)
         build.require(not (layer / "attempt.json").exists(), "Previous controls attempt requires review; retained evidence")
-        tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
-        build.require("godhand.exe" not in tasks.lower(), "Close the game before building a variant")
+        build.require_no_game(subprocess.check_output)
         base = packs.verified_install(root, name)
         recipe = integration(root, version)
         source = build.contained(workspace, workspace / "upstream")

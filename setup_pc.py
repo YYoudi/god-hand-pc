@@ -25,6 +25,19 @@ def digest(path):
         return hashlib.file_digest(source, "sha256").hexdigest()
 
 
+def require_no_game(query=None):
+    """Do not decode localized tasklist/OEM memory columns as Python UTF-8.
+
+    The requested image name is ASCII; inspect the native byte result. Refuse
+    unknown/NUL-containing output rather than interpreting it as an idle host.
+    This is a preservation preflight, not a process-killing or recovery API.
+    """
+    raw = (query or subprocess.check_output)(
+        ["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/FO", "CSV", "/NH"])
+    require(type(raw) is bytes and b"\0" not in raw, "Unrecognized native process-inventory encoding")
+    require(b"godhand.exe" not in raw.lower(), "Close the running game before build or launch")
+
+
 def contained(base, target):
     base, target = Path(base).resolve(), Path(target).resolve()
     require(target != base and target.is_relative_to(base), "Setup path escapes owned workspace")

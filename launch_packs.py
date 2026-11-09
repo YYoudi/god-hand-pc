@@ -78,8 +78,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
     installed = pause.verified_install(root, name, version) if controls_pause else runtime_packs.verified_install(root, name)
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
-    tasks = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
-    build.require("godhand.exe" not in tasks.lower(), "A game instance is already running")
+    build.require_no_game(subprocess.check_output)
     if controls_pause and version == "v1":
         print("WARNING: legacy controls v1 does not drain an already admitted audio callback. "
               "audio-v2 requires its own install and explicit version selection; see AUDIO_HOLD.md.", flush=True)

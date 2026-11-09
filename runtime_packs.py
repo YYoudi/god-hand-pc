@@ -129,8 +129,7 @@ def install(root, name):
             return verified_install(root, name)
         # Do not silently rerun a failed or interrupted source mutation.
         build.require(not (packages / "attempt.json").exists(), "Previous installer attempt requires review; evidence retained")
-        tasklist = subprocess.check_output(["tasklist", "/FI", "IMAGENAME eq godhand.exe", "/NH"], text=True)
-        build.require("godhand.exe" not in tasklist.lower(), "Close the running game before relinking")
+        build.require_no_game(subprocess.check_output)
         records = []
         for path in (workspace / "runs").glob("*/receipt.json"):
             data = json.loads(path.read_text(encoding="utf-8"))
