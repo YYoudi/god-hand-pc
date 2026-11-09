@@ -906,6 +906,21 @@
   ],
   "captures": [
     {
+      "date": "2026-11-09",
+      "path": "captures/3fb4efcf6682f1cdd11b1e40977d0db79f5821d1f910f83dd33d0309e7966255.jpg",
+      "sha256": "3fb4efcf6682f1cdd11b1e40977d0db79f5821d1f910f83dd33d0309e7966255",
+      "captured_at": "2026-11-09T15:46:55.979904+00:00",
+      "revision": "d42522e806d07a3249d50797c8f3ffcf89cd7132",
+      "kind": "journal",
+      "reviewed": true,
+      "caption": "Checked controls-pause installation, preserved default baseline and explicitly open fidelity gates",
+      "source": {
+        "url": "https://yyoudi.github.io/god-hand-pc/index.html#journal",
+        "method": "Unretouched actual hidden-browser JPEG capture; no pixel conversion/edit",
+        "provenance": "Unretouched actual published English journal screenshot at #journal, captured in a hidden browser. No desktop pixels, extracted assets or game code; native original comparisons are separately registered."
+      }
+    },
+    {
       "kind": "journal",
       "date": "2026-11-09",
       "captured_at": "2026-11-09T14:46:57.055248+00:00",
