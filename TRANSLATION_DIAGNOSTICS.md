@@ -10,6 +10,10 @@ Private inspection of the retained retail diagnostic identifies a fail-fast
 statement in generated C++ after a function return. This is a hypothesis about
 that translated body until independently checked; it is not an ISA interpretation,
 a game fix, complete code coverage or proof of original hardware behavior.
+The [dated compiler/entry audit](https://github.com/YYoudi/god-hand-rs/blob/main/docs/translation-diagnostic-2026-11-09.md)
+records the independently checked current C++-body result and its limits. The
+original reported error remains present; do not convert that bounded result into
+a blanket clean-translation claim or an instruction patch.
 
 Validate using the exact source, compiler flags/version and registered entries,
 plus invented controls. In particular, a branch/label can reach code physically
