@@ -60,3 +60,12 @@ No pack means original assets on the HD binary; no HD flags means the old binary
 HD combined with controls-pause or same-size packs is refused before disc/process
 access, not silently downgraded. Strict HD is a **preflight** refusal policy, not
 proof that GPU matching/upload/rendering succeeded; inspect native evidence.
+
+Additive [gpu-v2](HD_GPU_RESULTS.md) requires installation
+`install-hd-textures --version gpu-v2` and explicit launch
+`--profile enhanced --hd-textures --hd-textures-version gpu-v2`.
+It retains per-batch GPU classification and removes the adapter's CPU result
+readback, with sampled valid/absent/invalid/reference-negative controls. It does
+not replace v1 by default, cache across batches or demonstrate an FPS gain.
+Dispatch/counts-unread logs are not proof of visible application. Original,
+unsupported composition and strict preflight policies remain unchanged.

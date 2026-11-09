@@ -102,6 +102,11 @@ is verified before every launch; game-derived references remain private.
 The [separate matcher timing trial](HD_TIMING.md) distinguishes CPU readback
 waits from GPU command intervals. It does not change the installed HD binary
 or claim an optimization/FPS gain; safe invalidation remains open.
+Its later [explicit gpu-v2 follow-up](HD_GPU_RESULTS.md) now builds locally and
+passes sampled native valid/absent/invalid/reference-negative controls without
+CPU match-result readback. Older versions stay selectable and unchanged. This
+is a functional integration result, not general HD, full fidelity or measured
+FPS improvement.
 
 Prototype generation/build/debug-menu research stays separate. Discovery output
 is not a linked executable or a validated retail behavior. Do not attempt to beat

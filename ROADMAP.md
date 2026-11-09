@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Test decoupling the synchronous CPU diagnostic readback while retaining fresh per-batch GPU matching, with actual enabled/disabled/reference-negative image controls and measured intervals. No speedup promised; persistent-cache invalidation, HD+audio-v2 composition, true SaveExitLoad, physical input/audio and human campaign validation remain open.
+Measure GPU-v2 under controlled paired workloads and broaden backend/binding/scene coverage before any performance claim; retain fresh per-batch matching rather than assume cache identity. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.
 
 ## M8 — Active: verified original PC baseline
 
@@ -36,7 +36,7 @@ Keep original behavior as a control; readable original host/function replacement
 - **PC09 Package the size-aware boundary as a checked opt-in workflow — Verified for stated scope:** Scoped checked additive hd-v1 workflow: exact public8201 recipe configures/links, original source/exe/PDB restored,14-file manifest and ISO verified. Named original512x512 RGBA snapshot renders; same-binary absent/invalid and default originals are baseline-exact. Strict invalid/Original+HD refuse native spawn; direct exact-native checksum negative rejects. Legacy v1/audio-v2 startup pointers remain intact. Not fresh generation, general HD, performance or composition acceptance.
 - **PC10 Measure and safely cache HD content matching — In progress:** Actual private timing on/off/negative and later owned-tests-idle repeat pass with unchanged originals; scoped wall readback and GPU command intervals are distinct, not a speedup/FPS benchmark. Persistent cache is NOT implemented: prove VRAM/CLUT/epoch/copy/render/reset/load/plane invalidation and aliases with synthetic mutation plus native controls before adopting one. A repeated address/state/epoch is insufficient.
 - **PC11 Validate an explicit HD and audio-v2 composite variant — Planned:** Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused.
-- **PC12 Decouple HD diagnostic readback without stale GPU matches — Planned:** Retain fresh full-source GPU matching and original sampler fallback while removing/defering synchronous CPU-only diagnostic readback; precise ordering/binding/error controls, native valid/absent/interior-negative original images and measured intervals before any gain claim. Not a persistent cache or default upgrade.
+- **PC12 Decouple HD diagnostic readback without stale GPU matches — In progress:** Functional gate passes: checked additive explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Typed model distinguishes generic/indexed bindings and host nonempty precondition, not real GL proof. Controlled timing, broader backend/driver/scene/state coverage remain open; no FPS gain or full GL-state equality claimed. Not a persistent cache/default upgrade.
 
 ## M10 — Later research: multiplayer feasibility
 

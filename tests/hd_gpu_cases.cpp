@@ -27,13 +27,14 @@ struct Api {
     mutable std::vector<uint32_t> flags, pending;
     std::vector<uint32_t> predicted; // Invented kernel outcomes, not texture pixels.
     mutable uint32_t count=0;
+    mutable uint32_t genericBinding=0,inputBinding=0,matchBinding=0;
     mutable bool visible=true;
     void GetInteger64v(uint32_t key,int64_t* out) const { *out=key==0x90DDu?bindings:computeBlocks; }
     void BindBuffer(uint32_t target,uint32_t buffer) const {
-        assert(target==kShaderStorageBuffer && buffer==14); calls.push_back("bind-match");
+        assert(target==kShaderStorageBuffer && buffer==14);genericBinding=buffer;calls.push_back("bind-match");
     }
     void BufferData(uint32_t target,size_t bytes,const void* data,uint32_t usage) const {
-        assert(target==kShaderStorageBuffer && usage==kDynamicDraw && bytes%4==0);
+        assert(target==kShaderStorageBuffer && usage==kDynamicDraw && bytes>0 && bytes%4==0 && genericBinding==14);
         const auto* words=static_cast<const uint32_t*>(data);
         if(bytes) flags.assign(words,words+bytes/4); else flags.clear();
         assert(std::all_of(flags.begin(),flags.end(),[](auto n){return n==0;}));
@@ -41,6 +42,8 @@ struct Api {
     }
     void BindBufferBase(uint32_t target,uint32_t binding,uint32_t buffer) const {
         assert(target==kShaderStorageBuffer && binding==buffer && (binding==13 || binding==14));
+        genericBinding=buffer; // BindBufferBase changes generic AND indexed state.
+        if(binding==13) inputBinding=buffer; else matchBinding=buffer;
         calls.push_back("binding"+std::to_string(binding));
     }
     void UseProgram(uint32_t id) const { assert(id==41);calls.push_back("program"); }
@@ -49,6 +52,7 @@ struct Api {
     }
     void DispatchCompute(uint32_t x,uint32_t y,uint32_t z) const {
         assert(x==count && x==flags.size() && y==1 && z==1 && predicted.size()==x);
+        assert(inputBinding==13 && matchBinding==14 && genericBinding==13);
         pending=predicted;visible=false;calls.push_back("dispatch");
     }
     // Deliberately NO GetBufferSubData, query result or other CPU readback API.
@@ -65,7 +69,10 @@ struct Impl {
     bool compile(Program&,const std::string&,const char*,std::initializer_list<const char*>) { return compileOk; }
     uint32_t makeBuffer(size_t,const void*,uint32_t binding) { return binding; }
     void barrier() { api.flags=api.pending;api.pending.clear();api.visible=true;api.calls.push_back("barrier"); }
-    std::vector<uint32_t> consume() const { assert(api.visible);return api.flags; }
+    std::vector<uint32_t> consume() const {
+        assert(api.visible && api.inputBinding==13 && api.matchBinding==14);
+        return api.flags; // Raster consumes indexed bindings, not genericBinding.
+    }
     void batch(size_t count,bool eligible=true) {
         stateCount=static_cast<uint32_t>(count);states.assign(count*kStateWords,0);
         for(size_t i=0;i<count;++i) {
@@ -88,6 +95,7 @@ int main() {
     const std::vector<std::string> submitted={"bind-match","reset","binding14","binding13","program","uniform","dispatch","barrier"};
     good.batch(2);good.api.predicted={1,0};good.hdPrepare();
     assert(good.api.calls==submitted && good.consume()==std::vector<uint32_t>({1,0}) && good.hdChecks==1);
+    assert(good.api.genericBinding==13); // No readback-only generic rebind to14.
     // Same state words/epoch, changed invented source outcome: reclassify, never reuse old true.
     good.batch(2);good.api.predicted={0,0};good.hdPrepare();
     assert(good.api.calls==submitted && good.consume()==std::vector<uint32_t>({0,0}) && good.hdChecks==2);
@@ -95,7 +103,9 @@ int main() {
     assert(good.consume()==std::vector<uint32_t>({0}) && good.hdChecks==2 && good.api.calls.size()==4);
     good.batch(5);good.api.predicted={0,1,0,0,1};good.hdPrepare();
     assert(good.consume()==good.api.predicted && good.api.calls==submitted && good.hdChecks==3);
-    good.batch(0);good.hdPrepare();assert(good.consume().empty() && good.api.calls.size()==4);
+    // The real host invokes neither preparation nor raster for an empty draw batch.
+    good.batch(0);if(good.stateCount!=0) good.hdPrepare();
+    assert(good.api.calls.empty() && good.hdChecks==3);
     // Every admission condition matters; each refused state clears the previous result.
     for(auto slot: {SFlags,STexSize,STpsm,STexMode,SClampLo}) {
         good.batch(1);good.states[slot]=(slot==STexMode)?0x10000u:(slot==SClampLo?1u:0u);

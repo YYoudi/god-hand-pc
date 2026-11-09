@@ -1,5 +1,9 @@
 # Checked experimental larger-texture packs (hd-v1)
 
+**Later follow-up:** [gpu-v2](HD_GPU_RESULTS.md) keeps results on the GPU and has
+separate native controls. No-version commands below still select this preserved
+v1 workflow; there is no automatic upgrade or proven FPS gain.
+
 9 November 2026. **Checked public recipe built and tested locally**, for the
 single-resource scope below. The [earlier private proof](HD_TEXTURES.md) is
 retained, not relabeled as this later build. No baseline executable or existing

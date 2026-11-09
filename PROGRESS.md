@@ -22,6 +22,10 @@ For matcher timing, read HD_TIMING.md: the separate private measurement trial
 does not update an installed variant. Periodic samples, wall waits and GPU
 command intervals have distinct scopes; no speedup or cache acceptance follows.
 Keep the test-overlap limitation and later owned-tests-idle repeat separate.
+The10November gpu-v2 functional follow-up is HD_GPU_RESULTS.md and its distinct
+native receipts. Keep no-version v1 unchanged; GPU counts-unread/submission is
+not application or performance proof. Re-run broader binding/backend/scene and
+controlled-timing gates before claiming more than the sampled integration.
 
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and

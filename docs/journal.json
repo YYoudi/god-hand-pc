@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Test decoupling the synchronous CPU diagnostic readback while retaining fresh per-batch GPU matching, with actual enabled/disabled/reference-negative image controls and measured intervals. No speedup promised; persistent-cache invalidation, HD+audio-v2 composition, true SaveExitLoad, physical input/audio and human campaign validation remain open.",
+  "next": "Measure GPU-v2 under controlled paired workloads and broaden backend/binding/scene coverage before any performance claim; retain fresh per-batch matching rather than assume cache identity. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Checked hd-v1 now builds locally and renders one authored512x512 image on the documented128x128 source. General HD coverage, content aliases, matcher/readback performance and other resources/scenes remain open. HD+controls/same-size packs is refused until a separate composite variant is tested.",
+    "Explicit GPU-v2 now builds and passes sampled native512x512 valid/absent/invalid/reference-negative controls without adapter CPU match readback. No-version still means preserved HDv1. General HD coverage, aliases, controlled performance and wider drivers/backends/scenes remain open; HD with controls/same-size packs is still refused.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -184,9 +184,9 @@
         {
           "id": "PC12",
           "title": "Decouple HD diagnostic readback without stale GPU matches",
-          "status": "planned",
+          "status": "in_progress",
           "area": "rendering",
-          "acceptance": "Retain fresh full-source GPU matching and original sampler fallback while removing/defering synchronous CPU-only diagnostic readback; precise ordering/binding/error controls, native valid/absent/interior-negative original images and measured intervals before any gain claim. Not a persistent cache or default upgrade."
+          "acceptance": "Functional gate passes: checked additive explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Typed model distinguishes generic/indexed bindings and host nonempty precondition, not real GL proof. Controlled timing, broader backend/driver/scene/state coverage remain open; no FPS gain or full GL-state equality claimed. Not a persistent cache/default upgrade."
         }
       ]
     },
@@ -308,6 +308,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Keeping texture-match results on the GPU",
+      "summary": "The separately selected gpu-v2 workflow now builds and reproduces the sampled larger-texture result without reading match flags back to the CPU. Older binaries and defaults are preserved; no FPS gain is claimed.",
+      "changes": [
+        "Resumed the existing full PC-port goal after the owner pause. Preserved the unfinished work and all earlier evidence; no new Rust work, game-function edits or autonomous level completion.",
+        "Added an explicit versioned native recipe and launch selection. No version still selects hd-v1; GPU-v2 resets and reclassifies each batch rather than caching addresses/epochs. Logs say submitted/counts-unread, not applied or zero matches.",
+        "Built from clean publicb3c5778, then ran actual public valid/absent/invalid controls plus preserved Original/HDv1/controls/audio-v2 startup selection. Separate exact-native interior-reference and bad-expected-hash controls pass.",
+        "Kept original renderer captures privately: valid field4741 equals the earlier authored-pattern PNG, absent/invalid/reference-negative equal original assets. No new picture pair is invented for a nonvisual implementation. Strengthened the invented host model for generic/indexed bindings and nonempty draw calls."
+      ],
+      "validation": "188 invented-data tests locally and in an actual fresh public checkout:186pass/two Windows symlink-privilege skips. Actual configure0/build0; seven public launchers0/natives124, three preflight refusals without spawn, direct reference-negative300s and hash-negative30s native124/driver0. No forced termination or shader errors. Three long public runs reproduce field4741 c072/fd53 originals; four older-variant30s controls are STARTUP ONLY. Five installed variants, baseline PDB, personal ISO and historical Rust WIP are preserved.",
+      "limits": "Sampled functional integration, not measured speedup, a cache or general HD/remaster support. Only the adapter match-result readback is removed; upstream readbacks/driver stalls remain. Complete GL-state equality, broader backend/driver/scenes and controlled performance are unverified. Strict-HD is preflight-only; unread counts are not visible-application proof. True game saving, physical input/audible audio, full campaign, HD+controls composition, widescreen/FPS/lighting/multiplayer and prototype kernel support remain open.",
+      "link": {
+        "label": "Explicit commands, native source/binary identities, controls and remaining gates",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/HD_GPU_RESULTS.md"
+      }
+    },
     {
       "date": "2026-11-09",
       "kind": "progress",

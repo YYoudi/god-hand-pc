@@ -1,5 +1,24 @@
 # God Hand PC continuation - agent instructions
 
+## Resume and GPU-resident results — 2026-11-10
+
+The owner explicitly resumed the existing full PC goal and permits native
+launches as needed; the earlier pause/checkpoint is historical, not completion.
+Read HD_GPU_RESULTS.md. Public cleanb3c5778 installs additive gpu-v2 source953ea26/
+exe5d27048f/fingerprint37018376: configure0/build0, seven actual public CLI
+native controls +three preflight refusals, direct native reference-negative300s
+and hash-negative30s pass. Valid4741c072 and absent/invalid/reference-negative
+fd53 remain exact; counts are UNREAD, not0 or inferred application. Preserve all
+five installed variants/source/exe/PDB/pointers, old hd-v1 fingerprint/default,
+ISO, failed scripting import and unchanged original captures. Evidence:
+.local/hd-gpu-v2-2026-11-10/. No new Rust, delegation or autonomous level beating.
+GPU-v2 has no adapter CPU match readback/query wait, but upstream readbacks,
+driver stalls and generic-vs-indexed binding differences remain. Typed model
+cannot prove GL shader/driver behavior; no empty-draw hook invocation or complete
+GL-state equality is claimed. Broader backend/driver/scenes and controlled
+performance acceptance remain open; no FPS gain or cache/invalidation proof.
+HD with controls/same-size packs is still refused. Full-PC/remaster goal ACTIVE.
+
 ## Canonical repository — owner decision, 2026-11-09
 
 This is the sole active PC-port code/documentation/roadmap/blog repository.

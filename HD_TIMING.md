@@ -1,5 +1,10 @@
 # Measuring the experimental HD matcher
 
+**Later follow-up,10 November:** [GPU-resident results](HD_GPU_RESULTS.md) records
+a separate additive public version and native functional controls. This dated
+measurement retains its original binaries/scopes and does not establish a
+performance gain for that newer version.
+
 9 November 2026. Separate private host instrumentation of the checked
 [hd-v1 workflow](HD_PACKS.md), **not an optimized release or a new installed
 variant**. Original, controls-v1, audio-v2 and hd-v1 keep their prior identities.
