@@ -20,23 +20,45 @@ COPIES = {"adapter/hd_texture.hpp": PREFIX + "godhand_pc_hd/hd_texture.hpp",
           "adapter/hd_runtime.hpp": PREFIX + "godhand_pc_hd/runtime.hpp",
           "adapter/hd_runtime.inc": PREFIX + "godhand_pc_hd/runtime.inc",
           "adapter/hd_bridge.cpp": "src/godhand_pc_hd_bridge.cpp"}
-VERSIONS = ("v1", "gpu-v2")
+VERSIONS = ("v1", "gpu-v2", "gpu-audio-v3")
 
 
 def layer_name(version="v1"):
     build.require(type(version) is str and version in VERSIONS, "Unknown HD version")
-    return VERSION if version == "v1" else "hd-gpu-v2"
+    return {"v1": VERSION, "gpu-v2": "hd-gpu-v2", "gpu-audio-v3": "hd-gpu-audio-v3"}[version]
+
+
+def modified(version="v1"):
+    layer_name(version)
+    return MODIFIED | variants.MODIFIED if version == "gpu-audio-v3" else set(MODIFIED)
 
 
 def copies(version="v1"):
     layer_name(version)
     if version == "v1": return dict(COPIES)
-    return {("adapter/hd_runtime_gpu.inc" if p == "adapter/hd_runtime.inc" else p): target
-            for p, target in COPIES.items()}
+    result = {("adapter/hd_runtime_gpu.inc" if p == "adapter/hd_runtime.inc" else p): target
+              for p, target in COPIES.items()}
+    if version == "gpu-audio-v3":
+        build.require(not set(result).intersection(variants.AUDIO_COPIES) and
+                      not set(result.values()).intersection(variants.AUDIO_COPIES.values()),
+                      "HD/audio helper paths overlap; explicit integration review required")
+        result.update(variants.AUDIO_COPIES)
+    return result
 
 
 def integration(root, version="v1"):
     layer = layer_name(version)
+    if version == "gpu-audio-v3":
+        gpu, audio = integration(root, "gpu-v2"), variants.integration(root, "audio-v2")
+        build.require(not MODIFIED.intersection(variants.MODIFIED),
+                      "HD/audio modified paths overlap; explicit integration review required")
+        recipe = {"schema": 1, "version": layer, "upstream_revision": pc.load_pin(root)["revision"],
+                  "component_fingerprints": {"gpu-v2": fingerprint(root, gpu),
+                                             "audio-v2": variants.fingerprint(root, audio)},
+                  "files": gpu["files"] + audio["files"], "copies": copies(version)}
+        build.require({x["path"] for x in recipe["files"]} == modified(version) and
+                      len(recipe["files"]) == len(modified(version)), "Composite host paths differ")
+        return recipe
     filename = "adapter/hd_integration.json" if version == "v1" else "adapter/hd_gpu_integration.json"
     recipe = json.loads((Path(root)/filename).read_text(encoding="utf-8"))
     build.require(recipe["schema"] == 1 and recipe["version"] == layer and
@@ -77,7 +99,11 @@ def verified_install(root, name, version="v1"):
     source = build.contained(run, run/"source")
     pc.inspect_checkout(source, base["source_revision"], record["source_revision"])
     changed = set(pc.git("diff", "--name-only", base["source_revision"], record["source_revision"], cwd=source).splitlines())
-    build.require(changed == MODIFIED | set(recipe["copies"].values()), "Unreviewed HD derived paths")
+    build.require(changed == modified(version) | set(recipe["copies"].values()), "Unreviewed HD derived paths")
+    if version == "gpu-audio-v3":
+        build.require(record.get("component_fingerprints") == recipe["component_fingerprints"] and
+                      record.get("controls_fingerprint") == recipe["component_fingerprints"]["audio-v2"],
+                      "HD/audio component identity differs")
     planned = plan_sources(workspace/"upstream", root, recipe)
     expected = dict(base["source_files"], **{
         p.relative_to(workspace/"upstream").as_posix(): packs.sha(raw) for p, raw in planned.items()})
@@ -122,9 +148,12 @@ def install(root, name, version="v1"):
                           tooling_dirty=bool(pc.git("status", "--porcelain", cwd=root)),
                           setup_receipt=base["setup_receipt"], original_branch=original_branch,
                           scope="Experimental checked HD host layer; " +
-                                ("GPU-resident results, no CPU match readback; " if version == "gpu-v2" else "") +
+                                ("GPU-resident results, no CPU match readback; " if version != "v1" else "") +
                                 "reused private build cache, not fresh generation, performance or full fidelity",
                           baseline_backups={})
+        if version == "gpu-audio-v3":
+            run.record.update(component_fingerprints=recipe["component_fingerprints"],
+                              controls_fingerprint=recipe["component_fingerprints"]["audio-v2"])
         for filename in ("godhand.exe", "godhand.pdb"):
             path = source/"build/port/bin"/filename
             if path.exists():

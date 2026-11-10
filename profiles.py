@@ -23,7 +23,7 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
         raise ValueError("strict-pack requires a pack")
     if type(hd_textures) is not bool or type(strict_hd) is not bool:
         raise ValueError("HD capability and strict mode must be booleans")
-    if hd_textures_version not in (None, "v1", "gpu-v2"):
+    if hd_textures_version not in (None, "v1", "gpu-v2", "gpu-audio-v3"):
         raise ValueError("Unknown HD version")
     if hd_textures_version is not None and not hd_textures:
         raise ValueError("hd-textures-version requires --hd-textures")
@@ -33,7 +33,10 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
         raise ValueError("Original profile refuses HD changes; use --profile enhanced explicitly")
     if strict_hd and hd_pack is None:
         raise ValueError("strict-hd-pack requires an HD pack")
-    if hd_textures and (pack is not None or strict or controls_pause):
+    composite = hd_textures_version == "gpu-audio-v3"
+    if composite and (not controls_pause or controls_pause_version != "audio-v2"):
+        raise ValueError("gpu-audio-v3 requires explicit --controls-pause --controls-pause-version audio-v2")
+    if hd_textures and (pack is not None or strict or (controls_pause and not composite)):
         raise ValueError("HD with same-size packs or controls-pause needs a separately validated combined variant")
     return {"schema": 1, "name": name,
             "requested_extensions": (["same-size-named-texture"] if pack is not None else []) +
@@ -41,7 +44,7 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
                                       ("-audio-v2" if controls_pause_version == "audio-v2" else "")]
                                      if controls_pause else []) +
                                     (["experimental-hd-textures" +
-                                      ("-gpu-v2" if hd_textures_version == "gpu-v2" else "")]
+                                      ("-" + hd_textures_version if hd_textures_version in ("gpu-v2", "gpu-audio-v3") else "")]
                                      if hd_textures else []),
             "baseline": "pinned native runtime; upstream settings/timing unchanged by this policy",
             "fidelity": "not certified; full-game, persistence, physical input and audio gates remain open"}

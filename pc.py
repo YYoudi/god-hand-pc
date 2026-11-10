@@ -123,7 +123,7 @@ def main():
                        help="Separate versioned install; does not overwrite or implicitly upgrade v1")
     hd = sub.add_parser("install-hd-textures", help="Build a separate experimental HD host variant")
     hd.add_argument("--workspace-name", default="retail-setup")
-    hd.add_argument("--version", choices=("v1", "gpu-v2"), default="v1",
+    hd.add_argument("--version", choices=("v1", "gpu-v2", "gpu-audio-v3"), default="v1",
                     help="Explicit additive version; default v1 is unchanged")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
@@ -144,7 +144,7 @@ def main():
     play.add_argument("--hd-textures", action="store_true",
                       help="Explicit experimental HD variant; requires enhanced and install-hd-textures (default v1)")
     play.add_argument("--hd-pack", type=Path, help="Named original raw-RGBA pack; requires --hd-textures")
-    play.add_argument("--hd-textures-version", choices=("v1", "gpu-v2"), default=None,
+    play.add_argument("--hd-textures-version", choices=("v1", "gpu-v2", "gpu-audio-v3"), default=None,
                       help="Requires --hd-textures; no version still selects preserved v1")
     play.add_argument("--strict-hd-pack", action="store_true", help="Refuse invalid HD pack instead of original fallback")
     sub.add_parser("status")

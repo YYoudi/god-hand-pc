@@ -96,6 +96,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
               "tooling_revision": pc.git("rev-parse", "HEAD", cwd=root),
               "tooling_dirty": bool(pc.git("status", "--porcelain", cwd=root))}
     record["profile"] = policy
+    if hd_textures and hd_version == "gpu-audio-v3":
+        record["component_fingerprints"] = installed["component_fingerprints"]
     record["controls_pause"] = {"requested": controls_pause,
                                 "version": version if controls_pause else None,
                                 "audio_scope": ("consumer admission; device buffering/audibility unverified"
@@ -117,7 +119,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                                      version=hd.layer_name(hd_version) if hd_textures else None,
                                      fingerprint=installed.get("hd_fingerprint"),
                                      runtime_application="not inferred; GPU-only result counts are unread; inspect rendered controls"
-                                                         if hd_textures and hd_version == "gpu-v2" else
+                                                         if hd_textures and hd_version in ("gpu-v2", "gpu-audio-v3") else
                                                          "not inferred; inspect native exact-match logs and rendered controls")
         if hd_record["mode"] == "original-fallback":
             print("WARNING: invalid HD pack; using original assets:", hd_record["error"], flush=True)
