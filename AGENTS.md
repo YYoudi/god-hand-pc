@@ -1,5 +1,20 @@
 # God Hand PC continuation - agent instructions
 
+## Readback follow-up branch — 2026-11-10
+
+Read CAPTURE_READBACK.md and .local/framebuffer-readback-2026-11-10/CONTRACT.md.
+Previous F2 turn was PROGRESS, not full goal completion. Historical6Nov capture
+report is a separate private checkout. Actual current-Raylib invented probe now
+queries GLviewport/FBO: normal render640, DPI1.25, defaultread800/padded; new
+directread640correct. HIGH_DPI render800, bothreadsbyte-identical. This is NOT
+yet native game integration. Preserve initial probe compile failure: rlGetProcAddress
+is absent in this pinned API; corrected probe uses actual GLFW entry point.
+New explicit menuversionreadback-v2 SOURCE uses exactv1postimages +one helper;
+v1/default/fingerprint75278aea must stayunchanged. Do NOT mutate frozenv1helpers
+or call synthetic readbacks a renderer/retail fix. Actually link and observe
+native corrected captures and save/resume/rollback before main publication.
+Keep allold failedoriginals; no crop/resize/normalization or defaultswitch.
+
 ## Actual native F2 increment — 2026-11-10
 
 Read NATIVE_MENU_RESULTS.md and .local/native-menu-channel-2026-11-10/ receipts.

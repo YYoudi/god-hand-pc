@@ -132,6 +132,8 @@ def main():
     video_action.add_argument("--reset", action="store_true", help="Retain history and return to unmodified upstream INI behavior")
     menu = sub.add_parser("install-native-menu", help="Build separate experimental native-menu-v1 over checked GPU/audio parent")
     menu.add_argument("--workspace-name", default="retail-setup")
+    menu.add_argument("--version", choices=("v1", "readback-v2"), default="v1",
+                      help="Additive explicit readback version; no version retains v1")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -156,6 +158,8 @@ def main():
     play.add_argument("--strict-hd-pack", action="store_true", help="Refuse invalid HD pack instead of original fallback")
     play.add_argument("--video-settings", action="store_true", help="Explicit Enhanced-only saved native-scale selection; requires restart")
     play.add_argument("--native-menu", action="store_true", help="Experimental native F2 settings; requires Enhanced, --video-settings and separate installation")
+    play.add_argument("--native-menu-version", choices=("v1", "readback-v2"), default=None,
+                      help="Requires --native-menu; no version still selects preserved v1")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -190,7 +194,8 @@ def main():
                   video_settings.show(ROOT, args.workspace_name))
     elif args.command == "install-native-menu":
         from native_menu import install
-        result = install(ROOT, args.workspace_name)
+        result = (install(ROOT, args.workspace_name) if args.version == "v1" else
+                  install(ROOT, args.workspace_name, args.version))
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
@@ -199,7 +204,7 @@ def main():
                         controls_pause_version=args.controls_pause_version,
                         hd_textures=args.hd_textures, hd_pack=args.hd_pack, strict_hd=args.strict_hd_pack,
                         hd_textures_version=args.hd_textures_version, video_settings=args.video_settings,
-                        native_menu=args.native_menu)
+                        native_menu=args.native_menu, native_menu_version=args.native_menu_version)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

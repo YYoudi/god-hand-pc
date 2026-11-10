@@ -68,9 +68,9 @@ def pack_protocol(iso, manifest, directory, strict=False):
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
            capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False,
            controls_pause_version=None, hd_textures=False, hd_pack=None, strict_hd=False,
-           hd_textures_version=None, video_settings=False, native_menu=False):
+           hd_textures_version=None, video_settings=False, native_menu=False, native_menu_version=None):
     policy = profiles.resolve(profile, pack, strict, controls_pause, controls_pause_version,
-                              hd_textures, hd_pack, strict_hd, hd_textures_version, video_settings, native_menu)
+                              hd_textures, hd_pack, strict_hd, hd_textures_version, video_settings, native_menu, native_menu_version)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -83,7 +83,9 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                   "Build/installer lock requires inspection before launch")
     version = controls_pause_version or "v1"
     hd_version = hd_textures_version or "v1"
-    installed = (menu.verified_install(root, name) if native_menu else
+    menu_version = native_menu_version or "v1"
+    installed = ((menu.verified_install(root, name) if menu_version == "v1" else
+                  menu.verified_install(root, name, menu_version)) if native_menu else
                  hd.verified_install(root, name, hd_version) if hd_textures else
                  pause.verified_install(root, name, version) if controls_pause else runtime_packs.verified_install(root, name))
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
@@ -109,7 +111,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                                                 "legacy/no consumer-admission guarantee"),
                                 "acknowledged_hold": "not inferred from launch request",
                                 "fingerprint": installed.get("controls_fingerprint")}
-    record["native_menu"] = {"requested": native_menu, "version": menu.VERSION if native_menu else None,
+    record["native_menu"] = {"requested": native_menu, "version": menu.layer_name(menu_version) if native_menu else None,
                              "fingerprint": installed.get("menu_fingerprint"),
                              "requires_audio_v2_hold": native_menu, "observed": "not inferred from launch"}
     receipt = directory / "receipt.json"

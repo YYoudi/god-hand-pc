@@ -4,12 +4,16 @@ NAMES = ("original", "enhanced")
 
 def resolve(name="original", pack=None, strict=False, controls_pause=False, controls_pause_version=None,
             hd_textures=False, hd_pack=None, strict_hd=False, hd_textures_version=None, video_settings=False,
-            native_menu=False):
+            native_menu=False, native_menu_version=None):
     """Validate before any filesystem, disc, installer or subprocess operation."""
     if name not in NAMES:
         raise ValueError("Unknown launch profile; choose original or enhanced")
     if type(native_menu) is not bool:
         raise ValueError("native-menu must be a boolean")
+    if native_menu_version not in (None, "v1", "readback-v2"):
+        raise ValueError("Unknown native-menu version")
+    if native_menu_version is not None and not native_menu:
+        raise ValueError("native-menu-version requires --native-menu")
     if native_menu and (name != "enhanced" or not video_settings):
         raise ValueError("native-menu requires Enhanced and explicit --video-settings")
     if native_menu and controls_pause and controls_pause_version != "audio-v2":
@@ -60,7 +64,9 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
                                       ("-" + hd_textures_version if hd_textures_version in ("gpu-v2", "gpu-audio-v3") else "")]
                                      if hd_textures else []) +
                                     (["restart-required-video-settings"] if video_settings else []) +
-                                    (["experimental-native-video-menu-audio-v2"] if native_menu else []),
+                                    (["experimental-native-video-menu-audio-v2" +
+                                      ("-readback-v2" if native_menu_version == "readback-v2" else "")]
+                                     if native_menu else []),
             "baseline": ("pinned native runtime; explicit video request recorded separately; timing unchanged"
                          if video_settings else
                          "pinned native runtime; upstream settings/timing unchanged by this policy"),

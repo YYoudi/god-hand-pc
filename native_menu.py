@@ -18,6 +18,7 @@ import controls_pause as variants
 import hd_textures as hd
 
 VERSION = "native-menu-v1"
+VERSIONS = ("v1", "readback-v2")
 PARENT = "gpu-audio-v3"
 RUNTIME = "runtime/ps2xRuntime/src/lib/ps2_runtime.cpp"
 CMAKE = "runtime/ps2xRuntime/CMakeLists.txt"
@@ -26,9 +27,27 @@ COPIES = {"adapter/" + name: "runtime/ps2xRuntime/src/lib/godhand_pc_video/" + n
     "video_menu_model.hpp", "video_menu_protocol.hpp", "video_menu_io.hpp", "video_menu_io.cpp",
     "video_menu_client.hpp", "video_menu_view.hpp", "video_menu_host.hpp", "video_menu_probe.hpp",
     "video_menu_factory.hpp")}
+CAPTURE_COPY = {"adapter/framebuffer_capture.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/framebuffer_capture.hpp"}
+CAPTURE_EDITED = {RUNTIME, "runtime/ps2xRuntime/src/lib/ps2_controls_screen.cpp",
+                  "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_probe.hpp"}
 
 
-def integration(root):
+def layer_name(version="v1"):
+    build.require(type(version) is str and version in VERSIONS, "Unknown native-menu version")
+    return VERSION if version == "v1" else "native-menu-readback-v2"
+
+
+def integration(root, version="v1"):
+    layer_name(version)
+    if version == "readback-v2":
+        recipe = json.loads((Path(root) / "adapter/capture_integration.json").read_text(encoding="utf-8"))
+        build.require(recipe["schema"] == 1 and recipe["version"] == layer_name(version) and
+                      recipe["upstream_revision"] == pc.load_pin(root)["revision"] and
+                      recipe["parent_fingerprint"] == fingerprint(root, integration(root)) and
+                      recipe["copies"] == CAPTURE_COPY and len(recipe["files"]) == len(CAPTURE_EDITED) and
+                      {x["path"] for x in recipe["files"]} == CAPTURE_EDITED,
+                      "Unreviewed readback parent/paths")
+        return recipe
     recipe = json.loads((Path(root) / "adapter/native_menu_integration.json").read_text(encoding="utf-8"))
     parent = hd.integration(root, PARENT)
     build.require(recipe["schema"] == 1 and recipe["version"] == VERSION and
@@ -42,13 +61,26 @@ def integration(root):
 
 def fingerprint(root, recipe):
     data = json.dumps(recipe, sort_keys=True, separators=(",", ":")).encode()
-    for name in sorted(COPIES):
+    if recipe["version"] == layer_name("readback-v2"):
+        data += fingerprint(root, integration(root)).encode()
+    for name in sorted(recipe["copies"]):
         data += name.encode() + b"\0" + packs.normalized((Path(root) / name).read_bytes())
     return packs.sha(data)
 
 
 def plan_sources(source, root, recipe):
     source = Path(source)
+    if recipe["version"] == layer_name("readback-v2"):
+        planned = plan_sources(source, root, integration(root))
+        for item in recipe["files"]:
+            path = build.contained(source, source / item["path"])
+            build.require(path in planned, "Readback requires an exact planned parent postimage")
+            planned[path] = packs.transform(planned[path], item)
+        for own, relative in recipe["copies"].items():
+            path = build.contained(source, source / relative)
+            build.require(not path.exists() and path not in planned, "Capture destination exists; preserve/review")
+            planned[path] = packs.normalized((Path(root) / own).read_bytes())
+        return planned
     # Deliberate ORDERED composition. Runtime.cpp already has audio-v2 edits;
     # its next preimage is the exact parent postimage, not the operational base.
     planned = hd.plan_sources(source, root, hd.integration(root, PARENT))
@@ -62,24 +94,26 @@ def plan_sources(source, root, recipe):
     return planned
 
 
-def verified_install(root, name):
+def verified_install(root, name, version="v1"):
+    layer_id = layer_name(version)
     base = packs.verified_install(root, name)
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace / VERSION)
+    layer = build.contained(workspace, workspace / layer_id)
     pointer = json.loads((layer / "installed.json").read_text(encoding="utf-8"))
     run_id = pointer["run"]
     build.require(type(run_id) is str and re.fullmatch("[a-f0-9]{32}", run_id), "Invalid native-menu run")
     run = build.contained(layer, layer / "runs" / run_id)
     record = json.loads((run / "receipt.json").read_text(encoding="utf-8"))
-    recipe = integration(root)
+    recipe = integration(root, version)
     build.require(record["status"] == "installed-not-runtime-validated" and record["baseline_restored"] and
-                  record["menu_version"] == VERSION and record["menu_fingerprint"] == fingerprint(root, recipe) and
+                  record["menu_version"] == layer_id and record["menu_fingerprint"] == fingerprint(root, recipe) and
                   record["parent_fingerprint"] == recipe["parent_fingerprint"] and
                   record["base_identity"] == variants.baseline_identity(base), "Native-menu identity differs")
     source = build.contained(run, run / "source")
     pc.inspect_checkout(source, base["source_revision"], record["source_revision"])
     changed = set(pc.git("diff", "--name-only", base["source_revision"], record["source_revision"], cwd=source).splitlines())
     allowed = hd.modified(PARENT) | OWN_MODIFIED | set(hd.copies(PARENT).values()) | set(COPIES.values())
+    if version == "readback-v2": allowed |= set(CAPTURE_COPY.values())
     build.require(changed == allowed, "Unreviewed native-menu source paths")
     planned = plan_sources(workspace / "upstream", root, recipe)
     expected = dict(base["source_files"], **{
@@ -94,11 +128,12 @@ def verified_install(root, name):
     return dict(record, receipt=str(run / "receipt.json"), controls_adoption_executable=base["executable"]["path"])
 
 
-def install(root, name):
+def install(root, name, version="v1"):
+    layer_id = layer_name(version)
     root = Path(root).resolve()
     build.require(os.name == "nt", "Native-menu variant currently requires Windows/MSVC")
     workspace = packs.workspace_path(root, name)
-    layer = build.contained(workspace, workspace / VERSION)
+    layer = build.contained(workspace, workspace / layer_id)
     layer.mkdir(exist_ok=True)
     locks, run, mutated, terminal = [], None, False, True
     token = json.dumps({"pid": os.getpid(), "token": uuid.uuid4().hex, "at": build.now()})
@@ -107,12 +142,12 @@ def install(root, name):
             with path.open("x", encoding="utf-8") as stream: stream.write(token)
             locks.append(path)
         build.require(not (workspace / "packs/install.lock").exists(), "Pack installer requires inspection")
-        if (layer / "installed.json").exists(): return verified_install(root, name)
+        if (layer / "installed.json").exists(): return verified_install(root, name, version)
         build.require(not (layer / "attempt.json").exists(), "Previous menu attempt retained; inspect before retry")
         build.require(shutil.disk_usage(workspace).free >= 8 * 1024**3, "Native build requires at least8GiB free")
         build.require_no_game(subprocess.check_output)
         base = packs.verified_install(root, name)
-        recipe = integration(root)
+        recipe = integration(root, version)
         source = build.contained(workspace, workspace / "upstream")
         planned = plan_sources(source, root, recipe)
         setup = json.loads(Path(base["setup_receipt"]).read_text(encoding="utf-8"))
@@ -120,7 +155,7 @@ def install(root, name):
         original_branch = pc.git("rev-parse", "--abbrev-ref", "HEAD", cwd=source)
         run = build.Run(layer)
         run.record.update(base_identity=variants.baseline_identity(base), baseline_restored=False,
-                          menu_version=VERSION, menu_fingerprint=fingerprint(root, recipe),
+                          menu_version=layer_id, menu_fingerprint=fingerprint(root, recipe),
                           parent_fingerprint=recipe["parent_fingerprint"],
                           adapter_fingerprint=base["adapter_fingerprint"],
                           tooling_revision=pc.git("rev-parse", "HEAD", cwd=root),
@@ -135,7 +170,7 @@ def install(root, name):
         run.save()
         with (layer / "attempt.json").open("x", encoding="utf-8") as stream:
             json.dump({"receipt": str(run.directory / "receipt.json")}, stream)
-        pc.git("checkout", "-b", "codex/" + VERSION + "-" + run.directory.name, cwd=source)
+        pc.git("checkout", "-b", "codex/" + layer_id + "-" + run.directory.name, cwd=source)
         mutated = True
         for path, data in planned.items():
             path.parent.mkdir(parents=True, exist_ok=True); path.write_bytes(data)
@@ -167,7 +202,7 @@ def install(root, name):
         run.record.update(status="installed-not-runtime-validated", ended_at=build.now()); run.save()
         with (layer / "installed.json").open("x", encoding="utf-8") as stream:
             json.dump({"run": run.directory.name}, stream, indent=2)
-        return verified_install(root, name)
+        return verified_install(root, name, version)
     except BaseException as error:
         if run:
             terminal = run.child is None or run.child.poll() is not None

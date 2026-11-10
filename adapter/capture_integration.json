@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "version": "native-menu-readback-v2",
+  "upstream_revision": "14e956a1274332440273845fbab2c1f1e30c4a5a",
+  "parent_fingerprint": "75278aea45c0eef8c2c3f051adf7a86463dd1ee3209f83373d5d98f323f1701d",
+  "files": [
+    {
+      "path": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_probe.hpp",
+      "before_sha256": "fc5e6f087f0a3d61a2bc976f4b468318d42b4328f7eb3410913f0b0e64830e60",
+      "after_sha256": "259949ccd71d73aed54828a44795826167a5c9cc3e273044416e1e6bfcd13f71",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"framebuffer_capture.hpp\"\n"
+        },
+        {
+          "start": 5209,
+          "end": 5245,
+          "insert": "Image image = godhand_pc_capture::readWindow();"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_controls_screen.cpp",
+      "before_sha256": "c838c7e5a40a4adc4cf7e622410d7972d4c769a74ebe2b3975f5fc9bfd071d7b",
+      "after_sha256": "faf5ad64eeae47fae2d6ff349576cc245cfb2e007ce9ce305a3a646879cf7436",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"godhand_pc_video/framebuffer_capture.hpp\"\n"
+        },
+        {
+          "start": 41805,
+          "end": 41842,
+          "insert": "Image screen = godhand_pc_capture::readWindow();"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_runtime.cpp",
+      "before_sha256": "4ab2862b8b079597cdcbf0d38ac7f55d73e5750f0c21aef15464640f9c5b9d90",
+      "after_sha256": "f2e6948fb861fdd918e304771c5b0aa6d9e835d8482ba90f2154ea0be1942b62",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"godhand_pc_video/framebuffer_capture.hpp\"\n"
+        },
+        {
+          "start": 114026,
+          "end": 114069,
+          "insert": "const Image screen = godhand_pc_capture::readWindow();"
+        }
+      ]
+    }
+  ],
+  "copies": {
+    "adapter/framebuffer_capture.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/framebuffer_capture.hpp"
+  }
+}
