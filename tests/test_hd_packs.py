@@ -16,11 +16,21 @@ import resources
 from test_resources import bank, tagged, fst, record, TARGET
 
 
-def invented_disc():
+def invented_disc(second_payload=None):
     header = bytearray(64); header[:8] = b"TIM3\x04\x06\x01\0"
     struct.pack_into("<IIIHHBBBBHH", header, 16, 48+8256, 64, 8192, 48, 16, 0, 1, 3, 4, 128, 128)
     payload = bytes((n*17+3)&255 for n in range(8192)) + bytes(c for n in range(16) for c in (n*11, n*7, n*3, 128))
-    room = tagged(b"SCP\0", tagged(b"TM3\0", bank(header+payload)))
+    if second_payload is None:
+        textures = bank(header+payload)
+    else:
+        assert len(second_payload) == len(payload)
+        first = 48
+        second = first + len(header) + len(payload)
+        prefix = (b"TM3\0" + struct.pack("<I", 2) + bytes(8) +
+                  struct.pack("<II", first, second) + b"first___second__" + bytes(8))
+        assert len(prefix) == first and second % 16 == 0
+        textures = prefix + header + payload + header + second_payload
+    room = tagged(b"SCP\0", tagged(b"TM3\0", textures))
     archive = b"AFS\0"+struct.pack("<III", 1, 64, len(room))+bytes(48)+room
     data = bytearray(32*2048); pvd = bytearray(2048); pvd[:7] = b"\x01CD001\x01"
     struct.pack_into("<H", pvd, 128, 2048); struct.pack_into(">H", pvd, 130, 2048)
@@ -61,6 +71,35 @@ class HDPackTests(unittest.TestCase):
         self.assertEqual(blob[32+65536:], rgba); self.assertEqual(plan["target"], TARGET)
         self.assertNotIn("reference", plan); self.assertEqual(self.disc.read_bytes(), self.disc_bytes)
         self.assertEqual(hashlib.sha256(rgba).hexdigest(), self.result["sha256"])
+
+    def test_nonzero_named_image_selects_its_own_reference_without_changing_authored_pixels(self):
+        second = bytes([0x22])*8192 + bytes(c for n in range(16) for c in (n*3+17,n*5+19,n*7+23,128))
+        disc, first = invented_disc(second)
+        self.disc_bytes = disc
+        self.disc.write_bytes(disc)
+        plans, refs, authored = [], [], []
+        for image, expected in [(0,first),(1,second)]:
+            self.data['replacements'][0]['target'] = {**TARGET,'image':image}; self.write()
+            plan, rgba, blob = self.compile()
+            plans.append(plan); refs.append(blob[32:32+65536]); authored.append(rgba)
+            self.assertEqual(refs[-1],hd_reference.expand(expected))
+            self.assertEqual(plan['target']['image'],image)
+            self.assertEqual(blob[32+65536:],rgba)
+        self.assertNotEqual(refs[0],refs[1]); self.assertEqual(authored[0],authored[1])
+        self.assertNotEqual(plans[0]['source_metadata']['offset'],plans[1]['source_metadata']['offset'])
+        self.assertEqual(self.disc.read_bytes(),disc)
+
+    def test_outside_named_image_never_silently_selects_first_reference(self):
+        disc, _ = invented_disc(bytes([41])*8256)
+        self.disc_bytes = disc
+        self.disc.write_bytes(disc)
+        self.data['replacements'][0]['target'] = {**TARGET,'image':2}; self.write()
+        with self.assertRaisesRegex(ValueError,'Ordinal'):
+            self.compile()
+        result, env = self.protocol()
+        self.assertEqual(result['mode'],'original-fallback');self.assertEqual(set(env.values()),{''})
+        self.assertFalse((self.run/'hd-input.private-input').exists())
+        self.assertEqual(self.disc.read_bytes(),disc)
 
     def test_snapshot_is_immutable_without_user_file_rereads_or_original_disc_writes(self):
         result, env = self.protocol(strict=True)
