@@ -1,5 +1,33 @@
 # God Hand PC continuation - agent instructions
 
+## Same-draw readback evidence; candidate not promoted — 2026-11-10
+
+Read CAPTURE_READBACK.md and shared .local/progress-checkpoint.json. Candidate
+da084f0 builds33files/ac62f7af/exe2cf30a27, but its FIRST300s diagnostic FAILS
+old6403x9bd equality: actual346e96c6 has different camera/actor pose (298188pixels).
+UI640/saveACK/hold/resume/later5001 work; later2x/stop cases DID NOT START.
+Keepfailure, do not labelblockpass or attribute all differences to capture.
+SeparatePRIVATEpair34files/37035065/exe8f70b365 compiles EXACTpubliccapturehelper
+unchanged. FiveSAMEhostdraw legacy-before/direct/legacy-after triples: legacy
+A/Cbyte-identical, all1536000validpixelsmatch direct, no derivedimageswritten.
+Actualnative reportslogical/render640/DPI1.25; GLviewport/FBOquery was ONLY
+separatesyntheticprobe, NOTnative. Propernative4741 is9bd, legacyfd53; UIholds
+agree andlater5001/CSV5177observed. No EE/IOPdigests/audible/hardwareproof.
+NormalPUBLICCLI300s controls: preservedv1 givesold800fd53; SAMEcandidate2cf3
+givesold6409bd. Differentprobe/CSV/capture schedules: NOT single-variable A/B
+or explanation ofthefirstscene mismatch. No generalrepeatability/PS2parity.
+Decision: experimentalcode stays onthisbranch, NOTpromotedinto main. Publish
+factualreport/comparisons only via a separate main publication worktree so the
+candidate source/helpers remain physically preserved here forverification.
+Canonicalprivatecheckpoint isG:/God-Hand-PC/.local/progress-checkpoint.json.
+Allold7+newcandidate+privatepair source/exe/INIs/PDBs/ISO/canonical/MIT4WIP
+verified preserved. SharedcacheNOWPRIVATEPAIR despite restoredoperationalbase.
+Next controlledsame-exe scene/input timing or verifiedsnapshot fixture, not
+morePCfeatures or claiming samefield implies samecamera. Snapshot != gameSave.
+Candidate2x/HD/F1diagnosticcapture/hardware/focus still unverified thisincrement.
+FullgoalACTIVE; no Rust/delegation/attacks/imported saves/deletion orpaidhosting.
+Earlier preparation instructions below are historical, not currentclaims.
+
 ## Readback follow-up branch — 2026-11-10
 
 Read CAPTURE_READBACK.md and .local/framebuffer-readback-2026-11-10/CONTRACT.md.
