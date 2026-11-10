@@ -1596,6 +1596,17 @@
     {
       "kind": "journal",
       "date": "2026-11-10",
+      "captured_at": "2026-11-10T20:54:15.469Z",
+      "path": "captures/6ef3a14c7cdea7cae416d3e4e6113f6d2d80804e570f38b4396347d845e93d39.jpg",
+      "sha256": "6ef3a14c7cdea7cae416d3e4e6113f6d2d80804e570f38b4396347d845e93d39",
+      "reviewed": true,
+      "revision": "b38f7c37bb1526ff6f6557d793b2bacff4db73f1",
+      "caption": "Controlled same-executable follow-up - actual published journal",
+      "source": "Original unretouched JPEG of the actual published new journal entry, default1265x712 browser viewport. No crop/resize/viewport override or private desktop. Title, summary and changes visible; evidence/limits were subsequently opened and RM03 In progress verified on the roadmap. Native four-case screenshots have separate private source/binary/time provenance, not replaced by this website capture. Earlier mismatch remains unexplained; no candidate promotion or full-fidelity claim."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
       "captured_at": "2026-11-10T19:51:22.528Z",
       "path": "captures/a03762daba4bf294f6961432ef42a04247c1e6cdecdeed749b6ed1ab52336a34.jpg",
       "sha256": "a03762daba4bf294f6961432ef42a04247c1e6cdecdeed749b6ed1ab52336a34",
