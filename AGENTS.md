@@ -1,5 +1,25 @@
 # God Hand PC continuation - agent instructions
 
+## Remaining isolated capture acceptance — 2026-11-10
+
+Read the new CAPTURE_READBACK.md follow-up and canonical G:/God-Hand-PC/.local/
+progress-checkpoint.json. Exact SAME33-file/ac62/exe2cf30 candidate: fresh2x,
+HD+F2 and F1 diagnostic480s, plus F2stopopen30s all native124/scopedchecksPASS.
+Actual native resolution2x/3x observed;4741 hashes591f/cce2/9bd match prior
+same-size controls. Longcases exportlater5001/CSVlast6814/6273/6339. HD/F2
+probe0 ACKs2x and resumes; F1probe1 holds4801/cycle23621128446 for10896ms,
+EE/IOPdigests equal, firsttwoUIoriginals identical. ThirdUI saysUNSAVED:
+onlylaterEscape+file/livechecks provesaving. Selected first/third640 originals
+show UI edit, not newF1/PS2parity. No physical/audible/gameSave/fullmachine claim.
+Public four30s normal/HD/oldv1/Original startup controls0/native124 and five
+no-launch refusals pass with inherited mutating/state-load diagnostics stripped.
+Ninevariants/sidecars/ISO/canonical/source2xstore/MIT4WIP preserved; no build or
+game generation. Cache STILLpreviousprivatepair. Earlier346e mismatch remains
+unexplained and visible; candidate NOTpromoted, mainruntimev1 unchanged.
+Next RM01 read-only identity/ABI/overlay-lifetime audit for readable extensions
+and representative evidence; do NOT add display choices or hook prototype
+addresses blindly. No new Rust/delegation/autofighting/imported saves.
+
 ## Controlled scene follow-up — 2026-11-10
 
 Read the controlled follow-up in CAPTURE_READBACK.md and canonical private

@@ -1,5 +1,12 @@
 # Canonical progress and publication workflow
 
+Latest scoped acceptance: SAME isolated readback candidate now passes actual
+fresh2x, HD/F2, F1 diagnostic captures and stop/startup rollback. See the later
+CAPTURE_READBACK.md follow-up. Main remainsv1; original346e mismatch remains
+unexplained, not retroactively fixed. Third F1 UI original is UNSAVED at capture;
+later Escape/file/live checks prove saving. These are preferences, not game saves.
+Next RM01 identity/ABI/overlay-lifetime audit, not more display choices or Rust.
+
 Latest controlled follow-up: four fresh same-executable OFF/ON/ON/OFF480s
 runs agree byte-for-byte at sampled fields4741 and5001. Both ON cases ACK the
 restart-only2x preference and resume. Earlier346e pose failure is retained and

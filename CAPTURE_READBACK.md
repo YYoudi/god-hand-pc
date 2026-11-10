@@ -186,6 +186,98 @@ field4741 and held UI originals already have these bytes. Old capture records
 are not rewritten with new dates or substituted for this experiment's provenance.
 
 
+## Remaining capture paths exercised — 10 November 2026
+
+This later experiment uses the SAME isolated33-file candidate, source
+`ac62f7afce10349dcb00f9ea49845824d6f2d51c`, executable
+`2cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751`,
+clean tooling `81fc65bcbba4bbf193901cb4b2b0683a39713a25`. No rebuild, private
+pair substitution, game generation, camera fitting or image repair occurred.
+These are newly executed cases, not completion/relabeling of the earlier
+aborted driver. The full faithful-PC goal remains active.
+
+The three long cases have480s deadlines, fresh owned scratch data, the same
+four Start/Cross opening pulses and screenshot requests4740/5000, plus native
+presentCSV. Application shader cache is explicitly disabled; no owned builds,
+tests or GPU probes overlap. Driver/OS/background/thermal state is not isolated.
+All cases are headless/muted, with no attacks, imported states or game saves.
+
+| New case | Actual internal scale | Last CSV field | Observed result |
+| --- | --- | --- | --- |
+| Fresh saved2x process,480s | 2x | 6814 | Reads prior ON1 scratch choice, seeds fresh store; proper640x480 field4741 equals prior2x `591f0fcf...`. F1/F2 tests OFF. |
+| HD plus F2,480s | 3x | 6273 | Original authored512x512 source4 image uploads; field4741 equals prior HD `cce21397...`; F2 hold/saveACK/close and later5001 pass. |
+| F1 diagnostic capture,480s | 3x | 6339 | Actual corrected upstream F1 capture call runs; original scene4741 equals `9bd97cff...`; controls edit/file/live/hold checks pass and later5001 is exported. |
+| Stop with F2 open,30s | 3x | 180 | Both held originals agree; shutdown releases the acknowledged hold, no preference save requested. |
+
+All four native processes exit at their own deadline124, without forced kills.
+Internal2x/3x is observed in the actual `[gs-gpu] internal resolution` log line,
+not inferred from a request or framebuffer size. The first observer filter
+looked for the word "scale" and missed those initialization lines; the retained
+supplemental parser fills that observation gap without rewriting native results.
+The2x run reads a prior scratch preference, not a new public user-store CLI
+option or an in-game graphics change. Canonical owner preferences and the source
+scratch choice remain unchanged. Preference/controls persistence is NOT game saving.
+
+The HD/F2 case holds and resumes at field4801/cycle23621128446 for1733ms, with
+one real broker ACK. Current3x is unchanged;2x is saved for a later launch.
+This case uses probe0: no EE/IOP digest or audible/device evidence. It exercises
+the existing authored texture path, not a new HD feature, general asset support
+or a claim about all scenes/aliases/performance.
+
+The F1 case uses the existing upstream view and shared typed diagnostic commands,
+not OS key injection. It holds field4801/cycle23621128446 for10896ms and reports
+equal EE/IOP RAM digests at resume. The first two raw UI PNGs are byte-identical.
+The third adds an alternate U binding to Combo/Square and visibly says **unsaved**
+at that capture. Only the later Escape action and passing file/live assertions
+establish saving. Do not caption the third image as already saved.
+
+Selected first/third originals are both640x480, unchanged and downloadable.
+Their13468 changed pixels lie within the observed panel; pixels outside it are
+identical. This is a before/after **UI edit**, not better graphics, a new F1 menu,
+Bevy/PS2 hardware output or a general pause certificate. EE/IOP RAM and two held
+images do not establish complete SPU/GS/peripheral state or audible correctness.
+
+### Separate actual public-launch controls
+
+Four startup-only30s public CLI controls select candidate normal, candidate+HD,
+preserved no-version v1 and Original. All launchers return0/native124, select the
+expected existing executable and do not force a stop. Inherited mutating F2/F1
+diagnostics and a stale state-load variable are deliberately injected into the
+launcher environment: actual per-run records show both selftests/probe OFF and
+the state variable removed. Brokers remain idle. These are startup controls,
+not physical menu interaction or later-scene checks.
+
+Five actual preflight refusals create no launch receipt: orphan readback version,
+Original+menu, missing video selection, incompatible legacy hold, and unsupported
+old default HD combination. Old version meanings and default behavior are intact.
+
+### Decision and next direction
+
+The scoped capture acceptance gaps for fresh2x, existing HD/F2 combination, F1
+diagnostic exports and stop/startup rollback now have actual evidence. This is
+not a new main release or full settings/fidelity acceptance. Keep the candidate
+isolated, main runtimev1 unchanged, and the first different pose (`346e96c6...`)
+visible and unexplained. Neither successful later checks nor the previous four
+stable samples retroactively pass that failed comparison.
+
+Do not keep adding display choices. Next audit one verifiable game function or
+subsystem identity/ABI/overlay lifetime for readable extensions (RM01), and use
+explicitly scoped captures for representative comparisons, not as a PS2-accuracy
+oracle. No guest replacement should be installed merely from a prototype label.
+Physical F1/F2/focus/controller, audible/device audio, genuine game Save/exit/Load,
+broader DPI/window/backend coverage and human campaign gates remain open. No
+autonomous fighting, new Rust features or delegation.
+
+All nine source/executable/INI/PDB sets, ISO, canonical preferences and historical
+MIT WIP are verified preserved. The shared object/CMake cache is STILL the earlier
+private-pair build; no new link changed it. Evidence remains private under
+`G:/God-Hand-PC/.local/readback-acceptance-2026-11-10/`: `native-cases.json`,
+`supplemental-analysis.json`, `public-controls.json`, `preservation-after.json`
+and `new-variants-after.json`. Only the explicitly reviewed original F1 pair is
+added publicly. Game imagery is not GPL/MIT or rights-holder authorization;
+ISO/ELF/assets/envelopes/generated game code/dumps/saves/executables remain private.
+
+
 ## Preservation and reproduction boundaries
 
 265 original synthetic tests pass on the candidate branch (three Windows

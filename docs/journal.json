@@ -5,17 +5,17 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Validate the isolated readback candidate with fresh saved2x, explicit HD combination and F1 diagnostic captures under fixed conditions. Four same-executable OFF/ON/ON/OFF runs agree at sampled4741/5001, but the earlier pose failure remains unexplained and visible. No general fidelity claim, promotion, image repair or new settings. Hardware/focus/audible audio, genuine game SaveExitLoad and representative human campaign remain open.",
+  "next": "Audit one verifiable game function/subsystem identity, ABI and overlay lifetime for readable extensions (RM01), without installing a guessed hook or adding more display choices. The isolated capture candidate now has fresh2x/HD/F1 scoped controls, not full-fidelity acceptance or a main default change. Retain the unexplained first pose failure. Representative reference comparisons, hardware/focus/audible audio, genuine game SaveExitLoad and human campaign remain open.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Two named128x128 sources in one room render original512x512 images; aliases/formats/scenes/fidelity/performance remainopen. Only explicit checked gpu-audio-v3 plusaudio-v2 controls now combines HD+pause. OldHD/controls combinations andsame-size+HD still refuse. No-version remainsHDv1. Selected current640x480 originals are not exact historical800x600 replays; capture-size causeunknown.",
+    "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
-    "A same-draw native diagnostic now isolates the current DPI capture defect without editing images; candidate code remains separate from main. A different inter-run scene comparison still fails despite correct dimensions. Same global field alone is not scene/pose identity; cause unknown. Main remainsv1; no candidate2x/HD/F1/hardware/campaign promotion."
+    "Same-draw evidence isolates the DPI capture defect. Later same-executable repeatability and fresh2x/HD/F1 controls pass at sampled points, but an earlier inter-run pose mismatch remains unexplained and visible. Candidate code stays isolated; main runtime remainsv1. No general determinism/PS2 parity, hardware/audio/game-save/campaign acceptance."
   ],
   "milestones": [
     {
@@ -118,7 +118,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof. A later isolated readback candidate has same-draw native pixel-preservation evidence, but a different inter-run pose check still FAILS; controlled scene/input/capture fixtures and compatibility checks are required before promotion. Main runtime remainsv1. A subsequent same-executable OFF/ON/ON/OFF480s block gives identical sampled4741/5001 originals, but does not explain the retained first failure. Fresh candidate2x/HD/F1 captures, physical usability and broader state-compatible controls remain; no promotion."
+          "acceptance": "Scoped native-menu-v1 render/ACK/stale-reload/close-resume/stop/new-process2x and public rollback evidence. A separate readback-v2 candidate has same-draw pixel preservation, four controlled sampled-frame replays, and actual fresh2x/HD/F1/stop controls. Main remainsv1; first346e pose failure is retained and unexplained. Physical F1/F2/focus, broader DPI/backend/state compatibility, hardware/audio and coherent wider settings remain open; no full menu/fidelity/game-save claim."
         },
         {
           "id": "PC04",
@@ -310,6 +310,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Checking the remaining native capture paths",
+      "summary": "The same experimental build now reproduces a fresh 2x launch, the existing larger test texture with F2, and corrected F1 diagnostic exports. This closes scoped validation gaps, not full-game accuracy or a new main release.",
+      "changes": [
+        "Ran three fresh 480-second native cases and a 30-second stop-with-menu-open control without rebuilding or changing the ISO. Native initialization actually reports2x/3x; sampled original PNGs match the earlier same-size2x, authored-HD and original-asset controls.",
+        "Exercised the real upstream F1 view through shared diagnostic commands. Two held originals match; adding an alternate U binding changes the UI only. Published the unchanged 640x480 before/edit pair: the third image visibly says unsaved, and only the later close/file/live checks establish saving.",
+        "Completed four separate public startup/rollback controls and five preflight refusals. Inherited mutating diagnostics and a stale state-load variable are stripped. Older variants, private evidence and the paused MIT lab remain intact; main defaults are unchanged."
+      ],
+      "validation": "All eight native processes exit 124 without forced termination. Direct cases pass fresh 2x reload, HD/F2 ACK/resume, F1 file/live/hold checks and stop. F1 holds4801/cycle23621128446 for 10,896 ms with equal EE/IOP digests, then later5001/CSV6339; HD later5001/CSV6273;2x CSV6814. Five refusals create no launch receipt. Nine source/exe/INI/PDB sets, ISO, canonical preferences and source scratch choice verified unchanged.",
+      "limits": "Candidate stays separate from main; the earlier346e pose mismatch remains unexplained and visible. Selected screenshots compare an upstream UI edit, not better graphics or physical input. F1 digests are scoped EE/IOP RAM, not complete machine/audio state; F2 uses probe0. Genuine game saving, hardware/focus/audio, broader DPI/backends/scenes and campaign remain open. Next is a verified readable-function boundary, not another settings feature.",
+      "link": {
+        "label": "Exact capture acceptance, original F1 pair and remaining gates",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/CAPTURE_READBACK.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -853,6 +870,51 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-readback-f1-binding",
+      "date": "2026-11-10",
+      "title": "F1 capture before and after an alternate binding edit",
+      "feature": "RM03",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Native F1 - before edit",
+        "bevy": "Native F1 - U added, not yet saved"
+      },
+      "scenario": "Same isolated readback-v2 retail-backed executable, upstream F1 view, acknowledged guestfield4801/cycle23621128446. Shared typed diagnostic actions, not physical input or a standalone scene. Both proper640x480 PNGs are original renderer exports; no crop, resize, image correction or camera fitting.",
+      "observations": [
+        "The first two held originals are byte-identical. The selected later third frame adds an alternate U binding to Combo/Square and visibly says unsaved. Only the subsequent Escape plus passing file/live assertions establishes saving.",
+        "All13468 changed pixels are inside the observed panel; pixels outside it agree exactly. Before/after describes this UI edit, not a graphics upgrade, newly invented F1 menu or PS2-reference comparison.",
+        "Actual hold/resume4801/cycle23621128446 lasts10896ms with equal EE/IOP RAM digests, followed by later5001 export and CSV6339. This is scoped capture/pause evidence, not full-machine or audible output proof."
+      ],
+      "limits": [
+        "Both sides are native PC output, not Bevy or PS2 hardware. Injected shared commands do not verify physical keyboard/controller, focus, peripheral or audible behavior.",
+        "UI preferences are not game memory-card saves. The candidate remains isolated from main, and the earlier different-pose comparison remains failed and unexplained.",
+        "Only these selected unchanged screenshots are public. No ISO/ELF/assets/envelopes/generated code/dumps/saves/binaries/raw audio. Game imagery is neither GPL nor MIT; owner selection is not rights-holder permission."
+      ],
+      "reference": {
+        "path": "media/815edf0bc9ee44981b2893b33cdc905cacf687ca1c7c3bbc9f679f9b2b84d0e0.png",
+        "sha256": "815edf0bc9ee44981b2893b33cdc905cacf687ca1c7c3bbc9f679f9b2b84d0e0",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL and upstream F1 controls view; upstream14e956a; isolated readback-v2 sourceac62f7afce10349dcb00f9ea49845824d6f2d51c; exeSHA2562cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751; clean tooling81fc65b; scratch shared-command diagnostic, muted headless, observed3x, acknowledged field4801/cycle23621128446; time is original PNG filesystem write timestamp, not GPU clock.",
+        "revision": "ac62f7afce10349dcb00f9ea49845824d6f2d51c",
+        "captured_at": "2026-11-10T21:21:22.599291+00:00",
+        "caption": "Unchanged original F1 diagnostic export before the alternate binding edit."
+      },
+      "bevy": {
+        "path": "media/52e9ac319316dcf7fd8dafd3e66e890a32d2b1a267fd951c7bcadf5d09fa4b8b.png",
+        "sha256": "52e9ac319316dcf7fd8dafd3e66e890a32d2b1a267fd951c7bcadf5d09fa4b8b",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL and upstream F1 controls view; upstream14e956a; isolated readback-v2 sourceac62f7afce10349dcb00f9ea49845824d6f2d51c; exeSHA2562cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751; clean tooling81fc65b; scratch shared-command diagnostic, muted headless, observed3x, acknowledged field4801/cycle23621128446; time is original PNG filesystem write timestamp, not GPU clock.",
+        "revision": "ac62f7afce10349dcb00f9ea49845824d6f2d51c",
+        "captured_at": "2026-11-10T21:21:32.567705+00:00",
+        "caption": "Unchanged original F1 diagnostic export after adding U; still UNSAVED in this frame. Later close/file/live assertions verify saving."
+      }
+    },
     {
       "id": "2026-11-10-same-draw-readback",
       "date": "2026-11-10",
