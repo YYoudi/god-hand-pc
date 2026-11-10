@@ -1471,6 +1471,17 @@
     {
       "kind": "journal",
       "date": "2026-11-10",
+      "captured_at": "2026-11-10T18:50:35.259Z",
+      "path": "captures/0dcafcab424725a203b0b44be356393f16c523972c52d5a07caa3cc5f8d4118d.jpg",
+      "sha256": "0dcafcab424725a203b0b44be356393f16c523972c52d5a07caa3cc5f8d4118d",
+      "reviewed": true,
+      "revision": "700aefb897d3ef477d687730cd77310425320ef6",
+      "caption": "First native F2 preference - actual published journal entry",
+      "source": "Original unretouched JPEG of the actual new published journal at the normal browser viewport (1265x712); no viewport override, crop or resize. Exact capture instant UTC,10November Europe/Paris. Article title/summary/changes only; collapsed evidence panel was subsequently opened and the retained failed image comparison verified. Navigation/comparison2images800x600/actual original download hash and RM03Inprogress checked separately. No game imagery or private desktop in this journal screenshot; not native rendering, hardware, game-save or full-port acceptance. The separate original native before/after pair retains its own provenance and limitations."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
       "captured_at": "2026-11-10T02:24:52.068Z",
       "path": "captures/1fb9673788f34bc2f83508a57c2a2ec7ab14006cb7361046ae35ad7888e769d3.jpg",
       "sha256": "1fb9673788f34bc2f83508a57c2a2ec7ab14006cb7361046ae35ad7888e769d3",
