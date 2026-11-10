@@ -4,6 +4,11 @@
 separate native controls. No-version commands below still select this preserved
 v1 workflow; there is no automatic upgrade or proven FPS gain.
 
+**10 November follow-up:** [a second named source](SECOND_RESOURCE.md) now passes
+unchanged-v1/GPU2 and fallback controls in the same room. It does not extend the
+format contract or prove unique surface ownership/another scene. The original
+9 November results below retain their dates, scope and image provenance.
+
 9 November 2026. **Checked public recipe built and tested locally**, for the
 single-resource scope below. The [earlier private proof](HD_TEXTURES.md) is
 retained, not relabeled as this later build. No baseline executable or existing

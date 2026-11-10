@@ -35,6 +35,14 @@ No FPS from host presents, no every-frame fidelity from endpoint equality, no
 default switch or full performance/driver/campaign acceptance. Raw CSV/cache and
 new native originals remain private; no invented new visual comparison.
 
+SECOND_RESOURCE.md records a second distinct named source in the same room with
+actual v1/GPU2 enabled, absent/invalid and private reference-negative controls.
+Selected new native originals are640x480; do not equate them to old800x600fd53
+or repair failed framing/ROI hypotheses by editing originals. Proposedmid-left
+ROI changes1114pixels: not isolatedporch or uniqueownership proof. Register the
+fresh pair with its own UTCfiletimes/source/binary, preserve oldprovenance.
+Decoded assets/envelopes remain private. PC04/fullgoal remaininprogress.
+
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and
 the next falsifiable experiment. Poll confirmed live jobs before restarting.

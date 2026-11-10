@@ -23,6 +23,9 @@ editorial migration, not new runtime validation. See [the workflow](PROGRESS.md)
 The latest [fixed-field HD v1 / GPU v2 check](FRAME_SPANS.md) reproduces matching
 sampled images, but does **not** establish a reliable speedup. Both the slower
 repeat and the measurement limits are retained; defaults are unchanged.
+The later [second named-resource control](SECOND_RESOURCE.md) modifies another
+surface through the same retained binaries, with original-asset fallback.
+It is still one room and one supported source format, not general HD support.
 
 ## Active direction
 

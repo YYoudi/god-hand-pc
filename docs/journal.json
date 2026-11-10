@@ -5,11 +5,11 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Validate a second named resource and its original/fallback controls using retained binaries before broadening HD claims. The first matched-field timing block establishes no reliable speedup; further performance experiments need repeated wider-scene/driver design, not an automatic default switch or persistent cache. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
+  "next": "Design a checked explicit HD + audio-v2 composite variant, preserving all existing binaries and refused combinations until actual hold/render/rollback controls pass. Recheck disk/build ownership first; no new clone/regeneration merely for this work. Wider rooms/formats and source aliases, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates; do not chase the inconclusive one-scene timing result.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Explicit GPU-v2 builds and passes sampled native512x512 valid/absent/invalid/reference-negative controls without adapter CPU match readback. No-version still means preserved HDv1. A matched-field v1/v2/v2/v1 block has equal sampled endpoint images but establishes no reliable speedup. General HD coverage, aliases, wider performance/drivers/backends/scenes remain open; HD with controls/same-size packs is still refused.",
+    "Two distinct named128x128 sources in the same room now render authored512x512 images with retained HDv1/GPUv2 and fallback controls. The second replacement affects porch and facade pixels, not unique surface ownership. New640x480 controls are not exact historical800x600 replays; capture-size cause unknown. Other rooms/formats/aliases/backend/driver/state/performance remain open. No-version still means HDv1; HD+controls/same-size packs remain refused.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -121,9 +121,9 @@
         {
           "id": "PC04",
           "title": "Verify another named resource and restoration",
-          "status": "planned",
+          "status": "in_progress",
           "area": "validation",
-          "acceptance": "A second named resource/scene, original authored payload, exact supported storage contract and actual enabled/disabled/fallback controls; no guessed offsets or expanded format claims."
+          "acceptance": "Second distinct named source4 in the same room now passes actual unchanged-v1/GPU2 enabled and same-v1 absent/invalid/interior-reference-negative controls with original authored512x512 image. New same-field640x480 originals are reviewed; old800x600/capture-size and isolatedporch/onefacadeROI hypotheses are not accepted. Other rooms/formats/state coverage and shared/alias ownership remain unverified; no arbitrary-format or unique-surface claim."
         },
         {
           "id": "PC05",
@@ -308,6 +308,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "A second texture, and a wider effect than expected",
+      "summary": "Another named resource now accepts original external artwork on the retained HD v1 and GPU v2 binaries. Removing it or changing its reference restores the current original-assets image. The effect is not confined to the porch.",
+      "changes": [
+        "Selected a distinct nonzero image from the same retail room through the existing bounded metadata/reference readers. Its private plank-like preview was a hypothesis; native intervention now shows a visible surface effect. No native rebuild, generated-game edit, new Rust or default change.",
+        "Created a different original512x512 green/orange diagnostic. Four actual public CLI runs and a separate exact-native one-reference-byte negative finish at their deadlines. GPU-v2 and v1 enabled images agree; absent, invalid and reference-negative originals agree.",
+        "Kept the failed proposed mid-left facade control:1114 pixels there change, alongside the obvious right porch. Shared use or identical-content aliases elsewhere are not classified; no isolated-porch/unique-ownership claim.",
+        "Published only the fresh unretouched640x480 absent/enabled renderer pair with original-resolution downloads, hashes and new provenance. Historical800x600 originals are preserved, not resized or presented as exact replays. Two invented-data selector regressions protect nonzero/out-of-range image handling."
+      ],
+      "validation": "195 invented-data tests locally:193pass/two Windows symlink-privilege skips. Four public launchers0/natives124, direct-reference-negative observer0/native124, two preflight refusals/no native spawn; no forced termination or shader errors. Selected current originals match within their valid/absent control groups;6253changed pixels, two proposed ROIs exact and one failed retained. All5installed variants, baseline PDB/source, ISO and historical lab/four WIP preserved.",
+      "limits": "Same room, same supported128x128 source format and one512x512 diagnostic, not generalHD or a second scene. Exact old800x600 replay and simple top-left/padding hypotheses fail; capture-size cause remains unknown, not a claimed fix. No per-frame/full-game fidelity, hardware/audio, true SaveExitLoad, performance or remaster completion. HD+controls remains refused. Raw reference assets/previews/envelopes and all binaries/saves remain private.",
+      "link": {
+        "label": "Commands, exact provenance, all controls, failed hypotheses and original comparison",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SECOND_RESOURCE.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -729,6 +747,52 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-second-named-resource",
+      "date": "2026-11-10",
+      "title": "Second named resource: original-assets and authored surface controls",
+      "feature": "PC04",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Native HD v1 - original assets",
+        "bevy": "Native HD v1 - authored source4 pattern"
+      },
+      "scenario": "New public CLI absent220s/enabled300s, same unchangedHDv1/source8dec495/exef17d67d6, clean tooling4ae5d33, fresh scratch cards/controls, muted headless, same title/start/Start script andactualfield4741. Source st1/r100.dat/SCP3/bank0/image4 versus previousground0; no attacks, imported saves, runtime snapshots, native relink, camera/object/internal-scale edits or autonomous levelcompletion. Neither side is Bevy or hardware.",
+      "observations": [
+        "Second distinct128x128 selector6/4bit source replaced by original512x512 green/orange bands/yellow marks through the unchanged public manifest/runtime boundary. Same named resource and authored pixels produce byte-identical selected v1/GPU2 PNGs.",
+        "Same-v1 absent/invalid-preflight and direct one-interior-reference-byte negative produce the same new original-assets PNG. Direct negative uploads its valid envelope/hash but does not show the pattern; not a public preflight or zero-matches-throughout-game proof.",
+        "6253 changed RGB pixels, exclusive bbox[204,198,640,378). Proposed upper sky/actor and lower ground/HUD ROIs are exact; proposed mid-left facade ROI FAILS1114pixels. Initial all-three-ROIs assertion retained. The replacement is not isolated to the visible right porch; shared/aliased uses remain unclassified."
+      ],
+      "limits": [
+        "Same room/source format and one sampled field, not another scene, generalHD, overallfidelity, unique filename/surface ownership or every-frame equality.14compatible decodedreferences distinct only within69image bank, not an all-game alias inventory.",
+        "New originals640x480 are not byte-identical historical800x600fd53 replays. A simple top-left/padding hypothesis fails too; capture-size cause unknown, not a newly implemented screenshotfix. No crop/resize/normalization/rewriting of either old or new originals. Acceptance uses only this fresh same-size set.",
+        "Game SaveExitLoad, physicalinput/audibleaudio, campaign/driver/backend/state/performance and HD+controls composition remain open. Old timing block still demonstrates no reliable gain; no FPSunlock/widescreen/lighting/multiplayer result.",
+        "Only these reviewed renderer originals and original public tooling/docs are published. ISO/ELF/assets/previews/sourceRGBA/envelopes/generatedcode/dumps/saves/nativebinaries/PDB and raw research remain private. Game imagery is neitherGPL norMIT; owner-requested publication is not rights-holder permission."
+      ],
+      "reference": {
+        "path": "media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png",
+        "sha256": "9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + unchanged checked HDv1; upstream14e956a, source8dec495, exef17d67d6; clean public tooling4ae5d3311980604a546b3faee325015d5781d2f6; actualfield4741, scale3, fresh muted headless, absent-v1; UTC timestamp from native PNG Windows last-write time",
+        "revision": "8dec4950b15f7fffe5e97b580dcc10fb758c8503",
+        "captured_at": "2026-11-10T00:50:03.319866+00:00",
+        "caption": "Fresh current original-assets control, same retained HDv1 without pack; unchanged full640x480 native PNG."
+      },
+      "bevy": {
+        "path": "media/cce213978ff1670d2b9ab8ef83f0e83d6eadf79325ec6eb1a60d0cf2b5002ea8.png",
+        "sha256": "cce213978ff1670d2b9ab8ef83f0e83d6eadf79325ec6eb1a60d0cf2b5002ea8",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL + unchanged checked HDv1; upstream14e956a, source8dec495, exef17d67d6; clean public tooling4ae5d3311980604a546b3faee325015d5781d2f6; actualfield4741, scale3, fresh muted headless, enabled-v1; UTC timestamp from native PNG Windows last-write time",
+        "revision": "8dec4950b15f7fffe5e97b580dcc10fb758c8503",
+        "captured_at": "2026-11-10T00:45:01.666332+00:00",
+        "caption": "Original authored512x512 source4 diagnostic, same retained HDv1; unchanged full640x480 native PNG, not remaster art."
+      }
+    },
     {
       "id": "2026-11-09-checked-hd-workflow",
       "date": "2026-11-09",

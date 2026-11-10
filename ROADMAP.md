@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Validate a second named resource and its original/fallback controls using retained binaries before broadening HD claims. The first matched-field timing block establishes no reliable speedup; further performance experiments need repeated wider-scene/driver design, not an automatic default switch or persistent cache. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.
+Design a checked explicit HD + audio-v2 composite variant, preserving all existing binaries and refused combinations until actual hold/render/rollback controls pass. Recheck disk/build ownership first; no new clone/regeneration merely for this work. Wider rooms/formats and source aliases, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates; do not chase the inconclusive one-scene timing result.
 
 ## M8 — Active: verified original PC baseline
 
@@ -27,7 +27,7 @@ Keep original behavior as a control; readable original host/function replacement
 - **RM01 Map one verifiable function/subsystem boundary — Planned:** Record provenance and validate one identity/ABI/overlay lifetime against actual runtime evidence; static name/address candidates alone do not qualify.
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.
 - **RM03 Audit and expose coherent PC settings — In progress:** Reuse existing upstream options; implement validated persistent settings/menu and reversible capabilities without claiming unimplemented features.
-- **PC04 Verify another named resource and restoration — Planned:** A second named resource/scene, original authored payload, exact supported storage contract and actual enabled/disabled/fallback controls; no guessed offsets or expanded format claims.
+- **PC04 Verify another named resource and restoration — In progress:** Second distinct named source4 in the same room now passes actual unchanged-v1/GPU2 enabled and same-v1 absent/invalid/interior-reference-negative controls with original authored512x512 image. New same-field640x480 originals are reviewed; old800x600/capture-size and isolatedporch/onefacadeROI hypotheses are not accepted. Other rooms/formats/state coverage and shared/alias ownership remain unverified; no arbitrary-format or unique-surface claim.
 - **PC05 Prove a size-aware HD asset upload boundary — Verified for stated scope:** Proof-only scope: actual named128x128 resource -> full16384texel GPU content match -> authored512x512 host image visibly sampled, same-field unretouched originals. Disabled, one-interior-reference-texel and invalid-input hash restore the baseline PNG. Exact public helpers also reproduce the private result. No public HD installer/general pack API; seePC09. Aliases, performance and wider coverage remain open.
 - **RM04 Validate widescreen — Planned:** Projection/FOV, HUD, cinematics and culling verified against 4:3 controls; no image stretching.
 - **RM05 Prove simulation-safe presentation cadence changes — Planned:** Separate rendering cadence from simulation; verify animation, timers, physics, hit windows and AI at multiple cadences before FPS unlock claims.

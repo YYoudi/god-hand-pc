@@ -25,8 +25,9 @@ Original public continuation code
 `Enhanced` permits explicitly selected extensions, not an automatic bundle:
 the same-size bridge, checked controls versions, or separate experimental
 [hd-v1](HD_PACKS.md). HD+controls/same-size packs currently refuse combination;
-they require a separately tested composite recipe. Only one512x512 authored
-replacement on a128x128 source has HD runtime evidence. None enables widescreen,
+they require a separately tested composite recipe. Two distinct128x128 named
+sources in one room now have original512x512 runtime evidence, with
+[explicit shared-surface/capture limits](SECOND_RESOURCE.md). None enables widescreen,
 frame-rate changes or a new renderer.
 Upstream's own baseline may already differ from hardware in resolution/timing.
 Neither profile claims full-game fidelity. Test input, headless audio muting and

@@ -1,5 +1,22 @@
 # God Hand PC continuation - agent instructions
 
+## Second named resource — 2026-11-10
+
+Read SECOND_RESOURCE.md and .local/second-resource-2026-11-10/. Clean4ae5d33
+unchangedHDv1/GPUv2 test image4 (not priorground0): fourpublicCLI +direct1byte
+reference-negative all native124/observer0, two preflightrefusals/no spawn.
+EnabledPNGcce21397 equalv1/GPU2; absent/invalid/reference-negative9bd97cff.
+Newset640x480, NOT historical800x600fd53: top-left/padding hypothesis fails,
+causeunknown, no imagecrop/resize or invented screenshotfix/crossrunparity.
+6253changedpixels, bbox204,198..640,378; upper/lower ROIs exact, proposedmidleft
+ROI FAILS1114pixels. It is NOT an isolatedporch-only replacement/uniquefilename
+ownership. Source4 andall14compatible128references are distinct within69image
+bank ONLY; outsidealiases unknown. Originalart green/orange512pattern; reference
+pixels/envelopes/previews stayPRIVATE, publish onlyselectedreviewed nativeoriginals.
+195synthetic193pass2Windows skips; failedmemoryfixture/label andROI/quoting
+attempts retained. No nativebuild/defaultchange, ISO/all5variants/PDB andlab4WIP
+preserved. PC04 remainsinprogress forotherroom/format/ownership, fullgoalACTIVE.
+
 ## Fixed-field profiling follow-up — 2026-11-10
 
 Read FRAME_SPANS.md and .local/present-field-spans-2026-11-10/. Existing native
