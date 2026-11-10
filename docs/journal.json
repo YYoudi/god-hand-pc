@@ -1218,6 +1218,17 @@
     {
       "kind": "journal",
       "date": "2026-11-10",
+      "captured_at": "2026-11-10T01:16:44.072Z",
+      "path": "captures/622b2a496d4620ca950d977501b85152b8c79722230a0226267b4f5f58843c27.jpg",
+      "sha256": "622b2a496d4620ca950d977501b85152b8c79722230a0226267b4f5f58843c27",
+      "reviewed": true,
+      "revision": "f9b9e007b7a79061a974b7f7f4a64e2b6c694c00",
+      "caption": "Second named resource - actual published journal excerpt",
+      "source": "Unretouched screenshot of actual published journal, existing default narrow viewport, no crop/resize/viewport override. Exact UTC instant,10November Europe/Paris. Title/summary/first part only, not full-page, native image, fidelity or performance proof. No game imagery/private desktop. Selected native original-assets/authored pair has its own full-resolution files, runtime/date/hash/provenance and explicit failedROI/old-capture limits in the comparison registry; no source asset sheet/envelope is published."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
       "captured_at": "2026-11-10T00:32:13.498Z",
       "path": "captures/bcc42b8eaab29f5ff1074973b4601d83e386780530a274b9bd19df6486f03621.jpg",
       "sha256": "bcc42b8eaab29f5ff1074973b4601d83e386780530a274b9bd19df6486f03621",
