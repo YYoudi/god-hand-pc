@@ -24,8 +24,9 @@ Original public continuation code
 `Original` is the default launch policy: no continuation pack overrides.
 `Enhanced` permits explicitly selected extensions, not an automatic bundle:
 the same-size bridge, checked controls versions, or separate experimental
-[hd-v1](HD_PACKS.md). HD+controls/same-size packs currently refuse combination;
-they require a separately tested composite recipe. Two distinct128x128 named
+[hd-v1](HD_PACKS.md). Only the explicit checked
+[gpu-audio-v3 composition](HD_AUDIO.md) combines GPU-v2 and audio-v2; old HD+
+controls requests and same-size+HD combinations remain refused. Two distinct128x128 named
 sources in one room now have original512x512 runtime evidence, with
 [explicit shared-surface/capture limits](SECOND_RESOURCE.md). None enables widescreen,
 frame-rate changes or a new renderer.

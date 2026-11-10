@@ -1,5 +1,24 @@
 # God Hand PC continuation - agent instructions
 
+## Explicit checked composition — 2026-11-10
+
+Read HD_AUDIO.md and .local/hd-audio-composite-2026-11-10/. Clean6e9c276 builds
+additivegpu-audio-v3/source6ae2aafe/exeeff438b1/PDB6671cc3c/jointFP72ceaf23,
+22sourcefiles. GPU2/audio2 componentFPs andalloldversions/defaults unchanged.
+Exact6hostfile/8helper union, no gamegen/clone. Source/exe/priorPDB restored;
+sharedobject/CMakecache nowCOMPOSITE, not baseline. ~6GBfree: no further native
+build/clone without capacity review; preserve all evidence, no automatic deletion.
+EightpublicCLI0/native124 (threefullHDcases,fiveoldstartup30s), fourdirectnative
+UI/hold/nopause/stop/negative andone separateCSVresumecontrol all124/observer0.
+Fouractualpreflightrefusals/nospawn. Valid4741cce, absent/invalid/negative9bd.
+UI3pass, heldfield4801/cycle23621128446,7685ms +separate7724ms, EEdigests/IOP
+agree, heldPNGsame; CSV/later5001proveforwardprogress to5485 afterclose. First
+probe lackedCSV/latercapture: do not relabel it as the follow-up proof.
+Only explicit Enhanced HDversiongpu-audio-v3 +controls-pause/versionaudio-v2
+selects newcombo. OldHD+controls requests stillrefused, same-size+HD unsupported.
+Normal launches disablemutatingprobes. No freshPCM/nonempty/audible/device proof,
+physicalinput/SaveExitLoad/campaign/FPS/generalHD stillopen. FullgoalACTIVE.
+
 ## Second named resource — 2026-11-10
 
 Read SECOND_RESOURCE.md and .local/second-resource-2026-11-10/. Clean4ae5d33

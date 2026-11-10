@@ -43,6 +43,14 @@ ROI changes1114pixels: not isolatedporch or uniqueownership proof. Register the
 fresh pair with its own UTCfiletimes/source/binary, preserve oldprovenance.
 Decoded assets/envelopes remain private. PC04/fullgoal remaininprogress.
 
+HD_AUDIO.md records the later explicit checked gpu-audio-v3 composition. New
+source6ae2aafe/exeeff438b1 and component/joint fingerprints are separate from
+all older variants. Actual hold/render/stop/rollback and later5001/CSVresume
+controls pass for sampled scope. Never infer audible audio, hardware input,
+game persistence or full fidelity from this. Old unsupported combos stay refused.
+Preserve all6variants/PDB/ISO/labWIP; objectcache nowcomposite despite restored
+baseline source/exe. G:~6GB free: review capacity before any further build/clone.
+
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and
 the next falsifiable experiment. Poll confirmed live jobs before restarting.

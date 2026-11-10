@@ -5,11 +5,11 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Design a checked explicit HD + audio-v2 composite variant, preserving all existing binaries and refused combinations until actual hold/render/rollback controls pass. Recheck disk/build ownership first; no new clone/regeneration merely for this work. Wider rooms/formats and source aliases, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates; do not chase the inconclusive one-scene timing result.",
+  "next": "Audit existing upstream PC settings/menu/INI boundaries before designing a coherent persistent settings surface; reuse observed host interfaces and retain Original controls. No new native build/clone until disk capacity is reviewed (~6GB free); never delete evidence automatically. Broader scenes/formats/aliases, hardware/audible audio, genuine SaveExitLoad and human campaign validation remain explicit; do not chase the inconclusive one-scene benchmark.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Two distinct named128x128 sources in the same room now render authored512x512 images with retained HDv1/GPUv2 and fallback controls. The second replacement affects porch and facade pixels, not unique surface ownership. New640x480 controls are not exact historical800x600 replays; capture-size cause unknown. Other rooms/formats/aliases/backend/driver/state/performance remain open. No-version still means HDv1; HD+controls/same-size packs remain refused.",
+    "Two named128x128 sources in one room render original512x512 images; aliases/formats/scenes/fidelity/performance remainopen. Only explicit checked gpu-audio-v3 plusaudio-v2 controls now combines HD+pause. OldHD/controls combinations andsame-size+HD still refuse. No-version remainsHDv1. Selected current640x480 originals are not exact historical800x600 replays; capture-size causeunknown.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -177,9 +177,9 @@
         {
           "id": "PC11",
           "title": "Validate an explicit HD and audio-v2 composite variant",
-          "status": "planned",
+          "status": "done",
           "area": "pc",
-          "acceptance": "Separate checked composite source/binary, old variants preserved; actual HD rendered controls plus native hold/UI/stop and original/fallback controls. Until verified, combined requests remain refused."
+          "acceptance": "Scoped checked explicit gpu-audio-v3 composition passes:6disjointhost edits/8helpers,22-file manifest, unchangedcomponentFPs, additive source/exe/pointer andold5variant preservation. Actual valid/absent/invalid/reference-negative, guardedUI3/hold/digests/originals/stop/nopause, separate later5001/CSVresume andoldstartuprollback/refusals verified. Not physicalinput/audibledevice/nonemptyqueue/SaveLoad/campaign or allscene acceptance; oldunsupportedcombinations remainrefused."
         },
         {
           "id": "PC12",
@@ -308,6 +308,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Putting the texture and controls layers together",
+      "summary": "An explicit combined variant now keeps the authored larger texture active while the existing controls screen pauses the sampled guest scene. The build, UI edit, resume, stop and original-asset controls have been tested locally. Older versions and defaults are unchanged.",
+      "changes": [
+        "Composed the existing GPU-v2 and audio-v2 recipes through six disjoint host-file edits and eight original helper copies. Component fingerprints are unchanged; the new joint variant has its own source,22-file manifest, executable and additive pointer. No game regeneration, new clone or Rust work.",
+        "Built the exact clean public recipe, then ran eight public starts, four direct controls and a separate resume observation on the same installed executable. Only the explicit new gpu-audio-v3 selection with audio-v2 controls permits composition; old unsupported combinations still refuse.",
+        "The controls UI edits and saves a scratch binding during an acknowledged hold, with matching field/cycle and EE/IOP digests, and identical first two held screenshots. A later separate CSV/field5001 export proves actual forward progress after close; the first run without that measurement is not relabeled.",
+        "Registered new combined render provenance for existing equal-byte source4 originals, plus selected before/after binding-edit originals. This reuses the upstream controls screen, not a newly invented full PC settings menu or game artwork upgrade."
+      ],
+      "validation": "205 invented-data tests locally:203pass/two Windows symlink-privilege skips. Exact CLI configure0/build0; eight public launchers0/native124 (five older-variant30s controls STARTUP ONLY), five direct controls native124/observer0 including separate resumeCSV, four preflight refusals/no spawn. Valid4741 equals earlier cce source4 PNG; absent/invalid/reference-negative equals9bd. UI3pass,7685ms hold and separate7724ms repeat, matching guest field/cycle/digests; laterCSV5485/PNG5001 observed. PauseoffUI3pass with changing held images; stop-open25s normal deadline, no forcedkill/shader errors.",
+      "limits": "Sampled integration, not full-machine/campaign fidelity, physical input, audible/device/nonempty-queue audio or genuine SaveExitLoad. The audio-v2 admission code is unchanged; no new raw PCM proof is claimed. Same room/sourceformat, no generalHD/cache/FPS gain/widescreen/lighting/multiplayer result. Oldunsupportedcombos andsame-size+HD still refuse. G: free space is now limited: review capacity before more builds/clones, preserve all evidence.",
+      "link": {
+        "label": "Exact commands, identities, all controls and separate resume evidence",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/HD_AUDIO.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -747,6 +765,96 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-composite-controls",
+      "date": "2026-11-10",
+      "title": "Combined HD and controls: binding edit while the guest is held",
+      "feature": "PC11",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Composite controls - before rebinding",
+        "bevy": "Composite controls - U captured, unsaved"
+      },
+      "scenario": "Separate follow-up on the same exact installed composite executable, guarded native UI self-test after observedfield4800, original source4 pack enabled. Both originals occur during the acknowledged field4801/cycle23621128446 hold; UI state intentionally changes, not an original-game/remaster or hardware-fidelity comparison. First andsecond unedited held exports are identical; selected third export shows U before Escape saves. Fresh scratch preferences/cards, muted headless; no private callback instrumentation, attack or saveimport.",
+      "observations": [
+        "The upstream F1 controls screen remains usable with the larger authored texture active. First capture shows existing binding, third shows captured U and unsaved marker while the guest hold remains acknowledged. These are original renderer/UI exports, not mockups.",
+        "UI3checks pass after Escape: scratchfile andliveSquare=Keyboard/U, inputhold released. EE/IOP digests agree across7724ms; field/cycle before/after agree. This is not physical input or game Save/Load.",
+        "Existing native presentCSV later observesfield5485 and originalfield5001 is exported, demonstrating forward progress after closing controls rather than relying only on a resumed message. No gameFPS is derived. The earlier7685ms run lacked that laterfield observation and is retained separately."
+      ],
+      "limits": [
+        "Both sides are native LasVola continuation, not Bevy/PS2hardware. Same acknowledged guestfield, but UI state intentionallydiffers; no claim that unchanged RAM digests certify fullmachine/GPU/device quiescence.",
+        "Only sampled hold/render/stop integration. No new PCM/nonemptyqueue/audible/device/focus/peripheral/campaign proof from composing the unchanged audio-v2 code. Oldunsupportedflagcombos andsame-size+HD remainrefused.",
+        "Before/after means the named UI action, not improvedgamegraphics. Source reference/asset extracts/envelopes/nativecode/binaries/dumps/saves stayprivate; selected full unretouched screenshots have separate rights from GPLtooling."
+      ],
+      "reference": {
+        "path": "media/9e312b3f9ae2f35dc345a67536f84f2f2ea290ddd323b12e34bd602a0ef76b0c.png",
+        "sha256": "9e312b3f9ae2f35dc345a67536f84f2f2ea290ddd323b12e34bd602a0ef76b0c",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL +checked gpu-audio-v3; upstream14e956a; native source6ae2aafe8c19e00a67d6f026450341a900e09af0; exeSHA256eff438b141b3c928aef92819cd57751cd2704a5feb25aec61b3d1fb8d1b861d9; clean tooling6e9c2761956eb45b6368cb3625746038c1de4e38; fresh muted headless, internal setting3; UTC timestamp from original native PNG last-write time",
+        "revision": "6ae2aafe8c19e00a67d6f026450341a900e09af0",
+        "captured_at": "2026-11-10T02:11:25.263765+00:00",
+        "caption": "First held original controls export, before edit, field4801; full unchanged native PNG."
+      },
+      "bevy": {
+        "path": "media/adb0f1a9192fd0726eaeaa9002b8030890a711409bbb0c3f84646916897fb3c1.png",
+        "sha256": "adb0f1a9192fd0726eaeaa9002b8030890a711409bbb0c3f84646916897fb3c1",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL +checked gpu-audio-v3; upstream14e956a; native source6ae2aafe8c19e00a67d6f026450341a900e09af0; exeSHA256eff438b141b3c928aef92819cd57751cd2704a5feb25aec61b3d1fb8d1b861d9; clean tooling6e9c2761956eb45b6368cb3625746038c1de4e38; fresh muted headless, internal setting3; UTC timestamp from original native PNG last-write time",
+        "revision": "6ae2aafe8c19e00a67d6f026450341a900e09af0",
+        "captured_at": "2026-11-10T02:11:32.003327+00:00",
+        "caption": "Third held original export after U captured but before save; full unchanged native PNG, UI change only intended."
+      }
+    },
+    {
+      "id": "2026-11-10-composite-render",
+      "date": "2026-11-10",
+      "title": "Checked composite: original-assets and authored HD controls",
+      "feature": "PC11",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Composite gpu-audio-v3 - original assets",
+        "bevy": "Composite gpu-audio-v3 - authored source4"
+      },
+      "scenario": "New actual public CLI absent220s/enabled300s on the same combined source6ae2aafe/exeeff438b1, clean tooling6e9c276, actualfield4741, fresh scratch user data, muted headless, same retained title/start/Start script. Both HD and audio-v2 controls capabilities explicitly selected; no UI opened in these normal launches and no actual hold is inferred. No attack/saveimport/levelcompletion/camera/internal-scale edits.",
+      "observations": [
+        "Exact checked recipe configures/links, verifies22sourcefiles and joint/componentFPs, restoresbaseline source/exe/priorPDB before additivepointerpublish. Five previousvariants/defaults retain their binaries/pointers/fingerprints.",
+        "Valid source4 external512 image renders; samecombined absent/invalidpreflight and directoneprivate reference-byte negative reproduce current originalassets. GPU counts remainunread, not zero or inferred application.",
+        "These fresh640x480 enabled/absent originals equal the prior selected source4 PNG bytes; reuse does not rewrite earlier runtime/date/provenance. This new record names the combined build, not a relabeled old capture."
+      ],
+      "limits": [
+        "Single room/sourceformat/viewpoint, no generalHD/allscene/fidelity/performance claim. Source4 affects shared facade/porch regions, not unique surfaceownership.",
+        "This renderpair alone does not prove pause/queue/device/input; separate exactnative UI/hold/resume/stop controls and laterfield5001/CSV are recorded in HD_AUDIO.md. Old5rollback probes arestartup30s only, not another campaign run.",
+        "Historical800x600captures remainunchanged; no crossresolution/crop/resize repair. ISO/ELF/assets/previews/rawsource/envelopes/generatedcode/dumps/saves/exe/PDB/rawaudio stayprivate; gameimagery is neitherGPL norMIT."
+      ],
+      "reference": {
+        "path": "media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png",
+        "sha256": "9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL +checked gpu-audio-v3; upstream14e956a; native source6ae2aafe8c19e00a67d6f026450341a900e09af0; exeSHA256eff438b141b3c928aef92819cd57751cd2704a5feb25aec61b3d1fb8d1b861d9; clean tooling6e9c2761956eb45b6368cb3625746038c1de4e38; fresh muted headless, internal setting3; UTC timestamp from original native PNG last-write time",
+        "revision": "6ae2aafe8c19e00a67d6f026450341a900e09af0",
+        "captured_at": "2026-11-10T01:45:23.292014+00:00",
+        "caption": "Fresh combined original-assets control, no pack, actualfield4741; unchanged full native PNG."
+      },
+      "bevy": {
+        "path": "media/cce213978ff1670d2b9ab8ef83f0e83d6eadf79325ec6eb1a60d0cf2b5002ea8.png",
+        "sha256": "cce213978ff1670d2b9ab8ef83f0e83d6eadf79325ec6eb1a60d0cf2b5002ea8",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL +checked gpu-audio-v3; upstream14e956a; native source6ae2aafe8c19e00a67d6f026450341a900e09af0; exeSHA256eff438b141b3c928aef92819cd57751cd2704a5feb25aec61b3d1fb8d1b861d9; clean tooling6e9c2761956eb45b6368cb3625746038c1de4e38; fresh muted headless, internal setting3; UTC timestamp from original native PNG last-write time",
+        "revision": "6ae2aafe8c19e00a67d6f026450341a900e09af0",
+        "captured_at": "2026-11-10T01:40:15.347552+00:00",
+        "caption": "Fresh combined original512x512 source4 diagnostic, actualfield4741; unchanged full native PNG, not remaster artwork."
+      }
+    },
     {
       "id": "2026-11-10-second-named-resource",
       "date": "2026-11-10",

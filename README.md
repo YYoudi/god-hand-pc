@@ -26,6 +26,9 @@ repeat and the measurement limits are retained; defaults are unchanged.
 The later [second named-resource control](SECOND_RESOURCE.md) modifies another
 surface through the same retained binaries, with original-asset fallback.
 It is still one room and one supported source format, not general HD support.
+The explicit [HD + audio-v2 composition](HD_AUDIO.md) now has a checked additive
+build and sampled native controls/render/resume/stop/rollback evidence. It is
+opt-in, not a default upgrade, audible-audio or full-game validation.
 
 ## Active direction
 
