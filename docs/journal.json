@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Audit existing upstream PC settings/menu/INI boundaries before designing a coherent persistent settings surface; reuse observed host interfaces and retain Original controls. No new native build/clone until disk capacity is reviewed (~6GB free); never delete evidence automatically. Broader scenes/formats/aliases, hardware/audible audio, genuine SaveExitLoad and human campaign validation remain explicit; do not chase the inconclusive one-scene benchmark.",
+  "next": "Continue RM03 from the typed, tested restart boundary toward a coherent native settings surface; do not call the CLI a completed menu. Review disk capacity (~5GB) before any native rebuild/clone; preserve all evidence. Genuine SaveExitLoad, physical input/audible audio and human campaign/reference coverage remain explicit. No new Rust, autonomous level beating, FPS/HD-performance claim or repeated one-scene benchmark.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -13,7 +13,8 @@
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
-    "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged."
+    "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
+    "Video preferences are restart-required and explicitly selected; only2x/3x observed. F2 is not a native-GS graphics menu. Requested scale can be reduced by the runtime GL limit; output size, accuracy and speed are not inferred."
   ],
   "milestones": [
     {
@@ -116,7 +117,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Reuse existing upstream options; implement validated persistent settings/menu and reversible capabilities without claiming unimplemented features."
+          "acceptance": "Source audit plus explicit typed restart-required native scale preferences implemented: immutable history, strict validation, frozen launch revision, new-process2x persistence and default/reset3x controls, invalid/Original no-spawn. This is a pre-launch CLI boundary, NOT the final coherent native settings menu; other graphics/window/device controls and hardware usability remain open."
         },
         {
           "id": "PC04",
@@ -308,6 +309,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "A small, reversible video setting",
+      "summary": "Native internal scale can now be saved before launch, explicitly selected and reset without editing the runtime INI. It has been checked in new game processes. This is a first settings boundary, not an in-game graphics menu.",
+      "changes": [
+        "Audited the existing options first: F2 is gated on the PCSX2 backend and does not provide the native graphics menu we need. The native backend already accepts a startup internal-scale request and can reduce it to fit a GL limit.",
+        "Added a typed preference store with immutable history, strict validation and a frozen per-launch revision. Only Enhanced plus --video-settings selects it; ordinary commands ignore the store. Reset records history and restores upstream INI behavior rather than a hardcoded value.",
+        "Reused the retained native binaries, without relinking or generating game code. Verified2x, separate-process reload, default behavior and reset3x; the explicitly selected HD/audio-v2 composite also renders with2x. Published selected unchanged3x/2x originals, not a promised visual improvement."
+      ],
+      "validation": "221 invented-data tests locally and in an actual separate checkout:218pass/three Windows symlink-privilege skips. Six target-complete public native controls, launcher0/native124, effective scale confirmed in initialization logs. Persisted2x images equal; unselected/reset3x originals equal the baseline. Two actual preflight refusals spawn no game. One interrupted attempt and a shorter reset trial that missed the target field are preserved, not counted as passing target controls.",
+      "limits": "Pre-launch/restart-required only; RM03 stays in progress for a coherent native settings menu. Only2x/3x observed, one opening viewpoint and evaluated machine; no other-scale/GPU, quality/accuracy/performance, safeFPS, widescreen, device/audio, genuine SaveExitLoad or campaign acceptance. No native INI/default/binary change; about5GB remains on G:, so further native builds require capacity review, not evidence deletion.",
+      "link": {
+        "label": "Commands, audit, runtime results and limits",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/VIDEO_SETTINGS.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -765,6 +783,51 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-persisted-native-scale",
+      "date": "2026-11-10",
+      "title": "A saved native scale with original behavior restored on reset",
+      "feature": "RM03",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Native - upstream INI, effective3x",
+        "bevy": "Native - saved preference, effective2x"
+      },
+      "scenario": "Fresh processes on the same unchanged evaluated baseline executable, original assets, identical bounded title/start/Start script and actual field4741. Only the explicit saved native internal-scale request differs. Full640x480 renderer exports, no camera adjustment, attacks, level-completion script, crop or resize. Both sides are native PC output, not Bevy or PS2 hardware.",
+      "observations": [
+        "Actual native initialization reports3x for unselected upstream INI behavior and2x for the saved preference. The output frame remains640x480: internal sampling is not output resolution.",
+        "A separate process reloads the same immutable preference and reproduces the exact2x PNG. Unselected Original ignores the active2x preference; a separate reset300s run returns to the exact3x baseline PNG.",
+        "The new preference is pre-launch and restart-required, not an in-game graphics menu. The runtime may reduce a requested value to the GL storage-block limit; requested settings and effective log observations remain separate."
+      ],
+      "limits": [
+        "Only2x and3x are actually observed here. The1..8 accepted range is source-audited, not eight verified hardware modes. No accuracy/quality, speedup, gameFPS, widescreen, physical input/audio, SaveExitLoad or full-campaign claim.",
+        "One initial no-flag control was interrupted with missing process handles and no terminal receipt; it is not counted as passed. An earlier220s reset exited normally but missedfield4741 (last4621); retain that failed target check separately from the later300s proof.",
+        "Original screenshots are unchanged and downloadable; existing equal-byte3x media is reused with new provenance, without rewriting its older capture records. Game imagery is neither GPL nor MIT. No ISO, asset extract, generated game code, dump, save or native binary is published."
+      ],
+      "reference": {
+        "path": "media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png",
+        "sha256": "9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL; upstream14e956a; unchanged source193076584e277c95644dcbbb4a6922c3a59ca2b8; exeSHA256eaed174f4d0c1df5530e5a65b2d53611a14d3037c9e01a3e0aa02c8d6a0d4e53; clean launcher8b6456de8bfe4b61cfe7dcace97ca79ca869ae18; fresh muted headless; effective scale3x in native log; UTC timestamp from original PNG last-write time",
+        "revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+        "captured_at": "2026-11-10T02:50:44.531519+00:00",
+        "caption": "Original upstream INI effective3x, actual field4741, unchanged full native PNG."
+      },
+      "bevy": {
+        "path": "media/591f0fcf7bf24af22c68002578a5d53d3d527f4ee0f3e2dd2332d0ecff5ef199.png",
+        "sha256": "591f0fcf7bf24af22c68002578a5d53d3d527f4ee0f3e2dd2332d0ecff5ef199",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL; upstream14e956a; unchanged source193076584e277c95644dcbbb4a6922c3a59ca2b8; exeSHA256eaed174f4d0c1df5530e5a65b2d53611a14d3037c9e01a3e0aa02c8d6a0d4e53; clean launcher0d9fb76714f72567633bda8149c789e0d5f46d81; fresh muted headless; effective scale2x in native log; UTC timestamp from original PNG last-write time",
+        "revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+        "captured_at": "2026-11-10T02:54:33.281323+00:00",
+        "caption": "Saved explicit native-scale2 preference, effective2x, actual field4741; unchanged full PNG, not an artwork upgrade."
+      }
+    },
     {
       "id": "2026-11-10-composite-controls",
       "date": "2026-11-10",

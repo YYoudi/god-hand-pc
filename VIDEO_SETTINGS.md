@@ -45,7 +45,7 @@ hardcoded value or claimed original PS2 settings. No history is deleted.
 
 Without `run --video-settings`, the launcher does not load this store at all.
 Default Original and previous Enhanced commands retain their old meaning.
-Original plus the flag refuses before filesystem/disc/process work; use Enhanced
+Original plus the flag refuses before workspace/disc/native-process work; use Enhanced
 explicitly. Selecting missing, corrupt or locked preferences refuses native
 spawn rather than silently choosing a different configuration.
 
@@ -83,7 +83,84 @@ Later preference changes cannot retroactively relabel the launch snapshot.
 Original invented-data tests cover history/reset/reload, exact frozen bytes,
 strict parsing, metadata/path limits, aliases, locks, atomic replacement failure,
 CLI routing, policy refusal, safe environment and unselected defaults.
-Native validation is pending for this new tooling revision. A source audit or
-mock process is not runtime proof. The retained native binaries need no relink;
-no game inputs belong in CI. Broader graphics UI/usability, other scales/GPUs,
-physical input/audio, genuine Save/exit/Load and campaign fidelity remain open.
+
+## Actual runtime controls — 10 November 2026
+
+Clean tooling8b6456de8bfe4b61cfe7dcace97ca79ca869ae18 launched the first
+unselected baseline. The later controls use0d9fb76714f72567633bda8149c789e0d5f46d81:
+that second commit only clarifies the policy receipt text and its assertion,
+not the environment, preference parser or native executable. Each private launch
+receipt records its exact tooling revision; none is relabeled as a later build.
+
+Unchanged baseline source193076584e277c95644dcbbb4a6922c3a59ca2b8,
+executable SHA-256
+`eaed174f4d0c1df5530e5a65b2d53611a14d3037c9e01a3e0aa02c8d6a0d4e53`.
+The separate combined control retains source6ae2aafe8c19e00a67d6f026450341a900e09af0,
+executable SHA-256
+`eff438b141b3c928aef92819cd57751cd2704a5feb25aec61b3d1fb8d1b861d9`.
+No native compilation, clone, game generation or INI edit was needed.
+
+All six target-complete public launches return launcher0/native124 (normal
+requested deadline), without forced termination or observed shader errors:
+
+| Control | Limit | Observed native scale | Original field4741 PNG |
+| --- | --- | --- | --- |
+| Original, before storing settings |220s|3x|`9bd97cff...`|
+| Enhanced, explicitly select saved2 |220s|2x|`591f0fcf...`|
+| New process, same saved revision2 |220s|2x|exactly the same `591f0fcf...`|
+| Original, ignore active saved2 |220s|3x|exactly the same `9bd97cff...`|
+| Explicit reset, later300s trial |300s|3x|exactly the same `9bd97cff...`|
+| Explicit HD/audio-v2 composite, saved2 |360s|2x|`ac70765c...`|
+
+Effective values come from native initialization lines, not just our receipt's
+request. Both3x and2x originals remain640x480. The composite logs a512x512 upload
+at scale2 and the unchanged original renderer export visibly contains the authored
+green/orange diagnostic on the right wooden surfaces. Counts remain unread;
+neither a planned pack nor log submission alone is treated as application proof.
+No controls UI/hold or new audio-device behavior is inferred from this launch.
+
+Full selected original hashes:
+
+- INI3x: `9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be`.
+- Saved2x: `591f0fcf7bf24af22c68002578a5d53d3d527f4ee0f3e2dd2332d0ecff5ef199`.
+
+The journal comparison preserves full unchanged PNGs, actual UTC capture times,
+native and tooling identities. This is a same-field PC scale comparison, **not
+PS2-reference fidelity, a quality improvement, an artwork upgrade or a benchmark**.
+
+Additional actual public CLI controls refuse malformed duplicate-key preferences
+and Original plus the flag (exit1, no native spawn). The malformed pointer existed
+only temporarily in this experiment's newly created store; both original pointer
+files were preserved and the valid pointer restored. Final reset leaves a new
+null-scale revision and retains every earlier revision. Native/player INIs and
+controls were not edited. Ordinary runs still disable injected UI probes and
+clear inherited private runtime variables.
+
+Two nonpassing target observations are retained separately:
+
+- An initial no-flag control lost its observer and native process handles around
+  a context interruption. Its receipt remains running without a terminal exit;
+  it is **not** counted as passed or inferred124. Completed earlier cases were
+  not rerun. Only the unfinished controls resumed after process absence was checked.
+- The first220s reset returns normally and logs3x, but its last requested export
+  is4621, not4741. That target check fails; it is not hidden, cropped or relabeled.
+  The separate300s reset reproduces the baseline4741 PNG. There is no diagnosis of
+  slowdown, hardware isolation or reliable performance gain from this.
+
+Private receipts/logs/originals remain under the ignored dated experiment;
+`validation.json`, `resumed-validation.json`, `final-validation.json` and the
+separate driver logs preserve the sequence. Only the explicitly reviewed3x/2x
+pair is published, not a media sweep or the private asset-envelope contents.
+All six installed source/executable/INI/PDB identities, original ISO and the
+historical MIT lab's four WIP hashes were reverified unchanged. Preserving the
+older baseline PDB is not a new matching-symbol claim. The preexisting
+shared native object cache remains composite, not a baseline cache. About5.4GB
+free remains on G:; review capacity before another native build/clone, never
+delete retained evidence automatically.
+
+221 invented-data tests run in the active tree and an actual separate checkout
+of0d9fb76 with an asserted import root:218pass/three Windows symlink-privilege
+skips. CI receives invented fixtures only. These native controls cover2x/3x on
+the evaluated machine and two retained variants, not every scale/variant/GPU.
+Broader graphics UI/usability, physical input/audio, genuine Save/exit/Load and
+campaign fidelity remain open. RM03 and the full faithful-PC goal stay active.

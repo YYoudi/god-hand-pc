@@ -29,6 +29,10 @@ It is still one room and one supported source format, not general HD support.
 The explicit [HD + audio-v2 composition](HD_AUDIO.md) now has a checked additive
 build and sampled native controls/render/resume/stop/rollback evidence. It is
 opt-in, not a default upgrade, audible-audio or full-game validation.
+The first [restart-required video preference](VIDEO_SETTINGS.md) now has actual
+new-process2x persistence, default/reset3x and composite controls. It reuses a
+native startup option without editing the INI. This is not an in-game graphics
+menu, a quality/performance claim or eight verified scale modes.
 
 ## Active direction
 

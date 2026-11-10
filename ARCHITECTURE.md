@@ -19,6 +19,7 @@ Original public continuation code
 | Compatibility runtime/rendering | Pinned upstream fetched into ignored storage | Reviewed host-source integration with exact preimage hashes; preserve upstream notices, baseline and private derived revision. |
 | Our native adapter | Public original GPL files in adapter/ | Game-independent interfaces and synthetic tests; no embedded game instructions or assets. |
 | PC policy | profiles.py, launch_packs.py, pc.py | Validate before launching; clean inherited GODHAND_/PS2X_ variables; record requested policy and actual pack outcome separately. |
+| Restart-required video preference | video_settings.py, workspace userdata/video | Typed immutable revisions and per-launch snapshot; explicit Enhanced flag only. Reuse native environment options, never edit native INIs; requested/effective scale and output dimensions remain distinct. |
 | External original packs | Named resource schema | Exact disc/profile check, immutable per-run payload, original-asset fallback unless strict mode was requested. |
 
 `Original` is the default launch policy: no continuation pack overrides.
@@ -33,6 +34,11 @@ frame-rate changes or a new renderer.
 Upstream's own baseline may already differ from hardware in resolution/timing.
 Neither profile claims full-game fidelity. Test input, headless audio muting and
 capture options are diagnostic controls and must remain explicit in evidence.
+The [video preference boundary](VIDEO_SETTINGS.md) now has scoped2x/3x native
+persistence/reset evidence without relinking; it is not the final native graphics
+menu. F2 is PCSX2-GS-gated. A later menu can reuse the typed request/validation
+boundary, but startup-only settings still require a process restart; no unsafe
+live mutation, backend switch or simulation-timing control is inferred.
 
 The experimental controls-pause host layer is a separately built/verified variant
 over that same base, never an implicit default relink. Enhanced plus an explicit

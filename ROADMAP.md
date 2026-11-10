@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Audit existing upstream PC settings/menu/INI boundaries before designing a coherent persistent settings surface; reuse observed host interfaces and retain Original controls. No new native build/clone until disk capacity is reviewed (~6GB free); never delete evidence automatically. Broader scenes/formats/aliases, hardware/audible audio, genuine SaveExitLoad and human campaign validation remain explicit; do not chase the inconclusive one-scene benchmark.
+Continue RM03 from the typed, tested restart boundary toward a coherent native settings surface; do not call the CLI a completed menu. Review disk capacity (~5GB) before any native rebuild/clone; preserve all evidence. Genuine SaveExitLoad, physical input/audible audio and human campaign/reference coverage remain explicit. No new Rust, autonomous level beating, FPS/HD-performance claim or repeated one-scene benchmark.
 
 ## M8 — Active: verified original PC baseline
 
@@ -26,7 +26,7 @@ Keep original behavior as a control; readable original host/function replacement
 
 - **RM01 Map one verifiable function/subsystem boundary — Planned:** Record provenance and validate one identity/ABI/overlay lifetime against actual runtime evidence; static name/address candidates alone do not qualify.
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.
-- **RM03 Audit and expose coherent PC settings — In progress:** Reuse existing upstream options; implement validated persistent settings/menu and reversible capabilities without claiming unimplemented features.
+- **RM03 Audit and expose coherent PC settings — In progress:** Source audit plus explicit typed restart-required native scale preferences implemented: immutable history, strict validation, frozen launch revision, new-process2x persistence and default/reset3x controls, invalid/Original no-spawn. This is a pre-launch CLI boundary, NOT the final coherent native settings menu; other graphics/window/device controls and hardware usability remain open.
 - **PC04 Verify another named resource and restoration — In progress:** Second distinct named source4 in the same room now passes actual unchanged-v1/GPU2 enabled and same-v1 absent/invalid/interior-reference-negative controls with original authored512x512 image. New same-field640x480 originals are reviewed; old800x600/capture-size and isolatedporch/onefacadeROI hypotheses are not accepted. Other rooms/formats/state coverage and shared/alias ownership remain unverified; no arbitrary-format or unique-surface claim.
 - **PC05 Prove a size-aware HD asset upload boundary — Verified for stated scope:** Proof-only scope: actual named128x128 resource -> full16384texel GPU content match -> authored512x512 host image visibly sampled, same-field unretouched originals. Disabled, one-interior-reference-texel and invalid-input hash restore the baseline PNG. Exact public helpers also reproduce the private result. No public HD installer/general pack API; seePC09. Aliases, performance and wider coverage remain open.
 - **RM04 Validate widescreen — Planned:** Projection/FOV, HUD, cinematics and culling verified against 4:3 controls; no image stretching.

@@ -8,8 +8,15 @@ Typed Enhanced --video-settings snapshots a workspace revision and only requests
 native scale1..8, which can be reduced by the GL block limit. Default/no flag
 does not read the store. Reset records history and returns to INI, not fixed3x.
 No native INI changes, runtime rebuild, timing/backend/window controls or full
-menu claim. RM03 stays in progress; native validation is pending at this boundary.
-Preserve all six variants/source/PDB/INIs/ISO and MIT WIP; disk still ~6GB.
+menu claim. RM03 stays in progress. Six target-complete actual public controls
+pass (launcher0/native124): baseline3, saved2, new-process2, ignore2->INI3,
+reset300s->exactbaseline3, composite360s2 with authored texture visible. Native
+logs confirm effective2/3; requested1..8 is NOT eight tested modes. Two actual
+preflight refusals/no spawn. Preserve one interrupted stale receipt (no exit)
+and separate220s reset that missed4741/last4621, not passing target controls.
+Later300s reset is a distinct proof, not relabeling.221 tests/3 Windows symlink
+skips locally and actual separateQA0d9fb76. No FPS/quality/hardware/audio/save
+claims. All6source/exe/INI/PDB/ISO and MIT4WIP unchanged; about5.4GB remains.
 
 ## Explicit checked composition — 2026-11-10
 

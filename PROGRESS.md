@@ -51,6 +51,15 @@ game persistence or full fidelity from this. Old unsupported combos stay refused
 Preserve all6variants/PDB/ISO/labWIP; objectcache nowcomposite despite restored
 baseline source/exe. G:~6GB free: review capacity before any further build/clone.
 
+VIDEO_SETTINGS.md records the later typed restart-required scale boundary, not
+a finished native menu. Six target-complete public controls confirm actual2x/3x,
+new-process preference persistence, ignored default selection, reset and composite
+rendering. Preserve the separate interrupted attempt and shorter220s reset that
+missed4741; the later300s proof does not relabel them. No native INI/build/default
+change. Requested1..8 is not eight verified modes or a quality/FPS claim. The
+selected unchanged native3x/2x pair has its own exact provenance. RM03 remains in
+progress; all6variants/PDB/INIs/ISO and MIT4WIP verified unchanged, ~5.4GB free.
+
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and
 the next falsifiable experiment. Poll confirmed live jobs before restarting.

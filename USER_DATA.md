@@ -37,12 +37,17 @@ preferences, exercise the existing controls UI's edit/save/new-process reload
 in isolated files, and verify timer behavior separately from visual/input claims.
 Upstream's guarded self-test injects UI commands: it is not physical keyboard or
 controller evidence. Controls persistence is **not in-game Save/Load**.
-The evaluated public executable still keeps running behind F1. The separate
-[host-pause experiment](CONTROLS_PAUSE.md) has bounded native evidence but is not
-installed by the public setup/launcher. Do not infer changed default behavior
-from an experimental screenshot, or a safe pause before its acknowledgment.
+The default evaluated executable still keeps running behind F1. The separate
+[host-pause experiment](CONTROLS_PAUSE.md) now has a [checked explicit
+installer](CONTROLS_INSTALL.md), later [audio-v2 controls](AUDIO_HOLD.md) and an
+[explicit checked HD composition](HD_AUDIO.md). None is enabled by default or
+by selecting video preferences. Do not infer changed default behavior from an
+experimental screenshot, or a safe pause before its acknowledgment.
 
-This contract isolates input preferences only. General video/runtime INI still
-belongs to upstream; no complete settings UI, audio usability, widescreen, FPS
+This original contract isolates input preferences. The later explicit
+[video preference boundary](VIDEO_SETTINGS.md) separately snapshots a typed,
+restart-required workspace revision through existing native environment options;
+it does not edit the upstream INI. No flag still ignores that store. General
+runtime INI ownership remains upstream; no complete settings UI, audio usability, widescreen, FPS
 unlock or full-game fidelity follows. Actual cards use the native IOP/SIO2 image
 path; an HLE mc0 directory or a quick state does not establish game persistence.
