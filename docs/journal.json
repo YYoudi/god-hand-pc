@@ -118,7 +118,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof."
+          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof. A later isolated readback candidate has same-draw native pixel-preservation evidence, but a different inter-run pose check still FAILS; controlled scene/input/capture fixtures and compatibility checks are required before promotion. Main runtime remainsv1."
         },
         {
           "id": "PC04",
@@ -1576,6 +1576,17 @@
     }
   ],
   "captures": [
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
+      "captured_at": "2026-11-10T19:51:22.528Z",
+      "path": "captures/a03762daba4bf294f6961432ef42a04247c1e6cdecdeed749b6ed1ab52336a34.jpg",
+      "sha256": "a03762daba4bf294f6961432ef42a04247c1e6cdecdeed749b6ed1ab52336a34",
+      "reviewed": true,
+      "revision": "e9c7bee468e1bfeabc9a8f6b816f391b4d336e94",
+      "caption": "Capture diagnosis and retained scene mismatch - actual published journal",
+      "source": "Original unretouched JPEG of the actual new published journal, default browser viewport1265x712. No viewport override/crop/resize or private desktop. Title/summary/changes only; failed-control limits were subsequently opened. Both new comparisons and their original image sizes loaded; actual direct640PNG download verified exactSHA; roadmapRM03Inprogress. Native screenshot originals have separate source/binary/time provenance. This is not game fidelity or promotion of the isolated code candidate."
+    },
     {
       "kind": "journal",
       "date": "2026-11-10",
