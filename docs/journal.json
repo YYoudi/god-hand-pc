@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Implement the concrete bounded storage request/ack path and native factory, then reviewed ordered parent integration and an actual separate native build after capacity review. Verify real retail-backed UI/hold/save ACK/close/resume/stop/new-process reload and Original rollback; do not stop at source syntax or portable doubles. Preserve all variants/discs/evidence and paused MIT work. Main Pages remains a separate pending verification gate; no new Rust, autonomous level beating or invented FPS/fidelity result.",
+  "next": "Investigate the actual host viewport/framebuffer-size boundary and verify F1/F2 physical-input/focus behavior before adding more settings. Retain the failed800x600-vs640x480 control and all originals, preserve Original/old variants and scratch/canonical separation. Full baseline still needs true game SaveExitLoad, audible/device input, representative scenes and human campaign testing; no autonomous fighting or Rust rewrite.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -14,8 +14,8 @@
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
-    "Video preferences are restart-required and explicitly selected; only2x/3x observed. F2 is not a native-GS graphics menu. Requested scale can be reduced by the runtime GL limit; output size, accuracy and speed are not inferred.",
-    "The native settings view/host binding is source-only on the preparation branch: no factory, concrete transport or installed runtime. Stub draws and actual-header syntax checks do not prove a menu rendered in God Hand or acknowledged a saved preference."
+    "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
+    "The actual F2 probes use shared typed commands with scratch stores, not physical input. Current full800x600 originals fail the old640x480 SHA comparison; top/right margins and capture-size cause remain unresolved. Probe0 records no EE/IOP digest evidence. Complete native settings/hardware/focus/campaign acceptance remains open."
   ],
   "milestones": [
     {
@@ -118,7 +118,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Typed restart-required scale store already has actual2x/new-process and default/reset3x controls, strict/Original refusal. A later original F2 view and F1/audio-v2 host-binding SOURCE passes portable doubles and actual-header MSVC syntax only; it is unlinked/uninstalled, without factory/storage transport/ordered patch. Real overlay, save ACK, invalid/stale handling, resume/stop/reload and hardware usability still required; not a completed native settings menu."
+          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof."
         },
         {
           "id": "PC04",
@@ -310,6 +310,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "A first F2 video preference screen in the native game",
+      "summary": "The separate native-menu build now shows an original F2 screen in the retail-backed game. It saves a scale choice for the next launch, handles an external edit without overwriting it, and releases the guest hold on close. This is one setting, not a finished PC settings menu.",
+      "changes": [
+        "Implemented a bounded native/Python channel with immutable session requests, exact save acknowledgements and revision-conditional commits. Unknown/lost outcomes require reload, never a blind retry or a false saved message.",
+        "Built the exact clean ordered recipe over the frozen GPU/audio parent:32 checked source files, seven host compilations and successful configure/link. No guest regeneration, ISO edit or new clone. Older versions, fingerprints, defaults and the paused MIT lab are preserved.",
+        "Observed real F2 render/save/close/resume, stale refusal followed by reload/save, and shutdown with the screen open. A separate native process reads the saved scratch choice and initializes2x. Normal public launches disable all mutating diagnostics; fresh runs isolate the preference history.",
+        "Published selected unchanged before/after UI originals with hashes and held-field provenance. A separate authored-HD/menu case also saves/resumes; three normal public30s startup controls and four preflight refusals have separate scope."
+      ],
+      "validation": "CI42874363909 passes257 invented-data tests (one Windows-only sharing control skipped on Linux); the final local full257 suite passes with three Windows symlink-privilege skips. The preceding full256 suite and10 focused installer/policy checks remain separate receipts. Actual configure0/build0. Four native controls exit124; first three UI scripts pass. Their first two held exports agree; save and stale cases later reachfields5381/5293 and exportfield5001. Separate HD/menu native124, actual hold/save/resume and later5001 verified; public3CLI0/native124 startup-only controls,4refusals/no launch. No forced termination in these native runs.",
+      "limits": "The original four-case driver is NOT a full pass: its last old640x4802x image-hash assertion fails on current800x600 output. Reloaded revision and actual2x initialization are observed separately; no image cropping/normalization or cross-size parity claim. The top/right capture margins remain unexplained. Hardware/focus/audible audio, true game SaveExitLoad, broader scenes and campaign fidelity remain open. Only a restart-required scale choice; no FPS unlock, widescreen, new lighting or multiplayer result. RM03/full goal stay in progress.",
+      "link": {
+        "label": "Exact build, native controls, retained failed comparison and limits",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/NATIVE_MENU_RESULTS.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -801,6 +819,52 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-native-f2-preference",
+      "date": "2026-11-10",
+      "title": "The native F2 screen acknowledges a next-launch preference",
+      "feature": "RM03",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Native F2 - before edit",
+        "bevy": "Native F2 - saved2x for next launch"
+      },
+      "scenario": "Actual retail-backed native-menu-v1 executable, acknowledged guestfield4801/cycle23621128446 hold. Shared typed diagnostic actions use the real view and broker, not a standalone scene or OS keyboard injection. Same original camera/resources; only menu state changes. Both full800x600 originals retain their observed top/right black margins; no crop, resize or correction.",
+      "observations": [
+        "The first view displays the INI startup request. The later view displays saved2x only after the real Python writer returns the exact committed revision and selection. The current run remains unchanged; this is a video preference, not a game memory-card save.",
+        "The first two held renderer exports are byte-identical. Close releases the hold after1787ms; the original laterfield5001 export and presentCSV reaching5381 demonstrate forward progress, not just a resumed message.",
+        "A separate native process reads the saved scratch choice and actually initializes internal resolution2x. Another real control refuses an external7x edit, reloads it and then saves2x. No canonical owner preference is changed."
+      ],
+      "limits": [
+        "Both sides are native PC output, not Bevy/PS2 hardware, and before/after names the UI action, not better graphics. Injected typed commands do not prove physical keyboard/controller or focus behavior.",
+        "These new hold probes deliberately do NOT compute EE/IOP hashes (probe=0); zeros in native logs are not memory-equality evidence. No new PCM/audible/device, full-machine, true game SaveExitLoad or campaign proof.",
+        "The new-process full driver fails its old640x480 image-SHA assertion: current originals are800x600. Actual2x startup/persistence is separately observed, but exact equivalence to the earlier640x4802x image is NOT claimed. Capture-size/margin cause is unknown; failed originals/logs are retained.",
+        "Only selected unchanged renderer screenshots are public. ISO/ELF/assets/envelopes/generated game code/dumps/saves/binaries/raw audio remain private; game imagery is not GPL or MIT."
+      ],
+      "reference": {
+        "path": "media/b1efacf5ee233efa83bff7b15c714418652711306f6d77112d54382cbd0c3870.png",
+        "sha256": "b1efacf5ee233efa83bff7b15c714418652711306f6d77112d54382cbd0c3870",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL; pinned upstream14e956a; checked native-menu-v1 source308687c910fd28771bdcc9443f4c47f1cf018a0f; exeSHA256b0105b944c9f27b39a52d8effc3452151eb8001bd90e9e780ce33fcdd388d03e; clean tooling2e75521ae574205a86b529427b91bfe3deb97f40; guarded shared-action diagnostic, fresh scratch preferences, muted headless; requested runtime INI, effective3x in native log; UTC timestamp from original PNG last-write time",
+        "revision": "308687c910fd28771bdcc9443f4c47f1cf018a0f",
+        "captured_at": "2026-11-10T18:24:16.918258+00:00",
+        "caption": "Actual original native F2 export before editing, acknowledgedfield4801; full unchanged800x600 PNG."
+      },
+      "bevy": {
+        "path": "media/869e689ac03a70deaef21b3e26c912bde13f82b90fa9b4b2a26d53e0d901fa0b.png",
+        "sha256": "869e689ac03a70deaef21b3e26c912bde13f82b90fa9b4b2a26d53e0d901fa0b",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "runtime": "LasVola native OpenGL; pinned upstream14e956a; checked native-menu-v1 source308687c910fd28771bdcc9443f4c47f1cf018a0f; exeSHA256b0105b944c9f27b39a52d8effc3452151eb8001bd90e9e780ce33fcdd388d03e; clean tooling2e75521ae574205a86b529427b91bfe3deb97f40; guarded shared-action diagnostic, fresh scratch preferences, muted headless; requested runtime INI, effective3x in native log; UTC timestamp from original PNG last-write time",
+        "revision": "308687c910fd28771bdcc9443f4c47f1cf018a0f",
+        "captured_at": "2026-11-10T18:24:18.579568+00:00",
+        "caption": "Actual original native F2 export after verified save ACK, same heldfield4801; current run unchanged, full unchanged800x600 PNG."
+      }
+    },
     {
       "id": "2026-11-10-persisted-native-scale",
       "date": "2026-11-10",

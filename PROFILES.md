@@ -1,5 +1,15 @@
 # Original and Enhanced launch policies
 
+Later explicit [native-menu-v1](NATIVE_MENU_RESULTS.md): install with
+`install-native-menu`, then request Enhanced + `--video-settings --native-menu`.
+This selects the additive checked executable and requires native rendering and
+audio-v2 hold internally; it does not upgrade old flags. If also explicitly
+requesting pause, select audio-v2. If requesting HD, select gpu-v2 explicitly.
+No same-size+HD combination. Normal diagnostics are off; fresh launches use a
+new scratch preference history, never the owner's persistent store. Actual
+sampled UI/ACK/stale/resume/stop/reload evidence has explicit capture-size and
+hardware limits. It is one startup setting, not a completed graphics menu.
+
 ```powershell
 python pc.py run --workspace-name retail-setup-v2 --iso "G:\path\God Hand (USA).iso"
 python pc.py run --workspace-name retail-setup-v2 --iso "G:\path\God Hand (USA).iso" --profile enhanced --pack .local/example-pack/pack.json

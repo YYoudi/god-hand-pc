@@ -1,10 +1,11 @@
-# Native video menu: experimental integration, runtime acceptance pending
+# Native video menu: first experimental retail-backed screen
 
-Work on `codex/native-video-menu`, 10 November 2026. **The retained game builds
-do not contain this screen.** The branch now implements the concrete bounded
-storage channel, native factory, ordered recipe, separate installer and explicit
-launcher capability. They have NOT yet produced an accepted native build or
-retail UI result. RM03 and the full PC-port goal remain open.
+10 November 2026. The separately installed `native-menu-v1` now has an actual
+build and sampled retail UI/save-ACK/stale-reload/resume/stop evidence. The older
+six builds and default Original remain unchanged; they do not gain this screen.
+Read [the exact results and retained failed comparison](NATIVE_MENU_RESULTS.md).
+This is one restart-required preference, not a finished graphics menu. RM03 and
+the full PC-port goal remain open.
 
 ## Concrete channel and separate variant
 
@@ -22,7 +23,7 @@ added runtime include directory is per-source, not a global rebuild trigger.
 The installer retains baseline executable/PDB/source and does not regenerate
 guest code. Linking and runtime evidence remain separate acceptance gates.
 
-Branch-only experimental commands (not yet runtime-accepted):
+Explicit experimental commands (sampled acceptance, not full hardware/campaign):
 
 ```powershell
 python pc.py install-native-menu --workspace-name retail-setup-v2
@@ -90,7 +91,7 @@ The tested parent `gpu-audio-v3` has disjoint HD/audio edits. A new menu touches
 postimage/preimage review** over the exact parent, not weakening the current
 overlap refusal or changing old component fingerprints.
 
-## What was actually checked
+## Earlier source-only checks (not the later native evidence)
 
 Original portable tests compile the exact public view/binding against invented
 host, draw-call, controls and Gate doubles. They exercise ownership, hold gating,
@@ -108,18 +109,15 @@ code were inspected for this source preparation.
 
 ## Remaining acceptance
 
-1. Implement a bounded concrete request/ack transport to the sole Python writer,
-   with strict schema, immutable request identity, conditional commit, no arbitrary
-   environment/path input and explicit stale/unknown handling.
-2. Add the native factory and reviewed ordered host integration. Keep all old
-   variants/pointers/fingerprints and default Original unchanged; no mutating
-   self-test in ordinary launches.
-3. Build a separately checked variant after disk-capacity review. Preserve all
-   earlier source/binaries/PDBs/INIs/discs/evidence. No automatic deletion or
-   weakening of containment checks to work around low space.
-4. Observe the **real retail-backed** overlay, acknowledged hold, edit/save ACK,
-   invalid/stale refusal, close/resume, stop, new-process reload and original/
-   old-version rollback. Do not substitute a standalone menu demonstration.
-5. Publish selected unchanged native originals and accurate scope only after
-   review. No mock pixels or fabricated comparison for the current non-rendered
-   source work. Hardware/audio, genuine Save/exit/Load and campaign gates remain.
+The concrete channel, factory, ordered installer and sampled real overlay now
+have separate results; do not relabel the earlier syntax-only probes as that
+evidence. The original four-case driver still FAILS its last old640x480 image
+equality assertion on current800x600 output. Actual saved2x reload/startup is
+observed separately, not image parity. No cropping/normalization of originals.
+
+Investigate the host viewport/framebuffer-size boundary and physical F1/F2,
+focus, held-key/controller and window-size behavior. Broader settings, audio/
+device, genuine game Save/exit/Load, representative scenes and human campaign
+gates remain. Do not add live scale, timing, FPS or backend changes based on this
+single startup preference. Keep Original, every prior binary/sidecar/fingerprint,
+canonical preferences, originals and the paused MIT lab preserved.

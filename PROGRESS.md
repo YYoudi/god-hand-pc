@@ -1,5 +1,13 @@
 # Canonical progress and publication workflow
 
+Latest scoped native-menu result: [NATIVE_MENU_RESULTS.md](NATIVE_MENU_RESULTS.md).
+Keep its actual retail/UI/IPC results separate from earlier source-only checks.
+Preserve the FAILED old640x480 hash comparison on current800x600 originals;
+actual2x startup reload is not image parity. Default Original and all six older
+variants remain unchanged; a seventh explicit variant is additive. New probes
+record no EE/IOP hashes and use scratch only. Investigate actual viewport and
+physical F1/F2/focus next, not more speculative settings. RM03/full goal stay open.
+
 Owner decision, 9 November 2026: **god-hand-pc is the sole active repository for
 PC code, documentation, roadmap and public journal**. The MIT Rust/Bevy lab at
 god-hand-rs is historical, paused and not achieved. Do not send future PC progress

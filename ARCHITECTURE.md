@@ -36,9 +36,12 @@ Neither profile claims full-game fidelity. Test input, headless audio muting and
 capture options are diagnostic controls and must remain explicit in evidence.
 The [video preference boundary](VIDEO_SETTINGS.md) now has scoped2x/3x native
 persistence/reset evidence without relinking; it is not the final native graphics
-menu. F2 is PCSX2-GS-gated. A later menu can reuse the typed request/validation
-boundary, but startup-only settings still require a process restart; no unsafe
-live mutation, backend switch or simulation-timing control is inferred.
+menu. Upstream F2 is PCSX2-GS-gated; our separate explicit
+[native-menu-v1](NATIVE_MENU_RESULTS.md) now reuses the typed store through a
+bounded native/Python channel and an ordered GPU/audio postimage recipe.
+Its F1/F2 owner and acknowledged hold remain separate from storage ACK. Only
+startup preferences change: restart is still required, not live mutation,
+backend switching or simulation-timing control. Old versions/defaults are fixed.
 
 The experimental controls-pause host layer is a separately built/verified variant
 over that same base, never an implicit default relink. Enhanced plus an explicit

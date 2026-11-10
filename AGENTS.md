@@ -1,5 +1,30 @@
 # God Hand PC continuation - agent instructions
 
+## Actual native F2 increment — 2026-11-10
+
+Read NATIVE_MENU_RESULTS.md and .local/native-menu-channel-2026-11-10/ receipts.
+Clean2e75521 builds additive native-menu-v1 source308687c/exeb0105b94,
+fingerprint75278aea,32files. Configure/build0, sevenhostCPPs +link; no guest
+generation/newclone/ISOedit. Sixoldervariants/INIs/PDBs/canonicalvideo/MIT4WIP
+verified unchanged. Source/exe/PDB restored; sharedobject/CMakecache is nowMENU,
+not operationalbaseline. G:~70GBfree afterowner cleanup; stayG, no C research.
+Actualsave2/stale-reload-save2/stop-open andseparateHD-menu probes native124;
+heldoriginals identical, field/cycle4801/23621128446, later5001+CSVprove resume.
+NEWprobes areprobe0, NO EE/IOPdigests/PCM/audible/device/hardwareproof. Injected
+sharedtypedcommands are notphysicalkeys. Canonicalvideo nevermutated; allreal
+diagnostics use scratch. NormalpublicCLI3startup-only30s cases0/native124 and
+4preflightrefusals/no launch pass; explicitprobe0 inordinarylaunches.
+The4case driver is NOT afullpass: old640x4802x SHA assertion fails oncurrent
+800x6004b47a0da. Readonlyanalysis confirms savedrevision/value +actualGL2x,
+NOT oldimageparity. Current3x equals old800x600fd53. No crop/resize/normalization
+or hidden relabeling; margins/capture-sizecause remainsunknown. Next investigate
+actualviewport/framebuffer andphysicalF1/F2/focus beforemoredisplaychoices.
+Selectedbefore/afterUIoriginals b1efacf5/869e689a retainfull800x600pixels.
+Public menuHD requires explicitgpu-v2; oldversionmeanings/refusals remain.
+RM03/fullgoalACTIVE; SaveExitLoad/hardware/audio/campaign/prototype stayopen.
+Earlier source-only preparation paragraphs below are historical, superseded
+only by these new exact native receipts, not retroactively relabeled.
+
 ## Native-menu preparation branch — 2026-11-10
 
 Read .local/native-video-menu-2026-11-10/CONTRACT.md and the checkpoint. F3 is

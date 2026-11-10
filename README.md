@@ -33,6 +33,10 @@ The first [restart-required video preference](VIDEO_SETTINGS.md) now has actual
 new-process2x persistence, default/reset3x and composite controls. It reuses a
 native startup option without editing the INI. This is not an in-game graphics
 menu, a quality/performance claim or eight verified scale modes.
+The later explicit [native F2 extension](NATIVE_MENU_RESULTS.md) now renders one
+restart-required scale preference in the actual game, with save-ACK/stale-reload/
+resume controls. It is experimental; physical input and the retained capture-size
+comparison failure still need work. Default Original remains unchanged.
 
 ## Active direction
 
