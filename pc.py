@@ -125,6 +125,11 @@ def main():
     hd.add_argument("--workspace-name", default="retail-setup")
     hd.add_argument("--version", choices=("v1", "gpu-v2", "gpu-audio-v3"), default="v1",
                     help="Explicit additive version; default v1 is unchanged")
+    video = sub.add_parser("video-settings", help="Show/store restart-required native scale preferences; not an in-game menu")
+    video.add_argument("--workspace-name", default="retail-setup")
+    video_action = video.add_mutually_exclusive_group()
+    video_action.add_argument("--internal-scale", type=int, choices=range(1, 9))
+    video_action.add_argument("--reset", action="store_true", help="Retain history and return to unmodified upstream INI behavior")
     play = sub.add_parser("run")
     play.add_argument("--iso", required=True, type=Path)
     play.add_argument("--workspace-name", default="retail-setup")
@@ -147,6 +152,7 @@ def main():
     play.add_argument("--hd-textures-version", choices=("v1", "gpu-v2", "gpu-audio-v3"), default=None,
                       help="Requires --hd-textures; no version still selects preserved v1")
     play.add_argument("--strict-hd-pack", action="store_true", help="Refuse invalid HD pack instead of original fallback")
+    play.add_argument("--video-settings", action="store_true", help="Explicit Enhanced-only saved native-scale selection; requires restart")
     sub.add_parser("status")
     args = parser.parse_args()
     pin = load_pin()
@@ -174,6 +180,11 @@ def main():
     elif args.command == "install-hd-textures":
         from hd_textures import install
         result = install(ROOT, args.workspace_name, args.version)
+    elif args.command == "video-settings":
+        import video_settings
+        result = (video_settings.update(ROOT, args.workspace_name, args.internal_scale)
+                  if args.internal_scale is not None or args.reset else
+                  video_settings.show(ROOT, args.workspace_name))
     elif args.command == "run":
         from launch_packs import launch
         result = launch(ROOT, args.workspace_name, args.iso, args.pack, args.strict_pack,
@@ -181,7 +192,7 @@ def main():
                         profile=args.profile, controls_pause=args.controls_pause,
                         controls_pause_version=args.controls_pause_version,
                         hd_textures=args.hd_textures, hd_pack=args.hd_pack, strict_hd=args.strict_hd_pack,
-                        hd_textures_version=args.hd_textures_version)
+                        hd_textures_version=args.hd_textures_version, video_settings=args.video_settings)
     else:
         p = ROOT / ".local" / "checkout.json"
         if not p.exists():

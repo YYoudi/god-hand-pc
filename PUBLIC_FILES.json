@@ -27,6 +27,7 @@
   "SETUP.md",
   "TRANSLATION_DIAGNOSTICS.md",
   "USER_DATA.md",
+  "VIDEO_SETTINGS.md",
   "adapter/audio_activity.hpp",
   "adapter/audio_controls_integration.json",
   "adapter/audio_controls_pause.inc",
@@ -166,8 +167,11 @@
   "tests/test_translation_fixtures.py",
   "tests/test_translation_probe.py",
   "tests/test_user_data.py",
+  "tests/test_video_launch.py",
+  "tests/test_video_settings.py",
   "translation_fixtures.py",
   "translation_probe.py",
   "upstream.json",
-  "user_data.py"
+  "user_data.py",
+  "video_settings.py"
 ]

@@ -15,6 +15,7 @@ import hd_textures as hd
 import hd_packs
 import setup_pc as build
 import user_data
+import video_settings as video
 
 
 def clean_environment(environment):
@@ -65,9 +66,9 @@ def pack_protocol(iso, manifest, directory, strict=False):
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
            capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False,
            controls_pause_version=None, hd_textures=False, hd_pack=None, strict_hd=False,
-           hd_textures_version=None):
+           hd_textures_version=None, video_settings=False):
     policy = profiles.resolve(profile, pack, strict, controls_pause, controls_pause_version,
-                              hd_textures, hd_pack, strict_hd, hd_textures_version)
+                              hd_textures, hd_pack, strict_hd, hd_textures_version, video_settings)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -110,6 +111,9 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         receipt.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     save()
     try:
+        video_record, video_environment = (video.protocol(root, name, directory) if video_settings else
+                                         ({"mode": "unselected", "requested": False}, {}))
+        record["video_settings"] = video_record
         pack_record, pack_environment = pack_protocol(identity["path"], pack, directory, strict)
         record["pack"] = pack_record
         if pack_record["mode"] == "original-fallback":
@@ -147,6 +151,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         env.update(pack_environment)
         # Empty values also disable native INI pass-through, not only inherited env.
         env.update(hd_environment)
+        env.update(video_environment)
         command = runtime_command(installed["executable"]["path"], identity["path"], headless, seconds)
         record.update(command=command, environment={k: v for k, v in env.items()
                        if k.startswith(("GODHAND_", "PS2X_"))},

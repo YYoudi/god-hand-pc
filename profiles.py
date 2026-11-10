@@ -3,10 +3,14 @@ NAMES = ("original", "enhanced")
 
 
 def resolve(name="original", pack=None, strict=False, controls_pause=False, controls_pause_version=None,
-            hd_textures=False, hd_pack=None, strict_hd=False, hd_textures_version=None):
+            hd_textures=False, hd_pack=None, strict_hd=False, hd_textures_version=None, video_settings=False):
     """Validate before any filesystem, disc, installer or subprocess operation."""
     if name not in NAMES:
         raise ValueError("Unknown launch profile; choose original or enhanced")
+    if type(video_settings) is not bool:
+        raise ValueError("video-settings must be a boolean")
+    if name == "original" and video_settings:
+        raise ValueError("Original profile refuses video overrides; use --profile enhanced explicitly")
     if type(strict) is not bool:
         raise ValueError("strict-pack must be a boolean")
     if type(controls_pause) is not bool:
@@ -45,6 +49,7 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
                                      if controls_pause else []) +
                                     (["experimental-hd-textures" +
                                       ("-" + hd_textures_version if hd_textures_version in ("gpu-v2", "gpu-audio-v3") else "")]
-                                     if hd_textures else []),
+                                     if hd_textures else []) +
+                                    (["restart-required-video-settings"] if video_settings else []),
             "baseline": "pinned native runtime; upstream settings/timing unchanged by this policy",
             "fidelity": "not certified; full-game, persistence, physical input and audio gates remain open"}

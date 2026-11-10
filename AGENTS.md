@@ -1,5 +1,16 @@
 # God Hand PC continuation - agent instructions
 
+## Restart-required video preference boundary — 2026-11-10
+
+Read VIDEO_SETTINGS.md and .local/video-preferences-2026-11-10/. F2 is gated on
+PCSX2 GS, not a verified native graphics menu; no alternate INI CLI exists.
+Typed Enhanced --video-settings snapshots a workspace revision and only requests
+native scale1..8, which can be reduced by the GL block limit. Default/no flag
+does not read the store. Reset records history and returns to INI, not fixed3x.
+No native INI changes, runtime rebuild, timing/backend/window controls or full
+menu claim. RM03 stays in progress; native validation is pending at this boundary.
+Preserve all six variants/source/PDB/INIs/ISO and MIT WIP; disk still ~6GB.
+
 ## Explicit checked composition — 2026-11-10
 
 Read HD_AUDIO.md and .local/hd-audio-composite-2026-11-10/. Clean6e9c276 builds
