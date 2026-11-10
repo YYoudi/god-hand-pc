@@ -1154,6 +1154,17 @@
     {
       "kind": "journal",
       "date": "2026-11-10",
+      "captured_at": "2026-11-10T00:32:13.498Z",
+      "path": "captures/bcc42b8eaab29f5ff1074973b4601d83e386780530a274b9bd19df6486f03621.jpg",
+      "sha256": "bcc42b8eaab29f5ff1074973b4601d83e386780530a274b9bd19df6486f03621",
+      "reviewed": true,
+      "revision": "f37b451745203e792abc5c8c17d0306d48aafeca",
+      "caption": "Fixed-field comparison - actual published journal excerpt",
+      "source": "Unretouched screenshot of the actual published journal, existing default narrow viewport; no crop, resize or viewport override. Exact UTC capture instant,10November Europe/Paris. Title/summary/first part only, not full-page, native game image, benchmark or every-frame fidelity proof. No game imagery/private desktop. Full protocol, all trials and limitations remain in the article and FRAME_SPANS.md; no new renderer comparison is invented for this nonvisual measurement."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
       "captured_at": "2026-11-09T23:42:33.187Z",
       "path": "captures/5fab6ee3ea0365e43d49f1bf1148f48878846a597174b4d8788c955876556bc1.jpg",
       "sha256": "5fab6ee3ea0365e43d49f1bf1148f48878846a597174b4d8788c955876556bc1",
