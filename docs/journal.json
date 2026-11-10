@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Continue RM03 from the typed, tested restart boundary toward a coherent native settings surface; do not call the CLI a completed menu. Review disk capacity (~5GB) before any native rebuild/clone; preserve all evidence. Genuine SaveExitLoad, physical input/audible audio and human campaign/reference coverage remain explicit. No new Rust, autonomous level beating, FPS/HD-performance claim or repeated one-scene benchmark.",
+  "next": "Implement the concrete bounded storage request/ack path and native factory, then reviewed ordered parent integration and an actual separate native build after capacity review. Verify real retail-backed UI/hold/save ACK/close/resume/stop/new-process reload and Original rollback; do not stop at source syntax or portable doubles. Preserve all variants/discs/evidence and paused MIT work. Main Pages remains a separate pending verification gate; no new Rust, autonomous level beating or invented FPS/fidelity result.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -14,7 +14,8 @@
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
-    "Video preferences are restart-required and explicitly selected; only2x/3x observed. F2 is not a native-GS graphics menu. Requested scale can be reduced by the runtime GL limit; output size, accuracy and speed are not inferred."
+    "Video preferences are restart-required and explicitly selected; only2x/3x observed. F2 is not a native-GS graphics menu. Requested scale can be reduced by the runtime GL limit; output size, accuracy and speed are not inferred.",
+    "The native settings view/host binding is source-only on the preparation branch: no factory, concrete transport or installed runtime. Stub draws and actual-header syntax checks do not prove a menu rendered in God Hand or acknowledged a saved preference."
   ],
   "milestones": [
     {
@@ -117,7 +118,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Source audit plus explicit typed restart-required native scale preferences implemented: immutable history, strict validation, frozen launch revision, new-process2x persistence and default/reset3x controls, invalid/Original no-spawn. This is a pre-launch CLI boundary, NOT the final coherent native settings menu; other graphics/window/device controls and hardware usability remain open."
+          "acceptance": "Typed restart-required scale store already has actual2x/new-process and default/reset3x controls, strict/Original refusal. A later original F2 view and F1/audio-v2 host-binding SOURCE passes portable doubles and actual-header MSVC syntax only; it is unlinked/uninstalled, without factory/storage transport/ordered patch. Real overlay, save ACK, invalid/stale handling, resume/stop/reload and hardware usability still required; not a completed native settings menu."
         },
         {
           "id": "PC04",
@@ -309,6 +310,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Source for a native settings screen, not yet a game result",
+      "summary": "The original native view and host-binding source is now written. It passes syntax checks against the retained host headers, but is not linked into the game. This entry belongs to the preparation branch, not a released menu or a new gameplay result.",
+      "changes": [
+        "Added original Raylib text/primitive drawing and keyboard navigation for restart-required video preferences. Current-run request, saved-next-run choice and unobserved effective GL scale are kept separate; submitting a write is not shown as saving it.",
+        "Bound the source lifecycle to the existing F1 API and our audio-v2 Gate. F1 still ticks with opening disabled while video owns input, rather than leaving its raw chord/focus history stale. The hold request includes both owners and is updated again after closing.",
+        "Added invented host/draw/control/Gate tests for ownership, queued versus acknowledged writes, unrelated/bad replies, focus, small windows and shutdown. No mock screen or standalone scene is published as a retail result."
+      ],
+      "validation": "230 original synthetic tests locally:227pass/three Windows symlink-privilege skips. Separate MSVC14.44.35207 /Zs probes accept the view/binding with actual retained Raylib/input/F1 headers and the actual owned Gate from parent6ae2aafe. These probes produce no game objects, PDB or executable and do not link or launch the game. Portable draw calls and Gate Booleans are doubles, not pixels or runtime readiness evidence.",
+      "limits": "No native factory, concrete storage transport, ordered runtime patch, installer or launcher flag enables this source yet. No real menu rendering, save ACK, new-process UI persistence, hardware/input/audio, SaveExitLoad or fidelity claim. All six installed variants and default Original remain unchanged. Linking needs a safe disk-capacity decision; do not delete evidence to make space. The existing main Pages deployment is still pending, so this branch entry is not claimed live on the canonical site.",
+      "link": {
+        "label": "Source preparation and remaining native acceptance gates",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/7ad782071cc1203a1566167341f65b904d9e6616/NATIVE_MENU.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
