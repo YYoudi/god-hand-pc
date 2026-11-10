@@ -51,5 +51,7 @@ def resolve(name="original", pack=None, strict=False, controls_pause=False, cont
                                       ("-" + hd_textures_version if hd_textures_version in ("gpu-v2", "gpu-audio-v3") else "")]
                                      if hd_textures else []) +
                                     (["restart-required-video-settings"] if video_settings else []),
-            "baseline": "pinned native runtime; upstream settings/timing unchanged by this policy",
+            "baseline": ("pinned native runtime; explicit video request recorded separately; timing unchanged"
+                         if video_settings else
+                         "pinned native runtime; upstream settings/timing unchanged by this policy"),
             "fidelity": "not certified; full-game, persistence, physical input and audio gates remain open"}

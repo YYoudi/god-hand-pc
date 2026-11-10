@@ -27,6 +27,8 @@ class VideoLaunchTests(unittest.TestCase):
                          ["restart-required-video-settings"])
         self.assertEqual(profiles.resolve()["requested_extensions"], [])
         self.assertEqual(profiles.resolve("enhanced")["requested_extensions"], [])
+        self.assertIn("explicit video request", profiles.resolve("enhanced", video_settings=True)["baseline"])
+        self.assertIn("upstream settings/timing unchanged", profiles.resolve()["baseline"])
 
     def test_cli_routes_show_update_reset_and_explicit_run(self):
         for args, action, scale in [([], "show", None), (["--internal-scale", "2"], "update", 2),
