@@ -1,5 +1,33 @@
 # God Hand PC continuation - agent instructions
 
+## Capture findings, candidate deliberately isolated — 2026-11-10
+
+Read CAPTURE_READBACK.md and the canonical private checkpoint at
+G:/God-Hand-PC/.local/progress-checkpoint.json on the evaluation machine.
+Main runtime stays native-menu-v1. Candidatecode265tests is on separate branch
+codex/native-capture-readback (testedsource da084f0); do not silently merge it.
+Current same-draw private diagnostic proves DPI readback defect: legacy800,
+actualrender640; five before/direct/after triples1536000validpixels identical,
+legacybefore/afterPNGbytes equal, no edited/derivedgameimage. Exactpublichelper
+compiledunchanged, but diagnosticbinary37035065/8f70b365 !=candidateac62/2cf30.
+Native viewport/FBO NOTqueried; only synthetic normal/HIGH_DPI valuesqueried.
+Firstcandidate300s observer FAILS old6403x hash with different pose346e96c6 /
+298188pixels, despite UI/saveACK/hold/resume/later5001. Planned2x/stopnotstarted.
+LaternormalCLI exactSAMEcandidate gives9bd, preservedv1 givesfd53; differing
+probe/CSV/capture schedules are NOT single-variableA/B or rootcauseproof.
+Retainfailures/unmatchedoriginals; sameglobalfield !=samegame/camerastate.
+Next strongercontrolledscene/input/capturetiming or VERIFIEDsnapshotfixture;
+snapshot !=genuinegameSaveLoad. No more speculative settings/Rust/delegation.
+Allold7+newcandidate/privatepair/source/exe/INI/PDB/ISO/canonical/MIT4WIP
+preserved. Sharedobject/CMakecacheNOWPRIVATEPAIR, operationalbase restored;
+reconfigure+refresh affectedhostCPPs beforeanyfuturelink. AllresearchstaysG.
+This documentation-only main update uses ignoredG:/God-Hand-PC/.local/
+capture-journal-main worktree; original candidate source remains physically in
+G:/God-Hand-PC onitsbranch so verification can still find its helper/recipe.
+DO NOT generate a new game workspace or infer missing checkpoint from this
+publication worktree. Main code/tests257 differfromcandidate265 intentionally.
+Public journal remains canonical; the fullfaithfulPCgoalACTIVE, notcompleted.
+
 ## Actual native F2 increment — 2026-11-10
 
 Read NATIVE_MENU_RESULTS.md and .local/native-menu-channel-2026-11-10/ receipts.

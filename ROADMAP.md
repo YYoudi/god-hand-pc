@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Investigate the actual host viewport/framebuffer-size boundary and verify F1/F2 physical-input/focus behavior before adding more settings. Retain the failed800x600-vs640x480 control and all originals, preserve Original/old variants and scratch/canonical separation. Full baseline still needs true game SaveExitLoad, audible/device input, representative scenes and human campaign testing; no autonomous fighting or Rust rewrite.
+Establish controlled same-executable scene/input/capture timing or independently verified snapshot fixtures before stronger fidelity comparisons and candidate promotion. Preserve both failed inter-run originals and successful same-draw controls; no camera fitting, image repair or default switch. Hardware/focus/audible audio, genuine game SaveExitLoad, representative scenes and human campaign remain open; no autonomous fighting or Rust rewrite.
 
 ## M8 — Active: verified original PC baseline
 

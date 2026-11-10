@@ -1,5 +1,9 @@
 # God Hand PC continuation tooling
 
+Latest [capture investigation](CAPTURE_READBACK.md): a same-frame native control
+bounds a DPI readback bug, while a separate scene mismatch remains unresolved.
+The new candidate is isolated on its research branch, not promoted on main.
+
 Original GPL-3.0-only tooling for continuing the locally evaluated
 [LasVola PC port](https://github.com/LasVola/godhand-recomp). This is a separate
 project from the preserved MIT Rust/Bevy inspection lab. It is **not** a mirror

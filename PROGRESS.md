@@ -1,5 +1,13 @@
 # Canonical progress and publication workflow
 
+Latest research: [CAPTURE_READBACK.md](CAPTURE_READBACK.md). Same-draw native
+capture evidence bounds the DPI bug; an inter-run pose mismatch remains FAILED.
+Candidate code is deliberately NOT promoted to main. Keep normal public controls,
+private diagnostic and source/synthetic tests separate. Same global field is not
+a scene-alignment contract. On the evaluation machine the canonical private
+checkpoint is G:/God-Hand-PC/.local/progress-checkpoint.json, even when publishing
+docs from the ignored capture-journal-main worktree. Do not generate there.
+
 Latest scoped native-menu result: [NATIVE_MENU_RESULTS.md](NATIVE_MENU_RESULTS.md).
 Keep its actual retail/UI/IPC results separate from earlier source-only checks.
 Preserve the FAILED old640x480 hash comparison on current800x600 originals;

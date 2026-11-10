@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Investigate the actual host viewport/framebuffer-size boundary and verify F1/F2 physical-input/focus behavior before adding more settings. Retain the failed800x600-vs640x480 control and all originals, preserve Original/old variants and scratch/canonical separation. Full baseline still needs true game SaveExitLoad, audible/device input, representative scenes and human campaign testing; no autonomous fighting or Rust rewrite.",
+  "next": "Establish controlled same-executable scene/input/capture timing or independently verified snapshot fixtures before stronger fidelity comparisons and candidate promotion. Preserve both failed inter-run originals and successful same-draw controls; no camera fitting, image repair or default switch. Hardware/focus/audible audio, genuine game SaveExitLoad, representative scenes and human campaign remain open; no autonomous fighting or Rust rewrite.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -15,7 +15,7 @@
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
-    "The actual F2 probes use shared typed commands with scratch stores, not physical input. Current full800x600 originals fail the old640x480 SHA comparison; top/right margins and capture-size cause remain unresolved. Probe0 records no EE/IOP digest evidence. Complete native settings/hardware/focus/campaign acceptance remains open."
+    "A same-draw native diagnostic now isolates the current DPI capture defect without editing images; candidate code remains separate from main. A different inter-run scene comparison still fails despite correct dimensions. Same global field alone is not scene/pose identity; cause unknown. Main remainsv1; no candidate2x/HD/F1/hardware/campaign promotion."
   ],
   "milestones": [
     {
@@ -310,6 +310,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Separating a capture bug from a scene mismatch",
+      "summary": "A same-frame test now isolates the DPI readback problem in the native game. A different scene-comparison check still fails, so the candidate stays separate from main rather than being called a fidelity fix.",
+      "changes": [
+        "Reproduced the readback issue with the actual current Raylib library, then tested the exact original helper inside a separate private native diagnostic. Old and direct API captures read the same host draw; no old screenshot is cropped or repaired.",
+        "Five native before/direct/after triples preserve every valid render pixel, with identical legacy-before/after PNGs. Published selected unchanged originals and their exact provenance; these compare capture APIs, not better game graphics.",
+        "Kept the candidate first-run scene mismatch visible as a separate unmatched comparison. A later normal launch reproduces the old image, but differing diagnostic/capture conditions do not establish a cause. Main runtime and defaults remainv1; experimental code stays on its own branch."
+      ],
+      "validation": "Candidate branch:265 synthetic tests locally (three Windows symlink skips); CI42882379903 passes265 with one Windows-only skip. Two actual checked links succeed: candidate33files and separate PRIVATE pair34files. Four bounded300s native processes exit124: first candidate observer FAILS its historical3x SHA after UI success; private pair passes same-draw1536000pixel checks/ACK/resume/later5001; normal preservedv1 givesfd53 and SAMEcandidate gives9bd. Main code/tests are separate; no v2 feature is promoted by this documentation update.",
+      "limits": "First diagnostic camera/actor pose differs across298188 pixels, not just dimensions. Planned new2x/stop/HD cases were not completed; no F1 diagnostic capture/hardware/focus/audible/game-save/campaign proof. Native GLviewport/FBO not queried; only synthetic values are observed. Same global field is not a sufficient scene-alignment contract. No source, asset or binary derived from the ISO is published.",
+      "link": {
+        "label": "Evidence, exact identities, failed control and candidate decision",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/CAPTURE_READBACK.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
@@ -819,6 +836,97 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-10-same-draw-readback",
+      "date": "2026-11-10",
+      "title": "Two capture APIs reading the same native frame",
+      "feature": "RM03",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Legacy readback - 800x600",
+        "bevy": "Direct render-size readback - 640x480"
+      },
+      "scenario": "Separate PRIVATE pair diagnostic, same actual held guestfield4801 and host draw. Legacy-before, exact original public helper, legacy-after are all read in the same capture call. Only the readback extent differs; same game image, menu, camera and window. These are fresh native renderer exports, not a crop/resize/repair of a previous image. Not a public candidate-binary comparison.",
+      "observations": [
+        "Native capture reports logical/render640x480 and DPI1.25. The old API allocates800x600 using monitor scale; the direct helper reads the actual reported render extent. The picture is not a new renderer or improved game artwork.",
+        "Five same-draw triples, including field4741, two held UI frames, saved UI and laterfield5001, preserve all1536000 valid render pixels. Every legacy-before/after original PNG is byte-identical. Pixel mapping follows readback origin/vertical flip, not image fitting; no derived game image is written.",
+        "The two direct held captures agree. Actual save ACK, close/resume and laterCSV5177/PNG5001 are observed. Separate normal/HIGH_DPI invented-color controls use the current built Raylib and query viewport/FBO."
+      ],
+      "limits": [
+        "Both sides use private diagnostic source37035065/exe8f70b365, NOT the unmodified public candidate2cf30a27, Bevy or PS2 hardware. Exact public capture helper fromda084f0 is compiled unchanged; extra reads/exports are diagnostic only.",
+        "Native viewport/FBO were NOT queried here; those values belong only to the synthetic probe. No new EE/IOP digest/PCM/device/physical input/game-save/campaign or all-backend rendering proof.",
+        "The candidate still has a separate FAILED inter-run scene comparison, published separately. Do not use this same-draw proof to erase that failure or claim normal rendering/gameplay is improved. New code remains isolated on its candidate branch, main runtime staysv1.",
+        "Unchanged original downloads retain800x600 and640x480 and independent capture times/hashes. Game imagery is neitherGPL norMIT; no ISO/assets/generated code/dumps/saves/binaries are published."
+      ],
+      "reference": {
+        "path": "media/b1efacf5ee233efa83bff7b15c714418652711306f6d77112d54382cbd0c3870.png",
+        "sha256": "b1efacf5ee233efa83bff7b15c714418652711306f6d77112d54382cbd0c3870",
+        "width": 800,
+        "height": 600,
+        "profile": "retail-usa",
+        "revision": "37035065dd5547816febcdd6606e9528b5cf4a38",
+        "captured_at": "2026-11-10T19:23:08.457205+00:00",
+        "runtime": "LasVola native OpenGL; upstream14e956a; private source37035065dd5547816febcdd6606e9528b5cf4a38; exeSHA2568f70b36581f06a6492c6a99d3386adb2cf1906aa2ba37a0eca0e7ad61aba02d4; clean toolingda084f0; PRIVATE same-draw pair; guarded shared actions; fresh scratch data, muted headless; UTC from original PNG last-write time",
+        "caption": "Actual legacy-before API original, same held nativeframe; full800x600 PNG with its observed margins."
+      },
+      "bevy": {
+        "path": "media/37c94a34e7a8d3585a961a75121b1a54269bbb68adb8333171da9dfda055bcd5.png",
+        "sha256": "37c94a34e7a8d3585a961a75121b1a54269bbb68adb8333171da9dfda055bcd5",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "revision": "37035065dd5547816febcdd6606e9528b5cf4a38",
+        "captured_at": "2026-11-10T19:23:08.512250+00:00",
+        "runtime": "LasVola native OpenGL; upstream14e956a; private source37035065dd5547816febcdd6606e9528b5cf4a38; exeSHA2568f70b36581f06a6492c6a99d3386adb2cf1906aa2ba37a0eca0e7ad61aba02d4; clean toolingda084f0; PRIVATE same-draw pair; guarded shared actions; fresh scratch data, muted headless; UTC from original PNG last-write time",
+        "caption": "Actual direct render-size API original, same held nativeframe; full640x480 PNG from a new framebuffer read, not an edited old image."
+      }
+    },
+    {
+      "id": "2026-11-10-scene-repeatability-failure",
+      "date": "2026-11-10",
+      "title": "A retained scene mismatch at the same global field",
+      "feature": "RM03",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Normal candidate launch - control",
+        "bevy": "Candidate diagnostic - unmatched pose"
+      },
+      "scenario": "SAME exact candidate executable2cf30a27/sourceac62f7af, both actual field4741 and640x480. Diagnostic run occurred first; normal public CLI control later. Same bounded four-event title/start script, but probe, CSV and screenshot schedules differ. Different camera/actor poses are LEFT UNMATCHED. No image registration, camera fit or claimed before/after graphics improvement.",
+      "observations": [
+        "The first strict historical3x hash check FAILS despite corrected capture dimensions: actual346e96c6 differs from9bd at298188 pixels across the frame. The native process ends124, but the observer raises AssertionError after UI save/hold/resume. Later planned2x/stop cases are not run.",
+        "A later normal public CLI run on the SAME binary gives exactly9bd. Preservedv1 separately reproduces800x600fd53. These later controls do not turn the first failed run into a pass.",
+        "Same global field and same executable are not enough to assert identical scene state. Conditions are not single-variable A/B; root cause remains unknown and candidate promotion is deliberately withheld."
+      ],
+      "limits": [
+        "Not proof that F2 changes gameplay or the capture helper causes a rendering regression. This dataset does not isolate probe/capture timing, input sampling, asynchronous startup or another cause. No every-frame/determinism/campaign claim.",
+        "Both are native PC output, not Bevy or PS2 hardware. New candidate2x/HD and F1 diagnostic/hardware/focus acceptance are still open. Snapshot compatibility would need separate checks; a snapshot is not game Save/Load.",
+        "Both unchanged640x480 originals are downloadable, with source/binary/time provenance. No transformed failure image is substituted. Game imagery is neitherGPL norMIT."
+      ],
+      "reference": {
+        "path": "media/9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be.png",
+        "sha256": "9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "revision": "ac62f7afce10349dcb00f9ea49845824d6f2d51c",
+        "captured_at": "2026-11-10T19:35:14.599142+00:00",
+        "runtime": "LasVola native OpenGL; upstream14e956a; private sourceac62f7afce10349dcb00f9ea49845824d6f2d51c; exeSHA2562cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751; clean toolingda084f0; normal public CLI, no mutating UI probe; full periodic captures; fresh muted headless; UTC from original PNG last-write time",
+        "caption": "Later normal public candidate control, actualfield4741, full unchanged640x480 PNG."
+      },
+      "bevy": {
+        "path": "media/346e96c69777eb837c3d85c76c0ba7711f2ba068e4d6b55652880b9fcea1a50e.png",
+        "sha256": "346e96c69777eb837c3d85c76c0ba7711f2ba068e4d6b55652880b9fcea1a50e",
+        "width": 640,
+        "height": 480,
+        "profile": "retail-usa",
+        "revision": "ac62f7afce10349dcb00f9ea49845824d6f2d51c",
+        "captured_at": "2026-11-10T19:12:23.345584+00:00",
+        "runtime": "LasVola native OpenGL; upstream14e956a; private sourceac62f7afce10349dcb00f9ea49845824d6f2d51c; exeSHA2562cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751; clean toolingda084f0; guarded F2 diagnostic scheduled after4800; image BEFORE menu opening; CSV+two requested field captures; fresh muted headless; UTC from original PNG last-write time",
+        "caption": "First candidate diagnostic, FAILED oldimage equality; actualfield4741, unmatched pose, full unchanged640x480 PNG."
+      }
+    },
     {
       "id": "2026-11-10-native-f2-preference",
       "date": "2026-11-10",
