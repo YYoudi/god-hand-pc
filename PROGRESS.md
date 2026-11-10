@@ -1,5 +1,12 @@
 # Canonical progress and publication workflow
 
+Latest controlled follow-up: four fresh same-executable OFF/ON/ON/OFF480s
+runs agree byte-for-byte at sampled fields4741 and5001. Both ON cases ACK the
+restart-only2x preference and resume. Earlier346e pose failure is retained and
+unexplained, not declared fixed. See CAPTURE_READBACK.md. Candidate remains
+isolated, main runtimev1 unchanged; full faithful-PC goal ACTIVE. Next validate
+fresh candidate2x/HD/F1 diagnostic captures, not new speculative settings.
+
 Latest scoped native-menu result: [NATIVE_MENU_RESULTS.md](NATIVE_MENU_RESULTS.md).
 Keep its actual retail/UI/IPC results separate from earlier source-only checks.
 Preserve the FAILED old640x480 hash comparison on current800x600 originals;

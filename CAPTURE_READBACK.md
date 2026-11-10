@@ -102,6 +102,90 @@ F1 hardware/focus, broader scenes and general renderer parity are not verified.
 The patched F1 diagnostic capture call is source-reviewed, not exercised by
 this increment's native runs (which cover field capture and F2).
 
+## Controlled same-executable follow-up — 10 November 2026
+
+This is a new experiment, not a relabeling of the earlier failed300s check.
+Tooling at start: `1d3723d03c8ad20a53edecc031c7ab6788a7d89a` on the isolated
+candidate branch. No rebuild or game-code generation was performed. All cases
+use the SAME candidate executable
+`2cf30a275b23ff8c2dce68afe997c2632a46de0f5284233a58b17a1413694751`
+and INI `68d601196e0094017c26b49a2a3302bb197d65623e3467d4b1cbafd3a51f0258`.
+
+The fixed order is OFF / ON / ON / OFF: F2 selftest `0` versus `scale2`.
+Each new process has identical fresh scratch video/control files and the same
+broker, script, CSV and screenshot schedule. Recorded environments match after
+substituting isolated output paths and the ONE selftest mode. Canonical owner
+preferences and original ISO are untouched. Both conditions explicitly disable
+the application's shader binary cache through the actual pinned runtime option;
+independent driver cache, OS/background scheduling and thermal conditions are
+not controlled. No owned compiler, synthetic test or GPU probe overlaps the block.
+
+Exact common arguments: `--iso <personal retail ISO> --headless --time-limit 480`.
+Common diagnostic settings include:
+
+```text
+PS2X_PAD_SCRIPT=1800v:start:20,2100v:cross:20,2400v:cross:20,4200v:start:20
+PS2X_SCREENSHOT_FIELDS=4740,5000
+PS2X_FRAME_TIMES=<isolated-case>/presents.csv
+PS2X_GS_SHADER_CACHE=0
+GODHAND_PC_CONTROLS_PAUSE=1
+GODHAND_PC_CONTROLS_PROBE=0
+GODHAND_PC_VIDEO_MENU_SELFTEST_FIELD=4800
+GODHAND_PC_VIDEO_MENU_SELFTEST=0 or scale2
+```
+
+Muted, fake-pad diagnostic input only; no attacks, imported state or game save.
+The requested4740 screenshot is actually named field4741 in these runs, BEFORE
+the requested4800 UI open. All four480s processes exit at native deadline124;
+there is no forced kill or retry of a live process.
+
+| Case | Pre-menu field4741 | Later field5001 | Last CSV field | Broker saves |
+| --- | --- | --- | --- | --- |
+| OFF1 | `9bd97cff...` | `b1812e8f...` | 7071 | 0 |
+| ON1 | `9bd97cff...` | `b1812e8f...` | 6959 | 1 acknowledged |
+| ON2 | `9bd97cff...` | `b1812e8f...` | 7005 | 1 acknowledged |
+| OFF2 | `9bd97cff...` | `b1812e8f...` | 6891 | 0 |
+
+Each set of four is **byte-identical raw PNG files**, not normalized images:
+
+- field4741: `9bd97cff522321767ad5e101e11989751131ca32c2a2a7e76d55d6e80ab6e5be`
+- field5001: `b1812e8f00c5e0b22b4ea70579c8b7c04680e3c7190bc57c238f03dfe21eed25`
+
+Both ON cases park/resume at field4801, cycle23621128446, acknowledge the
+restart-only2x preference, and continue to field5001. Their two held UI originals
+match `37c94a34...` exactly; saved-for-restart originals match `a2e1b8b...`.
+These are UI preferences, NOT game saves. Probe0 records no EE/IOP state digests;
+zero diagnostic placeholders are not equality evidence. Later screenshots happen
+to agree across ON/OFF as well, but neither that nor equal sampled frames proves
+full-machine hold, determinism, accurate PS2 behavior or campaign fidelity.
+
+Two preparation failures are retained: the first harness correctly refuses a
+scratch video directory outside the owned launch root before any native launch;
+a corrected300s OFF case reaches only CSV field4240 and produces neither requested
+screenshot. Its observer assertion fails. The subsequent480s block is prospectively
+specified, uses FOUR fresh cases and does not count the short run as passing.
+No cause is assigned to that different progress/deadline.
+
+**Conclusion:** the previously different pose (`346e96c6...`) does NOT recur in
+this block. The tested selftest toggle does not produce different sampled images
+under THESE conditions. This does NOT explain or erase the first failure, isolate
+all timing factors, establish a speedup or justify a blanket fidelity claim.
+Keep its original unmatched comparison and provenance visible. Main remainsv1,
+with no candidate promotion/default change. Next exercise fresh saved2x, HD
+combination and F1 diagnostic captures with explicit schedules. Physical input,
+focus, audible audio, genuine Save/exit/Load and human campaign stay separate.
+Stronger state-compatible fixtures remain necessary if later comparisons diverge;
+runtime snapshots are not game saves.
+
+All nine saved source/executable/INI/PDB sets, ISO, canonical preferences and
+historical MIT lab WIP are verified unchanged. Private evidence remains under
+`G:/God-Hand-PC/.local/scene-repeatability-2026-11-10/`: `block-owned-launches.json`
+(short run), `block-480.json` (complete block), `preservation-after.json` and
+`new-variants-after.json`. No additional game media needs publication: selected
+field4741 and held UI originals already have these bytes. Old capture records
+are not rewritten with new dates or substituted for this experiment's provenance.
+
+
 ## Preservation and reproduction boundaries
 
 265 original synthetic tests pass on the candidate branch (three Windows
