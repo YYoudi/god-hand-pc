@@ -20,6 +20,10 @@ The independent MIT [Rust/Bevy lab](https://github.com/YYoudi/god-hand-rs) is
 historical, paused and not achieved. Old results migrated here are labeled as
 editorial migration, not new runtime validation. See [the workflow](PROGRESS.md).
 
+The latest [fixed-field HD v1 / GPU v2 check](FRAME_SPANS.md) reproduces matching
+sampled images, but does **not** establish a reliable speedup. Both the slower
+repeat and the measurement limits are retained; defaults are unchanged.
+
 ## Active direction
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC

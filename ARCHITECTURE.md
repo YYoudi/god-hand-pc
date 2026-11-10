@@ -56,7 +56,8 @@ Epoch/state/CLUT slots are not persistent content identity. The current CPU
 readback in preserved hd-v1 is diagnostic. Separate explicit
 [gpu-v2](HD_GPU_RESULTS.md) now keeps match results on the GPU, resets/reclassifies
 each batch and passes sampled native render/fallback controls. It is not a
-persistent cache or a measured performance result. Indexed bindings stay fixed;
+persistent cache. The later [fixed-field experiment](FRAME_SPANS.md) has matched
+sampled endpoints but establishes no reliable speedup. Indexed bindings stay fixed;
 generic binding state is not asserted equal. Broader callers/drivers/scenes and
 controlled performance measurements remain acceptance gates.
 

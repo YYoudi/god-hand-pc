@@ -150,3 +150,12 @@ True game SaveExitLoad, physical input/audible audio, wider resources/scenes,
 filtering, campaign accuracy, HD/controls composition and prototype kernel
 support remain open. No FPS unlock, widescreen, modern lighting or multiplayer
 result follows from this measurement.
+
+## Later, separate follow-ups — 10 November 2026
+
+[HD_GPU_RESULTS.md](HD_GPU_RESULTS.md) records the explicit public GPU-v2
+functional implementation. [FRAME_SPANS.md](FRAME_SPANS.md) records a subsequent
+unchanged-binary fixed-field pilot and v1/v2/v2/v1 block. Boundaries and endpoint
+originals agree, but the block does not establish a reliable speedup. These are
+new distinct experiments, not changes to the historical scopes or native binary
+measured above. No time-saved subtraction, cache acceptance or FPS claim follows.

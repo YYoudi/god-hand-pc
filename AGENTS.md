@@ -1,5 +1,19 @@
 # God Hand PC continuation - agent instructions
 
+## Fixed-field profiling follow-up — 2026-11-10
+
+Read FRAME_SPANS.md and .local/present-field-spans-2026-11-10/. Existing native
+PS2X_FRAME_TIMES needs no relink. Public281aefb analyzer, one cold pilot and
+v1/gpu2/gpu2/v1 block all finish124/observer0 with actual4501..4741 and identical
+outside4401/4801 originals. Identical initial56file cache;55glbin unchanged,
+hw_keys.txt index changes only. Observed span seconds29.871/29.678/29.792/33.810:
+NO reliable speedup demonstrated. Preserve the slower finalv1, rawCSV, images,
+seed/case caches and prior binaries. Host presents are NOT game FPS; copy-path
+CSV has no valid per-present image hashes. Endpoint equality is not every-frame
+fidelity. No default switch, persistent cache or timing change from this block.
+Controlled repeated broader-scene/driver work and full-PC gates remain open.
+No owned compiler/tests overlapped; no wholemachine/GPU/thermal isolation claim.
+
 ## Resume and GPU-resident results — 2026-11-10
 
 The owner explicitly resumed the existing full PC goal and permits native
@@ -95,7 +109,9 @@ windows omit the trailing partial; no fake destructor total. All installed
 identities remain unchanged. PC10 remains incomplete: epoch/state/CLUT reuse
 does not prove cache invalidation. Next test removing the synchronous diagnostic
 readback while retaining per-batch GPU matching, before a persistent cache.
-That optimization is NOT implemented; keep enabled/disabled/negative originals.
+That was the historical next experiment; later explicit gpu-v2 and FRAME_SPANS.md
+record its functional implementation and inconclusive fixed-span profiling.
+Keep enabled/disabled/negative originals and their distinct scopes.
 Private evidence .local/hd-timing-2026-11-09/, first failed hook build/inventory
 and all captures preserved. No guessed VRAM/file identity, Rust or delegation.
 

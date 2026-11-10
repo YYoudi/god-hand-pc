@@ -27,6 +27,14 @@ native receipts. Keep no-version v1 unchanged; GPU counts-unread/submission is
 not application or performance proof. Re-run broader binding/backend/scene and
 controlled-timing gates before claiming more than the sampled integration.
 
+FRAME_SPANS.md records the later fixed-workload pilot +v1/v2/v2/v1 block using
+the unchanged binaries and existing native CSV hook. All actual4501..4741
+boundaries and outside-window originals agree; timing variation does not
+establish reliable speedup. Preserve all five runs, including slower finalv1.
+No FPS from host presents, no every-frame fidelity from endpoint equality, no
+default switch or full performance/driver/campaign acceptance. Raw CSV/cache and
+new native originals remain private; no invented new visual comparison.
+
 At useful boundaries record exact revisions, commands, tool versions, native
 results, hashes, private evidence paths, failures, pending process identities and
 the next falsifiable experiment. Poll confirmed live jobs before restarting.

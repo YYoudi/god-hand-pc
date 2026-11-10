@@ -147,7 +147,11 @@ valid real GL operation. The typed model is not a shader/driver conformance test
   failures. Do not invent a new visual pair for a nonvisual implementation or
   call a submitted dispatch an observed content match.
 
-The sampled functional controls above pass; controlled performance measurement,
+The sampled functional controls above pass. A later unchanged-binary pilot and
+fixed-field v1/v2/v2/v1 block is documented in [FRAME_SPANS.md](FRAME_SPANS.md):
+actual bounds and endpoint originals agree, but no reliable speedup is established.
+It does not change defaults or complete broader performance acceptance.
+Controlled repeated performance measurement,
 other drivers/backend paths and wider scene/state coverage remain open. There
 is **no FPS/speedup claim**, and the old timing scopes must not be subtracted as
 time saved by this version. Real game

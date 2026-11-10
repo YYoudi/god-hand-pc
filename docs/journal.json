@@ -5,11 +5,11 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Measure GPU-v2 under controlled paired workloads and broaden backend/binding/scene coverage before any performance claim; retain fresh per-batch matching rather than assume cache identity. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
+  "next": "Validate a second named resource and its original/fallback controls using retained binaries before broadening HD claims. The first matched-field timing block establishes no reliable speedup; further performance experiments need repeated wider-scene/driver design, not an automatic default switch or persistent cache. HD+audio-v2 composition, genuine SaveExitLoad, physical input/audio and human campaign validation remain separate gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
-    "Explicit GPU-v2 now builds and passes sampled native512x512 valid/absent/invalid/reference-negative controls without adapter CPU match readback. No-version still means preserved HDv1. General HD coverage, aliases, controlled performance and wider drivers/backends/scenes remain open; HD with controls/same-size packs is still refused.",
+    "Explicit GPU-v2 builds and passes sampled native512x512 valid/absent/invalid/reference-negative controls without adapter CPU match readback. No-version still means preserved HDv1. A matched-field v1/v2/v2/v1 block has equal sampled endpoint images but establishes no reliable speedup. General HD coverage, aliases, wider performance/drivers/backends/scenes remain open; HD with controls/same-size packs is still refused.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
     "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
@@ -186,7 +186,7 @@
           "title": "Decouple HD diagnostic readback without stale GPU matches",
           "status": "in_progress",
           "area": "rendering",
-          "acceptance": "Functional gate passes: checked additive explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Typed model distinguishes generic/indexed bindings and host nonempty precondition, not real GL proof. Controlled timing, broader backend/driver/scene/state coverage remain open; no FPS gain or full GL-state equality claimed. Not a persistent cache/default upgrade."
+          "acceptance": "Functional gate passes: checked explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Later unchanged-binary pilot +v1/v2/v2/v1 block has identical actual4501..4741 bounds and endpoint PNGs, but timing variation establishes no reliable speedup. Typed model is not real GL proof. Repeated broader-scene/driver/state/performance acceptance and full GL-state equality remain open; no default upgrade or persistent cache."
         }
       ]
     },
@@ -308,6 +308,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Checking the same scene before claiming a speedup",
+      "summary": "A fixed-field comparison now checks unchanged HD v1 and GPU v2 binaries with the same input and shader-cache seed. The sampled images agree, but the timing variation does not establish a reliable speedup. Defaults stay unchanged.",
+      "changes": [
+        "Added an original read-only analyzer for the existing native present CSV: bounded input, exact schema, finite times, monotonic fields and explicit actual boundaries. Synthetic tests contain invented numbers only; no native rebuild or game-function edits.",
+        "Completed one cold pilot and all four v1/v2/v2/v1 runs, each with a 300-second deadline, fresh scratch user data and the same original-authored replacement. Each warm run starts from an identical private shader-cache snapshot. No owned compiler or test suite overlaps these runs.",
+        "All runs cover actual fields4501..4741; the before/after-window field4401/4801 original PNGs are byte-identical across runs. Copy-path CSV has no valid per-present image hashes, so this does not prove every-frame equality. No new public renderer comparison is invented for nonvisual profiling.",
+        "Kept all results, including the slower final v1 observation. The early variant difference is smaller than the variation between v1 repeats; no FPS claim, persistent cache, game-timing change or default upgrade follows."
+      ],
+      "validation": "193 invented-data tests locally:191pass/two Windows symlink-privilege skips. Five actual native runs end124 at normal deadlines, observers0, no forced termination, shader errors, missing boundaries or truncated CSV. Warm v1/v2/v2/v1 field-span wall seconds29.871/29.678/29.792/33.810, not game FPS. Identical initial56-file cache; all55 compiled shader blobs unchanged after each run, only the index changes. ISO, authored input, INI, installed variants and historical lab/WIP are preserved.",
+      "limits": "One sequential block, two observations per variant, one scripted scene, no whole-machine/GPU/thermal isolation or statistical/causal performance acceptance. Host presents are not guest game frames, and submit/swap wall scopes are not CPU/GPU busy time or isolated classifier cost. Different binaries/logging and driver scheduling remain confounders. Broader resources/scenes/drivers, true SaveExitLoad, physical input/audible audio, HD+controls composition, full campaign and remaster features remain open. Raw CSV, cache binaries and new native captures stay private.",
+      "link": {
+        "label": "Exact native identities, protocol, all observations and the no-speedup decision",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/FRAME_SPANS.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
