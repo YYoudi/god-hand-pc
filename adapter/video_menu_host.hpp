@@ -26,6 +26,10 @@ public:
     }
     bool overlaysOpen() const noexcept { return ps2x::controls::isOpen() || view_.isOpen(); }
     const View &view() const noexcept { return view_; }
+    void command(Command command, bool nativeDrawable) {
+        view_.command(command, nativeDrawable && godhand_pc_pause::enabled(), ps2x::controls::isOpen());
+        requestHold();
+    }
     void draw() const {
         ps2x::controls::draw();
         view_.draw(); // original source placement must be before native screen export

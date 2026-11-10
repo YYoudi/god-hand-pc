@@ -11,7 +11,8 @@ int main() {
     Hooks hooks{
         [](const Request &) { return Submission::Rejected; },
         [](uint32_t) -> std::optional<Response> { return {}; },
-        [a]() -> std::optional<Snapshot> { return Snapshot{2u, a}; }};
+        []() { return Submission::Rejected; },
+        []() -> std::optional<ReadResponse> { return {}; }};
     Host host(3u, {2u, a}, hooks);
     fake::keys = {KEY_F2}; godhand_pc_pause::on = false;
     host.tick(true); assert(!host.overlaysOpen() && !fake::overlay);

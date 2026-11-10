@@ -16,6 +16,8 @@ import hd_packs
 import setup_pc as build
 import user_data
 import video_settings as video
+import native_menu as menu
+import video_menu_channel as menu_channel
 
 
 def clean_environment(environment):
@@ -66,9 +68,9 @@ def pack_protocol(iso, manifest, directory, strict=False):
 def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=None,
            capture=False, fresh_user_data=False, pad_script=None, profile="original", controls_pause=False,
            controls_pause_version=None, hd_textures=False, hd_pack=None, strict_hd=False,
-           hd_textures_version=None, video_settings=False):
+           hd_textures_version=None, video_settings=False, native_menu=False):
     policy = profiles.resolve(profile, pack, strict, controls_pause, controls_pause_version,
-                              hd_textures, hd_pack, strict_hd, hd_textures_version, video_settings)
+                              hd_textures, hd_pack, strict_hd, hd_textures_version, video_settings, native_menu)
     build.require(os.name == "nt", "This native runtime currently requires Windows")
     build.require(seconds is None or (type(seconds) is int and 10 <= seconds <= 600),
                   "Runtime limit must be 10..600 seconds")
@@ -81,7 +83,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                   "Build/installer lock requires inspection before launch")
     version = controls_pause_version or "v1"
     hd_version = hd_textures_version or "v1"
-    installed = (hd.verified_install(root, name, hd_version) if hd_textures else
+    installed = (menu.verified_install(root, name) if native_menu else
+                 hd.verified_install(root, name, hd_version) if hd_textures else
                  pause.verified_install(root, name, version) if controls_pause else runtime_packs.verified_install(root, name))
     identity = pc.verify_disc(iso, pc.load_pin(root)["retail_profile"])
     # Validate disc/source/binary BEFORE the optional pack fallback boundary.
@@ -106,10 +109,14 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                                                 "legacy/no consumer-admission guarantee"),
                                 "acknowledged_hold": "not inferred from launch request",
                                 "fingerprint": installed.get("controls_fingerprint")}
+    record["native_menu"] = {"requested": native_menu, "version": menu.VERSION if native_menu else None,
+                             "fingerprint": installed.get("menu_fingerprint"),
+                             "requires_audio_v2_hold": native_menu, "observed": "not inferred from launch"}
     receipt = directory / "receipt.json"
     def save():
         receipt.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     save()
+    service, child = None, None
     try:
         video_record, video_environment = (video.protocol(root, name, directory) if video_settings else
                                          ({"mode": "unselected", "requested": False}, {}))
@@ -134,6 +141,17 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         states.mkdir(parents=True, exist_ok=True)
         record["controls"] = user_data.prepare_controls(user, installed.get("controls_adoption_executable",
                                                         installed["executable"]["path"]), fresh_user_data)
+        if native_menu:
+            menu_store = user if fresh_user_data else None
+            snapshot = video_record
+            if fresh_user_data:
+                snapshot = video.update(root, name, video_record["requested_native_scale"],
+                                        expected_revision=None, user=user)
+            broker = menu_channel.Broker(root, name, directory, snapshot["sha256"],
+                                         video_record["requested_native_scale"], user=menu_store)
+            record["native_menu"].update(channel=str(broker.directory),
+                preference_scope="scratch-semantic-seed" if fresh_user_data else "persistent",
+                source_revision=video_record["sha256"], menu_revision=snapshot["sha256"])
         env = clean_environment(os.environ)
         env.update({"GODHAND_ISO": identity["path"], "GODHAND_MC_DIR": str(cards),
                     "GODHAND_QUICK_STATE": str(states / "quick.state"),
@@ -141,7 +159,10 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                     "GODHAND_LOG_FILE": "", "GODHAND_DLL_LOG": str(directory / "dll-loads.csv"),
                     "PS2X_AUDIO_MUTE": "1" if headless else "0", "PS2X_SHOW_FPS": "0"})
         env.update(user_data.controls_environment(user))
-        env.update(controls_pause_environment(controls_pause))
+        env.update(controls_pause_environment(controls_pause or native_menu))
+        env.update(GODHAND_PC_VIDEO_MENU="1" if native_menu else "0",
+                   GODHAND_PC_VIDEO_MENU_DIR=str(broker.directory) if native_menu else "",
+                   GODHAND_PC_VIDEO_MENU_SELFTEST="0", GODHAND_PC_VIDEO_MENU_SELFTEST_FIELD="0")
         if pad_script:
             env.update(PS2X_PAD_SCRIPT=pad_script, PS2X_FAKE_PADS="1")
         if capture:
@@ -152,6 +173,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         # Empty values also disable native INI pass-through, not only inherited env.
         env.update(hd_environment)
         env.update(video_environment)
+        if native_menu: env["PS2X_GS_RENDERER"] = "native" # menu capability requires this backend, even with INI scale
         command = runtime_command(installed["executable"]["path"], identity["path"], headless, seconds)
         record.update(command=command, environment={k: v for k, v in env.items()
                        if k.startswith(("GODHAND_", "PS2X_"))},
@@ -161,6 +183,7 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                              if hd_textures else
                              "Named native payload MVP, not HD resizing, physical input, audio, Save/Load or full-game fidelity"))
         with (directory / "runtime.log").open("xb") as log:
+            if native_menu: service = menu_channel.Service(broker).start()
             child = subprocess.Popen(command, cwd=Path(command[0]).parent, env=env, stdout=log,
                                      stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW |
                                      subprocess.BELOW_NORMAL_PRIORITY_CLASS)
@@ -173,6 +196,8 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
                 child.kill()
                 record["exit"] = child.wait()
                 record["forced_owned_pid_after_deadline"] = True
+        if service:
+            record["native_menu"]["broker"] = service.finish(); service = None
         # Runtime snapshots never substitute for game-card persistence tests.
         record.update(status="terminal", ended_at=build.now(), captures=[
             {"path": str(p), "sha256": build.digest(p)} for p in sorted((directory / "frames").glob("*.png"))])
@@ -181,6 +206,10 @@ def launch(root, name, iso, pack=None, strict=False, headless=False, seconds=Non
         save()
         return dict(record, receipt=str(receipt))
     except BaseException as error:
+        if service and (child is None or child.poll() is not None):
+            record["native_menu"]["broker"] = service.finish()
+        elif service:
+            record["native_menu"]["broker"] = {"stopped": False, "reason": "native child still alive; no restart"}
         record.update(status="observer-interrupted-or-failed", error=str(error), ended_at=build.now())
         save()
         raise

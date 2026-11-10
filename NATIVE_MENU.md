@@ -1,8 +1,48 @@
-# Native video menu: source preparation, not a shipped screen
+# Native video menu: experimental integration, runtime acceptance pending
 
 Work on `codex/native-video-menu`, 10 November 2026. **The retained game builds
-do not contain this screen.** No factory, storage transport, checked variant or
-launcher flag installs/enables it yet. RM03 and the full PC-port goal remain open.
+do not contain this screen.** The branch now implements the concrete bounded
+storage channel, native factory, ordered recipe, separate installer and explicit
+launcher capability. They have NOT yet produced an accepted native build or
+retail UI result. RM03 and the full PC-port goal remain open.
+
+## Concrete channel and separate variant
+
+Python remains the sole preference writer. The native client sends bounded,
+immutable ASCII requests with a fresh session identity, monotonically ordered
+sequence and expected preference revision. A save is confirmed only by an exact
+request/revision/selection acknowledgement. A timeout, uncertain commit or lost
+reply is not “not saved”; reload is required before another write. The channel
+is cooperative local IPC, not a sandbox against hostile concurrent filesystem
+mutation. It refuses aliases, reused channels, oversized and malformed records.
+
+`native-menu-v1` applies its reviewed runtime edits AFTER the exact frozen
+GPU/audio-v3 postimage. It does not change any old version or fingerprint. The
+added runtime include directory is per-source, not a global rebuild trigger.
+The installer retains baseline executable/PDB/source and does not regenerate
+guest code. Linking and runtime evidence remain separate acceptance gates.
+
+Branch-only experimental commands (not yet runtime-accepted):
+
+```powershell
+python pc.py install-native-menu --workspace-name retail-setup-v2
+python pc.py run --workspace-name retail-setup-v2 --iso "G:\path\God Hand (USA).iso" --profile enhanced --video-settings --native-menu
+```
+
+The menu requires the native renderer and audio-v2 hold capability. It selects
+the new separately installed executable, never silently upgrades the old flags.
+An additional HD request must explicitly select `gpu-v2`; old HD/default
+combinations keep their existing meanings/refusals. No same-size+HD composition.
+Normal launches explicitly disable mutating menu/controls probes, including INI
+pass-through. `--fresh-user-data` gives the menu a new scratch preference history,
+semantically seeded from the selected startup preference; it never writes the
+owner's canonical preferences. Scratch history is not a byte-for-byte adoption
+or continuation of the canonical revision chain.
+
+A private guarded diagnostic can use the SAME typed actions as the keyboard,
+only with a scratch channel. It still requires the real acknowledged Gate and
+view. These injected actions are not proof of physical keyboard/controller use.
+There is no standalone mock scene accepted as a game result.
 
 ## Implemented original source
 

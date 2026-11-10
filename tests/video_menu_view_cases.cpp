@@ -11,10 +11,14 @@ int main() {
     std::optional<Request> sent;
     std::optional<Response> incoming;
     std::optional<Snapshot> current = Snapshot{8u, c};
+    bool readQueued = false;
     Hooks hooks{
         [&](const Request &request) { sent = request; return Submission::Queued; },
         [&](uint32_t) { auto out = incoming; incoming.reset(); return out; },
-        [&]() { return current; }};
+        [&]() { readQueued = true; return Submission::Queued; },
+        [&]() -> std::optional<ReadResponse> {
+            if (!readQueued || !current) return {};
+            readQueued = false; return ReadResponse{ReadStatus::Ready, *current}; }};
     View view(3u, {2u, a}, hooks);
     fake::keys = {KEY_F2};
     view.pollToggle(false, false); assert(!view.isOpen() && !fake::overlay);
@@ -49,6 +53,8 @@ int main() {
     fake::keys = {KEY_DOWN}; view.poll(true); // save row
     fake::keys = {KEY_DOWN}; view.poll(true); // reload row
     fake::keys = {KEY_ENTER}; view.poll(true);
+    assert(view.model().saved().scale != 8u); // queued read is NOT a completed refresh
+    fake::keys.clear(); view.poll(true);
     assert(view.model().saved().scale == 8u && !view.model().reloadRequired());
     fake::width = 320; fake::keys = {KEY_R}; view.poll(true);
     assert(view.model().draft() == 8u); // shrink disables invisible editing
@@ -64,7 +70,8 @@ int main() {
     View throwing(3u, {2u, a}, Hooks{
         [](const Request &) -> Submission { throw std::runtime_error("invented uncertain write"); },
         [](uint32_t) -> std::optional<Response> { return {}; },
-        []() -> std::optional<Snapshot> { return {}; }});
+        []() { return Submission::Rejected; },
+        []() -> std::optional<ReadResponse> { return {}; }});
     throwing.pollToggle(true, false);
     fake::keys = {KEY_RIGHT}; throwing.poll(true);
     fake::keys = {KEY_DOWN}; throwing.poll(true);

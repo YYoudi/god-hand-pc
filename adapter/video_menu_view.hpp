@@ -1,22 +1,12 @@
 // Original GPL-3.0-only native host view. Not installed/linked by including the model.
 #pragma once
-#include "video_menu_model.hpp"
+#include "video_menu_protocol.hpp"
 #include "ps2_host_backend.h"
 #include "ps2_host_input.h"
 #include <algorithm>
-#include <functional>
 
 namespace godhand_pc_video {
-enum class Submission { Queued, Rejected, Unknown };
-struct Response { uint32_t id; Reply result; Snapshot committed; };
-struct Hooks {
-    // Must be bounded/nonblocking. Only a verified storage ACK is Saved, never
-    // request submission. Unknown outcome requires refresh, not a blind retry.
-    std::function<Submission(const Request &)> submit;
-    std::function<std::optional<Response>(uint32_t)> receive;
-    std::function<std::optional<Snapshot>()> refresh;
-};
-
+enum class Command { Toggle, Close, Up, Down, Left, Right, UseIni, Accept };
 class View {
 public:
     View(Scale runRequest, Snapshot saved, Hooks hooks)
@@ -29,8 +19,32 @@ public:
     // Both screens share one overlay boolean, not independent input owners.
     void pollToggle(bool drawable, bool controlsOpen) {
         if (!IsWindowFocused() || !IsKeyPressed(KEY_F2)) return;
+        command(Command::Toggle, drawable, controlsOpen);
+    }
+    // Shared actions for real keys and the explicitly guarded native diagnostic.
+    // This does not synthesize hardware input or bypass the hold/edit state.
+    void command(Command value, bool drawable = false, bool controlsOpen = true) {
+        if (value == Command::Close) { close(); return; }
+        if (value != Command::Toggle) {
+            if (!sizeFits() || refreshPending_ || model_.phase() != Phase::Editing) return;
+            switch (value) {
+            case Command::Up: row_ = (row_ + Rows - 1) % Rows; break;
+            case Command::Down: row_ = (row_ + 1) % Rows; break;
+            case Command::Left: if (row_ == 0) step(-1); break;
+            case Command::Right: if (row_ == 0) step(1); break;
+            case Command::UseIni: model_.edit(std::nullopt); break;
+            case Command::Accept:
+                if (row_ == 0) step(1);
+                else if (row_ == 1) save();
+                else if (row_ == 2) refresh();
+                else close();
+                break;
+            default: break;
+            }
+            return;
+        }
         if (isOpen()) { close(); return; }
-        if (!hooks_.submit || !hooks_.receive || !hooks_.refresh) return;
+        if (!hooks_.submit || !hooks_.receive || !hooks_.refresh || !hooks_.receiveRefresh) return;
         if (!sizeFits()) return; // no input block behind an unreadable/invisible screen
         if (model_.open(drawable, !controlsOpen)) {
             ps2_host_input::setOverlayOpen(true);
@@ -45,24 +59,19 @@ public:
     void poll(bool acknowledgedHold) {
         model_.observeHold(isOpen() && acknowledgedHold);
         receive(); // an already-confirmed save may finish while the view is closed
+        receiveRefresh();
         if (!isOpen()) return;
         if (!IsWindowFocused()) return; // no synthetic focus claim or background key capture
-        if (IsKeyPressed(KEY_ESCAPE)) { close(); return; }
+        if (IsKeyPressed(KEY_ESCAPE)) { command(Command::Close); return; }
         if (!sizeFits()) return;
+        if (refreshPending_) return; // don't edit a draft that an in-flight read will replace
         if (model_.phase() != Phase::Editing) return;
-        if (IsKeyPressed(KEY_UP)) row_ = (row_ + Rows - 1) % Rows;
-        if (IsKeyPressed(KEY_DOWN)) row_ = (row_ + 1) % Rows;
-        if (row_ == 0) {
-            if (IsKeyPressed(KEY_LEFT)) step(-1);
-            if (IsKeyPressed(KEY_RIGHT)) step(1);
-        }
-        if (IsKeyPressed(KEY_R)) model_.edit(std::nullopt);
-        if (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_KP_ENTER)) {
-            if (row_ == 0) step(1);
-            else if (row_ == 1) save();
-            else if (row_ == 2) refresh();
-            else close();
-        }
+        if (IsKeyPressed(KEY_UP)) command(Command::Up);
+        if (IsKeyPressed(KEY_DOWN)) command(Command::Down);
+        if (IsKeyPressed(KEY_LEFT)) command(Command::Left);
+        if (IsKeyPressed(KEY_RIGHT)) command(Command::Right);
+        if (IsKeyPressed(KEY_R)) command(Command::UseIni);
+        if (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_KP_ENTER)) command(Command::Accept);
     }
 
     void close() {
@@ -124,6 +133,7 @@ private:
     Hooks hooks_;
     int row_ = 0;
     std::string status_;
+    bool refreshPending_ = false;
 
     static bool sizeFits() noexcept { return GetScreenWidth() >= 480 && GetScreenHeight() >= 360; }
     static std::string scaleText(Scale value) { return value ? std::to_string(*value) + "x" : "runtime INI"; }
@@ -159,14 +169,26 @@ private:
         }
     }
     void refresh() {
+        if (refreshPending_ || model_.pending()) return;
         try {
-            const auto current = hooks_.refresh();
-            if (current && model_.refresh(*current)) status_.clear();
+            const auto submission = hooks_.refresh();
+            if (submission == Submission::Queued) { refreshPending_ = true; status_.clear(); }
             else status_ = "Cannot reload; displayed preference may be stale";
         } catch (...) { status_ = "Reload failed; displayed preference may be stale"; }
     }
+    void receiveRefresh() {
+        if (!refreshPending_) return;
+        try {
+            const auto reply = hooks_.receiveRefresh();
+            if (!reply) return;
+            refreshPending_ = false;
+            if (reply->result == ReadStatus::Ready && model_.refresh(reply->snapshot)) status_.clear();
+            else status_ = "Reload unavailable; displayed preference may be stale";
+        } catch (...) { refreshPending_ = false; status_ = "Reload outcome unknown; displayed preference may be stale"; }
+    }
     std::string message() const {
         if (model_.phase() == Phase::AwaitHold) return "Waiting for acknowledged game hold; editing disabled";
+        if (refreshPending_) return "Waiting for a verified saved-preference snapshot";
         if (model_.phase() == Phase::AwaitReply) return "Waiting for storage acknowledgement; not yet saved";
         if (!status_.empty()) return status_;
         switch (model_.notice()) {

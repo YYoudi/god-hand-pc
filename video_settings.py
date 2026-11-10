@@ -14,6 +14,10 @@ HASH = re.compile(r"[0-9a-f]{64}")
 _ANY_REVISION = object()
 
 
+class StaleRevision(ValueError):
+    """Known no-commit conflict, distinct from an ambiguous I/O failure."""
+
+
 def require(condition, message):
     if not condition:
         raise ValueError(message)
@@ -31,18 +35,26 @@ def _ordinary(path, directory=False):
                 "Video settings hardlinks/oversize files are not supported")
 
 
-def _storage(root, name, create=False):
+def _storage(root, name, create=False, *, user=None):
     workspace = runtime_packs.workspace_path(root, name)
     # Check unresolved ancestors too; contained() alone would erase an alias.
     path = Path(root).resolve()
-    for part in (".local", name, "userdata", "video"):
+    relative = ("userdata",)
+    if user is not None:
+        user = Path(user)
+        require(user.is_absolute() and user.parent.parent == workspace / "packs/launches" and
+                user.name == "userdata" and re.fullmatch(r"[a-f0-9]{32}", user.parent.name),
+                "Diagnostic video store requires an owned launch userdata directory")
+        relative = ("packs", "launches", user.parent.name, "userdata")
+    for part in (".local", name, *relative, "video"):
         path = path / part
         if not path.exists() and not path.is_symlink():
             if not create or part in (".local", name):
                 raise FileNotFoundError("Video preferences require an existing workspace: " + str(path))
             path.mkdir()
         _ordinary(path, directory=True)
-    require(path.resolve() == workspace / "userdata/video", "Video storage escapes workspace")
+    expected = (workspace / "userdata" if user is None else user) / "video"
+    require(path.resolve() == expected, "Video storage escapes workspace")
     return path
 
 
@@ -101,14 +113,14 @@ def _current(storage):
     return {"path": str(path), "sha256": active["sha256"], "settings": data}
 
 
-def show(root, name):
-    storage = _storage(root, name)
+def show(root, name, *, user=None):
+    storage = _storage(root, name, user=user)
     require(not (storage / "write.lock").exists() and not (storage / "write.lock").is_symlink(),
             "Video write lock requires inspection")
     return _current(storage)
 
 
-def update(root, name, native_scale, *, expected_revision=_ANY_REVISION):
+def update(root, name, native_scale, *, expected_revision=_ANY_REVISION, user=None):
     """Optionally compare a menu/editor snapshot under the writer lock.
 
     Omitted preserves the existing CLI's unconditional new revision. Explicit
@@ -119,7 +131,7 @@ def update(root, name, native_scale, *, expected_revision=_ANY_REVISION):
     require(expected_revision is _ANY_REVISION or expected_revision is None or
             (type(expected_revision) is str and HASH.fullmatch(expected_revision)),
             "Expected video revision must be a SHA-256 or explicit None")
-    storage = _storage(root, name, create=True)
+    storage = _storage(root, name, create=True, user=user)
     lock = storage / "write.lock"
     # Exclusive lock; never steal a stale/other writer's lock. Only remove our
     # own transient lock on normal unwinding. Revision/history files are retained.
@@ -127,9 +139,8 @@ def update(root, name, native_scale, *, expected_revision=_ANY_REVISION):
         out.write((str(os.getpid()) + "\n").encode("ascii"))
     try:
         previous = _current(storage)
-        require(expected_revision is _ANY_REVISION or
-                expected_revision == (previous["sha256"] if previous else None),
-                "Video preferences changed since selection; reload before saving")
+        if expected_revision is not _ANY_REVISION and expected_revision != (previous["sha256"] if previous else None):
+            raise StaleRevision("Video preferences changed since selection; reload before saving")
         data = {"schema": 1, "native_scale": native_scale,
                 "previous": previous["sha256"] if previous else None}
         raw = _encode(data)

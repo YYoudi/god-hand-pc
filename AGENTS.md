@@ -11,15 +11,21 @@ The optional revision-conditional Python writer is implemented/tested as a
 prerequisite only; there is NO new native menu or IPC/render result yet.
 adapter/video_menu_model.hpp adds original game-free hold/edit/reply/restart
 state tests, not a pause oracle, input owner or drawn/integrated native menu.
-Read NATIVE_MENU.md: original Raylib view and F1/audio-v2 host binding source now
-exist, but NO factory/transport/installer/launcher enables them. Continue F1 tick
+Read NATIVE_MENU.md: original Raylib view, F1/audio-v2 binding and concrete IPC,
+factory/ordered recipe/installer/launcher source now exist on this branch. NO
+linked/native-rendered acceptance yet. Continue F1 tick
 with drawable=false while video owns input, rather than skipping it and leaving
 raw chord/focus history stale. Stub draw/control/Gate tests are not pixels/input/
 readiness proof. Actual retained-header MSVC /Zs is syntax only, not link/run.
 Keep this branch's work separate from public main until native acceptance.
-G: is low and falling (~4GB). No new native build/clone here; await the owner's
-requested preference for a separate private C: research directory. Do not move
-or delete old work or bypass existing containment/identity verification.
+Bounded ASCII IPC uses a sole Python CAS writer, immutable ready markers created
+read-only (actual Windows held-writer race negative control retained), fresh
+session/sequence and exact acknowledgements. Scratch native diagnostics never
+write canonical video preferences; normal launches explicitly disable all probes.
+Owner decision: stay on G:, no C: research directory. On the next resume81GB
+free was actually observed on G:; a large native build may proceed only after
+fresh capacity/preservation review. Never move/delete old work or weaken the
+containment/identity checks. Keep helper outputs and scratch research on G: too.
 Pages build1357348151/fa10736 remains pending; do not call its new journal live
 or restart it just because an observation window expires. Full goal ACTIVE.
 

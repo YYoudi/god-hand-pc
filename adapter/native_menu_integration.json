@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "version": "native-menu-v1",
+  "upstream_revision": "14e956a1274332440273845fbab2c1f1e30c4a5a",
+  "parent_fingerprint": "72ceaf2309cd86aedbc1d9f122f36464bf3a65a82874a69594aad65f86ea8fa9",
+  "files": [
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_runtime.cpp",
+      "before_sha256": "af111ed9190bc3c41a1000842f4f2bde324996b456d9f03db939fbb84b65893a",
+      "after_sha256": "4ab2862b8b079597cdcbf0d38ac7f55d73e5750f0c21aef15464640f9c5b9d90",
+      "edits": [
+        {
+          "start": 81,
+          "end": 130,
+          "insert": "#include \"godhand_pc_controls/controls_probe.hpp\"\n#include \"godhand_pc_video/video_menu_factory.hpp\""
+        },
+        {
+          "start": 102672,
+          "end": 102704,
+          "insert": "    auto pcVideoMenu = godhand_pc_video::fromEnvironment(!GSPcsx2Backend::Active());\n\n    std::thread gameThread([&]()"
+        },
+        {
+          "start": 113368,
+          "end": 113458,
+          "insert": "        if (pcVideoMenu) pcVideoMenu->draw();\n        else ps2x::controls::draw(); // host overlays only, never the GS"
+        },
+        {
+          "start": 116421,
+          "end": 116630,
+          "insert": "        if (pcVideoMenu) pcVideoMenu->tick(!GSPcsx2Backend::Active(), eeScheduler().currentVSyncTick());\n        else {\n            ps2x::controls::hostTick(!GSPcsx2Backend::Active());\n            if (godhand_pc_pause::enabled()) godhand_pc_pause::gate().request(ps2x::controls::isOpen());\n        }\n        const bool controlsOpen = pcVideoMenu ? pcVideoMenu->overlaysOpen() : ps2x::controls::isOpen();"
+        },
+        {
+          "start": 117254,
+          "end": 117316,
+          "insert": "        if (!controlsOpen && !pcVideoMenu)\n            ps2x::menu::hostTick();"
+        },
+        {
+          "start": 118658,
+          "end": 118708,
+          "insert": "    if (pcVideoMenu) pcVideoMenu->shutdown();\n    else ps2x::controls::shutdown();\n    requestStop();"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/CMakeLists.txt",
+      "before_sha256": "3aa0d64050a8995281c6e6216b496bc2772214a057822bf9c83e96cea5f0e717",
+      "after_sha256": "5cadc5b241e9da5cfbce5ebfa7b161da9557bd5655ee0e780faa3ca9223f9fa9",
+      "edits": [
+        {
+          "start": 22413,
+          "end": 22413,
+          "insert": "\n# Original opt-in God Hand PC menu host transport.\ntarget_sources(ps2_runtime PRIVATE src/lib/godhand_pc_video/video_menu_io.cpp)\nset_property(SOURCE src/lib/ps2_runtime.cpp APPEND PROPERTY INCLUDE_DIRECTORIES \"${CMAKE_CURRENT_SOURCE_DIR}/src/lib\")\n"
+        }
+      ]
+    }
+  ],
+  "copies": {
+    "adapter/video_menu_model.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_model.hpp",
+    "adapter/video_menu_protocol.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_protocol.hpp",
+    "adapter/video_menu_io.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_io.hpp",
+    "adapter/video_menu_io.cpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_io.cpp",
+    "adapter/video_menu_client.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_client.hpp",
+    "adapter/video_menu_view.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_view.hpp",
+    "adapter/video_menu_host.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_host.hpp",
+    "adapter/video_menu_probe.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_probe.hpp",
+    "adapter/video_menu_factory.hpp": "runtime/ps2xRuntime/src/lib/godhand_pc_video/video_menu_factory.hpp"
+  }
+}
