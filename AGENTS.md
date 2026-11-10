@@ -1,5 +1,23 @@
 # God Hand PC continuation - agent instructions
 
+## Native-menu preparation branch — 2026-11-10
+
+Read .local/native-video-menu-2026-11-10/CONTRACT.md and the checkpoint. F3 is
+already the FPS-overlay shortcut; do not steal it. F1 has a single overlay input
+owner and no generic native panel API; audio-v2 requests hold from F1 only.
+A native F2 surface needs explicit mutually exclusive input/acknowledged-pause
+integration and ordered runtime.cpp postimage review, not a disjoint union.
+The optional revision-conditional Python writer is implemented/tested as a
+prerequisite only; there is NO new native menu or IPC/render result yet.
+adapter/video_menu_model.hpp adds original game-free hold/edit/reply/restart
+state tests, not a pause oracle, input owner or drawn/integrated native menu.
+Keep this branch's work separate from public main until native acceptance.
+G: is low and falling (~4GB). No new native build/clone here; await the owner's
+requested preference for a separate private C: research directory. Do not move
+or delete old work or bypass existing containment/identity verification.
+Pages build1357348151/fa10736 remains pending; do not call its new journal live
+or restart it just because an observation window expires. Full goal ACTIVE.
+
 ## Restart-required video preference boundary — 2026-11-10
 
 Read VIDEO_SETTINGS.md and .local/video-preferences-2026-11-10/. F2 is gated on

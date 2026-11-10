@@ -78,6 +78,21 @@ and scale for a non-reset selection. The receipt deliberately leaves effective
 scale unproven: inspect actual native initialization/rendering separately.
 Later preference changes cannot retroactively relabel the launch snapshot.
 
+The Python writer also accepts an optional keyword-only `expected_revision` for
+a future editor/menu. It compares that immutable identifier under the existing
+writer lock, before writing a new revision. Explicit null means create only while
+absent; a stale identifier refuses without overwriting newer preferences.
+Omitting it preserves current CLI behavior. This prerequisite has invented-data
+and real-thread tests only: no native menu, request/ack bridge or new in-game
+save action is integrated by this change.
+
+`adapter/video_menu_model.hpp` is a separate original, game-free state model for
+that future surface. Portable tests cover hold-before-edit, exclusive opening,
+close with an in-flight request, reply identity/selection, stale and unknown
+write outcomes, bounded requests and immutable current-run intent. A caller's
+hold Boolean is not runtime readiness evidence. There is no drawn overlay,
+native input owner, IPC implementation or new runtime acceptance from this model.
+
 ## Validation status
 
 Original invented-data tests cover history/reset/reload, exact frozen bytes,

@@ -11,6 +11,7 @@ import runtime_packs
 
 LIMIT = 4096
 HASH = re.compile(r"[0-9a-f]{64}")
+_ANY_REVISION = object()
 
 
 def require(condition, message):
@@ -107,8 +108,17 @@ def show(root, name):
     return _current(storage)
 
 
-def update(root, name, native_scale):
+def update(root, name, native_scale, *, expected_revision=_ANY_REVISION):
+    """Optionally compare a menu/editor snapshot under the writer lock.
+
+    Omitted preserves the existing CLI's unconditional new revision. Explicit
+    None means create only if absent; a hash means update only that revision.
+    This prevents a future stale editor from silently replacing newer settings.
+    """
     _revision({"schema": 1, "native_scale": native_scale, "previous": None})
+    require(expected_revision is _ANY_REVISION or expected_revision is None or
+            (type(expected_revision) is str and HASH.fullmatch(expected_revision)),
+            "Expected video revision must be a SHA-256 or explicit None")
     storage = _storage(root, name, create=True)
     lock = storage / "write.lock"
     # Exclusive lock; never steal a stale/other writer's lock. Only remove our
@@ -117,6 +127,9 @@ def update(root, name, native_scale):
         out.write((str(os.getpid()) + "\n").encode("ascii"))
     try:
         previous = _current(storage)
+        require(expected_revision is _ANY_REVISION or
+                expected_revision == (previous["sha256"] if previous else None),
+                "Video preferences changed since selection; reload before saving")
         data = {"schema": 1, "native_scale": native_scale,
                 "previous": previous["sha256"] if previous else None}
         raw = _encode(data)
