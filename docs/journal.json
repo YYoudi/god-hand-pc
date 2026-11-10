@@ -1326,6 +1326,17 @@
     {
       "kind": "journal",
       "date": "2026-11-10",
+      "captured_at": "2026-11-10T02:24:52.068Z",
+      "path": "captures/1fb9673788f34bc2f83508a57c2a2ec7ab14006cb7361046ae35ad7888e769d3.jpg",
+      "sha256": "1fb9673788f34bc2f83508a57c2a2ec7ab14006cb7361046ae35ad7888e769d3",
+      "reviewed": true,
+      "revision": "f2c35484d4aa9d8c92634d813077f1eb85bfdcc4",
+      "caption": "Checked HD and audio-v2 composition - actual published journal excerpt",
+      "source": "Unretouched screenshot of actual published journal at existing default narrow viewport. No crop/resize/viewport override; exact UTC instant,10November Europe/Paris. Title/summary/first part only, not full-page, native render or full-port/fidelity/performance proof. No game imagery/private desktop. Native normal-render and binding-edit original pairs have their own exact runtime/revision/UTCfiletime/hash/limits in the comparison registry; no source asset/envelope upload."
+    },
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
       "captured_at": "2026-11-10T01:16:44.072Z",
       "path": "captures/622b2a496d4620ca950d977501b85152b8c79722230a0226267b4f5f58843c27.jpg",
       "sha256": "622b2a496d4620ca950d977501b85152b8c79722230a0226267b4f5f58843c27",
