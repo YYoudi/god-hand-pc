@@ -1,5 +1,23 @@
 # God Hand PC continuation - agent instructions
 
+## Controlled scene follow-up — 2026-11-10
+
+Read the controlled follow-up in CAPTURE_READBACK.md and canonical private
+checkpoint G:/God-Hand-PC/.local/progress-checkpoint.json. Four fresh SAME2cf30
+native processes, OFF/ON/ON/OFF480s, matching environment except mode/output
+paths, identical initial scratch files, CSV/capture script and app-cache-off:
+all field4741 originals9bd and field5001 originals b181 are byte-identical.
+Both ON cases hold/resume4801/cycle23621128446, ACK2x and continue; probe0 has
+NO EE/IOP digests, no hardware/audible or game-save proof. Native124, no kills.
+Keep first path preflight failure and short300s OFF last4240/no captures;
+480s block was a NEW prospective four-case experiment, not a passing relabel.
+Original346e pose mismatch did NOT recur, cause remains unknown. No general
+repeatability/PS2 parity or performance claim; no candidate/main promotion.
+All nine variants/sidecars, ISO/canonical/MIT4WIP unchanged; cache still private
+pair from PREVIOUS build. No new build/guest generation/Rust/delegation here.
+Next candidate fresh saved2x/HD/F1 diagnostic acceptance under fixed conditions.
+Keep physical input/focus/audio, SaveExitLoad/campaign gates open.
+
 ## Capture findings, candidate deliberately isolated — 2026-11-10
 
 Read CAPTURE_READBACK.md and the canonical private checkpoint at

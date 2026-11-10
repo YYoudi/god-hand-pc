@@ -1,5 +1,12 @@
 # Canonical progress and publication workflow
 
+Latest controlled follow-up: four fresh same-executable OFF/ON/ON/OFF480s
+runs agree byte-for-byte at sampled fields4741 and5001. Both ON cases ACK the
+restart-only2x preference and resume. Earlier346e pose failure is retained and
+unexplained, not declared fixed. See CAPTURE_READBACK.md. Candidate remains
+isolated, main runtimev1 unchanged; full faithful-PC goal ACTIVE. Next validate
+fresh candidate2x/HD/F1 diagnostic captures, not new speculative settings.
+
 Latest research: [CAPTURE_READBACK.md](CAPTURE_READBACK.md). Same-draw native
 capture evidence bounds the DPI bug; an inter-run pose mismatch remains FAILED.
 Candidate code is deliberately NOT promoted to main. Keep normal public controls,

@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Establish controlled same-executable scene/input/capture timing or independently verified snapshot fixtures before stronger fidelity comparisons and candidate promotion. Preserve both failed inter-run originals and successful same-draw controls; no camera fitting, image repair or default switch. Hardware/focus/audible audio, genuine game SaveExitLoad, representative scenes and human campaign remain open; no autonomous fighting or Rust rewrite.",
+  "next": "Validate the isolated readback candidate with fresh saved2x, explicit HD combination and F1 diagnostic captures under fixed conditions. Four same-executable OFF/ON/ON/OFF runs agree at sampled4741/5001, but the earlier pose failure remains unexplained and visible. No general fidelity claim, promotion, image repair or new settings. Hardware/focus/audible audio, genuine game SaveExitLoad and representative human campaign remain open.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -118,7 +118,7 @@
           "title": "Audit and expose coherent PC settings",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof. A later isolated readback candidate has same-draw native pixel-preservation evidence, but a different inter-run pose check still FAILS; controlled scene/input/capture fixtures and compatibility checks are required before promotion. Main runtime remainsv1."
+          "acceptance": "Typed restart-required preference and real original F2 native-menu-v1 now have scoped render/saveACK/stale-reload/close-resume/stop/new-process2x and public startup/Original rollback evidence. Preserve the failed older640x480 equality versus current800x600 originals, no correction/parity claim. Broader native settings, physical input/focus, viewport/DPI usability and hardware/audio acceptance remain; not a finished settings menu or game-save proof. A later isolated readback candidate has same-draw native pixel-preservation evidence, but a different inter-run pose check still FAILS; controlled scene/input/capture fixtures and compatibility checks are required before promotion. Main runtime remainsv1. A subsequent same-executable OFF/ON/ON/OFF480s block gives identical sampled4741/5001 originals, but does not explain the retained first failure. Fresh candidate2x/HD/F1 captures, physical usability and broader state-compatible controls remain; no promotion."
         },
         {
           "id": "PC04",
@@ -310,6 +310,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-10",
+      "kind": "progress",
+      "title": "Four controlled runs agree at the sampled frames",
+      "summary": "With one executable and matching capture/input conditions, four fresh runs now produce identical opening-scene screenshots. The earlier different pose did not recur, but its cause is still unknown.",
+      "changes": [
+        "Ran OFF / ON / ON / OFF with the same isolated capture candidate, identical fresh preferences and fixed screenshot/CSV schedules. Only the requested F2 selftest mode and output paths differ; application shader cache is disabled in every case.",
+        "All four raw field4741 PNGs match exactly, and all four later field5001 PNGs also match. Both menu-enabled runs hold, acknowledge a restart-only2x preference and resume. No image editing or per-run camera fitting.",
+        "Preserved the initial path-preflight refusal and a separate300s run that did not reach the capture target. The complete block uses four prospectively specified480s runs. Main runtime remainsv1; no code/default promotion."
+      ],
+      "validation": "Four native480s processes exit124. Last CSV fields7071/6959/7005/6891; both ON cases park/resume4801 at cycle23621128446, matching held originals and one broker ACK each. Normalized environments and initial scratch file hashes agree. Nine source/executable/INI/PDB sets, ISO, canonical preferences and historical Rust WIP verified unchanged. No owned compiler/tests/GPU probe overlaps the block.",
+      "limits": "One short controlled block at two sampled frames is not general determinism, PS2 accuracy, full-machine hold, hardware input, audible audio or genuine game-save proof. Probe0 has no EE/IOP digests. Driver cache, scheduling and background/thermal conditions are uncontrolled. Original346e pose mismatch remains unexplained and visible; candidate2x/HD/F1 diagnostic acceptance and broader scenes remain open.",
+      "link": {
+        "label": "Controlled follow-up, retained failures and next checks",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/CAPTURE_READBACK.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",
