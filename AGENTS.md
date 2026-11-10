@@ -11,6 +11,11 @@ The optional revision-conditional Python writer is implemented/tested as a
 prerequisite only; there is NO new native menu or IPC/render result yet.
 adapter/video_menu_model.hpp adds original game-free hold/edit/reply/restart
 state tests, not a pause oracle, input owner or drawn/integrated native menu.
+Read NATIVE_MENU.md: original Raylib view and F1/audio-v2 host binding source now
+exist, but NO factory/transport/installer/launcher enables them. Continue F1 tick
+with drawable=false while video owns input, rather than skipping it and leaving
+raw chord/focus history stale. Stub draw/control/Gate tests are not pixels/input/
+readiness proof. Actual retained-header MSVC /Zs is syntax only, not link/run.
 Keep this branch's work separate from public main until native acceptance.
 G: is low and falling (~4GB). No new native build/clone here; await the owner's
 requested preference for a separate private C: research directory. Do not move

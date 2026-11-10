@@ -92,6 +92,9 @@ close with an in-flight request, reply identity/selection, stale and unknown
 write outcomes, bounded requests and immutable current-run intent. A caller's
 hold Boolean is not runtime readiness evidence. There is no drawn overlay,
 native input owner, IPC implementation or new runtime acceptance from this model.
+The later [native view and host-binding source](NATIVE_MENU.md) now uses actual
+host APIs but remains unlinked/uninstalled, with no concrete storage transport.
+Its portable doubles and real-header syntax checks are not a new game result.
 
 ## Validation status
 
