@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
@@ -320,7 +320,7 @@
         "Exercised the real upstream F1 view through shared diagnostic commands. Two held originals match; adding an alternate U binding changes the UI only. Published the unchanged 640x480 before/edit pair: the third image visibly says unsaved, and only the later close/file/live checks establish saving.",
         "Completed four separate public startup/rollback controls and five preflight refusals. Inherited mutating diagnostics and a stale state-load variable are stripped. Older variants, private evidence and the paused MIT lab remain intact; main defaults are unchanged."
       ],
-      "validation": "All eight native processes exit 124 without forced termination. Direct cases pass fresh 2x reload, HD/F2 ACK/resume, F1 file/live/hold checks and stop. F1 holds4801/cycle23621128446 for 10,896 ms with equal EE/IOP digests, then later5001/CSV6339; HD later5001/CSV6273;2x CSV6814. Five refusals create no launch receipt. Nine source/exe/INI/PDB sets, ISO, canonical preferences and source scratch choice verified unchanged.",
+      "validation": "All eight native processes exit 124 without forced termination. Direct cases pass fresh 2x reload, HD/F2 ACK/resume, F1 file/live/hold checks and stop. F1 holds4801/cycle23621128446 for 10,896 ms with equal EE/IOP digests, then later5001/CSV6339; HD later5001/CSV6273;2x CSV6814. Five refusals create no launch receipt. Nine source/exe/INI/PDB sets, ISO, canonical preferences and source scratch choice verified unchanged. On the later Windows synthetic rerun, deep temp paths produce two Git filename-length errors; these are retained. Unchanged capture tests7 and full suite265 then pass with a shorter G: temp root (three symlink-privilege skips), without global configuration changes.",
       "limits": "Candidate stays separate from main; the earlier346e pose mismatch remains unexplained and visible. Selected screenshots compare an upstream UI edit, not better graphics or physical input. F1 digests are scoped EE/IOP RAM, not complete machine/audio state; F2 uses probe0. Genuine game saving, hardware/focus/audio, broader DPI/backends/scenes and campaign remain open. Next is a verified readable-function boundary, not another settings feature.",
       "link": {
         "label": "Exact capture acceptance, original F1 pair and remaining gates",
@@ -1655,6 +1655,17 @@
     }
   ],
   "captures": [
+    {
+      "kind": "journal",
+      "date": "2026-11-10",
+      "captured_at": "2026-11-10T23:12:42.204Z",
+      "path": "captures/11dfed48c9d782e068ad32b0a8757684b7b11a19d9bc4942064fdc35f2f36801.jpg",
+      "sha256": "11dfed48c9d782e068ad32b0a8757684b7b11a19d9bc4942064fdc35f2f36801",
+      "reviewed": true,
+      "revision": "e76fd80ac7d86dfb02369faef518593d5a8a64b8",
+      "caption": "Remaining native capture paths - actual published journal",
+      "source": "Original unretouched JPEG of the actual published journal at default1265x712, captured23:12:42.204Z on10NovemberUTC (11Novemberlocal). No crop/resize/viewport override/private desktop. Later opened evidence/limits, observed both640x480 F1 originals, downloaded original815edf0b with exactSHA, and verified RM03 In progress. Third native UI capture remains explicitly unsaved; only later file/live checks prove saving. Browser normal Downloads receives an already-public PNG, not private game research. This website capture is not a game/PS2 accuracy proof."
+    },
     {
       "kind": "journal",
       "date": "2026-11-10",

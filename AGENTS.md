@@ -20,6 +20,12 @@ Next RM01 read-only identity/ABI/overlay-lifetime audit for readable extensions
 and representative evidence; do NOT add display choices or hook prototype
 addresses blindly. No new Rust/delegation/autofighting/imported saves.
 
+Windows synthetic fixtures: keep temp roots short on G:. A deep experiment
+TMP produced two actual Git Filename-too-long errors in the readback worktree
+fixture. Same unchanged7capture tests +full265 pass with TEMP/TMP set only for
+the command to G:/God-Hand-PC/.local/t-ra11. Retain both failed/incomplete logs;
+do not call them passing or change global Git/Windows settings to hide failure.
+
 ## Controlled scene follow-up — 2026-11-10
 
 Read the controlled follow-up in CAPTURE_READBACK.md and canonical private

@@ -278,6 +278,26 @@ added publicly. Game imagery is not GPL/MIT or rights-holder authorization;
 ISO/ELF/assets/envelopes/generated game code/dumps/saves/executables remain private.
 
 
+### Windows synthetic-test follow-up — 11 November local date
+
+Keep both unsuccessful test observations. The first local full-suite log ends
+without a summary; after the tool handle was missing, a fresh process inventory
+confirmed no matching test job. It is incomplete, not passed. A subsequent full
+265-test run under a deeper temporary root completes with TWO errors: Git cannot
+create the synthetic readback fixture files because their names are too long.
+This is not a native game failure or evidence that those two tests passed.
+
+Without changing source, defaults, global Git options or Windows settings,
+the same capture-version group passes7 tests under the shorter ignored temp
+root `G:/God-Hand-PC/.local/t-ra11`. The full suite then passes265 in106.449s,
+with three Windows symlink-privilege skips. No game data is a synthetic fixture.
+This is a test-path workaround, not general arbitrary-path installer acceptance
+or a performance comparison. Keep future nested synthetic worktrees under a
+short G: temp root. The original native installations are unchanged.
+
+Retained logs: `candidate-tests.log` (incomplete), `candidate-tests-retry-11.log`
+(two path errors), `short-path-capture-tests.log` and `short-path-full-tests.log`.
+
 ## Preservation and reproduction boundaries
 
 265 original synthetic tests pass on the candidate branch (three Windows
