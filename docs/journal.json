@@ -4,14 +4,14 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Native prototype card check/title observed; original input status boundary blocks debug actions. Retail defaults unchanged.",
-  "next": "Resolve the observed prototype libpad/IOP-to-EE input boundary without forcing readiness; then verify original F2 debug menu, one action and restoration. Publish actual build originals, not site screenshots.",
+  "status": "Original prototype debug menu opens, navigates and closes; Room Jump renders its real destination scene. Full action/retail release still unverified.",
+  "next": "Verify in-scene debug access, Player Warp and no-death effects/reversal, actual F1/F2 key events and a checked prototype workflow. Preserve retail defaults and every failed control.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The unmodified prototype control retains its0x7a diagnostic. The separate new native prototype now shows its real card check/title and pre-recorded movie, but original input status remains disconnected despite virtual requests at the wire. No prototype debug action, interactive gameplay or retail equivalence is verified.",
+    "The separate native prototype now accepts input and executes its original debug menu and one Room Jump destination scene. This is not a public prototype installer, free-play/warp/no-death proof or retail debug backend. Unmodified baseline0x7a and failed variants remain preserved.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -104,14 +104,14 @@
           "title": "Verify the prototype debug backend or one retail equivalent",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Menu constructor and five label/callback associations identified privately;12selected emitted bodies cross-check370original ELF words. New host harness links unchanged prototype objects/frozen libraries; same-exe off/on60s removes0x7a warnings but reaches RPC wait with black output. Not runtime action/ABI/translation correctness. Next validate coherent SDK or retail identity, state and object/overlay lifetime without forced readiness."
+          "acceptance": "Original prototype input status repair, original menu open/navigation/close and one real Room Jump destination scene observed. Private identity-gated r100/Event modules and qualified BOOT entries; retained translation diagnostics. No full prototype workflow, ABI certificate, gameplay/warp/no-death or retail backend acceptance."
         },
         {
           "id": "DT02",
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Keep F1 controls and existing F1/F2 input/hold ownership. One typed action on a verified guest-thread safe point, exact profile/capability/state checks and explicit acknowledgements. Native effect plus disable/restore; Enhanced-only opt-in, Original refusal and scratch data. No placeholder enabled switches or prototype addresses in retail."
+          "acceptance": "Shared native F2 diagnostic opens the actual original prototype menu; original navigation/close observed. Actual key-event/F1 ownership, in-scene action and disable/restore, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant."
         },
         {
           "id": "DT03",
@@ -331,6 +331,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-11",
+      "kind": "progress",
+      "title": "The original prototype debug menu now runs",
+      "summary": "A scoped SIO2 response fix restores original controller negotiation. The native build opens, navigates and closes the real debug menu. Room Jump reaches an actual original scene; warp and invincibility are not verified yet.",
+      "changes": [
+        "Reproduced the failing IOP DMA/status boundary, then compiled an original opt-in per-port status model without forcing game readiness or debug flags.",
+        "Observed original Room Jump entry, cursor movement, target changes and return/closure. Added guarded prototype r100/Event translations and qualified missing original BOOT entries for destination rendering.",
+        "Selected unchanged native originals are embedded below with exact executable/source snapshots, actions and limits. Earlier failed input and module trials are retained."
+      ],
+      "validation": "Same-executable20s presence controls: disabled/one pad stays disconnected; enabled/zero stays disconnected; enabled/two negotiates both; enabled/one negotiates only port0. Clean90s virtual-input menu navigation and180s destination probes stop0 via watchdog. Native11 renders the original western room and Gene introduction, not the pre-recorded movie. Full public synthetic suite:261 tests, exit0, three Windows symlink skips. Synthetic success is not game/hardware acceptance.",
+      "limits": "Shared F2 diagnostic is not a real F2 key-event/F1 coexistence test. No Player Warp/no-death effect or restoration, free gameplay, retail debug backend, campaign, usable performance or public prototype installer claim. Generated game code/assets/binaries remain private. Event code matches runtime but12metadata flags differ; original translation diagnostic/warnings remain. Retail/capture/Rust work preserved.",
+      "evidence_comparisons": [
+        "2026-11-11-prototype-original-menu-open",
+        "2026-11-11-prototype-room-cursor",
+        "2026-11-11-prototype-menu-close",
+        "2026-11-11-prototype-room-destination"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SIO2_PAD_STATUS.md",
+        "label": "Input fix, original menu, native evidence and remaining gates"
+      }
+    },
     {
       "date": "2026-11-11",
       "kind": "progress",
@@ -929,6 +952,267 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-11-prototype-original-menu-open",
+      "date": "2026-11-11",
+      "title": "The original prototype menu opens in the native build",
+      "feature": "DT02",
+      "scenario": "Same native07 executable and clean virtual-input boot. Start900/Cross1200, shared F2 handler at1400; original difficulty1320 versus actual debug menu1560. No game flag or readiness writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before shared F2 request",
+        "bevy": "Original menu after request"
+      },
+      "observations": [
+        "The repaired original IOP negotiation delivers actual input to the game. The game, not a host imitation, draws the menu.",
+        "The original labels include Room Jump, Flag Edit, DEBUG OPTION, Player Warp and SHOOTING MODE. Visible labels are not completed actions."
+      ],
+      "limits": [
+        "Private prototype-native research harness, not a public installer or retail debug backend. Generated game source was inspected privately in the GPL continuation.",
+        "All hardware bindings explicitly disabled; virtual diagnostic inputs only. Shared F2 handler invocation is not an actual F2 key-event or F1 coexistence test.",
+        "Original PNG bytes/resolution retained. Different fields are action evidence, not identical camera states or PS2 rendering fidelity.",
+        "No Player Warp, no-death effect/reversal, game Save/Load, audible audio, campaign or performance acceptance. No game outputs or code are published."
+      ],
+      "reference": {
+        "caption": "Before the shared F2 diagnostic: original difficulty screen, field1320.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1320.",
+        "captured_at": "2026-11-11T20:30:37.457028+00:00",
+        "path": "media/f3b70342f31bb6a6c657a6ba7e48146cb5e3ee826f4141517e41aa0cfd0853bf.png",
+        "sha256": "f3b70342f31bb6a6c657a6ba7e48146cb5e3ee826f4141517e41aa0cfd0853bf",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 1320
+        }
+      },
+      "bevy": {
+        "caption": "The game draws its original debug menu after the shared F2 diagnostic, field1560. Not a physical-key test.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1560.",
+        "captured_at": "2026-11-11T20:30:41.450294+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 1560
+        }
+      }
+    },
+    {
+      "id": "2026-11-11-prototype-room-cursor",
+      "date": "2026-11-11",
+      "title": "Circle enters Room Jump; Down moves the original cursor",
+      "feature": "DT02",
+      "scenario": "Same native07 menu-nav boot: Circle1700 opens Room Jump; Down2100 changes only its selected row. Captures1800/2160.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Room Jump before Down",
+        "bevy": "Room Jump after Down"
+      },
+      "observations": [
+        "The cursor moves from Stage to Room. A raw-pixel comparison finds684 changed pixels confined to the cursor area; the option labels did not disappear.",
+        "This pair demonstrates navigation only. It does not show a room change."
+      ],
+      "limits": [
+        "Private prototype-native research harness, not a public installer or retail debug backend. Generated game source was inspected privately in the GPL continuation.",
+        "All hardware bindings explicitly disabled; virtual diagnostic inputs only. Shared F2 handler invocation is not an actual F2 key-event or F1 coexistence test.",
+        "Original PNG bytes/resolution retained. Different fields are action evidence, not identical camera states or PS2 rendering fidelity.",
+        "No Player Warp, no-death effect/reversal, game Save/Load, audible audio, campaign or performance acceptance. No game outputs or code are published."
+      ],
+      "reference": {
+        "caption": "Original Room Jump, cursor on Stage, field1800.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1800.",
+        "captured_at": "2026-11-11T20:30:45.453530+00:00",
+        "path": "media/537aacbe418f3b8ef7821e984afaa54e06f3d2e3b9a07ff7c51f84b60c377d3a.png",
+        "sha256": "537aacbe418f3b8ef7821e984afaa54e06f3d2e3b9a07ff7c51f84b60c377d3a",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 1800
+        }
+      },
+      "bevy": {
+        "caption": "After Down: cursor on Room, field2160. Labels unchanged; not a destination change.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field2160.",
+        "captured_at": "2026-11-11T20:30:51.446220+00:00",
+        "path": "media/da1a406f1b5d6ccb3a4bea2d5fe9f3b3dff955af017b9e94b3fd1209f9d95be5.png",
+        "sha256": "da1a406f1b5d6ccb3a4bea2d5fe9f3b3dff955af017b9e94b3fd1209f9d95be5",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 2160
+        }
+      }
+    },
+    {
+      "id": "2026-11-11-prototype-menu-close",
+      "date": "2026-11-11",
+      "title": "Cross returns to the original difficulty screen",
+      "feature": "DT02",
+      "scenario": "Same native07 boot: Circle enters Room Jump; Cross3000 returns to the parent, Cross3300 closes it. Parent menu1560 versus original difficulty3480.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original debug menu",
+        "bevy": "After back and close"
+      },
+      "observations": [
+        "Actual original menu closure is observed, not inferred from an input expiration log.",
+        "The restored image is captured unchanged; game persistence and F1 ownership are separate tests."
+      ],
+      "limits": [
+        "Private prototype-native research harness, not a public installer or retail debug backend. Generated game source was inspected privately in the GPL continuation.",
+        "All hardware bindings explicitly disabled; virtual diagnostic inputs only. Shared F2 handler invocation is not an actual F2 key-event or F1 coexistence test.",
+        "Original PNG bytes/resolution retained. Different fields are action evidence, not identical camera states or PS2 rendering fidelity.",
+        "No Player Warp, no-death effect/reversal, game Save/Load, audible audio, campaign or performance acceptance. No game outputs or code are published."
+      ],
+      "reference": {
+        "caption": "The game draws its original debug menu after the shared F2 diagnostic, field1560. Not a physical-key test.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1560.",
+        "captured_at": "2026-11-11T20:30:41.450294+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 1560
+        }
+      },
+      "bevy": {
+        "caption": "After Cross returns to parent and Cross closes: original difficulty screen restored, field3480.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field3480.",
+        "captured_at": "2026-11-11T20:31:13.617804+00:00",
+        "path": "media/0010c532afb02315c62deccf7d5c2de8cc726c1024bcfaa3b794ba843bc25a25.png",
+        "sha256": "0010c532afb02315c62deccf7d5c2de8cc726c1024bcfaa3b794ba843bc25a25",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "menu-nav-on",
+          "field": 3480
+        }
+      }
+    },
+    {
+      "id": "2026-11-11-prototype-room-destination",
+      "date": "2026-11-11",
+      "title": "Room Jump reaches an actual original 3D scene",
+      "feature": "DT02",
+      "scenario": "Two separate preserved native iterations. Native07 selects Stage1/Room00/Point0 but later lacks modules. Native11 adds qualified original modules/dispatch entries, repeats that target, confirms with Circle2400 and renders the destination. Not a matched-camera comparison.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Earlier build: target selected",
+        "bevy": "Later build: actual destination scene"
+      },
+      "observations": [
+        "Native loads the actual prototype r100 and Event modules and renders the western room / Gene in-engine introduction, not a synthetic demo or pre-recorded attract movie.",
+        "Destination rendering required two modules, six qualified BOOT exports and two observed original indirect entries. No NOPs, invented completion flags or address transplants.",
+        "The180s watchdog ends before the scheduled field4000 second chord. No free gameplay, warp, invincibility or usable performance is established."
+      ],
+      "limits": [
+        "Private prototype-native research harness, not a public installer or retail debug backend. Generated game source was inspected privately in the GPL continuation.",
+        "All hardware bindings explicitly disabled; virtual diagnostic inputs only. Shared F2 handler invocation is not an actual F2 key-event or F1 coexistence test.",
+        "Original PNG bytes/resolution retained. Different fields are action evidence, not identical camera states or PS2 rendering fidelity.",
+        "No Player Warp, no-death effect/reversal, game Save/Load, audible audio, campaign or performance acceptance. No game outputs or code are published."
+      ],
+      "reference": {
+        "caption": "Original menu target Stage1 / Room00 / Point0 selected, field2160. This earlier build cannot yet execute the destination.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: room-jump-on, field2160.",
+        "captured_at": "2026-11-11T20:36:46.828084+00:00",
+        "path": "media/f013fe4198dda4e7baaeb408342f7193eedc9628bf7055e1ab82636acd438601.png",
+        "sha256": "f013fe4198dda4e7baaeb408342f7193eedc9628bf7055e1ab82636acd438601",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+          "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "room-jump-on",
+          "field": 2160
+        }
+      },
+      "bevy": {
+        "caption": "Later qualified build: actual original r100/Event scene and Gene introduction after the same Stage1 / Room00 / Point0 request, field3240. Not the attract movie or interactive gameplay proof.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 475fe68f473e45a39ef1ae5175523092727ca25fc5ce43c5a5e66d8f2b0b6922; source/input snapshot SHA-256 40db67a1e928aa574ad1202a67401baba1bfbd65605e1326b9c9395535ae1eb3. Run: dispatch-r100-jump-on, field3240.",
+        "captured_at": "2026-11-11T21:16:34.835570+00:00",
+        "path": "media/f6bdea3ab8f3dec24e62145dae1d0cdeabd9c8d310e9772dafac1b31df8efb0e.png",
+        "sha256": "f6bdea3ab8f3dec24e62145dae1d0cdeabd9c8d310e9772dafac1b31df8efb0e",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "475fe68f473e45a39ef1ae5175523092727ca25fc5ce43c5a5e66d8f2b0b6922",
+          "source_input_snapshot_sha256": "40db67a1e928aa574ad1202a67401baba1bfbd65605e1326b9c9395535ae1eb3",
+          "compile_exit": 0,
+          "link_exit": 0,
+          "original_objects_preserved": 9793,
+          "original_objects_unchanged": true,
+          "run": "dispatch-r100-jump-on",
+          "field": 3240
+        }
+      }
+    },
     {
       "id": "2026-11-11-prototype-native-bootstrap",
       "date": "2026-11-11",

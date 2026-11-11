@@ -45,12 +45,12 @@ comparison failure still need work. Default Original remains unchanged.
 ## Active direction
 
 Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
-The [native prototype follow-up](PROTOTYPE_BOOTSTRAP.md) now displays the real
-card check, PRESS START title and pre-recorded attract movie. A reproduced
-libpad/input-status boundary still blocks menu interaction: input reaches the
-controller wire, but the game reads zero. F2 Developer actions are **not available
-yet**. Actual build originals, hashes and the failed control are on the journal;
-F1 controls and the retail baseline remain unchanged.
+The [input/menu follow-up](SIO2_PAD_STATUS.md) now opens, navigates and closes the
+original prototype debug menu in the native build. One Room Jump executes the
+original western-room introduction. It is not yet a public prototype installer,
+a retail debug backend or verified warp/invincibility. The full developer-tools
+goal remains active. Selected unchanged build originals and exact hashes are on
+the journal; F1 key-event coexistence and in-scene actions still need testing.
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC
 features without rewriting the entire engine. Read [the medium-term gates](DIRECTION.md),

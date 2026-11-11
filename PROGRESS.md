@@ -7,15 +7,15 @@ journal when meaningful, not decorative pictures of the site. A research report
 does not replace implementing and observing a real debug action.
 
 Current owner priority, 11 November: [prototype debug tools](PROTOTYPE_DEBUG.md).
-[The native follow-up](PROTOTYPE_BOOTSTRAP.md) now displays the real card check,
-PRESS START title and pre-recorded attract movie, not interactive gameplay.
-Exact public chord sequencing is linked privately, but no debug action works yet:
-frontend/IOP requests do not update the game's title held/edge state; original
-libpad status/read still reports disconnected/empty. Do not fake ready/flag writes.
-Finish that boundary, then actual F2 menu/action/restore validation, not another
-static-label milestone. Publish actual build originals with source/exe hashes;
-no journal screenshots in chat. Retain capture/readable WIP and every failed run.
-The faithful-PC objective is not achieved by this investigation.
+[The input/menu follow-up](SIO2_PAD_STATUS.md) now repairs the observed generic
+SIO2 status boundary, without forced-ready or debug-flag writes. The original
+prototype menu opens, navigates and closes. Room Jump loads its real original
+room and Gene introduction. This is not free gameplay, warp/no-death acceptance,
+a retail backend or a public prototype installer. Shared F2 diagnostic invocation
+is not a key-event/F1 coexistence test. The explicit developer-tools goal is ACTIVE.
+Continue with effects/reversal and usable in-scene access; publish unchanged native
+originals with exact builds/actions, never journal screenshots in chat. Earlier
+failed input/module trials and the capture/Rust work remain preserved.
 
 Latest scoped acceptance: SAME isolated readback candidate now passes actual
 fresh2x, HD/F2, F1 diagnostic captures and stop/startup rollback. See the later

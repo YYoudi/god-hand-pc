@@ -1,5 +1,32 @@
 # God Hand PC continuation - agent instructions
 
+## Original prototype input/menu milestone — 2026-11-11
+
+Read SIO2_PAD_STATUS.md and the canonical private checkpoint. Owner explicitly
+created the active developer-tools goal; older null-goal paragraphs are historical,
+not a stop order or completion. Original per-port SIO2 model/header compiles into
+private copied generic GPL source. Opt-in per-port-v1 repairs observed canonical
+port0-then1 batch; no ready/SDK/game flag fabrication. Four same-exe20s presence
+controls and clean90s actual menu open/navigation/back/close observed. Native11
+exe475fe68f loads original r100/Event and renders actual room/Gene introduction;
+not the pre-recorded movie.180s stops before second chord4000. No free gameplay,
+usable-speed, Warp/no-death, real F2-key/F1 coexistence or retail backend claim.
+R100 whole linked bytes match runtime; Event code matches but12metadata flags
+are context-dependent. Six real BOOT exports +two observed dispatch roots give
+48changedold/24newunits,3149originalwordchecks. Original error1/1450warnings stay.
+9793oldobjects/frozenlibs/discs/retailvariants/capturebranch/labWIP retained.
+Generic source/header match recorded1646d885 modulo CRLF; no class layout edits.
+PS2SDK transfer-position bits vs PCSX2 physical-port model is a known limit:
+other-order invented tests are not hardware conformance. Mixed/duplicate/unknown
+batches fall back; no default retail promotion. Disabled07 field900 differs from
+old05 despite four other sampled originals matching: retain failure, not parity.
+Public261synthetic tests/3Windows symlink skips pass, no game inputs.
+Next verify in-scene access, action effects/reversal and real UI ownership, with
+bounded fresh scratch runs. VU1 capture/AOT is a possible usability experiment,
+not yet a measured speedup. No native tests/compilers concurrent with owned GPU
+runs. Publish reviewed actual build originals only; no journal shots in chat,
+no generated game code/assets/dumps/binaries/raw maps, no Rust or delegation.
+
 ## Actual native prototype bootstrap and input blocker - 2026-11-11
 
 Read PROTOTYPE_BOOTSTRAP.md and the canonical private checkpoint. Separate ad867e9c

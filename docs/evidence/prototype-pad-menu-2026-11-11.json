@@ -1,0 +1,225 @@
+{
+  "date": "2026-11-11",
+  "scope": "Original prototype input/menu/navigation/close and destination-scene milestone; full developer-tools goal active.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "module_tooling_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "public_source_base": "6b191a333c251fd5c00077490ba98338e54c8c42",
+  "prototype_disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+  "prototype_elf_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+  "builds": {
+    "07": {
+      "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+      "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+      "compile_exit": 0,
+      "link_exit": 0,
+      "original_objects_preserved": 9793,
+      "original_objects_unchanged": true
+    },
+    "11": {
+      "executable_sha256": "475fe68f473e45a39ef1ae5175523092727ca25fc5ce43c5a5e66d8f2b0b6922",
+      "source_input_snapshot_sha256": "40db67a1e928aa574ad1202a67401baba1bfbd65605e1326b9c9395535ae1eb3",
+      "compile_exit": 0,
+      "link_exit": 0,
+      "original_objects_preserved": 9793,
+      "original_objects_unchanged": true
+    }
+  },
+  "sio2_header_sha256": "015aef9ae91196c2f6e6f01c7350b5a766372c6b2919de5f1de5992c296ad4a9",
+  "chord_header_sha256": "7fe64b2332a230d03c82644e65b3cea3146c8dab359ef075c0f1fcd77e839f1e",
+  "commands": [
+    "prototype-sdk.exe <original prototype ELF> <original prototype disc> <fresh scratch> sdk",
+    "Inherited PS2X_/GODHAND_/PROTOTYPE_ removed. PS2X_PAD1..8=0; PS2X_FAKE_PADS=1; PS2X_SIO2_PAD_STATUS=per-port-v1; hidden/muted.",
+    "Menu navigation90s: PROTOTYPE_DEVELOPER_PROBE_FIELD=1400; PS2X_PAD_SCRIPT=900v:start:60,1200v:cross:30,1700v:circle:12,2100v:down:12,3000v:cross:12,3300v:cross:12.",
+    "Native11 destination180s: same opening/F2, Circle1700,Right1900,Down2100,Circle2400; planned L2/R3 at4000/4010 not reached."
+  ],
+  "presence_controls": {
+    "duration_seconds_each": 20,
+    "same_executable": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+    "cases": [
+      "disabled/fake1: both disconnected",
+      "enabled/fake0: both disconnected",
+      "enabled/fake2: both negotiate/stable",
+      "enabled/fake1: port0 negotiates/stable, port1 disconnected"
+    ],
+    "all_exit": 0,
+    "meaning": "Watchdog shutdown, not campaign success or physical controller conformance."
+  },
+  "native_results": {
+    "menu_navigation_exit": 0,
+    "destination_exit": 0,
+    "destination_last_capture_field": 3360,
+    "observation": "Real menu opens/navigates/closes; Room Jump executes original room and actor introduction. No free gameplay/warp/no-death evidence."
+  },
+  "retained_failures": [
+    "Original global SIO2 status incorrectly reports missing port0 when only port1 does not acknowledge.",
+    "Disabled native07 comparison matches selected old05 fields120/850/950/1000 but field900 differs; no full baseline parity.",
+    "Earlier destination trials lack r100, then Event, then original BOOT entries. Each retained, not relabeled as success.",
+    "One unresolved original BOOT diagnostic and1450warnings retained. Code-word identity is not ISA correctness."
+  ],
+  "limits": [
+    "Private prototype-native research harness, not a public installer or retail debug backend. Generated game source was inspected privately in the GPL continuation.",
+    "All hardware bindings explicitly disabled; virtual diagnostic inputs only. Shared F2 handler invocation is not an actual F2 key-event or F1 coexistence test.",
+    "Original PNG bytes/resolution retained. Different fields are action evidence, not identical camera states or PS2 rendering fidelity.",
+    "No Player Warp, no-death effect/reversal, game Save/Load, audible audio, campaign or performance acceptance. No game outputs or code are published.",
+    "PS2SDK response bits are indexed by transfer position; inspected PCSX2 uses physical ports. Actual proven batch is canonical0then1. Other-order synthetic tests are model checks, not hardware conformance.",
+    "Event code matches native, but12metadata registration-flag bytes differ from BOOT-only static registry. Whole-file equality is not claimed."
+  ],
+  "captures": {
+    "before": {
+      "caption": "Before the shared F2 diagnostic: original difficulty screen, field1320.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1320.",
+      "captured_at": "2026-11-11T20:30:37.457028+00:00",
+      "path": "media/f3b70342f31bb6a6c657a6ba7e48146cb5e3ee826f4141517e41aa0cfd0853bf.png",
+      "sha256": "f3b70342f31bb6a6c657a6ba7e48146cb5e3ee826f4141517e41aa0cfd0853bf",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "menu-nav-on",
+        "field": 1320
+      }
+    },
+    "menu": {
+      "caption": "The game draws its original debug menu after the shared F2 diagnostic, field1560. Not a physical-key test.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1560.",
+      "captured_at": "2026-11-11T20:30:41.450294+00:00",
+      "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+      "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "menu-nav-on",
+        "field": 1560
+      }
+    },
+    "room": {
+      "caption": "Original Room Jump, cursor on Stage, field1800.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field1800.",
+      "captured_at": "2026-11-11T20:30:45.453530+00:00",
+      "path": "media/537aacbe418f3b8ef7821e984afaa54e06f3d2e3b9a07ff7c51f84b60c377d3a.png",
+      "sha256": "537aacbe418f3b8ef7821e984afaa54e06f3d2e3b9a07ff7c51f84b60c377d3a",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "menu-nav-on",
+        "field": 1800
+      }
+    },
+    "navigation": {
+      "caption": "After Down: cursor on Room, field2160. Labels unchanged; not a destination change.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field2160.",
+      "captured_at": "2026-11-11T20:30:51.446220+00:00",
+      "path": "media/da1a406f1b5d6ccb3a4bea2d5fe9f3b3dff955af017b9e94b3fd1209f9d95be5.png",
+      "sha256": "da1a406f1b5d6ccb3a4bea2d5fe9f3b3dff955af017b9e94b3fd1209f9d95be5",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "menu-nav-on",
+        "field": 2160
+      }
+    },
+    "restore": {
+      "caption": "After Cross returns to parent and Cross closes: original difficulty screen restored, field3480.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: menu-nav-on, field3480.",
+      "captured_at": "2026-11-11T20:31:13.617804+00:00",
+      "path": "media/0010c532afb02315c62deccf7d5c2de8cc726c1024bcfaa3b794ba843bc25a25.png",
+      "sha256": "0010c532afb02315c62deccf7d5c2de8cc726c1024bcfaa3b794ba843bc25a25",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "menu-nav-on",
+        "field": 3480
+      }
+    },
+    "target": {
+      "caption": "Original menu target Stage1 / Room00 / Point0 selected, field2160. This earlier build cannot yet execute the destination.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3; source/input snapshot SHA-256 b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650. Run: room-jump-on, field2160.",
+      "captured_at": "2026-11-11T20:36:46.828084+00:00",
+      "path": "media/f013fe4198dda4e7baaeb408342f7193eedc9628bf7055e1ab82636acd438601.png",
+      "sha256": "f013fe4198dda4e7baaeb408342f7193eedc9628bf7055e1ab82636acd438601",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "55fb967b1e2d9f49b3fe2d0abc21c0c3f98393c9337824b3eb7771f005ee15b3",
+        "source_input_snapshot_sha256": "b7a0b1c67e03a282b7599ea3bae19a1f9e3aacf890647047b51546671b05d650",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "room-jump-on",
+        "field": 2160
+      }
+    },
+    "scene": {
+      "caption": "Later qualified build: actual original r100/Event scene and Gene introduction after the same Stage1 / Room00 / Point0 request, field3240. Not the attract movie or interactive gameplay proof.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 475fe68f473e45a39ef1ae5175523092727ca25fc5ce43c5a5e66d8f2b0b6922; source/input snapshot SHA-256 40db67a1e928aa574ad1202a67401baba1bfbd65605e1326b9c9395535ae1eb3. Run: dispatch-r100-jump-on, field3240.",
+      "captured_at": "2026-11-11T21:16:34.835570+00:00",
+      "path": "media/f6bdea3ab8f3dec24e62145dae1d0cdeabd9c8d310e9772dafac1b31df8efb0e.png",
+      "sha256": "f6bdea3ab8f3dec24e62145dae1d0cdeabd9c8d310e9772dafac1b31df8efb0e",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "475fe68f473e45a39ef1ae5175523092727ca25fc5ce43c5a5e66d8f2b0b6922",
+        "source_input_snapshot_sha256": "40db67a1e928aa574ad1202a67401baba1bfbd65605e1326b9c9395535ae1eb3",
+        "compile_exit": 0,
+        "link_exit": 0,
+        "original_objects_preserved": 9793,
+        "original_objects_unchanged": true,
+        "run": "dispatch-r100-jump-on",
+        "field": 3240
+      }
+    }
+  },
+  "rights": "Original continuation GPL-3.0-only; game imagery neither GPL nor MIT. Owner publication request is not rights-holder permission.",
+  "synthetic_validation": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 261,
+    "skipped": 3,
+    "exit": 0,
+    "seconds": 85.614,
+    "scope": "Invented inputs only. No game/hardware/GPU action acceptance."
+  }
+}
