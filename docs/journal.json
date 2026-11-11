@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Original prototype Player Warp moves the actual character and restores the normal camera/HUD. No-death survival and real F1/F2-key acceptance remain open.",
-  "next": "Trace real damage and the original no-death flag/health boundary; prove survival and restored death. Validate actual F1/F2 short keys only after renewed desktop-test intent. Keep prototype/retail separate and full goal active.",
+  "status": "Original prototype no-death now has real damage/refill and same-process OFF/death evidence, alongside the earlier Warp control. Actual F1/F2-key acceptance and a checked prototype workflow remain open.",
+  "next": "Validate actual F1/F2 short-event and focus/owner behavior only after renewed desktop-test intent; prepare a source-complete profile-gated prototype workflow without publishing generated game code. Preserve separate retail gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The separate native prototype now accepts input and executes its original debug menu and one Room Jump destination scene. This is not a public prototype installer, free-play/warp/no-death proof or retail debug backend. Unmodified baseline0x7a and failed variants remain preserved.",
+    "The separate native prototype accepts original input/menu, one Room Jump destination, actual Player Warp/control and one original no-death ON/refill/OFF/death cycle. It is not a public prototype installer, full menu/room coverage or retail debug backend. Actual F1/F2-key acceptance remains open; original baseline0x7a and failed variants are preserved.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -104,21 +104,21 @@
           "title": "Verify the prototype debug backend or one retail equivalent",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Original prototype input status repair, original menu open/navigation/close and one real Room Jump destination scene observed. Private identity-gated r100/Event modules and qualified BOOT entries; retained translation diagnostics. No full prototype workflow, ABI certificate, gameplay/warp/no-death or retail backend acceptance."
+          "acceptance": "Original prototype input status repair, original menu and one Room Jump room observed, followed by actual-player Warp and original no-death ON/OFF/death control. Private identity-gated modules and qualified BOOT entries retain diagnostics. No full prototype workflow, ABI certificate, complete room/menu coverage or retail backend acceptance."
         },
         {
           "id": "DT02",
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Shared native F2 diagnostic opens the actual original prototype menu; original navigation/close observed. Actual key-event/F1 ownership, in-scene action and disable/restore, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant."
+          "acceptance": "Shared native F2 diagnostic opens the actual original prototype menu, including from combat; original navigation/close and selected original actions observed. Actual Windows key-event/focus/F1 ownership, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Original Player Warp moves actual Getplayer vector in one prototype room; same-executable move/idle controls, true lifecycle tails, normal camera/HUD return and selected originals observed. No undo or wider invalid-state/retail acceptance. No-death OFF/ON/OFF only; lethal-hit survival/restored death and real F1/F2 short-key acceptance remain open."
+          "acceptance": "Original Player Warp actor movement/control and camera/HUD restoration observed. Original no-death has actual matched damage/refill, original ON/OFF controls and same-process OFF/death native evidence in one prototype room. No lethal-floor-path, full menu/invalid-state/retail acceptance. Actual F1/F2 short-key/focus ownership and a checked prototype workflow remain open."
         },
         {
           "id": "RM01",
@@ -331,6 +331,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Original no-death: real hits, refill, then death after OFF",
+      "summary": "The original prototype option now has an observed gameplay effect, not only an ON label. Real attacks reduce health while ON; the original game refills it. Turning it OFF and closing the menu restores damage accumulation and death/Continue screen.",
+      "changes": [
+        "Added read-only matched damage and original refill-site observations. Corrected a diagnostic macro-call mistake and retained failed/incomplete trials; no health, ready or debug-flag writes.",
+        "Used Point0 with nearby enemies, original option controls and a bounded backwards movement. No player attack or autonomous level-completion loop.",
+        "Kept actual build captures below: original ON/OFF menu, live ON, reduced-health OFF, empty-health collapse and the original Continue prompt. Report date is12November Europe/Paris; exact original UTC timestamps remain in each capture."
+      ],
+      "validation": "Native22 compiles and links successfully, preserves all 9,793 original objects and stops 0 after the prospective 900-second watchdog. Fourteen matched ON damage calls apply 125 HP in total against a 100 HP maximum; 16 observations at the original refill site restore maximum health. Twelve subsequent OFF calls reach zero HP; actual native collapse and Continue images are reviewed, not inferred from health alone. Publication checks are recorded after validation. The full invented-input suite passes: 262 tests, exit 0, three Windows symlink skips (85.069 seconds). All 31 retained file hashes and four paused Rust WIP hashes agree.",
+      "limits": "One prototype option/room, not complete menu coverage or a public prototype installer. ON still receives real damage; the separate lethal-floor branch was not exercised. Previous strict VU1 failure and hardware/audio/save/campaign gates remain. Actual F1/F2-key acceptance is unverified after the experimental fix; no new desktop input after owner Escape. No retail addresses or behavior are transplanted.",
+      "evidence_comparisons": [
+        "2026-11-12-prototype-nodeath-original-option",
+        "2026-11-12-prototype-nodeath-damage-restored",
+        "2026-11-12-prototype-nodeath-death-restored",
+        "2026-11-12-prototype-nodeath-continue-screen"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_NO_DEATH.md",
+        "label": "Original no-death effect, OFF/death control and remaining gates"
+      }
+    },
     {
       "date": "2026-11-11",
       "kind": "progress",
@@ -996,6 +1019,241 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-prototype-nodeath-original-option",
+      "date": "2026-11-12",
+      "title": "Original no-death option ON, then OFF",
+      "feature": "DT03",
+      "scenario": "Same native22 process900s. Original RoomJump Stage1/Room00/Point0, Start2800 skips intro. Chord3100/3110, Down3350, Circle3500, Right3700 enable no-death; Cross4300/4600 close both levels. One backward-stick request4900..5019, then idle enemy attacks. Chord7600/7610, Down7800, Circle8000, Left8200 disable; Cross8400/8700 close both levels. All hardware-pad bindings disabled; no player attacks or health/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option ON",
+        "bevy": "Original option OFF"
+      },
+      "reference": {
+        "caption": "Original DEBUG OPTION: PL NO DEATH ON, selected through the original menu; field3780.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field3780; no desktop input.",
+        "captured_at": "2026-11-11T23:15:54.115582+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 3780
+        }
+      },
+      "bevy": {
+        "caption": "The same original option after Left clears it: OFF, field8280. The PNG is unchanged; only the option value differs from the ON menu.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field8280; no desktop input.",
+        "captured_at": "2026-11-11T23:20:52.025497+00:00",
+        "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+        "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 8280
+        }
+      },
+      "observations": [
+        "The original menu owns the option change. Read-only live observations agree with the selected ON and OFF labels. Raw PNG comparison confines the menu difference to the option value."
+      ],
+      "limits": [
+        "One prototype room and one original option, not a complete port, checked prototype installer, retail backend or campaign/fidelity acceptance.",
+        "The original menu changes its own flag. Diagnostic hooks only observe the actual player, matched damage stack and adjacent original refill site; the harness does not write health or debug flags.",
+        "No-death is not no-damage: actual damage occurs, then the original same-flag positive-health branch refills it. The separate nonpositive-health clamp was not exercised while ON.",
+        "No matched-view or PS2 image-parity claim: combat poses and final death screen differ. Unchanged original PNGs, no crop, resize, normalization or generated illustration.",
+        "Virtual PS2 inputs only. Actual Windows F1/F2 acceptance after the event-edge candidate remains open; no desktop input resumed after owner Escape. Shared-handler invocation is not a physical keypress.",
+        "Experimental prototype VU1 AOT selected; previous strict verifier failure remains. No speedup, audio/device, Save/Load or retail accuracy claim."
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-nodeath-damage-restored",
+      "date": "2026-11-12",
+      "title": "ON restores health; OFF lets damage accumulate",
+      "feature": "DT03",
+      "scenario": "Same native22 process900s. Original RoomJump Stage1/Room00/Point0, Start2800 skips intro. Chord3100/3110, Down3350, Circle3500, Right3700 enable no-death; Cross4300/4600 close both levels. One backward-stick request4900..5019, then idle enemy attacks. Chord7600/7610, Down7800, Circle8000, Left8200 disable; Cross8400/8700 close both levels. All hardware-pad bindings disabled; no player attacks or health/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Alive while ON",
+        "bevy": "Damage accumulates after OFF"
+      },
+      "reference": {
+        "caption": "Alive with full health after the observed ON attacks/refills, field7440. This image alone does not prove the damage/refill mechanism.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field7440; no desktop input.",
+        "captured_at": "2026-11-11T23:20:16.224521+00:00",
+        "path": "media/ef9a94727d23b942d76fbd8b5b1c3b899f8fec1f3830f20385974f51920afa4e.png",
+        "sha256": "ef9a94727d23b942d76fbd8b5b1c3b899f8fec1f3830f20385974f51920afa4e",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 7440
+        }
+      },
+      "bevy": {
+        "caption": "After OFF and closing both menu levels, normal gameplay has reduced health, field9720. Different actor/enemy poses: not a matched-camera fidelity pair.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field9720; no desktop input.",
+        "captured_at": "2026-11-11T23:22:29.558146+00:00",
+        "path": "media/ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c.png",
+        "sha256": "ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 9720
+        }
+      },
+      "observations": [
+        "14 actual matched ON damage calls apply 125 HP in total, exceeding the 100 HP maximum; 16 actual original refill-site events restore health to maximum.",
+        "After the original option is OFF and both menus close, subsequent actual damage accumulates without those refill-site events. Health values alone are not a death-screen proof."
+      ],
+      "limits": [
+        "One prototype room and one original option, not a complete port, checked prototype installer, retail backend or campaign/fidelity acceptance.",
+        "The original menu changes its own flag. Diagnostic hooks only observe the actual player, matched damage stack and adjacent original refill site; the harness does not write health or debug flags.",
+        "No-death is not no-damage: actual damage occurs, then the original same-flag positive-health branch refills it. The separate nonpositive-health clamp was not exercised while ON.",
+        "No matched-view or PS2 image-parity claim: combat poses and final death screen differ. Unchanged original PNGs, no crop, resize, normalization or generated illustration.",
+        "Virtual PS2 inputs only. Actual Windows F1/F2 acceptance after the event-edge candidate remains open; no desktop input resumed after owner Escape. Shared-handler invocation is not a physical keypress.",
+        "Experimental prototype VU1 AOT selected; previous strict verifier failure remains. No speedup, audio/device, Save/Load or retail accuracy claim."
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-nodeath-death-restored",
+      "date": "2026-11-12",
+      "title": "Turning the original option OFF restores death",
+      "feature": "DT03",
+      "scenario": "Same native22 process900s. Original RoomJump Stage1/Room00/Point0, Start2800 skips intro. Chord3100/3110, Down3350, Circle3500, Right3700 enable no-death; Cross4300/4600 close both levels. One backward-stick request4900..5019, then idle enemy attacks. Chord7600/7610, Down7800, Circle8000, Left8200 disable; Cross8400/8700 close both levels. All hardware-pad bindings disabled; no player attacks or health/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "OFF: reduced health",
+        "bevy": "OFF: empty health and collapse"
+      },
+      "reference": {
+        "caption": "After OFF and closing both menu levels, normal gameplay has reduced health, field9720. Different actor/enemy poses: not a matched-camera fidelity pair.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field9720; no desktop input.",
+        "captured_at": "2026-11-11T23:22:29.558146+00:00",
+        "path": "media/ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c.png",
+        "sha256": "ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 9720
+        }
+      },
+      "bevy": {
+        "caption": "Empty health bar and Gene collapsing after the actual OFF damage reaches zero; field10800. No health/flag writes.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field10800; no desktop input.",
+        "captured_at": "2026-11-11T23:23:51.660693+00:00",
+        "path": "media/666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12.png",
+        "sha256": "666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 10800
+        }
+      },
+      "observations": [
+        "The same-process OFF phase contains 12 matched damage calls and reaches nonpositive health. A later unchanged native original visibly shows an empty health bar and Gene collapsing.",
+        "The test submits no player attack or level-completion loop. It does not lower health or write a debug flag; real enemies supply the observed damage."
+      ],
+      "limits": [
+        "One prototype room and one original option, not a complete port, checked prototype installer, retail backend or campaign/fidelity acceptance.",
+        "The original menu changes its own flag. Diagnostic hooks only observe the actual player, matched damage stack and adjacent original refill site; the harness does not write health or debug flags.",
+        "No-death is not no-damage: actual damage occurs, then the original same-flag positive-health branch refills it. The separate nonpositive-health clamp was not exercised while ON.",
+        "No matched-view or PS2 image-parity claim: combat poses and final death screen differ. Unchanged original PNGs, no crop, resize, normalization or generated illustration.",
+        "Virtual PS2 inputs only. Actual Windows F1/F2 acceptance after the event-edge candidate remains open; no desktop input resumed after owner Escape. Shared-handler invocation is not a physical keypress.",
+        "Experimental prototype VU1 AOT selected; previous strict verifier failure remains. No speedup, audio/device, Save/Load or retail accuracy claim."
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-nodeath-continue-screen",
+      "date": "2026-11-12",
+      "title": "The original death transition reaches Continue",
+      "feature": "DT03",
+      "scenario": "Same native22 process900s. Original RoomJump Stage1/Room00/Point0, Start2800 skips intro. Chord3100/3110, Down3350, Circle3500, Right3700 enable no-death; Cross4300/4600 close both levels. One backward-stick request4900..5019, then idle enemy attacks. Chord7600/7610, Down7800, Circle8000, Left8200 disable; Cross8400/8700 close both levels. All hardware-pad bindings disabled; no player attacks or health/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Gene collapses",
+        "bevy": "Original Continue? Yes / No"
+      },
+      "reference": {
+        "caption": "Empty health bar and Gene collapsing after the actual OFF damage reaches zero; field10800. No health/flag writes.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field10800; no desktop input.",
+        "captured_at": "2026-11-11T23:23:51.660693+00:00",
+        "path": "media/666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12.png",
+        "sha256": "666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 10800
+        }
+      },
+      "bevy": {
+        "caption": "Original death/Continue screen after disabling no-death and receiving further real enemy attacks; field11400. No attacks, health writes or save imports by the harness.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field11400; no desktop input.",
+        "captured_at": "2026-11-11T23:24:31.197348+00:00",
+        "path": "media/c001a5c1aad8eaed0eb5b75444aecec5bb647fc74f52e0c142ce4e6ea5e1026f.png",
+        "sha256": "c001a5c1aad8eaed0eb5b75444aecec5bb647fc74f52e0c142ce4e6ea5e1026f",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+          "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+          "run": "no-death-on-off-observe",
+          "field": 11400
+        }
+      },
+      "observations": [
+        "The native original progresses from empty health and collapse to the original Continue? Yes / No screen. This is visual death-transition evidence, not an inference from a zero health value or a literal Game Over label.",
+        "No continue selection is submitted. The bounded process remains at the original prompt until its watchdog requests shutdown."
+      ],
+      "limits": [
+        "One prototype room and one original option, not a complete port, checked prototype installer, retail backend or campaign/fidelity acceptance.",
+        "The original menu changes its own flag. Diagnostic hooks only observe the actual player, matched damage stack and adjacent original refill site; the harness does not write health or debug flags.",
+        "No-death is not no-damage: actual damage occurs, then the original same-flag positive-health branch refills it. The separate nonpositive-health clamp was not exercised while ON.",
+        "No matched-view or PS2 image-parity claim: combat poses and final death screen differ. Unchanged original PNGs, no crop, resize, normalization or generated illustration.",
+        "Virtual PS2 inputs only. Actual Windows F1/F2 acceptance after the event-edge candidate remains open; no desktop input resumed after owner Escape. Shared-handler invocation is not a physical keypress.",
+        "Experimental prototype VU1 AOT selected; previous strict verifier failure remains. No speedup, audio/device, Save/Load or retail accuracy claim."
+      ]
+    },
     {
       "id": "2026-11-11-prototype-warp-player-displacement",
       "date": "2026-11-11",

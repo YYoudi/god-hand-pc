@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-12",
+  "capture_timezone": "Original capture timestamps are UTC on11November; report date is12November in Europe/Paris.",
+  "scope": "One original prototype no-death ON/damage/refill/OFF/death cycle. Full developer-tools goal remains active.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "module_tooling_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+  "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+  "public_source_base": "fb5b35d2fdc264cf4ec5f8c68fc6ff96f56be8a3",
+  "source_status": "Private generated prototype units inspected and copied for read-only hooks, not clean-room or a source-complete public prototype installer. Exact original public input/shortcut helpers compiled.",
+  "command": "prototype-sdk.exe <unchanged original prototype ELF> <unchanged personal prototype disc> <fresh scratch> sdk",
+  "environment": {
+    "PS2X_PAD1..8": "0",
+    "PS2X_FAKE_PADS": "1",
+    "PS2X_SIO2_PAD_STATUS": "per-port-v1",
+    "PROTOTYPE_WINDOW_SHORTCUTS": "edges-v1",
+    "PROTOTYPE_VU1_AOT": "1",
+    "PROTOTYPE_PROBE_SECONDS": "900",
+    "window": "hidden and muted; inherited PS2X_/GODHAND_/PROTOTYPE_ diagnostics stripped"
+  },
+  "pad_script": "900v:start:60,1200v:cross:30,1700v:circle:12,1900v:right:12,2100v:down:12,2500v:circle:12,2800v:start:60,3100v:l2:60,3110v:r3:10,3350v:down:12,3500v:circle:12,3700v:right:12,4300v:cross:12,4600v:cross:12,4900v:ldown:120,7600v:l2:60,7610v:r3:10,7800v:down:12,8000v:circle:12,8200v:left:12,8400v:cross:12,8700v:cross:12",
+  "result": {
+    "exit": 0,
+    "seconds": 900,
+    "actual_damage_groups": 26,
+    "on_hits": 14,
+    "off_hits": 12,
+    "maximum_hp": 100,
+    "on_cumulative_applied_hp_delta": 125,
+    "actual_refills": 16,
+    "on_floor_clamp_executed": false
+  },
+  "visual": {
+    "death_continue_observed": true,
+    "field": 11400,
+    "not_inferred_from_health_alone": true
+  },
+  "preservation": {
+    "original_objects": 9793,
+    "all_original_objects_unchanged": true,
+    "disc_unchanged": true
+  },
+  "retained_failures": [
+    "Native20 RO damage entry used a ternary in an unparenthesized retained macro, causing invalid-victim refusals. Only the diagnostic call site was corrected; no original runtime/game code behavior was patched.",
+    "First invented-register compile driver removed the shell /c rather than compiler /c and failed. Owned idle shell stopped; separate corrected V2 compiles/runs0 with invented registers and exact retained header.",
+    "Native21 observes real ON damage but the OFF/back phase leaves its parent menu open. A final input is appended after the600s process ends and is NOT delivered. No restored-death claim for that run. Native22 is a new prospective900s run with guest-field-separated back steps, not an extension or passing relabel."
+  ],
+  "captures": {
+    "on": {
+      "caption": "Original DEBUG OPTION: PL NO DEATH ON, selected through the original menu; field3780.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field3780; no desktop input.",
+      "captured_at": "2026-11-11T23:15:54.115582+00:00",
+      "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+      "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 3780
+      }
+    },
+    "off": {
+      "caption": "The same original option after Left clears it: OFF, field8280. The PNG is unchanged; only the option value differs from the ON menu.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field8280; no desktop input.",
+      "captured_at": "2026-11-11T23:20:52.025497+00:00",
+      "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+      "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 8280
+      }
+    },
+    "alive_on": {
+      "caption": "Alive with full health after the observed ON attacks/refills, field7440. This image alone does not prove the damage/refill mechanism.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field7440; no desktop input.",
+      "captured_at": "2026-11-11T23:20:16.224521+00:00",
+      "path": "media/ef9a94727d23b942d76fbd8b5b1c3b899f8fec1f3830f20385974f51920afa4e.png",
+      "sha256": "ef9a94727d23b942d76fbd8b5b1c3b899f8fec1f3830f20385974f51920afa4e",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 7440
+      }
+    },
+    "damage_off": {
+      "caption": "After OFF and closing both menu levels, normal gameplay has reduced health, field9720. Different actor/enemy poses: not a matched-camera fidelity pair.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field9720; no desktop input.",
+      "captured_at": "2026-11-11T23:22:29.558146+00:00",
+      "path": "media/ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c.png",
+      "sha256": "ae4239de626c663580befe14316df3a25f3af773ec534cbd093d8ad71c75026c",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 9720
+      }
+    },
+    "collapse_off": {
+      "caption": "Empty health bar and Gene collapsing after the actual OFF damage reaches zero; field10800. No health/flag writes.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field10800; no desktop input.",
+      "captured_at": "2026-11-11T23:23:51.660693+00:00",
+      "path": "media/666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12.png",
+      "sha256": "666dcf145cb348aa842c2f1e6ab65f2b04c6fb7a690d1c66e135a721d613fe12",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 10800
+      }
+    },
+    "death_off": {
+      "caption": "Original death/Continue screen after disabling no-death and receiving further real enemy attacks; field11400. No attacks, health writes or save imports by the harness.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native22; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Executable 7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac; linked input snapshot a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d. Fresh no-death-on-off-observe900s, field11400; no desktop input.",
+      "captured_at": "2026-11-11T23:24:31.197348+00:00",
+      "path": "media/c001a5c1aad8eaed0eb5b75444aecec5bb647fc74f52e0c142ce4e6ea5e1026f.png",
+      "sha256": "c001a5c1aad8eaed0eb5b75444aecec5bb647fc74f52e0c142ce4e6ea5e1026f",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7b5d91cb475b98ea44e6e3919dd8f62497f2a0f44c958b16d5f1645b693478ac",
+        "source_input_snapshot_sha256": "a9a13cd2a3bea9e740a47c80f367f0ba8a69b8e456b148fc6a6449919738500d",
+        "run": "no-death-on-off-observe",
+        "field": 11400
+      }
+    }
+  },
+  "limits": [
+    "One prototype room and one original option, not a complete port, checked prototype installer, retail backend or campaign/fidelity acceptance.",
+    "The original menu changes its own flag. Diagnostic hooks only observe the actual player, matched damage stack and adjacent original refill site; the harness does not write health or debug flags.",
+    "No-death is not no-damage: actual damage occurs, then the original same-flag positive-health branch refills it. The separate nonpositive-health clamp was not exercised while ON.",
+    "No matched-view or PS2 image-parity claim: combat poses and final death screen differ. Unchanged original PNGs, no crop, resize, normalization or generated illustration.",
+    "Virtual PS2 inputs only. Actual Windows F1/F2 acceptance after the event-edge candidate remains open; no desktop input resumed after owner Escape. Shared-handler invocation is not a physical keypress.",
+    "Experimental prototype VU1 AOT selected; previous strict verifier failure remains. No speedup, audio/device, Save/Load or retail accuracy claim."
+  ],
+  "rights": "Original continuation tooling GPL-3.0-only; game imagery neither GPL nor MIT. Owner publication request is not rights-holder permission.",
+  "selected_damage_path_coverage": "Counters name selected damage-function calls, not unique enemy attacks or all HP writers. Sixteen positive-health refills include events not paired to the fourteen selected ON calls; gaps between observed OFF health values also remain. No complete damage-path coverage is claimed."
+}

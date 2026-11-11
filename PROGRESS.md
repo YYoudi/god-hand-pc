@@ -1,5 +1,11 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [original no-death](PROTOTYPE_NO_DEATH.md) now has real
+matched damage/refill and same-process original OFF/death/Continue evidence.
+It is not no-damage, every HP path, full menu coverage or a checked public
+prototype workflow. Actual F1/F2 short-key/focus ownership still requires native
+acceptance; no desktop input resumed after owner Escape. Full goal remains active.
+
 Owner correction, 11 November: do not send screenshots of this journal in chat.
 Visual evidence should show the actual build, exact revision/executable, action
 and before/after/restore results. Publish selected original build captures in the

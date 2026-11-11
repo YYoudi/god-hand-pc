@@ -1,5 +1,8 @@
 # Prototype debug tools: investigation and PC integration
 
+12 November follow-up: [original no-death ON/OFF/death control](PROTOTYPE_NO_DEATH.md).
+The dated results below are preserved; full menu/key/workflow acceptance stays open.
+
 11 November 2026. This is an incomplete research milestone, not a debug-menu
 release. The retail PC build and its default launch policy are unchanged.
 

@@ -1,5 +1,30 @@
 # God Hand PC continuation - agent instructions
 
+## Real no-death effect and OFF/death control — 2026-11-12
+
+Read PROTOTYPE_NO_DEATH.md and canonical checkpoint. Native22 exe7b5d91cb
+compiles/links0, preserves9793original objects, fresh hidden/muted900s exits0.
+Original RoomJump1/00/Point0, original optionON, thenOFF and both menu exits:
+14selected matched damage calls apply125HP vs100max;
+16original positive-health refill-site events restore max. OFF has
+12selected calls, HP0, visible Gene collapse and Continue? Yes/No.
+No health/flag/register writes, attacks or level-beating loop. It is NOT no-damage;
+separate lethal-floor branch not exercised whileON. Selected damage function is
+NOT all HP writers. Previous floor-only hypothesis incomplete; native20 macro
+ternary observer rejected and corrected locally with actual-header invented test.
+Retain failed shell /c driver and later passingV2 separately. Native21 OFF/back
+left parent open; last appendedCross occurred AFTER600s exit and was NOT delivered.
+Native22 is new prospective900s proof, not passing relabel or extendingoldrun.
+Before manual diagnostic requests, verify actual live handle/executable/creation;
+never treat stalePID/log/capture as liveness or submitted action as delivered.
+No desktop input after ownerEscape. Actual F1/F2-key/focus ownership, checked
+source-complete prototype workflow, other options/rooms and retail backend stay
+open. Shared in-scene F2-handler request is not a Windowskeypress. StrictVU1
+failure remains; no performance/fidelity/audio/save/campaign claim. Public only
+selected unchanged native originals and aggregates; generated source/maps/logs
+stay private. Full goal ACTIVE; no Rust/delegation/retail address transplant.
+Earlier dated source-only/not-built/option-only notes below are historical.
+
 ## Original Warp effect / next real damage boundary — 2026-11-11
 
 Read PROTOTYPE_WARP.md, WINDOW_SHORTCUTS.md and canonical checkpoint. Native18

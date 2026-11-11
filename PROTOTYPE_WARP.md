@@ -1,5 +1,8 @@
 # Original Player Warp: actor movement and return to the game
 
+12 November follow-up: [original no-death ON/OFF/death control](PROTOTYPE_NO_DEATH.md).
+The dated results below are preserved; full menu/key/workflow acceptance stays open.
+
 11 November 2026. Follow-up to [the original prototype menu](SIO2_PAD_STATUS.md).
 The full developer-tools goal remains active. This is one scoped prototype
 result, not a retail feature, checked prototype installer or complete port.

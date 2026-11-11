@@ -48,7 +48,10 @@ Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
 The original menu opens/navigates/closes, and [Player Warp](PROTOTYPE_WARP.md)
 now moves the actual character with a no-stick control and normal camera/HUD
 return. This is one private prototype room, not a public prototype installer or
-retail debug backend. No-death survival and restored death remain unverified.
+retail debug backend. The later [original no-death control](PROTOTYPE_NO_DEATH.md)
+observes real damage/refill while ON, then accumulated damage, collapse and the
+Continue prompt after OFF. This is one prototype option/room, not no-damage or
+complete menu coverage.
 [Short F1/F2 events](WINDOW_SHORTCUTS.md) have an experimental model, but actual
 key acceptance is still open. The full goal remains active. Selected unchanged
 native originals and exact hashes are on the journal, not screenshots of the site.
