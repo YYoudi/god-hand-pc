@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-11",
+  "scope": "Original Player Warp displacement and normal-camera/HUD restoration in one prototype room, not full goal completion.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "module_tooling_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+  "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+  "public_source_base": "4de3a13018c83c6362eb1eec4326c37ac44b4b1b",
+  "source_status": "Private prototype translations and diagnostic generic overrides; exact original public helpers compiled. No source-complete public prototype installer.",
+  "commands": [
+    "prototype-sdk.exe <unchanged original prototype ELF> <unchanged personal prototype disc> <fresh scratch> sdk",
+    "PS2X_PAD1..8=0; PS2X_FAKE_PADS=1; PS2X_SIO2_PAD_STATUS=per-port-v1; PROTOTYPE_WINDOW_SHORTCUTS=edges-v1; PROTOTYPE_VU1_AOT=1; hidden/muted240s. Inherited diagnostics stripped.",
+    "Both: original RoomJump/intro skip/menu/Warp entry and Start4500/Cross4800 exits. MOVE adds4100v:lright:60; IDLE does not. Full field script and exact selected originals recorded in comparison scenarios."
+  ],
+  "same_before_actor_bits": true,
+  "world_displacement_move_vs_idle": [
+    3.1260557174682617,
+    0.0,
+    1.5103721618652344
+  ],
+  "world_displacement_norm": 3.4718076582745003,
+  "later_displacement_move_vs_idle": [
+    3.126056671142578,
+    0.0,
+    1.5103759765625
+  ],
+  "cases": {
+    "move": {
+      "exit": 0,
+      "camera_restored": true,
+      "actual_actor_target_matches": 12,
+      "selected_target_samples": 12,
+      "actor_unchanged_during_exit": true,
+      "delta_before_to_exit": [
+        3.241786003112793,
+        0.0,
+        1.4773330688476562
+      ]
+    },
+    "idle": {
+      "exit": 0,
+      "camera_restored": true,
+      "actual_actor_target_matches": 12,
+      "selected_target_samples": 12,
+      "actor_unchanged_during_exit": true,
+      "delta_before_to_exit": [
+        0.11573028564453125,
+        0.0,
+        -0.033039093017578125
+      ]
+    }
+  },
+  "retained_rejected_hypotheses": [
+    "A manual signed-immediate error read the wrong fixed address in native16. Those reads were never game writes or valid player proof. Corrected from original instruction words.",
+    "Original stored names identify the active-work pointer as CAMERA work. Earlier camera position restoration was not actor teleport/cancel evidence. The actual player vector is used here.",
+    "A native constructor call can yield; its immediate C++ return did not prove guest constructor completion. New copied-unit read-only hooks observe actual logical tails, with unchanged original instruction comments/order.",
+    "Cross and Start both leave Warp to its parent; another Cross closes that menu. Restoring camera work does not undo the relocated player."
+  ],
+  "captures": {
+    "before": {
+      "caption": "Original room/HUD before entering Player Warp; field3000.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field3000. No desktop input.",
+      "captured_at": "2026-11-11T22:24:20.743330+00:00",
+      "path": "media/7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb.png",
+      "sha256": "7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+        "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+        "run": "warp-player-cases-move",
+        "field": 3000
+      }
+    },
+    "during": {
+      "caption": "Original Player Warp after the bounded left-stick request, field4380. Temporary camera active; no normal HUD.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field4380. No desktop input.",
+      "captured_at": "2026-11-11T22:25:37.421146+00:00",
+      "path": "media/2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737.png",
+      "sha256": "2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+        "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+        "run": "warp-player-cases-move",
+        "field": 4380
+      }
+    },
+    "after": {
+      "caption": "After Start leaves Warp and Cross closes its parent: normal camera/HUD, player at displaced world position, field5100. Not an undo.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field5100. No desktop input.",
+      "captured_at": "2026-11-11T22:26:18.939201+00:00",
+      "path": "media/2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35.png",
+      "sha256": "2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+        "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+        "run": "warp-player-cases-move",
+        "field": 5100
+      }
+    },
+    "control": {
+      "caption": "Same-executable no-stick Warp control after the same exits, field5100. Entering Warp is itself not a mathematical no-op.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-idle, field5100. No desktop input.",
+      "captured_at": "2026-11-11T22:30:19.380697+00:00",
+      "path": "media/0068e7db18ce9c751ee95884fdcc44f1996798d2d52da06b0bd2886cd628bc54.png",
+      "sha256": "0068e7db18ce9c751ee95884fdcc44f1996798d2d52da06b0bd2886cd628bc54",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+        "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+        "run": "warp-player-cases-idle",
+        "field": 5100
+      }
+    }
+  },
+  "limits": [
+    "Private prototype native research, not a checked prototype installer, retail backend, complete port or PS2 fidelity certificate. Generated game source and raw maps stay private.",
+    "Virtual PS2 input only; owner stopped desktop control. Actual F1/F2-key acceptance after the experimental edge change remains unverified. Diagnostic F2 handler/chord is not a Windows keypress.",
+    "Both cases enter Warp and can slightly alter placement. The control is retained; exiting restores normal camera/input mode, not the old actor position. No undo feature is claimed.",
+    "Different viewpoints/actor poses are expected; no matched-camera fidelity or image-parity claim. Original PNGs unchanged; no crop, resize or normalization.",
+    "Earlier free-warp output includes a detached cloak-like artifact. It is retained, not declared a clean debug renderer. Broader room/invalid-state coverage, no-death survival/restored death, input/audio/save/campaign and performance gates remain open.",
+    "Strict VU1 comparison previously fails; the narrower observable result is not strict state equivalence. These runs select experimental AOT without a verifier, not an accuracy/performance promotion."
+  ],
+  "rights": "Continuation source GPL-3.0-only. Game imagery neither GPL nor MIT; owner publication request is not rights-holder permission.",
+  "synthetic_validation": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 262,
+    "skipped": 3,
+    "exit": 0,
+    "seconds": 78.705,
+    "scope": "Original invented fixtures; no game pixels/outputs used as synthetic tests or OS-key acceptance."
+  },
+  "preservation": {
+    "retained_file_hashes": 31,
+    "all_match": true,
+    "paused_rust_wip_hashes": 4,
+    "all_rust_match": true,
+    "original_objects_preserved": 9793
+  }
+}

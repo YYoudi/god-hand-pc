@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Original prototype debug menu opens, navigates and closes; Room Jump renders its real destination scene. Full action/retail release still unverified.",
-  "next": "Verify in-scene debug access, Player Warp and no-death effects/reversal, actual F1/F2 key events and a checked prototype workflow. Preserve retail defaults and every failed control.",
+  "status": "Original prototype Player Warp moves the actual character and restores the normal camera/HUD. No-death survival and real F1/F2-key acceptance remain open.",
+  "next": "Trace real damage and the original no-death flag/health boundary; prove survival and restored death. Validate actual F1/F2 short keys only after renewed desktop-test intent. Keep prototype/retail separate and full goal active.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -116,9 +116,9 @@
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
-          "status": "planned",
+          "status": "in_progress",
           "area": "validation",
-          "acceptance": "After the first action, investigate room/stage jump, player warp and no-death one by one. Prove valid/invalid destinations, disable/restore and appropriate same-view native original captures; distinguish room IDs, flag semantics and state/saves per build. Other display/camera/enemy options need their own tests. No automated level-completion loops."
+          "acceptance": "Original Player Warp moves actual Getplayer vector in one prototype room; same-executable move/idle controls, true lifecycle tails, normal camera/HUD return and selected originals observed. No undo or wider invalid-state/retail acceptance. No-death OFF/ON/OFF only; lethal-hit survival/restored death and real F1/F2 short-key acceptance remain open."
         },
         {
           "id": "RM01",
@@ -331,6 +331,50 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-11",
+      "kind": "progress",
+      "title": "Original Player Warp: movement and return to the game",
+      "summary": "The original Warp moves the actual character. A same-executable no-stick control separates actor displacement from temporary-camera motion, and normal camera/HUD return after leaving the mode.",
+      "changes": [
+        "Added read-only actual-player and true lifecycle-tail observations. Corrected and retained earlier camera-domain, signed-address and synchronous-return mistakes rather than claiming success from them.",
+        "Reproduced two fresh240s move/idle cases. Actor vectors start identical, match the in-Warp target in24selected samples, and differ by about3.47world units after the controlled stick request. The difference persists in ordinary gameplay.",
+        "Retained the visible keyboard failure: GLFW receives a short F2 tap but legacy level polling misses it. An original event-latch component passes invented-input tests and compiles privately; real-key acceptance remains open after the owner stopped desktop control."
+      ],
+      "validation": "Native18 compile/link0; all9793original objects preserved. Both240s runs stop0. Actual player/cached/target equality12/12per case; normal camera identity restored and native HUD visible after close. The no-stick control itself slightly shifts placement. Original before/during/after/control PNGs below, exact build/source hashes and limits in evidence. Full invented-input suite:262tests, exit0, three Windows symlink skips.31retained file hashes and4paused Rust WIP hashes agree.",
+      "limits": "One prototype room and one bounded move, not broad Warp/invalid-state/retail fidelity. Exit restores camera/mode, not old actor position; no undo. No-death option OFF/ON/OFF is not lethal-hit survival. Strict VU1 failure remains visible; no speedup, hardware input/audio/save or campaign claim. Actual desktop key test is still unverified after the fix; no checked prototype installer yet.",
+      "evidence_comparisons": [
+        "2026-11-11-prototype-warp-player-displacement",
+        "2026-11-11-prototype-warp-normal-camera-restore",
+        "2026-11-11-prototype-warp-idle-control"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_WARP.md",
+        "label": "Original Warp effect, control and remaining gates"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "progress",
+      "title": "In-scene debug access and an original option round trip",
+      "summary": "Room Jump Point1 and the original Start skip reach the room/HUD. The original chord opens debug from there; PL NO DEATH changes OFF → ON → OFF. Survival behavior is not tested yet.",
+      "changes": [
+        "Generated five captured prototype VU1 programs privately, behind an explicit diagnostic option; no retail address reuse or default change.",
+        "Observed the original in-scene menu, entered DEBUG OPTION and toggled/restored its first option through ordinary game input.",
+        "Tested actual Windows F1/F2 input separately. It did not reach the expected host handlers, even after a focus/click-controlled retry; this remains an explicit failed gate."
+      ],
+      "validation": "Native13 builds0 and each separate180s strict/observable/UI probe stops0 via watchdog. Strict verifier reports291501 mismatches/294912runs at its last full summary; observable mode reports0/114688 with its exclusions. These are not interchangeable results or FPS. Final partial verifier batch is not summarized. Original native captures show actual room/HUD, menu and option OFF/ON/OFF.",
+      "limits": "No lethal-hit survival, no-death-versus-no-damage, restored death, Player Warp, actual F1/F2 usability, combat/audio/save/campaign or usable-performance acceptance. No public prototype installer/retail backend. Strict failure and ineffective keyboard trial retained; full goal active.",
+      "evidence_comparisons": [
+        "2026-11-11-prototype-in-scene-menu",
+        "2026-11-11-prototype-no-death-option-on",
+        "2026-11-11-prototype-no-death-option-restore"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SIO2_PAD_STATUS.md",
+        "label": "Native follow-up and explicit remaining gates"
+      }
+    },
     {
       "date": "2026-11-11",
       "kind": "progress",
@@ -952,6 +996,358 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-11-prototype-warp-player-displacement",
+      "date": "2026-11-11",
+      "title": "Player Warp moves the real character, not only the camera",
+      "feature": "DT03",
+      "scenario": "Same native18 executable, fresh move and idle240s runs. Original RoomJump1/00/Point1; Start2800 skips intro; chord3100/3110 opens menu; Down3350/Right3500/Circle3700 enters Player Warp. Only move adds left-stick right4100..4159. Start4500 leaves Warp, Cross4800 closes parent. Hardware pad bindings all disabled; no game position/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before Player Warp",
+        "bevy": "During original Player Warp"
+      },
+      "reference": {
+        "caption": "Original room/HUD before entering Player Warp; field3000.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field3000. No desktop input.",
+        "captured_at": "2026-11-11T22:24:20.743330+00:00",
+        "path": "media/7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb.png",
+        "sha256": "7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-move",
+          "field": 3000
+        }
+      },
+      "bevy": {
+        "caption": "Original Player Warp after the bounded left-stick request, field4380. Temporary camera active; no normal HUD.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field4380. No desktop input.",
+        "captured_at": "2026-11-11T22:25:37.421146+00:00",
+        "path": "media/2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737.png",
+        "sha256": "2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-move",
+          "field": 4380
+        }
+      },
+      "observations": [
+        "Read-only observations use the original Getplayer object/vector and its cached position, not the separately named camera work pointer.",
+        "Both cases start with byte-identical actor coordinates. In each run, all12selected in-Warp samples have actor vector, cached vector and projected Warp target equal.",
+        "The move case exits about3.47 original world units from the no-stick control. World units are not assumed to be metres."
+      ],
+      "limits": [
+        "Private prototype native research, not a checked prototype installer, retail backend, complete port or PS2 fidelity certificate. Generated game source and raw maps stay private.",
+        "Virtual PS2 input only; owner stopped desktop control. Actual F1/F2-key acceptance after the experimental edge change remains unverified. Diagnostic F2 handler/chord is not a Windows keypress.",
+        "Both cases enter Warp and can slightly alter placement. The control is retained; exiting restores normal camera/input mode, not the old actor position. No undo feature is claimed.",
+        "Different viewpoints/actor poses are expected; no matched-camera fidelity or image-parity claim. Original PNGs unchanged; no crop, resize or normalization.",
+        "Earlier free-warp output includes a detached cloak-like artifact. It is retained, not declared a clean debug renderer. Broader room/invalid-state coverage, no-death survival/restored death, input/audio/save/campaign and performance gates remain open.",
+        "Strict VU1 comparison previously fails; the narrower observable result is not strict state equivalence. These runs select experimental AOT without a verifier, not an accuracy/performance promotion."
+      ]
+    },
+    {
+      "id": "2026-11-11-prototype-warp-normal-camera-restore",
+      "date": "2026-11-11",
+      "title": "Leaving Warp restores the normal camera and HUD",
+      "feature": "DT03",
+      "scenario": "Same native18 executable, fresh move and idle240s runs. Original RoomJump1/00/Point1; Start2800 skips intro; chord3100/3110 opens menu; Down3350/Right3500/Circle3700 enters Player Warp. Only move adds left-stick right4100..4159. Start4500 leaves Warp, Cross4800 closes parent. Hardware pad bindings all disabled; no game position/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Temporary Warp camera",
+        "bevy": "Normal camera/HUD restored"
+      },
+      "reference": {
+        "caption": "Original Player Warp after the bounded left-stick request, field4380. Temporary camera active; no normal HUD.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field4380. No desktop input.",
+        "captured_at": "2026-11-11T22:25:37.421146+00:00",
+        "path": "media/2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737.png",
+        "sha256": "2ad73058eaf45c9a9c8c46472ae59e13835c572351f1ecefb7f89854cb614737",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-move",
+          "field": 4380
+        }
+      },
+      "bevy": {
+        "caption": "After Start leaves Warp and Cross closes its parent: normal camera/HUD, player at displaced world position, field5100. Not an undo.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field5100. No desktop input.",
+        "captured_at": "2026-11-11T22:26:18.939201+00:00",
+        "path": "media/2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35.png",
+        "sha256": "2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-move",
+          "field": 5100
+        }
+      },
+      "observations": [
+        "Actual lifecycle-tail observations show temporary camera activation and original manager restoration. Ordinary guest calls can yield; a wrapper return is not assumed to be logical constructor completion.",
+        "The actual player vector remains displaced after mode exit and parent close. The later original normal game/HUD capture corroborates this; camera restoration is not actor-position undo."
+      ],
+      "limits": [
+        "Private prototype native research, not a checked prototype installer, retail backend, complete port or PS2 fidelity certificate. Generated game source and raw maps stay private.",
+        "Virtual PS2 input only; owner stopped desktop control. Actual F1/F2-key acceptance after the experimental edge change remains unverified. Diagnostic F2 handler/chord is not a Windows keypress.",
+        "Both cases enter Warp and can slightly alter placement. The control is retained; exiting restores normal camera/input mode, not the old actor position. No undo feature is claimed.",
+        "Different viewpoints/actor poses are expected; no matched-camera fidelity or image-parity claim. Original PNGs unchanged; no crop, resize or normalization.",
+        "Earlier free-warp output includes a detached cloak-like artifact. It is retained, not declared a clean debug renderer. Broader room/invalid-state coverage, no-death survival/restored death, input/audio/save/campaign and performance gates remain open.",
+        "Strict VU1 comparison previously fails; the narrower observable result is not strict state equivalence. These runs select experimental AOT without a verifier, not an accuracy/performance promotion."
+      ]
+    },
+    {
+      "id": "2026-11-11-prototype-warp-idle-control",
+      "date": "2026-11-11",
+      "title": "The same exits without the stick movement give a different destination",
+      "feature": "DT03",
+      "scenario": "Same native18 executable, fresh move and idle240s runs. Original RoomJump1/00/Point1; Start2800 skips intro; chord3100/3110 opens menu; Down3350/Right3500/Circle3700 enters Player Warp. Only move adds left-stick right4100..4159. Start4500 leaves Warp, Cross4800 closes parent. Hardware pad bindings all disabled; no game position/flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "No-stick Warp control",
+        "bevy": "Bounded stick movement"
+      },
+      "reference": {
+        "caption": "Same-executable no-stick Warp control after the same exits, field5100. Entering Warp is itself not a mathematical no-op.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-idle, field5100. No desktop input.",
+        "captured_at": "2026-11-11T22:30:19.380697+00:00",
+        "path": "media/0068e7db18ce9c751ee95884fdcc44f1996798d2d52da06b0bd2886cd628bc54.png",
+        "sha256": "0068e7db18ce9c751ee95884fdcc44f1996798d2d52da06b0bd2886cd628bc54",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-idle",
+          "field": 5100
+        }
+      },
+      "bevy": {
+        "caption": "After Start leaves Warp and Cross closes its parent: normal camera/HUD, player at displaced world position, field5100. Not an undo.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native18; frozen LasVola1646d885, MSVC14.44.35207, explicit prototype AOT/shortcut candidate. Exe SHA-256 947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2; linked input snapshot 2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077. Run: warp-player-cases-move, field5100. No desktop input.",
+        "captured_at": "2026-11-11T22:26:18.939201+00:00",
+        "path": "media/2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35.png",
+        "sha256": "2dc4194987607ea58334cfdcd70b60b34fc667e5c4a72ace86e6405e0b7d2e35",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "947437e66ed077a6b4906e2a898dbc507f00eeba383f94e51de7010c702de1b2",
+          "source_input_snapshot_sha256": "2b8f1ff6017e63cdb2380b85205e59d08de7558b1b60d62bc1cf1d5b1779d077",
+          "run": "warp-player-cases-move",
+          "field": 5100
+        }
+      },
+      "observations": [
+        "Two fresh same-executable240s cases stop0 via the watchdog. Only the movement script step differs; no original source/position/flag edits between cases.",
+        "The difference persists after returning to the ordinary game. The no-stick case itself shifts placement slightly, which is explicitly retained rather than presented as an exact no-op."
+      ],
+      "limits": [
+        "Private prototype native research, not a checked prototype installer, retail backend, complete port or PS2 fidelity certificate. Generated game source and raw maps stay private.",
+        "Virtual PS2 input only; owner stopped desktop control. Actual F1/F2-key acceptance after the experimental edge change remains unverified. Diagnostic F2 handler/chord is not a Windows keypress.",
+        "Both cases enter Warp and can slightly alter placement. The control is retained; exiting restores normal camera/input mode, not the old actor position. No undo feature is claimed.",
+        "Different viewpoints/actor poses are expected; no matched-camera fidelity or image-parity claim. Original PNGs unchanged; no crop, resize or normalization.",
+        "Earlier free-warp output includes a detached cloak-like artifact. It is retained, not declared a clean debug renderer. Broader room/invalid-state coverage, no-death survival/restored death, input/audio/save/campaign and performance gates remain open.",
+        "Strict VU1 comparison previously fails; the narrower observable result is not strict state equivalence. These runs select experimental AOT without a verifier, not an accuracy/performance promotion."
+      ]
+    },
+    {
+      "id": "2026-11-11-prototype-in-scene-menu",
+      "date": "2026-11-11",
+      "title": "The original debug menu also opens from the loaded scene",
+      "feature": "DT03",
+      "scenario": "Same native13 executable / clean virtual-input boot. Original Room Jump Stage1/Room00/Point1 selected; Circle2500 confirms; Start2800 skips the original introduction; L2/R3 at3100/3110 opens debug. Recorded manual input FIFO then enters DEBUG OPTION, Right enables and Left restores its first option. Hardware pad bindings all disabled; hidden/muted180s; no guest flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original room / HUD",
+        "bevy": "Original debug menu"
+      },
+      "reference": {
+        "caption": "Actual prototype room and HUD after original Start cutscene skip, field3000. No movement/combat or general fidelity claim.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field3000.",
+        "captured_at": "2026-11-11T21:46:42.113234+00:00",
+        "path": "media/7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb.png",
+        "sha256": "7e789a07c1dfd82ba95e5da35c1c4b2bc5663d7908a43049ca5cf45069c839fb",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 3000
+        }
+      },
+      "bevy": {
+        "caption": "Original debug menu opened from that loaded scene by the original L2/R3 chord, field3120. Not a host F2-key test.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field3120.",
+        "captured_at": "2026-11-11T21:46:57.223408+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 3120
+        }
+      },
+      "observations": [
+        "Start skips the original introduction and unloads Event; the actual room, Gene and HUD render.",
+        "The original L2/R3 chord opens the real menu from this scene. It is not an actual F2 keyboard test."
+      ],
+      "limits": [
+        "Private prototype-native experiment, not retail functionality or a downloadable prototype workflow. No game source, assets, maps, dumps or binary published.",
+        "Actual game menu/state images, not a host mockup. Different fields/actions; no pixel-fidelity or same-camera comparison.",
+        "No-death versus no-damage semantics, lethal-hit survival and restored death remain untested. Player Warp and combat/input/audio/save/campaign gates remain open.",
+        "Strict VU1 comparison fails; the observable mode excludes internal readiness bookkeeping and statically-unread final status. Not bit-exact PS2 state, measured speedup or universal ISA validation.",
+        "Separate visible Windows UI test did not make F1/F2/F3 react, including one focus/click-controlled F2 retry. No F2 request reached the handler. Cause unresolved; do not call host keys working."
+      ]
+    },
+    {
+      "id": "2026-11-11-prototype-no-death-option-on",
+      "date": "2026-11-11",
+      "title": "The original no-death option can be toggled",
+      "feature": "DT03",
+      "scenario": "Same native13 executable / clean virtual-input boot. Original Room Jump Stage1/Room00/Point1 selected; Circle2500 confirms; Start2800 skips the original introduction; L2/R3 at3100/3110 opens debug. Recorded manual input FIFO then enters DEBUG OPTION, Right enables and Left restores its first option. Hardware pad bindings all disabled; hidden/muted180s; no guest flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option OFF",
+        "bevy": "Original option ON"
+      },
+      "reference": {
+        "caption": "Original DEBUG OPTION: PL NO DEATH OFF, field4020. Before the requested toggle.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field4020.",
+        "captured_at": "2026-11-11T21:47:33.599663+00:00",
+        "path": "media/122f5c90df8ad40780e1e60d8d8e3da2b675477f2f06bcbdf501ac164db6fb75.png",
+        "sha256": "122f5c90df8ad40780e1e60d8d8e3da2b675477f2f06bcbdf501ac164db6fb75",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 4020
+        }
+      },
+      "bevy": {
+        "caption": "Original option shows PL NO DEATH ON after Right, field5400. This is menu-state evidence, not a lethal-hit survival test.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field5400.",
+        "captured_at": "2026-11-11T21:47:56.651394+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 5400
+        }
+      },
+      "observations": [
+        "Actual original DEBUG OPTION is entered with Down/Circle. Right changes its first option to ON.",
+        "Only menu-state change is established; no damage/death behavior is certified."
+      ],
+      "limits": [
+        "Private prototype-native experiment, not retail functionality or a downloadable prototype workflow. No game source, assets, maps, dumps or binary published.",
+        "Actual game menu/state images, not a host mockup. Different fields/actions; no pixel-fidelity or same-camera comparison.",
+        "No-death versus no-damage semantics, lethal-hit survival and restored death remain untested. Player Warp and combat/input/audio/save/campaign gates remain open.",
+        "Strict VU1 comparison fails; the observable mode excludes internal readiness bookkeeping and statically-unread final status. Not bit-exact PS2 state, measured speedup or universal ISA validation.",
+        "Separate visible Windows UI test did not make F1/F2/F3 react, including one focus/click-controlled F2 retry. No F2 request reached the handler. Cause unresolved; do not call host keys working."
+      ]
+    },
+    {
+      "id": "2026-11-11-prototype-no-death-option-restore",
+      "date": "2026-11-11",
+      "title": "The original option returns to OFF",
+      "feature": "DT03",
+      "scenario": "Same native13 executable / clean virtual-input boot. Original Room Jump Stage1/Room00/Point1 selected; Circle2500 confirms; Start2800 skips the original introduction; L2/R3 at3100/3110 opens debug. Recorded manual input FIFO then enters DEBUG OPTION, Right enables and Left restores its first option. Hardware pad bindings all disabled; hidden/muted180s; no guest flag writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option ON",
+        "bevy": "Original option OFF restored"
+      },
+      "reference": {
+        "caption": "Original option shows PL NO DEATH ON after Right, field5400. This is menu-state evidence, not a lethal-hit survival test.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field5400.",
+        "captured_at": "2026-11-11T21:47:56.651394+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 5400
+        }
+      },
+      "bevy": {
+        "caption": "Original option restored to PL NO DEATH OFF after Left, field6300. Not proof of restored death behavior.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private native13 / frozen LasVola1646d885. Exe SHA-256 747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b; linked input snapshot e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb. Explicit five prototype VU1 AOT programs; observable verifier, not strict state equivalence. point1-vu1-observable-skip-on, field6300.",
+        "captured_at": "2026-11-11T21:48:11.666520+00:00",
+        "path": "media/122f5c90df8ad40780e1e60d8d8e3da2b675477f2f06bcbdf501ac164db6fb75.png",
+        "sha256": "122f5c90df8ad40780e1e60d8d8e3da2b675477f2f06bcbdf501ac164db6fb75",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "747d0b893bdba1373a77c02a233c7ad022af1d8a1845d44e771ba873fcc8a75b",
+          "source_input_snapshot_sha256": "e1f3cd93e2730e8aeb2dd734d60cb63d5aec051d28b9fe1ba70417c4c0fb7dcb",
+          "run": "point1-vu1-observable-skip-on",
+          "field": 6300
+        }
+      },
+      "observations": [
+        "Left restores the displayed original option to OFF before the watchdog ends.",
+        "This does not stand in for a lethal-hit/restored-death control or a completed developer-tools goal."
+      ],
+      "limits": [
+        "Private prototype-native experiment, not retail functionality or a downloadable prototype workflow. No game source, assets, maps, dumps or binary published.",
+        "Actual game menu/state images, not a host mockup. Different fields/actions; no pixel-fidelity or same-camera comparison.",
+        "No-death versus no-damage semantics, lethal-hit survival and restored death remain untested. Player Warp and combat/input/audio/save/campaign gates remain open.",
+        "Strict VU1 comparison fails; the observable mode excludes internal readiness bookkeeping and statically-unread final status. Not bit-exact PS2 state, measured speedup or universal ISA validation.",
+        "Separate visible Windows UI test did not make F1/F2/F3 react, including one focus/click-controlled F2 retry. No F2 request reached the handler. Cause unresolved; do not call host keys working."
+      ]
+    },
     {
       "id": "2026-11-11-prototype-original-menu-open",
       "date": "2026-11-11",

@@ -1,5 +1,47 @@
 # God Hand PC continuation - agent instructions
 
+## Original Warp effect / next real damage boundary — 2026-11-11
+
+Read PROTOTYPE_WARP.md, WINDOW_SHORTCUTS.md and canonical checkpoint. Native18
+exe947437e6 same-binary fresh MOVE/IDLE240s both0. Actual Getplayer coordinates
+start identical; actor/cached/Warp target12/12each, extra displacement3.47180766
+world units vs no-stick persists after normal-camera/HUD restoration. Entering
+Warp itself slightly changes placement: no undo/cancel or broader room claim.
+Preserve corrected wrong signed-address reads, camera-vs-player attribution and
+synchronous-wrapper-return failure; native tails are observed, no guest writes.
+Original named camera pointer is NOT player. All original9793objects retained.
+No desktop input after owner physical Escape. Native14 receives GLFW F2 press+
+release but no Raylib edge/handler; short-poll explanation consistent with pinned
+Raylib source, not full poll trace. Original PressEdges synthetic test passes,
+compiled explicit prototype edges-v1 retains F1 owner, callback chain and focus
+loss; real-key test remains open. F3 untouched. Do not fake keyboard success.
+No-death option OFF/ON/OFF is not survival. Private static damage path has both
+an independent near-death safeguard and the no-death clamp: one surviving hit
+cannot prove it. Next read-only actual damage/flag/HP trace is prepared privately;
+failed19 label assumptions preserved, corrected20 not yet built/run. No guessed
+flag/health writes, direct UI-thread guest calls or autonomous fighting. Publish
+reviewed native originals/provenance, keep game source/raw maps private. Full goal
+ACTIVE; no Rust/delegation/retail promotion or claim that an installer is complete.
+
+## In-scene prototype follow-up and failed host keys — 2026-11-11
+
+Read SIO2_PAD_STATUS.md and prototype-in-scene-menu evidence. Native13 exe747d0b89
+adds five freshly captured prototype VU1 images behind explicit AOT1 only. Actual
+RoomJump1/00/Point1 +Start2800 skips intro/unloads Event; room/Gene/HUD render.
+Original chord3100/3110 opens in-scene menu. Actual DEBUG OPTION PL NO DEATH goes
+OFF4020 ->ON5400 ->OFF6300 using original Right/Left. This is OPTION STATE, not
+lethal-hit survival, restored death, no-damage or PlayerWarp effect acceptance.
+Strict VU1 FAILS291501/294912 last summary; first50details mention ready, later
+details capped. Observable control0/114688 excludes ready/unread-final-status,
+final partial batch unsummarized. No strict-equivalence/FPS/fidelity promotion.
+Visible actual Windows F1/F2, focus/click+F2 retry and F3 show no expected response
+or handler logs. Host key gate FAILS; no F1/F2 usability claim. Source has F1path,
+but static presence is not input-delivery proof. Next non-consuming GLFW/Raylib
+focus/key observer candidate must preserve original callback; do not inject game
+flags, fake ACKs, remap unrelated shortcuts or install an unverified retail backend.
+Full goal remains active. Earlier opening/scene milestone stays dated and scoped;
+publish selected unchanged actual follow-up originals, never journal screenshots.
+
 ## Original prototype input/menu milestone — 2026-11-11
 
 Read SIO2_PAD_STATUS.md and the canonical private checkpoint. Owner explicitly

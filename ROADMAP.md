@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Verify in-scene debug access, Player Warp and no-death effects/reversal, actual F1/F2 key events and a checked prototype workflow. Preserve retail defaults and every failed control.
+Trace real damage and the original no-death flag/health boundary; prove survival and restored death. Validate actual F1/F2 short keys only after renewed desktop-test intent. Keep prototype/retail separate and full goal active.
 
 ## M8 — Active: verified original PC baseline
 
@@ -26,7 +26,7 @@ Keep original behavior as a control; readable original host/function replacement
 
 - **DT01 Verify the prototype debug backend or one retail equivalent — In progress:** Original prototype input status repair, original menu open/navigation/close and one real Room Jump destination scene observed. Private identity-gated r100/Event modules and qualified BOOT entries; retained translation diagnostics. No full prototype workflow, ABI certificate, gameplay/warp/no-death or retail backend acceptance.
 - **DT02 Connect one real action to the native F2 Developer section — In progress:** Shared native F2 diagnostic opens the actual original prototype menu; original navigation/close observed. Actual key-event/F1 ownership, in-scene action and disable/restore, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant.
-- **DT03 Extend and validate the developer test workbench — Planned:** After the first action, investigate room/stage jump, player warp and no-death one by one. Prove valid/invalid destinations, disable/restore and appropriate same-view native original captures; distinguish room IDs, flag semantics and state/saves per build. Other display/camera/enemy options need their own tests. No automated level-completion loops.
+- **DT03 Extend and validate the developer test workbench — In progress:** Original Player Warp moves actual Getplayer vector in one prototype room; same-executable move/idle controls, true lifecycle tails, normal camera/HUD return and selected originals observed. No undo or wider invalid-state/retail acceptance. No-death OFF/ON/OFF only; lethal-hit survival/restored death and real F1/F2 short-key acceptance remain open.
 - **RM01 Map one verifiable function/subsystem boundary — Planned:** Record provenance and validate one identity/ABI/overlay lifetime against actual runtime evidence; static name/address candidates alone do not qualify.
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.
 - **RM03 Audit and expose coherent PC settings — In progress:** Scoped native-menu-v1 render/ACK/stale-reload/close-resume/stop/new-process2x and public rollback evidence. A separate readback-v2 candidate has same-draw pixel preservation, four controlled sampled-frame replays, and actual fresh2x/HD/F1/stop controls. Main remainsv1; first346e pose failure is retained and unexplained. Physical F1/F2/focus, broader DPI/backend/state compatibility, hardware/audio and coherent wider settings remain open; no full menu/fidelity/game-save claim.

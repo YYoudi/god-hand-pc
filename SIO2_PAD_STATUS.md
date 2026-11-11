@@ -78,8 +78,9 @@ the original Room Jump target from Stage 0 / Room 20 to Stage 1 / Room 00.
 
 The exact key-event path and F1 coexistence still need dedicated native UI
 verification; a diagnostic handler invocation is not a physical F2 keypress.
-The unchanged runtime still ticks and draws its existing F1 controls separately.
-The public shortcut refuses a request while F1 owns input.
+Inspected generic source retains the separate F1 tick/draw path; this is not
+proof that Windows key events reach the linked build. The public sequencing
+component refuses a request while F1 owns input. See the failed key trial below.
 
 The first confirmed Room Jump request loads the prototype's actual r100 module,
 then requests Event. These are private original-disc translations, not a retail
@@ -103,7 +104,7 @@ original western room and Gene's in-engine introduction. This is a real loaded
 180-second diagnostic ends at captured field 3360, before the scheduled field
 4000 second chord. This does **not** establish free gameplay or usable speed.
 
-Player Warp, no-death effects and reversal, in-scene debug access, further rooms,
+Player Warp, no-death effects and reversal, actual host-key usability, further rooms,
 retail equivalence and general fidelity remain unfinished acceptance gates.
 Do not enable public Developer switches on the strength of their menu labels.
 The full goal remains active. The [reviewed native evidence](docs/evidence/prototype-pad-menu-2026-11-11.json)
@@ -129,3 +130,39 @@ publication request is not rights-holder permission.
 symlink skips (85.614 seconds). The new C++17 model test passes with invented
 packet outcomes. These tests do not execute the game or establish hardware,
 menu-action, controller/audio or general SIO2 conformance.
+
+## Follow-up: loaded-scene menu and an option round trip
+
+A later explicit native13 experiment freshly translates five VU1 images actually
+captured from this prototype. It does not reuse retail addresses or change the
+default launch. An original Room Jump to Stage 1 / Room 00 / Point 1 is observed.
+Start skips the introduction and unloads Event; the room, Gene and original HUD
+render. The original L2/R3 chord opens debug from this scene. Down/Circle enters
+DEBUG OPTION, Right changes `PL NO DEATH` from OFF to ON, then Left restores OFF.
+
+The journal includes the unchanged scene/menu and OFF/ON/OFF originals. This is
+**option-state evidence only**: lethal-hit survival, restored death, no-death
+versus no-damage semantics and Player Warp effects remain untested. A displayed
+ON is not the acceptance criterion for invincibility or the full goal.
+
+The VU1 controls have deliberately different results:
+
+- Strict comparison **fails**: its last full summary reports 291,501 mismatches
+  in 294,912 runs. The first fifty printed examples mention internal readiness;
+  details after the logging cap are not assumed identical.
+- The later observable comparison reports zero mismatches in its last full
+  114,688-run summary. It excludes internal readiness bookkeeping and certain
+  statically-unread final status. The final partial batch has no summary.
+
+Those checks do not certify strict machine-state equivalence, PS2 fidelity or a
+speedup. The strict failure is retained, not relabeled as a pass or hidden by the
+observable result. Both separate 180-second cases stop 0 via the watchdog.
+
+A separate visible Windows test sends F1/F2, establishes focus with a viewport
+click, retries F2 once and tries the independent F3 native shortcut. The original
+difficulty screen remains; no F2 request reaches our handler. This is a **failed
+key-delivery/consumption gate**, not a passing F1/F2 usability test. Its cause
+remains under investigation. No checked prototype installer or retail Developer
+backend is released on the basis of these diagnostic paths.
+
+See the [follow-up evidence](docs/evidence/prototype-in-scene-menu-2026-11-11.json).

@@ -6,6 +6,20 @@ and before/after/restore results. Publish selected original build captures in th
 journal when meaningful, not decorative pictures of the site. A research report
 does not replace implementing and observing a real debug action.
 
+Latest scoped result: [original Player Warp](PROTOTYPE_WARP.md). Same-binary
+move/idle controls confirm actual actor displacement, true lifecycle tails and
+normal camera/HUD return in one prototype room. Exit is not position undo;
+no-death survival/restored death and actual short F1/F2-key acceptance remain
+open. [The host event model](WINDOW_SHORTCUTS.md) is tested/compiled, not a verified
+keyboard release. Owner Escape stopped desktop input; follow-up work is headless.
+
+Latest prototype follow-up: [SIO2_PAD_STATUS.md](SIO2_PAD_STATUS.md). Original
+in-scene menu and PL NO DEATH option OFF/ON/OFF are observed. Survival/restored
+death and Player Warp remain open. Strict VU1 comparison fails; the narrower
+observable control is not equivalent. A separate visible Windows F1/F2/F3 test
+fails to reach the expected host handlers even after click/focus retry. Diagnose
+that boundary rather than claiming working keys or replacing the original menu.
+
 Current owner priority, 11 November: [prototype debug tools](PROTOTYPE_DEBUG.md).
 [The input/menu follow-up](SIO2_PAD_STATUS.md) now repairs the observed generic
 SIO2 status boundary, without forced-ready or debug-flag writes. The original

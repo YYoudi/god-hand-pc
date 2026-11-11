@@ -45,12 +45,13 @@ comparison failure still need work. Default Original remains unchanged.
 ## Active direction
 
 Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
-The [input/menu follow-up](SIO2_PAD_STATUS.md) now opens, navigates and closes the
-original prototype debug menu in the native build. One Room Jump executes the
-original western-room introduction. It is not yet a public prototype installer,
-a retail debug backend or verified warp/invincibility. The full developer-tools
-goal remains active. Selected unchanged build originals and exact hashes are on
-the journal; F1 key-event coexistence and in-scene actions still need testing.
+The original menu opens/navigates/closes, and [Player Warp](PROTOTYPE_WARP.md)
+now moves the actual character with a no-stick control and normal camera/HUD
+return. This is one private prototype room, not a public prototype installer or
+retail debug backend. No-death survival and restored death remain unverified.
+[Short F1/F2 events](WINDOW_SHORTCUTS.md) have an experimental model, but actual
+key acceptance is still open. The full goal remains active. Selected unchanged
+native originals and exact hashes are on the journal, not screenshots of the site.
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC
 features without rewriting the entire engine. Read [the medium-term gates](DIRECTION.md),
