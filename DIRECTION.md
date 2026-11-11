@@ -61,12 +61,21 @@ upstream settings/timing are not frozen or validated by that policy.
 
 ## Prototype research boundary
 
+Owner priority, 11 November: move beyond metadata-only mining toward actual
+developer functions in PC F1/F2. See [the current experiment](PROTOTYPE_DEBUG.md).
+Keep F1 controls and target an explicit F2 Developer section only after a native
+action/restore proof. Original remains unchanged; prototype and retail backends
+must have distinct identities, state contracts and private generated inputs.
+
 The prototype is a separately hashed private input for bounded discovery of
 labels, resource organization and diagnostic leads. Static strings are not
 executed functions, and matching names do not permit copying addresses between
-builds. Debug-menu claims need actual runtime observation. The existing prototype
-native build links but its startup blocks on unsupported kernel syscall 0x7a;
-do not hold the retail baseline hostage to a prototype kernel port.
+builds. Debug-menu claims need actual runtime observation. The unmodified
+prototype native control still blocks on unsupported kernel syscall 0x7a.
+A new private SDK-routing trial passes that point but waits for an RPC reply
+with black output. No working native debug menu is established. Do not hold the
+retail baseline hostage to a full prototype kernel port; verified retail
+equivalents remain a separate possible route.
 
 ## Architecture decision
 

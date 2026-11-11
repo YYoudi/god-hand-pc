@@ -1,5 +1,23 @@
 # God Hand PC continuation - agent instructions
 
+## Prototype developer tools priority — owner decision, 2026-11-11
+
+Read PROTOTYPE_DEBUG.md and the canonical ignored checkpoint. The owner now
+requests actual prototype debug functions in PC F1/F2, superseding metadata-only
+prototype scope and the previous next-task ordering. Keep F1 controls; target
+an explicit F2 Developer section, not a duplicate UI or unsupported buttons.
+Private constructor/callback linkage and a new linked prototype SIF experiment
+are evidence, NOT callable debug features: off/on60s both stop0, enabled reaches
+RPC acknowledgement wait with three black exports. No native scene/debug menu.
+Do not fake ready flags, transplant prototype addresses/room IDs into retail,
+call guest logic from UI threads or overwrite any installed retail variant.
+First prove one profile/ABI/lifetime-safe action plus disable/restore controls.
+No new public game source, maps, dumps, assets or binary; retain failed trials.
+Keep Original unchanged and Developer actions opt-in Enhanced with scratch data.
+The broad PC goal is unachieved; last tool status usageLimited, not silently
+reset/resumed. Preserve unexecuted readable-boundary WIP and capture candidate.
+No new Rust, delegation, autonomous fighting or imported saves. All research G:.
+
 ## Remaining isolated capture acceptance — 2026-11-10
 
 Read the new CAPTURE_READBACK.md follow-up and canonical G:/God-Hand-PC/.local/

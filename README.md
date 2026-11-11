@@ -44,6 +44,12 @@ comparison failure still need work. Default Original remains unchanged.
 
 ## Active direction
 
+Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
+Menu/callback linkage is identified; a new private native harness passes the
+previous syscall point but still waits during RPC initialization with black
+output. F2 Developer actions are **not available yet**. F1 controls and the
+retail baseline are unchanged.
+
 Continue LasVola toward a faithful original PC baseline, then add reversible PC
 features without rewriting the entire engine. Read [the medium-term gates](DIRECTION.md),
 [extension architecture](ARCHITECTURE.md) and [Original/Enhanced policies](PROFILES.md).

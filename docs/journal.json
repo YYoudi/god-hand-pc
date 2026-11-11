@@ -5,13 +5,13 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "active",
-  "next": "Audit one verifiable game function/subsystem identity, ABI and overlay lifetime for readable extensions (RM01), without installing a guessed hook or adding more display choices. The isolated capture candidate now has fresh2x/HD/F1 scoped controls, not full-fidelity acceptance or a main default change. Retain the unexplained first pose failure. Representative reference comparisons, hardware/focus/audible audio, genuine game SaveExitLoad and human campaign remain open.",
+  "next": "Prioritize a real prototype debug action for an explicit F2 Developer section, keeping F1 controls. Verify the SDK/RPC boundary or a retail equivalent, then identity/ABI/guest-thread/object lifetime and native effect/disable/restore. The new prototype harness reaches an RPC acknowledgement wait with black output, not a debug menu. Preserve the isolated readback candidate, unrelated readable-function WIP and all Original baseline gates.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The separate prototype links but startup blocks on kernel syscall 0x7a; no working debug menu.",
+    "The unmodified prototype control still reports unsupported syscall0x7a. A new private build routes verified SDK wrappers to existing SIF handlers and reaches an RPC acknowledgement wait; all exports remain black. No native prototype debug menu or F2 Developer action is available.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -99,6 +99,27 @@
         "M8"
       ],
       "tasks": [
+        {
+          "id": "DT01",
+          "title": "Verify the prototype debug backend or one retail equivalent",
+          "status": "in_progress",
+          "area": "pc",
+          "acceptance": "Menu constructor and five label/callback associations identified privately;12selected emitted bodies cross-check370original ELF words. New host harness links unchanged prototype objects/frozen libraries; same-exe off/on60s removes0x7a warnings but reaches RPC wait with black output. Not runtime action/ABI/translation correctness. Next validate coherent SDK or retail identity, state and object/overlay lifetime without forced readiness."
+        },
+        {
+          "id": "DT02",
+          "title": "Connect one real action to the native F2 Developer section",
+          "status": "planned",
+          "area": "pc",
+          "acceptance": "Keep F1 controls and existing F1/F2 input/hold ownership. One typed action on a verified guest-thread safe point, exact profile/capability/state checks and explicit acknowledgements. Native effect plus disable/restore; Enhanced-only opt-in, Original refusal and scratch data. No placeholder enabled switches or prototype addresses in retail."
+        },
+        {
+          "id": "DT03",
+          "title": "Extend and validate the developer test workbench",
+          "status": "planned",
+          "area": "validation",
+          "acceptance": "After the first action, investigate room/stage jump, player warp and no-death one by one. Prove valid/invalid destinations, disable/restore and appropriate same-view native original captures; distinguish room IDs, flag semantics and state/saves per build. Other display/camera/enemy options need their own tests. No automated level-completion loops."
+        },
         {
           "id": "RM01",
           "title": "Map one verifiable function/subsystem boundary",
@@ -310,6 +331,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-11",
+      "kind": "progress",
+      "title": "Tracing the prototype debug menu",
+      "summary": "The owner wants the prototype developer functions available through the PC menus. We found the actual label-to-callback registration and tested a new native startup experiment. The menu is not working on PC yet.",
+      "changes": [
+        "Identified the prototype constructor that registers Room Jump, Flag Edit, DEBUG OPTION, Player Warp and SHOOTING MODE. Cross-checked selected private translated inputs against the original ELF; static linkage is not proof of the functions working.",
+        "Linked a new private host harness with the earlier unchanged prototype objects and frozen generic LasVola libraries, without a retail map or any retail rebuild. Verified two SDK wrapper identities and used the existing SIF register handlers, not forced-ready values.",
+        "Kept F1 controls and set an explicit F2 Developer section as the integration target. The first acceptance is one real, reversible action with profile, ABI, guest-thread and lifetime checks; no unsupported buttons were added."
+      ],
+      "validation": "Host compile/link0; invented-value handler roundtrip0. Two fresh hidden/muted60s same-executable controls stop0 through watchdog shutdown: routing OFF reproduces0x7a; ON records four SIF reads/two writes and no0x7a warning, then waits for an RPC acknowledgement. All four exported originals are the same black640x480 image. Original prototype objects/libraries/executable, both discs, nine retail variants and paused MIT WIP preserved. Initial path/argument/host-macro failures retained privately. Public-main tooling:257 synthetic tests pass with three Windows symlink-privilege skips, separate from prototype execution.",
+      "limits": "No native prototype title, scene, debug menu, invincibility or warp has been observed. A zero exit or increasing field counter is not successful guest gameplay. Generic Ghidra MIPS decoding is incomplete for R5900. Generated prototype source was inspected privately; no game code, raw maps, assets or binaries are published. The native SDK/RPC boundary and every real F2 action remain unfinished; retail defaults and all broader fidelity/usability/save gates are unchanged.",
+      "link": {
+        "label": "Prototype debug investigation, native blocker and integration gates",
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_DEBUG.md"
+      }
+    },
     {
       "date": "2026-11-10",
       "kind": "progress",

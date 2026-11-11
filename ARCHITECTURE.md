@@ -86,6 +86,19 @@ No game function replacement registry is implemented by the launch-policy change
 No decompiled code may be relabeled as independent MIT work. If source-derived
 code is ever used, record that provenance and review licensing/distribution first.
 
+## Developer tools boundary (target, not implemented)
+
+The [prototype investigation](PROTOTYPE_DEBUG.md) now targets real game actions,
+not just labels. F1 remains the controls screen; an explicit F2 Developer section
+will consume typed capabilities from a verified backend. Prototype and retail
+must not share addresses or assume identical object/room lifetimes. Guest actions
+must execute at a verified guest-thread safe point with exact input identity,
+state/lifetime checks, acknowledgements and disable/restore proof. No guest calls
+on the UI thread, fake ready values, save writes or enabled controls without a
+backend. Keep Original unchanged, Enhanced opt-in and research data isolated.
+This is an integration contract; the current private harness still shows black
+output while waiting for an RPC acknowledgement. No action is available in F2.
+
 ## Update strategy
 
 Pin for reproduction, not permanent isolation. Trial a new upstream commit in

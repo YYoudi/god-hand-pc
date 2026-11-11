@@ -1,5 +1,14 @@
 # Canonical progress and publication workflow
 
+Current owner priority, 11 November: [prototype debug tools](PROTOTYPE_DEBUG.md).
+Real menu registration/callback linkage is identified privately. A new linked
+prototype harness passes the prior syscall point using verified SDK handlers,
+but reaches an RPC acknowledgement wait with black output, not a native debug
+menu. F1 controls stays; F2 Developer is a target, not implemented commands.
+Next prove one real action and restoration with profile/ABI/guest-thread/lifetime
+checks. Keep the existing readback candidate and readable-boundary WIP separate.
+The faithful-PC objective is not achieved by this investigation.
+
 Latest scoped acceptance: SAME isolated readback candidate now passes actual
 fresh2x, HD/F2, F1 diagnostic captures and stop/startup rollback. See the later
 CAPTURE_READBACK.md follow-up. Main remainsv1; original346e mismatch remains
