@@ -1,5 +1,38 @@
 # God Hand PC continuation - agent instructions
 
+## Actual native prototype bootstrap and input blocker - 2026-11-11
+
+Read PROTOTYPE_BOOTSTRAP.md and the canonical private checkpoint. Separate ad867e9c
+prototype executable now displays actual card check, PRESS START and prerecorded
+attract movie, not interactive gameplay. Own boot relocations/16MPEG entry roots,
+McPort355/2853 and r02030/432 are private original-disc generation. Keep old9793
+objects and unresolved generation error/1450warnings. No opcode edits or fake ready.
+Same-exe virtual-only OFF/ON90s controls stop0; all8hardware bindings disabled,
+fakepad1 only. ON Start/Cross/shared F2 chord reach frontend+IOP wire, yet title
+held/edge remain0. Port-open1, original state0/port1 read0; role names inferred,
+not recovered source. Port0 does not reach its read phase. Seven selected OFF/ON
+originals identical. Earlier hidden-key activity is retained, not clean controls.
+Next inspect original libpad DMA/status boundary, not more arbitrary waits/chords,
+forced readiness, game input writes or unsupported buttons. No native debug menu
+or action, no prototype/retail fidelity claim. Public shortcut header is exactly
+compiled privately, not installed in retail; Finished is NOT menu-open ACK.
+260synthetic tests/3Windows skips,29retained artifact hashes and4Rust WIP agree.
+Actual build originals embedded on journal; no journal screenshots in chat.
+Goal tool is null (owner cleared); broader objective remains unachieved.
+All native probes terminal, no delegation/Rust/autofighting/new saves or paid host.
+
+## Build-linked evidence, not journal screenshots — owner correction 2026-11-11
+
+Do not send journal screenshots in chat or use them as feature evidence. Publish
+more selected actual native-build captures on the journal: exact source/exe,
+scenario/actions, original before/action/restore where meaningful, observed
+effect and limitations. Preserve originals and hashes; no invented matched pair.
+A static menu audit or linked black screen is not completion. Continue actionable
+native/backend experiments toward real F2 actions rather than ending at a
+docs-only milestone. Report a concrete remaining blocker honestly if needed.
+The owner cleared the previous goal; current get_goal is null. Do not claim a
+new active goal, the old quota, or completion. Keep all earlier work preserved.
+
 ## Prototype developer tools priority — owner decision, 2026-11-11
 
 Read PROTOTYPE_DEBUG.md and the canonical ignored checkpoint. The owner now

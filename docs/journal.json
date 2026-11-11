@@ -4,14 +4,14 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "active",
-  "next": "Prioritize a real prototype debug action for an explicit F2 Developer section, keeping F1 controls. Verify the SDK/RPC boundary or a retail equivalent, then identity/ABI/guest-thread/object lifetime and native effect/disable/restore. The new prototype harness reaches an RPC acknowledgement wait with black output, not a debug menu. Preserve the isolated readback candidate, unrelated readable-function WIP and all Original baseline gates.",
+  "status": "Native prototype card check/title observed; original input status boundary blocks debug actions. Retail defaults unchanged.",
+  "next": "Resolve the observed prototype libpad/IOP-to-EE input boundary without forcing readiness; then verify original F2 debug menu, one action and restoration. Publish actual build originals, not site screenshots.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The unmodified prototype control still reports unsupported syscall0x7a. A new private build routes verified SDK wrappers to existing SIF handlers and reaches an RPC acknowledgement wait; all exports remain black. No native prototype debug menu or F2 Developer action is available.",
+    "The unmodified prototype control retains its0x7a diagnostic. The separate new native prototype now shows its real card check/title and pre-recorded movie, but original input status remains disconnected despite virtual requests at the wire. No prototype debug action, interactive gameplay or retail equivalence is verified.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -109,7 +109,7 @@
         {
           "id": "DT02",
           "title": "Connect one real action to the native F2 Developer section",
-          "status": "planned",
+          "status": "in_progress",
           "area": "pc",
           "acceptance": "Keep F1 controls and existing F1/F2 input/hold ownership. One typed action on a verified guest-thread safe point, exact profile/capability/state checks and explicit acknowledgements. Native effect plus disable/restore; Enhanced-only opt-in, Original refusal and scratch data. No placeholder enabled switches or prototype addresses in retail."
         },
@@ -331,6 +331,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-11",
+      "kind": "progress",
+      "title": "Native prototype startup works; input still blocks the debug menu",
+      "summary": "The separate prototype build displays its original card check, PRESS START title and attract movie. Virtual requests reach the controller wire, but the game still reads no input. The debug menu is not complete.",
+      "changes": [
+        "Qualified the prototype SDK boundary, generated guarded McPort/r020 native modules from the personal disc and recovered missed original MPEG entries. Old objects, failed variants and discs preserved.",
+        "Compiled the exact public L2/R3 sequencing component into the private F2 path. It has refusals and bounded releases, but never claims a menu opened.",
+        "Actual native originals are now embedded in journal entries with build hashes, downloads and limitations. The second comparison deliberately shows a failed Start gate, not an invented successful action."
+      ],
+      "validation": "Actual host compile/link0. Separate same-executable virtual-only OFF/ON90s cases stop0 through watchdog shutdown, not campaign success. Hardware bindings explicitly disabled. ON sends Start/Cross and the shared F2 sequence; frontend/wire requests arrive, but title held/edge stayzero and the original state query remains0 despite port-open1. Seven preselected OFF/ON originals are byte-identical. Public synthetic suite:260 tests, three Windows symlink skips;29 retained artifact hashes and four Rust WIP hashes agree.",
+      "limits": "No working prototype debug menu/action, interactive prototype gameplay, physical input/audio or real game Save/Load claim. The movie is pre-recorded, not gameplay validation. A timing-only hypothesis failed on an actual title-triggered request. Earlier hidden runs exposed unscripted host keys and are not clean controls. Game-derived source/maps/assets/binaries stay private; retail defaults, capture candidate, unrelated WIP and paused Rust lab unchanged.",
+      "evidence_comparisons": [
+        "2026-11-11-prototype-native-bootstrap",
+        "2026-11-11-prototype-title-input-blocker"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_BOOTSTRAP.md",
+        "label": "Native bootstrap, evidence and remaining input gate"
+      }
+    },
     {
       "date": "2026-11-11",
       "kind": "progress",
@@ -908,6 +929,118 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-11-prototype-native-bootstrap",
+      "date": "2026-11-11",
+      "title": "Prototype native startup moves beyond the earlier RPC wait",
+      "feature": "DT01",
+      "scenario": "Two separate private prototype-native iterations at field120. Earlier SIF-only routing remained black; the new SDK/module/boot-entry build displays the original card check. Different builds and guest states: bootstrap progress, not matched rendering fidelity.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Earlier native bootstrap - blocked",
+        "bevy": "New native bootstrap - card check"
+      },
+      "observations": [
+        "The new executable also reaches the real PRESS START title and pre-recorded attract movie. Movie footage is not interactive 3D gameplay.",
+        "Whole original linked McPort/r020 files match native pre-constructor captures. Sixteen recovered MPEG entry boundaries unblock missed indirect calls; no instruction or ready flag was replaced.",
+        "Actual full640x480 runtime exports, unchanged. Each side records its own executable/source-input hash and capture time."
+      ],
+      "limits": [
+        "Different builds and guest states; no same-camera or PS2-rendering parity claim.",
+        "Private research harness, not a public prototype installer. Generated game source was inspected privately; this is not a clean-room reimplementation.",
+        "Original generation diagnostic/warnings remain. No working debug menu, interactive prototype gameplay, hardware input/audio or game Save/Load proof.",
+        "Game imagery belongs to its rights holders; no ISO, extracted asset, ELF, dump, save, executable or generated game code is published."
+      ],
+      "reference": {
+        "caption": "Earlier SIF-only field120: black output at the RPC boundary; not a working boot.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 7e2c084ba9ede026d074825b3245984721639e53df4085153418f9cc7c112ad9; source/input snapshot SHA-256 3000f910270d6dd2716493d3ed1e264c9e0c6a29c9e3400ea497da9c1d892e41. Run: earlier SIF-only120s.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-11T17:44:23.213382+00:00",
+        "path": "media/edfe043daceb01875146f26d7ada8082bce7c45bf9d1d63f791a017bad40e6a6.png",
+        "sha256": "edfe043daceb01875146f26d7ada8082bce7c45bf9d1d63f791a017bad40e6a6",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "7e2c084ba9ede026d074825b3245984721639e53df4085153418f9cc7c112ad9",
+          "source_input_snapshot_sha256": "3000f910270d6dd2716493d3ed1e264c9e0c6a29c9e3400ea497da9c1d892e41",
+          "run": "earlier SIF-only120s"
+        }
+      },
+      "bevy": {
+        "caption": "New native field120: original memory-card check, no input. Not a game Save/Load test.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only OFF90s.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-11T19:16:58.670734+00:00",
+        "path": "media/7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000.png",
+        "sha256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+          "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+          "run": "virtual-only OFF90s"
+        }
+      }
+    },
+    {
+      "id": "2026-11-11-prototype-title-input-blocker",
+      "date": "2026-11-11",
+      "title": "A real native title, but Start still does not advance it",
+      "feature": "DT02",
+      "scenario": "Same ad867e9c private native executable, virtual-only ON90s boot. All configured hardware bindings disabled. Before atfield850; Start held atfields900..959; during atfield950. No guest flag writes, synthetic game-state injection, image edits or camera changes.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before Start - native title",
+        "bevy": "During Start - still waiting"
+      },
+      "observations": [
+        "Start, Cross and the shared F2 L2/R3 sequence reach frontend and IOP wire in the isolated ON case. OFF has only a connected idle virtual pad. Neither is a physical-key test.",
+        "Read-only title-consumer held/edge observations stayzero. Port-open returns1; port0/port1 state queries return0 and port1 read remains empty. SDK roles are inferred from original call/packet consumption, not recovered source.",
+        "Both90s cases stop0 through requested watchdog shutdown. Seven preselected OFF/ON originals (120,850,900,950,1000,1200,1400) are byte-identical. These two differently timed images retain ordinary title animation; no action effect is claimed."
+      ],
+      "limits": [
+        "Visual evidence of a reproduced failure, not a functioning debug menu. Chord submission is not menu-open acknowledgement.",
+        "Room Jump, no-death, Player Warp and other debug commands remain unavailable/unverified. No prototype addresses/room IDs may be transplanted into retail.",
+        "The observations narrow libpad/IOP-to-EE handling but do not yet identify a faulty instruction/DMA operation or establish general repeatability.",
+        "Public retail installation/defaults unchanged. Earlier hidden probes with unscripted host key activity are not clean no-input controls."
+      ],
+      "reference": {
+        "caption": "Field850 before the targeted Start request: original PRESS START screen.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only ON90s.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-11T19:18:40.981790+00:00",
+        "path": "media/1af4a43f7c9d92b147cbefe3d4cc8af7b93e77c9f1ea58857a18923a6a499b4a.png",
+        "sha256": "1af4a43f7c9d92b147cbefe3d4cc8af7b93e77c9f1ea58857a18923a6a499b4a",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+          "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+          "run": "virtual-only ON90s"
+        }
+      },
+      "bevy": {
+        "caption": "Field950 during the field900..959 Start request: still PRESS START. A failed gate, not debug-menu success.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only ON90s.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-11T19:18:42.652929+00:00",
+        "path": "media/89427dab1f709e9801aa32a2e0000f8530745a06b802cf94cfa51ba8baeb5d45.png",
+        "sha256": "89427dab1f709e9801aa32a2e0000f8530745a06b802cf94cfa51ba8baeb5d45",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+          "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+          "run": "virtual-only ON90s"
+        }
+      }
+    },
     {
       "id": "2026-11-10-readback-f1-binding",
       "date": "2026-11-10",

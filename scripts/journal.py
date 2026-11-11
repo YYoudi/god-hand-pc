@@ -84,6 +84,13 @@ def validate(data, migration, read):
             media[path] = digest
         require(pair["reference"]["profile"] == pair["bevy"]["profile"], "Mixed retail/prototype pair")
     require(set(migration['comparisons']).issubset(ids), 'Missing historical comparison')
+    for entry in data['updates']:
+        selected = entry.get('evidence_comparisons', [])
+        require(isinstance(selected, list) and all(isinstance(x, str) for x in selected),
+                'Entry evidence must be a comparison ID list')
+        require(len(selected) == len(set(selected)) and all(
+            re.fullmatch('[a-z0-9-]+', x) and x in ids for x in selected),
+            'Unknown, duplicate or unsafe entry comparison')
     for p,meta in migration['media'].items():
         require(media.get('docs/'+p) == meta['sha256'], 'Missing/changed selected migrated original')
     for name, meta in migration["reports"].items():
@@ -167,6 +174,25 @@ def markdown(text, migration):
     return "\n".join(out)
 
 
+def entry_evidence(entry, comparisons):
+    """Embed reviewed original build images, never arbitrary media or site captures."""
+    selected = entry.get('evidence_comparisons', [])
+    out = ''
+    for identity in selected:
+        pair = next(p for p in comparisons if p['id'] == identity)
+        out += '<div class="pair">'
+        for side in ('reference', 'bevy'):
+            item, label = pair[side], pair['labels'][side]
+            out += (f'<figure><figcaption>{escape(label)}</figcaption>'
+                    f'<a href="{item["path"]}" download><img src="{item["path"]}" '
+                    f'width="{item["width"]}" height="{item["height"]}" loading="lazy" '
+                    f'alt="{escape(label, quote=True)}"></a>'
+                    f'<p>{escape(item["caption"])}</p></figure>')
+        out += ('</div><p><a href="comparisons.html#' + identity +
+                '">Unchanged originals, build provenance, alignment and limits</a></p>')
+    return out
+
+
 def render(data, migration, read):
     outputs={}
     current_reports={e['link']['url']:e['link']['label'] for e in data['updates'] if
@@ -195,7 +221,7 @@ def render(data, migration, read):
         link=e.get('link')
         report=PurePosixPath(urlsplit(link['url']).path).name if link else ''
         href='reports/'+report[:-3]+'.html' if report in migration['reports'] else (link['url'] if link else '')
-        posts.append('<article><time datetime="'+e['date']+'">'+e['date']+'</time><h2>'+escape(e['title'])+'</h2>'+provenance+'<p>'+escape(e['summary'])+'</p><ul>'+''.join('<li>'+escape(c)+'</li>' for c in e['changes'])+'</ul><details><summary>Evidence and limits</summary><p>'+escape(e['validation'])+'</p><p>'+escape(e['limits'])+'</p></details>'+(f'<p><a href="{escape(href,quote=True)}">{escape(link["label"])}</a></p>' if link else '')+'</article>')
+        posts.append('<article><time datetime="'+e['date']+'">'+e['date']+'</time><h2>'+escape(e['title'])+'</h2>'+provenance+'<p>'+escape(e['summary'])+'</p><ul>'+''.join('<li>'+escape(c)+'</li>' for c in e['changes'])+'</ul>'+entry_evidence(e,data['comparisons'])+'<details><summary>Evidence and limits</summary><p>'+escape(e['validation'])+'</p><p>'+escape(e['limits'])+'</p></details>'+(f'<p><a href="{escape(href,quote=True)}">{escape(link["label"])}</a></p>' if link else '')+'</article>')
     capture_links=''
     if data.get('captures'):capture_links='<h2>Journal capture</h2><ul>'+''.join('<li><a href="'+c['path']+'">'+escape(c['caption'])+'</a></li>' for c in data['captures'])+'</ul>'
     outputs['docs/index.html']=shell('Development journal',intro+'<section id="journal"><h2>Journal</h2>'+''.join(posts)+'</section>'+capture_links)

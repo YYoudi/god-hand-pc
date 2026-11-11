@@ -99,6 +99,28 @@ class JournalTests(unittest.TestCase):
               'updates':[{'title':'New entry'},old],'comparisons':[],'captures':[]}
         return data,migration
 
+    def test_entry_build_evidence_requires_reviewed_comparison_ids(self):
+        data, migration = self.historical_fixture()
+        for selected in ['not-a-list', None, ['missing'], ['missing','missing'], ['unsafe#id']]:
+            data['updates'][0]['evidence_comparisons'] = selected
+            with self.assertRaises(ValueError):
+                journal.validate(data, migration, lambda p: b'')
+        data['updates'][0]['evidence_comparisons'] = []
+        self.assertEqual(journal.validate(data, migration, lambda p: b''), {})
+
+    def test_entry_embeds_only_registered_originals_and_provenance_link(self):
+        item = {'path':'media/' + 'a'*64 + '.png', 'width':1, 'height':1,
+                'caption':'Invented native build <A>'}
+        pair = {'id':'invented-native-build', 'reference':item, 'bevy':item,
+                'labels':{'reference':'Invented before','bevy':'Invented after'}}
+        entry = {'evidence_comparisons':['invented-native-build']}
+        html = journal.entry_evidence(entry, [pair])
+        self.assertEqual(html.count('<img '), 2)
+        self.assertIn('download><img', html)
+        self.assertIn('comparisons.html#invented-native-build', html)
+        self.assertIn('Invented native build &lt;A&gt;', html)
+        self.assertEqual(journal.entry_evidence({}, [pair]), '')
+
     def test_future_posts_do_not_break_historical_identity(self):
         data,migration=self.historical_fixture()
         data['updates'].insert(0,{'title':'Later feature, not a migration'})

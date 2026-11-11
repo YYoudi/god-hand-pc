@@ -45,10 +45,12 @@ comparison failure still need work. Default Original remains unchanged.
 ## Active direction
 
 Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
-Menu/callback linkage is identified; a new private native harness passes the
-previous syscall point but still waits during RPC initialization with black
-output. F2 Developer actions are **not available yet**. F1 controls and the
-retail baseline are unchanged.
+The [native prototype follow-up](PROTOTYPE_BOOTSTRAP.md) now displays the real
+card check, PRESS START title and pre-recorded attract movie. A reproduced
+libpad/input-status boundary still blocks menu interaction: input reaches the
+controller wire, but the game reads zero. F2 Developer actions are **not available
+yet**. Actual build originals, hashes and the failed control are on the journal;
+F1 controls and the retail baseline remain unchanged.
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC
 features without rewriting the entire engine. Read [the medium-term gates](DIRECTION.md),

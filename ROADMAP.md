@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Prioritize a real prototype debug action for an explicit F2 Developer section, keeping F1 controls. Verify the SDK/RPC boundary or a retail equivalent, then identity/ABI/guest-thread/object lifetime and native effect/disable/restore. The new prototype harness reaches an RPC acknowledgement wait with black output, not a debug menu. Preserve the isolated readback candidate, unrelated readable-function WIP and all Original baseline gates.
+Resolve the observed prototype libpad/IOP-to-EE input boundary without forcing readiness; then verify original F2 debug menu, one action and restoration. Publish actual build originals, not site screenshots.
 
 ## M8 — Active: verified original PC baseline
 
@@ -25,7 +25,7 @@ A reproducible native original-game baseline with explicit fidelity and usabilit
 Keep original behavior as a control; readable original host/function replacements survive generation and tested upstream updates.
 
 - **DT01 Verify the prototype debug backend or one retail equivalent — In progress:** Menu constructor and five label/callback associations identified privately;12selected emitted bodies cross-check370original ELF words. New host harness links unchanged prototype objects/frozen libraries; same-exe off/on60s removes0x7a warnings but reaches RPC wait with black output. Not runtime action/ABI/translation correctness. Next validate coherent SDK or retail identity, state and object/overlay lifetime without forced readiness.
-- **DT02 Connect one real action to the native F2 Developer section — Planned:** Keep F1 controls and existing F1/F2 input/hold ownership. One typed action on a verified guest-thread safe point, exact profile/capability/state checks and explicit acknowledgements. Native effect plus disable/restore; Enhanced-only opt-in, Original refusal and scratch data. No placeholder enabled switches or prototype addresses in retail.
+- **DT02 Connect one real action to the native F2 Developer section — In progress:** Keep F1 controls and existing F1/F2 input/hold ownership. One typed action on a verified guest-thread safe point, exact profile/capability/state checks and explicit acknowledgements. Native effect plus disable/restore; Enhanced-only opt-in, Original refusal and scratch data. No placeholder enabled switches or prototype addresses in retail.
 - **DT03 Extend and validate the developer test workbench — Planned:** After the first action, investigate room/stage jump, player warp and no-death one by one. Prove valid/invalid destinations, disable/restore and appropriate same-view native original captures; distinguish room IDs, flag semantics and state/saves per build. Other display/camera/enemy options need their own tests. No automated level-completion loops.
 - **RM01 Map one verifiable function/subsystem boundary — Planned:** Record provenance and validate one identity/ABI/overlay lifetime against actual runtime evidence; static name/address candidates alone do not qualify.
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.

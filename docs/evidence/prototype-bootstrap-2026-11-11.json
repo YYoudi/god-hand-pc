@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-11",
+  "scope": "Private native bootstrap and failed input boundary, not a debug-menu release or source-complete prototype installer.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "module_tooling_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "public_source_base": "6a8748601f306b0c48223fdfc7a47ea581f8bc5b",
+  "source_status": "Private harness/generation changes; public chord header unchanged at compile. Generated game source stays private.",
+  "prototype_elf_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+  "prototype_disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+  "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+  "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+  "chord_header_sha256": "7fe64b2332a230d03c82644e65b3cea3146c8dab359ef075c0f1fcd77e839f1e",
+  "compiler": "MSVC14.44.35207 x64 C++20 /O1 /MD /EHsc /bigobj; link /LTCG /INCREMENTAL:NO",
+  "compile_exit": 0,
+  "link_exit": 0,
+  "original_objects_preserved": 9793,
+  "original_objects_unchanged": true,
+  "commands": [
+    "prototype-sdk.exe <original prototype ELF> <original prototype disc> <fresh private scratch> sdk",
+    "Inherited PS2X_/GODHAND_/PROTOTYPE_ diagnostics stripped, then explicit environment. Hidden/muted, watchdog90s.",
+    "Both: PS2X_PAD1..8=0, PS2X_FAKE_PADS=1, PROTOTYPE_DEVELOPER_SHORTCUT=1. OFF: no script/probe. ON: PS2X_PAD_SCRIPT=900v:start:60,1200v:cross:30; PROTOTYPE_DEVELOPER_PROBE_FIELD=1400."
+  ],
+  "native_cases": [
+    {
+      "mode": "off",
+      "exit": 0,
+      "start_utc": "2026-11-11T19:16:54.239814+00:00",
+      "end_utc": "2026-11-11T19:18:24.374897+00:00",
+      "frame_count": 22
+    },
+    {
+      "mode": "on",
+      "exit": 0,
+      "start_utc": "2026-11-11T19:18:24.384899+00:00",
+      "end_utc": "2026-11-11T19:19:54.514093+00:00",
+      "frame_count": 22
+    }
+  ],
+  "native_observations": "ON frontend/wire requests8,16384,256,260; OFF idle only. Title held/edge zero. Inferred SDK port-open1/state0; port1 read0. Seven preselected OFF/ON originals byte-identical. No menu-open ACK or action observed.",
+  "generation_limits": "One retained unresolved original instruction diagnostic and1450 warnings. Word identity is not ISA correctness.",
+  "synthetic_validation": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 260,
+    "exit": 0,
+    "skipped": 3,
+    "scope": "Invented fixtures; no game inputs, GPU, hardware or action correctness proof."
+  },
+  "preservation": "29 prior retained artifact hashes agree, including retail variants/sidecars, canonical data and ISO. Four paused Rust WIP hashes agree. Original prototype ELF/disc and9793original objects preserved.",
+  "captures": {
+    "black": {
+      "caption": "Earlier SIF-only field120: black output at the RPC boundary; not a working boot.",
+      "profile": "prototype-june-2006",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 7e2c084ba9ede026d074825b3245984721639e53df4085153418f9cc7c112ad9; source/input snapshot SHA-256 3000f910270d6dd2716493d3ed1e264c9e0c6a29c9e3400ea497da9c1d892e41. Run: earlier SIF-only120s.",
+      "revision": "uncommitted",
+      "captured_at": "2026-11-11T17:44:23.213382+00:00",
+      "path": "media/edfe043daceb01875146f26d7ada8082bce7c45bf9d1d63f791a017bad40e6a6.png",
+      "sha256": "edfe043daceb01875146f26d7ada8082bce7c45bf9d1d63f791a017bad40e6a6",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "7e2c084ba9ede026d074825b3245984721639e53df4085153418f9cc7c112ad9",
+        "source_input_snapshot_sha256": "3000f910270d6dd2716493d3ed1e264c9e0c6a29c9e3400ea497da9c1d892e41",
+        "run": "earlier SIF-only120s"
+      }
+    },
+    "card": {
+      "caption": "New native field120: original memory-card check, no input. Not a game Save/Load test.",
+      "profile": "prototype-june-2006",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only OFF90s.",
+      "revision": "uncommitted",
+      "captured_at": "2026-11-11T19:16:58.670734+00:00",
+      "path": "media/7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000.png",
+      "sha256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+        "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+        "run": "virtual-only OFF90s"
+      }
+    },
+    "before": {
+      "caption": "Field850 before the targeted Start request: original PRESS START screen.",
+      "profile": "prototype-june-2006",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only ON90s.",
+      "revision": "uncommitted",
+      "captured_at": "2026-11-11T19:18:40.981790+00:00",
+      "path": "media/1af4a43f7c9d92b147cbefe3d4cc8af7b93e77c9f1ea58857a18923a6a499b4a.png",
+      "sha256": "1af4a43f7c9d92b147cbefe3d4cc8af7b93e77c9f1ea58857a18923a6a499b4a",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+        "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+        "run": "virtual-only ON90s"
+      }
+    },
+    "after": {
+      "caption": "Field950 during the field900..959 Start request: still PRESS START. A failed gate, not debug-menu success.",
+      "profile": "prototype-june-2006",
+      "runtime": "Private native prototype; frozen LasVola1646d885, MSVC14.44.35207. Executable SHA-256 ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952; source/input snapshot SHA-256 ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce. Run: virtual-only ON90s.",
+      "revision": "uncommitted",
+      "captured_at": "2026-11-11T19:18:42.652929+00:00",
+      "path": "media/89427dab1f709e9801aa32a2e0000f8530745a06b802cf94cfa51ba8baeb5d45.png",
+      "sha256": "89427dab1f709e9801aa32a2e0000f8530745a06b802cf94cfa51ba8baeb5d45",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "ad867e9ca78b86cb93768a67c53e08e8be6af84bcca60faa0d6a962db9be9952",
+        "source_input_snapshot_sha256": "ae4b8b6e2bcd7e4a9f631e4772b1a0964dd2009c8ec82950429e03a30ea7a1ce",
+        "run": "virtual-only ON90s"
+      }
+    }
+  },
+  "rights": "Original continuation source GPL-3.0-only; game imagery neither MIT nor GPL. Owner publication request is not rights-holder permission. No game code/data/binary is distributed."
+}

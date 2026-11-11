@@ -3,6 +3,10 @@
 11 November 2026. This is an incomplete research milestone, not a debug-menu
 release. The retail PC build and its default launch policy are unchanged.
 
+Later on 11 November, the separate native harness reached the real title screen.
+See [native bootstrap and its remaining input blocker](PROTOTYPE_BOOTSTRAP.md).
+The first experiments below retain their original, narrower scope and results.
+
 ## What we are trying to build
 
 Keep F1 for the existing controls screen. Add a **Developer tools** section to

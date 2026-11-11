@@ -1,12 +1,20 @@
 # Canonical progress and publication workflow
 
+Owner correction, 11 November: do not send screenshots of this journal in chat.
+Visual evidence should show the actual build, exact revision/executable, action
+and before/after/restore results. Publish selected original build captures in the
+journal when meaningful, not decorative pictures of the site. A research report
+does not replace implementing and observing a real debug action.
+
 Current owner priority, 11 November: [prototype debug tools](PROTOTYPE_DEBUG.md).
-Real menu registration/callback linkage is identified privately. A new linked
-prototype harness passes the prior syscall point using verified SDK handlers,
-but reaches an RPC acknowledgement wait with black output, not a native debug
-menu. F1 controls stays; F2 Developer is a target, not implemented commands.
-Next prove one real action and restoration with profile/ABI/guest-thread/lifetime
-checks. Keep the existing readback candidate and readable-boundary WIP separate.
+[The native follow-up](PROTOTYPE_BOOTSTRAP.md) now displays the real card check,
+PRESS START title and pre-recorded attract movie, not interactive gameplay.
+Exact public chord sequencing is linked privately, but no debug action works yet:
+frontend/IOP requests do not update the game's title held/edge state; original
+libpad status/read still reports disconnected/empty. Do not fake ready/flag writes.
+Finish that boundary, then actual F2 menu/action/restore validation, not another
+static-label milestone. Publish actual build originals with source/exe hashes;
+no journal screenshots in chat. Retain capture/readable WIP and every failed run.
 The faithful-PC objective is not achieved by this investigation.
 
 Latest scoped acceptance: SAME isolated readback candidate now passes actual
