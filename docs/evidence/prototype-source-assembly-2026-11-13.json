@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-13",
+  "source_revision": "480b7e77887973fc8f7252f39667410981a5c6aa",
+  "public_source_files": {
+    "prototype_observer_inputs.py": "90c55ea35ec2b817a0031d76483c5792b912a27149ec4d51922d680f802d49a1",
+    "prototype_native_project.py": "bf036fe82743e7592243c3223b2869c0648489d77916d932cf39dcd89a50d9d8",
+    "adapter/prototype_observer_inserts.json": "38363ab00fc5d3eae641b2f6100e8aee1170f82e06312e447c284ef451ff734f",
+    "source_inserts.py": "3965df7be26465ea4401b38bd4867de59ca7b8a5750341720a087b36651e1ddf",
+    "tests/test_prototype_source_assembly.py": "3f15b9f6d95ce9b5fb9a2a47660d2c3a1362baa010268114f35092806cf7cd53"
+  },
+  "private_instrumentation_script_or_profile_as_producer": false,
+  "original_insertions_and_prior_source_exposure_retained": true,
+  "source_catalog": {
+    "cpp_files": 9825,
+    "bytes": 167218399,
+    "sha256": "b015566934fd9a4c85193737fd2e390ca6a54210d7e543f6872701f1f5868e6d"
+  },
+  "observer_profiles": [
+    {
+      "id": "damage",
+      "output": "prototype_observe_damage.cpp",
+      "output_sha256": "b694876a59015767ed1978cdfe8cc5a2b78512919383d5d14f184b79bfac9b1b",
+      "bytes": 24773,
+      "line_ending": "crlf",
+      "insertions": 5,
+      "original_pc_word_comments": 118,
+      "original_pc_word_sequence_unchanged": true
+    },
+    {
+      "id": "refill",
+      "output": "prototype_observe_refill.cpp",
+      "output_sha256": "2b7213fdcbf0f39e4ab0131cfdbcea0406b1b115ac251ba6db2e9a54daeaefa6",
+      "bytes": 326383,
+      "line_ending": "crlf",
+      "insertions": 3,
+      "original_pc_word_comments": 1141,
+      "original_pc_word_sequence_unchanged": true
+    },
+    {
+      "id": "warp_create",
+      "output": "prototype_observe_warp_create.cpp",
+      "output_sha256": "bdc7a8bc43dde4268441571a2aee3ef81b2c0658f0c4d8b27990d73be9e3a8df",
+      "bytes": 20750,
+      "line_ending": "crlf",
+      "insertions": 2,
+      "original_pc_word_comments": 71,
+      "original_pc_word_sequence_unchanged": true
+    },
+    {
+      "id": "warp_destroy",
+      "output": "prototype_observe_warp_destroy.cpp",
+      "output_sha256": "86b2a82dddc79c0a85b94c1870f94d412719bc2538f000f47ffe35e79ee53891",
+      "bytes": 7858,
+      "line_ending": "crlf",
+      "insertions": 2,
+      "original_pc_word_comments": 32,
+      "original_pc_word_sequence_unchanged": true
+    }
+  ],
+  "actual_native_postimages_exact": {
+    "damage": true,
+    "refill": true,
+    "warp_create": true,
+    "warp_destroy": true
+  },
+  "actual_commands": [
+    {
+      "label": "check-only",
+      "exit": 0,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-catalog",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "missing-directory",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "unsafe-session",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "ambiguous-input",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "missing-input",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "new-production",
+      "exit": 0,
+      "output_tree_changed": true
+    },
+    {
+      "label": "stale-session",
+      "exit": 2,
+      "output_tree_changed": false
+    }
+  ],
+  "nonproduction_trees_unchanged": true,
+  "new_manifest_before_old_oracle": true,
+  "configure_exit": 0,
+  "compiler": "MSVC 19.44.35229.0",
+  "configured_targets": [
+    "prototype-bootstrap",
+    "prototype-native",
+    "prototype_event",
+    "prototype_guest",
+    "prototype_host",
+    "prototype_mcport",
+    "prototype_r020",
+    "prototype_r100",
+    "prototype_r101",
+    "prototype_vu1"
+  ],
+  "configured_commands_excluding_auto_pch": 10586,
+  "source_identity_and_selected_flag_multisets_equal": true,
+  "configured_sdk_include_sha256": "7453937c5e38ab8b3c8f3db995c0669972d82e6fc0f10e539a1e0bddc9a08914",
+  "fresh_iso_tool_generation_or_generic_rebuild": false,
+  "game_compile_link_or_native_run": false,
+  "normal_profile_adoption": false,
+  "new_screenshots": false,
+  "synthetic_tests": {
+    "collected": 501,
+    "skipped_windows": 4,
+    "seconds": 70.07,
+    "new_invented_controls": 16
+  },
+  "preserved_file_identities": 45676,
+  "all_preserved_match": true,
+  "limits": [
+    "Comment/text equality is not independent C++ read-only/CFG/ABI/lifetime/execution proof.",
+    "Configured source/selected-flag inventory excludes auto-PCH CPP and is not all-preprocessor/link/binary/native equivalence.",
+    "Existing qualified outputs/generic libraries replayed; no new whole build or ISO-only installer.",
+    "End-to-end orchestration, fresh registration acquisition/qualification and own fresh build/native acceptance remain.",
+    "Earlier translation/VU/render/loading/accounting/input/audio/save/campaign gates remain."
+  ],
+  "old_instrumented_bodies_as_producer": false,
+  "generated_raw_bodies_as_private_inputs": true,
+  "new_game_generation_this_increment": false
+}

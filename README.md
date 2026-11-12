@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Setup-source follow-up: [observer and native-project assembly](PROTOTYPE_SOURCE_ASSEMBLY.md).
+Four private observer sources reproduce the tested bodies, and a new CMake
+configuration retains the checked source/flag inventory. No new game executable
+is built or adopted; end-to-end setup and fresh native validation remain.
+
 Setup-source follow-up: [prototype host-profile derivation](PROTOTYPE_HOST_PROFILE.md).
 All67 host parameters now derive from original inputs and five qualified historical
 native registrations, without a populated parameter table as production input.

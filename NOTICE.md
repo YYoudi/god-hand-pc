@@ -42,3 +42,9 @@ Its hash/operand extraction metadata and original algorithms contain no game
 instruction words, address map or translated body. No independent clean-room,
 semantic/ABI or fresh-native-base claim follows. Historical captured modules and
 populated profile outputs remain private and retain separate game rights.
+
+The original observer-insertion policy publishes only our declarations/calls and
+hash/line/EOL metadata. Raw and instrumented game bodies remain private; even
+byte-identical reconstructed outputs may not be distributed here. The native
+project emitter is original CMake glue, not vendored runtime/game source or an
+ABI/read-only certification. Prior source exposure/qualification remains explicit.

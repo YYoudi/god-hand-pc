@@ -1,5 +1,29 @@
 # Canonical progress and publication workflow
 
+## Original source assembly and native-project graph — 13 November 2026
+
+Read PROTOTYPE_SOURCE_ASSEMBLY.md and checkpoint/source_assembly_current.
+Source480b7e7 publishes original4observer insertion policy/CLI and CMake emitter,
+no game bodies/words/addresses/rawmaps. Current9825CPP catalog yields4exact native
+postimages;1362PCword comments retain order/identity. Twelve insertion positions
+are own declarations/calls, not instruction edits or independent read-only/ABI/
+lifetime proof. Neutral output names are not recovered names.8actual CLI controls,
+7nonproduction trees unchanged; negative real-data copies stay PRIVATE, neverCI.
+New manifest precedes old oracle. Actual NEW CMake configure0/MSVC19.44.35229.0:
+10586commands excludingautoPCH match oldtarget/sourcebytes/selectedflags/PCH/
+bootstrapmultisets;5module order/overrides/bootstrap/VU-O2 policy retained.
+This is EXISTING qualified source/library replay, not fresh generation/rebuild,
+full preprocessing/link/binary equivalence or new game compile/run/adoption.
+501tests/4Windows skips70.070s;16new invented controls;45676identities match.
+Next consolidate end-to-end orchestration and fresh registration acquisition/
+qualification, then own fresh build/native acceptance after G:capacity passes.
+Do not repeat DONE SDK/entry/host/profile/observer/project stages or e677 named
+normal effects as missing. Existing normal07/room01-v1/launcher unchanged.
+Keep prior qualification/exposure and wider originalmenu/input/reference/ABI/
+lifetime/warning/audio/save/campaign gates. No wholecompile belowcapacity gate,
+evidence deletion/moves/C:research, Rust/delegation/autofighting/guessedready/
+flags/NOP/frees/game uploads. Full goal ACTIVE, not complete or ISO-only setup.
+
 ## Original host-profile derivation — 13 November 2026
 
 Read PROTOTYPE_HOST_PROFILE.md and checkpoint/host_profile_current. Sourcec209f0c
