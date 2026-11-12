@@ -4,14 +4,14 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Original prototype no-death now has real damage/refill and same-process OFF/death evidence, alongside the earlier Warp control. Actual F1/F2-key acceptance and a checked prototype workflow remain open.",
-  "next": "Validate actual F1/F2 short-event and focus/owner behavior only after renewed desktop-test intent; prepare a source-complete profile-gated prototype workflow without publishing generated game code. Preserve separate retail gates.",
+  "status": "The fresh prototype-source build has an exact-input native gate and an observed actual F1/F2 path. One ordinary Down tap still fails to move the menu cursor; full keyboard usability remains open.",
+  "next": "Trace ordinary keyboard events, sampled host state and the original pad consumer; verify navigation and close before claiming a usable debug-menu release. Then controlled focus/held/repeat and a checked prototype workflow. Keep retail separate.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The separate native prototype accepts original input/menu, one Room Jump destination, actual Player Warp/control and one original no-death ON/refill/OFF/death cycle. It is not a public prototype installer, full menu/room coverage or retail debug backend. Actual F1/F2-key acceptance remains open; original baseline0x7a and failed variants are preserved.",
+    "The native prototype now has a fresh private source build and an in-process exact-input gate, one actual F1/F2 owner round trip, original Room Jump and earlier exact-build Warp/no-death proofs. One ordinary Down tap does not move the cursor. Full keyboard navigation/close/focus, a public prototype installer, broad menu/room coverage and retail debug backend remain open. Old baseline0x7a and failed variants are preserved.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -111,7 +111,7 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Shared native F2 diagnostic opens the actual original prototype menu, including from combat; original navigation/close and selected original actions observed. Actual Windows key-event/focus/F1 ownership, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant."
+          "acceptance": "Fresh private guarded source build: actual F1 controls open, F2 press/release refused while F1 owns input, F1 close, then actual F2 press/release opens original menu. One normal Down tap does not move cursor; keyboard navigation/close, controlled focus/held/repeat and checked public prototype workflow remain open. Not a retail backend."
         },
         {
           "id": "DT03",
@@ -331,6 +331,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Fresh prototype sources and the first actual F1/F2 round trip",
+      "summary": "All selected prototype BOOT/module/VU sources now compile in a new build tree. A new native guard refuses wrong inputs. Actual F1/F2 taps reach the intended menus, but ordinary keyboard navigation is not yet accepted.",
+      "changes": [
+        "Stopped relying on the old prototype objects and libraries. Five pinned generic libraries and private generated sources remain dependencies; this is not an ISO-only public prototype installer.",
+        "Added original read-only held-file verification before runtime/hooks. Seven native size/hash/missing-file/held-writer refusals pass; original discs remain untouched.",
+        "After owner foreground recovery, observed actual F1 open, F2 refusal while F1 owns input, F1 close and subsequent accepted F2 opening of the original menu. No actual-key success is inferred from the separate diagnostic bootstrap."
+      ],
+      "validation": "Fresh configure/build/link 0; guarded native1947fbd7 exits 0 after its 900-second watchdog. All 9,793 old objects and the new source-build baseline are preserved. Original Room Jump reaches the room/Gene/Olivia introduction. Actual F2 press/release and before/after native PNGs agree. The full invented-input suite passes 263 tests with three Windows symlink skips in 68.579 seconds.",
+      "limits": "One brief actual Down tap does not move the cursor after settling; cause unknown. The later K close attempt encounters the watchdog-ended window, so navigation/close remain unverified. No controlled focus/held/repeat, pause, physical-device, campaign/strict VU1 fidelity or retail result. PNG capture sizes change during window interaction and are preserved unchanged; backend GUI JPEGs remain private under the current profile.",
+      "evidence_comparisons": [
+        "2026-11-12-prototype-source-room-jump",
+        "2026-11-12-prototype-source-actual-f2"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_SOURCE_BUILD.md",
+        "label": "Fresh source build, exact-input controls and actual-key limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1019,6 +1040,124 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-prototype-source-room-jump",
+      "date": "2026-11-12",
+      "title": "Freshly compiled prototype sources reach the original room",
+      "feature": "DT02",
+      "scenario": "Same guarded1947fbd7 native process, explicit900s watchdog. Initially no pad script/fake pad. Failed CUA activation followed by a prospectively recorded live-handle-checked diagnostic bootstrap to original RoomJump1/00/Point0. After owner retry and correct native-window observation, actual F1/F2 keys are tested; no controller-file requests during that real-key phase.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original Room Jump selection",
+        "bevy": "Original room introduction"
+      },
+      "reference": {
+        "caption": "Original Room Jump selects Stage1/Room00/Point0 in the fresh-source build. Explicit diagnostic bootstrap, not an actual Windows navigation key.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field37980. Native GS PNG, not a window JPEG or journal capture.",
+        "captured_at": "2026-11-12T00:08:41.224775+00:00",
+        "path": "media/0c535f3d3e09b08b102b07e47a2637cc5424da529fb2839a896acb8edd042518.png",
+        "sha256": "0c535f3d3e09b08b102b07e47a2637cc5424da529fb2839a896acb8edd042518",
+        "width": 640,
+        "height": 480,
+        "build": {
+          "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+          "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+          "run": "actual-keys-01",
+          "field": 37980
+        }
+      },
+      "bevy": {
+        "caption": "The original room, Gene and Olivia introduction after the observed Room Jump request. New native PNG640x515; no viewport/crop correction.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field39840. Native GS PNG, not a window JPEG or journal capture.",
+        "captured_at": "2026-11-12T00:09:49.764404+00:00",
+        "path": "media/464da3d3fabd98276ac53530fcb04401cb3ec17633d7cfffba44c9a8a1c1a3cd.png",
+        "sha256": "464da3d3fabd98276ac53530fcb04401cb3ec17633d7cfffba44c9a8a1c1a3cd",
+        "width": 640,
+        "height": 515,
+        "build": {
+          "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+          "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+          "run": "actual-keys-01",
+          "field": 39840
+        }
+      },
+      "observations": [
+        "Fresh configure/build/link all0; no old prototype objects/libraries linked and all9793old objects preserved. Five pinned generic libraries are still reused.",
+        "Diagnostic Room Jump reaches the original room, Gene and Olivia introduction. This is actual rendered module behavior, not only a compiler result or evidence that every module works."
+      ],
+      "limits": [
+        "Private prototype only: no public prototype installer, complete menu/room coverage, retail backend or campaign/fidelity acceptance.",
+        "Only five generic libraries reused; all selected prototype BOOT/modules/VU compile fresh. Generated sources/qualified metadata are still private inputs, not a fresh ISO-only recipe.",
+        "The original Room Jump bootstrap uses explicitly recorded diagnostic controller requests after failed window activation. It is not actual-key or cold-start keyboard acceptance. No fake pad or game memory/ready/flag writes.",
+        "Actual F1 opens/closes; F2 is refused while F1 owns input, then accepted afterward. One short Down tap does not move the cursor; cause unknown. The later K attempt meets the watchdog-ended window and is not close proof.",
+        "Unmatched action evidence, not image parity. PNGs are unchanged; capture size changes640x480 to640x515 during foreground/window interaction, cause not isolated. No crop/resize/normalization or widescreen fix.",
+        "F1 does not establish an acknowledged pause. Held/repeat/focus-loss semantics, physical peripherals/audio, real Save/Load and broader campaign/strict VU1 fidelity remain open. GUI backend JPEG originals stay private under the current PNG-only comparison protocol."
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-source-actual-f2",
+      "date": "2026-11-12",
+      "title": "An actual F2 tap opens the original menu after F1 closes",
+      "feature": "DT02",
+      "scenario": "Same guarded1947fbd7 native process, explicit900s watchdog. Initially no pad script/fake pad. Failed CUA activation followed by a prospectively recorded live-handle-checked diagnostic bootstrap to original RoomJump1/00/Point0. After owner retry and correct native-window observation, actual F1/F2 keys are tested; no controller-file requests during that real-key phase.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Normal room before actual F2",
+        "bevy": "Original debug menu after actual F2"
+      },
+      "reference": {
+        "caption": "Normal room/HUD after closing F1, before the actual Windows F2 tap. Native original640x515.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field42000. Native GS PNG, not a window JPEG or journal capture.",
+        "captured_at": "2026-11-12T00:12:10.974137+00:00",
+        "path": "media/0532182efb52910038340b9fc50b411c259c8e88dc177a8597b50806778bb364.png",
+        "sha256": "0532182efb52910038340b9fc50b411c259c8e88dc177a8597b50806778bb364",
+        "width": 640,
+        "height": 515,
+        "build": {
+          "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+          "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+          "run": "actual-keys-01",
+          "field": 42000
+        }
+      },
+      "bevy": {
+        "caption": "Original debug menu after the actual Windows F2 press/release is accepted. Native original640x515, later than the recorded action completion.",
+        "profile": "prototype-june-2006",
+        "revision": "uncommitted",
+        "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field42180. Native GS PNG, not a window JPEG or journal capture.",
+        "captured_at": "2026-11-12T00:12:22.400840+00:00",
+        "path": "media/83ce7dc2993f086c71ec9836f0595d5242bff73ffae5254c60ae77062790f6ec.png",
+        "sha256": "83ce7dc2993f086c71ec9836f0595d5242bff73ffae5254c60ae77062790f6ec",
+        "width": 640,
+        "height": 515,
+        "build": {
+          "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+          "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+          "run": "actual-keys-01",
+          "field": 42180
+        }
+      },
+      "observations": [
+        "Actual Windows F2 press/release while F1 is visible is refused; F1 closes with an actual F1 tap. No deferred refused request opens the menu.",
+        "A later actual F2 press/release is accepted and the original debug menu is visible in the same native process. These two native originals bracket that action. Normal Down navigation/close are not accepted."
+      ],
+      "limits": [
+        "Private prototype only: no public prototype installer, complete menu/room coverage, retail backend or campaign/fidelity acceptance.",
+        "Only five generic libraries reused; all selected prototype BOOT/modules/VU compile fresh. Generated sources/qualified metadata are still private inputs, not a fresh ISO-only recipe.",
+        "The original Room Jump bootstrap uses explicitly recorded diagnostic controller requests after failed window activation. It is not actual-key or cold-start keyboard acceptance. No fake pad or game memory/ready/flag writes.",
+        "Actual F1 opens/closes; F2 is refused while F1 owns input, then accepted afterward. One short Down tap does not move the cursor; cause unknown. The later K attempt meets the watchdog-ended window and is not close proof.",
+        "Unmatched action evidence, not image parity. PNGs are unchanged; capture size changes640x480 to640x515 during foreground/window interaction, cause not isolated. No crop/resize/normalization or widescreen fix.",
+        "F1 does not establish an acknowledged pause. Held/repeat/focus-loss semantics, physical peripherals/audio, real Save/Load and broader campaign/strict VU1 fidelity remain open. GUI backend JPEG originals stay private under the current PNG-only comparison protocol."
+      ]
+    },
     {
       "id": "2026-11-12-prototype-nodeath-original-option",
       "date": "2026-11-12",

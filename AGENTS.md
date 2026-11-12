@@ -1,5 +1,33 @@
 # God Hand PC continuation - agent instructions
 
+## Fresh source build / actual keys / ordinary-key gap — 2026-11-12
+
+Read PROTOTYPE_SOURCE_BUILD.md and canonical checkpoint. Fresh build10566steps0,
+9816BOOT units +all selected modules/VU compile without OLD prototype objects/libs;
+five pinned generic libs reused. Old9793objects unchanged, private generated sources
+still dependencies, NOT fresh ISO-only/public installer. Guardedexe1947fbd7 checks
+exact personal prototype ELF/disc size+SHA inside native before scratch/runtime/
+hooks, holds read-only handles. Seven direct native refusals pass;263synthetic
+tests/3Windows skips pass. Original WinAPI helper/tests only, no game code public.
+Initial inline header collides with actual Raylib; separate .cpp resolves it.
+Owner explicitly renewed desktop input on12Nov. CUA initially cannot activate,
+wrong-app pixels NOT acted on/saved/published; owner retry then correct native
+window observed before actual keys. F1 opens; actualF2press/release refused while
+F1owns input; actualF1closes; lateractualF2opens original menu. DO NOT claim full
+keyboard usability: one actualDown tap gives no cursor change, causeUNKNOWN.
+LaterK close attempt hits watchdog-ended window, NOT close/resume proof.
+Separate live-handle/path/creation-checked headless bootstrap reachesRoomJump1/00/0
+and actualroom/Gene/Olivia; it is NOT actual-key/cold-start acceptance. No fakepad.
+Native900s exits0, scratch controls unchanged. No concurrent owned tests/compiler.
+Next trace ordinaryDown/K/L callback +host levels +originalpad read-only, then
+prove navigation/close/focus/held/repeat. No guessed input-ready/game-flag writes.
+Capture changes640x480to640x515 during foreground/window interaction; cause not
+isolated, retain originals/no crop/normalization/parity claim. GUI backendJPEGs
+stayPRIVATE under current PNG-only comparison profile; no journal-shot loophole.
+Earlier NoDesktopInput/actualF1F2unverified notes are dated history, superseded by
+renewed consent and THIS scoped actual trial, not proof all keyboard gates pass.
+Full goal ACTIVE; no Rust/delegation/retail address transplant or strictVU1 claim.
+
 ## Real no-death effect and OFF/death control — 2026-11-12
 
 Read PROTOTYPE_NO_DEATH.md and canonical checkpoint. Native22 exe7b5d91cb

@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-12",
+  "scope": "Fresh private prototype-source compile, in-process exact-input guard and scoped actual Windows F1/F2 path; not full goal completion.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "module_tooling_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "public_source_base": "0524187a2761b611817ca6bab32a86fb9516299b",
+  "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+  "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+  "fresh_source_only_executable_sha256": "78c8101f1cc6a356b2e60ccc3db376c402b2339a26a8c351ed17dadb417e84ad",
+  "source_build": {
+    "configure": 0,
+    "build_link": 0,
+    "source_input_files": 10739,
+    "selected_boot_units": 9816,
+    "original_objects_preserved": 9793,
+    "old_prototype_objects_and_libraries_linked": false,
+    "generic_libraries_reused": 5,
+    "fresh_ISO_generation": false,
+    "public_prototype_installer": false
+  },
+  "input_guard": {
+    "scope": "Exact prototype ELF/disc size and whole SHA256 before scratch/runtime/hook setup; read handles retained. Supported-profile gate, not an adversarial filesystem certificate. Real generic SHA256 implementation is a private pinned dependency, not vendored here.",
+    "public_helpers": {
+      "adapter/locked_input_file.hpp": "b7c9cec8d0ef63c17237d3f34999f09157986a76cad099b8f1baf78ff90e16b3",
+      "adapter/locked_input_file.cpp": "954426a7e1c52a6a2451a7d7b10bfd737766dde6b3cb39db96272120771e2624"
+    },
+    "native_refusals": [
+      {
+        "case": "retail-elf",
+        "exit": 27,
+        "reason": "size-mismatch",
+        "before_runtime": true
+      },
+      {
+        "case": "retail-disc",
+        "exit": 28,
+        "reason": "size-mismatch",
+        "before_runtime": true
+      },
+      {
+        "case": "missing-elf",
+        "exit": 27,
+        "reason": "open-failed",
+        "before_runtime": true
+      },
+      {
+        "case": "same-size-invented-elf",
+        "exit": 27,
+        "reason": "digest-mismatch",
+        "before_runtime": true
+      },
+      {
+        "case": "missing-disc",
+        "exit": 28,
+        "reason": "open-failed",
+        "before_runtime": true
+      },
+      {
+        "case": "same-size-invented-disc",
+        "exit": 28,
+        "reason": "digest-mismatch",
+        "before_runtime": true
+      },
+      {
+        "case": "invented-held-writer",
+        "exit": 27,
+        "reason": "open-failed",
+        "before_runtime": true
+      }
+    ],
+    "invented_fixture": "Toy hasher tests byte delivery and Windows I/O lifetime, not cryptography. Native refusals and valid native boot use the actual retained SHA256 backend."
+  },
+  "command": "guarded-workbench.exe <unchanged personal prototype ELF> <unchanged personal prototype disc> <fresh scratch> sdk",
+  "environment": {
+    "PROTOTYPE_WINDOW_SHORTCUTS": "edges-v1",
+    "PS2X_SIO2_PAD_STATUS": "per-port-v1",
+    "PROTOTYPE_VU1_AOT": "1",
+    "PROTOTYPE_DEVELOPER_SHORTCUT": "1",
+    "PROTOTYPE_PROBE_VISIBLE": "1",
+    "PROTOTYPE_PROBE_SECONDS": "900",
+    "PS2X_FAKE_PADS": "0",
+    "PS2X_PAD1": "unset; scratch keyboard-only file",
+    "PS2X_PAD2..8": "0",
+    "initial_pad_script": "none",
+    "diagnostics": "inherited PS2X_/GODHAND_/PROTOTYPE_ stripped; explicit headless bootstrap phase later, then actual Windows keys"
+  },
+  "actual_keys": {
+    "exit": 0,
+    "F1_open_observed": true,
+    "F2_press_release_while_F1_open_refused": true,
+    "F1_close_observed": true,
+    "later_F2_press_release_accepted_menu_observed": true,
+    "ordinary_Down_navigation_observed": false,
+    "keyboard_menu_close_verified": false,
+    "controlled_focus_held_repeat_verified": false,
+    "controls_bytes_unchanged": true
+  },
+  "key_action_capture_bounds": {
+    "F2-while-F1-open": {
+      "started_at": "2026-11-12T00:11:54.655Z",
+      "completed_at": "2026-11-12T00:11:57.345Z"
+    },
+    "F1-closed-game-visible": {
+      "started_at": "2026-11-12T00:12:04.555Z",
+      "completed_at": "2026-11-12T00:12:07.629Z"
+    },
+    "actual-F2-opening": {
+      "started_at": "2026-11-12T00:12:18.828Z",
+      "completed_at": "2026-11-12T00:12:21.905Z"
+    },
+    "actual-keyboard-navigation-settled": {
+      "started_at": "2026-11-12T00:12:36.174Z",
+      "completed_at": "2026-11-12T00:12:36.227Z"
+    }
+  },
+  "retained_failures": [
+    "Inline WinAPI header collides with actual retained Raylib names; OS declarations moved into the original .cpp; exact header coexistence check and Windows fixture pass.",
+    "First synthetic C++ driver fails on deliberate direct self-move under -Werror; the alias-reference case tests the same resource rule without disabling warnings. Both failed/corrected logs retained.",
+    "CUA activation failures/wrong-app capture are retained. No input sent to the wrong image; owner retry precedes the actual key phase. Headless bootstrap kept separate, not relabeled as key success.",
+    "One actual Down tap shows no settled cursor change; cause unknown. Later K close attempt fails against the watchdog-ended window, not a successful close."
+  ],
+  "tests": {
+    "count": 263,
+    "exit": 0,
+    "windows_skips": 3,
+    "seconds": 68.579,
+    "scope": "Invented inputs only; no game supplied to tests/CI."
+  },
+  "captures": {
+    "room_jump": {
+      "caption": "Original Room Jump selects Stage1/Room00/Point0 in the fresh-source build. Explicit diagnostic bootstrap, not an actual Windows navigation key.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field37980. Native GS PNG, not a window JPEG or journal capture.",
+      "captured_at": "2026-11-12T00:08:41.224775+00:00",
+      "path": "media/0c535f3d3e09b08b102b07e47a2637cc5424da529fb2839a896acb8edd042518.png",
+      "sha256": "0c535f3d3e09b08b102b07e47a2637cc5424da529fb2839a896acb8edd042518",
+      "width": 640,
+      "height": 480,
+      "build": {
+        "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+        "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+        "run": "actual-keys-01",
+        "field": 37980
+      }
+    },
+    "room_intro": {
+      "caption": "The original room, Gene and Olivia introduction after the observed Room Jump request. New native PNG640x515; no viewport/crop correction.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field39840. Native GS PNG, not a window JPEG or journal capture.",
+      "captured_at": "2026-11-12T00:09:49.764404+00:00",
+      "path": "media/464da3d3fabd98276ac53530fcb04401cb3ec17633d7cfffba44c9a8a1c1a3cd.png",
+      "sha256": "464da3d3fabd98276ac53530fcb04401cb3ec17633d7cfffba44c9a8a1c1a3cd",
+      "width": 640,
+      "height": 515,
+      "build": {
+        "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+        "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+        "run": "actual-keys-01",
+        "field": 39840
+      }
+    },
+    "before_f2": {
+      "caption": "Normal room/HUD after closing F1, before the actual Windows F2 tap. Native original640x515.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field42000. Native GS PNG, not a window JPEG or journal capture.",
+      "captured_at": "2026-11-12T00:12:10.974137+00:00",
+      "path": "media/0532182efb52910038340b9fc50b411c259c8e88dc177a8597b50806778bb364.png",
+      "sha256": "0532182efb52910038340b9fc50b411c259c8e88dc177a8597b50806778bb364",
+      "width": 640,
+      "height": 515,
+      "build": {
+        "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+        "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+        "run": "actual-keys-01",
+        "field": 42000
+      }
+    },
+    "after_f2": {
+      "caption": "Original debug menu after the actual Windows F2 press/release is accepted. Native original640x515, later than the recorded action completion.",
+      "profile": "prototype-june-2006",
+      "revision": "uncommitted",
+      "runtime": "Private fresh-source guarded1947fbd7; frozen LasVola1646d885, MSVC14.44.35207. Exact executable 1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619; source/library chain bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6. actual-keys-01, field42180. Native GS PNG, not a window JPEG or journal capture.",
+      "captured_at": "2026-11-12T00:12:22.400840+00:00",
+      "path": "media/83ce7dc2993f086c71ec9836f0595d5242bff73ffae5254c60ae77062790f6ec.png",
+      "sha256": "83ce7dc2993f086c71ec9836f0595d5242bff73ffae5254c60ae77062790f6ec",
+      "width": 640,
+      "height": 515,
+      "build": {
+        "executable_sha256": "1947fbd7bfe6368e55ec8c816356d0886f4bc0c05da6767141227de7966fd619",
+        "source_input_snapshot_sha256": "bc71eec964b0bd407d43aca216339a25f92f05b9311bdf65285bdb052f4926a6",
+        "run": "actual-keys-01",
+        "field": 42180
+      }
+    }
+  },
+  "limits": [
+    "Private prototype only: no public prototype installer, complete menu/room coverage, retail backend or campaign/fidelity acceptance.",
+    "Only five generic libraries reused; all selected prototype BOOT/modules/VU compile fresh. Generated sources/qualified metadata are still private inputs, not a fresh ISO-only recipe.",
+    "The original Room Jump bootstrap uses explicitly recorded diagnostic controller requests after failed window activation. It is not actual-key or cold-start keyboard acceptance. No fake pad or game memory/ready/flag writes.",
+    "Actual F1 opens/closes; F2 is refused while F1 owns input, then accepted afterward. One short Down tap does not move the cursor; cause unknown. The later K attempt meets the watchdog-ended window and is not close proof.",
+    "Unmatched action evidence, not image parity. PNGs are unchanged; capture size changes640x480 to640x515 during foreground/window interaction, cause not isolated. No crop/resize/normalization or widescreen fix.",
+    "F1 does not establish an acknowledged pause. Held/repeat/focus-loss semantics, physical peripherals/audio, real Save/Load and broader campaign/strict VU1 fidelity remain open. GUI backend JPEG originals stay private under the current PNG-only comparison protocol."
+  ],
+  "rights": "Original continuation code GPL-3.0-only. Game imagery neither GPL nor MIT; owner publication request is not rights-holder permission."
+}

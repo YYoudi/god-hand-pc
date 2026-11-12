@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Validate actual F1/F2 short-event and focus/owner behavior only after renewed desktop-test intent; prepare a source-complete profile-gated prototype workflow without publishing generated game code. Preserve separate retail gates.
+Trace ordinary keyboard events, sampled host state and the original pad consumer; verify navigation and close before claiming a usable debug-menu release. Then controlled focus/held/repeat and a checked prototype workflow. Keep retail separate.
 
 ## M8 — Active: verified original PC baseline
 
@@ -25,7 +25,7 @@ A reproducible native original-game baseline with explicit fidelity and usabilit
 Keep original behavior as a control; readable original host/function replacements survive generation and tested upstream updates.
 
 - **DT01 Verify the prototype debug backend or one retail equivalent — In progress:** Original prototype input status repair, original menu and one Room Jump room observed, followed by actual-player Warp and original no-death ON/OFF/death control. Private identity-gated modules and qualified BOOT entries retain diagnostics. No full prototype workflow, ABI certificate, complete room/menu coverage or retail backend acceptance.
-- **DT02 Connect one real action to the native F2 Developer section — In progress:** Shared native F2 diagnostic opens the actual original prototype menu, including from combat; original navigation/close and selected original actions observed. Actual Windows key-event/focus/F1 ownership, checked profile workflow and retail equivalent remain open. No placeholder actions or address transplant.
+- **DT02 Connect one real action to the native F2 Developer section — In progress:** Fresh private guarded source build: actual F1 controls open, F2 press/release refused while F1 owns input, F1 close, then actual F2 press/release opens original menu. One normal Down tap does not move cursor; keyboard navigation/close, controlled focus/held/repeat and checked public prototype workflow remain open. Not a retail backend.
 - **DT03 Extend and validate the developer test workbench — In progress:** Original Player Warp actor movement/control and camera/HUD restoration observed. Original no-death has actual matched damage/refill, original ON/OFF controls and same-process OFF/death native evidence in one prototype room. No lethal-floor-path, full menu/invalid-state/retail acceptance. Actual F1/F2 short-key/focus ownership and a checked prototype workflow remain open.
 - **RM01 Map one verifiable function/subsystem boundary — Planned:** Record provenance and validate one identity/ABI/overlay lifetime against actual runtime evidence; static name/address candidates alone do not qualify.
 - **RM02 Introduce one readable behavior-preserving replacement — Planned:** Version original replacement source outside generated outputs; original/replacement non-regression, fallback and regeneration controls.

@@ -1,5 +1,9 @@
 # Original prototype no-death: damage, refill, OFF and death
 
+12 November follow-up: [fresh source build and actual F1/F2](PROTOTYPE_SOURCE_BUILD.md).
+One real shortcut round trip passes; ordinary keyboard navigation/close remain open.
+The earlier dated results below are preserved, not relabeled.
+
 12 November 2026 (Europe/Paris). Original capture timestamps are retained in UTC
 on 11 November. Follow-up to [the original menu](SIO2_PAD_STATUS.md) and
 [Player Warp](PROTOTYPE_WARP.md). The full developer-tools goal remains active.

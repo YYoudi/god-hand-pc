@@ -45,6 +45,10 @@ comparison failure still need work. Default Original remains unchanged.
 ## Active direction
 
 Current research: [prototype debug tools for the PC build](PROTOTYPE_DEBUG.md).
+The [fresh source build and actual F1/F2 trial](PROTOTYPE_SOURCE_BUILD.md) now
+verify the scoped shortcut path and reject unsupported native inputs. Ordinary
+brief-key navigation still fails in one test; a complete keyboard debug workbench
+and an ISO-only public prototype installer are not yet available.
 The original menu opens/navigates/closes, and [Player Warp](PROTOTYPE_WARP.md)
 now moves the actual character with a no-stick control and normal camera/HUD
 return. This is one private prototype room, not a public prototype installer or
@@ -52,8 +56,8 @@ retail debug backend. The later [original no-death control](PROTOTYPE_NO_DEATH.m
 observes real damage/refill while ON, then accumulated damage, collapse and the
 Continue prompt after OFF. This is one prototype option/room, not no-damage or
 complete menu coverage.
-[Short F1/F2 events](WINDOW_SHORTCUTS.md) have an experimental model, but actual
-key acceptance is still open. The full goal remains active. Selected unchanged
+[Short F1/F2 events](WINDOW_SHORTCUTS.md) now have one observed real-key round trip;
+ordinary navigation/close and broader focus/held/repeat acceptance remain open. The full goal remains active. Selected unchanged
 native originals and exact hashes are on the journal, not screenshots of the site.
 
 Continue LasVola toward a faithful original PC baseline, then add reversible PC

@@ -1,5 +1,9 @@
 # Short host-key events: experimental input edge preservation
 
+12 November follow-up: [fresh source build and actual F1/F2](PROTOTYPE_SOURCE_BUILD.md).
+One real shortcut round trip passes; ordinary keyboard navigation/close remain open.
+The earlier dated results below are preserved, not relabeled.
+
 11 November 2026. Prototype-native research follow-up, **not a verified F1/F2
 release** or a retail launcher change.
 

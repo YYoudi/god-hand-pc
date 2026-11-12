@@ -1,5 +1,13 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [fresh source build and actual F1/F2](PROTOTYPE_SOURCE_BUILD.md).
+Native exact-input refusals and one actual F1/F2 owner round trip are observed.
+Ordinary short Down navigation still fails; close/focus/held/repeat and the public
+prototype workflow remain open. Owner renewed desktop input; earlier stop notes
+are historical. Full goal ACTIVE, not a complete debug-menu release.
+
+Earlier dated notes below are preserved history, not current execution orders.
+
 Latest scoped result: [original no-death](PROTOTYPE_NO_DEATH.md) now has real
 matched damage/refill and same-process original OFF/death/Continue evidence.
 It is not no-damage, every HP path, full menu coverage or a checked public
