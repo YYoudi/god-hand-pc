@@ -53,19 +53,22 @@ variable-base loading, absence of every retired function lookup, all callback/AB
 paths, allocation ownership, transactional installation or failure recovery.
 Existing ignored install returns and partial-install limitations remain.
 
-## A visible menu-rendering limitation
+## Correction: the missing-label interpretation is rejected
 
-The full original Room Jump labels are visible on entry. After a Down request,
-one later original capture contains only the moved selection chevrons; after
-Left/Right, the changed Room00/Room01 value is visible but the other labels are
-absent. The unchanged full renderer PNGs are published alongside the successful
-scene outputs. No glyph is repaired, composited or cropped into these images.
+The first version of this report (commit c183aa5) described missing selector
+labels based on partial-looking inspection previews. Checking the actual full
+original PNGs disproves that claim: actual5100 and actual10200 are byte-for-byte
+identical to the full original selector at actual2300, SHA-256
+`ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18`.
+The unchanged label region also has identical decoded RGBA bytes in all six
+inspected originals2300/3900/5100/6500/9700/10200. No cropped/converted file is
+written or substituted. The original downloads and their provenance are kept.
 
-The cause is **unknown**. This is not a verified original-console defect or an
-explanation of the earlier, separately retained loading-image differences.
-Being able to submit the correct original route is not a certificate that the
-whole menu renders correctly. The prior option-accounting warning was not
-exercised or fixed in this sequence.
+There is **no demonstrated native missing-label defect or rendering fix** here.
+This explicit correction preserves the earlier commit/history rather than
+silently replacing the images. It does not establish all-menu rendering fidelity
+or explain unrelated retained loading differences. The prior option-accounting
+warning was not exercised or fixed in this sequence.
 
 ## Validation and remaining limits
 

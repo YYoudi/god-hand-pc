@@ -35,8 +35,8 @@
     "Room00_ordinary_Gene_HUD_before_second_menu": false,
     "return_Room01_scene_Gene_enemies_HUD": true,
     "same_native_process": true,
-    "original_selector_labels_missing_in_some_later_images": true,
-    "menu_rendering_cause": "unknown"
+    "original_selector_labels_missing_in_some_later_images": false,
+    "menu_rendering_cause": "Missing-label hypothesis rejected by actual whole PNG identity and unchanged decoded label bytes; no native defect or fix established."
   },
   "modules": {
     "registrations": 6,
@@ -66,9 +66,18 @@
   "limits": [
     "Same observed bases only; no arbitrary destinations, complete prototype setup or new normal-mode F1/F2/Warp/no-death acceptance.",
     "Room00 introduction is observed, not ordinary Room00 Gene/HUD. The shared-handler request is submitted during loading, not hardware input.",
-    "Partial original selector labels are visible in retained originals; cause unknown, not a verified original-console defect.",
+    "An earlier preview-based missing-label claim is explicitly retracted: actual original PNG/label bytes disprove it. This is not a rendering fix or full-menu fidelity certificate.",
     "Three late capture requests are unreached; no retrospective watchdog extension or full-target-pass relabel.",
     "Existing option accounting warning, strictVU1/render artifacts, loading differences, ignored install returns and partial-install limitations remain.",
     "No hardware, audible audio, genuine game Save/Load, combat/campaign/fidelity or performance claim. Original game source/raw observations stay private; screenshots have separate rights."
-  ]
+  ],
+  "selector_interpretation_correction": {
+    "earlier_revision": "c183aa528cf84ee3cc71bf156963f9282b68b5f8",
+    "hypothesis_rejected": true,
+    "actual5100_and10200_whole_PNG_equal_to2300": true,
+    "whole_PNG_sha256": "ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18",
+    "six_actual_originals_have_identical_unchanged_label_RGBA_bytes": true,
+    "no_original_image_modified": true,
+    "no_native_code_fix": true
+  }
 }

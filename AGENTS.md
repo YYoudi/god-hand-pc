@@ -13,12 +13,14 @@ r101 install/clear -> r100+Event install/Event clear -> r100 clear/r101 install.
 Both r101 bases SAME, all15206linked bytes equal fresh qualified own-disc oracle;
 four other observations equal prior qualified bytes. Not variable-base, retired
 lookup absence, every ABI/ownership/failure rollback or normal-mode promotion.
-Original selector full labels disappear after Down; changed room digits remain
-later. Cause UNKNOWN, unchanged originals retained, not original-console bug.
+CORRECTION to c183aa5: missing-label interpretation from previews is REJECTED.
+Actual5100/10200 whole PNGs equal fullselector2300; all6labelRGBA regions exact.
+No native defect/fix. Originals/history retained; never infer missing pixels
+from partial-looking tool previews without checking actual full image bytes.
 330tests/3Win skips67.893s after native;10142 retained identities/260originals/
 MIT4WIP/discs/old variants preserved. No new host/game translation, Rust, delegation.
 Next new combined normal-mode F1/F2/named-action acceptance before adoption,
-partial-label rendering investigation, VU/generic/full setup and wider evidence.
+VU/generic/full setup and wider evidence; do not chase rejected label hypothesis.
 Normal07 scoped effects remain DONE only for07. Full goal ACTIVE, not achieved.
 
 ## Additional Room01 scene and scoped input — 2026-11-12

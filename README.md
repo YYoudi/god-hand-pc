@@ -2,8 +2,9 @@
 
 Latest scoped check: [returning to Room01 without restarting](PROTOTYPE_ROOM_TRANSITIONS.md).
 One original Room01 -> Room00 introduction -> Room01 scene sequence now runs in
-the unchanged native process. Same-base module identities are checked; partial
-menu labels and missing late capture targets remain explicit. This is not a
+the unchanged native process. Same-base module identities are checked; missing
+late capture targets remain explicit. The earlier preview-based missing-label
+claim is rejected by actual original bytes, not a rendering fix. This is not a
 complete prototype port or an upgrade of the adopted normal07 launcher.
 
 Current scoped result: [another original Room Jump destination](PROTOTYPE_ROOM01.md).
