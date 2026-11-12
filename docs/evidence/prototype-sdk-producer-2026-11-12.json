@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-12",
+  "source_revision": "08d92331b8fb6bc1e34c50075c0a72a41a8338b0",
+  "public_source_files": {
+    "prototype_sdk.py": "cc398e22914a5a85474b4ba7bf9c4ff2942536447fc6f7a81653bc2b6afcd2b9",
+    "prototype_sdk_inputs.py": "16db688b7481d5bbd0f2e7cca97be26d95b32b38b6663c3a44169b5af3f40548",
+    "prototype_call_graph.py": "fad2790572d84d21bfdcfdf104eb1b5b48e0d662e65bf09ff1905a2b43016d8c"
+  },
+  "private_selectors_executed_as_producers": false,
+  "prior_selected_map_as_producer_input": false,
+  "metadata_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "inputs": {
+    "prototype_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+    "retail_sha256": "1742f95bef65bdb2aa57b7a77df4ac7619a092e9646e1ea325bc32ec8a64f3cd",
+    "function_metadata_sha256": "e8a48884f71c2473c9ec5d996b8c5a14b9c962449893efaf695c2b1cf9437c73",
+    "sdk_metadata_sha256": "8f73fd5946c9b7f09d0eab0a5ce5c6c65e6dbde56b780351f75a987d5d138991",
+    "discovery": {
+      "cpp_files": 9792,
+      "bytes": 167172063,
+      "discovered_entries": 9791,
+      "registration_comment_slots": 136956,
+      "sha256": "2fe590355eb0eb30d33b09afe7ae5e594718f62cac661c78690ba0a0b2de283f"
+    }
+  },
+  "results": {
+    "initial_candidates": 107,
+    "cfg_candidates": 107,
+    "selected": 103,
+    "domains": 105,
+    "known_direct_checks": 152,
+    "rejected": 2,
+    "unresolved": 12,
+    "binding_line_ending": "crlf",
+    "binding_sha256": "7453937c5e38ab8b3c8f3db995c0669972d82e6fc0f10e539a1e0bddc9a08914"
+  },
+  "selected_without_known_direct_checks": 59,
+  "oracle_checks": {
+    "initial_all_candidate_fields_equal_ignoring_scope": true,
+    "cfg_all_candidate_fields_equal_ignoring_scope": true,
+    "selected_all_fields_equal_ignoring_scope": true,
+    "rejected_all_fields_equal": true,
+    "unresolved_name_address_identities_equal": true,
+    "domain_before_and_after_equal": true,
+    "binding_bytes_exact": true
+  },
+  "fresh_results_manifest_precedes_old_comparison": true,
+  "explicit_CRLF_consumer_bytes": 3422,
+  "first_LF_bytes": 3319,
+  "actual_public_CLI_controls": [
+    {
+      "name": "actual-check-only",
+      "exit": 0,
+      "expected_exit": 0,
+      "seconds": 1.7969999999986612,
+      "output_tree_unchanged": true
+    },
+    {
+      "name": "actual-wrong-elf-identity",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.07800000000133878,
+      "output_tree_unchanged": true
+    },
+    {
+      "name": "actual-wrong-discovery-identity",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 1.110000000000582,
+      "output_tree_unchanged": true
+    },
+    {
+      "name": "actual-unsafe-session",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.046999999998661224,
+      "output_tree_unchanged": true
+    },
+    {
+      "name": "actual-new-production",
+      "exit": 0,
+      "expected_exit": 0,
+      "seconds": 1.8130000000019209,
+      "output_tree_unchanged": false
+    },
+    {
+      "name": "actual-stale-session-refused",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.06199999999807915,
+      "output_tree_unchanged": true
+    }
+  ],
+  "earlier_maximum_reader_CLI_controls_retained": true,
+  "setup_sized_read_is_native_FPS_claim": false,
+  "first_API_slot_count_refusal_preserved": true,
+  "second_API_LF_CRLF_byte_mismatch_preserved": true,
+  "aligned_search_invented_negative_control": true,
+  "LD_origin_policy_invented_negative_control": true,
+  "tests": {
+    "total": 404,
+    "Windows_skips": 3,
+    "seconds": 61.728,
+    "exit": 0,
+    "new_invented": 44
+  },
+  "preserved_file_identities": 45662,
+  "old_and_new_variants_preserved": true,
+  "new_native_build": false,
+  "native_exe_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "retained_native_evidence": "PROTOTYPE_WHOLE_INTERACTIVE.md",
+  "existing_launch_profiles_changed": false,
+  "goal": "ACTIVE, not complete",
+  "limits": [
+    "SDK static-input production only; not a new disc extraction, game translation, compile, native launch, rendering/gameplay result or public ISO-only prototype setup.",
+    "Exact normalized spans/finite-domain consistency do not independently establish SDK names, body boundaries, complete R5900 semantics, ABI/lifetime or guest effects.59selected records have no known-direct check; context-only ambiguous candidates are not enabled.",
+    "Frozen upstream metadata is an explicit private input, not copied into the public continuation. No retail address transplant, guessed ready/status/flag, unknown-op stub or new native profile adoption.",
+    "Entry selectors, qualified original host/profile/main/IOP sources and whole setup orchestration still need reviewed public packaging and a fresh setup/native acceptance. Existing e677 named normal evidence is retained, not newly obtained here.",
+    "Existing translation/strictVU/render/loading/accounting0x480, wider options/rooms/input/reference/ABI/lifetime/failure recovery/hardware/audio/SaveLoad/campaign gates remain. No game, ELF, asset, dump/card, populated map, generated game/VU code or binary is distributed."
+  ]
+}

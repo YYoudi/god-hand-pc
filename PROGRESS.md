@@ -1,5 +1,28 @@
 # Canonical progress and publication workflow
 
+## Public SDK producer and actual source controls — 2026-11-12
+
+Read PROTOTYPE_SDK_PRODUCER.md and checkpoint/sdk_public_producer_current.
+Original source08d9233 publishes prototype_sdk.py and prototype_sdk_inputs.py,
+not game source/maps. Three private SDK selector scripts are no longer producers.
+Actual existing-disc-input replay reproduces107 candidate records/103bindings/
+105domains/152checks;59selected have no known-direct check. Context-only ambiguous
+no-outgoing candidates stay unresolved. This is not SDK-name/ABI/fullISA proof.
+Preserve first136956-slot vs arbitrary100k ceiling refusal; bound now actualtext
+words/alignment. Preserve next LF3319/CRLF3422 mismatch. NEWexplicitCRLF run and
+exact-source public CLI give exact current native host include, no oldmapinput.
+Both earlier/sized-reader six CLI controls terminal0/2/2/2/0/2; no outputs on
+five non-production cases. Sized read is setup I/O only, no native FPS claim.
+404synthetic tests/3Win skips61.728s,44new invented controls;45662identities kept.
+No new extraction/translation/native build/run/adoption; exact e677 and existing
+normal profiles unchanged. Prior normal screenshots/effects stay dated retained
+evidence, not new matching/graphics proof. Remaining public setup work: direct/
+indirect entry selectors and original qualified host/main/IOP/profile/orchestration,
+then fresh setup/native acceptance. SDK source closure and exacte677 normal named
+effects are DONE for their scope; do not repeat as missing. Wider menu/input/
+reference/ABI/lifetime/failure-warning/audio/save gates stay; goal ACTIVE.
+No Rust/delegation/guessed flags/ready/NOP/frees or game/map/binary publication.
+
 ## Normal named actions on the new source build — 2026-11-12
 
 Read PROTOTYPE_WHOLE_INTERACTIVE.md and checkpoint/whole_interactive_current.

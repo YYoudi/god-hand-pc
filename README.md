@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Setup-source follow-up: [public prototype SDK producer](PROTOTYPE_SDK_PRODUCER.md).
+Original GPL tools reproduce the existing native SDK input without private selector
+scripts. This does not distribute a game or finish the personal-disc prototype
+installer; no new native build, rendering result or launch-profile change.
+
 Current prototype follow-up: [normal actions on the new source build](PROTOTYPE_WHOLE_INTERACTIVE.md).
 The fresh selected-source executable has its own actual F1/F2, Room Jump, Warp
 and no-death/OFF/Continue observations. Existing launch profiles remain unchanged;

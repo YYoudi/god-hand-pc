@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "The new selected-source prototype build has its own scoped normal F1/F2, Room01/Warp and Room00 no-death/OFF/Continue observations. Existing native07/default and explicit room01-v1 launch profiles remain unchanged. Public personal-disc prototype setup, wider original options/rooms and campaign fidelity are not complete; no retail debug backend is claimed.",
-  "next": "Package reviewed original host/selector/orchestration sources and qualification profiles into reproducible personal-disc prototype setup, without publishing generated game code/maps/assets. Fresh e677 named normal actions are now observed for their exact build; do not repeat source-tool closure or those effects as missing. Keep any launcher adoption explicit and separately checked; continue wider menu/input/reference/ABI/lifetime/failure-recovery and retained warning/strictVU/render gates.",
+  "next": "The SDK producer core/input CLI is now public and reproduces the exact existing native input. Package the remaining direct/indirect entry selectors and qualified original host/main/IOP/profile/orchestration sources, without publishing generated game code/maps/assets; then give a fresh public personal-disc setup its own native acceptance. Exacte677 named normal actions are already observed for their scope, not a missing test. Keep adoption explicit/separately checked and broader original menu/input/reference/ABI/lifetime/failure-warning gates open.",
   "known_limits": [
     "Whole selected-sourcee677 now rebuilds the prior producer chain and matches nine final samples. It is NOT adopted or normal-effect validated, and original host/private qualification/orchestration inputs still prevent a public ISO-only prototype installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -123,7 +123,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. No new profile adoption: old defaults/hashes/data stay unchanged. Reviewed original host/private profiles/orchestration still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity."
+          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. No new profile adoption: old defaults/hashes/data stay unchanged. Public SDK core/input CLI now reproduces103bindings/152checks and exact native include, with no new native run. Remaining entry selectors and reviewed original host/private profiles/orchestration still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity."
         },
         {
           "id": "RM01",
@@ -336,6 +336,24 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "SDK input production no longer needs private selector scripts",
+      "summary": "Original public GPL tooling now reproduces the SDK-binding input used by the source-built prototype. This is a setup-source milestone, not a new native build or rendering result.",
+      "changes": [
+        "Added parameterized exact-span/CFG/direct-target matching and an actual hash-qualified private-output CLI. No private selector script or old selected address map is a producer.",
+        "Reproduced107 candidate records,103 selected bindings and152 direct checks; explicit CRLF gives the exact3422-byte native host input. Incoming context alone does not enable ambiguous no-outgoing candidates.",
+        "Preserved the initial slot-count refusal and LF/CRLF mismatch as failed attempts. The corrected command has its own real output/refusal controls; the retained e677 debug screenshots remain in the previous entry, not relabeled as new work."
+      ],
+      "validation": "Exact-source CLI check-only/refusals/new production/stale refusal:0/2/2/2/0/2, with non-production output trees unchanged.404synthetic tests/3Windows skips pass in61.728s;44new invented controls.45662file identities preserved.",
+      "limits": "No new extraction, translation, native build/gameplay, graphics/FPS improvement, launcher adoption or full prototype installer. Names/ABI/lifetime/fullISA remain unproven;59selected records have no known-direct check. Entry selectors and original host/profile/orchestration packaging remain open.",
+      "evidence_comparisons": [],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_SDK_PRODUCER.md",
+        "label": "Original producer, actual CLI controls, command and retained limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
