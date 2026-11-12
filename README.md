@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest prototype source experiment: [code-backed entries and a native capsule](PROTOTYPE_INDIRECT_REPLAY.md).
+The BOOT-entry recipe no longer consumes the old seed CSV. A new incremental
+executable reaches the original menu/room/option states; its first visual-control
+attempt remains incomplete. Normal07 is unchanged; this is not a setup release.
+
 Latest source follow-up: [BOOT entries from original module calls](PROTOTYPE_ENTRY_REPLAY.md).
 Six export-entry ranges are now derived from fresh prototype import evidence;
 generation stays byte-identical. Eighteen private indirect seeds and other setup

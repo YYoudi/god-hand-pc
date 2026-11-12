@@ -4,11 +4,12 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Normal07 scoped F2/mouse debug actions remain verified. Six export-entry ranges now derive from fresh original module calls;18indirect seeds and other private source/setup dependencies remain. Menu-warning and wider coverage are still open.",
-  "next": "Qualify remaining indirect entries from code-backed table use/CFG evidence, not raw pointer runs, then close module/VU/generic-source setup and validate a fresh full build. Separately finish the prototype reference empty-menu warning comparison and focus/held/repeat/wider-menu coverage.",
+  "status": "Normal07 scoped debug actions remain the adopted workbench. Experimental27entry source provenance no longer needs the historical seed CSV; its incremental native capsule reaches original menu/room/option states with an incomplete visual-control attempt, not a setup or retail release.",
+  "next": "Run a NEW longer correctly prepared native control for the missed endpoints, without extending or relabeling old runs; close module/VU/generic-source setup and validate a fresh full build. Finish prototype reference warning and broader input/menu coverage separately.",
   "known_limits": [
+    "Fresh27visual-control attempt is INCOMPLETE: original07baseline exits0but all23exports fail from missing directory; newcase exits0with21actualPNGs, actual1561for requested1560 and final7301/7401missing. Not image parity/performance. New actual menu/room/ONOFF/warning/return originals are scoped diagnostics, not new key or survival proof.",
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
-    "Adopt-only normal07 and scoped F2/mouse RoomJump/no-death/Warp/restoration remain observed, not an ISO-only prototype setup or retail menu. Six export-entry ranges now derive freshly from module calls;18private indirect ranges plus modules/VU/generic-source dependencies remain.",
+    "Normal07adopt-only/F2mouse/effects remain separate. New27entry BOOT metadata has no historicalseedCSVinput, but decoding/integration remains private research and module/VU/generic source dependencies stay open. Incremental capsule is not a public ISO-only setup/freshfullbuild; three new candidates have no execution coverage.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
@@ -120,7 +121,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only."
         },
         {
           "id": "RM01",
@@ -333,6 +334,28 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "A native capsule with freshly derived BOOT entries",
+      "summary": "The BOOT-entry recipe now derives its ranges without the historical seed CSV. A new incremental executable reaches the original menu, selected room and option states. The first visual-control attempt remains incomplete.",
+      "changes": [
+        "Derived21code-backed indirect candidates plus6direct entries; retained first alignment/host-label trials. Published only an original union-fence model and invented tests, no game code/maps.",
+        "Generated9821files, compiled5BOOTunits and linked a separate native capsule over frozen07host/modules/VU/libs. Normal07launcher stays unchanged.",
+        "Selected unchanged actual new-build originals below show menu/room, ON/OFF labels and warning/return. They are not new hardware or survival proof."
+      ],
+      "validation": "Both330s native processes exit0, but baselineall23exports fail from an unprepared directory. Newcase has21actualPNGs/noexportfailure; requested1560is actual1561 and7301/7401missing, lastfield7265. Not a full pair/image-parity/performance pass. Source297synthetic tests/3Windows skips pass65.209s after native terminal;29555file identities and4MITWIP preserved.",
+      "limits": "Incremental private capsule, not ISO-only public setup/freshfullbuild or promoted07. Three additional candidates lack actual execution coverage. Original0x480warning and strictVU1/artifacts persist; old07key/health/Warp proofs are separate. Module/VU/generic source and wider input/reference gates remain.",
+      "evidence_comparisons": [
+        "2026-11-12-fresh27-menu-room",
+        "2026-11-12-fresh27-options",
+        "2026-11-12-fresh27-warning-return"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_INDIRECT_REPLAY.md",
+        "label": "Code-backed entries, actual native originals and retained failed capture gate"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1175,6 +1198,138 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-fresh27-menu-room",
+      "date": "2026-11-12",
+      "title": "Fresh BOOT-entry source: original menu and destination",
+      "feature": "DT03",
+      "scenario": "New27entry BOOT source capsule, original Point1RoomJump/scripted menu/option visits. Actual filename fields named; native diagnostics, not manual/hardware gameplay.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original menu in new capsule",
+        "bevy": "Selected original Point1 room"
+      },
+      "observations": [
+        "Actual new executable renders the original menu and selected room/HUD. This does not certify all new entry executions or full-game fidelity."
+      ],
+      "limits": [
+        "Same new private fresh27 capsule, finite software input/shared-handler diagnostics, not new actual-key F1/F2/mouse or health/Warp effects.",
+        "Different original action states, not matched-camera/PS2 fidelity or a successful baseline/new image-parity control.",
+        "Normal07 is unchanged; first baseline had no captures, newcase21/23 and final7301/7401missing. Warning/rendering/strictVU1/setup/retail limits remain.",
+        "Unchanged original640x480PNGs. Game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Original main debug menu after shared F2 diagnostic request, actual filename1561 (requested1560); not an OS key or mouse test. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:01:20.829890+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "New source capsule: original selected Point1 room, Gene and HUD after original Start skip. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:02:34.519017+00:00",
+        "path": "media/640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d.png",
+        "sha256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-fresh27-options",
+      "date": "2026-11-12",
+      "title": "New source capsule: original option ON then OFF",
+      "feature": "DT03",
+      "scenario": "New27entry BOOT source capsule, original Point1RoomJump/scripted menu/option visits. Actual filename fields named; native diagnostics, not manual/hardware gameplay.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option ON",
+        "bevy": "Original option OFF restored"
+      },
+      "observations": [
+        "The same new capsule draws the original option-state round trip. This is not a new survival, refill or restored-death proof."
+      ],
+      "limits": [
+        "Same new private fresh27 capsule, finite software input/shared-handler diagnostics, not new actual-key F1/F2/mouse or health/Warp effects.",
+        "Different original action states, not matched-camera/PS2 fidelity or a successful baseline/new image-parity control.",
+        "Normal07 is unchanged; first baseline had no captures, newcase21/23 and final7301/7401missing. Warning/rendering/strictVU1/setup/retail limits remain.",
+        "Unchanged original640x480PNGs. Game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Original PL NO DEATH option ON after scripted Right. Option-state only, not survival/refill proof. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:05:25.305666+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Original PL NO DEATH restored OFF after scripted Left. Full original equals first OFF capture; no preview-based partial-frame defect claim. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:05:27.805892+00:00",
+        "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+        "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-fresh27-warning-return",
+      "date": "2026-11-12",
+      "title": "The warning remains visible; the original room returns",
+      "feature": "DT03",
+      "scenario": "New27entry BOOT source capsule, original Point1RoomJump/scripted menu/option visits. Actual filename fields named; native diagnostics, not manual/hardware gameplay.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original warning after empty visit",
+        "bevy": "Later original room and HUD"
+      },
+      "observations": [
+        "Original0x480warning remains and normal room/HUD later returns. Returning is not a cleanup, memory-safety or PS2-reference proof."
+      ],
+      "limits": [
+        "Same new private fresh27 capsule, finite software input/shared-handler diagnostics, not new actual-key F1/F2/mouse or health/Warp effects.",
+        "Different original action states, not matched-camera/PS2 fidelity or a successful baseline/new image-parity control.",
+        "Normal07 is unchanged; first baseline had no captures, newcase21/23 and final7301/7401missing. Warning/rendering/strictVU1/setup/retail limits remain.",
+        "Unchanged original640x480PNGs. Game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Original0x480warning after the first empty option visit; not fixed or suppressed. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:03:03.228786+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Later original room/Gene/HUD after original menu exits; final requested7301/7401were not captured. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:05:44.538407+00:00",
+        "path": "media/3a649d2a59fc456fe55d0c74cc15f968cc21025cd10d543f6b70221727bb98c9.png",
+        "sha256": "3a649d2a59fc456fe55d0c74cc15f968cc21025cd10d543f6b70221727bb98c9",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-menu-empty-warning",
       "date": "2026-11-12",

@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "date": "2026-11-12",
+  "source_model_revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+  "source_model_sha256": "402d16db50e39054cc159367545051f579743dd64042b28d152798ecaa4a25e6",
+  "source_tests_sha256": "fe4061b2ff072a43e7295e4acc69689ce147781aec11edfe60aaf800e696404c",
+  "scope": "Fresh BOOT-entry provenance and new incremental native capsule, NOT complete source/setup/CFG/ABI, actual-key/effect or retail acceptance.",
+  "source": {
+    "instruction_words": 659964,
+    "local_uses": 17,
+    "code_backed_prefixes": 5,
+    "fresh_indirect_candidates": 21,
+    "fresh_direct_entries": 6,
+    "historical_seed_CSV_input": false,
+    "historical_indirect_endpoint_agreements": 18,
+    "additional_candidates_without_execution_coverage": 3,
+    "full_CFG_ISA_ABI_index_alias_lifetime_proof": false
+  },
+  "generation": {
+    "files": 9821,
+    "cpp": 9819,
+    "headers": 2,
+    "unchanged_old_files": 9815,
+    "new_files": 3,
+    "changed_files": 3,
+    "retained_errors": 1,
+    "retained_warnings": 1450,
+    "historical_errors_equal": true
+  },
+  "retained_initial_trials": [
+    "Initial stride-only alignment rejects an already aligned finite mask. First scan/source retained.",
+    "First generation0has15added/12removed/3changed files from12host-label hex-case differences. Separate second trial applies our stable naming convention, no old outputs renamed or erased."
+  ],
+  "build": {
+    "exe_sha256": "e1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25",
+    "compile_steps": 5,
+    "link_exit": 0,
+    "reused_object_inputs": 9821,
+    "replaced_old_boot_objects": 2,
+    "new_boot_objects": 5,
+    "original_PC_word_checks": 70,
+    "original_split_owner_word_coverage_equal": true,
+    "header_difference": "Only3private generated forward declarations",
+    "incremental_not_fresh_full_build": true,
+    "frozen07_host_modules_VU_generic_libraries_reused": true,
+    "normal07_launcher_not_promoted": true
+  },
+  "native": {
+    "original_software_script": "Finite Point1RoomJump, two empty DEBUG OPTION visits, thirdON/OFF; sharedF2bootstrap. No attacks, guest/debug/ready/heap/PC writes or desktop input.",
+    "cases": [
+      {
+        "case": "baseline24",
+        "exit": 0,
+        "elapsed_seconds": 333.70300000000134,
+        "last_logged_field": 8121,
+        "actual_PNGs": 0,
+        "capture_export_failures": 23,
+        "requested_without_equal_filename": [
+          120,
+          850,
+          950,
+          1320,
+          1560,
+          2200,
+          2700,
+          2900,
+          3300,
+          3520,
+          3800,
+          4060,
+          4300,
+          5100,
+          5360,
+          5600,
+          6400,
+          6530,
+          6680,
+          6860,
+          7100,
+          7301,
+          7401
+        ],
+        "unrequested_actual_filename_fields": [],
+        "selected_runtime_error_pattern_matches": 0,
+        "controls_unchanged": true,
+        "ELF_unchanged": true,
+        "disc_unchanged": true
+      },
+      {
+        "case": "fresh27",
+        "exit": 0,
+        "elapsed_seconds": 335.8429999999971,
+        "last_logged_field": 7265,
+        "actual_PNGs": 21,
+        "capture_export_failures": 0,
+        "requested_without_equal_filename": [
+          1560,
+          7301,
+          7401
+        ],
+        "unrequested_actual_filename_fields": [
+          1561
+        ],
+        "selected_runtime_error_pattern_matches": 0,
+        "controls_unchanged": true,
+        "ELF_unchanged": true,
+        "disc_unchanged": true
+      }
+    ],
+    "first_complete_visual_pair_status": "FAILED/INCOMPLETE: baseline0images/23FILEIOfailures; new21actualPNGs/23requests, final7301/7401missed. Do not call it full image parity or a performance comparison.",
+    "actual_new_visual_states": [
+      "Original main menu after sharedF2request at actual filename1561",
+      "Original room/Gene/HUD3300",
+      "Original0x480warning4060 after empty visit",
+      "Original no-death optionON6530/OFF6680, NOT survival effect",
+      "Normal room/HUD7100 after original exits"
+    ],
+    "two_warning_originals_equal": true,
+    "OFF_before_after_originals_equal": true,
+    "preview_correction": "Partial-looking OFF tool preview rejected: exact bytes equal existing reviewed full original and decoded left-label pixels remain. No original rewrite or game-defect claim.",
+    "actual_key_F1_F2_mouse_proof": false,
+    "no_death_survival_refill_restored_death_proof": false,
+    "new_indirect_candidate_execution_coverage": false,
+    "no_owned_compiler_or_synthetic_suite_overlap": true,
+    "whole_machine_GPU_isolation_or_performance_claim": false
+  },
+  "tests": {
+    "tests": 297,
+    "windows_skips": 3,
+    "seconds": 65.209,
+    "exit": 0,
+    "focused_model_tests": 8
+  },
+  "preservation": {
+    "checked_file_identities": 29555,
+    "old_retained_files": 31,
+    "MIT_WIP": 4,
+    "all_match": true,
+    "original_discs_unchanged": true
+  },
+  "limits": [
+    "BOOT-entry recipe no longer consumes historical seeds, but binary-decoding/integration remains private research code; not a public ISO-only installer.",
+    "Module/VU/generic-source closure, fresh full build and own native acceptance remain open.",
+    "Original warning/reference comparison, strictVU1failure, artifacts, widerinput/menu/hardware/audio/save/campaign/retail gates unchanged.",
+    "Earlier07actualkey/health/Warp proofs remain separate, not inherited by new capsule.",
+    "No game code/maps/assets/dumps/saves/discs/ELFs/binaries or third-party source public."
+  ],
+  "selected_originals": [
+    {
+      "actual_filename_field": 1561,
+      "caption": "Original main debug menu after shared F2 diagnostic request, actual filename1561 (requested1560); not an OS key or mouse test. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:01:20.829890+00:00",
+      "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+      "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "actual_filename_field": 3300,
+      "caption": "New source capsule: original selected Point1 room, Gene and HUD after original Start skip. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:02:34.519017+00:00",
+      "path": "media/640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d.png",
+      "sha256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "actual_filename_field": 6530,
+      "caption": "Original PL NO DEATH option ON after scripted Right. Option-state only, not survival/refill proof. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:05:25.305666+00:00",
+      "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+      "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "actual_filename_field": 6680,
+      "caption": "Original PL NO DEATH restored OFF after scripted Left. Full original equals first OFF capture; no preview-based partial-frame defect claim. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:05:27.805892+00:00",
+      "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+      "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "actual_filename_field": 4060,
+      "caption": "Original0x480warning after the first empty option visit; not fixed or suppressed. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:03:03.228786+00:00",
+      "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+      "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "actual_filename_field": 7100,
+      "caption": "Later original room/Gene/HUD after original menu exits; final requested7301/7401were not captured. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/repair.",
+      "profile": "prototype-june-2006",
+      "runtime": "Prototype fresh27 native incremental capsule exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; frozen07host/components, finite original software controller script. Source model 7d3ce40adbd95dd0ff09965722b555ee94c62566; private generation/build, not public game code or PS2 hardware.",
+      "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+      "captured_at": "2026-11-12T13:05:44.538407+00:00",
+      "path": "media/3a649d2a59fc456fe55d0c74cc15f968cc21025cd10d543f6b70221727bb98c9.png",
+      "sha256": "3a649d2a59fc456fe55d0c74cc15f968cc21025cd10d543f6b70221727bb98c9",
+      "width": 640,
+      "height": 480
+    }
+  ]
+}

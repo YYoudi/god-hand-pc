@@ -1,5 +1,18 @@
 # Canonical progress and publication workflow
 
+## Code-backed indirect-entry experiment — 12 November 2026
+
+[PROTOTYPE_INDIRECT_REPLAY.md](PROTOTYPE_INDIRECT_REPLAY.md) records21fresh local-
+use indirect candidates+6direct entries without oldseedCSVinput. The original
+public union-fence model/invented8tests does not certify CFG/ABI/index domains.
+Stage02generates9821files (9815unchanged/3added/3changed), error1/warnings1450
+retained;5CPP+link0, incremental reuse, NOTfreshfullbuild. Newexe e1115bb6 reaches
+actual original menu/Point1 room/warning/ON/OFF/roomreturn via finite diagnostics.
+First baseline0has23export failures; newcase21/23captures, actual1561not1560 and
+7301/7401missing. Neither is a full visual-pair pass/performance proof. Do not
+inherit07survival/actual-key coverage or promote its launcher. Full goal ACTIVE;
+source/module/VU/generic setup, longer prepared control and reference remain open.
+
 ## Fresh imported-entry provenance — 12 November 2026
 
 [PROTOTYPE_ENTRY_REPLAY.md](PROTOTYPE_ENTRY_REPLAY.md) records a fresh76-module

@@ -1,5 +1,26 @@
 # God Hand PC continuation - agent instructions
 
+## Fresh indirect entries and partial native control — 2026-11-12
+
+Read PROTOTYPE_INDIRECT_REPLAY.md/checkpoint/source_indirect_replay_current.
+Read-only local-use scan17uses/5prefixes; public7d3ce40 unionfences selects21
+indirect candidates+6freshdirect, NOoldseedCSVinput. NarrowJRRA/knownoutgoing
+checks only, NOTfullCFG/ISA/ABI/index/callbackalias/ownership. Firststride/mask
+rejection and MPEGlabelcase trial retained; stage02gen9821files,9815unchanged,
+3new/3changed,1error1450warnings.5CPP+link0/exee1115bb6,9821objectinputsreused,
+70originalPCwords equal across split; NOTfreshfullsourcebuild. Normal07unchanged.
+Two330s diagnosticnative0: oldbaselineall23exportsFAILED/0PNGs (dirnotprepared),
+new27has21PNGs/noexporterror,1560request->actual1561;7301/7401notreached,last7265.
+FIRST PAIR IS INCOMPLETE, not imageparity/performancepass. New menu/Point1room/
+emptywarning/ON/OFF/room7100 actuallyviewed. OFF previewpartialappearance rejected
+by unchangedoriginal/decodedbytes; doNOTclaimgamebug. Optionlabelsarenotnew
+survival/actualkeys;03newentries have no executioncoverage. No ownedcompiler/
+syntheticsuite duringnative. Source297tests/3Win skips65.209s pass afterterminal.
+Next prospective longer correctlyprepared control (doNOTextend/relabeloldruns),
+module/VU/generic sourceclosure/freshfullbuild+ownnativeacceptance and reference
+warning. No guessedfrees/ready/flags, Rust, delegation, retailtransplant or game
+uploads. Fullgoal ACTIVE; this supersedes old18seed input count, not otherlimits.
+
 ## Fresh direct-entry replay — 2026-11-12
 
 Read PROTOTYPE_ENTRY_REPLAY.md and canonical checkpoint/source_entry_replay_current.
