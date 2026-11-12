@@ -1,5 +1,22 @@
 # God Hand PC continuation - agent instructions
 
+## Fresh direct-entry replay — 2026-11-12
+
+Read PROTOTYPE_ENTRY_REPLAY.md and canonical checkpoint/source_entry_replay_current.
+Fresh76-module audit:6487JALimport uses/2BOOT-unresolved,7J26jump sites separate;
+25missingexport candidates, current4module scope selects6/9uses BEFOREoldoracle.
+Original publicfbd1886 model +8inventedtests, terminalJRRA/delay/padding only:
+NOTfullCFG/ISA/ABI/execution/lifetimeproof. Twofreshgenerations9818files exact;
+6freshdirect ranges+18RETAINEDindirect seeds,1error/1450warnings unchanged.
+Normal07/source variants/discs/39379fileidentities/MIT4WIP preserved. No new
+native executable/UI/reference warning result or ISO-onlysetup claim. Source289
+tests/3Win skips71.486s pass after ownednative/generation/compiler terminal.
+Next code-backed indirect-table/CFG qualification, source closure/freshfullbuild
+acceptance, originalreference warning and widerinput coverage. Desktopcapture
+coordination pending privately; no physicalkeyboard handoff needed. No guessed
+frees/ready/flags, retailaddress transplant, Rust, delegation or gamecode uploads.
+Fullgoal ACTIVE; this supersedes the24historical-seed dependency count only.
+
 ## Original menu warning narrowed, not fixed — 2026-11-12
 
 Read PROTOTYPE_MENU_LIFETIME.md and canonical checkpoint/lifetime_probe_current.

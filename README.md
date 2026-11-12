@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest source follow-up: [BOOT entries from original module calls](PROTOTYPE_ENTRY_REPLAY.md).
+Six export-entry ranges are now derived from fresh prototype import evidence;
+generation stays byte-identical. Eighteen private indirect seeds and other setup
+dependencies remain. This is not a new executable or an ISO-only installer.
+
 Latest prototype investigation: [the original menu's memory warning](PROTOTYPE_MENU_LIFETIME.md).
 Even empty option visits warn. Read-only native evidence narrows the accounting
 loss to menu-entry records in the observed close path; no cleanup or PS2-reference

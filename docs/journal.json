@@ -4,11 +4,11 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Normal07 scoped F2/mouse debug actions remain verified. Separate read-only prototype diagnostics now narrow the repeated0x480 warning to twelve option-entry records in the observed close scope; not a cleanup, retail release or complete setup.",
-  "next": "Reproduce the same empty-menu sequence with the prototype reference before attributing the accounting loss to the original console game or port, then qualify any optional cleanup. Complete remaining source/setup and focus/held/repeat/wider-menu coverage; preserve prototype/retail separation.",
+  "status": "Normal07 scoped F2/mouse debug actions remain verified. Six export-entry ranges now derive from fresh original module calls;18indirect seeds and other private source/setup dependencies remain. Menu-warning and wider coverage are still open.",
+  "next": "Qualify remaining indirect entries from code-backed table use/CFG evidence, not raw pointer runs, then close module/VU/generic-source setup and validate a fresh full build. Separately finish the prototype reference empty-menu warning comparison and focus/held/repeat/wider-menu coverage.",
   "known_limits": [
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
-    "Adopt-only normal07 launcher and scoped actualF2/mouse RoomJump/no-death/Warp/return/death are observed, NOT an ISO-only public prototype installer or complete-menu/retail qualification. Remaining24private BOOTseeds/modules/VU/generic-source dependencies stay explicit.",
+    "Adopt-only normal07 and scoped F2/mouse RoomJump/no-death/Warp/restoration remain observed, not an ISO-only prototype setup or retail menu. Six export-entry ranges now derive freshly from module calls;18private indirect ranges plus modules/VU/generic-source dependencies remain.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
@@ -120,7 +120,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result."
         },
         {
           "id": "RM01",
@@ -333,6 +333,22 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Deriving missing BOOT entries from original calls",
+      "summary": "Fresh prototype module imports now select six export-entry ranges without using their historical address-map bounds. Source generation is unchanged; this is not a new executable.",
+      "changes": [
+        "Audited76original modules, then selected6missing exports/9original call sites for the existing four-module profile.25whole-catalog candidates are not all enabled.",
+        "Ran two separate fresh generations using6newly derived ranges plus18retained indirect seeds. Published only an original host model and invented-data tests; no game-code/map import."
+      ],
+      "validation": "Both generators exit0 and reproduce all9818C++/header files byte-for-byte, retaining1error/1450warnings. Source289synthetic tests/3Windows skips pass71.486s; focused8model tests pass.39379file identities, original discs, old variants and4MITWIP preserved.",
+      "limits": "Static provenance/terminal-return checks, not complete CFG/ISA/ABI, a new native action/reference-warning test or ISO-only setup.18indirect seeds/modules/VU/generic-source dependencies remain. Normal07/menu warning/strictVU1 limits unchanged. No new visual result is invented for this source-only increment.",
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ENTRY_REPLAY.md",
+        "label": "Fresh import-entry selection and exact source replay"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "date": "2026-11-12",
+  "scope": "Fresh private original-module import/export entry selection and BOOT source replay; no new native build, UI action, reference-warning, performance or full setup result.",
+  "source_model_revision": "fbd18869fd291edb6b054f6bead70ea70812b848",
+  "source_model_sha256": "502f8da433d812ccef29bf1a383fe457a92fb3fd633f50bf943ca5b8a25a5916",
+  "source_model_tests_sha256": "494854e2fb538d4b4737a0641fbcd72780cd54d67c27ed6f8981e3c54278b2c4",
+  "runtime_checkout": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "private_parser_checkout": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "recompiler_sha256": "506cffa76fb5eeff58ee86e08fcec1a1d79e911d9fb23565a89f088f4bb80ec4",
+  "fresh_module_audit": {
+    "modules": 76,
+    "original_import_JAL_uses": 6487,
+    "BOOT_only_unresolved_uses": 2,
+    "non_JAL_J26_sites": 7,
+    "missing_export_candidates": 25,
+    "explicit_current_profile_modules": 4,
+    "selected_missing_entries": 6,
+    "selected_original_use_sites": 9,
+    "selection_recorded_before_historical_oracle": true,
+    "narrow_terminal_return_checks": 6,
+    "complete_CFG_ISA_ABI_execution_lifetime_proof": false
+  },
+  "generation_trials": [
+    {
+      "started_at": "2026-11-12T12:18:24.807999+00:00",
+      "ended_at": "2026-11-12T12:18:32.966072+00:00",
+      "exit": 0,
+      "fresh_direct_ranges": 6,
+      "retained_private_indirect_ranges": 18,
+      "original_files_equal": true,
+      "cpp": 9816,
+      "headers": 2,
+      "generated_files": 9818,
+      "generated_manifest_sha256": "60aece23cab1847b11b202f1611f5d69a921c0ee691aa93769d8a45dff650f90",
+      "retained_errors": 1,
+      "retained_warnings": 1450,
+      "new_compilation_or_native_run": false
+    },
+    {
+      "started_at": "2026-11-12T12:19:54.659800+00:00",
+      "ended_at": "2026-11-12T12:20:00.666055+00:00",
+      "exit": 0,
+      "fresh_direct_ranges": 6,
+      "retained_private_indirect_ranges": 18,
+      "original_files_equal": true,
+      "cpp": 9816,
+      "headers": 2,
+      "generated_files": 9818,
+      "generated_manifest_sha256": "60aece23cab1847b11b202f1611f5d69a921c0ee691aa93769d8a45dff650f90",
+      "retained_errors": 1,
+      "retained_warnings": 1450,
+      "new_compilation_or_native_run": false
+    }
+  ],
+  "tests": {
+    "tests": 289,
+    "windows_skips": 3,
+    "seconds": 71.486,
+    "exit": 0,
+    "focused_invented_model_tests": 8,
+    "owned_native_generation_compiler_jobs_terminal": true
+  },
+  "preservation": {
+    "unique_files": 39379,
+    "all_match": true,
+    "old_generated_and_both_new_outputs_unchanged": true,
+    "normal07_and_lifetime_variants_unchanged": true,
+    "original_discs_unchanged": true,
+    "MIT_WIP": 4
+  },
+  "retained_failures": [
+    "Whole catalog gives25candidate entries, not automatically6; explicit current module scope is required. Other19candidates are not promoted.",
+    "Initial read-only journal console summary failed in CP1252 after focused8tests passed; no journal mutation. Subsequent commands explicitly use UTF-8."
+  ],
+  "limits": [
+    "Input model is original host selection/algebra only, no instruction decoder or game data. Its candidate ends are not full function/CFG/ISA/ABI qualification.",
+    "18historical private indirect seeds, modules, VU and generic-source dependencies remain explicit. Not ISO-only public setup.",
+    "One retained generation error and1450warnings; no opcode NOP/stub/suppression or full guest coverage claim.",
+    "No new executable, F2/action/hardware/audio/save/campaign/reference-warning proof, no normal07 promotion or retail backend.",
+    "No new visual evidence is manufactured for source-only work. Original selected native captures remain unchanged."
+  ]
+}

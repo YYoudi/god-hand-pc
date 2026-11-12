@@ -1,5 +1,17 @@
 # Canonical progress and publication workflow
 
+## Fresh imported-entry provenance — 12 November 2026
+
+[PROTOTYPE_ENTRY_REPLAY.md](PROTOTYPE_ENTRY_REPLAY.md) records a fresh76-module
+original-call audit and explicit profile selecting6export entries/9call sites
+before the old-map oracle. Two new generations reproduce9818files exactly with
+6fresh ranges +18retained indirect ranges; one error/1450warnings stay visible.
+Original public model/invented8tests only, no map/game code is published. This is
+source reproducibility, not a new executable/F2/PCSX2-warning test or complete
+ISO-only setup. Normal07 and historical WIP remain unchanged; full goal ACTIVE.
+Next qualify code-backed indirect uses/source closure; reference warning and
+broader input/menu coverage remain open. Do not manufacture a new visual pair.
+
 ## Menu accounting investigation — 12 November 2026
 
 [PROTOTYPE_MENU_LIFETIME.md](PROTOTYPE_MENU_LIFETIME.md) records a separate
