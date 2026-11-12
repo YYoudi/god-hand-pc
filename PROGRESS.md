@@ -1,5 +1,25 @@
 # Canonical progress and publication workflow
 
+## Public entry-input producers — 12 November 2026
+
+Read PROTOTYPE_ENTRY_PRODUCER.md and checkpoint/entry_public_producer_current.
+Source989b65a publishes original import/local-table/entry models and private-output
+CLI. No three private selectors or old selected maps execute as producers. Actual
+personal-disc/ELF/discovery results match all old scoped fields and BOTH native
+CSVs (1786/4083bytes;12direct/21indirect/298relocs original order). Static counts
+are not CFG/ISA/ABI/index/lifetime/runtime proof; unknowns stay metadata barriers.
+Registry uses pinned GPL upstream1930765, explicitly own .sndata, never retail
+default. Dependency source permits exact Git or explicit LF->CRLF postimage only;
+record both hashes and bypass unchecked pyc. Keep the first EOL-guard failure.
+Nine actual commands pass (seven-block +two source/scope refusals), eight
+non-production output trees unchanged.442tests/3Windows skips61.764s;38new invented
+controls;45676identities preserved. No native build/run/default/profile change.
+SDK/entry producers and exacte677 named normal effects are DONE for stated scope.
+Next qualified original host/main/IOP/profiles/orchestration publication, then
+fresh public personal-disc setup/native acceptance. Broader original menu/input/
+reference/ABI/lifetime/failure-warning/audio/save gates stay. Goal ACTIVE; no Rust,
+delegation, guessed flags/ready/NOP/frees, game/maps/generated code/binaries public.
+
 ## Public SDK producer and actual source controls — 2026-11-12
 
 Read PROTOTYPE_SDK_PRODUCER.md and checkpoint/sdk_public_producer_current.

@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Setup-source follow-up: [public entry-input producers](PROTOTYPE_ENTRY_PRODUCER.md).
+The SDK and entry-input stages now reproduce the tested native inputs without
+our private selectors. Original host/profiles/build orchestration still need
+public packaging; this is not a new native build or a complete ISO-only installer.
+
 Setup-source follow-up: [public prototype SDK producer](PROTOTYPE_SDK_PRODUCER.md).
 Original GPL tools reproduce the existing native SDK input without private selector
 scripts. This does not distribute a game or finish the personal-disc prototype

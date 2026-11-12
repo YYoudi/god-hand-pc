@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-12",
+  "source_revision": "989b65a34c42b827e7e473ec0d7fa3964223ba08",
+  "public_source_files": {
+    "prototype_entries.py": "6c10ef08282bca1523f5244ee98ef68df0a0eab5e105420c85de9cba8a2cb5d8",
+    "prototype_entry_inputs.py": "3fc76ddf1bbb89c5ff902797a513b26d2b0809fc9662f27c08050e87dd9bf639",
+    "prototype_entry_candidates.py": "502f8da433d812ccef29bf1a383fe457a92fb3fd633f50bf943ca5b8a25a5916",
+    "prototype_table_candidates.py": "402d16db50e39054cc159367545051f579743dd64042b28d152798ecaa4a25e6"
+  },
+  "private_selectors_executed": false,
+  "old_maps_as_producer_inputs": false,
+  "inputs": {
+    "disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+    "elf_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+    "discovery": {
+      "cpp_files": 9792,
+      "bytes": 167172063,
+      "discovered_ranges": 9791,
+      "sha256": "2fe590355eb0eb30d33b09afe7ae5e594718f62cac661c78690ba0a0b2de283f"
+    },
+    "registry": {
+      "revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+      "source_files": {
+        "tools/snr2/snr2fmt.py": {
+          "checkout_sha256": "e88f8d9f40f7fc53b83b22aee10e0fc98e5aab0c82ec1f638e01ee4cbb331bfd",
+          "git_blob_sha256": "f3a3e4ee73de9dc9bd44a39b97b13553dfa534d22c3215b7906041236d38a5c6",
+          "checkout_policy": "git-lf-to-checkout-crlf"
+        },
+        "tools/snr2/snr2link.py": {
+          "checkout_sha256": "f941a2dfad561502341a05697be112cbc566bcc455a326b2038171609f146562",
+          "git_blob_sha256": "f9eb375ead9216ad27c4cc3f25d1de7fd4bfe85f6cf5d3c11dab3bc4808e8c92",
+          "checkout_policy": "git-lf-to-checkout-crlf"
+        }
+      },
+      "provenance": "Pinned GPL upstream reverse-engineered BOOT registry metadata model; explicit own .sndata address, not retail-address/ABI/runtime proof"
+    },
+    "selected_module_names": [
+      "mcport.rel",
+      "r020.rel",
+      "r100.rel",
+      "event.rel",
+      "r101.rel"
+    ]
+  },
+  "results": {
+    "modules": 76,
+    "original_import_jal_uses": 6487,
+    "unresolved_import_jal_uses": 2,
+    "direct_candidates": 25,
+    "direct_rejections": 7,
+    "indirect_instructions": 659964,
+    "local_uses": 17,
+    "code_backed_tables": 5,
+    "selected_direct": 12,
+    "selected_indirect": 21,
+    "entry_csv_bytes": 1786,
+    "entry_csv_sha256": "1af866028abcc533c09b252a5f8314790df357d2ade2a1889c06ecfcd22c77a3",
+    "runtime_relocations": 298,
+    "relocation_csv_sha256": "51b4e1c643892b340e4fe628d0d9bb784c2eb23ce268f9385bb4afbdea61050e"
+  },
+  "unknown_metadata_flow_barriers": 23619,
+  "runtime_relocation_CSV_bytes": 4083,
+  "old_oracle_checks": {
+    "all_direct_result_fields_equal": true,
+    "all_indirect_result_fields_equal": true,
+    "selected_direct_equal": true,
+    "selected_indirect_equal": true,
+    "table_provenance_equal_ignoring_scope": true,
+    "entry_CSV_bytes_exact": true,
+    "runtime_relocation_CSV_bytes_exact": true
+  },
+  "new_manifest_precedes_old_oracle": true,
+  "first_checkout_EOL_guard_failure_preserved": true,
+  "explicit_checkout_policies_recorded": true,
+  "unchecked_pyc_not_executed": true,
+  "actual_controls": [
+    {
+      "name": "check-only",
+      "exit": 0,
+      "expected_exit": 0,
+      "seconds": 3.0160000000032596,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "wrong-elf-identity",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.07800000000133878,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "wrong-disc-identity",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 1.6869999999980791,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "wrong-discovery-identity",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 1.0469999999986612,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "unsafe-session",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.06300000000192085,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "new-production",
+      "exit": 0,
+      "expected_exit": 0,
+      "seconds": 2.9839999999967404,
+      "private_output_tree_unchanged": false
+    },
+    {
+      "name": "stale-session-refused",
+      "exit": 2,
+      "expected_exit": 2,
+      "seconds": 0.046000000002095476,
+      "private_output_tree_unchanged": true
+    }
+  ],
+  "separate_extra_refusals": [
+    {
+      "name": "wrong-registry-revision",
+      "exit": 2,
+      "expected_exit": 2,
+      "private_output_tree_unchanged": true
+    },
+    {
+      "name": "unknown-selected-module",
+      "exit": 2,
+      "expected_exit": 2,
+      "private_output_tree_unchanged": true
+    }
+  ],
+  "tests": {
+    "total": 442,
+    "Windows_skips": 3,
+    "seconds": 61.764,
+    "new_invented": 38,
+    "exit": 0
+  },
+  "preserved_identities": 45676,
+  "new_native_build_or_launch": false,
+  "normal_profiles_changed": false,
+  "unchanged_native_exe_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "retained_native_evidence": "PROTOTYPE_WHOLE_INTERACTIVE.md",
+  "goal": "ACTIVE, not complete",
+  "limits": [
+    "Static import/local-table/entry input production, not extraction, translation, compilation, a native/gameplay/rendering run, new option coverage or native profile adoption.",
+    "Pinned upstream GPL registry model is reverse-engineered source; prototype own .sndata passed explicitly, not a retail-default address transplant or new independent-engine/ABI proof. Registry flags are static host metadata, not guest/controller-ready writes.",
+    "659964 words considered with23619 unknown barriers. Pointer prefixes/local stored uses/terminal pairs/known outgoing checks are not complete CFG/ISA/index domains, actual callback execution, function boundaries, general ABI or lifetime/failure recovery.",
+    "All original modules are scanned, but selected entry scopes remain explicit five-module input. Known zero-contribution catalog modules are not unknown or a fallback; unknown selected modules are refused.",
+    "Qualified original host/main/IOP/profiles and whole-build orchestration still need public packaging and fresh public setup/native acceptance. Existing exacte677 named normal evidence remains retained, not newly obtained here.",
+    "Translation/strictVU/render/loading/accounting0x480, wider original options/rooms/input/reference/hardware/audio/SaveLoad/campaign gates remain. No ISO/ELF/assets/dumps/cards/populated maps/generated game/VU code/binaries public; no new Rust/delegation."
+  ]
+}
