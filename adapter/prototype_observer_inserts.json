@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "version": "prototype-observer-inserts-v1",
+  "provenance": "Original previously authored observer declarations/calls; exact private raw/postimage identity, not new ABI or semantics proof. Game bodies/maps excluded.",
+  "profiles": [
+    {
+      "id": "damage",
+      "source_sha256": "70a58c71c26dfe4a412b1f4957241ecf5e73e4eb6e916345657d269f173ecbe5",
+      "output_sha256": "b694876a59015767ed1978cdfe8cc5a2b78512919383d5d14f184b79bfac9b1b",
+      "output": "prototype_observe_damage.cpp",
+      "line_ending": "crlf",
+      "insertions": [
+        {
+          "before_line": 3,
+          "text": "void prototypeObserveDamageEntry(uint8_t*,R5900Context*,PS2Runtime*);\nvoid prototypeObserveDamagePreClamp(uint8_t*,R5900Context*,PS2Runtime*);\nvoid prototypeObserveDamageAfterClamp(uint8_t*,R5900Context*,PS2Runtime*);\n"
+        },
+        {
+          "before_line": 30,
+          "text": "    prototypeObserveDamageEntry(rdram,ctx,runtime);\n"
+        },
+        {
+          "before_line": 485,
+          "text": "    prototypeObserveDamagePreClamp(rdram,ctx,runtime);\n"
+        },
+        {
+          "before_line": 540,
+          "text": "    prototypeObserveDamageAfterClamp(rdram,ctx,runtime);\n"
+        },
+        {
+          "before_line": 544,
+          "text": "    prototypeObserveDamageAfterClamp(rdram,ctx,runtime);\n"
+        }
+      ]
+    },
+    {
+      "id": "refill",
+      "source_sha256": "a9fc93da8122614f3ba9fa8962888aaf36d7ccf14b748638815762bba8721384",
+      "output_sha256": "2b7213fdcbf0f39e4ab0131cfdbcea0406b1b115ac251ba6db2e9a54daeaefa6",
+      "output": "prototype_observe_refill.cpp",
+      "line_ending": "crlf",
+      "insertions": [
+        {
+          "before_line": 3,
+          "text": "void prototypeObserveRefillBefore(uint8_t*,R5900Context*,PS2Runtime*);\nvoid prototypeObserveRefillAfter(uint8_t*,R5900Context*,PS2Runtime*);\n"
+        },
+        {
+          "before_line": 1213,
+          "text": "    prototypeObserveRefillBefore(rdram,ctx,runtime);\n"
+        },
+        {
+          "before_line": 1221,
+          "text": "    prototypeObserveRefillAfter(rdram,ctx,runtime);\n"
+        }
+      ]
+    },
+    {
+      "id": "warp_create",
+      "source_sha256": "283f8ee23f8ff2146f0c753cee0abb0fd1fe30f21bb363ef7dea024418e62bed",
+      "output_sha256": "bdc7a8bc43dde4268441571a2aee3ef81b2c0658f0c4d8b27990d73be9e3a8df",
+      "output": "prototype_observe_warp_create.cpp",
+      "line_ending": "crlf",
+      "insertions": [
+        {
+          "before_line": 3,
+          "text": "void prototypeObserveWarpCreateComplete(uint8_t*,R5900Context*,PS2Runtime*);\n\n"
+        },
+        {
+          "before_line": 458,
+          "text": "    prototypeObserveWarpCreateComplete(rdram,ctx,runtime);\n"
+        }
+      ]
+    },
+    {
+      "id": "warp_destroy",
+      "source_sha256": "1254945ad4d2f0ca4e76c2821a6b07881be5afc68810a74d53cc353d42fb1781",
+      "output_sha256": "86b2a82dddc79c0a85b94c1870f94d412719bc2538f000f47ffe35e79ee53891",
+      "output": "prototype_observe_warp_destroy.cpp",
+      "line_ending": "crlf",
+      "insertions": [
+        {
+          "before_line": 3,
+          "text": "void prototypeObserveWarpDestroyComplete(uint8_t*,R5900Context*,PS2Runtime*);\n\n"
+        },
+        {
+          "before_line": 123,
+          "text": "    prototypeObserveWarpDestroyComplete(rdram,ctx,runtime);\n"
+        }
+      ]
+    }
+  ]
+}
