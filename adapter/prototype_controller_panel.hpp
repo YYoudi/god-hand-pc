@@ -8,11 +8,14 @@
 #include <string_view>
 
 namespace godhand_pc::prototype_controller {
-enum class Action { OpenMenu, Up, Down, Left, Right, Circle, Cross, Start, Hide };
+enum class Action { OpenMenu, Up, Down, Left, Right, Circle, Cross, Start, Hide,
+                    StickUp, StickDown, StickLeft, StickRight };
+enum class ControlSet { DigitalV1, LeftStickV2 };
+inline bool validControls(ControlSet c){return c==ControlSet::DigitalV1||c==ControlSet::LeftStickV2;}
 enum class Result { Submitted, Refused, UnknownDelivery };
 enum class Status { Hidden, Ready, Queued, Submitted, Busy, Expired, Unfocused,
                     ControlsOwnInput, UnsupportedProfile, UnsupportedBindings,
-                    ReversedClock, BackendRefused, WriterFault };
+                    ReversedClock, BackendRefused, WriterFault, UnsupportedControls };
 struct Context {
     bool verifiedProfile = false;
     bool keyboardOnly = false;
@@ -22,6 +25,7 @@ struct Context {
 };
 inline constexpr std::array<Action,9> actions = {Action::OpenMenu,Action::Up,Action::Down,
     Action::Left,Action::Right,Action::Circle,Action::Cross,Action::Start,Action::Hide};
+inline constexpr std::array<Action,4> stickActions={Action::StickUp,Action::StickDown,Action::StickLeft,Action::StickRight};
 inline const char* label(Action a) {
     switch(a) {
     case Action::OpenMenu:return "Debug chord";case Action::Up:return "Up";
@@ -29,6 +33,8 @@ inline const char* label(Action a) {
     case Action::Right:return "Right";case Action::Circle:return "Circle";
     case Action::Cross:return "Cross";case Action::Start:return "Start";
     case Action::Hide:return "Hide";
+    case Action::StickUp:return "LS up";case Action::StickDown:return "LS down";
+    case Action::StickLeft:return "LS left";case Action::StickRight:return "LS right";
     }
     return "Unsupported";
 }
@@ -38,6 +44,8 @@ inline std::string_view pulse(Action a) {
     case Action::Left:return "left:0.2\n";case Action::Right:return "right:0.2\n";
     case Action::Circle:return "circle:0.2\n";case Action::Cross:return "cross:0.2\n";
     case Action::Start:return "start:0.2\n";
+    case Action::StickUp:return "lup:0.2\n";case Action::StickDown:return "ldown:0.2\n";
+    case Action::StickLeft:return "lleft:0.2\n";case Action::StickRight:return "lright:0.2\n";
     default:return {};
     }
 }
@@ -56,6 +64,7 @@ inline const char* message(Status s) {
     case Status::ReversedClock:return "Clock reversed; pending click discarded.";
     case Status::BackendRefused:return "Backend refused the request; no success claimed.";
     case Status::WriterFault:return "Writer failed: delivery unknown. Restart this diagnostic run.";
+    case Status::UnsupportedControls:return "Unsupported controller set; requests disabled.";
     }
     return "Unknown controller status.";
 }
@@ -76,22 +85,47 @@ struct Layout {
     }
 };
 inline Layout layout(int width,int height);
+struct StickLayout {
+    Rect background;
+    std::array<Rect,4> buttons{};
+    bool valid=false;
+    std::optional<Action> at(float x,float y) const {
+        if(!valid)return {};
+        for(size_t n=0;n<buttons.size();++n)if(buttons[n].contains(x,y))return stickActions[n];
+        return {};
+    }
+};
+inline StickLayout stickLayout(int width,int height) {
+    StickLayout out;if(!layout(width,height).valid)return out;
+    out.valid=true;out.background={8.0f,float(height-172),float(width-16),56.0f};
+    const float buttonWidth=(float(width)-36.0f)/4.0f;
+    for(size_t n=0;n<out.buttons.size();++n)
+        out.buttons[n]={12.0f+float(n)*(buttonWidth+4.0f),float(height-146),buttonWidth,22.0f};
+    return out;
+}
+inline std::optional<Action> hit(ControlSet c,int width,int height,float x,float y) {
+    if(!validControls(c))return {};
+    if(auto a=layout(width,height).at(x,y))return a;
+    return c==ControlSet::LeftStickV2?stickLayout(width,height).at(x,y):std::nullopt;
+}
 // Only a press edge is retained. Do not synthesize mouse state, repeats or holds.
 class Click {
 public:
+    explicit Click(ControlSet controls=ControlSet::DigitalV1):controls_(controls){}
     bool observe(float x,float y,int width,int height,uint64_t atMs,bool focused) {
-        if(pending_||!focused||!layout(width,height).valid||!std::isfinite(x)||!std::isfinite(y))return false;
+        if(!validControls(controls_)||pending_||!focused||!layout(width,height).valid||!std::isfinite(x)||!std::isfinite(y))return false;
         pending_=Edge{x,y,width,height,atMs};return true;
     }
     std::optional<Action> take(int width,int height,uint64_t nowMs,bool focused) {
         if(!pending_)return {};
         const auto p=*pending_;pending_.reset();
         if(!focused||width!=p.width||height!=p.height||nowMs<p.at||nowMs-p.at>500)return {};
-        return layout(width,height).at(p.x,p.y);
+        return hit(controls_,width,height,p.x,p.y);
     }
     void clear(){pending_.reset();}
 private:
     struct Edge{float x,y;int width,height;uint64_t at;};
+    ControlSet controls_;
     std::optional<Edge> pending_;
 };
 inline Layout layout(int width,int height) {
@@ -105,8 +139,10 @@ inline Layout layout(int width,int height) {
 }
 class Panel {
 public:
+    explicit Panel(ControlSet controls=ControlSet::DigitalV1):controls_(controls){}
     bool show(Context c) {
         if(fault_){status_=Status::WriterFault;return false;}
+        if(!validControls(controls_)){status_=Status::UnsupportedControls;return false;}
         if(!eligible(c)){visible_=false;pending_.reset();return false;}
         visible_=true;status_=Status::Ready;return true;
     }
@@ -146,7 +182,12 @@ public:
     Action lastAction() const {return lastAction_;}
 private:
     struct Pending{Action action;uint64_t at;};
-    static bool valid(Action a){for(auto v:actions)if(v==a)return true;return false;}
+    bool valid(Action a)const{
+        if(!validControls(controls_))return false;
+        for(auto v:actions)if(v==a)return true;
+        if(controls_==ControlSet::LeftStickV2)for(auto v:stickActions)if(v==a)return true;
+        return false;
+    }
     bool eligible(Context c) {
         if(!c.verifiedProfile){status_=Status::UnsupportedProfile;return false;}
         if(c.controlsOpen){status_=Status::ControlsOwnInput;return false;}
@@ -154,6 +195,7 @@ private:
         if(!c.focused){status_=Status::Unfocused;return false;}
         return true;
     }
+    ControlSet controls_;
     bool visible_=false,fault_=false;
     uint64_t busyUntil_=0;
     std::optional<Pending> pending_;

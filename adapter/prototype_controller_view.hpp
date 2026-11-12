@@ -4,15 +4,25 @@
 #include <raylib.h>
 
 namespace godhand_pc::prototype_controller {
-inline void draw(const Panel& panel,uint64_t nowMs,bool bridgeBusy) {
+inline void draw(const Panel& panel,uint64_t nowMs,bool bridgeBusy,ControlSet controls=ControlSet::DigitalV1) {
     if(!panel.visible())return;
     const auto positions=layout(GetScreenWidth(),GetScreenHeight());
     if(!positions.valid)return;
     const auto r=[](Rect a){return Rectangle{a.x,a.y,a.width,a.height};};
+    const bool disabled=panel.faulted()||panel.busy(nowMs)||bridgeBusy;
+    if(controls==ControlSet::LeftStickV2) {
+        const auto sticks=stickLayout(GetScreenWidth(),GetScreenHeight());
+        DrawRectangleRec(r(sticks.background),Color{20,23,27,245});
+        DrawRectangleLinesEx(r(sticks.background),1.0f,Color{125,133,141,255});
+        DrawText("Left stick: bounded 200 ms requests",12,GetScreenHeight()-167,14,Color{230,231,233,255});
+        for(size_t n=0;n<sticks.buttons.size();++n){const auto b=sticks.buttons[n];
+            DrawRectangleRec(r(b),disabled?Color{43,46,51,255}:Color{67,75,84,255});
+            DrawText(label(stickActions[n]),int(b.x+5),int(b.y+4),14,disabled?Color{137,143,150,255}:Color{245,245,245,255});
+        }
+    }
     DrawRectangleRec(r(positions.background),Color{20,23,27,245});
     DrawRectangleLinesEx(r(positions.background),1.0f,Color{125,133,141,255});
     DrawText("Prototype controller requests (experimental)",12,GetScreenHeight()-107,14,Color{230,231,233,255});
-    const bool disabled=panel.faulted()||panel.busy(nowMs)||bridgeBusy;
     for(size_t n=0;n<positions.buttons.size();++n) {
         const auto a=actions[n];const auto b=positions.buttons[n];
         const bool muted=disabled&&a!=Action::Hide;

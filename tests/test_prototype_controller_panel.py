@@ -10,6 +10,48 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PrototypeControllerPanelTests(unittest.TestCase):
+    def test_explicit_sticks_share_gates_and_v1_layout_is_unchanged(self):
+        compiler=next((shutil.which(x) for x in ('g++','clang++','c++') if shutil.which(x)),None)
+        if not compiler:self.skipTest('C++17 compiler required')
+        source=r'''
+#include "adapter/prototype_controller_panel.hpp"
+#include <cassert>
+using namespace godhand_pc::prototype_controller;
+int main(){
+ Context good{true,true,true,false,false};Panel v1;assert(v1.show(good));
+ constexpr std::array<std::string_view,4> text={"lup:0.2\n","ldown:0.2\n","lleft:0.2\n","lright:0.2\n"};
+ auto legacy=layout(640,480);assert(legacy.buttons.size()==9);
+ for(size_t n=0;n<9;++n){auto b=legacy.buttons[n];assert(b.x==12+float(n%5)*124&&b.y==395+float(n/5)*25&&b.width==120&&b.height==22);}
+ for(size_t n=0;n<stickActions.size();++n){
+  const auto a=stickActions[n];assert(pulse(a)==text[n]);assert(!v1.request(a,1000,good));
+  auto b=stickLayout(640,480).buttons[n];float x=b.x+b.width/2,y=b.y+b.height/2;
+  assert(!legacy.at(x,y));assert(!hit(ControlSet::DigitalV1,640,480,x,y));
+  assert(hit(ControlSet::LeftStickV2,640,480,x,y)==a);
+  Click old;assert(old.observe(x,y,640,480,1000,true));assert(!old.take(640,480,1001,true));
+  Click edge(ControlSet::LeftStickV2);assert(edge.observe(x,y,640,480,1000,true));assert(edge.take(640,480,1001,true)==a);
+  Panel p(ControlSet::LeftStickV2);assert(p.show(good));int sent=0;
+  assert(p.request(a,1000,good));assert(!p.request(Action::Down,1001,good));
+  p.tick(1002,good,[&](Action got){assert(got==a);++sent;return Result::Submitted;});assert(sent==1);
+  assert(!p.request(Action::Circle,1200,good));assert(!p.request(a,1200,good));
+  assert(p.request(Action::Down,1302,good));assert(!p.request(a,1303,good));
+  p.tick(1303,good,[&](Action got){assert(got==Action::Down);++sent;return Result::Submitted;});assert(sent==2);
+  for(int gate=0;gate<5;++gate){auto c=good;if(gate==0)c.controlsOpen=true;if(gate==1)c.focused=false;if(gate==2)c.verifiedProfile=false;if(gate==3)c.keyboardOnly=false;if(gate==4)c.bridgeBusy=true;
+   Panel q(ControlSet::LeftStickV2);assert(q.show(good));assert(q.request(a,2000,good));q.tick(2001,c,[&](Action){++sent;return Result::Submitted;});q.tick(3000,good,[&](Action){++sent;return Result::Submitted;});assert(sent==2);
+  }
+  Panel bad(ControlSet::LeftStickV2);assert(bad.show(good));assert(bad.request(a,1000,good));bad.tick(1000,good,[](Action){return Result::UnknownDelivery;});assert(bad.faulted());assert(!bad.request(Action::Down,2000,good));
+ }
+ Panel invalid(static_cast<ControlSet>(99));assert(!invalid.show(good));
+ Click invalidClick(static_cast<ControlSet>(99));assert(!invalidClick.observe(30,30,640,480,1000,true));
+ assert(!stickLayout(479,480).valid);assert(!stickLayout(640,299).valid);
+}
+'''
+        with tempfile.TemporaryDirectory(prefix='gh-stick-') as directory:
+            d=Path(directory);cpp=d/'probe.cpp';cpp.write_text(source,encoding='utf-8');exe=d/('probe.exe' if os.name=='nt' else 'probe')
+            b=subprocess.run([compiler,'-std=c++17','-Wall','-Wextra','-Werror','-O2','-I',str(ROOT),str(cpp),'-o',str(exe)],capture_output=True,text=True,timeout=90)
+            self.assertEqual(b.returncode,0,b.stdout+b.stderr)
+            r=subprocess.run([str(exe)],capture_output=True,text=True,timeout=20)
+            self.assertEqual(r.returncode,0,r.stdout+r.stderr)
+
     def test_native_callback_chain_bindings_and_f1_owner_with_stubs(self):
         compiler=next((shutil.which(x) for x in ('g++','clang++','c++') if shutil.which(x)),None)
         if not compiler:self.skipTest('C++17 compiler required')
@@ -74,7 +116,13 @@ int main(){
  q.tick(monotonicMs(),false,dispatch);assert(sent==1);
  q.writerFault();assert(!q.showFromF2());
  installed=&foreignMouse;q.shutdown();assert(installed==&foreignMouse); // no callback theft
+ assert(!other.initialize(true,true,static_cast<ControlSet>(99)));
  assert(other.initialize(true,true));other.shutdown();
+ NativePanel sticks;assert(sticks.initialize(true,true,ControlSet::LeftStickV2));assert(sticks.showFromF2());
+ const auto s=stickLayout(width,height).buttons[3];mouseX=s.x+5;mouseY=s.y+5;
+ installed(&window,0,1,0);installed(&window,0,0,0);
+ sticks.tick(monotonicMs(),false,[&](Action a){assert(a==Action::StickRight);++sent;return Result::Submitted;});assert(sent==2);
+ sticks.shutdown();
 }
 '''
         with tempfile.TemporaryDirectory(prefix='gh-panel-native-') as directory:

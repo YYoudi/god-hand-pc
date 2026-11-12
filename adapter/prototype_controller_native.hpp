@@ -16,11 +16,13 @@ inline uint64_t monotonicMs(){return static_cast<uint64_t>(std::chrono::duration
 class NativePanel {
 public:
     // Caller must hold the exact-input guard throughout this object's lifetime.
-    bool initialize(bool verifiedProfile,bool otherPadsExplicitlyDisabled) {
+    bool initialize(bool verifiedProfile,bool otherPadsExplicitlyDisabled,ControlSet controls=ControlSet::DigitalV1) {
         if(active_||window_)return false;
+        if(!validControls(controls))return false;
         verified_=verifiedProfile;otherPadsDisabled_=otherPadsExplicitlyDisabled;
         if(!verified_||!otherPadsDisabled_)return false;
         window_=glfwGetCurrentContext();if(!window_)return false;
+        controls_=controls;panel_=Panel(controls);clicks_=Click(controls);
         active_=this;prior_=glfwSetMouseButtonCallback(window_,&mouse);
         std::fprintf(stderr,"PROTOTYPE_CONTROLLER_PANEL initialized=1 callback_chained=%d\n",prior_!=nullptr);
         return true;
@@ -53,7 +55,7 @@ public:
             std::fprintf(stderr,"PROTOTYPE_CONTROLLER_REQUEST action=%s result=%d no_effect_ack=1\n",label(a),int(result));
             return result;
         });
-        draw(panel_,now,bridgeBusy);
+        draw(panel_,now,bridgeBusy,controls_);
     }
 private:
     static bool keyboardOnly() {
@@ -81,6 +83,7 @@ private:
     GLFWwindow* window_=nullptr;
     PrototypeMouseCallback prior_=nullptr;
     bool verified_=false,otherPadsDisabled_=false;
+    ControlSet controls_=ControlSet::DigitalV1;
     Panel panel_;
     Click clicks_;
 };
