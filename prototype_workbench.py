@@ -15,6 +15,16 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 BUILD_SHA256 = '0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6'
+BUILD_PROFILES = {
+    'native07': {
+        'sha256': BUILD_SHA256,
+        'default_user_data': 'prototype-default',
+    },
+    'room01-v1': {
+        'sha256': '4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7',
+        'default_user_data': 'prototype-room01',
+    },
+}
 ELF = (3450144, 'f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e')
 DISC = (1261928448, '5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e')
 PREFIXES = ('PS2X_', 'PROTOTYPE_', 'GODHAND_')
@@ -52,6 +62,14 @@ RLeft =
 LargeMotor =
 SmallMotor =
 '''
+
+
+def build_profile(name):
+    """Explicit pinned private build, never detection from an arbitrary file."""
+    try:
+        return dict(BUILD_PROFILES[name])
+    except (KeyError, TypeError):
+        raise ValueError('Unsupported prototype build profile') from None
 
 
 def ordinary(path):
@@ -109,24 +127,28 @@ def launch_environment(parent, user):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--exe', required=True, help='Qualified private native07 executable; exact hash required')
+    parser.add_argument('--build', choices=tuple(BUILD_PROFILES), default='native07',
+                        help='Pinned private build; native07 stays the default, room01-v1 is explicit')
+    parser.add_argument('--exe', required=True, help='Qualified PRIVATE executable for the selected build; exact hash required')
     parser.add_argument('--elf', required=True, help='Personal June-2006 prototype ELF, read only')
     parser.add_argument('--disc', required=True, help='Personal June-2006 prototype disc, read only')
     parser.add_argument('--session', required=True, help='NEW private session name, never overwritten')
-    parser.add_argument('--user-data', default='prototype-default', help='Persistent private preferences/cards name')
+    parser.add_argument('--user-data', help='Persistent private preferences/cards name; separate build-specific default')
     parser.add_argument('--check-only', action='store_true', help='Verify inputs and paths without creating files or launching')
     args = parser.parse_args(argv)
     try:
         if os.name != 'nt':
             raise ValueError('This qualified executable requires Windows')
-        exe = verify(args.exe, BUILD_SHA256)
+        build = build_profile(args.build)
+        exe = verify(args.exe, build['sha256'])
         elf = verify(args.elf, ELF[1], ELF[0])
         disc = verify(args.disc, DISC[1], DISC[0])
         workspace = ROOT / '.local'
         if workspace.is_symlink() or (workspace.exists() and getattr(workspace.lstat(), 'st_file_attributes', 0) & 1024):
             raise ValueError('Aliased .local workspace refused')
         session = private_path(workspace, 'prototype-workbench', 'sessions', args.session)
-        user = private_path(workspace, 'prototype-workbench', 'userdata', args.user_data)
+        user = private_path(workspace, 'prototype-workbench', 'userdata',
+                            args.user_data if args.user_data is not None else build['default_user_data'])
         if session.exists():
             raise ValueError('Session already exists; choose a fresh name')
         controls = user / 'controls.ini'
@@ -134,6 +156,7 @@ def main(argv=None):
             ordinary(controls)
         env = launch_environment(os.environ, user)
         print('Qualified PRIVATE prototype build. Visible, muted; F1 controls / F2 original debug menu and mouse panel.')
+        print('Selected build:', args.build, '(adopt-only; no executable is downloaded or generated)')
         print('No deadline, automatic input, snapshots or game-memory export. Close the window to exit.')
         print('Existing controls/cards preserved; these are not verified game Save/Load or hardware tests.')
         if args.check_only:
@@ -145,7 +168,7 @@ def main(argv=None):
             with controls.open('x', encoding='utf8', newline='\n') as stream:
                 stream.write(CONTROLS)
         before = digest(controls)
-        receipt = {'profile': 'interactive-v1', 'exe_sha256': BUILD_SHA256,
+        receipt = {'profile': 'interactive-v1', 'build': args.build, 'exe_sha256': build['sha256'],
                    'elf_sha256': ELF[1], 'disc_sha256': DISC[1],
                    'controls_before_sha256': before, 'user_data': str(user),
                    'scope': 'Adopted private build; not ISO-only generation, retail or full menu/fidelity acceptance.'}

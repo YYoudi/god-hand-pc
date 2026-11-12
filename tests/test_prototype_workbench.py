@@ -6,10 +6,62 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
+from types import SimpleNamespace
 import prototype_workbench as w
 
 
 class PrototypeWorkbenchTests(unittest.TestCase):
+    def test_default_build_identity_and_userdata_remain_native07(self):
+        self.assertEqual(w.build_profile('native07'), {
+            'sha256': w.BUILD_SHA256, 'default_user_data': 'prototype-default'})
+        self.assertEqual(w.BUILD_SHA256,
+            '0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6')
+
+    def test_explicit_combined_profile_has_separate_identity_and_userdata(self):
+        profile=w.build_profile('room01-v1')
+        self.assertEqual(profile['sha256'],
+            '4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7')
+        self.assertNotEqual(profile['default_user_data'],
+                            w.build_profile('native07')['default_user_data'])
+        profile['sha256']='invented mutation'
+        self.assertNotEqual(w.build_profile('room01-v1')['sha256'],profile['sha256'])
+
+    def test_unknown_build_profiles_never_fall_back_or_auto_detect(self):
+        for name in ['', 'latest', '../outside', None, []]:
+            with self.assertRaises(ValueError): w.build_profile(name)
+
+    def check_only_profile(self, profile=None, user=None):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            args=['--exe','invented-exe','--elf','invented-elf','--disc','invented-disc',
+                  '--session','invented-session','--check-only']
+            if profile is not None: args+=['--build',profile]
+            if user is not None: args+=['--user-data',user]
+            with mock.patch.object(w,'ROOT',root), \
+                 mock.patch.object(w,'os',SimpleNamespace(name='nt',environ={})), \
+                 mock.patch.object(w,'verify',side_effect=lambda path,*a:root/path) as verify, \
+                 mock.patch.object(w,'launch_environment',wraps=w.launch_environment) as environment, \
+                 mock.patch.object(w.subprocess,'Popen') as spawn:
+                self.assertEqual(w.main(args),0)
+                selected=w.build_profile(profile or 'native07')
+                self.assertEqual(verify.call_args_list[0].args,
+                                 ('invented-exe',selected['sha256']))
+                self.assertEqual(environment.call_args.args[1],root/'.local'/
+                    'prototype-workbench'/'userdata'/
+                    (user if user is not None else selected['default_user_data']))
+                spawn.assert_not_called()
+            self.assertFalse((root/'.local').exists())
+
+    def test_default_check_only_uses_old_build_without_output_or_process(self):
+        self.check_only_profile()
+
+    def test_combined_check_only_uses_explicit_build_without_output_or_process(self):
+        self.check_only_profile('room01-v1')
+
+    def test_explicit_user_data_name_is_not_silently_replaced(self):
+        self.check_only_profile('room01-v1','invented-explicit-user')
+
     def test_environment_strips_case_insensitive_automatic_and_future_flags(self):
         parent={'PATH':'invented', 'Ps2x_PAD_SCRIPT':'unsafe', 'PROTOTYPE_FUTURE':'unsafe',
                 'godhand_state_load':'unsafe', 'PS2X_AUDIO_MUTE':'0', 'PROTOTYPE_PROBE_SECONDS':'90'}
