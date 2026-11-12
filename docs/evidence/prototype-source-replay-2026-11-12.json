@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "date": "2026-11-12",
+  "source_revision": "e9c07b73c189c805d76dbf57011b52cebd616107",
+  "native_source_revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+  "scope": "Reviewed aggregate only, no raw maps/ELFs/disassembly/generated source/logs/cards/binaries. New source tools not silently included in unchanged native07.",
+  "inputs": [
+    {
+      "profile": "prototype",
+      "disc_size": 1261928448,
+      "disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+      "root_file": "SLPM_665.50",
+      "ELF_bytes": 3450144,
+      "ELF_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e"
+    },
+    {
+      "profile": "retail",
+      "disc_size": 1567686656,
+      "disc_sha256": "268b8e284619bb9e07d5c522d7e7cfa14cb0498623d7fba04a97d18b63bc0a7c",
+      "root_file": "SLUS_215.03",
+      "ELF_bytes": 3607008,
+      "ELF_sha256": "1742f95bef65bdb2aa57b7a77df4ac7619a092e9646e1ea325bc32ec8a64f3cd"
+    }
+  ],
+  "source_replay": {
+    "discovery_cpp": 9792,
+    "discovery_files": 9794,
+    "BOOT_cpp": 9816,
+    "BOOT_files": 9818,
+    "all_generated_cpp_headers_exact_old": true,
+    "repeated_fresh_trials": 2,
+    "selected_bindings": 103,
+    "known_static_direct_checks": 152,
+    "bindings_without_known_outgoing_check": 59,
+    "unresolved_ambiguous_targets": 12,
+    "rejected_targets": 2,
+    "own_boot_relocations": 502,
+    "instruction_relocations": 298,
+    "previous_qualified_private_seeds_still_required": 24,
+    "errors_retained": 1,
+    "warnings_retained": 1450,
+    "no_new_linked_executable": true,
+    "discovery_copy_changes": 40,
+    "PT_LOAD_file_bytes_unchanged": true,
+    "discovery_manifest_sha256": "8b2b8eabbc4105d73980ba63dc3db4d60c03c0f2a7d4a760bf469a1a38fb54b9",
+    "BOOT_manifest_sha256": "60aece23cab1847b11b202f1611f5d69a921c0ee691aa93769d8a45dff650f90",
+    "SDK_binding_text_LF_sha256": "27e086e492cf1b60f5ba826d0bb96115df441630aa50a2338adca13650e1b715",
+    "old_binding_original_sha256": "7453937c5e38ab8b3c8f3db995c0669972d82e6fc0f10e539a1e0bddc9a08914",
+    "private_seed_ranges_not_rederived": true,
+    "static_not_ABI_or_runtime_proof": true
+  },
+  "normal_native": {
+    "native_exe_sha256": "0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6",
+    "launcher_sha256": "601ce74094bf397b0a07a2d69301ec29a44cf29e7e744d71099df6443419382c",
+    "native_exit": 0,
+    "elapsed_seconds": 664.86535,
+    "fresh_ELF_directory": true,
+    "normal_profile_no_scripts_game_observers_raw_exports": true,
+    "actual_FIFO_requests": 28,
+    "actual_UI": "Real F2/mouse originalRoomJump1/00/Point0/Startskip; actualoriginalPL NO DEATH OFF->ON/menuclose/Hide; alive with visible fullhealth after enemyattacks; actualWarpentry/onefiniteLSRight/StartCrossHide returnsnormalcamera/HUD; actualoptionstillON->OFF/close/Hide, laterreducedhealth and originalContinue. No fighting script or direct guest-state writes.",
+    "ON_visible_alive_observations_seconds_apart": 90.283,
+    "Warp_idle_scene_ROI": [
+      1,
+      31,
+      641,
+      336
+    ],
+    "Warp_idle_scene_decoded_JPEG_pixels_different": 952,
+    "Warp_post_pulse_scene_decoded_JPEG_pixels_different": 193787,
+    "Warp_post_request_and_later_capture_bytes_equal": true,
+    "Warp_scope": "Visual response/settled view and normalHUD restoration only. Private sceneROI analysis reads unchanged originals, writes no crop. Not game vectors, full-machine pause, matchedPS2fidelity or new quantifiedactor displacement; numeric05proof remains separate.",
+    "OFF_visible_damage_to_Continue": "Reducedhealth and lateroriginalContinue observed; no numericHP/calltotal or exactdeath timestamp with observersdisabled.",
+    "memory_warning": "Original memory leak size0x480 reproduces on firstCrossafterOFF in normal07 with game observers disabled; nextobservedparent/gameplay/Continue. Cause and exactdurationunisolated; not fixed or memorysafe."
+  },
+  "synthetic": {
+    "tests": 280,
+    "Windows_skips": 3,
+    "seconds": 69.834,
+    "exit": 0,
+    "scope": "Final full suite AFTER journal/media preparation;280distinct original synthetic tests,3Windows symlink skips. Earlier280source full67.916s and8focused checks retained, not additional unique tests. No owned native/compiler overlap.",
+    "earlier_source_full_seconds": 67.916
+  },
+  "preservation": {
+    "old_files": 31,
+    "Rust_WIP": 4,
+    "native07_retained_files": 9850,
+    "native07_source_inputs": 10,
+    "original_source_discovery_and_BOOT_files_preserved": true
+  },
+  "retained_failures": [
+    "FirstSDK anchor model reproduces103identities but misses checks in13records; stage2full candidate-domain model reproduces152checks without newHLEbindings.",
+    "FirstBOOTCSV sorting changes order despite same298site/kindset; correctedNEWtrialpreservesoriginalSNRtableorder and exactoldCSV, no assertions weakened.",
+    "Firstoverlapfixture correctlyhit earlier.textmappingrefusal; correctedinventedsecond-loadfixtureexercises intendedoverlapguard, original/log retained."
+  ],
+  "evidence": {
+    "unchanged_original_native_JPEGs": 10,
+    "comparison_pairs": 6,
+    "profile": "native-host-jpeg-v1",
+    "alignment": "unmatched action states",
+    "no_journal_screenshots": true
+  },
+  "limits": [
+    "Visual normal07 trial is not the earlier198HP/refill-count experiment or numericWarpvector trial; do not inherit those counters.",
+    "No arbitrary one-shot/no-damage/wholecampaign/gameSave/audio/hardware/focus/held/repeat/fullmenu/retail proof.",
+    "Old memory warning, strictVU1 mismatch and detached-cloak/interface artifacts retained.",
+    "Fresh generation still needs24qualifiedprivateBOOTseeds and selectedmodule/VU/genericlibrary dependencies; not ISO-only setup/fullABI/guestPCcoverage.",
+    "Menu Cross/Circle are ordinary finite inputs used at observed originalmenus; no deliberate player-attack or level-beating loop."
+  ]
+}

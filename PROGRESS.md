@@ -1,5 +1,14 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [fresh source generation and normal-mode effects](PROTOTYPE_SOURCE_REPLAY.md).
+Fresh original-disc inputs now regenerate the preserved discovery/BOOT outputs
+and static SDK binding evidence. Private seeds and module/VU/generic dependencies
+remain; this is not a new linked build or ISO-only setup. Unchanged native07 now
+repeats original no-death/Warp/return/OFF/death controls in normal mode without
+game observers. The0x480warning reproduces; numeric05proof is not inherited07.
+Next investigate the reference/lifecycle warning and close source/setup gaps,
+then broader input/menu coverage. Full goal ACTIVE, not complete.
+
 Latest scoped result: [visible prototype sessions and current no-death regression](PROTOTYPE_INTERACTIVE.md).
 Explicit normal interactive launches now work without the old diagnostic timer,
 automatic input or raw game-memory exports. Exact local-binary adoption is public

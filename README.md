@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest prototype work: [fresh inputs and normal-mode debug actions](PROTOTYPE_SOURCE_REPLAY.md).
+Normal native07 repeats scoped original actions without game observers. Source
+regeneration is reproducible for the tested inputs, but private seeds/dependencies
+and a repeated memory warning still prevent a complete prototype setup claim.
+
 Latest prototype work: [visible sessions and current no-death regression](PROTOTYPE_INTERACTIVE.md).
 The checked launcher adopts one exact **private local** prototype executable;
 it is not an ISO-only prototype installer or a retail debug backend. Original

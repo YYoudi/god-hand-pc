@@ -4,9 +4,10 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Original prototype F2/mouse RoomJump, scoped Warp and current stick-build no-death effects are observed. A separate exact-input visible interactive build and adopted-binary launcher now work without diagnostic timers/auto-input/raw exports. Full prototype setup, wider coverage and retail remain incomplete.",
-  "next": "Reproduce private prototype qualification/generation from personal discs; regress effect/restoration on the normal interactive candidate, then controlled focus/held/repeat and broader original options/refusals. Preserve the original memory warning, failed strictVU1 and rendering evidence; no guessed flags or retail address transplant.",
+  "status": "Normal prototype sessions now reproduce scoped original RoomJump/no-death/Warp/return/death actions on unchanged07 without game observers. Fresh discovery/BOOT source and103static SDK bindings regenerate exactly from personal-disc inputs plus explicit private seeds; not a complete ISO-only setup or retail/full-fidelity release.",
+  "next": "Investigate the reproducible0x480warning against the prototype reference and actual allocation/lifecycle evidence before suppressing anything. Close remaining24seed/module/VU/generic-source dependency gaps, then fresh full build/native acceptance and controlled focus/held/repeat/wider menu coverage. Keep prototype/retail distinct.",
   "known_limits": [
+    "Memory-leak0x480warning reproduces in normal07 with game observers disabled. Its cause and PS2reference behavior remain unknown; freshsource replay still requires24qualifiedprivateBOOTseeds/modules/VU/genericdependencies and does not produce a new executable.",
     "New adopt-only prototype launcher is NOT ISO-only generation/setup. Native05 no-death shows an unresolved original memory-leak0x480 warning after OFF; Native07 normal path has not repeated no-death/Warp effect coverage.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
@@ -112,14 +113,14 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Actual F2/mouse RoomJump1/00/Point1 and scoped native05Warp/no-death effects are observed. NEW07 normal interactive no-script RoomJump/F1 ownership/close passes; public launcher adopts exact private executable. Prototype generation/qualification, normal-mode effect regression, focus/held/repeat/full menu and retail remain open; keep in progress."
+          "acceptance": "Actual native07 normal/no-script RoomJumpPoint0 and scopedno-deathON/visiblealive/OFF/healthloss/Continue plus originalWarponeLSRight/normalcameraHUDreturn observed. F1ownership remains separatelyverified197s same07run. Not fullmenu/setup/hardware/focusheldrepeat/retail release; reproduciblememorywarning and remainingdependencies explicit."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Same05 no-death regression:19selectedONcalls/198HP,22refills; actualOFF followed by15selectedcalls/zeroHP/collapse/Continue, native0 before900s. Original memory-leak0x480 warning retained. Earlier scopedWarp/v1 controls preserved. Normal07 effect regression, checkedgeneration, focus/held/repeat and wider options/invalid states/retail remain open."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI."
         },
         {
           "id": "RM01",
@@ -332,6 +333,31 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Normal-mode debug actions and fresh source generation",
+      "summary": "The current interactive build now repeats original no-death, Warp and return/death controls without game observers. Two fresh source-generation trials also reproduce the old outputs; remaining private setup inputs and the repeated memory warning stay explicit.",
+      "changes": [
+        "Read original discs again, regenerated discovery/BOOT C++ privately and replayed103static SDK bindings without using the old selected address map as an input. Public changes are original game-free metadata/consistency tools and invented tests only.",
+        "Used the fresh ELF directory with the unchanged07 executable and checked launcher: actualF2/mouse RoomJumpPoint0, no-deathON/alive, one finite Warp stick response and original camera/HUD return, then actualOFF/damage/Continue.",
+        "Kept the visible0x480warning: it also occurs with game observers disabled. Selected originals below include warning/recovery and the visible Warp artifact, not a claimed fix."
+      ],
+      "validation": "Two fresh personal-disc input/discovery/staticSDK/BOOT trials finish0; all9794discovery and9818BOOTcpp/headers equal preserved outputs.103bindings/152staticdirectchecks and2rejections reproduce old evidence;59bindings lack outgoingchecks,12ambiguous targets remain unselected. Own502SNRrelocations yield298instructionrecords in originalorder;24private seed ranges remain inputs. One error/1450warnings retained. Same unchanged07 normal native0 after664.865s, actualAltF4, no auto-input/gameobservers/rawexports. Final280synthetic tests/3Windows symlink skips pass in69.834s after journal/media preparation; earlier source suite67.916s retained; no owned tests/compiler overlap native.",
+      "limits": "No new executable/fullbuild/ISO-only setup, recovered source/complete SDKABI, numerical07HP/vector/PS2parity or retail/hardware/audio/save/campaign/fullmenu claim. Idle JPEG scene observations differ952pixels before pulse; visualWarp response is not a new actor-vector proof. Memory warning, detachedcloak, initialwhite capture and failed recipe/fixture attempts retained.",
+      "evidence_comparisons": [
+        "2026-11-12-normal07-on-alive",
+        "2026-11-12-normal07-warp-pulse",
+        "2026-11-12-normal07-warp-restoration",
+        "2026-11-12-normal07-off-damage",
+        "2026-11-12-normal07-warning",
+        "2026-11-12-normal07-death-restored"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_SOURCE_REPLAY.md",
+        "label": "Fresh inputs, scoped normal-mode observations and remaining dependencies"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1112,6 +1138,318 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-normal07-on-alive",
+      "date": "2026-11-12",
+      "title": "Normal launch: original ON and later alive state",
+      "feature": "DT03",
+      "scenario": "Same unchanged07/freshELF normal session, actualRoomJumpPoint0, no scripted bootstrap; real original optionON/Cross/Hide.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original no-death ON",
+        "bevy": "Later alive in normal play"
+      },
+      "observations": [
+        "Normal07 has no game-health observers. Actual attack/hurt animations and full visible health remain observed while ON; native05numeric198HP experiment is separate."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "Not no-damage/arbitrary one-shot immunity or proof every intermediate frame/hit. Menu/Warp intervals are not counted as continuous enemy combat."
+      ],
+      "reference": {
+        "caption": "Actual Right changes the original PL NO DEATH option to ON. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:54:04.932Z",
+        "path": "media/22ab49ad81114e3ba97d59e3a15a803a4a63d04e8485741e1f3bc73a12505289.jpg",
+        "sha256": "22ab49ad81114e3ba97d59e3a15a803a4a63d04e8485741e1f3bc73a12505289",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Gene remains alive/full visible health after ordinary enemy attacks; alive endpoints90.283s apart, not numericHP proof. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:55:58.703Z",
+        "path": "media/aaab5b53c04abf0bd57953e9a8ed5d7285f4d4d7ae37f1997d10cd1af18f4dc5.jpg",
+        "sha256": "aaab5b53c04abf0bd57953e9a8ed5d7285f4d4d7ae37f1997d10cd1af18f4dc5",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-normal07-warp-pulse",
+      "date": "2026-11-12",
+      "title": "Normal launch: one original Warp stick response",
+      "feature": "DT03",
+      "scenario": "Actual F2/right/down/Circle enters originalWarp; two idle observations, ONE finiteLSRight200ms, settled post-input original.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original Warp before stick",
+        "bevy": "After one bounded LSRight"
+      },
+      "observations": [
+        "Private read-only sceneROI analysis:952decodedJPEGpixels differ across the two idle images,193787after pulse. Originals stay unchanged, no crop written."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "Visual response, not numeric world-space actor displacement or full-machine pause. Idle images are not perfectly identical; earlier05vector proof remains separate."
+      ],
+      "reference": {
+        "caption": "Second original Warp idle observation before any stick request. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:57:15.598Z",
+        "path": "media/0730a3e87f471e7e798d2d2dd1443ef20eaf1b0092cc316a2e9d82af38e99c9c.jpg",
+        "sha256": "0730a3e87f471e7e798d2d2dd1443ef20eaf1b0092cc316a2e9d82af38e99c9c",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Settled changed Warp view after ONE actual mouse LSRight request; same bytes as immediate post-request original. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:57:44.016Z",
+        "path": "media/58f802281007fd70e653225cd1cff5326ae288175e3240ca3968cea5ff6240da.jpg",
+        "sha256": "58f802281007fd70e653225cd1cff5326ae288175e3240ca3968cea5ff6240da",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-normal07-warp-restoration",
+      "date": "2026-11-12",
+      "title": "Original Warp exit returns normal camera/HUD",
+      "feature": "DT03",
+      "scenario": "SAME07 originalStart returnsparent, Crosscloses, Hide removeshostpanel; ordinaryenemy attacks resume.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Warp before original exit",
+        "bevy": "Normal HUD and attacks after exit"
+      },
+      "observations": [
+        "Actual original lifecycle controls restore the normal room/HUD. No observer counters are needed to display that return."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "Not position undo, exact coordinate/pose retention or a clean rendering result. Knockback and normal camera motion prevent using this unmatched pair as quantitative displacement proof."
+      ],
+      "reference": {
+        "caption": "Original Warp changed view before exit; detached-cloak-like fragment remains visible. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:57:44.016Z",
+        "path": "media/58f802281007fd70e653225cd1cff5326ae288175e3240ca3968cea5ff6240da.jpg",
+        "sha256": "58f802281007fd70e653225cd1cff5326ae288175e3240ca3968cea5ff6240da",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Normal HUD/camera after original exits; Gene is being knocked down by ordinary enemy attacks, not a fixed matched pose. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:58:17.904Z",
+        "path": "media/93e315fa61dfcd7e290f26d27116b36a76b6b701c4c7a9d053fcf184d7a84d4f.jpg",
+        "sha256": "93e315fa61dfcd7e290f26d27116b36a76b6b701c4c7a9d053fcf184d7a84d4f",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-normal07-off-damage",
+      "date": "2026-11-12",
+      "title": "Actual OFF returns ordinary health loss",
+      "feature": "DT03",
+      "scenario": "OptionstillON revisited, actualLeftOFF/Cross/close/Hide; ordinaryenemy damage, no deliberate fighting script.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option OFF",
+        "bevy": "Health decreases after OFF"
+      },
+      "observations": [
+        "Original OFF and visible vulnerability observed in the normal profile, not inferred from a submitted request."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "The firstCrossafterOFF also shows the retained memoryleak0x480warning; see next pair. No numericHP/calltotal is claimed."
+      ],
+      "reference": {
+        "caption": "Actual original option restored OFF. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:59:01.960Z",
+        "path": "media/8233444cd0c72ea86989ce9faea44ab144a60c7ec4b42a88f39fc69ddcec56e5.jpg",
+        "sha256": "8233444cd0c72ea86989ce9faea44ab144a60c7ec4b42a88f39fc69ddcec56e5",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later ordinary play with visibly reduced health after OFF. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T10:00:36.236Z",
+        "path": "media/59b92d7659a3fcce11bacfdf8c13a83c1a743464211370401f95f65249487958.jpg",
+        "sha256": "59b92d7659a3fcce11bacfdf8c13a83c1a743464211370401f95f65249487958",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-normal07-warning",
+      "date": "2026-11-12",
+      "title": "Memory warning also appears without game observers",
+      "feature": "DT03",
+      "scenario": "SAME07 firstCrossafterOFF displayswarning, nextobservationoriginalparent; latergame/death/Continue stillruns.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Warning with observers disabled",
+        "bevy": "Next observed parent menu"
+      },
+      "observations": [
+        "The warning is now reproduced in explicitnormal interactive-v1, with game observers/rawexports disabled."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "This narrows reproduction conditions only. Cause, exactduration, memory-safety implications and whether PS2prototype also shows it remain unverified."
+      ],
+      "reference": {
+        "caption": "The game displays memory leak size0x480 after OFF; preserved, not fixed or hidden. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:59:08.972Z",
+        "path": "media/a57c6cef9124a05ead2a35390fdff30c5de8ba8bc690d477b0005cd4a4286950.jpg",
+        "sha256": "a57c6cef9124a05ead2a35390fdff30c5de8ba8bc690d477b0005cd4a4286950",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Next observed original parent menu, followed by normal game/death/Continue. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T09:59:32.333Z",
+        "path": "media/516278d11539edff339f63c8ead7e24063166a12952ccd5e69b88b620e91fd11.jpg",
+        "sha256": "516278d11539edff339f63c8ead7e24063166a12952ccd5e69b88b620e91fd11",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-normal07-death-restored",
+      "date": "2026-11-12",
+      "title": "Normal-mode OFF reaches the original Continue screen",
+      "feature": "DT03",
+      "scenario": "After the sameactualOFF and menuclosure, ordinary enemy damage accumulates; normalAltF4endsnative0.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "OFF: reduced visible health",
+        "bevy": "Original Continue restored"
+      },
+      "observations": [
+        "Actual normalAltF4 afterContinue ends0 after664.865s, before the outer900s observationlimit. Nativeinteractive has no watchdog."
+      ],
+      "limits": [
+        "Unmatched original action states, not a matched PS2/reference fidelity pair. No cropping, image normalization or manual camera refit; original game imagery is not GPL.",
+        "Normal07 visual evidence does not inherit native05 numerical HP/refill/vector counts. Software OS/mouse input is not physical held/repeat/focus or a device test.",
+        "Same memory warning, detached-cloak/interface artifacts and prior strictVU1 mismatch remain unisolated/unfixed. No retail/game-save/audio/campaign/complete-menu or ISO-only installer acceptance.",
+        "No exact death timestamp or damage total with game observersdisabled. This is not genuine Save/exit/Load, campaign testing or native05count replay."
+      ],
+      "reference": {
+        "caption": "Reduced health after actualOFF; no imported save or player-attack loop. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T10:00:36.236Z",
+        "path": "media/59b92d7659a3fcce11bacfdf8c13a83c1a743464211370401f95f65249487958.jpg",
+        "sha256": "59b92d7659a3fcce11bacfdf8c13a83c1a743464211370401f95f65249487958",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later original Continue screen after OFF and ordinary enemy damage. Unchanged lossy full owned-window original, title/border retained. Host capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native07 OpenGL interactive-v1; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; exact public8be4cd6 launcher/d4f3da5 host headers, new fresh-disc ELF directory. No game-health/Warp/pad observers or automatic input.",
+        "revision": "d4f3da594ca39a5f5f2e7ace5e4ee213b58d7bf3",
+        "captured_at": "2026-11-12T10:02:45.443Z",
+        "path": "media/d33b32ed534b53d88236d3a821d4f0265d1169723c2fcc62021dc0cc2c8092da.jpg",
+        "sha256": "d33b32ed534b53d88236d3a821d4f0265d1169723c2fcc62021dc0cc2c8092da",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
     {
       "id": "2026-11-12-current-no-death-on",
       "date": "2026-11-12",

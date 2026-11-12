@@ -1,5 +1,31 @@
 # God Hand PC continuation - agent instructions
 
+## Fresh source replay and normal07 effects — 2026-11-12
+
+Read PROTOTYPE_SOURCE_REPLAY.md/checkpoint. Newignored twofresh discELF reads/
+discovery/BOOT generations: all9794discovery/9818BOOT cppheaders equalold,1error
+1450warnings retained. OwnSNR502relocations->298instructionrecords originalorder
+exact;24previousprivateBOOTseeds remainexplicitinput. Fresh107SDKcandidates,
+103bindings/152staticdirectchecks/2rejections equalold selectedevidence;59have
+nooutgoingcheck,12ambiguous targets notenabled. Publice9c07b7 originalELFmetadata/
+finite-domain models andinventedtests only. NOT recoveredsource/newABI/complete
+modulesVUgeneric-source closure/newlinkedbuild/ISO-onlyinstaller. FirstSDK13row
+anchor-evidencemismatch, sortedCSVorderfailure and malformedoverlapfixture retained;
+correctednewtrials preserveactualinvariants, no map copied tochooseaddresses.
+SAME07exe0afc8392 normal664.865s/native0 actualAltF4 with freshELFdirectory, no
+scripts/gameobservers/rawexports. RealF2/mousePoint0/no-deathON/aliveendpoints90.283s,
+originalWarpentry/ONE LSRight200ms/StartCrossHidecameraHUD, actualOFF/healthloss/
+Continue. Visual07only: doNOT inherit05numeric198HP/vectorcounts. IdleJPEGscene
+diff952 vs postpulse193787, notperfectidleparity/fullmachinepause/worldvectorproof;
+postrequest/laterimagebytes equal. Original0x480warningREPRODUCESwithoutgame
+observers, nextparent/game/death observed; PS2reference/cause/durationunknown.
+Detachedcloak artifact andinitialwhitecapture retained.280synthetic/3Win skips
+pass; no ownedcompiler/test duringnative. Alloldinputs/9850files/MIT4WIPpreserved.
+Next comparewarningwithprototypePCSXreference andauditactualallocation/lifecycle,
+doNOTsuppressmessage/guessheapflags. Close24seed/module/VU/genericsourcegaps then
+freshfullbuild/nativeacceptance, focusheldrepeat/wideroptions. FullgoalACTIVE,
+noRust/delegation/retailtransplant; normal07scoped effects are nowDONE, not missing.
+
 ## Interactive prototype and current no-death follow-up — 2026-11-12
 
 Read PROTOTYPE_INTERACTIVE.md and canonical checkpoint. Native05cb4d8dc5 actual
