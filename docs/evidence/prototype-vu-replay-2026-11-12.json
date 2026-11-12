@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-12",
+  "kind": "observed-native-and-source-replay",
+  "source_revision": "02de3050a5975e24ec43ef573a636b61f54bff37",
+  "scope": "VU-only replay from new qualified personal-disc native capture; not a complete source bootstrap, PS2 parity or normal-profile adoption",
+  "upstream_source_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "tool_sha256": "f30dab23ade5a9c9cb13be4a10fe67211c503e88c19a78b9582509d7ffe59d47",
+  "fresh_capture": {
+    "compiled_host_registration_enabled": false,
+    "old_counted_callbacks": 5,
+    "old_counted_callback_calls": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "native_exit": 0,
+    "declared_seconds": 450,
+    "elapsed_seconds": 454.141,
+    "original_PNGs": 9,
+    "images": 5,
+    "bytes": 81920,
+    "manifest_before_old_oracle": true,
+    "direct_ISO_extraction": false
+  },
+  "replay": {
+    "two_new_generations": true,
+    "CPPs_each": 20,
+    "new_generations_byte_equal": true,
+    "old_source_oracle_after_new_generation": true,
+    "old_CPPs_byte_equal": true,
+    "new_VU_objects": 20,
+    "new_VU_static_libraries": 1,
+    "new_host_wrapper_objects": 1,
+    "host_wrapper_bytes": 3472,
+    "host_wrapper_byte_equal": true,
+    "line_endings": "CRLF",
+    "process_exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "inventoried_parent_link_inputs": 9843,
+    "replaced_inputs": 2,
+    "generic_cached_libraries_still_reused": 5,
+    "compiler": "MSVC19.44.35229.0"
+  },
+  "native_controls": [
+    {
+      "case": "baseline",
+      "exit": 0,
+      "elapsed_seconds": 303.9060000000027,
+      "exe_sha256": "4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_pngs": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    },
+    {
+      "case": "fresh-source",
+      "exit": 0,
+      "elapsed_seconds": 303.8439999999973,
+      "exe_sha256": "0ef156637d67835e4a956288985e6bdca83411ef5d7f696272a701ba55f21ef7",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_pngs": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    }
+  ],
+  "sampled_original_equality": [
+    {
+      "field": 120,
+      "sha256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 1560,
+      "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2300,
+      "sha256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2700,
+      "sha256": "68a28c80e844310b511702265233ac5eee53999212a0013f062059c516225e4e",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2900,
+      "sha256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 3300,
+      "sha256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 4200,
+      "sha256": "d75cd88d54b5ece55d406850ff9bac7a92c7ac2beaadff0d41e1a96a0d97431f",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 4501,
+      "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 5001,
+      "sha256": "c77f1c8471174220ae33806e112f09f113f5364f461267bba6191028c407b222",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    }
+  ],
+  "normal_profiles_changed": false,
+  "new_capsule_adopted": false,
+  "retained_file_identities_verified": 10299,
+  "tests": {
+    "synthetic": 344,
+    "Windows_skips": 3,
+    "source_seconds": 59.672,
+    "source_exit": 0,
+    "final_exit": 0,
+    "final_seconds": 67.032
+  },
+  "limits": [
+    "Native bootstrap capture, not direct microprogram recovery from the ISO or a new complete source bootstrap.",
+    "Only nine sampled actual files match; no all-frame, timing/performance, strictVU, PS2 hardware or general VU-ISA claim.",
+    "Other BOOT/module/host inputs and five generic snapshot libraries remain reused. Prebuilt VU tool has not been rebuilt here.",
+    "Existing translation diagnostic, strictVU comparison failure, rendering artifacts, loading differences and original0x480 warning are not fixed.",
+    "New capsule has not inherited normal4acf F1/F2/Warp/no-death acceptance. Full menu, broader input, ABI/lifetime, Save/Load, audio and campaign remain open.",
+    "Program bytes, raw identities/maps, generated game/VU source, objects, libraries, native binaries, cards and discs remain private. Selected game imagery is not GPL."
+  ]
+}

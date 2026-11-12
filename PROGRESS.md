@@ -1,5 +1,25 @@
 # Canonical progress and publication workflow
 
+## Fresh VU source replay and actual native controls â€” 2026-11-12
+
+Read PROTOTYPE_VU_REPLAY.md and checkpoint/VU_replay_current. NEW450s AOT0
+qualified bootstrap capture ends0/454.141s,5fresh16KiB images, old5callbacks0;
+manifest precedes old oracle. Original02de305 game-free metadata/wrapper helper,
+3472CRLFbytes exact; two new20CPP generations byte-exactold afterfreshoutputs.
+New20VUobjects/library/wrapper/link all0/candidate0ef15663;9843parentinputs kept,
+two replaced only in newlink. NEW300s AOT1 parent/fresh controls0after303.906/
+303.844s,5registered/5positive callbacks each,9/9actual PNGs byte-identical.
+Actual original menu and room/Gene/HUD viewed, known artifacts unchanged.
+344source synthetic tests/3Win skips59.672s pass after capture/build terminal.
+Not a VU/math/graphics fix, directISO capture, rebuilt tool/bootstrap or fullsource
+installer. Fivegeneric snapshot libraries and otherBOOT/module/hostinputs reused.
+Normal07/default and explicitroom01-v1/4acf remain unchanged; no acceptance of
+their normalF1/F2/Warp/no-death effects inherited into0ef. StrictVU1 failure,
+1BOOTerror/1450warnings, original0x480/render/loading/partialfailure limits stay.
+Next generic5 source/toolchain closure/freshfullbuild, wider originaloptions/
+input/reference/lifetime; no guessed NOP/ready/flags/frees, Rust/delegation or
+game/VU source/asset/binary publication. Full goal ACTIVE, not complete.
+
 ## Normal combined prototype and explicit launcher — 12 November 2026
 
 [PROTOTYPE_COMBINED_INTERACTIVE.md](PROTOTYPE_COMBINED_INTERACTIVE.md) records

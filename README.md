@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Latest source boundary: [fresh VU capture, source replay and native controls](PROTOTYPE_VU_REPLAY.md).
+The separate build no longer consumes the old generated VU C++; selected original
+menu/room samples remain byte-identical. This is not a graphics fix or complete
+prototype installer: five generic snapshot libraries and other inputs remain.
+Both normal launcher profiles are unchanged. Earlier scoped results follow.
+
 Current scoped result: [normal combined prototype UI and effects](PROTOTYPE_COMBINED_INTERACTIVE.md).
 An explicit `--build room01-v1` selects the already-built private combined
 prototype after actual F1/F2, Room01/Warp and separate Room00 no-death/restored-
