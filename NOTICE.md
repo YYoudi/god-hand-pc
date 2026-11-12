@@ -35,3 +35,10 @@ reviewed edits against separately fetched GPL upstream1646d885, not vendored
 files or game bodies. Source postimage equality is not an independent clean-room,
 ABI or rights-holder authorization claim. Generated observed game functions are
 excluded; even a parameterized translated game body would remain prohibited.
+
+The public host-profile selector policy was authored with prior qualified roles,
+the private parameter table and original prototype instructions consulted privately.
+Its hash/operand extraction metadata and original algorithms contain no game
+instruction words, address map or translated body. No independent clean-room,
+semantic/ABI or fresh-native-base claim follows. Historical captured modules and
+populated profile outputs remain private and retain separate game rights.

@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-13",
+  "date_basis": "Europe/Paris; original UTC production spans 12 November midnight locally",
+  "source_revision": "c209f0c48d1e3c36d2eca76a413786495fe282a6",
+  "public_source_files": {
+    "prototype_host_profile.py": "4474e1acc1b39a14f580aeb6b745b373ea78797f0a8c63f3e4ca75893138c6bd",
+    "prototype_host_profile_inputs.py": "4cbc0c191db3d89f2ecb340fb8d16cb66637abe98ef7fba21c9a9bcd03cb9199",
+    "prototype_host_sources.py": "8c206a3bce9a40a3ecc8fe06d9360588cba4437f264018f96ce1a8aaf1814936",
+    "adapter/prototype_host_profile.json": "5b2e7b1b55466e65a23dcd6a6da112d4d68f4a2ed91c321b73628da5bd66abf6",
+    "tests/test_prototype_host_profile.py": "b722f2a802cdff49e15d5b93d9b705708419e44c1591d80f5d356e3f336fce88"
+  },
+  "selector_kinds": {
+    "host": 13,
+    "vaddr": 14,
+    "module-base": 5,
+    "module-end": 5,
+    "simm16": 9,
+    "uimm16": 1,
+    "lui-address": 7,
+    "alias": 3,
+    "include": 10
+  },
+  "fingerprint_windows": {
+    "32": 27,
+    "64": 4
+  },
+  "private_old_profile_consulted_for_policy_authoring": true,
+  "original_game_instructions_consulted_privately": true,
+  "private_old_parameter_map_as_CLI_producer_input": false,
+  "private_authoring_script_executed_by_CLI": false,
+  "old_semantic_ABI_qualification_replaced": false,
+  "historical_registration_pairs": 5,
+  "fresh_base_discovery": false,
+  "new_private_profile_file_sha256": "54700e73bf0ea4237958642590414849aa07c98d227d164e59271599f5110a0b",
+  "old_oracle_checks": {
+    "parameters": true,
+    "outputs": true
+  },
+  "qualification_prose_or_whole_profile_file_identity_claimed_equal": false,
+  "source_consumer_executable_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "five_private_source_postimages": {
+    "main.cpp": {
+      "bytes": 36981,
+      "sha256": "9f89d279f26a6340dfd81e7e29dae32ca4b4bf55319b7eaca8e81615dbe35f04"
+    },
+    "window_shortcut_bridge.hpp": {
+      "bytes": 379,
+      "sha256": "7d400a32f874bf981d614c2ac6365fdefa21d06d83c8691957c31013753f6e2b"
+    },
+    "overrides/iop_sio2.h": {
+      "bytes": 5158,
+      "sha256": "8c825c484ae958455d84191bb324b3447a6337a42f51d33dddb784ffa6d20760"
+    },
+    "overrides/iop_sio2.cpp": {
+      "bytes": 21678,
+      "sha256": "8785cccd75ee929bba9e672e6a51a14c74ae850e5dff10539a26c20c3681d55a"
+    },
+    "overrides/ps2_controls_screen.cpp": {
+      "bytes": 51911,
+      "sha256": "ec6acb9e79fa997a34e2976507ed4a9ff7b34f8099f6720edb2134e30fa9bd74"
+    }
+  },
+  "five_exact_native_host_postimages": {
+    "main.cpp": true,
+    "window_shortcut_bridge.hpp": true,
+    "overrides/iop_sio2.h": true,
+    "overrides/iop_sio2.cpp": true,
+    "overrides/ps2_controls_screen.cpp": true
+  },
+  "actual_commands": [
+    {
+      "label": "profile-check-only",
+      "exit": 0,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-elf",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-disc",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-upstream",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "missing-include",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "unsafe-session",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-observation",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "new-profile",
+      "exit": 0,
+      "output_tree_changed": true
+    },
+    {
+      "label": "stale-profile",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "host-check-only",
+      "exit": 0,
+      "output_tree_changed": false
+    },
+    {
+      "label": "new-host-sources",
+      "exit": 0,
+      "output_tree_changed": true
+    },
+    {
+      "label": "stale-host-sources",
+      "exit": 2,
+      "output_tree_changed": false
+    }
+  ],
+  "nonproduction_output_trees_unchanged": true,
+  "new_manifests_before_respective_old_oracles": true,
+  "synthetic_tests": {
+    "collected": 485,
+    "skipped_windows": 4,
+    "seconds": 79.4,
+    "new_invented_controls": 20
+  },
+  "preserved_file_identities": 45676,
+  "all_preserved_match": true,
+  "native_build_run_adoption": false,
+  "new_media": false,
+  "limits": [
+    "Historical native capture records remain required; not an ISO-only setup or fresh base discovery.",
+    "Fingerprints/operand arithmetic do not prove semantic roles, full functions, CFG, ABI or lifetime.",
+    "Observer-insertion qualification and whole-build/capture orchestration remain.",
+    "No new original-menu/rendering/performance/hardware/audio/SaveLoad/campaign/retail proof."
+  ]
+}

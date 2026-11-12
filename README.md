@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Setup-source follow-up: [prototype host-profile derivation](PROTOTYPE_HOST_PROFILE.md).
+All67 host parameters now derive from original inputs and five qualified historical
+native registrations, without a populated parameter table as production input.
+This is not fresh-base discovery, a new native run or an ISO-only setup.
+
 Setup-source follow-up: [original prototype host production](PROTOTYPE_HOST_PRODUCER.md).
 Public original host templates and reviewed GPL IOP/F1 edits now reproduce the
 five tested host sources exactly. Private qualification profiles and whole-build

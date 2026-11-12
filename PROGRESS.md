@@ -1,5 +1,28 @@
 # Canonical progress and publication workflow
 
+## Original host-profile derivation — 13 November 2026
+
+Read PROTOTYPE_HOST_PROFILE.md and checkpoint/host_profile_current. Sourcec209f0c
+derives all67host parameters without an old populated table as CLI input. Policy
+AUTHORING did consult prior qualified roles/map and original instructions
+privately: disclose source exposure, not clean-room/independent semantic/ABI proof.
+Public policy contains31hash-only windows/field kinds, no words/address map/bodies.
+Five pinned HISTORICAL original registration JSON/capture pairs remain required;
+do not claim fresh-base discovery or ISO-only setup. Captured header/size/disc
+identities checked, prior static-link/code qualification retained, not redone.
+All67values/fiveoutput identity-EOL records equal oldoracle; qualification prose/
+wholeprofilehash deliberately NOT claimed equal. Existing public source consumer
+on NEWprofile emits five exact tested e677 host postimages.12actual CLI controls,
+10nonproduction trees unchanged;485tests/4Windows skips79.400s,20new invented;
+45676retainedidentities match. No new native build/run/capture/adoption.
+SDK/entry/host/profile producers and scoped e677 named normal effects are DONE.
+Next original four diagnostic-insertion profile producer plus whole-build and
+fresh registration-observation acquisition/qualification orchestration, then
+own new setup/native acceptance. Recheck capacity before compile; no evidence
+deletion/moves/C:research, Rust/delegation/autofighting/guessedflags/ready/NOP/frees.
+Current normal07/room01-v1/launcher unchanged; broader menu/input/reference/ABI/
+lifetime/failure-warning/audio/save/campaign gates stay; full goal ACTIVE.
+
 ## Public original host source — 12 November 2026
 
 Read PROTOTYPE_HOST_PRODUCER.md and checkpoint/host_public_producer_current.
