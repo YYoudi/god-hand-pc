@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest checks: [prepared native endpoints and reusable module inputs](PROTOTYPE_PREPARED_CONTROLS.md).
+New controls now capture both final endpoints. Twenty of21common originals match;
+the loading-screen difference is retained. Public read-only tooling also obtains
+the prototype's76module inputs. This is not a new native build or setup release.
+
 Latest prototype source experiment: [code-backed entries and a native capsule](PROTOTYPE_INDIRECT_REPLAY.md).
 The BOOT-entry recipe no longer consumes the old seed CSV. A new incremental
 executable reaches the original menu/room/option states; its first visual-control

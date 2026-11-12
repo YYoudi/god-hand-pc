@@ -4,10 +4,11 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Normal07 scoped debug actions remain the adopted workbench. Experimental27entry source provenance no longer needs the historical seed CSV; its incremental native capsule reaches original menu/room/option states with an incomplete visual-control attempt, not a setup or retail release.",
-  "next": "Run a NEW longer correctly prepared native control for the missed endpoints, without extending or relabeling old runs; close module/VU/generic-source setup and validate a fresh full build. Finish prototype reference warning and broader input/menu coverage separately.",
+  "status": "Adopted normal07 remains unchanged. New450s controls close scoped capture-preparation/final-endpoint gaps;20/21common originals match, loading difference retained. Public read-only76module input catalog is not an ISO-only setup or complete prototype/retail release.",
+  "next": "Investigate source/present identity or same-executable repeatability for the retained loading mismatch before attributing it to new BOOT entries. Continue reproducible public prototype generation/moduleVUgeneric-source setup and fresh full-build acceptance, with reference-warning and broader UI checks still open.",
   "known_limits": [
-    "Fresh27visual-control attempt is INCOMPLETE: original07baseline exits0but all23exports fail from missing directory; newcase exits0with21actualPNGs, actual1561for requested1560 and final7301/7401missing. Not image parity/performance. New actual menu/room/ONOFF/warning/return originals are scoped diagnostics, not new key or survival proof.",
+    "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
+    "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
     "Normal07adopt-only/F2mouse/effects remain separate. New27entry BOOT metadata has no historicalseedCSVinput, but decoding/integration remains private research and module/VU/generic source dependencies stay open. Incremental capsule is not a public ISO-only setup/freshfullbuild; three new candidates have no execution coverage.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
@@ -121,7 +122,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only. Separate NEWprepared450s native0/23images each now reach7301/7401.20/21common originals equal, loading2901diff17300retained; old330s failures unchanged. Public inputcatalog76modulebytes matchesoldreader, not module/VU/generic setup/freshfullbuild or fullparity."
         },
         {
           "id": "RM01",
@@ -334,6 +335,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Prepared controls reach the missing endpoints",
+      "summary": "New correctly prepared controls now capture both final endpoints. Twenty of21common original images match; a loading-screen difference is retained. Public read-only tooling also retrieves fresh prototype module-input metadata.",
+      "changes": [
+        "Precreated empty capture folders and declared450s deadlines before twoNEW native runs. Kept the old330s failures/incomplete coverage unchanged; no new native build or guest generation.",
+        "Published the unchanged equal endpoint and both differing loading originals, with exact executable/time/hash provenance. No image repair or performance attribution.",
+        "Added original module_inputs.py over existing ISO/FST/AFS readers plus8invented-data tests. Fresh76module byte inputs match the private old reader; raw paths/offsets/bytes stay private."
+      ],
+      "validation": "Both native processes0/23PNGs, final7301/7401present, no export failure.20/21commonactualfilename originals exact;2901loadingdiff17300RGBApixels, cause unknown. All76fresh SNR2inputs/985929bytes match; not module compilation/ABI/setup. Source305synthetic tests/3Windows skips pass57.878s after native terminal.",
+      "limits": "Capture-preparation/endpoints gate closed only. Full imageparity, actual-key/effect coverage, moduleVUgeneric source/freshfullbuild, original warning/reference, strictVU1/artifacts and retail/hardware/save/audio/campaign remain open. Normal07unchanged.",
+      "evidence_comparisons": [
+        "2026-11-12-prepared450-endpoint",
+        "2026-11-12-prepared450-loading-mismatch"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_PREPARED_CONTROLS.md",
+        "label": "Prepared endpoints, retained loading difference and module-input provenance"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1198,6 +1220,95 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-prepared450-endpoint",
+      "date": "2026-11-12",
+      "title": "Both prepared controls reach the final room endpoint",
+      "feature": "DT03",
+      "scenario": "Two NEW450s bounded controls; same original Point1RoomJump/menu/option script, final actual filename7401. No camera tuning or guest-state edits.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Baseline07 final endpoint",
+        "bevy": "Candidate27 final endpoint"
+      },
+      "observations": [
+        "Both final original PNGs are byte-identical at this exported endpoint. This does not prove all frames, all game state, unknown-entry execution or PS2 fidelity."
+      ],
+      "limits": [
+        "NEW450s controls, exact retained executables and finite original software/sharedF2 script, not new actual-key/mouse or health/Warp effect tests.",
+        "Original filename fields do not certify complete presented source/guest-state alignment.20/21common originals equal; loading2901diff17300pixels remains unexplained.",
+        "Only scoped capture preparation/final endpoints are closed; no full imageparity, PS2fidelity, performance or candidate promotion. Old330s failures remain.",
+        "Full unchanged640x480PNGs; no crop/repaint/normalization. Game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Baseline07 original room/Gene/HUD at actual filename7401; final requested endpoint now captured. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype baseline24 native, exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; NEWprepared450s software/sharedF2 controller diagnostic. Original tooling 8be4cd64fe300be51acf0ac36df002c9f0946d45 plus private build, not a public game/source-complete setup or PS2hardware.",
+        "revision": "8be4cd64fe300be51acf0ac36df002c9f0946d45",
+        "captured_at": "2026-11-12T13:36:38.076319+00:00",
+        "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+        "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Candidate27 original room/Gene/HUD at actual filename7401; byte-identical to baseline in this sample, not full-fidelity proof. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native, exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; NEWprepared450s software/sharedF2 controller diagnostic. Original tooling 7d3ce40adbd95dd0ff09965722b555ee94c62566 plus private build, not a public game/source-complete setup or PS2hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:43:48.514205+00:00",
+        "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+        "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-prepared450-loading-mismatch",
+      "date": "2026-11-12",
+      "title": "Retaining a loading-screen difference",
+      "feature": "DT03",
+      "scenario": "Same NEW450s controls, actual filename2901 (requested2900) in both. Both images show loading; underlying source/present/guest-state alignment and cause are unverified.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Baseline07 loading original",
+        "bevy": "Candidate27 loading original"
+      },
+      "observations": [
+        "The originals differ by17300decodedRGBApixels; maxchanneldelta101/83/53/0. No original is edited or selected away.",
+        "CSVhas no valid per-present image identity here; different local presentfield records do not establish the cause."
+      ],
+      "limits": [
+        "NEW450s controls, exact retained executables and finite original software/sharedF2 script, not new actual-key/mouse or health/Warp effect tests.",
+        "Original filename fields do not certify complete presented source/guest-state alignment.20/21common originals equal; loading2901diff17300pixels remains unexplained.",
+        "Only scoped capture preparation/final endpoints are closed; no full imageparity, PS2fidelity, performance or candidate promotion. Old330s failures remain.",
+        "Full unchanged640x480PNGs; no crop/repaint/normalization. Game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Baseline07 GOD HAND / Now Loading at actual filename2901 (requested2900); retained mismatching original. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype baseline24 native, exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; NEWprepared450s software/sharedF2 controller diagnostic. Original tooling 8be4cd64fe300be51acf0ac36df002c9f0946d45 plus private build, not a public game/source-complete setup or PS2hardware.",
+        "revision": "8be4cd64fe300be51acf0ac36df002c9f0946d45",
+        "captured_at": "2026-11-12T13:32:54.539883+00:00",
+        "path": "media/20cf0277c5bb57f0bd3265417f97f4d69e8f2e8b9bcaeb1d2d216fbb35a3999b.png",
+        "sha256": "20cf0277c5bb57f0bd3265417f97f4d69e8f2e8b9bcaeb1d2d216fbb35a3999b",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Candidate27 GOD HAND / Now Loading at actual filename2901 (requested2900); differs17300RGBApixels, cause unverified. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native, exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; NEWprepared450s software/sharedF2 controller diagnostic. Original tooling 7d3ce40adbd95dd0ff09965722b555ee94c62566 plus private build, not a public game/source-complete setup or PS2hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:40:13.735019+00:00",
+        "path": "media/f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59.png",
+        "sha256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-fresh27-menu-room",
       "date": "2026-11-12",

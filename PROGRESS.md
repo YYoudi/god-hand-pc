@@ -1,5 +1,19 @@
 # Canonical progress and publication workflow
 
+## Prepared endpoints and module input catalog — 12 November 2026
+
+Read PROTOTYPE_PREPARED_CONTROLS.md. NEW450s old07/candidate27 controls0/23PNGs
+each with precreated output dirs;7301/7401both present.20/21commonactualfilename
+originals exact;2901loading differs17300RGBApixels, retained/unexplained. Deferred
+filenames not renamed. Capture-preparation/endpoints gate closed ONLYthisscope,
+not full imageparity/PS2fidelity/performance or07promotion. Old330s failures stay.
+Original publicdcc303e module_inputs.py +8inventedtests reuses existingreaders;
+real1078bijection/76SNR2sources total985929bytes matcholdreader AFTERfreshresult
+recorded. Format/source metadata only, notrelocation/symbol/ABI/modulebuild/setup
+closure. Source305tests/3Win skips57.878s pass after native terminal. Full goal
+ACTIVE: loading/source-present identity, moduleVUgeneric setup and reference
+warning/widerinput remain. No synthetic suite/compiler overlapped native runs.
+
 ## Code-backed indirect-entry experiment — 12 November 2026
 
 [PROTOTYPE_INDIRECT_REPLAY.md](PROTOTYPE_INDIRECT_REPLAY.md) records21fresh local-

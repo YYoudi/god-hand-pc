@@ -1,5 +1,25 @@
 # God Hand PC continuation - agent instructions
 
+## Prepared450 controls and public module inputs — 2026-11-12
+
+Read PROTOTYPE_PREPARED_CONTROLS.md/checkpoint/prepared_native_regression_current.
+NEW450s SAME07/27executables both0/23originalPNGs, emptyframes dirs PREPARED before
+spawn, final7301/7401present.20/21commonactualfields exact; loading2901diff17300
+RGBApixels/bbox8,15..610,447/channelmax101,83,53,0 retained. CSVhashvalid0 and
+different presentfield windows doNOTprove sourceidentity/cause. Deferred2901/
+5101/5361keptliteral. Gateclosed: preparation/endpoints ONLY, not allimageparity/
+PS2fidelity/performance/07promotion. Old330s failure/incomplete cases preserved.
+No new native build/guestgen/desktopinput or newhealth/Warp/actualkeyacceptance.
+Publicdcc303e module_inputs.py+8inventedtests reuses ISO/FST/AFS:1078bijective
+entries/76SNR2sources985929bytes equaloldreader afterfreshrecord. Headerextent/
+hash/alignment ONLY, not symbol/reloc/code/ctor/stream/ABI/load/lifetime; raw
+maps/bytes private. This removesprivateinputreader dependency, NOTmodule/VU/
+generic setup or freshfullbuild. Source305tests/3Win skips57.878s pass AFTERboth
+native terminal; syntax-only firstauditfailure retained. Next source-present
+identity/repeatability forloading, public prototype generation/moduleVUgeneric
+closure, actualreference warning and widerUIcoverage. No guessedready/flags/
+frees, unknownNOPs, Rust/delegation/retailtransplant/gameuploads. Fullgoal ACTIVE.
+
 ## Fresh indirect entries and partial native control — 2026-11-12
 
 Read PROTOTYPE_INDIRECT_REPLAY.md/checkpoint/source_indirect_replay_current.
