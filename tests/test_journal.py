@@ -64,6 +64,30 @@ class JournalTests(unittest.TestCase):
             pair['bevy'][key]=original
         with self.assertRaises(ValueError):validate_blob('docs/media/'+h+'.jpg',b,{})
 
+    def test_artifact_save_time_is_not_claimed_as_capture_completion(self):
+        data,migration=self.historical_fixture();b=self.host_jpeg();h=hashlib.sha256(b).hexdigest()
+        item={'path':f'media/{h}.jpg','sha256':h,'width':1,'height':1,'revision':'a'*40,
+              'recorded_at':'2026-11-13T00:00:00Z','timestamp_basis':'artifact-save-after-observation',
+              'runtime':'Invented host','caption':'Invented neutral pixel, save time only',
+              'profile':'prototype-june-2006','publication_profile':'native-host-jpeg-v1',
+              'capture_source':'computer-use-owned-window','unchanged_original':True,'lossy':True}
+        pair={'id':'invented-recorded-only','reviewed':True,'alignment':'unmatched','observations':['Invented'],
+              'limits':['Capture-completion time unknown'],'labels':{'reference':'A','bevy':'B'},
+              'reference':item.copy(),'bevy':item.copy()}
+        data['comparisons']=[pair]
+        self.assertEqual(journal.validate(data,migration,lambda p:b),{'docs/media/'+h+'.jpg':h})
+        value,label=journal.screenshot_time(item)
+        self.assertEqual(value,item['recorded_at']);self.assertIn('not capture time',label)
+
+    def test_legacy_time_unchanged_and_mixed_or_unknown_time_basis_refuses(self):
+        item={'captured_at':'2026-11-12T00:00:00Z'}
+        self.assertEqual(journal.screenshot_time(item),(item['captured_at'],item['captured_at']))
+        for bad in ({},dict(item,recorded_at=item['captured_at'],timestamp_basis='artifact-save-after-observation'),
+                    dict(recorded_at='2026-11-12T00:00:00Z',timestamp_basis='unknown',publication_profile='native-host-jpeg-v1'),
+                    dict(recorded_at='2026-11-12T00:00:00Z',timestamp_basis='artifact-save-after-observation'),
+                    dict(item,timestamp_basis='artifact-save-after-observation')):
+            with self.assertRaises(ValueError):journal.screenshot_time(bad)
+
     def test_game_and_generated_paths_refused_even_if_allowlisted(self):
         for p in ['docs/game.iso','docs/data.dat','generated/f.cpp','.local/private.md','../x.md']:
             with self.assertRaises(ValueError):validate_paths([p],{p})

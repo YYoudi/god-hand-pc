@@ -96,6 +96,23 @@ def host_jpeg_size(blob):
     raise ValueError('Missing JPEG scan')
 
 
+def screenshot_time(item):
+    """Distinguish a known artifact-save time from an unknown capture time.
+
+    Existing captured_at records/rendering remain unchanged. A later save must
+    not silently become a capture-completion or guest-frame timestamp.
+    """
+    if 'recorded_at' in item:
+        require('captured_at' not in item and
+                item.get('timestamp_basis')=='artifact-save-after-observation' and
+                item.get('publication_profile')=='native-host-jpeg-v1',
+                'Recorded-only native time must not claim capture completion')
+        return item['recorded_at'],'Recorded after observation (not capture time): '+item['recorded_at']
+    require('captured_at' in item and 'timestamp_basis' not in item,
+            'Explicit capture time or separately qualified recording time required')
+    return item['captured_at'],item['captured_at']
+
+
 def validate(data, migration, read):
     """Validate reviewed metadata and bytes, not pixels as game/test fixtures."""
     require(data["schema"] == migration["schema"] == 1, "Unknown journal schema")
@@ -134,7 +151,7 @@ def validate(data, migration, read):
             require(size == (item["width"], item["height"]), "Screenshot dimensions differ")
             require(item["revision"] in {"unknown","uncommitted"} or
                     re.fullmatch("[0-9a-f]{40}",item["revision"]), "Exact revision required")
-            timestamp = datetime.datetime.fromisoformat(item["captured_at"].replace("Z","+00:00"))
+            timestamp = datetime.datetime.fromisoformat(screenshot_time(item)[0].replace("Z","+00:00"))
             require(timestamp.tzinfo is not None, "Capture timezone required")
             require(item["runtime"] and item["caption"], "Runtime/caption required")
             require(item["profile"] in {"retail-usa","prototype-june-2006"}, "Disc profile")
@@ -300,7 +317,7 @@ def render(data, migration, read):
         gallery+='<article id="'+pair['id']+'"><time>'+pair['date']+'</time><h2>'+escape(pair['title'])+'</h2><p>'+escape(pair['scenario'])+'</p><p>Alignment: <strong>'+pair['alignment']+'</strong>.</p><div class="pair">'
         for side in ('reference','bevy'):
             item=pair[side];label=pair['labels'][side]
-            gallery+=f'<figure><figcaption>{escape(label)}</figcaption><a href="{item["path"]}"><img src="{item["path"]}" width="{item["width"]}" height="{item["height"]}" loading="lazy" alt="{escape(label,quote=True)}"></a><p>{escape(item["caption"])}</p><a href="{item["path"]}" download>Download unchanged original ({item["width"]} × {item["height"]})</a><details><summary>Capture provenance</summary><p>{escape(item["runtime"])}</p><p>{escape(item["profile"])} · {escape(item["captured_at"])}<br>Revision: <code>{escape(item["revision"])}</code><br>SHA-256: <code>{item["sha256"]}</code></p></details></figure>'
+            gallery+=f'<figure><figcaption>{escape(label)}</figcaption><a href="{item["path"]}"><img src="{item["path"]}" width="{item["width"]}" height="{item["height"]}" loading="lazy" alt="{escape(label,quote=True)}"></a><p>{escape(item["caption"])}</p><a href="{item["path"]}" download>Download unchanged original ({item["width"]} × {item["height"]})</a><details><summary>Capture provenance</summary><p>{escape(item["runtime"])}</p><p>{escape(item["profile"])} · {escape(screenshot_time(item)[1])}<br>Revision: <code>{escape(item["revision"])}</code><br>SHA-256: <code>{item["sha256"]}</code></p></details></figure>'
         gallery+='</div><ul>'+''.join('<li>'+escape(s)+'</li>' for s in pair['observations'])+'</ul><details><summary>Limits (unchanged)</summary><ul>'+''.join('<li>'+escape(s)+'</li>' for s in pair['limits'])+'</ul></details></article>'
     outputs['docs/comparisons.html']=shell('Selected comparisons',gallery)
     return outputs
