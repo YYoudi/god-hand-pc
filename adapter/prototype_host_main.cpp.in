@@ -1,0 +1,516 @@
+#include "@@INCLUDE_00@@"
+#include "godhand/sha256.h"
+#include "@@INCLUDE_01@@"
+#include "@@INCLUDE_02@@"
+#include "runtime/ps2_input_options.h"
+#include "window_shortcut_bridge.hpp"
+// Original GPL-3.0-only generic prototype feasibility harness.
+// No retail God Hand addresses, HLE bindings, DLL slots or translated functions.
+#include "ps2_runtime.h"
+#include "ps2_runtime_macros.h"
+#include "ps2_stubs.h"
+#include "ps2_syscalls.h"
+#include "ps2_runtime_calls.h"
+#include <atomic>
+#include <array>
+#include <unordered_map>
+#include <string_view>
+#include <cstring>
+#include <fstream>
+#include <vector>
+#include "ps2_host_input.h"
+#include "runtime/ee_scheduler.h"
+#include "@@INCLUDE_03@@"
+#include "@@INCLUDE_04@@"
+#include "ps2_module_table.h"
+#include "@@INCLUDE_05@@"
+#include "@@INCLUDE_06@@"
+#include "@@INCLUDE_07@@"
+#include "prototype_r101_pack.h"
+#include "runtime/ps2_cd_image.h"
+#include <raylib.h>
+#include <chrono>
+#include <thread>
+#include <cstdlib>
+#include <iostream>
+
+static bool prototypeDiagnostics=true;
+struct SdkBinding { uint32_t address;const char* name; };
+static const SdkBinding candidates[]={
+#include "bindings_private.inc"
+};
+static std::array<std::atomic<uint64_t>,128> counts{};
+static std::unordered_map<uint32_t,size_t> entries;
+void registerPrototypeVu1Programs();
+void reportPrototypeVu1Programs();
+static void summary() {
+#ifndef PROTOTYPE_INTERPRETER_BOOTSTRAP
+ reportPrototypeVu1Programs();
+#endif
+ for(size_t i=0;i<std::size(candidates);++i)if(counts[i].load())std::cerr<<"SDK_COUNT "<<candidates[i].name<<"="<<counts[i].load()<<"\n";
+ std::cerr<<"PROBE_STOP_REQUEST\n";
+}
+template<PS2Runtime::RecompiledFunction Handler>
+static void hostCall(uint8_t* ram,R5900Context* ctx,PS2Runtime* runtime) {
+ const auto it=entries.find(ctx->pc);
+ if(prototypeDiagnostics&&it!=entries.end()) {
+  const auto i=it->second;const auto n=counts[i].fetch_add(1);
+  if(n<2)std::cerr<<"SDK_CALL "<<candidates[i].name<<" a0="<<std::hex<<GPR_U32(ctx,4)<<" a1="<<GPR_U32(ctx,5)<<" ra="<<GPR_U32(ctx,31)<<std::dec<<"\n";
+ }
+ ctx->pc=GPR_U32(ctx,31);Handler(ram,ctx,runtime);
+}
+static PS2Runtime::RecompiledFunction resolve(std::string_view name) {
+ static const std::unordered_map<std::string_view,PS2Runtime::RecompiledFunction> sys={
+#define DECL(name) {#name,&hostCall<&ps2_syscalls::name>},
+ PS2_SYSCALL_LIST(DECL)
+#undef DECL
+ };
+ static const std::unordered_map<std::string_view,PS2Runtime::RecompiledFunction> stub={
+#define DECL(name) {#name,&hostCall<&ps2_stubs::name>},
+ PS2_STUB_LIST(DECL)
+#undef DECL
+ };
+ auto n=ps2_runtime_calls::resolveSyscallName(name);if(!n.empty())return sys.at(n);
+ n=ps2_runtime_calls::resolveStubName(name);if(!n.empty())return stub.at(n);
+ if(name=="sceCdLayerSearchFile")return resolve("sceCdSearchFile");
+ return nullptr;
+}
+static bool install(PS2Runtime* runtime,const char* mode) {
+ if(std::strcmp(mode,"off")==0)return true;
+ const bool sif=std::strcmp(mode,"sif")==0;if(!sif&&std::strcmp(mode,"sdk")!=0)return false;
+ size_t installed=0;
+ for(size_t i=0;i<std::size(candidates);++i) {
+  const auto& c=candidates[i];std::string_view name(c.name);
+  if(sif&&name.find("Sif")==std::string_view::npos)continue;
+  // Graphics/VU/GS/math are the original prototype, not generic host stubs.
+  if(name.find("Gs")!=std::string_view::npos||name.find("DmaGet")!=std::string_view::npos||name.find("DmaSend")!=std::string_view::npos||name.find("DmaRecv")!=std::string_view::npos||name.find("DmaSync")!=std::string_view::npos||name.find("DmaReset")!=std::string_view::npos||name.find("DmaPause")!=std::string_view::npos||name.find("DmaPutEnv")!=std::string_view::npos)continue;
+  if(name.find("Mpeg")!=std::string_view::npos||name.find("Ipu")!=std::string_view::npos) {
+   const char* ipu=std::getenv("PS2X_IPU");const char* hle=std::getenv("GODHAND_MPEG_HLE");
+   if(!((ipu&&*ipu=='0')||(hle&&*hle=='1'))){std::cerr<<"SDK_ORIGINAL_IPU "<<name<<"\n";continue;}
+  }
+  const auto handler=resolve(name);if(!handler){std::cerr<<"SDK_UNBOUND "<<name<<"\n";continue;}
+  if(!runtime->hasFunction(c.address)){std::cerr<<"SDK_NO_ENTRY "<<name<<"\n";return false;}
+  entries[c.address]=i;if(!runtime->registerFunction(c.address,handler))return false;
+  ++installed;std::cerr<<"SDK_BOUND "<<name<<" prototype="<<std::hex<<c.address<<std::dec<<"\n";
+ }
+ std::cerr<<"SDK_INSTALL mode="<<mode<<" count="<<installed<<"\n";return installed>0;
+}
+
+
+static std::filesystem::path snapshotDir;
+static PS2Runtime::RecompiledFunction originalRegister=nullptr;
+static unsigned registered=0;
+static PS2Runtime::RecompiledFunction originalUnregister=nullptr;
+static void unregisteredImage(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){ prototype_event::remove(GPR_U32(ctx,4)&@@WORD_002@@);prototype_r100::remove(GPR_U32(ctx,4)&@@WORD_002@@);prototype_mcport::remove(GPR_U32(ctx,4)&@@WORD_002@@);prototype_r020::remove(GPR_U32(ctx,4)&@@WORD_002@@);prototype_r101::remove(GPR_U32(ctx,4)&@@WORD_002@@);originalUnregister(ram,ctx,rt); }
+static PS2Runtime::RecompiledFunction originalR020Move=nullptr;
+static void observedR020Move(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ static uint32_t prior=~0u;const auto p=GPR_U32(ctx,4)&@@WORD_002@@;
+ if(p<=PS2_RAM_SIZE-4){uint32_t state;std::memcpy(&state,ram+p,4);
+  if(state!=prior){prior=state;std::cerr<<"PROTOTYPE_R020_STATE field="<<rt->eeScheduler().currentVSyncTick()<<" object="<<std::hex<<p<<" state="<<state<<std::dec<<"\n";}
+ }
+ static uint64_t priorField=~0ull;
+ const auto field=rt->eeScheduler().currentVSyncTick();
+ if(p<=PS2_RAM_SIZE-4 && ram[p]==2 && (field%32==0) && field!=priorField){priorField=field;
+  uint64_t held=0,edge=0;std::memcpy(&held,ram+@@WORD_050@@,8);std::memcpy(&edge,ram+@@WORD_051@@,8);
+  std::cerr<<"PROTOTYPE_TITLE_INPUT field="<<field<<" held="<<std::hex<<held<<" edge="<<edge<<std::dec<<"\n";
+  if(field==928 || field==1088){std::ofstream f(snapshotDir/("pad-work-field-"+std::to_string(field)+".bin"),std::ios::binary);f.write(reinterpret_cast<const char*>(ram+@@WORD_046@@),@@WORD_024@@);}
+ }
+ originalR020Move(ram,ctx,rt);
+}
+
+static void registeredImage(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt) {
+ const auto base=GPR_U32(ctx,5)&@@WORD_002@@;
+ if(base<PS2_RAM_SIZE-64) {
+  uint32_t h[15];std::memcpy(h,ram+base,sizeof(h));
+  if((h[0]&@@WORD_056@@)==@@WORD_040@@ && h[11]>=64 && h[11]<=@@WORD_003@@ && h[11]<=PS2_RAM_SIZE-base) {
+   const auto seq=++registered;const auto stem="registered-"+std::to_string(seq)+"-"+std::to_string(base);
+   if(prototypeDiagnostics){
+   std::ofstream f(snapshotDir/(stem+".bin"),std::ios::binary);f.write(reinterpret_cast<const char*>(ram+base),h[11]);f.close();
+   std::ofstream meta(snapshotDir/(stem+".json"));meta<<"{\"base\":"<<base<<",\"size\":"<<h[11]<<",\"ra\":"<<GPR_U32(ctx,31)<<",\"name_pointer\":"<<h[5]<<",\"header\":[";for(size_t i=0;i<15;++i)meta<<(i?",":"")<<h[i];meta<<"]}\n";meta.close();
+   // Raw observed bytes only, never published or treated as an exact whole-machine snapshot.
+   if(seq==1){std::ofstream ee(snapshotDir/"first-register-rdram.bin",std::ios::binary);ee.write(reinterpret_cast<const char*>(ram),PS2_RAM_SIZE);}
+   }
+   if(base<@@WORD_021@@ && @@WORD_020@@<base+h[11])prototype_event::remove(@@WORD_020@@);
+   if(base<@@WORD_019@@ && @@WORD_018@@<base+h[11])prototype_r100::remove(@@WORD_018@@);
+   if(base<@@WORD_010@@ && @@WORD_009@@<base+h[11])prototype_mcport::remove(@@WORD_009@@);
+   if(base<@@WORD_015@@ && @@WORD_013@@<base+h[11])prototype_r020::remove(@@WORD_013@@);
+   if(base<@@WORD_017@@ && @@WORD_016@@<base+h[11])prototype_r101::remove(@@WORD_016@@);
+   const char* control=std::getenv("PROTOTYPE_MODULE_CONTROL");
+   if(control&&(std::strcmp(control,"enabled")==0||std::strcmp(control,"negative")==0))
+    { (void)prototype_mcport::install(rt,base,ram,std::strcmp(control,"negative")==0); (void)prototype_r020::install(rt,base,ram,std::strcmp(control,"negative")==0); (void)prototype_r100::install(rt,base,ram,std::strcmp(control,"negative")==0); (void)prototype_event::install(rt,base,ram,std::strcmp(control,"negative")==0); (void)prototype_r101::install(rt,base,ram,std::strcmp(control,"negative")==0); }
+   if(prototypeDiagnostics&&base==@@WORD_013@@ && rt->hasFunction(@@WORD_014@@)){
+    originalR020Move=rt->lookupFunction(@@WORD_014@@);if(!ps2x::setModuleFunction(@@WORD_014@@,&observedR020Move))std::abort();
+   }
+   std::cerr<<"PROTOTYPE_SNR_REGISTER seq="<<seq<<" base="<<std::hex<<base<<" size="<<h[11]<<" ctor="<<h[6]<<std::dec<<"\n";
+  }
+ }
+ originalRegister(ram,ctx,rt);
+}
+
+
+static void inventedCallback(uint8_t*,R5900Context* ctx,PS2Runtime*){SET_GPR_U32(ctx,2,@@WORD_012@@);ctx->pc=GPR_U32(ctx,31);}
+static int moduleApiTest(){
+ auto* rt=new PS2Runtime();constexpr uint32_t address=@@WORD_022@@;
+ if(rt->hasFunction(address))return 31;
+ if(rt->registerFunction(address,&inventedCallback))return 32; // replace is not allocate
+ if(!ps2x::setModuleFunction(address,&inventedCallback))return 33;
+ if(!rt->hasFunction(address)||rt->lookupFunction(address)!=&inventedCallback)return 34;
+ R5900Context context{};auto* ctx=&context;SET_GPR_U32(ctx,31,@@WORD_011@@);uint8_t dummy=0;
+ rt->lookupFunction(address)(&dummy,ctx,rt);if(GPR_U32(ctx,2)!=@@WORD_012@@||ctx->pc!=@@WORD_011@@)return 35;
+ ps2x::clearModuleFunctions(address,address+4);if(rt->hasFunction(address)||ps2x::moduleFunctionAt(address))return 36;
+ std::cout<<"MODULE_API_TEST PASS replace/allocate/lookup/direct-call/remove; invented callback only, no game execution\n";return 0;
+}
+
+
+static std::filesystem::path developerInput;
+static godhand_pc::prototype::DebugShortcut debugShortcut;
+static std::filesystem::path developerRequests;
+static std::streamoff developerRequestOffset=0;
+static uint64_t developerProbeField=0;
+static bool developerProbeDone=false;
+static godhand_pc::prototype_controller::NativePanel controllerPanel;
+static bool controllerPanelEnabled=false,controllerPanelLeftStick=false;
+static bool queueDeveloperRequest(const char* source){
+ if(controllerPanelEnabled&&(controllerPanel.faulted()||controllerPanel.busy(godhand_pc::prototype_controller::monotonicMs()))){std::cerr<<"PROTOTYPE_DEBUG_REQUEST source="<<source<<" accepted=0 panel_busy_or_fault=1\n";return false;}
+ const bool accepted=debugShortcut.request(ps2_host_input::overlayOpen());
+ std::cerr<<"PROTOTYPE_DEBUG_REQUEST source="<<source<<" accepted="<<accepted<<"\n";return accepted;
+}
+struct GLFWwindow;
+using ObserverKeyCallback=void(*)(GLFWwindow*,int,int,int,int);
+extern "C" GLFWwindow* glfwGetCurrentContext();
+extern "C" ObserverKeyCallback glfwSetKeyCallback(GLFWwindow*,ObserverKeyCallback);
+static ObserverKeyCallback priorKeyCallback=nullptr;
+using ObserverFocusCallback=void(*)(GLFWwindow*,int);
+extern "C" ObserverFocusCallback glfwSetWindowFocusCallback(GLFWwindow*,ObserverFocusCallback);
+static ObserverFocusCallback priorFocusCallback=nullptr;
+static PS2Runtime* keyTraceRuntime=nullptr;
+static uint64_t keyTraceDrawSeq=0,keyTraceEventSeq=0,keyTraceLastEventUs=0;
+static std::ofstream keyTraceFile;
+static bool keyTraceEnabled(){static const bool on=[](){const char* p=std::getenv("PROTOTYPE_KEY_TRACE");return p&&std::strcmp(p,"events-v2")==0;}();return on;}
+static uint64_t keyTraceUs(){return static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::steady_clock::now().time_since_epoch()).count());}
+static uint64_t keyTraceUtcMs(){return static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count());}
+static bool keyTraceReadable(int k){return k>=0&&k<512;}
+struct KeyTraceEvent{uint64_t seq,draw,us,utc,field;int kind,key,scan,action,mods,before,after,focus;std::thread::id thread;};
+static std::array<KeyTraceEvent,256> keyTraceEvents{};
+static size_t keyTraceCount=0,keyTraceDropped=0;
+static void recordKeyTrace(int key,int scan,int action,int mods,int before,int kind=0){
+ if(!keyTraceEnabled())return;
+ const auto us=keyTraceUs();keyTraceLastEventUs=us;
+ KeyTraceEvent e{++keyTraceEventSeq,keyTraceDrawSeq,us,keyTraceUtcMs(),keyTraceRuntime?keyTraceRuntime->eeScheduler().currentVSyncTick():0,kind,key,scan,action,mods,before,kind==0&&keyTraceReadable(key)?(IsKeyDown(key)?1:0):-2,IsWindowFocused()?1:0,std::this_thread::get_id()};
+ if(keyTraceCount<keyTraceEvents.size())keyTraceEvents[keyTraceCount++]=e;else ++keyTraceDropped;
+}
+static void sampleKeyTrace(PS2Runtime& rt){
+ if(!keyTraceEnabled())return;
+ ++keyTraceDrawSeq;
+ constexpr std::array<int,14> keys={KEY_DOWN,KEY_UP,KEY_K,KEY_L,KEY_ENTER,KEY_F1,KEY_F2,KEY_F3,KEY_KP_2,KEY_KP_8,KEY_KP_ENTER,KEY_LEFT_ALT,KEY_LEFT_CONTROL,KEY_RIGHT_CONTROL};
+ std::array<int,28> values{};for(size_t n=0;n<keys.size();++n){values[n*2]=IsKeyDown(keys[n])?1:0;values[n*2+1]=IsKeyPressed(keys[n])?1:0;}
+ static std::array<int,28> prior{};static bool initialized=false;
+ const auto now=keyTraceUs();
+ if(!initialized||values!=prior||keyTraceCount||keyTraceDropped||(keyTraceLastEventUs&&now-keyTraceLastEventUs<2000000u)||keyTraceDrawSeq%60==0){
+  keyTraceFile<<"PROTOTYPE_INPUT_SAMPLE draw_seq="<<keyTraceDrawSeq<<" us="<<now<<" utc_ms="<<keyTraceUtcMs()<<" field="<<rt.eeScheduler().currentVSyncTick()<<" focus="<<IsWindowFocused()<<" overlay="<<ps2_host_input::overlayOpen()<<" levels=";
+  for(size_t n=0;n<keys.size();++n)keyTraceFile<<keys[n]<<":"<<values[n*2]<<values[n*2+1]<<",";
+  keyTraceFile<<" pending_events="<<keyTraceCount<<" dropped="<<keyTraceDropped<<" thread="<<std::this_thread::get_id()<<"\n";
+ }
+ initialized=true;prior=values;
+ for(size_t n=0;n<keyTraceCount;++n){const auto& e=keyTraceEvents[n];
+  keyTraceFile<<(e.kind==0?"PROTOTYPE_INPUT_EVENT":e.kind==1?"PROTOTYPE_INPUT_CHAR":"PROTOTYPE_INPUT_FOCUS")<<" seq="<<e.seq<<" draw_seq="<<e.draw<<" us="<<e.us<<" utc_ms="<<e.utc<<" field="<<e.field<<" key="<<e.key<<" scan="<<e.scan<<" action="<<e.action<<" mods="<<e.mods<<" before="<<e.before<<" after="<<e.after<<" focus="<<e.focus<<" thread="<<e.thread<<"\n";
+ }
+ keyTraceCount=0;keyTraceDropped=0;keyTraceFile.flush();
+}
+using ObserverCharCallback=void(*)(GLFWwindow*,unsigned int);
+extern "C" ObserverCharCallback glfwSetCharCallback(GLFWwindow*,ObserverCharCallback);
+static ObserverCharCallback priorCharCallback=nullptr;
+static void observeTraceChar(GLFWwindow* w,unsigned int code){
+ if(priorCharCallback)priorCharCallback(w,code);
+ recordKeyTrace(static_cast<int>(code),-1,-1,0,-2,1);
+}
+static void observeDeveloperFocus(GLFWwindow* w,int focused){
+ if(priorFocusCallback)priorFocusCallback(w,focused);
+ if(!focused){prototype_window_keys::pending.clear();controllerPanel.clearPending();}
+ std::cerr<<"PROTOTYPE_KEY_FOCUS_EVENT "<<focused<<"\n";
+ recordKeyTrace(focused,-1,-1,0,-2,2);
+}
+
+static void observeDeveloperKey(GLFWwindow* w,int key,int scan,int action,int mods){
+ if(key>=KEY_F1 && key<=KEY_F3)std::cerr<<"PROTOTYPE_KEY_EVENT key="<<key<<" scan="<<scan<<" action="<<action<<" mods="<<mods<<"\n";
+ const int keyTraceBefore=(keyTraceEnabled()&&keyTraceReadable(key))?(IsKeyDown(key)?1:0):-1;
+ if(priorKeyCallback)priorKeyCallback(w,key,scan,action,mods);
+ recordKeyTrace(key,scan,action,mods,keyTraceBefore);
+ if(prototype_window_keys::enabled()){
+  using namespace godhand_pc::window_shortcuts;
+  Key owned=Key::Count;
+  if(key==KEY_F1)owned=Key::Controls;else if(key==KEY_F2)owned=Key::Developer;else if(key==KEY_ESCAPE)owned=Key::Back;
+  if(owned!=Key::Count && action>=0 && action<=2)
+   prototype_window_keys::pending.observe(owned,action==1?Action::Press:action==0?Action::Release:Action::Repeat,IsWindowFocused());
+ }
+
+}
+static void developerShutdown(PS2Runtime&,void*){
+ controllerPanel.shutdown();
+ if(auto* w=glfwGetCurrentContext()){
+  auto key=glfwSetKeyCallback(w,priorKeyCallback);if(key!=&observeDeveloperKey)glfwSetKeyCallback(w,key);
+  auto focus=glfwSetWindowFocusCallback(w,priorFocusCallback);if(focus!=&observeDeveloperFocus)glfwSetWindowFocusCallback(w,focus);
+  if(keyTraceEnabled()){auto chr=glfwSetCharCallback(w,priorCharCallback);if(chr!=&observeTraceChar)glfwSetCharCallback(w,chr);}
+ }
+ prototype_window_keys::pending.clear();
+ keyTraceRuntime=nullptr;
+}
+static void developerInit(PS2Runtime& rt,void*){
+ if(controllerPanelEnabled&&!controllerPanel.initialize(true,true,controllerPanelLeftStick?godhand_pc::prototype_controller::ControlSet::LeftStickV2:godhand_pc::prototype_controller::ControlSet::DigitalV1)){std::cerr<<"PROTOTYPE_CONTROLLER_INIT_REFUSED\n";std::_Exit(37);}
+ keyTraceRuntime=&rt;if(auto* w=glfwGetCurrentContext()){priorKeyCallback=glfwSetKeyCallback(w,&observeDeveloperKey);priorFocusCallback=glfwSetWindowFocusCallback(w,&observeDeveloperFocus);if(keyTraceEnabled())priorCharCallback=glfwSetCharCallback(w,&observeTraceChar);std::cerr<<"PROTOTYPE_KEY_OBSERVER installed="<<(priorKeyCallback!=nullptr)<<"\n";}std::cerr<<"PROTOTYPE_F2_READY input chord bridge only; opening is not acknowledged\n";}
+static void developerDraw(PS2Runtime& rt,void*){
+ sampleKeyTrace(rt);
+ static int oldFocus=-1;const int focus=IsWindowFocused();
+ if(focus!=oldFocus){oldFocus=focus;std::cerr<<"PROTOTYPE_KEY_FOCUS "<<focus<<"\n";}
+ for(int key=KEY_F1;key<=KEY_F3;++key)if(IsKeyPressed(key))std::cerr<<"PROTOTYPE_KEY_PRESSED "<<key<<"\n";
+
+ const bool developerKey=prototype_window_keys::enabled()
+  ? prototype_window_keys::pending.take(godhand_pc::window_shortcuts::Key::Developer,IsWindowFocused(),IsKeyPressed(KEY_F2))
+  : IsKeyPressed(KEY_F2);
+ if(developerKey){const bool accepted=queueDeveloperRequest("F2");if(accepted&&controllerPanelEnabled)controllerPanel.showFromF2();}
+ if(!developerRequests.empty()){
+  std::ifstream f(developerRequests,std::ios::binary);f.seekg(developerRequestOffset);
+  std::string line;
+  if(std::getline(f,line)){
+   const auto at=f.tellg();if(at>=0)developerRequestOffset=at;
+   if(line=="open-debug")queueDeveloperRequest("explicit-native-command");
+   else std::cerr<<"PROTOTYPE_COMMAND_REFUSED unknown line\n";
+  }
+ }
+ if(developerProbeField&&!developerProbeDone&&rt.eeScheduler().currentVSyncTick()>=developerProbeField){developerProbeDone=true;queueDeveloperRequest("explicit-native-probe");}
+ const auto now=static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count());
+ const auto prior=debugShortcut.phase();
+ debugShortcut.tick(now,ps2_host_input::overlayOpen(),[](godhand_pc::prototype::Pulse pulse){
+  const char* text=pulse==godhand_pc::prototype::Pulse::HoldL2?"l2:0.8\n":"r3:0.15\n";
+  std::ofstream f(developerInput,std::ios::binary|std::ios::app);f.write(text,std::strlen(text));f.flush();
+  const bool good=f.good();std::cerr<<"PROTOTYPE_DEBUG_PULSE "<<text<<" accepted="<<good<<"\n";return good;
+ });
+ if(debugShortcut.phase()!=prior)std::cerr<<"PROTOTYPE_DEBUG_PHASE "<<static_cast<int>(debugShortcut.phase())<<"\n";
+ static unsigned priorButtons=~0u;static int priorConnected=-1;
+ const auto pad=ps2_host_input::padState(0);
+ if(pad.buttons!=priorButtons || int(pad.connected)!=priorConnected){priorButtons=pad.buttons;priorConnected=int(pad.connected);
+  std::cerr<<"PROTOTYPE_HOST_PAD field="<<rt.eeScheduler().currentVSyncTick()<<" buttons="<<pad.buttons<<" connected="<<pad.connected<<"\n";
+ }
+ if(controllerPanelEnabled){
+  if(debugShortcut.refusal()==godhand_pc::prototype::Refusal::WriterFailed)controllerPanel.writerFault();
+  controllerPanel.tick(now,debugShortcut.active(),[](godhand_pc::prototype_controller::Action action){
+   using namespace godhand_pc::prototype_controller;
+   if(action==Action::OpenMenu)return queueDeveloperRequest("native-controller-panel")?Result::Submitted:Result::Refused;
+   const auto text=pulse(action);if(text.empty())return Result::Refused;
+   std::ofstream f(developerInput,std::ios::binary|std::ios::app);
+   f.write(text.data(),static_cast<std::streamsize>(text.size()));f.flush();f.close();
+   return f.good()?Result::Submitted:Result::UnknownDelivery;
+  });
+ }
+ // The actual guest debug menu must be visible in later originals. No fake
+ // 'menu opened' message, replacement scene, settings save or UI-thread guest call.
+}
+
+static PS2Runtime::RecompiledFunction warpCreateOriginal=nullptr,warpDestroyOriginal=nullptr,warpExitOriginal=nullptr;
+static uint32_t warpObject=0;
+static uint32_t readObservedWord(const uint8_t* ram,uint32_t address){uint32_t v=0;if(address<=@@WORD_001@@-4u)std::memcpy(&v,ram+address,4);return v;}
+static void warpState(const char* tag,uint8_t* ram,PS2Runtime* rt){
+ if(!prototypeDiagnostics)return;
+ const uint32_t active=readObservedWord(ram,@@WORD_041@@);
+ std::cerr<<"PROTOTYPE_WARP_STATE tag="<<tag<<" field="<<rt->eeScheduler().currentVSyncTick()<<" active_camera="<<std::hex<<active<<" object="<<warpObject;
+ for(auto base:{@@WORD_038@@,active}){
+  std::cerr<<" work="<<base<<" posbits=";
+  for(unsigned i=0;i<3;++i)std::cerr<<readObservedWord(ram,base+@@WORD_026@@+4*i)<<",";
+ }
+ const uint32_t player=readObservedWord(ram,@@WORD_053@@);
+ std::cerr<<" player="<<player;
+ if(player>=@@WORD_004@@ && player<=@@WORD_025@@-@@WORD_044@@){
+  const uint32_t position=readObservedWord(ram,player+@@WORD_055@@);
+  std::cerr<<" position="<<position<<" player_posbits=";
+  if(position>=@@WORD_004@@ && position<=@@WORD_025@@-16u)for(unsigned i=0;i<3;++i)std::cerr<<readObservedWord(ram,position+4*i)<<",";
+  else std::cerr<<"unavailable";
+  std::cerr<<" hp_raw="<<std::dec<<static_cast<int32_t>(readObservedWord(ram,player+@@WORD_043@@))<<" max_hp_raw="<<static_cast<int32_t>(readObservedWord(ram,player+@@WORD_042@@))<<std::hex;
+  std::cerr<<" player_cached_posbits=";for(unsigned i=0;i<3;++i)std::cerr<<readObservedWord(ram,player+@@WORD_039@@+4*i)<<",";
+ }else std::cerr<<" player_posbits=unavailable";
+ if(warpObject>=@@WORD_004@@ && warpObject<=@@WORD_025@@-@@WORD_028@@){std::cerr<<" warp_targetbits=";for(unsigned i=0;i<3;++i)std::cerr<<readObservedWord(ram,warpObject+@@WORD_008@@+4*i)<<",";}
+ std::cerr<<" nodeath_word="<<readObservedWord(ram,@@WORD_052@@);
+ std::cerr<<" pad="<<readObservedWord(ram,@@WORD_047@@)<<","<<readObservedWord(ram,@@WORD_048@@)<<","<<readObservedWord(ram,@@WORD_049@@)<<std::dec<<"\n";
+}
+static void observeWarpCreate(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ warpObject=GPR_U32(ctx,4);warpState("create-entry",ram,rt);warpCreateOriginal(ram,ctx,rt);
+}
+static void observeWarpDestroy(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ warpState("destroy-entry",ram,rt);warpDestroyOriginal(ram,ctx,rt);
+}
+void prototypeObserveWarpCreateComplete(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ if(!prototypeDiagnostics)return;
+ warpObject=GPR_U32(ctx,16);warpState("create-tail",ram,rt);
+ std::cerr<<"PROTOTYPE_WARP_OBJECT vtable="<<std::hex<<readObservedWord(ram,warpObject+4)<<" prior="<<readObservedWord(ram,warpObject+@@WORD_023@@)<<" temporary="<<readObservedWord(ram,warpObject+@@WORD_027@@)<<std::dec<<"\n";
+}
+void prototypeObserveWarpDestroyComplete(uint8_t* ram,R5900Context*,PS2Runtime* rt){warpState("destroy-tail",ram,rt);warpObject=0;}
+struct DamageFrame {uint32_t sp,victim;int32_t oldHp,request,preClamp;};
+static std::vector<DamageFrame> observedDamageFrames;
+static void damageTrace(const char* stage,uint8_t* ram,R5900Context* ctx,PS2Runtime* rt,bool entry){
+ if(!prototypeDiagnostics)return;
+ const unsigned victimRegister=entry?4u:17u;
+ const uint32_t victim=GPR_U32(ctx,victimRegister),player=readObservedWord(ram,@@WORD_053@@);
+ if(victim<@@WORD_004@@ || victim>@@WORD_025@@-@@WORD_044@@){std::cerr<<"PROTOTYPE_DAMAGE_REFUSED stage="<<stage<<" field="<<rt->eeScheduler().currentVSyncTick()<<" register="<<victimRegister<<" victim="<<std::hex<<victim<<" player="<<player<<std::dec<<"\n";return;}
+ if(!entry && (observedDamageFrames.empty() || observedDamageFrames.back().victim!=victim || observedDamageFrames.back().sp!=GPR_U32(ctx,29)+@@WORD_045@@))return;
+ const int32_t hp=static_cast<int32_t>(readObservedWord(ram,victim+@@WORD_043@@));
+ if(entry)observedDamageFrames.push_back({GPR_U32(ctx,29),victim,hp,static_cast<int32_t>(GPR_U32(ctx,5)),-1});
+ const bool matched=!observedDamageFrames.empty() && observedDamageFrames.back().victim==victim && observedDamageFrames.back().sp==(entry?GPR_U32(ctx,29):GPR_U32(ctx,29)+@@WORD_045@@);
+ std::cerr<<"PROTOTYPE_DAMAGE stage="<<stage<<" field="<<rt->eeScheduler().currentVSyncTick()<<" actual_player="<<(player==victim)<<" frame_matched="<<matched<<" hp="<<hp<<" flag="<<bool(readObservedWord(ram,@@WORD_052@@)&@@WORD_054@@);
+ if(matched){auto& f=observedDamageFrames.back();std::cerr<<" before="<<f.oldHp<<" request="<<f.request<<" pre_clamp="<<f.preClamp;if(std::strcmp(stage,"pre-clamp")==0)f.preClamp=hp;}
+ std::cerr<<"\n";
+ if(matched && std::strcmp(stage,"after-clamp")==0)observedDamageFrames.pop_back();
+}
+void prototypeObserveDamageEntry(uint8_t* r,R5900Context* c,PS2Runtime* t){damageTrace("entry",r,c,t,true);}
+void prototypeObserveDamagePreClamp(uint8_t* r,R5900Context* c,PS2Runtime* t){damageTrace("pre-clamp",r,c,t,false);}
+void prototypeObserveDamageAfterClamp(uint8_t* r,R5900Context* c,PS2Runtime* t){damageTrace("after-clamp",r,c,t,false);}
+struct RefillObservation {uint32_t victim=0;int32_t before=0,maximum=0;uint64_t field=0;bool pending=false;};
+static RefillObservation refillObservation;
+void prototypeObserveRefillBefore(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ if(!prototypeDiagnostics)return;
+ refillObservation.pending=false;
+ const uint32_t victim=GPR_U32(ctx,17);
+ if(victim!=readObservedWord(ram,@@WORD_053@@) || victim<@@WORD_004@@ || victim>@@WORD_025@@-@@WORD_044@@)return;
+ const int32_t hp=static_cast<int32_t>(readObservedWord(ram,victim+@@WORD_043@@)),maximum=static_cast<int32_t>(readObservedWord(ram,victim+@@WORD_042@@));
+ if(!(readObservedWord(ram,@@WORD_052@@)&@@WORD_054@@) || hp<=0 || hp>=maximum)return;
+ refillObservation={victim,hp,maximum,rt->eeScheduler().currentVSyncTick(),true};
+}
+void prototypeObserveRefillAfter(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ if(!prototypeDiagnostics)return;
+ if(!refillObservation.pending)return;
+ const auto o=refillObservation;refillObservation.pending=false;
+ const bool role=GPR_U32(ctx,17)==o.victim && o.victim==readObservedWord(ram,@@WORD_053@@);
+ const bool sameField=o.field==rt->eeScheduler().currentVSyncTick();
+ std::cerr<<"PROTOTYPE_REFILL field="<<rt->eeScheduler().currentVSyncTick()<<" actual_player="<<role<<" same_field="<<sameField<<" flag="<<bool(readObservedWord(ram,@@WORD_052@@)&@@WORD_054@@)<<" before="<<o.before<<" after="<<static_cast<int32_t>(readObservedWord(ram,o.victim+@@WORD_043@@))<<" maximum="<<o.maximum<<"\n";
+}
+static void observeWarpExit(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ warpExitOriginal(ram,ctx,rt);if(GPR_U32(ctx,2))warpState("exit-predicate-true",ram,rt);
+}
+
+struct PadObservation{uint32_t address;PS2Runtime::RecompiledFunction original=nullptr;uint64_t calls=0;uint32_t last=~0u;};
+static PadObservation padObserved[]={{@@WORD_030@@},{@@WORD_032@@},{@@WORD_031@@},{@@WORD_034@@},{@@WORD_035@@},{@@WORD_033@@},{@@WORD_036@@},{@@WORD_037@@}};
+static void observePad(uint8_t* ram,R5900Context* ctx,PS2Runtime* rt){
+ static uint64_t lastWarpSample=~uint64_t{0};const auto sampleField=rt->eeScheduler().currentVSyncTick();
+ if(sampleField/60!=lastWarpSample){lastWarpSample=sampleField/60;warpState("sample",ram,rt);}
+
+ auto* o=static_cast<PadObservation*>(nullptr);for(auto& x:padObserved)if(x.address==ctx->pc)o=&x;
+ if(!o)std::abort();const auto port=GPR_U32(ctx,4),slot=GPR_U32(ctx,5),ptr=GPR_U32(ctx,6),ret=GPR_U32(ctx,31);++o->calls;
+ o->original(ram,ctx,rt);
+ if(ctx->pc==ret){const auto result=GPR_U32(ctx,2);if(o->calls<5 || result!=o->last){o->last=result;
+  std::cerr<<"PROTOTYPE_LIBPAD address="<<std::hex<<o->address<<" port="<<port<<" slot="<<slot<<" a2="<<ptr<<" result="<<result<<std::dec<<" calls="<<o->calls<<" field="<<rt->eeScheduler().currentVSyncTick()<<"\n";
+ }}
+}
+
+int main(int argc, char** argv,char** initialEnvironment) {
+#ifdef PROTOTYPE_INTERPRETER_BOOTSTRAP
+ if(const char* requested=std::getenv("PROTOTYPE_VU1_AOT");requested&&std::strcmp(requested,"1")==0){
+  std::cerr<<"PROTOTYPE_BOOTSTRAP_REFUSED compiled_vu_requested=1 available=0\n";return 29;
+ }
+#endif
+
+ if(argc==2&&std::strcmp(argv[1],"--module-api-test")==0)return moduleApiTest();
+ if(argc!=5) { std::cerr<<"usage: prototype-probe original.elf original.bin private-output off|sif|sdk\n"; return 2; }
+ const auto envValue=[](const char* key)->std::string_view{const char* p=std::getenv(key);return p?p:"";};
+ const auto execution=godhand_pc::prototype_execution::select({envValue("PROTOTYPE_EXECUTION_PROFILE"),envValue("PROTOTYPE_PROBE_VISIBLE"),envValue("PROTOTYPE_PROBE_SECONDS"),envValue("PROTOTYPE_USERDATA_ROOT"),std::strcmp(argv[4],"sdk")==0});
+ if(!execution.valid()){std::cerr<<"PROTOTYPE_EXECUTION_REFUSED reason="<<godhand_pc::prototype_execution::errorName(execution.error)<<"\n";return 38;}
+ prototypeDiagnostics=execution.kind!=godhand_pc::prototype_execution::Kind::Interactive;
+ if(!prototypeDiagnostics){
+  char** environment=initialEnvironment;if(!environment)return 38;
+  for(char** p=environment;*p;++p){const std::string_view item(*p);const auto split=item.find('=');if(split==item.npos||split==0)continue;
+   if(!godhand_pc::prototype_execution::allowedInteractiveVariable(item.substr(0,split),item.substr(split+1))){std::cerr<<"PROTOTYPE_EXECUTION_REFUSED environment_key="<<item.substr(0,split)<<"\n";return 38;}
+  }
+  if(envValue("PROTOTYPE_DEVELOPER_SHORTCUT")!="1"||envValue("PROTOTYPE_WINDOW_SHORTCUTS")!="edges-v1"||envValue("PROTOTYPE_MODULE_CONTROL")!="enabled"||envValue("PS2X_SIO2_PAD_STATUS")!="per-port-v1"||envValue("PS2X_FAKE_PADS")!="0")return 39;
+ }
+ const char* panelVersion=std::getenv("PROTOTYPE_DEV_PANEL");
+ if(panelVersion&&*panelVersion&&std::strcmp(panelVersion,"controller-v1")!=0&&std::strcmp(panelVersion,"controller-v2")!=0)return 34;
+ controllerPanelLeftStick=panelVersion&&std::strcmp(panelVersion,"controller-v2")==0;
+ controllerPanelEnabled=controllerPanelLeftStick||(panelVersion&&std::strcmp(panelVersion,"controller-v1")==0);
+ if(controllerPanelEnabled){
+  const char* dev=std::getenv("PROTOTYPE_DEVELOPER_SHORTCUT");
+  const char* keys=std::getenv("PROTOTYPE_WINDOW_SHORTCUTS");
+  if(!dev||std::strcmp(dev,"1")||!keys||std::strcmp(keys,"edges-v1"))return 35;
+  for(int i=2;i<=8;++i){const auto name="PS2X_PAD"+std::to_string(i);const char* v=std::getenv(name.c_str());if(!v||std::strcmp(v,"0"))return 36;}
+ }
+ const char* keyTraceVersion=std::getenv("PROTOTYPE_KEY_TRACE");
+ if(keyTraceVersion&&*keyTraceVersion&&std::strcmp(keyTraceVersion,"events-v2")!=0)return 29;
+ using godhand_pc::inputs::LockedInputFile;
+ const auto elfInput=LockedInputFile::verify(std::filesystem::path(argv[1]),3450144ull,
+     "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",godhand::Sha256{});
+ if(!elfInput.verified()){
+  std::cerr<<"PROTOTYPE_INPUT_REFUSED input=elf reason="<<godhand_pc::inputs::statusName(elfInput.status())<<" os_error="<<elfInput.osError()<<"\n";return 27;
+ }
+ const auto discInput=LockedInputFile::verify(std::filesystem::path(argv[2]),1261928448ull,
+     "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",godhand::Sha256{});
+ if(!discInput.verified()){
+  std::cerr<<"PROTOTYPE_INPUT_REFUSED input=disc reason="<<godhand_pc::inputs::statusName(discInput.status())<<" os_error="<<discInput.osError()<<"\n";return 28;
+ }
+ std::cerr<<"PROTOTYPE_INPUT_VERIFIED profile=prototype-june-2006 elf=sha256 disc=sha256 held=share-read\n";
+ if(keyTraceEnabled()){
+  const char* tracePath=std::getenv("PROTOTYPE_KEY_TRACE_FILE");if(!tracePath||!*tracePath)return 30;
+  const auto path=std::filesystem::path(tracePath);
+  if(std::filesystem::weakly_canonical(path.parent_path())!=std::filesystem::weakly_canonical(std::filesystem::path(argv[3])))return 31;
+  if(std::filesystem::exists(path))return 32;
+  keyTraceFile.open(path,std::ios::binary|std::ios::app);if(!keyTraceFile)return 33;
+  keyTraceFile<<"PROTOTYPE_INPUT_TRACE format=events-v2 callback=all-numeric-keys-and-chars source=owned-window-only no-input-writes=1\n";keyTraceFile.flush();
+ }
+ _putenv_s("PS2X_AUDIO_MUTE","1"); _putenv_s("PS2X_VSYNC","0");
+ const char* keyVersion=std::getenv("PROTOTYPE_WINDOW_SHORTCUTS");
+ if(keyVersion && *keyVersion && std::strcmp(keyVersion,"edges-v1")!=0)return 18;
+ unsigned probeSeconds=90;
+ if(const char* value=std::getenv("PROTOTYPE_PROBE_SECONDS")){
+  char* end=nullptr;const auto seconds=std::strtoul(value,&end,10);
+  if(prototypeDiagnostics&&(!*value || *end || seconds<15 || seconds>900))return 16;
+  probeSeconds=static_cast<unsigned>(seconds);
+ }
+ const char* visible=std::getenv("PROTOTYPE_PROBE_VISIBLE");
+ if(!visible || std::strcmp(visible,"1")!=0)SetConfigFlags(FLAG_WINDOW_HIDDEN);
+ PS2Runtime::IoPaths paths; paths.elfPath=argv[1]; paths.elfDirectory=std::filesystem::path(argv[1]).parent_path();
+ paths.hostRoot=paths.elfDirectory; paths.cdRoot=paths.elfDirectory; paths.cdImage=argv[2];
+ const auto userDataRoot=prototypeDiagnostics?std::filesystem::path(argv[3])/"userdata":std::filesystem::path(std::string(envValue("PROTOTYPE_USERDATA_ROOT")));
+ paths.mcRoot=prototypeDiagnostics?std::filesystem::path(argv[3])/"memcards"/"mc0":userDataRoot/"memcards"/"mc0";
+ std::filesystem::create_directories(paths.mcRoot);
+ PS2Runtime::setIoPaths(paths);
+ if(!PS2CdImage::instance().open(paths.cdImage)) return 3;
+ auto* runtime=new PS2Runtime();
+ if(const char* enabled=std::getenv("PROTOTYPE_DEVELOPER_SHORTCUT");enabled&&*enabled=='1'){
+  developerInput=std::filesystem::path(argv[3])/"prototype-developer-input.txt";
+  if(std::filesystem::exists(developerInput))return 11;
+  std::ofstream create(developerInput,std::ios::binary);if(!create)return 12;create.close();
+  _putenv_s("PS2X_PAD_FIFO",developerInput.string().c_str());
+  if(prototypeDiagnostics)if(const char* field=std::getenv("PROTOTYPE_DEVELOPER_PROBE_FIELD"))developerProbeField=std::strtoull(field,nullptr,10);
+  if(prototypeDiagnostics){
+  developerRequests=std::filesystem::path(argv[3])/"prototype-developer-requests.txt";
+  if(std::filesystem::exists(developerRequests))return 13;
+  std::ofstream requests(developerRequests,std::ios::binary);if(!requests)return 14;requests.close();
+  }
+  runtime->setDebugUiCallbacks(&developerInit,&developerDraw,&developerShutdown,nullptr);
+ }
+
+ if(prototypeDiagnostics)std::thread([runtime,probeSeconds]{std::this_thread::sleep_for(std::chrono::seconds(probeSeconds));summary();runtime->requestStop();std::this_thread::sleep_for(std::chrono::seconds(2));std::_Exit(124);}).detach();
+ std::filesystem::create_directories(userDataRoot);
+ ps2_host_input::setControlsFile((userDataRoot/"controls.ini").string(),{});
+ std::cerr<<"PROTOTYPE_EXECUTION kind="<<(prototypeDiagnostics?"diagnostic":"interactive-v1")<<" watchdog="<<(prototypeDiagnostics?std::to_string(probeSeconds):"none")<<" raw_exports="<<prototypeDiagnostics<<" observers="<<prototypeDiagnostics<<" user_data="<<userDataRoot.string()<<"\n";
+ if(!runtime->initialize(prototypeDiagnostics?"Prototype native feasibility probe":"God Hand prototype workbench")) return 4;
+ if(!runtime->loadELF(paths.elfPath.string())) return 5;
+ PS2Runtime::setIoPaths(paths);
+ if(!install(runtime,argv[4]))return 6;
+ if(prototypeDiagnostics){
+ for(auto& x:padObserved){x.original=runtime->lookupFunction(x.address);if(!x.original||!runtime->registerFunction(x.address,&observePad))return 15;}
+
+ warpCreateOriginal=runtime->lookupFunction(@@WORD_005@@);warpDestroyOriginal=runtime->lookupFunction(@@WORD_006@@);warpExitOriginal=runtime->lookupFunction(@@WORD_007@@);
+ if(!warpCreateOriginal||!warpDestroyOriginal||!warpExitOriginal)return 19;
+ if(!runtime->registerFunction(@@WORD_005@@,&observeWarpCreate)||!runtime->registerFunction(@@WORD_006@@,&observeWarpDestroy)||!runtime->registerFunction(@@WORD_007@@,&observeWarpExit))return 20;
+ }
+ if(prototypeDiagnostics){snapshotDir=std::filesystem::path(argv[3])/"modules";std::filesystem::create_directories(snapshotDir);}
+ originalRegister=runtime->lookupFunction(@@WORD_000@@);
+ if(!originalRegister||!runtime->registerFunction(@@WORD_000@@,&registeredImage))return 9;
+ originalUnregister=runtime->lookupFunction(@@WORD_029@@);
+ if(!originalUnregister||!runtime->registerFunction(@@WORD_029@@,&unregisteredImage))return 10;
+ std::cout<<"Prototype qualified SDK profile loaded; no retail game map/hooks or fabricated-ready values"<<std::endl;
+ const char* aot=std::getenv("PROTOTYPE_VU1_AOT");
+ if(aot && std::strcmp(aot,"0")!=0 && std::strcmp(aot,"1")!=0)return 17;
+#ifndef PROTOTYPE_INTERPRETER_BOOTSTRAP
+ if(aot && std::strcmp(aot,"1")==0){registerPrototypeVu1Programs();std::cerr<<"PROTOTYPE_VU1_AOT registered=5\n";}
+#else
+ std::cerr<<"PROTOTYPE_BOOTSTRAP compiled_vu_programs=0\n";
+#endif
+ runtime->run(); std::_Exit(0);
+}

@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "version": "prototype-host-source-v1",
+  "upstream_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "parameters": {
+    "WORD_000": "u32",
+    "WORD_001": "u32",
+    "WORD_002": "u32",
+    "WORD_003": "u32",
+    "WORD_004": "u32",
+    "WORD_005": "u32",
+    "WORD_006": "u32",
+    "WORD_007": "u32",
+    "WORD_008": "u32",
+    "WORD_009": "u32",
+    "WORD_010": "u32",
+    "WORD_011": "u32",
+    "WORD_012": "u32",
+    "WORD_013": "u32",
+    "WORD_014": "u32",
+    "WORD_015": "u32",
+    "WORD_016": "u32",
+    "WORD_017": "u32",
+    "WORD_018": "u32",
+    "WORD_019": "u32",
+    "WORD_020": "u32",
+    "WORD_021": "u32",
+    "WORD_022": "u32",
+    "WORD_023": "u32",
+    "WORD_024": "u32",
+    "WORD_025": "u32",
+    "WORD_026": "u32",
+    "WORD_027": "u32",
+    "WORD_028": "u32",
+    "WORD_029": "u32",
+    "WORD_030": "u32",
+    "WORD_031": "u32",
+    "WORD_032": "u32",
+    "WORD_033": "u32",
+    "WORD_034": "u32",
+    "WORD_035": "u32",
+    "WORD_036": "u32",
+    "WORD_037": "u32",
+    "WORD_038": "u32",
+    "WORD_039": "u32",
+    "WORD_040": "u32",
+    "WORD_041": "u32",
+    "WORD_042": "u32",
+    "WORD_043": "u32",
+    "WORD_044": "u32",
+    "WORD_045": "u32",
+    "WORD_046": "u32",
+    "WORD_047": "u32",
+    "WORD_048": "u32",
+    "WORD_049": "u32",
+    "WORD_050": "u32",
+    "WORD_051": "u32",
+    "WORD_052": "u32",
+    "WORD_053": "u32",
+    "WORD_054": "u32",
+    "WORD_055": "u32",
+    "WORD_056": "u32",
+    "INCLUDE_00": "include",
+    "INCLUDE_01": "include",
+    "INCLUDE_02": "include",
+    "INCLUDE_03": "include",
+    "INCLUDE_04": "include",
+    "INCLUDE_05": "include",
+    "INCLUDE_06": "include",
+    "INCLUDE_07": "include",
+    "INCLUDE_08": "include",
+    "INCLUDE_09": "include"
+  },
+  "templates": [
+    {
+      "path": "adapter/prototype_host_main.cpp.in",
+      "output": "main.cpp",
+      "sha256": "6e443fd71bb29e73b8a43d47f4fdab16eaf9a18a6e576e0b8dde9b7257646145"
+    },
+    {
+      "path": "adapter/prototype_window_bridge.hpp.in",
+      "output": "window_shortcut_bridge.hpp",
+      "sha256": "b9c66303f75a9862447a94004a302bda39a7d34def48dc51f5c5d43f822a6289"
+    }
+  ],
+  "overrides": [
+    {
+      "path": "runtime/ps2xIOP/src/emulator/devices/iop_sio2.h",
+      "output": "overrides/iop_sio2.h",
+      "before_sha256": "1bddcdc26378cad0eeb771389df21c61400f6ee158a8b16ab183deb1208c1708",
+      "after_sha256": "0ba3cda4f6336bcb93d15002291a11246962452d7d28fdbc772ffcd975724f58",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"@@INCLUDE_09@@\"\n"
+        },
+        {
+          "start": 3220,
+          "end": 3220,
+          "insert": ", godhand_pc::sio2::PadBatchStatus *padStatus"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xIOP/src/emulator/devices/iop_sio2.cpp",
+      "output": "overrides/iop_sio2.cpp",
+      "before_sha256": "75d271c5ee0e44d2875f185812fbb3d9116751e1570ade18aefef351d6838435",
+      "after_sha256": "be37500170773a3304effd79fc78b20d8a078374f4671b81254deecbcde8ce9f",
+      "edits": [
+        {
+          "start": 204,
+          "end": 204,
+          "insert": "#include <string_view>\n"
+        },
+        {
+          "start": 11440,
+          "end": 11440,
+          "insert": "        godhand_pc::sio2::PadBatchStatus padStatus;\n        const char *statusMode = std::getenv(\"PS2X_SIO2_PAD_STATUS\");\n        const char *legacyMode = std::getenv(\"PS2X_SIO2_RECV1\");\n        const bool statusEnabled = statusMode && std::string_view(statusMode)==\"per-port-v1\" &&\n                                   (!legacyMode || !*legacyMode || std::string_view(legacyMode)==\"0\");\n"
+        },
+        {
+          "start": 12091,
+          "end": 12091,
+          "insert": ", statusEnabled ? &padStatus : nullptr"
+        },
+        {
+          "start": 12178,
+          "end": 12178,
+          "insert": "        if(statusEnabled) {\n            if(const auto qualified=padStatus.result()) {\n                static unsigned logged=0;\n                if(logged++<16) {std::ostringstream msg;msg<<\"[SIO2] per-port-v1 old=0x\"<<std::hex<<recv1<<\" actual=0x\"<<*qualified;m_host.log(LogLevel::Info,msg.str());}\n                recv1=*qualified;\n            }\n        }\n"
+        },
+        {
+          "start": 15680,
+          "end": 15680,
+          "insert": ", godhand_pc::sio2::PadBatchStatus *padStatus"
+        },
+        {
+          "start": 19132,
+          "end": 19132,
+          "insert": "        if(padStatus) {\n            if(port<kPadPorts && !command.empty() && command[0]==0x01u)\n                padStatus->observe(port,acknowledged!=0u);\n            else padStatus->refuse(); // mixed/card/multitap keeps existing policy\n        }\n"
+        }
+      ]
+    },
+    {
+      "path": "runtime/ps2xRuntime/src/lib/ps2_controls_screen.cpp",
+      "output": "overrides/ps2_controls_screen.cpp",
+      "before_sha256": "0bab0c3d91ff1c5db03ca0fc9996752d2ebd662284e65c8b231aff8f2b132336",
+      "after_sha256": "2405ecd3c5a0a5685d04a43380ffde093bc54c1a6f782bf7c288bbbd986d7517",
+      "edits": [
+        {
+          "start": 0,
+          "end": 0,
+          "insert": "#include \"window_shortcut_bridge.hpp\"\n"
+        },
+        {
+          "start": 4261,
+          "end": 4261,
+          "insert": "        bool g_shortcutF1 = false, g_shortcutBack = false;\n"
+        },
+        {
+          "start": 19347,
+          "end": 19395,
+          "insert": "g_shortcutBack || g_shortcutF1"
+        },
+        {
+          "start": 25897,
+          "end": 25917,
+          "insert": "g_shortcutF1"
+        },
+        {
+          "start": 26001,
+          "end": 26025,
+          "insert": "g_shortcutBack"
+        },
+        {
+          "start": 41972,
+          "end": 41972,
+          "insert": "        g_shortcutF1 = IsKeyPressed(KEY_F1);\n        g_shortcutBack = IsKeyPressed(KEY_ESCAPE);\n        if (prototype_window_keys::enabled()) {\n            using namespace godhand_pc::window_shortcuts;\n            g_shortcutF1 = prototype_window_keys::pending.take(Key::Controls, focused, g_shortcutF1);\n            g_shortcutBack = prototype_window_keys::pending.take(Key::Back, focused, g_shortcutBack);\n        }\n\n"
+        },
+        {
+          "start": 42885,
+          "end": 42905,
+          "insert": "g_shortcutF1"
+        }
+      ]
+    }
+  ]
+}

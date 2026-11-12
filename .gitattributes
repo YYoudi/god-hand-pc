@@ -4,3 +4,7 @@ docs/IMPORTED_MIT_LICENSE.txt -text
 docs/media/*.png -text
 docs/media/*.jpg -text
 docs/captures/*.jpg -text
+
+# Hash-qualified original templates use canonical LF, including Windows clones.
+adapter/prototype_host_main.cpp.in text eol=lf
+adapter/prototype_window_bridge.hpp.in text eol=lf

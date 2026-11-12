@@ -1,0 +1,8 @@
+#pragma once
+#include "@@INCLUDE_08@@"
+#include <cstdlib>
+#include <cstring>
+namespace prototype_window_keys {
+inline godhand_pc::window_shortcuts::PressEdges pending;
+inline bool enabled(){const char* value=std::getenv("PROTOTYPE_WINDOW_SHORTCUTS");return value && std::strcmp(value,"edges-v1")==0;}
+}
