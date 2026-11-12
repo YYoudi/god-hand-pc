@@ -24,6 +24,10 @@ BUILD_PROFILES = {
         'sha256': '4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7',
         'default_user_data': 'prototype-room01',
     },
+    'source-v1': {
+        'sha256': 'e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34',
+        'default_user_data': 'prototype-source',
+    },
 }
 ELF = (3450144, 'f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e')
 DISC = (1261928448, '5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e')
@@ -128,7 +132,7 @@ def launch_environment(parent, user):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--build', choices=tuple(BUILD_PROFILES), default='native07',
-                        help='Pinned private build; native07 stays the default, room01-v1 is explicit')
+                        help='Pinned private build; native07 stays default, room01-v1/source-v1 are explicit')
     parser.add_argument('--exe', required=True, help='Qualified PRIVATE executable for the selected build; exact hash required')
     parser.add_argument('--elf', required=True, help='Personal June-2006 prototype ELF, read only')
     parser.add_argument('--disc', required=True, help='Personal June-2006 prototype disc, read only')
