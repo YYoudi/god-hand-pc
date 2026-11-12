@@ -95,6 +95,25 @@ def recipe(root):
     return data
 
 
+def input_templates(root, source, spec):
+    """Read/qualify original templates and separately fetched host dependencies."""
+    root, source = Path(root), Path(source)
+    actual = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=source, text=True).strip()
+    require(actual == REVISION, 'Pinned host dependency revision differs')
+    templates, inputs = {}, {}
+    for row in spec['templates']:
+        templates[row['output']] = qualified_bytes(root / row['path'], row['sha256'])
+        inputs[row['path']] = dict(sha256=row['sha256'], provenance='Original GPL host template')
+    for row in spec['overrides']:
+        blob = ordinary_bytes(source / row['path'], LIMIT)
+        git = subprocess.check_output(['git', 'show', REVISION + ':' + row['path']], cwd=source)
+        policy = dependency_checkout(blob, git)
+        templates[row['output']] = transform(blob, row)
+        inputs[row['path']] = dict(checkout_sha256=digest(blob), git_blob_sha256=digest(git),
+                                  checkout_policy=policy, provenance='Separately fetched pinned GPL host dependency')
+    return templates, dict(upstream_revision=actual, inputs=inputs)
+
+
 def plan_sources(root, source, private_profile):
     """Plan all five postimages before any output directory is created.
 
@@ -117,19 +136,7 @@ def plan_sources(root, source, private_profile):
         require(type(row) is dict and set(row) == {'sha256', 'line_ending'} and
                 row['line_ending'] in ('lf', 'crlf'), 'Explicit complete output identity/EOL required')
         identity(row['sha256'])
-    actual = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=source, text=True).strip()
-    require(actual == REVISION, 'Pinned host dependency revision differs')
-    templates, inputs = {}, {}
-    for row in spec['templates']:
-        templates[row['output']] = qualified_bytes(root / row['path'], row['sha256'])
-        inputs[row['path']] = dict(sha256=row['sha256'], provenance='Original GPL host template')
-    for row in spec['overrides']:
-        blob = ordinary_bytes(source / row['path'], LIMIT)
-        git = subprocess.check_output(['git', 'show', REVISION + ':' + row['path']], cwd=source)
-        policy = dependency_checkout(blob, git)
-        templates[row['output']] = transform(blob, row)
-        inputs[row['path']] = dict(checkout_sha256=digest(blob), git_blob_sha256=digest(git),
-                                  checkout_policy=policy, provenance='Separately fetched pinned GPL host dependency')
+    templates, provenance = input_templates(root, source, spec)
     used = set().union(*(token_names(blob) for blob in templates.values()))
     require(used == set(values), 'Unused or undeclared private parameters')
     planned = {}
@@ -139,7 +146,7 @@ def plan_sources(root, source, private_profile):
                                         {k: spec['parameters'][k] for k in names},
                                         output_sha256=expected[name]['sha256'],
                                         line_ending=expected[name]['line_ending'])
-    return planned, dict(upstream_revision=actual, inputs=inputs, parameters=len(used),
+    return planned, dict(**provenance, parameters=len(used),
                         private_qualification=private_profile['qualification'])
 
 

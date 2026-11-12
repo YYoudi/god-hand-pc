@@ -1,0 +1,747 @@
+{
+  "schema": 1,
+  "version": "prototype-host-profile-v1",
+  "original_elf_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+  "original_disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+  "scope": "Previously qualified prototype roles, exact hash-only field selectors; not new ABI/semantic or fresh native-base discovery",
+  "observations": {
+    "mcport": {
+      "disc_source_sha256": "f5ea92919865b2ecdd0954fa4205191310a1124e6f038c8131aed4c6d29bc4ae",
+      "metadata_sha256": "2cc8c3ae5584d806497162e755164c3836f1ba4c82cdba330638da1c986e72d2",
+      "capture_sha256": "eec7f2eedd1a558e52cb344016afb6a95c1cf1d7fb28f7e1bb1ec650af73146e"
+    },
+    "r020": {
+      "disc_source_sha256": "8c4a8909660cebc18545b5cb384eedfa617fb5a03901b75b76542add29216afb",
+      "metadata_sha256": "a2ecfc68084bdca0272573cf48710f8452cbcd1257720b481e019dfff209c968",
+      "capture_sha256": "f8b3e31ec87cd79ab1eb451ccf819f54fe5ec63a02421c27973d9710fd4e3596"
+    },
+    "r100": {
+      "disc_source_sha256": "8083870cd7130c6648352841876f4f2ed3308d031e4b4faf90b7eb36976f17d4",
+      "metadata_sha256": "74d7ec0bd925afc51852176c62a714a3c6be5f30669867a8c4590d1f1e317005",
+      "capture_sha256": "a8d69ba2127e9e7d780897ca96413506ad0e6585652aede31e7bf05b7d1d49d3"
+    },
+    "event": {
+      "disc_source_sha256": "f5b7ac332e8cbd2fc45e4b715dbc3d7e0d6d7c9f3b527055beb4fa9cf91e2c38",
+      "metadata_sha256": "b7ddf19a82576187ac71424797caf599b04eef5804c5962b40c76bfb893fa0cf",
+      "capture_sha256": "6e6f8aa8a23995ae4b0b2d8c4ce8dba1cb47058a7b2f683790c7993427c9d1ce"
+    },
+    "r101": {
+      "disc_source_sha256": "0ed2106447b77c051de1fb8659e4398be2d5410df0b471e1e0d57042137cc3d5",
+      "metadata_sha256": "84237e2637ee927b465449fd270be3216fd742f6f39df1dadcefa701fe9c51b3",
+      "capture_sha256": "6ffe68b527e97a77c8cc792564a5e4f05c3fcd882257774db5cebe04d063bd56"
+    }
+  },
+  "selectors": {
+    "WORD_001": {
+      "kind": "host",
+      "name": "ram_bytes",
+      "format": {
+        "width": 8,
+        "suffix": "u"
+      }
+    },
+    "WORD_002": {
+      "kind": "host",
+      "name": "guest_mask",
+      "format": {
+        "width": 8,
+        "suffix": ""
+      }
+    },
+    "WORD_003": {
+      "kind": "host",
+      "name": "max_module_bytes",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_004": {
+      "kind": "host",
+      "name": "minimum_pointer",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_011": {
+      "kind": "host",
+      "name": "invented_return_pc",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_012": {
+      "kind": "host",
+      "name": "invented_result",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_022": {
+      "kind": "host",
+      "name": "invented_test_slot",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_024": {
+      "kind": "host",
+      "name": "diagnostic_pad_bytes",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_025": {
+      "kind": "host",
+      "name": "ram_bytes",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_028": {
+      "kind": "host",
+      "name": "warp_guard_bytes",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_040": {
+      "kind": "host",
+      "name": "snr_magic24",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_044": {
+      "kind": "host",
+      "name": "player_guard_bytes",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_056": {
+      "kind": "host",
+      "name": "mask24",
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_000": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "f75caa6ef749ed33df6509727bb77902efd8cff1261e3eccde40d833404c8219"
+      },
+      "format": {
+        "width": 8,
+        "suffix": "u"
+      }
+    },
+    "WORD_005": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "cc30f0893414b36c771b7d433a8e2d666bd466f5cf6f8fdd309112f4a2fc8b73"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_006": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "51ad16d2f8a6148cfaa24a7d9bbb4aeaabea11c094d8e2e75039f036fc3841d3"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_007": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "3829037ae95bda6b8073ebcf2a305ff6c1dcf6dc1d6f98eeb63f203b68536c90"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_029": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "8bfb68a562ab5b09b0488aa70c365c805240cd089afe3bec441fdede091ccb85"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_030": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "fafc998c8cd0d1c637d10a1d460778ca6ab76e706560c042b4d08223029fd7eb"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_031": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "8595cb1eb9bcb854a7bac2731971cedbe000f7eae1de756f4eceaca43e9562e2"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_032": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 64,
+        "sha256": "696f38368b53a5851860b10ba201a7e81d815afe3aeb29ce0ff859cdf2786b42"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_033": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 64,
+        "sha256": "b5b9ad6c4eeb58e62055bd5c01bf7cff1dae507dcb3e30a64a6aea3a258702ea"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_034": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "1f74851f7e1275297c728279450d940952123513bfc2cfe059f4ea23cdf97fe7"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_035": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "2a55ce393bac508878d5c0917180c85e70f3b1979899705250fa733edee00c3a"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_036": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 64,
+        "sha256": "d697498110616d9dd199589d5fb015122e3da3c0172599723882d3a743151fb5"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_037": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 64,
+        "sha256": "d0077f354df40fb45287e65b2ae2bd3a100c737bbe0bf0f5d10ae2180c514e88"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_009": {
+      "kind": "module-base",
+      "module": "mcport",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_010": {
+      "kind": "module-end",
+      "module": "mcport",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_013": {
+      "kind": "module-base",
+      "module": "r020",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_015": {
+      "kind": "module-end",
+      "module": "r020",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_016": {
+      "kind": "module-base",
+      "module": "r101",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_017": {
+      "kind": "module-end",
+      "module": "r101",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_018": {
+      "kind": "module-base",
+      "module": "r100",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_019": {
+      "kind": "module-end",
+      "module": "r100",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_020": {
+      "kind": "module-base",
+      "module": "event",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_021": {
+      "kind": "module-end",
+      "module": "event",
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_014": {
+      "kind": "vaddr",
+      "anchor": {
+        "view": "r020",
+        "window_bytes": 32,
+        "sha256": "06af7e1786067fd65339af3e974d48dd637637cd8fa08b8dd7d6efd3c275d057"
+      },
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_008": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "f5054e4d24b80d59f33585166676f65304a3708bc3f26adf762af81ae73c60f5"
+      },
+      "opcode": 9,
+      "rs": 17,
+      "rt": 5,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_023": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "58950da4beacdef05eee59c0c4dd5f23839ad48d841b6c42d595718e54f6fc23"
+      },
+      "opcode": 43,
+      "rs": 16,
+      "rt": 3,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_026": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "8f1ab05b4a38e3ee95cb4860aa0b10f51e0f670884a04a43c83c2134b97ed90a"
+      },
+      "opcode": 9,
+      "rs": 2,
+      "rt": 5,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_027": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "053776fd565e0c77465ba1c98cbf74bc4dd27784f6eb23bec2884af9e37c8efd"
+      },
+      "opcode": 43,
+      "rs": 16,
+      "rt": 2,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_039": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "9d349c8be79017bd317f77cfb9fcb0d2cc77d399381d1ca47f2b4dfa5f08e471"
+      },
+      "opcode": 9,
+      "rs": 2,
+      "rt": 3,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_042": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "2e9247f0fd5708841f8c33e821b108880cd1c68d5ec381a472c5b4fcde692a3e"
+      },
+      "opcode": 49,
+      "rs": 17,
+      "rt": 0,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_043": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "fa503f74b3a9ee22f244f0b32725f82a18fdaa2c0d432dbb0ecc041b680610fc"
+      },
+      "opcode": 35,
+      "rs": 17,
+      "rt": 19,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_055": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "a94598d90e4139f4057e17dfa33e37e0079598182f15312cfb6d93b8e8e04575"
+      },
+      "opcode": 35,
+      "rs": 2,
+      "rt": 3,
+      "shift": 0,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_045": {
+      "kind": "simm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "cfa4034aad52448373f3b45c4d9829902d6ef48073a7e4063031013d6b0657d1"
+      },
+      "opcode": 9,
+      "rs": 29,
+      "rt": 29,
+      "shift": 0,
+      "negate": true,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_054": {
+      "kind": "uimm16",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "ba99e3c0e4a942ce57cee062104faf5ab2775a2cae1f43c9a51b992fcf2a3829"
+      },
+      "opcode": 15,
+      "rs": 0,
+      "rt": 4,
+      "shift": 16,
+      "negate": false,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_038": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "cf30eab8184e8bd3dc0b340535b9f719dcca08013e3e75ef47cf85089f987c92"
+      },
+      "low_word": 1,
+      "high_register": 2,
+      "low_opcode": 9,
+      "low_target": 2,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_041": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "cb79433d6e3a3dce1b697633939ba144306f1e9617f302b8d6a3f4b41ad539be"
+      },
+      "low_word": 1,
+      "high_register": 2,
+      "low_opcode": 43,
+      "low_target": 3,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_046": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "d5de563e9e54022ec27ec4e4832cf8a6b704596ccc347095fb36f04bd28a8e34"
+      },
+      "low_word": 1,
+      "high_register": 3,
+      "low_opcode": 35,
+      "low_target": 2,
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_050": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "bed6cbba682ddb0dedbdafa95714a86032d4f1dd62f72d57b313e5976d448a02"
+      },
+      "low_word": 2,
+      "high_register": 2,
+      "low_opcode": 55,
+      "low_target": 5,
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_051": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "635ca6900c9d861d9ab732cedce70f7a2f2dff34f479d004626019bf2b0ec046"
+      },
+      "low_word": 2,
+      "high_register": 2,
+      "low_opcode": 55,
+      "low_target": 3,
+      "format": {
+        "width": 0,
+        "suffix": ""
+      }
+    },
+    "WORD_052": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "c055ff46db0cc35fff1eca9e1e4ee42e0052ae95eb42c65de07a22873b7e72a7"
+      },
+      "low_word": 2,
+      "high_register": 2,
+      "low_opcode": 35,
+      "low_target": 3,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_053": {
+      "kind": "lui-address",
+      "anchor": {
+        "view": "boot",
+        "window_bytes": 32,
+        "sha256": "2c3a12a8320ca8f00f1237987536e9f7e6d70eef68b8cf3ca6f78a63e4c4e58d"
+      },
+      "low_word": 2,
+      "high_register": 3,
+      "low_opcode": 35,
+      "low_target": 2,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_047": {
+      "kind": "alias",
+      "parameter": "WORD_046",
+      "add": 0,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_048": {
+      "kind": "alias",
+      "parameter": "WORD_046",
+      "add": 4,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "WORD_049": {
+      "kind": "alias",
+      "parameter": "WORD_046",
+      "add": 8,
+      "format": {
+        "width": 0,
+        "suffix": "u"
+      }
+    },
+    "INCLUDE_00": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "locked_input_file.hpp"
+    },
+    "INCLUDE_01": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "prototype_execution_policy.hpp"
+    },
+    "INCLUDE_02": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "prototype_controller_native.hpp"
+    },
+    "INCLUDE_03": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "prototype_debug_shortcut.hpp"
+    },
+    "INCLUDE_04": {
+      "kind": "include",
+      "root": "modules",
+      "path": "r020/namespaced/prototype_r020_pack.h"
+    },
+    "INCLUDE_05": {
+      "kind": "include",
+      "root": "modules",
+      "path": "event/namespaced/prototype_event_pack.h"
+    },
+    "INCLUDE_06": {
+      "kind": "include",
+      "root": "modules",
+      "path": "r100/namespaced/prototype_r100_pack.h"
+    },
+    "INCLUDE_07": {
+      "kind": "include",
+      "root": "modules",
+      "path": "mcport/namespaced/prototype_mcport_pack.h"
+    },
+    "INCLUDE_08": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "window_shortcut_edges.hpp"
+    },
+    "INCLUDE_09": {
+      "kind": "include",
+      "root": "adapter",
+      "path": "sio2_pad_status.hpp"
+    }
+  }
+}
