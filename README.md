@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Latest scoped check: [returning to Room01 without restarting](PROTOTYPE_ROOM_TRANSITIONS.md).
+One original Room01 -> Room00 introduction -> Room01 scene sequence now runs in
+the unchanged native process. Same-base module identities are checked; partial
+menu labels and missing late capture targets remain explicit. This is not a
+complete prototype port or an upgrade of the adopted normal07 launcher.
+
 Current scoped result: [another original Room Jump destination](PROTOTYPE_ROOM01.md).
 Stage1 / Room01 / Point0 now reaches its native interior, actors and HUD after
 qualifying its module and missing BOOT entries. A finite left-stick response and

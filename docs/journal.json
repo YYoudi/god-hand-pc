@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Adopted normal07 remains unchanged. New450s controls close scoped capture-preparation/final-endpoint gaps;20/21common originals match, loading difference retained. Public read-only76module input catalog is not an ISO-only setup or complete prototype/retail release.",
-  "next": "Validate original-menu room-to-room unload/reload and variable-base behavior with qualified source/identity evidence, not guessed frees or transplanted addresses. Test normal-mode F1/F2 and named actions on the new combined build before promotion; continue VU/generic/full-source setup, broader debug options, reference and hardware gates.",
+  "status": "The prototype debug workbench remains experimental. Adopted normal07 retains its scoped F2/menu/effect results; the separate combined4acf build now loads Room01 and returns to it through a Room00 introduction in one process. Partial selector labels, same-base-only coverage and source-complete setup limits remain. No full prototype, retail debug backend or campaign-fidelity release is validated.",
+  "next": "Validate normal-mode F1/F2 and named actions on the unchanged combined build before any launcher promotion. Investigate the partial original selector rendering without assuming its cause; continue other loading/lifetime and variable-base evidence, prototype VU/generic/full-source setup, broader options, reference and hardware gates. The one same-base Room01/Room00-introduction/Room01 roundtrip is observed, not missing.",
   "known_limits": [
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
@@ -122,7 +122,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, room-to-room unload/reload/variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance."
+          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, other unload/reload paths and variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance. A separate unchanged-build same-process Room01 -> Room00 introduction -> Room01 scene return is now observed; both r101 images retain the same qualified base and complete linked bytes. Partial selector labels and three unreached late capture requests remain explicit. This does not prove Room00 ordinary HUD, normal-mode adoption, retired-address absence or every lifetime path."
         },
         {
           "id": "RM01",
@@ -335,6 +335,28 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Returning to Room01 without restarting",
+      "summary": "The unchanged native prototype now goes from Room01 through the Room00 introduction and back to Room01 in one process. A menu-rendering limitation is retained beside the scene outputs.",
+      "changes": [
+        "Inspected the original selector before each route change and used only finite normal controller requests; no game-state or ready-flag writes.",
+        "Observed r101 clear and reinstall at the same base, with all 15,206 linked bytes equal to its own-disc qualified static link. Other selected module images retain their prior identities.",
+        "Kept original images with missing selector labels, the intermediate Room00 introduction and the returning Room01 scene. No Room00 ordinary-HUD or variable-base claim."
+      ],
+      "validation": "One declared 480-second diagnostic ends zero after 483.828 seconds, with 171 original PNGs through actual filename15700. Three late requested fields are unreached. Post-native source suite: 330 tests, three Windows skips, 67.893 seconds. All 10,142 inventoried file identities match.",
+      "limits": "This is one same-base roundtrip on the unchanged private combined build, not new normal-mode F1/F2, hardware, Warp/no-death, full lifetime/ABI or an installer. The shared-handler request is submitted during loading; original selector labels disappear in some later captures for an unknown reason. Existing warnings/artifacts and source-setup gates remain.",
+      "evidence_comparisons": [
+        "2026-11-12-room-return",
+        "2026-11-12-room-interlude",
+        "2026-11-12-room-selector-limit"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ROOM_TRANSITIONS.md",
+        "label": "Same-process route, native originals and remaining limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1286,6 +1308,144 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-room-return",
+      "date": "2026-11-12",
+      "title": "Room01 before leaving and after returning",
+      "feature": "DT03",
+      "scenario": "Single unchanged native process: original Stage1/Room01/Point0, Room00/Point0 introduction, then Room01/Point0. Finite original controller requests; no constructed scene or game-state writes.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "First Room01 entry",
+        "bevy": "Room01 after the return"
+      },
+      "observations": [
+        "Named same-room landmarks, different times and idle poses. This is a transition result, not identical guest state, an undo or all-frame fidelity."
+      ],
+      "limits": [
+        "Same observed bases only; no arbitrary destinations, complete prototype setup or new normal-mode F1/F2/Warp/no-death acceptance.",
+        "Room00 introduction is observed, not ordinary Room00 Gene/HUD. The shared-handler request is submitted during loading, not hardware input.",
+        "Partial original selector labels are visible in retained originals; cause unknown, not a verified original-console defect.",
+        "Three late capture requests are unreached; no retrospective watchdog extension or full-target-pass relabel.",
+        "Existing option accounting warning, strictVU1/render artifacts, loading differences, ignored install returns and partial-install limitations remain.",
+        "No hardware, audible audio, genuine game Save/Load, combat/campaign/fidelity or performance claim. Original game source/raw observations stay private; screenshots have separate rights."
+      ],
+      "reference": {
+        "caption": "Actual3000: first original Room01 interior, Gene, two enemies and HUD. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:47:15.774646+00:00",
+        "path": "media/ee87eb95e092eb9adbb4b45231309a6f4da2b91570e35fd49dd63f9d30c83a06.png",
+        "sha256": "ee87eb95e092eb9adbb4b45231309a6f4da2b91570e35fd49dd63f9d30c83a06",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Actual11300: original Room01 scene/Gene/enemies/HUD after visiting Room00 and returning without a process restart. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:51:30.858014+00:00",
+        "path": "media/4a58f7835365df9f6c7948344de364c7be8739a4be2249dbea67deef79edd0dd.png",
+        "sha256": "4a58f7835365df9f6c7948344de364c7be8739a4be2249dbea67deef79edd0dd",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room-interlude",
+      "date": "2026-11-12",
+      "title": "The intermediate Room00 introduction",
+      "feature": "DT03",
+      "scenario": "Single unchanged native process: original Stage1/Room01/Point0, Room00/Point0 introduction, then Room01/Point0. Finite original controller requests; no constructed scene or game-state writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Room00 introduction",
+        "bevy": "Returned Room01 scene"
+      },
+      "observations": [
+        "Different destinations, deliberately unmatched. Original selector values and module registrations identify the route; this pair is not a matched-camera comparison."
+      ],
+      "limits": [
+        "Same observed bases only; no arbitrary destinations, complete prototype setup or new normal-mode F1/F2/Warp/no-death acceptance.",
+        "Room00 introduction is observed, not ordinary Room00 Gene/HUD. The shared-handler request is submitted during loading, not hardware input.",
+        "Partial original selector labels are visible in retained originals; cause unknown, not a verified original-console defect.",
+        "Three late capture requests are unreached; no retrospective watchdog extension or full-target-pass relabel.",
+        "Existing option accounting warning, strictVU1/render artifacts, loading differences, ignored install returns and partial-install limitations remain.",
+        "No hardware, audible audio, genuine game Save/Load, combat/campaign/fidelity or performance claim. Original game source/raw observations stay private; screenshots have separate rights."
+      ],
+      "reference": {
+        "caption": "Actual8200: original Room00 exterior introduction, buildings and tumbleweed; not ordinary Gene/HUD gameplay. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:49:03.315555+00:00",
+        "path": "media/7d74bc14192c6c81b37bf1911e38bbd318f4f6267f3c32b43d8fbdce546c68a6.png",
+        "sha256": "7d74bc14192c6c81b37bf1911e38bbd318f4f6267f3c32b43d8fbdce546c68a6",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Actual11300: Room01 interior/Gene/HUD after the second destination confirmation. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:51:30.858014+00:00",
+        "path": "media/4a58f7835365df9f6c7948344de364c7be8739a4be2249dbea67deef79edd0dd.png",
+        "sha256": "4a58f7835365df9f6c7948344de364c7be8739a4be2249dbea67deef79edd0dd",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room-selector-limit",
+      "date": "2026-11-12",
+      "title": "A retained selector rendering limitation",
+      "feature": "DT03",
+      "scenario": "Single unchanged native process: original Stage1/Room01/Point0, Room00/Point0 introduction, then Room01/Point0. Finite original controller requests; no constructed scene or game-state writes.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Full selector on entry",
+        "bevy": "After moving down"
+      },
+      "observations": [
+        "Both untouched originals are retained. Cause UNKNOWN; no claim of an original-console defect or correctly rendered full menu."
+      ],
+      "limits": [
+        "Same observed bases only; no arbitrary destinations, complete prototype setup or new normal-mode F1/F2/Warp/no-death acceptance.",
+        "Room00 introduction is observed, not ordinary Room00 Gene/HUD. The shared-handler request is submitted during loading, not hardware input.",
+        "Partial original selector labels are visible in retained originals; cause unknown, not a verified original-console defect.",
+        "Three late capture requests are unreached; no retrospective watchdog extension or full-target-pass relabel.",
+        "Existing option accounting warning, strictVU1/render artifacts, loading differences, ignored install returns and partial-install limitations remain.",
+        "No hardware, audible audio, genuine game Save/Load, combat/campaign/fidelity or performance claim. Original game source/raw observations stay private; screenshots have separate rights."
+      ],
+      "reference": {
+        "caption": "Actual3900: original selector initially shows Stage1 / Room01 / Point0. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:47:39.889356+00:00",
+        "path": "media/49722fc48b0d97429d33e356807508132b9962f7009cb79ee747168c44d061e3.png",
+        "sha256": "49722fc48b0d97429d33e356807508132b9962f7009cb79ee747168c44d061e3",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Actual5100: after Down, moved chevrons remain but the labels are absent. Actual later originals show changed room digits only. Full unchanged original renderer PNG; no crop, resize, conversion or repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus the qualified private combined profile described in PROTOTYPE_ROOM01.md. One bounded same-process original-menu transition diagnostic; not hardware/PS2 or a complete installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:47:59.908897+00:00",
+        "path": "media/ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18.png",
+        "sha256": "ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-room01-before-after",
       "date": "2026-11-12",

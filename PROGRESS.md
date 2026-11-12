@@ -1,5 +1,18 @@
 # Canonical progress and publication workflow
 
+## One native room return — 12 November 2026
+
+[PROTOTYPE_ROOM_TRANSITIONS.md](PROTOTYPE_ROOM_TRANSITIONS.md) records a new
+same-process Room01 -> Room00 introduction -> Room01 scene sequence on unchanged
+4acf41e7. The original menu selects both changes; r101 clears/reinstalls at the
+same qualified base with all15206linked bytes equal. Native480s ends0/171PNGs;
+three late requested fields are not reached. Partial selector labels remain
+visible limitations, cause unknown.330post-native tests/3Windows skips pass.
+All10142inventoried identities,260originals and historical4WIP match.
+No normal-mode promotion, variable-base/complete lifetime or Room00 normal-HUD
+claim. Next combined-build F1/F2/named-action acceptance and faithful rendering/
+source-setup work. Earlier scoped reports and originals are preserved; goal ACTIVE.
+
 ## Original Room01 destination — 12 November 2026
 
 [PROTOTYPE_ROOM01.md](PROTOTYPE_ROOM01.md) records the actual original selector,

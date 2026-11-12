@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "source_revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+  "preceding_publication_revision": "149ac78aff445f6ff8fa90d8bb885834b342d520",
+  "native_exe_sha256": "4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7",
+  "scope": "One same-process original Room01 -> Room00 introduction -> Room01 scene return; unchanged native executable, no new translation or launcher promotion.",
+  "native": {
+    "declared_watchdog_seconds": 480,
+    "elapsed_seconds": 483.82799999999406,
+    "exit": 0,
+    "actual_original_PNGs": 171,
+    "last_actual_numeric_filename": 15700,
+    "unreached_requested_fields": [
+      15800,
+      15900,
+      16000
+    ],
+    "all_capture_targets_pass": false,
+    "missing_function_target_message_observed": false
+  },
+  "inputs": {
+    "initial_finite_field_script": true,
+    "later_live_identity_guarded_finite_requests": 11,
+    "destination_confirmations_after_initial_bootstrap": 2,
+    "real_Windows_F1_F2_test": false,
+    "one_shared_F2_handler_request_during_loading": true,
+    "guest_state_health_flags_PC_ready_writes": false,
+    "attacks_or_imported_saves": false
+  },
+  "observed": {
+    "first_Room01_scene_Gene_enemies_HUD": true,
+    "original_RoomJump_values_inspected": true,
+    "Room00_exterior_introduction": true,
+    "Room00_ordinary_Gene_HUD_before_second_menu": false,
+    "return_Room01_scene_Gene_enemies_HUD": true,
+    "same_native_process": true,
+    "original_selector_labels_missing_in_some_later_images": true,
+    "menu_rendering_cause": "unknown"
+  },
+  "modules": {
+    "registrations": 6,
+    "observed_order": "McPort install/clear; r020 install/clear; r101 install/clear; r100 install; Event install/clear; r100 clear; r101 install.",
+    "r101_initial_and_reload_same_observed_base": true,
+    "r101_all15206linked_bytes_equal_own_disc_qualified_static_link_both_times": true,
+    "other_four_observed_images_equal_previously_qualified_native_observations": true,
+    "variable_base_or_retired_lookup_absence_proven": false,
+    "all_ABI_ownership_failure_recovery_proven": false
+  },
+  "source_tests": {
+    "count": 330,
+    "Windows_skips": 3,
+    "seconds": 67.893,
+    "exit": 0,
+    "after_owned_native_terminal": true
+  },
+  "preservation": {
+    "inventoried_file_identities": 10142,
+    "all_match": true,
+    "old_and_new_original_PNGs": 260,
+    "MIT4WIP_hashes_unchanged": true,
+    "disc_ELF_before_after_unchanged": true,
+    "combined_executable_unchanged": true,
+    "old_variants_not_overwritten": true
+  },
+  "limits": [
+    "Same observed bases only; no arbitrary destinations, complete prototype setup or new normal-mode F1/F2/Warp/no-death acceptance.",
+    "Room00 introduction is observed, not ordinary Room00 Gene/HUD. The shared-handler request is submitted during loading, not hardware input.",
+    "Partial original selector labels are visible in retained originals; cause unknown, not a verified original-console defect.",
+    "Three late capture requests are unreached; no retrospective watchdog extension or full-target-pass relabel.",
+    "Existing option accounting warning, strictVU1/render artifacts, loading differences, ignored install returns and partial-install limitations remain.",
+    "No hardware, audible audio, genuine game Save/Load, combat/campaign/fidelity or performance claim. Original game source/raw observations stay private; screenshots have separate rights."
+  ]
+}

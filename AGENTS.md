@@ -1,5 +1,26 @@
 # God Hand PC continuation - agent instructions
 
+## Same-process prototype room return — 2026-11-12
+
+Read PROTOTYPE_ROOM_TRANSITIONS.md and checkpoint/room_transition_current.
+UNCHANGED4acf41e7, new declared480s native0 after483.828s,171originals through15700;
+15800/15900/16000 UNREACHED, no full capture-target pass or extended old run.
+Actual original Room01/Gene/HUD -> Room00 exterior INTRO -> Room01/Gene/HUD in
+ONE process;11 finite live path/PID/creation-guarded diagnostic requests,2later
+destination confirmations. Shared F2-handler request occurs during loading,
+not actual Windows F2 or already visible Room00 ordinary Gene/HUD acceptance.
+r101 install/clear -> r100+Event install/Event clear -> r100 clear/r101 install.
+Both r101 bases SAME, all15206linked bytes equal fresh qualified own-disc oracle;
+four other observations equal prior qualified bytes. Not variable-base, retired
+lookup absence, every ABI/ownership/failure rollback or normal-mode promotion.
+Original selector full labels disappear after Down; changed room digits remain
+later. Cause UNKNOWN, unchanged originals retained, not original-console bug.
+330tests/3Win skips67.893s after native;10142 retained identities/260originals/
+MIT4WIP/discs/old variants preserved. No new host/game translation, Rust, delegation.
+Next new combined normal-mode F1/F2/named-action acceptance before adoption,
+partial-label rendering investigation, VU/generic/full setup and wider evidence.
+Normal07 scoped effects remain DONE only for07. Full goal ACTIVE, not achieved.
+
 ## Additional Room01 scene and scoped input — 2026-11-12
 
 Read PROTOTYPE_ROOM01.md and checkpoint/room01_current. Original UI selects
