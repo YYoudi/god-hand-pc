@@ -1,5 +1,28 @@
 # God Hand PC continuation - agent instructions
 
+## Additional Room01 scene and scoped input — 2026-11-12
+
+Read PROTOTYPE_ROOM01.md and checkpoint/room01_current. Original UI selects
+Stage1/Room01/Point0. Oldff trial cannot dispatch r101 ctor; module-onlyb1 trial
+then misses a BOOT import. Both unsupported/loading trials stay failures.
+Own-disc r101/observed-base/prototype registry matches ALL15206bytes;21functions,
+721aliases,1753PC-wordcomment checks,6warnings/0errors. Public97b7745 checked
+host attachment preserves every other parent byte; no instruction/flag/free edits.
+Five-module scope adds6BOOTexport roots:12direct+21code-backed ranges,9827files;
+234oldchanged-owner PCwords/all136931oldaliases kept,6aliases added. Error1/
+warnings1450 retained. Combined4acf41e7 target/control220s0/15PNGs each, no missing
+target; actual newinterior/Gene/enemies/HUD, oldRoom00seven original samples exact.
+Scripted Start opens originalTECHNIQUES here: later menu captures not gameplay.
+Separate noStart220s and leftstickUp180s0/15originals/no missingtarget show room
+and scoped visual stick response.8of9preinput originals equal;2700loadingdiff2371
+UNKNOWN, both originals retained; before3290 exact. No numeric/hardware/combat
+or newF1/F2/Warp/survival/ABI/all-frame certificate. Source330tests/3Win skips pass.
+Normal07 not promoted. Next original-menu room unload/reload/variablebase and
+newbuild normalF1/F2/named-action acceptance; VU/generic/fullsource/broaderoptions/
+reference/hardware remain. Existing0x480/strictVU1/render/partialfailure limits
+not fixed. No guessed ready/flags/frees/unknownNOP, Rust, delegation or game uploads.
+Full goal ACTIVE; current native cases terminal, publication checkpoints authoritative.
+
 ## Reconstructed registration source — 2026-11-12
 
 Read PROTOTYPE_REGISTRATION_REPLAY.md and checkpoint/registration_replay_current.

@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "Adopted normal07 remains unchanged. New450s controls close scoped capture-preparation/final-endpoint gaps;20/21common originals match, loading difference retained. Public read-only76module input catalog is not an ISO-only setup or complete prototype/retail release.",
-  "next": "Qualify one additional original Room Jump destination and any missing module binding from its own observed prototype identity/lifetime evidence, without retail transplants or guessed loads. Continue VU/generic source closure and a fresh full build. Broader UI/input and the original-reference warning comparison remain open.",
+  "next": "Validate original-menu room-to-room unload/reload and variable-base behavior with qualified source/identity evidence, not guessed frees or transplanted addresses. Test normal-mode F1/F2 and named actions on the new combined build before promotion; continue VU/generic/full-source setup, broader debug options, reference and hardware gates.",
   "known_limits": [
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
@@ -122,7 +122,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only. Separate NEWprepared450s native0/23images each now reach7301/7401.20/21common originals equal, loading2901diff17300retained; old330s failures unchanged. Public inputcatalog76modulebytes matchesoldreader, not module/VU/generic setup/freshfullbuild or fullparity. New selected-module replay emits4modules/720raw files exactly, compiles708function units in4new libraries, links79c88f1e over9832retained inputs. Native450s0/23PNGs,21commonoriginals exact toprior run; actual filename differences and0x480warning retained. Qualifiedbases/wrappers/VU/generic/fullsetup, reference and widerUI remain open; normal07unchanged. Registration replay reconstructs four wrappers/eight files and 6,849 explicit sparse aliases exactly. Four new wrapper objects link ff2e587c; its 450-second native run exits zero with 23 originals, all equal to the prior run. The warning persists. Compiled invented partial-failure/no-rollback and static ignored-return limitations remain explicit, not new actual-key/F1/Warp/survival or failure-safety proof. Qualified bases, VU/generic/full-build and broader rooms/UI remain open."
+          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, room-to-room unload/reload/variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance."
         },
         {
           "id": "RM01",
@@ -335,6 +335,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "A second Room Jump destination reaches the native scene",
+      "summary": "The original Stage1 / Room01 / Point0 route now reaches its interior, actors and HUD. A finite left-stick request produces a visible response. Earlier loading failures and the original-room control are retained.",
+      "changes": [
+        "Matched the actually loaded r101 module to the personal disc and its complete observed linked bytes; generated the module without a retail address transplant.",
+        "Added six original BOOT import/export entries after the module-only run exposed a missing call. No old explicit aliases or changed-owner instruction words were dropped; the existing generation error and warnings remain.",
+        "Kept the unintended original Start/TECHNIQUES-menu trial, then ran a separate no-Start case and one finite left-stick pulse. Original scene, selector, input-response and baseline-control images are below."
+      ],
+      "validation": "The combined target/control, no-Start and left-stick cases exit zero with 15 originals each and no missing-target log. Seven pre-menu Room00 originals equal the prior run. Source suite:330tests/3Windows skips in58.970s. Earlier240s/180s unsupported trials stay failures despite host exit0.",
+      "limits": "This is a scoped additional-room scene/input result, not arbitrary rooms, full gameplay, physical input, new F1/F2/Warp/survival or a public prototype installer. One pre-input loading original differs; both originals are downloadable in Comparisons. Unload/reload, VU/generic/full-source setup, old warnings/artifacts and wider controls remain open.",
+      "evidence_comparisons": [
+        "2026-11-12-room01-before-after",
+        "2026-11-12-room01-selector-scene",
+        "2026-11-12-room01-stick",
+        "2026-11-12-room01-original-control"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ROOM01.md",
+        "label": "Room01 source, unsupported trials, native evidence and limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1263,6 +1286,228 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-room01-before-after",
+      "date": "2026-11-12",
+      "title": "Before and after supporting Room01",
+      "feature": "DT03",
+      "scenario": "Original Stage1/Room01/Point0 selection or explicitly named Room00 control; actual native before/after states, no manual scene/pose construction.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Earlier unsupported loader",
+        "bevy": "Qualified native Room01"
+      },
+      "observations": [
+        "Both earlier unsupported trials are preserved. The combined qualified profile now reaches this original scene; different executions/counters, not matched-image fidelity."
+      ],
+      "limits": [
+        "Named local prototype build/scenario only; not arbitrary rooms, full gameplay, physical input, F1/F2 ownership, Warp/survival, campaign or PS2 fidelity.",
+        "Qualified original module/BOOT entries and explicit reused source/object/library dependencies; no new normal07 promotion or source-complete installer.",
+        "Original option warning not tested/fixed here; strictVU1/render artifacts, loading and partial-registration failure limits remain.",
+        "Full untouched original PNGs, separate actual run/export provenance; game imagery is not GPL or rights-holder-certified."
+      ],
+      "reference": {
+        "caption": "Earlier module-only capsule at actual3300 remains loading; a BOOT import is still missing. Not a working-room result. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native b1c6d9fb7b49d82d1f01e9ba7b8a815d64613913d2efa4a1ad55fe8282297bc8; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T15:42:28.994871+00:00",
+        "path": "media/55582c52dd276b29adfea5ab9e239d1a89e47ab0aed5d7e739b67b5c6250012e.png",
+        "sha256": "55582c52dd276b29adfea5ab9e239d1a89e47ab0aed5d7e739b67b5c6250012e",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Combined capsule at actual3100 shows the new original interior, Gene, two enemies and HUD; Start omitted. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:07:48.518078+00:00",
+        "path": "media/31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1.png",
+        "sha256": "31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room01-selector-scene",
+      "date": "2026-11-12",
+      "title": "Original Room Jump selection and destination",
+      "feature": "DT03",
+      "scenario": "Original Stage1/Room01/Point0 selection or explicitly named Room00 control; actual native before/after states, no manual scene/pose construction.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original selector",
+        "bevy": "Later Room01 scene"
+      },
+      "observations": [
+        "Original menu inputs, not guest flag/position/PC edits, select this destination. Multiple snapshots do not certify every intervening frame."
+      ],
+      "limits": [
+        "Named local prototype build/scenario only; not arbitrary rooms, full gameplay, physical input, F1/F2 ownership, Warp/survival, campaign or PS2 fidelity.",
+        "Qualified original module/BOOT entries and explicit reused source/object/library dependencies; no new normal07 promotion or source-complete installer.",
+        "Original option warning not tested/fixed here; strictVU1/render artifacts, loading and partial-registration failure limits remain.",
+        "Full untouched original PNGs, separate actual run/export provenance; game imagery is not GPL or rights-holder-certified."
+      ],
+      "reference": {
+        "caption": "Actual2300 original menu visibly selects Stage1 / Room01 / Point0 before confirmation. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:07:28.418018+00:00",
+        "path": "media/ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18.png",
+        "sha256": "ea8a09470d738c82a95bb52ce0c03691006481cda923fad38bd69b0af2ff2c18",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Actual5501 original Room01/actors/HUD without the earlier unintended TECHNIQUES menu; idle pose differs. No combat or survival certificate. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:09:15.357295+00:00",
+        "path": "media/8258c7b57ebbbbb71d5483305788feae65e3a4c0e2fb9ecf545b3e9bba041d4b.png",
+        "sha256": "8258c7b57ebbbbb71d5483305788feae65e3a4c0e2fb9ecf545b3e9bba041d4b",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room01-stick",
+      "date": "2026-11-12",
+      "title": "One original left-stick request in Room01",
+      "feature": "DT03",
+      "scenario": "Original Stage1/Room01/Point0 selection or explicitly named Room00 control; actual native before/after states, no manual scene/pose construction.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before the finite pulse",
+        "bevy": "After the finite pulse"
+      },
+      "observations": [
+        "A scoped visual software-input response, not numeric world-vector, hardware or combat proof. The immediate before3290 PNG equals the prior D-pad case."
+      ],
+      "limits": [
+        "Named local prototype build/scenario only; not arbitrary rooms, full gameplay, physical input, F1/F2 ownership, Warp/survival, campaign or PS2 fidelity.",
+        "Qualified original module/BOOT entries and explicit reused source/object/library dependencies; no new normal07 promotion or source-complete installer.",
+        "Original option warning not tested/fixed here; strictVU1/render artifacts, loading and partial-registration failure limits remain.",
+        "Full untouched original PNGs, separate actual run/export provenance; game imagery is not GPL or rights-holder-certified.",
+        "Only8of9common preaction originals equal the prior case; loading2700diff2371pixels is retained separately. Watchdog budgets and fresh paths differ; not a synchronized whole-state control."
+      ],
+      "reference": {
+        "caption": "Actual3290 original Room01 just before one left-stick Up request. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:17:28.688455+00:00",
+        "path": "media/492c8fb39939acc9d4aeab318330cbb7376b123049cf2e088bf7f8b274d5c0d7.png",
+        "sha256": "492c8fb39939acc9d4aeab318330cbb7376b123049cf2e088bf7f8b274d5c0d7",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Actual3360 original scene/camera response after the 12-field left-stick Up request; column/vase/enemy spacing differs. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:17:31.430488+00:00",
+        "path": "media/e2d19abe4bf588f1236464e11ebf92440914d068bd17b4242b9bb92f5521bd20.png",
+        "sha256": "e2d19abe4bf588f1236464e11ebf92440914d068bd17b4242b9bb92f5521bd20",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room01-original-control",
+      "date": "2026-11-12",
+      "title": "The original room remains a control",
+      "feature": "DT03",
+      "scenario": "Original Stage1/Room01/Point0 selection or explicitly named Room00 control; actual native before/after states, no manual scene/pose construction.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Prior original-room endpoint",
+        "bevy": "New original-room endpoint"
+      },
+      "observations": [
+        "Seven common actual-filename originals through3300 equal the prior separate run, before optional-menu script differences. Sampled regression, not full campaign/state/fidelity proof."
+      ],
+      "limits": [
+        "Named local prototype build/scenario only; not arbitrary rooms, full gameplay, physical input, F1/F2 ownership, Warp/survival, campaign or PS2 fidelity.",
+        "Qualified original module/BOOT entries and explicit reused source/object/library dependencies; no new normal07 promotion or source-complete installer.",
+        "Original option warning not tested/fixed here; strictVU1/render artifacts, loading and partial-registration failure limits remain.",
+        "Full untouched original PNGs, separate actual run/export provenance; game imagery is not GPL or rights-holder-certified."
+      ],
+      "reference": {
+        "caption": "Prior ff2e587c original Room00/Point1 at actual3300. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native ff2e587ca601ab85658fd23f041daf0834a7fe6d32297d69b6f26bbcf8b15df9; tooling 38821dfb403b007d8981a7bb8bf035994a490bce plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "38821dfb403b007d8981a7bb8bf035994a490bce",
+        "captured_at": "2026-11-12T15:04:58.598839+00:00",
+        "path": "media/640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d.png",
+        "sha256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "New combined capsule original Room00/Point1 at actual3300, byte-identical to the prior sample. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:03:24.690057+00:00",
+        "path": "media/640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d.png",
+        "sha256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-room01-loading-control",
+      "date": "2026-11-12",
+      "title": "A pre-input loading difference is still retained",
+      "feature": "DT03",
+      "scenario": "Original Stage1/Room01/Point0 selection or explicitly named Room00 control; actual native before/after states, no manual scene/pose construction.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Prior unpaused loading original",
+        "bevy": "Left-stick-case loading original"
+      },
+      "observations": [
+        "The originals differ by2371decodedRGBApixels. Cause and underlying presented-source/state alignment are UNKNOWN; neither image is repaired or excluded."
+      ],
+      "limits": [
+        "Named local prototype build/scenario only; not arbitrary rooms, full gameplay, physical input, F1/F2 ownership, Warp/survival, campaign or PS2 fidelity.",
+        "Qualified original module/BOOT entries and explicit reused source/object/library dependencies; no new normal07 promotion or source-complete installer.",
+        "Original option warning not tested/fixed here; strictVU1/render artifacts, loading and partial-registration failure limits remain.",
+        "Full untouched original PNGs, separate actual run/export provenance; game imagery is not GPL or rights-holder-certified.",
+        "This difference is before the changed3300input request; no cause is assigned from counters alone. Both unchanged originals are downloadable."
+      ],
+      "reference": {
+        "caption": "Prior no-Start case loading original at actual2700, before its D-pad Up pulse. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:07:35.092516+00:00",
+        "path": "media/348b3f4748e3a5d0b084e7332a0d614c1642f99b118c31a2bc179193e38defd1.png",
+        "sha256": "348b3f4748e3a5d0b084e7332a0d614c1642f99b118c31a2bc179193e38defd1",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Separate left-stick case loading original at actual2700, before its pulse. Unchanged full original renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; tooling 97b774547230976d1536f7fe32d3f27cf3271c48 plus explicit private qualified profile/build. Original finite software menu/controller diagnostic, not hardware/PS2 or complete public installer.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T16:17:08.076906+00:00",
+        "path": "media/0ce5e67f2cb8a2a038dd01f9ea660168090c5ec4bce017d45543ddb44861259a.png",
+        "sha256": "0ce5e67f2cb8a2a038dd01f9ea660168090c5ec4bce017d45543ddb44861259a",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-registration-endpoint",
       "date": "2026-11-12",

@@ -1,5 +1,19 @@
 # Canonical progress and publication workflow
 
+## Original Room01 destination — 12 November 2026
+
+[PROTOTYPE_ROOM01.md](PROTOTYPE_ROOM01.md) records the actual original selector,
+two unsupported loading trials, qualified r101 source/constructor and six missing
+BOOT entries. The combined capsule reaches the original interior/actors/HUD;
+separate no-Start and finite left-stick cases show scoped scene/input outputs.
+Old Room00 keeps seven sampled originals byte-identical. Existing errors/warnings,
+one pre-input loading mismatch and the unintended Start-menu trial are explicit.
+330source tests/3Windows skips pass. Selected unchanged actual originals include
+before/after, selector/destination, input response and original-room control.
+Normal07 and all earlier evidence stay intact. Full goal ACTIVE: room unload/
+reload, normal-mode new-build acceptance, source setup and broader fidelity gates
+remain, not a complete prototype/campaign/hardware or retail release.
+
 ## Registration-source reconstruction — 12 November 2026
 
 [PROTOTYPE_REGISTRATION_REPLAY.md](PROTOTYPE_REGISTRATION_REPLAY.md) records the

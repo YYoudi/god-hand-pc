@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "scope": "Additional original Stage1Room01Point0 native scene and scoped stick response; not full prototype/retail/setup/campaign acceptance.",
+  "source_revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+  "attachment_helper_sha256": "ae48aa4e5179a0446f57394d1720ffd2c273f588f070e5a763e37b9c383ef9f7",
+  "first_unsupported_trial": {
+    "exe_sha256": "ff2e587ca601ab85658fd23f041daf0834a7fe6d32297d69b6f26bbcf8b15df9",
+    "watchdog_seconds": 240,
+    "exit": 0,
+    "actual_PNGs": 14,
+    "missing_original_module_ctor": true,
+    "room_pass": false
+  },
+  "module_qualification": {
+    "name": "r101",
+    "own_disc_source_unique": true,
+    "all_observed_bytes_equal_static_link": 15206,
+    "code_different_bytes": 0,
+    "inferred_functions": 21,
+    "explicit_aliases": 721,
+    "original_PC_word_comment_checks": 1753,
+    "distinct_instructions_not_implied": true,
+    "generation_errors": 0,
+    "retained_warnings": 6,
+    "own_prototype_BOOT_registry_and_observed_base": true
+  },
+  "module_only_unsupported_trial": {
+    "exe_sha256": "b1c6d9fb7b49d82d1f01e9ba7b8a815d64613913d2efa4a1ad55fe8282297bc8",
+    "watchdog_seconds": 180,
+    "exit": 0,
+    "actual_PNGs": 15,
+    "original_module_installed_and_executed": true,
+    "missing_BOOT_direct_import": true,
+    "room_pass": false
+  },
+  "BOOT_profile": {
+    "scope_modules": 5,
+    "direct_roots": 12,
+    "retained_code_backed_indirect_ranges": 21,
+    "additional_original_import_export_roots": 6,
+    "generation_files": 9827,
+    "added_files": 6,
+    "changed_files": 5,
+    "old_changed_owner_distinct_PC_words_retained": 234,
+    "old_explicit_alias_addresses_retained": 136931,
+    "new_alias_addresses": 6,
+    "lost_alias_addresses": 0,
+    "retained_errors": 1,
+    "retained_warnings": 1450,
+    "old_error_text_equal": true,
+    "new_CPP_objects_compiled": 10,
+    "compile_link_steps_all0": 11,
+    "CFG_ABI_or_full_guest_coverage_not_proven": true
+  },
+  "combined_exe_sha256": "4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7",
+  "new_cases": [
+    {
+      "name": "final-room01",
+      "watchdog_seconds": 220,
+      "exit": 0,
+      "actual_original_PNGs": 15,
+      "no_missing_target": true
+    },
+    {
+      "name": "final-room00",
+      "watchdog_seconds": 220,
+      "exit": 0,
+      "actual_original_PNGs": 15,
+      "no_missing_target": true
+    }
+  ],
+  "original_room_regression": {
+    "common_actual_filename_originals_through3300": 7,
+    "byte_equal": 7,
+    "separate_prior_run_not_synchronized_PS2_fidelity": true
+  },
+  "unpaused_followup": {
+    "watchdog_seconds": 220,
+    "elapsed_seconds": 223.84399999999732,
+    "exit": 0,
+    "actual_original_PNGs": 15,
+    "no_missing_target": true,
+    "ordinary_Start_omitted": true,
+    "original_scene_actor_HUD_snapshots_observed": true,
+    "Dpad_not_locomotion_proof": true
+  },
+  "stick_followup": {
+    "watchdog_seconds": 180,
+    "elapsed_seconds": 183.84300000000076,
+    "exit": 0,
+    "actual_original_PNGs": 15,
+    "no_missing_target": true,
+    "one_original_leftstickUp_pulse_fields": 12,
+    "before_after_visual_scene_response": true,
+    "common_preaction_originals": 9,
+    "byte_equal_preaction_originals": 8,
+    "preaction_loading_mismatch_pixels": 2371,
+    "mismatch_cause": "unknown, retained originals",
+    "numeric_displacement_hardware_combat_not_proven": true
+  },
+  "source_tests": {
+    "count": 330,
+    "Windows_skips": 3,
+    "seconds": 58.97,
+    "exit": 0
+  },
+  "preservation": {
+    "all_match": true,
+    "retained_source_object_library_input_identities": 9848,
+    "original_screenshots_preserved": 89,
+    "old_normal07_FF_B1_and_combined_executables_preserved": true,
+    "original_disc_ELF_unchanged": true,
+    "MIT4WIP_hashes_unchanged": true,
+    "qualified_module_and_observed_bytes_unchanged": true,
+    "stick_case_originals_and_inputs_preserved": true
+  },
+  "limits": [
+    "Qualified profile/bases/source dependencies, old unchanged objects/libs and VU/generic inputs remain; not ISO-only/full fresh-source setup.",
+    "No room-to-room unload/reload or variable-base generalization, new F1/F2/physical input/Warp/no-death/survival or campaign proof.",
+    "Earlier option0x480warning not exercised/fixed here; strictVU1/rendering/loading differences and partial-install/ignored-return limits remain.",
+    "Original complete game instructions/data/maps/generated code remain private. Public source is original GPL tooling/invented fixtures; game images have separate rights."
+  ],
+  "frozen_inputs": {
+    "runtime_baseline_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+    "SNR2_tools_metadata_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+    "recompiler_sha256": "506cffa76fb5eeff58ee86e08fcec1a1d79e911d9fb23565a89f088f4bb80ec4",
+    "qualified_overrides_and_retained_objects_explicit": true,
+    "pristine_full_source_rebuild_not_claimed": true
+  },
+  "final_local_publication_checks": {
+    "tests": 330,
+    "Windows_skips": 3,
+    "seconds": 59.824,
+    "exit": 0,
+    "explicit_public_paths": 360,
+    "reviewed_original_images": 115,
+    "journal_navigation_hash_check": true
+  }
+}

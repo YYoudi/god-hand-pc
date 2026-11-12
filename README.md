@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Current scoped result: [another original Room Jump destination](PROTOTYPE_ROOM01.md).
+Stage1 / Room01 / Point0 now reaches its native interior, actors and HUD after
+qualifying its module and missing BOOT entries. A finite left-stick response and
+the original-room regression are observed. Earlier failures and remaining limits
+are explicit. This is not a complete prototype installer or full-game claim.
+
 Current scoped result: [reconstructing module registrations](PROTOTYPE_REGISTRATION_REPLAY.md).
 The selected host wrappers no longer need their cached source/table files as
 producer inputs. A new native build preserves the sampled menu/room sequence
