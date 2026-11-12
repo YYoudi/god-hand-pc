@@ -1,5 +1,24 @@
 # God Hand PC continuation - agent instructions
 
+## Reconstructed registration source — 2026-11-12
+
+Read PROTOTYPE_REGISTRATION_REPLAY.md and checkpoint/registration_replay_current.
+Public38821df parser/renderer reconstructs4wrappers/8files from hash-qualified
+prior fresh metadata, all old bytes exact;6849explicit sparsealiases, holes kept.
+Bases/names/API choices remain qualified inputs, not guessed retail addresses.
+Four NEWwrapper objs/libs +713module objs/9832BOOT-host-VU-generic inputs reused;
+9steps0/exeff2e587c. NEW450s0/23PNGs,23/23same-filename originals equalprior79run;
+menu/0x480warning/roomHUD directly viewed, warning/artifact/loading limits remain.
+Compiled inventedruntime/module variants prove guard/sparse/remove and preserved
+partial failure: first entry remains, activefalse/remove does not rollback. Frozen
+native caller ignores installbool (static observation), not native recovery proof.
+10new inventedtests;324source tests/3Windows skips71.450s after native terminal.
+Normal07 unchanged; no new actualkey/mouse/F1/Warp/survival/ABI/PS2/fullsetup claim.
+Next qualify an additional original RoomJump target/missing module with its OWN
+prototype identity/lifetime evidence, then VU/generic source closure/freshfullbuild.
+Referencewarning/broaderUI/input remain. No guessed cleanup/ready/flags/unknownNOP,
+Rust/delegation/retailtransplant/gameuploads. Full goal ACTIVE, not complete.
+
 ## Selected-module source replay and native capsule — 2026-11-12
 
 Read PROTOTYPE_MODULE_REPLAY.md and checkpoint/module_replay_current. Original

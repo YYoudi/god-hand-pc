@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Current scoped result: [reconstructing module registrations](PROTOTYPE_REGISTRATION_REPLAY.md).
+The selected host wrappers no longer need their cached source/table files as
+producer inputs. A new native build preserves the sampled menu/room sequence
+and existing warning. Failure and remaining setup/coverage limits are explicit;
+this is not a new debug feature or a complete prototype release.
+
 Current scoped result: [selected module source replay and native build](PROTOTYPE_MODULE_REPLAY.md).
 Four selected modules are regenerated from the personal prototype disc and
 compiled into new libraries. The separate native build reaches the sampled room

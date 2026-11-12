@@ -1,5 +1,18 @@
 # Canonical progress and publication workflow
 
+## Registration-source reconstruction — 12 November 2026
+
+[PROTOTYPE_REGISTRATION_REPLAY.md](PROTOTYPE_REGISTRATION_REPLAY.md) records the
+original public sparse parser/renderer: four wrappers/eight files reproduce old
+bytes from qualified metadata, not cached wrappers. A separate four-wrapper build
+and450s native0/23originals preserve the sampled menu/warning/room sequence;23same-
+filename originals equal the preceding run.324source tests/3Windows skips pass.
+Compiled invented partial-failure/no-rollback and static ignored-return limits
+are explicit, not a fix or native failure-safe fallback. Normal07 unchanged.
+Next additional RoomJump/module coverage with own prototype evidence; VU/generic
+source closure/freshfullbuild, broaderUI/input and original reference remain open.
+Full goal ACTIVE; earlier scoped entries and original media are preserved.
+
 ## Fresh selected-module source and native run — 12 November 2026
 
 [PROTOTYPE_MODULE_REPLAY.md](PROTOTYPE_MODULE_REPLAY.md) records four fresh-disc

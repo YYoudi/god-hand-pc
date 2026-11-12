@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "scope": "Reconstructed selected registration source and new private native capsule, not a complete setup/menu/retail release.",
+  "source_revision": "38821dfb403b007d8981a7bb8bf035994a490bce",
+  "helper_sha256": "ed3b1305d3ef776f7b8529b85d507f2ac17f5d6583dff98426e3c17d23141e65",
+  "qualified_module_metadata_parent_revision": "15beec95266e810be698ed625782de6d103e941f",
+  "wrappers": 4,
+  "header_source_files": 8,
+  "all8_old_wrapper_bytes_equal": true,
+  "explicit_sparse_alias_records": 6849,
+  "unassigned_slots_filled": 0,
+  "producer_inputs": "Hash-qualified prior fresh linked/extent/register/header metadata; no old wrapper/table producer input. Explicit qualified bases/names/API choices remain.",
+  "registration_API_choices": [
+    "runtime",
+    "module",
+    "module",
+    "module"
+  ],
+  "synthetic_compiled_failure_findings": {
+    "negative_base_and_hash_refuse": true,
+    "sparse_calls_and_remove_reinstall": true,
+    "partial_second_call_failure_leaves_first_entry": true,
+    "active_false_remove_does_not_rollback_partial_install": true,
+    "frozen_host_ignores_install_return_boolean_static_observation": true,
+    "native_failure_or_warning_causality_not_proven": true,
+    "unused_runtime_parameter_warning_retained": true,
+    "invented_fixture_first_indentation_warning_corrected_log_preserved": true
+  },
+  "build_steps": [
+    {
+      "name": "mcport-compile",
+      "exit": 0
+    },
+    {
+      "name": "mcport-archive",
+      "exit": 0
+    },
+    {
+      "name": "r020-compile",
+      "exit": 0
+    },
+    {
+      "name": "r020-archive",
+      "exit": 0
+    },
+    {
+      "name": "r100-compile",
+      "exit": 0
+    },
+    {
+      "name": "r100-archive",
+      "exit": 0
+    },
+    {
+      "name": "event-compile",
+      "exit": 0
+    },
+    {
+      "name": "event-archive",
+      "exit": 0
+    },
+    {
+      "name": "link",
+      "exit": 0
+    }
+  ],
+  "fresh_wrapper_objects": 4,
+  "new_libraries": 4,
+  "old_wrapper_objects_and_libraries_excluded": true,
+  "reused_translated_PCH_SHA_module_objects": 713,
+  "reused_BOOT_host_VU_generic_link_inputs": 9832,
+  "exe_sha256": "ff2e587ca601ab85658fd23f041daf0834a7fe6d32297d69b6f26bbcf8b15df9",
+  "native": {
+    "exit": 0,
+    "watchdog_seconds": 450,
+    "elapsed_seconds": 453.7970000000023,
+    "actual_original_PNGs": 23,
+    "last_present_field": "9743",
+    "all_four_selected_module_installs_observed": true,
+    "common_actual_filename_PNGs": 23,
+    "exact_originals": 23,
+    "export_failures": 0,
+    "old_memory_warning_and_artifacts_remain": true,
+    "older_loading_difference_not_resolved": true,
+    "no_new_actual_keys_mouse_F1_Warp_survival_or_hardware_proof": true
+  },
+  "source_tests": {
+    "tests": 324,
+    "Windows_skips": 3,
+    "seconds": 71.45,
+    "exit": 0
+  },
+  "preservation": {
+    "all_match": true,
+    "retained_file_identities": 10581,
+    "all_previous_wrapper_objects_libraries_unchanged": true,
+    "all_chained_module_inputs_and_old_wrapper_sources_unchanged": true,
+    "MIT_4_WIP_hashes_unchanged": true,
+    "original_disc_ELF_unchanged": true,
+    "free_G_bytes": 19511422976
+  },
+  "limits": [
+    "Sparse format checks and source identity are not CFG/ISA/ABI/alias/ownership/lifetime proof.",
+    "Existing partial-install/no-rollback and ignored-result limitations are not fixed or native-failure-tested.",
+    "Qualified bases/API choices, reused module/BOOT/host/VU/generic objects remain; no full fresh-source or ISO-only setup claim.",
+    "Original-reference warning, broader UI/rooms/input, strictVU1/artifacts, retail/hardware/audio/game Save/Load/campaign gates remain.",
+    "All populated source/maps and game-derived outputs stay private; published source is original GPL host tooling and invented fixtures."
+  ],
+  "final_local_publication_checks": {
+    "tests": 324,
+    "Windows_skips": 3,
+    "seconds": 58.465,
+    "exit": 0,
+    "explicit_public_paths": 348,
+    "reviewed_original_images": 107,
+    "journal_navigation_hash_check": true
+  }
+}
