@@ -1,5 +1,24 @@
 # God Hand PC continuation - agent instructions
 
+## Public original host source — 12 November 2026
+
+Read PROTOTYPE_HOST_PRODUCER.md and checkpoint/host_public_producer_current.
+Original source dd5b061 now contains the parameterized host main/window bridge
+and reviewed edits against pinned GPL runtime1646d885; no vendored upstream/game
+bodies or populated maps.67typed PRIVATE parameters remain qualification data,
+not derived/certified by the renderer. Five fresh source postimages equal tested
+e677 host files exactly; no new native build/run/adoption. Nine actual CLI
+controls0/2/2/2/2/2/2/0/2, eight non-production trees unchanged; actual fresh Git
+core.autocrlf=true templates stay LF.465tests/4Windows skips72.245s;23new invented
+controls;45676retained identities match. First464test run predates finalEOLtest.
+SDK/entry producers and exacte677 named normal effects stay DONE for their scope.
+Next public original PRIVATE-profile derivation/qualification and whole-build
+orchestration, then fresh public personal-disc setup/native acceptance; no replay
+of completed gates as missing. Renew G:capacity before full compile; no deletes,
+research moves to C:, Rust/delegation/guessed flags/ready/NOP/frees or game uploads.
+Broader originalmenu/input/reference/ABI/lifetime/warnings/audio/save/campaign
+limits stay; current profiles/defaults remain unchanged. Full goal ACTIVE.
+
 ## Public entry-input producers — 12 November 2026
 
 Read PROTOTYPE_ENTRY_PRODUCER.md and checkpoint/entry_public_producer_current.

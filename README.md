@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Setup-source follow-up: [original prototype host production](PROTOTYPE_HOST_PRODUCER.md).
+Public original host templates and reviewed GPL IOP/F1 edits now reproduce the
+five tested host sources exactly. Private qualification profiles and whole-build
+orchestration remain; this is not a new native run or an ISO-only installer.
+
 Setup-source follow-up: [public entry-input producers](PROTOTYPE_ENTRY_PRODUCER.md).
 The SDK and entry-input stages now reproduce the tested native inputs without
 our private selectors. Original host/profiles/build orchestration still need

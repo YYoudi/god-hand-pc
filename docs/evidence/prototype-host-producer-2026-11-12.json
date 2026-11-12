@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-12",
+  "source_revision": "dd5b061ac6ef0bb8922af7b275d93461b5aefa49",
+  "public_source_files": {
+    "prototype_host_sources.py": "768f8187ccca1c825989d5b2cca3c80144c0b7054d88a8e828a1ac9db1c0da34",
+    "adapter/prototype_host_main.cpp.in": "6e443fd71bb29e73b8a43d47f4fdab16eaf9a18a6e576e0b8dde9b7257646145",
+    "adapter/prototype_window_bridge.hpp.in": "b9c66303f75a9862447a94004a302bda39a7d34def48dc51f5c5d43f822a6289",
+    "adapter/prototype_host_integration.json": "e4afb3e068bec50a6a874c2ed7dcbe09acf00dd4ecf8da4bf731688ee2a0cd62",
+    "tests/test_prototype_host_sources.py": "7f4156a8ab80fc96e33079640bb110ba3dd4bbf7a2e0f3f5b15820e9539fe26f"
+  },
+  "scope": "Original host-source production, not game generation or a new native run",
+  "upstream_host_dependency_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "original_host_main_template_lines": 516,
+  "private_numeric_literal_parameters": 57,
+  "private_include_parameters": 10,
+  "private_parameter_qualification_derived_by_this_tool": false,
+  "reviewed_upstream_edit_counts": {
+    "overrides/iop_sio2.h": 2,
+    "overrides/iop_sio2.cpp": 6,
+    "overrides/ps2_controls_screen.cpp": 7
+  },
+  "runtime_consumer_executable_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "fresh_private_source_outputs": {
+    "main.cpp": {
+      "bytes": 36981,
+      "sha256": "9f89d279f26a6340dfd81e7e29dae32ca4b4bf55319b7eaca8e81615dbe35f04"
+    },
+    "overrides\\iop_sio2.cpp": {
+      "bytes": 21678,
+      "sha256": "8785cccd75ee929bba9e672e6a51a14c74ae850e5dff10539a26c20c3681d55a"
+    },
+    "overrides\\iop_sio2.h": {
+      "bytes": 5158,
+      "sha256": "8c825c484ae958455d84191bb324b3447a6337a42f51d33dddb784ffa6d20760"
+    },
+    "overrides\\ps2_controls_screen.cpp": {
+      "bytes": 51911,
+      "sha256": "ec6acb9e79fa997a34e2976507ed4a9ff7b34f8099f6720edb2134e30fa9bd74"
+    },
+    "window_shortcut_bridge.hpp": {
+      "bytes": 379,
+      "sha256": "7d400a32f874bf981d614c2ac6365fdefa21d06d83c8691957c31013753f6e2b"
+    }
+  },
+  "native_host_source_postimages_exact": {
+    "main.cpp": true,
+    "window_shortcut_bridge.hpp": true,
+    "overrides/iop_sio2.h": true,
+    "overrides/iop_sio2.cpp": true,
+    "overrides/ps2_controls_screen.cpp": true
+  },
+  "actual_commands": [
+    {
+      "label": "check-only",
+      "exit": 0,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-profile-identity",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-typed-value",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-postimage",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "cpp-expression-refused",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "wrong-source-revision",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "unsafe-session",
+      "exit": 2,
+      "output_tree_changed": false
+    },
+    {
+      "label": "new-production",
+      "exit": 0,
+      "output_tree_changed": true
+    },
+    {
+      "label": "stale-session",
+      "exit": 2,
+      "output_tree_changed": false
+    }
+  ],
+  "nonproduction_output_trees_unchanged": true,
+  "new_output_recorded_before_old_oracle": true,
+  "fresh_git_core_autocrlf_true_checkout": {
+    "adapter/prototype_host_main.cpp.in": {
+      "sha256": "6e443fd71bb29e73b8a43d47f4fdab16eaf9a18a6e576e0b8dde9b7257646145",
+      "exact_template": true,
+      "has_CR": false
+    },
+    "adapter/prototype_window_bridge.hpp.in": {
+      "sha256": "b9c66303f75a9862447a94004a302bda39a7d34def48dc51f5c5d43f822a6289",
+      "exact_template": true,
+      "has_CR": false
+    }
+  },
+  "synthetic_tests": {
+    "collected": 465,
+    "skipped_windows": 4,
+    "seconds": 72.245,
+    "new_invented_tests": 23
+  },
+  "preserved_file_identities": 45676,
+  "all_preserved_match": true,
+  "game_or_generated_body_publication": false,
+  "vendored_upstream_source": false,
+  "native_build_or_run": false,
+  "normal_profile_or_default_adoption": false,
+  "limits": [
+    "Private parameter qualification/derivation and whole-build orchestration remain; this is not an ISO-only prototype installer.",
+    "Postimage equality does not independently qualify ABI, entry identity, module lifetime or variable bases.",
+    "Four generated observed function bodies stay private; public templates contain only original host statements.",
+    "No new menu-option, rendering, performance, hardware/audio/save, campaign or retail proof.",
+    "Prior generation error/warnings, strict VU1, rendering/loading and 0x480 accounting warning remain."
+  ]
+}

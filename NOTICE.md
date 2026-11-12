@@ -27,3 +27,11 @@ selects exact normalized host-source hashes and records only original additions,
 not game functions or instruction patches. Its byte offsets index open-source
 host files, not the game disc. The prior private range helper was original GPL
 evaluation code; the public bridge retains that provenance and is not MIT.
+
+The public prototype host main/window templates are original GPL continuation
+source, informed by the separate prototype evaluation. Numeric/profile values
+remain private qualification inputs. Three host override recipes contain our
+reviewed edits against separately fetched GPL upstream1646d885, not vendored
+files or game bodies. Source postimage equality is not an independent clean-room,
+ABI or rights-holder authorization claim. Generated observed game functions are
+excluded; even a parameterized translated game body would remain prohibited.
