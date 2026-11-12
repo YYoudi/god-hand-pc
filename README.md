@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Current prototype follow-up: [normal actions on the new source build](PROTOTYPE_WHOLE_INTERACTIVE.md).
+The fresh selected-source executable has its own actual F1/F2, Room Jump, Warp
+and no-death/OFF/Continue observations. Existing launch profiles remain unchanged;
+reviewed public personal-disc setup packaging and wider fidelity remain open.
+
 Latest selected-source result: [one new prototype producer/build tree](PROTOTYPE_WHOLE_SOURCE.md).
 Fresh disc generation, newly rebuilt tools/libraries and a whole selected-source
 build now reach the original menu/room. Original host/private qualification inputs

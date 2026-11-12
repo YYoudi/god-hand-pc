@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "unchanged_private_exe_SHA256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "source_assembly_helper_revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+  "acceptance_repository_revision": "bcebdaff11e057775a49fda9774c19910cff7adc",
+  "public_normal_environment_source_SHA256": "c7dadabb2a14ada09687b9701dcee859967af61e0112cc5c15113b153e406c9f",
+  "scope": "Own normal-mode UI/named-effect acceptance of the new selected-source final; not public launcher adoption, every option/room or public ISO-only setup.",
+  "cases": [
+    {
+      "case": "room01",
+      "exit": 0,
+      "seconds": 301.01600000000326,
+      "controls_unchanged": true,
+      "normal_no_watchdog_scripts_exports_observers": true,
+      "successful_window_close": true,
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0
+    },
+    {
+      "case": "survival",
+      "exit": 0,
+      "seconds": 616.2339999999967,
+      "controls_unchanged": true,
+      "normal_no_watchdog_scripts_exports_observers": true,
+      "successful_window_close": true,
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0
+    },
+    {
+      "case": "room01-review",
+      "exit": 0,
+      "seconds": 193.75,
+      "controls_unchanged": true,
+      "normal_no_watchdog_scripts_exports_observers": true,
+      "successful_window_close": true,
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0
+    }
+  ],
+  "capture_retention": {
+    "first_private_closure_saving_failed": true,
+    "first_wrongly_labeled_files_preserved_and_excluded": true,
+    "new_corrected_Room01_session": true,
+    "corrected_survival_series_separate": true,
+    "corrected_originals": 38,
+    "all38_originals_decoded_and_sizes_hashes_verified": true,
+    "lossy_full_native_window_dimensions": [
+      642,
+      512
+    ],
+    "no_saved_crop_resize_or_conversion": true
+  },
+  "actual_F1_F2_ownership_refusal_no_deferred_and_fresh_open": true,
+  "original_RoomJump_Stage1_Room01_Point0_scene_Gene_enemies_HUD_observed": true,
+  "warp": {
+    "before_idle_originals_byte_equal": true,
+    "after_idle_originals_byte_equal": true,
+    "actual_one_LSRight_request_seconds": 0.2,
+    "scene_region": [
+      1,
+      31,
+      641,
+      340
+    ],
+    "changed_RGBA_pixels": 196222,
+    "derived_image_saved": false,
+    "numeric_world_vector_or_undo_proven": false,
+    "Start_then_Cross_then_Hide_normal_camera_HUD_restored": true
+  },
+  "no_death": {
+    "ON_alive_full_looking_health_endpoints_seconds_apart": 116.181,
+    "no_player_input_between_endpoints": true,
+    "mid_enemy_kick_hurt_observed": true,
+    "retained_ON_then_actual_OFF": true,
+    "OFF_health_loss_then_original_Continue": true,
+    "collapse_pose_separately_captured": false,
+    "exact_death_time_numeric_HP_or_uninterrupted_video": false,
+    "OFF_close_warning_0x480_captured": true
+  },
+  "tests": {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py"
+    ],
+    "tests": 360,
+    "Windows_skips": 3,
+    "seconds": 62.534,
+    "exit": 0,
+    "after_all_owned_native_terminal": true
+  },
+  "preserved_identities": 45632,
+  "all_preserved": true,
+  "normal_profiles_changed": false,
+  "new_final_adopted": false,
+  "limits": [
+    "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+    "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+    "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+    "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+    "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+    "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+  ]
+}

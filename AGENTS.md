@@ -1,5 +1,28 @@
 # God Hand PC continuation - agent instructions
 
+## Normal named actions on the new source build — 2026-11-12
+
+Read PROTOTYPE_WHOLE_INTERACTIVE.md and checkpoint/whole_interactive_current.
+UNCHANGED finale677 now has OWN normal evidence, no compilation/translation here.
+First301.016s0 UI observed but saving-helper STALE REPL bindings copied old F1
+under later labels: preserve/EXCLUDE those files, no provenance/pass relabel.
+Fixed saver takes explicit actualstate/root/rows. NEW193.750s0 Room01 review has
+correct originals: F1/refusedF2/no-deferred/freshF2, actualRoom01/Gene/HUD, Warp
+ONE200msLSRight, beforeidle exact/afteridle exact,196222scene pixels changed,
+StartCrossHide normalcameraHUD. No numericvector/undo/PS2/hardware claim.
+Separate616.234s0 Room00 originalON, correct living/fullhealth endpoints116.181s
+apart/middlekickhurt, actualOFF/0x480warning/healthloss/Continue. No separate
+collapsepose/exactdeath/numericHP/continuousvideo or one-shot-immunity proof.
+38corrected nativeJPEGs642x512 fullydecoded/SHA checked;360tests3Win skips62.534s
+after allnative terminal;45632identities preserved. Old07/default/room01-v1/4acf
+and launcher c7dad unchanged, e677NOTadopted. No inherited oldnormal proofs.
+Next originalhost/selector/profile/orchestration public personal-disc packaging
+and own fresh setup acceptance, wider originaloptions/input/reference/ABI/lifetime.
+Source/tool/fullselectedbuild and namednormaleffects are DONE for their exact
+scope, not missing; no allgame/installer/menu/campaign/retail certificate. Keep
+translation/strictVU/render/loading/accounting0x480/failure/audio/save limits.
+Goal ACTIVE; no new Rust/delegation/guessedready/flags/NOP/frees or game uploads.
+
 ## New selected-source tree and actual native controls - 2026-11-12
 
 Read PROTOTYPE_WHOLE_SOURCE.md and checkpoint/full_build_current. Newsource-built

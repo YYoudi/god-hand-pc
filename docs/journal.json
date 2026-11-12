@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Two prototype native builds are explicitly selectable locally. Native07 remains the default; opt-in room01-v1 has actual normal F1/F2, Room01/Warp and separate Room00 no-death/restored-death evidence. Neither is a complete prototype installer, campaign-fidelity release or retail debug backend.",
-  "next": "Run normal F1/F2 ownership, original Room Jump/Room01, Warp and no-death/OFF/restored-death on the new exacte677 final build before any optional adoption. The selected-source bootstrap/final diagnostic build is now observed; do not repeat it as missing or call it a public ISO-only installer. Package/review original host and private profile/orchestration producers, retain broader options/input/reference/ABI/lifetime and original accuracy gates.",
+  "status": "The new selected-source prototype build has its own scoped normal F1/F2, Room01/Warp and Room00 no-death/OFF/Continue observations. Existing native07/default and explicit room01-v1 launch profiles remain unchanged. Public personal-disc prototype setup, wider original options/rooms and campaign fidelity are not complete; no retail debug backend is claimed.",
+  "next": "Package reviewed original host/selector/orchestration sources and qualification profiles into reproducible personal-disc prototype setup, without publishing generated game code/maps/assets. Fresh e677 named normal actions are now observed for their exact build; do not repeat source-tool closure or those effects as missing. Keep any launcher adoption explicit and separately checked; continue wider menu/input/reference/ABI/lifetime/failure-recovery and retained warning/strictVU/render gates.",
   "known_limits": [
     "Whole selected-sourcee677 now rebuilds the prior producer chain and matches nine final samples. It is NOT adopted or normal-effect validated, and original host/private qualification/orchestration inputs still prevent a public ISO-only prototype installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -123,7 +123,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07 and combined4acf have separately recorded scoped named-action evidence; those exact normal profiles stay unchanged. New selected-sourcee677 has actual bootstrap/final menu-room samples and fresh producer/build evidence, but is NOT adopted: its own normal F1/F2/named-action acceptance is next. Original host/private profiles and orchestration still need reviewed public setup packaging; broader options/rooms/focus/held/repeat, ABI/lifetime/failure recovery/reference/hardware remain open. Existing translation diagnostic, strictVU/render/loading/accounting warning remain. Previous unsupported/loading/unreached trials stay in dated reports. Compilation, callbacks, hashes and nine matching PNGs are not full-game/PS2 fidelity or all-function execution proof."
+          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. No new profile adoption: old defaults/hashes/data stay unchanged. Reviewed original host/private profiles/orchestration still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity."
         },
         {
           "id": "RM01",
@@ -336,6 +336,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Normal debug actions on the new source build",
+      "summary": "The new selected-source prototype executable now has its own normal F1/F2, Room Jump, Warp and no-death/OFF observations. Existing launch profiles stay unchanged; source-setup packaging is still open.",
+      "changes": [
+        "Verified actual F1 ownership/refusal/no-deferred and fresh F2, then original Room01/Gene/HUD and one bounded Warp movement with normal camera/HUD return.",
+        "Observed separate Room00 no-death ON/living attack endpoints116.181s apart, actual OFF, later health loss and original Continue. Existing0x480warning remains visible.",
+        "Preserved and excluded the first stale-binding screenshot-saving failure. Repeated Room01 as a new correctly captured session; only individually reviewed unchanged native originals are selected here."
+      ],
+      "validation": "Three native exits0: first301.016s with failed local screenshot retention, separate616.234s survival and new193.750s Room01 capture review.38corrected originals verified;360synthetic tests/3Windows skips62.534s pass after native terminal;45632identities preserved.",
+      "limits": "No new compilation, public launcher adoption or ISO-only installer. Software OS/mouse, not hardware; no numericHP/vector, continuously recorded survival, separate collapse pose, all-menu/campaign/retail or warning/graphics fix. Original host/private profiles and broader qualification remain.",
+      "evidence_comparisons": [
+        "2026-11-12-whole-normal-f1-f2",
+        "2026-11-12-whole-normal-room01",
+        "2026-11-12-whole-normal-warp",
+        "2026-11-12-whole-normal-death-restored"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_WHOLE_INTERACTIVE.md",
+        "label": "Actual normal runs, capture-retention failure and limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1395,6 +1418,384 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-whole-normal-f1-f2",
+      "date": "2026-11-12",
+      "title": "F1 ownership and a fresh F2 on the new source build",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F2 refused under F1",
+        "bevy": "Fresh F2 opens the original menu"
+      },
+      "reference": {
+        "caption": "Actual F2 leaves F1 controls in exclusive ownership. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:03:14.771Z",
+        "path": "media/76d409615a590172a59481a97955cdf9bdccab43f100116950571f684db1b9e4.jpg",
+        "sha256": "76d409615a590172a59481a97955cdf9bdccab43f100116950571f684db1b9e4",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After F1 closes without a deferred panel, fresh F2 opens the original five-choice menu and host controller panel. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:03:28.228Z",
+        "path": "media/204ed610c1a87a1d6061c5da0d8b402584c753ed99cc141aa66dc42bcce331e7.jpg",
+        "sha256": "204ed610c1a87a1d6061c5da0d8b402584c753ed99cc141aa66dc42bcce331e7",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Different UI/action states, intentionally unmatched, same actual normal session. This is not hardware-keyboard acceptance."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-room01",
+      "date": "2026-11-12",
+      "title": "Original Room Jump reaches the actual interior",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original selector: Room01 / Point0",
+        "bevy": "Actual room, Gene, enemies and HUD"
+      },
+      "reference": {
+        "caption": "Original Stage1/Room01/Point0 selector before confirmation. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:04:03.953Z",
+        "path": "media/e751be833e3e76472787309ea4626109f230425e8d1e2463f361094693e62f14.jpg",
+        "sha256": "e751be833e3e76472787309ea4626109f230425e8d1e2463f361094693e62f14",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After actual Circle/RoomJump and hiding the host panel, the original interior/Gene/enemies/HUD render. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:04:19.984Z",
+        "path": "media/545482e12050a552e4f5b43f1f1358b421e245c16ab1311499df3c19da669867.jpg",
+        "sha256": "545482e12050a552e4f5b43f1f1358b421e245c16ab1311499df3c19da669867",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Observed loaded scene rather than a submitted command or constructed demo. Selector/loading/interior are deliberately unmatched views."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-warp",
+      "date": "2026-11-12",
+      "title": "One bounded Warp movement on the new source build",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before the single Warp request",
+        "bevy": "Settled after the single request"
+      },
+      "reference": {
+        "caption": "Original Warp axes and room before one bounded left-stick Right request; idle control equal. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:04:53.884Z",
+        "path": "media/e017565f30aa34104da9f82114cb332f40d897353d5e8dd6fa1e1144819048d6.jpg",
+        "sha256": "e017565f30aa34104da9f82114cb332f40d897353d5e8dd6fa1e1144819048d6",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Settled original view after one200ms left-stick Right request; later idle control equal. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal room01-review actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:05:07.742Z",
+        "path": "media/2b902252949b9f3ec1a74f8049d54a6fdf130dd5fea1fb49f3872f7ccade12d2.jpg",
+        "sha256": "2b902252949b9f3ec1a74f8049d54a6fdf130dd5fea1fb49f3872f7ccade12d2",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "The same room landmarks shift as the original Warp responds. Before/after idle originals are separately stable;196222 scene-region pixels differ across the pulse. Not a numeric player vector, undo, PS2 fidelity or refitted view."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-death-restored",
+      "date": "2026-11-12",
+      "title": "Living enabled-state encounter and death restored",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Later no-death ON encounter",
+        "bevy": "Original Continue after OFF"
+      },
+      "reference": {
+        "caption": "Living Gene/full-looking health after enemy attacks,116.181s after the first correctly retained ON endpoint. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:57:59.149Z",
+        "path": "media/6a679f7de7b76bc6c8aa0bc9ef7dae029cc86f0c92a3c9d4272a0c9ccfa7712b.jpg",
+        "sha256": "6a679f7de7b76bc6c8aa0bc9ef7dae029cc86f0c92a3c9d4272a0c9ccfa7712b",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After actual original no-death OFF, menu closure, panel Hide and later health loss, original Continue appears. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T21:02:25.015Z",
+        "path": "media/35995202cfd2f7dcf36ab8574a4e5afb66128bb0e94558dfce49eb3638c8e97c.jpg",
+        "sha256": "35995202cfd2f7dcf36ab8574a4e5afb66128bb0e94558dfce49eb3638c8e97c",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "No player input between ON endpoints or during the later OFF damage/death-outcome control. Separate collapse pose/exact death time are not captured. Different action states/views, intentionally unmatched."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-option-restored",
+      "date": "2026-11-12",
+      "title": "Original no-death option restored",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option still ON",
+        "bevy": "Actual option restored OFF"
+      },
+      "reference": {
+        "caption": "After the living attack observations, original PL NO DEATH is still ON. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:58:24.877Z",
+        "path": "media/1c13e6eb3746b3853944249f76c2301e3e4915cd42a3e1b390721992ff5f3d35.jpg",
+        "sha256": "1c13e6eb3746b3853944249f76c2301e3e4915cd42a3e1b390721992ff5f3d35",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Actual Left restores original PL NO DEATH to OFF. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:58:31.556Z",
+        "path": "media/0bdedb6775103578941495400a9f0235eec99e74f6f3ede1f5aef31778e02bc6.jpg",
+        "sha256": "0bdedb6775103578941495400a9f0235eec99e74f6f3ede1f5aef31778e02bc6",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "These menu labels are not effect proof alone; the separate encounter/health-loss/Continue originals carry that scoped observation."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-on-endpoints",
+      "date": "2026-11-12",
+      "title": "The two corrected enabled-state endpoints",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "First living ON endpoint",
+        "bevy": "Later living ON endpoint"
+      },
+      "reference": {
+        "caption": "First correctly retained ON endpoint: living Gene/full-looking health with threatening enemies. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:56:02.968Z",
+        "path": "media/395114c5b63a39d420e506ba2bd69b99f2c86e1d8481776060c797cb4f905a4b.jpg",
+        "sha256": "395114c5b63a39d420e506ba2bd69b99f2c86e1d8481776060c797cb4f905a4b",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later living/full-looking-health endpoint116.181s apart, with a middle enemy kick/hurt original retained privately. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:57:59.149Z",
+        "path": "media/6a679f7de7b76bc6c8aa0bc9ef7dae029cc86f0c92a3c9d4272a0c9ccfa7712b.jpg",
+        "sha256": "6a679f7de7b76bc6c8aa0bc9ef7dae029cc86f0c92a3c9d4272a0c9ccfa7712b",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Selected original snapshots rather than continuous video or cumulative damage/refill measurement. No player input between endpoints."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
+    {
+      "id": "2026-11-12-whole-normal-warning",
+      "date": "2026-11-12",
+      "title": "Existing accounting warning remains visible",
+      "feature": "DT03",
+      "scenario": "Exact unchanged new e677 selected-source prototype executable. Named actual normal193.750s Room01 review or separate616.234s Room00 survival/OFF control, explicitly identified per image. Original input requests only, no guest-state/ready writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original options-close warning",
+        "bevy": "Later original parent menu"
+      },
+      "reference": {
+        "caption": "Closing OFF options displays original memory leak size0x480. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:58:39.731Z",
+        "path": "media/9cdf38a66a45228893f40c8b8a14881e577410c78401176bde9f81b79d4a7801.jpg",
+        "sha256": "9cdf38a66a45228893f40c8b8a14881e577410c78401176bde9f81b79d4a7801",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "The original parent menu later returns; the warning is not suppressed or fixed. Unchanged lossy full native-window JPEG with title/border; capture-completion time, not guest frame.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1; exact executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Fresh selected-source producer helpers 3aac1292c7f0535548146cb41f3f502f8adc6181; qualified original host/private profiles described in PROTOTYPE_WHOLE_SOURCE.md. Existing environment policy c7dadabb, separate normal survival actual OS/mouse session; no automatic inputs/watchdog/game observers/raw exports.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:58:46.880Z",
+        "path": "media/e836c60842d3cb552a3276eb3a6bc6623b99a978b5b44dd6f0168f875120dce3.jpg",
+        "sha256": "e836c60842d3cb552a3276eb3a6bc6623b99a978b5b44dd6f0168f875120dce3",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Warning cause/exact duration/ownership and original-console behavior are not established by these captures."
+      ],
+      "limits": [
+        "Actual software Windows/mouse input on one exact prototype executable, not hardware keyboard/gamepad, retail debug, original PS2 or campaign fidelity.",
+        "Visual Warp response is not a numeric world vector/undo. No-death uses selected living/attack snapshots and later OFF health loss/Continue, not numeric HP, uninterrupted video, arbitrary one-shot immunity or a separately captured collapse pose.",
+        "First stale-binding screenshot-saving outputs are preserved but excluded. This corrected evidence uses a separate new Room01 session and separate correct-originals survival series; no crop/resize/conversion or relabeled first duration.",
+        "Qualified original host/profile/orchestration inputs still need reviewed public personal-disc setup packaging. New e677 is not adopted by existing native07/room01-v1 profiles; no new public ISO-only installer or normal-launch promotion.",
+        "Existing translation diagnostic/strictVU/render/loading/accounting0x480, wider options/rooms/input/ABI/lifetime/failure recovery/audio/SaveLoad gates remain. No game assets/dumps/cards/binaries/generated code are distributed.",
+        "Selected unchanged lossy native-window JPEGs retain title/border and separate game-imagery rights, not GPL or rights-holder authorization. Capture timestamps are host capture completion, not guest frame IDs."
+      ]
+    },
     {
       "id": "2026-11-12-whole-source-1560",
       "date": "2026-11-12",
