@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "unchanged_private_exe_sha256": "4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7",
+  "native_attachment_tooling_revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+  "explicit_launcher_source_revision": "ab9990646bf5a9865861506a77bed88c796ae935",
+  "launcher_source_sha256": "c7dadabb2a14ada09687b9701dcee859967af61e0112cc5c15113b153e406c9f",
+  "scope": "Actual normal F1/F2/Room01/Warp and separate Room00 original no-death ON/OFF/death control, plus explicit pinned adopt-only launcher profile. Not full prototype setup/menu/campaign or retail acceptance.",
+  "first_normal": {
+    "exit": 0,
+    "seconds": 512.9219999999987,
+    "native_watchdog": false,
+    "game_observers_scripts_raw_exports": false,
+    "actual_F1_F2_ownership_and_refusal_no_deferred_request": true,
+    "mouse_original_Stage1_Room01_Point0_scene_Gene_HUD": true,
+    "original_no_death_OFF_ON_OFF": true,
+    "original_Warp_one_LSRight_seconds": 0.2,
+    "Warp_Start_Cross_normal_camera_HUD_restored": true,
+    "damage_survival_proof_in_idle_Room01": false,
+    "original_close_warning_0x480_visible": true,
+    "initial_white_owned_window_captures_retained_cause_unknown": true,
+    "controls_unchanged": true
+  },
+  "Warp_visual_analysis": {
+    "original_lossy_JPEGs_read_only_no_derived_file": true,
+    "idle_different_RGBA_pixels": 1007,
+    "one_pulse_different_RGBA_pixels": 193926,
+    "settled_different_RGBA_pixels": 1742,
+    "numeric_world_vector_or_all_frame_fidelity_proven": false
+  },
+  "separate_no_death_control": {
+    "exit": 0,
+    "seconds": 546.4060000000027,
+    "actual_original_Stage1_Room00_Point0_intro_and_Start_then_Gene_HUD": true,
+    "actual_original_option_OFF_ON_OFF": true,
+    "alive_full_looking_health_enemy_attack_hurt_knockdown_snapshots_ON_seconds_apart": 110.004,
+    "no_player_input_between_ON_observations": true,
+    "OFF_successive_visible_health_loss_collapse_original_Continue": true,
+    "numeric_HP_total_damage_refill_counts_or_arbitrary_one_shot_immunity_proven": false,
+    "OFF_close_0x480_warning_and_later_parent_observed": true,
+    "ON_close_warning_image_captured": false,
+    "controls_unchanged": true
+  },
+  "explicit_public_launcher": {
+    "build": "room01-v1",
+    "old_default": "native07",
+    "old_default_hash_retained": true,
+    "new_default_userdata": "prototype-room01",
+    "old_default_userdata": "prototype-default",
+    "old_source_environment_function_AST_unchanged": true,
+    "adopt_only_not_ISO_only_setup": true,
+    "native_executable_distributed_or_fetched": false,
+    "actual_exact_source_startup_UI_seconds": 62.54699999999866,
+    "launcher_exit": 0,
+    "native_exit": 0,
+    "actual_F2_original_menu_Cross_Hide_AltF4": true,
+    "inherited_invented_mutating_diagnostics_stripped": true,
+    "forbidden_screenshot_directory_created": false,
+    "old_userdata_bytes_unchanged": true,
+    "new_controls_bytes_unchanged": true,
+    "preflight_controls": [
+      {
+        "name": "new-check-only",
+        "exit": 0,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "default-native07-check-only",
+        "exit": 0,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "default-refuses-new-binary",
+        "exit": 2,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "new-refuses-old-binary",
+        "exit": 2,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "unknown-build-refused",
+        "exit": 2,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "missing-elf-refused",
+        "exit": 2,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      },
+      {
+        "name": "invalid-session-refused",
+        "exit": 2,
+        "no_output_tree_change": true,
+        "old_userdata_unchanged": true
+      }
+    ]
+  },
+  "source_tests": {
+    "count": 336,
+    "Windows_symlink_skips": 3,
+    "seconds": 60.247,
+    "exit": 0,
+    "new_invented_tests": 6,
+    "after_first_two_native_terminal_before_exact_source_startup": true
+  },
+  "preservation": {
+    "prior_inventoried_file_identities_rechecked": 10142,
+    "all_match": true,
+    "new_native_original_JPEGs_retained": 75,
+    "old260original_PNGs_MIT4WIP_variants_and_original_discs_preserved": true,
+    "old_launcher_source_preserved": true
+  },
+  "limits": [
+    "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+    "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+    "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+    "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+  ]
+}

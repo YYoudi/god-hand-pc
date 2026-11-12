@@ -1,5 +1,18 @@
 # Canonical progress and publication workflow
 
+## Normal combined prototype and explicit launcher — 12 November 2026
+
+[PROTOTYPE_COMBINED_INTERACTIVE.md](PROTOTYPE_COMBINED_INTERACTIVE.md) records
+actual F1/F2 ownership, mouse Room01, one finite original Warp response and normal
+camera/HUD restoration on unchanged4acf. A separate Room00 trial observes original
+no-death ON/alive attack endpoints110.004s apart, then OFF/health loss/collapse/
+Continue. Both normal sessions exit0; old warning/artifacts remain, no numericHP
+or vector/hardware claim. Explicit --build room01-v1 has actual exact-source
+startup/UI/exit0 and7output-free preflight controls; native07 remains default with
+its old hash/userdata.336synthetic tests/3Windows skips pass. This is adopt-only,
+not ISO-only prototype setup or complete-menu/campaign/retail acceptance. Next
+source closure/freshfullbuild and wider qualified options/input/lifetime evidence.
+
 ## One native room return — 12 November 2026
 
 [PROTOTYPE_ROOM_TRANSITIONS.md](PROTOTYPE_ROOM_TRANSITIONS.md) records a new

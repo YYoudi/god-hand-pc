@@ -1,5 +1,12 @@
 # God Hand PC continuation tooling
 
+Current scoped result: [normal combined prototype UI and effects](PROTOTYPE_COMBINED_INTERACTIVE.md).
+An explicit `--build room01-v1` selects the already-built private combined
+prototype after actual F1/F2, Room01/Warp and separate Room00 no-death/restored-
+death checks. Native07 remains the default; user data is separate by default.
+This launcher requires personal prototype inputs and distributes no executable.
+Full prototype setup, original menu coverage and campaign fidelity remain open.
+
 Latest scoped check: [returning to Room01 without restarting](PROTOTYPE_ROOM_TRANSITIONS.md).
 One original Room01 -> Room00 introduction -> Room01 scene sequence now runs in
 the unchanged native process. Same-base module identities are checked; missing

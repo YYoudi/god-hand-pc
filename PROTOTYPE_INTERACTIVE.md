@@ -1,5 +1,10 @@
 # Prototype workbench: visible sessions and current no-death regression
 
+Current additive follow-up: [combined native normal acceptance](PROTOTYPE_COMBINED_INTERACTIVE.md).
+The launcher now also accepts explicit `--build room01-v1`; native07 remains the
+default. The dated native07/source8be4cd6 results below keep their original scope
+and are not retroactively new combined-build measurements or a full installer.
+
 12 November 2026. Continuation of the [Room Jump / Warp workbench](PROTOTYPE_ROOM_WARP_UI.md).
 This is still a **private-build prototype workbench**, not a complete prototype
 installer, a retail debug backend or a finished PC port. The full goal stays active.

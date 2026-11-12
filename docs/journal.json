@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "The prototype debug workbench remains experimental. Adopted normal07 retains its scoped F2/menu/effect results; the separate combined4acf build now loads Room01 and returns to it through a Room00 introduction in one process. Same-base-only coverage and source-complete setup limits remain; the initial selector-label defect claim is explicitly rejected by original bytes. No full prototype, retail debug backend or campaign-fidelity release is validated.",
-  "next": "Validate normal-mode F1/F2 and named actions on the unchanged combined build before any launcher promotion; continue other loading/lifetime and variable-base evidence, prototype VU/generic/full-source setup, broader options, reference and hardware gates. The one same-base Room01/Room00-introduction/Room01 roundtrip is observed. The preview-based missing-label hypothesis is rejected by actual original bytes; do not pursue it as a native defect.",
+  "status": "Two prototype native builds are explicitly selectable locally. Native07 remains the default; opt-in room01-v1 has actual normal F1/F2, Room01/Warp and separate Room00 no-death/restored-death evidence. Neither is a complete prototype installer, campaign-fidelity release or retail debug backend.",
+  "next": "Close the remaining prototype VU/generic source dependencies and reproduce a fresh full personal-disc build with its own native acceptance. Continue wider original debug options, focus/held/repeat/hardware and qualified lifetime/variable-base/reference-warning evidence. Normal combined4acf F1/F2/Room01/Warp and scoped Room00 ON/OFF/death are now observed; do not repeat them as missing, extrapolate numeric HP/vector counts or claim full menu/campaign/setup.",
   "known_limits": [
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
@@ -115,14 +115,14 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Actual native07 normal/no-script RoomJumpPoint0 and scopedno-deathON/visiblealive/OFF/healthloss/Continue plus originalWarponeLSRight/normalcameraHUDreturn observed. F1ownership remains separatelyverified197s same07run. Not fullmenu/setup/hardware/focusheldrepeat/retail release; reproduciblememorywarning and remainingdependencies explicit."
+          "acceptance": "Actual native07 normal/no-script RoomJumpPoint0 and scopedno-deathON/visiblealive/OFF/healthloss/Continue plus originalWarponeLSRight/normalcameraHUDreturn observed. F1ownership remains separatelyverified197s same07run. Not fullmenu/setup/hardware/focusheldrepeat/retail release; reproduciblememorywarning and remainingdependencies explicit. Additional actual combined4acf normal acceptance now includes real F1/F2 ownership/refusal/no-deferred behavior, mouse Room01, one finite Warp response/normal camera-HUD return and separate Room00 original no-death ON/110.004s living attack endpoints/OFF/health loss/collapse/Continue. Explicit adopt-only room01-v1 profile is tested; native07 remains default, separate user data, no arbitrary-room/full-menu/source-setup/hardware/numeric-HP certificate."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, other unload/reload paths and variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance. A separate unchanged-build same-process Room01 -> Room00 introduction -> Room01 scene return is now observed; both r101 images retain the same qualified base and complete linked bytes. Three unreached late capture requests remain explicit. The preview-based partial-label hypothesis is disproved by exact original PNG/label bytes, not a native rendering fix. This does not prove Room00 ordinary HUD, normal-mode adoption, retired-address absence or every lifetime path."
+          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, other unload/reload paths and variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance. A separate unchanged-build same-process Room01 -> Room00 introduction -> Room01 scene return is now observed; both r101 images retain the same qualified base and complete linked bytes. Three unreached late capture requests remain explicit. The preview-based partial-label hypothesis is disproved by exact original PNG/label bytes, not a native rendering fix. This does not prove Room00 ordinary HUD, normal-mode adoption, retired-address absence or every lifetime path. Additional actual combined4acf normal acceptance now includes real F1/F2 ownership/refusal/no-deferred behavior, mouse Room01, one finite Warp response/normal camera-HUD return and separate Room00 original no-death ON/110.004s living attack endpoints/OFF/health loss/collapse/Continue. Explicit adopt-only room01-v1 profile is tested; native07 remains default, separate user data, no arbitrary-room/full-menu/source-setup/hardware/numeric-HP certificate."
         },
         {
           "id": "RM01",
@@ -335,6 +335,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Normal F1/F2 and an explicit Room01 launcher profile",
+      "summary": "The combined prototype build now has actual normal-mode Room Jump, Warp and no-death/restored-death evidence. An explicit local launcher choice is available; the old default remains unchanged.",
+      "changes": [
+        "Verified real F1/F2 ownership and actual mouse Room01 selection, one bounded original Warp movement and normal camera/HUD return on the unchanged combined executable.",
+        "Ran a separate Room00 encounter: original no-death ON, living/full-looking-health attack observations 110.004 seconds apart, then actual OFF, health loss, collapse and Continue. The existing 0x480 warning remains.",
+        "Added explicit --build room01-v1 with an exact private-binary hash and separate default user data. Native07 remains default; exact-source startup/UI and seven real preflight controls are checked."
+      ],
+      "validation": "The two normal native sessions exit zero after 512.922 and 546.406 seconds. Exact-source launcher/native exit zero after 62.547 seconds. The source suite passes 336 synthetic tests with three Windows skips in 60.247 seconds, including six new invented tests. Old inputs, original images and user-data bytes are preserved.",
+      "limits": "Adopt-only local tooling, not a public prototype installer, full menu/campaign, hardware input or retail backend. Visual normal evidence does not inherit older numeric HP/vector counts. Retained warnings, strictVU1/render/source-setup/lifetime and wider-input gates remain.",
+      "evidence_comparisons": [
+        "2026-11-12-combined-f1-f2",
+        "2026-11-12-combined-room01",
+        "2026-11-12-combined-warp",
+        "2026-11-12-combined-death-restored"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_COMBINED_INTERACTIVE.md",
+        "label": "Actual normal trials, explicit launch command and limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1308,6 +1331,422 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-combined-f1-f2",
+      "date": "2026-11-12",
+      "title": "Normal controls ownership and explicit-launcher F2",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F2 refused while F1 is open",
+        "bevy": "Fresh F2 through the new launcher"
+      },
+      "reference": {
+        "caption": "First normal trial: actual F2 leaves F1 controls in ownership; the log records refusal. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:14:23.159Z",
+        "path": "media/9f457ec1ce95d12c7c15ad5af0f43dacf5938b6d196de384ef2b6355498a33ce.jpg",
+        "sha256": "9f457ec1ce95d12c7c15ad5af0f43dacf5938b6d196de384ef2b6355498a33ce",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Separate exact-source room01-v1 startup: actual F2 opens original five-choice menu and host panel. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Exact original launcher ab9990646bf5a9865861506a77bed88c796ae935 with explicit --build room01-v1, startup-only source check.",
+        "revision": "ab9990646bf5a9865861506a77bed88c796ae935",
+        "captured_at": "2026-11-12T17:36:13.825Z",
+        "path": "media/cacec43547ac7401c40c6ee72ab8bdcc6d0ddcb6b886f4e102a3fe6b7bd3609f.jpg",
+        "sha256": "cacec43547ac7401c40c6ee72ab8bdcc6d0ddcb6b886f4e102a3fe6b7bd3609f",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Different actual runs/action states, deliberately unmatched. In-scene F1 ownership/refusal/no-deferred/fresh-F2 is also observed in the first trial."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-room01",
+      "date": "2026-11-12",
+      "title": "Actual normal Room Jump selection and scene",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original Room01 selector",
+        "bevy": "Original Room01 scene and HUD"
+      },
+      "reference": {
+        "caption": "Actual mouse-selected Stage1 / Room01 / Point0, before confirmation. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:15:27.598Z",
+        "path": "media/a333726cadb35e8f33609ed8787f46c57c7458ccd9de9dd9e380680485ed1a2b.jpg",
+        "sha256": "a333726cadb35e8f33609ed8787f46c57c7458ccd9de9dd9e380680485ed1a2b",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Original interior, Gene, enemies and HUD after actual Room Jump; host panel hidden. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:15:43.732Z",
+        "path": "media/f223cdc95b60814767cd570e8bed6469083a1e387cd37c511643986c8467741c.jpg",
+        "sha256": "f223cdc95b60814767cd570e8bed6469083a1e387cd37c511643986c8467741c",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Normal interactive session, not scripted bootstrap or a render-only scene. Initial private white observations remain retained; no entire-game fidelity claim."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-warp",
+      "date": "2026-11-12",
+      "title": "One bounded original Warp request",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before the single pulse",
+        "bevy": "After the single pulse"
+      },
+      "reference": {
+        "caption": "Original Player Warp and axes before one bounded left-stick Right request. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:17:29.887Z",
+        "path": "media/d6d58d7952b67e4ee97f9cf497cf17faac25a7f9679ef14cc5ba4b22f01263f8.jpg",
+        "sha256": "d6d58d7952b67e4ee97f9cf497cf17faac25a7f9679ef14cc5ba4b22f01263f8",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After one 200ms left-stick Right request: original scene/camera response visible. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:17:36.314Z",
+        "path": "media/0dfe5c3bc2794bc3364f20ff5a5b8e7e7358311f9c876327ae07b53ab1e8111f.jpg",
+        "sha256": "0dfe5c3bc2794bc3364f20ff5a5b8e7e7358311f9c876327ae07b53ab1e8111f",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Observed visual response; not a numeric player/world vector, undo, physical device or perfect idle/image match."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-death-restored",
+      "date": "2026-11-12",
+      "title": "Enabled encounter and restored death",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Later enabled-state encounter",
+        "bevy": "Original Continue after OFF"
+      },
+      "reference": {
+        "caption": "Separate Room00 control: Gene remains alive/full-looking health during attacks,110.004s after the first ON observation. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:26:06.507Z",
+        "path": "media/f2c9d0eff3e89bf4871b5f2e00d6f73711afe1aee78ad6f923c3ed85179f3126.jpg",
+        "sha256": "f2c9d0eff3e89bf4871b5f2e00d6f73711afe1aee78ad6f923c3ed85179f3126",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After actual original OFF/close/Hide and successive ordinary health loss/collapse, the original Continue screen appears. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:30:22.209Z",
+        "path": "media/65c7495e48fad662f2f255a786360adaf38148f0408d7e5c8db26cd663432c31.jpg",
+        "sha256": "65c7495e48fad662f2f255a786360adaf38148f0408d7e5c8db26cd663432c31",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "No player attacks or movement between ON observations or during OFF damage/death control. Not numerical HP/total damage/all-frame or arbitrary one-shot-immunity proof."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-on-endpoints",
+      "date": "2026-11-12",
+      "title": "The two enabled-state observations",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "First enabled-state encounter",
+        "bevy": "Later enabled-state encounter"
+      },
+      "reference": {
+        "caption": "First unobstructed ON observation: enemy attack/hurt pose and full-looking health. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:24:16.503Z",
+        "path": "media/7f379cde14c8dd6a073028fd0139f2c34742e8186d6c8f587d400e03869e1c14.jpg",
+        "sha256": "7f379cde14c8dd6a073028fd0139f2c34742e8186d6c8f587d400e03869e1c14",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later ON observation110.004s afterward: living Gene/full-looking health with enemy attack/knockdown pose. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:26:06.507Z",
+        "path": "media/f2c9d0eff3e89bf4871b5f2e00d6f73711afe1aee78ad6f923c3ed85179f3126.jpg",
+        "sha256": "f2c9d0eff3e89bf4871b5f2e00d6f73711afe1aee78ad6f923c3ed85179f3126",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Selected full original snapshots, not a continuous recording or cumulative-damage calculation."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-option-restoration",
+      "date": "2026-11-12",
+      "title": "Original no-death option restoration",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original ON",
+        "bevy": "Original OFF"
+      },
+      "reference": {
+        "caption": "Actual Right changes original PL NO DEATH to ON. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:23:48.867Z",
+        "path": "media/b0aec605f3ccb626757c3f081540d8bfc52630cba944b166b383aa9bc8a08c8e.jpg",
+        "sha256": "b0aec605f3ccb626757c3f081540d8bfc52630cba944b166b383aa9bc8a08c8e",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Actual Left restores original PL NO DEATH to OFF before the later damage/death control. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:26:41.314Z",
+        "path": "media/6f359f112c3ccde243d920cc2015cd2c5b705cde97e7a1126d0738bbd3ef4a36.jpg",
+        "sha256": "6f359f112c3ccde243d920cc2015cd2c5b705cde97e7a1126d0738bbd3ef4a36",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Option labels alone are not survival proof. The separate encounter and Continue originals provide the scoped effect/restoration evidence."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-warning",
+      "date": "2026-11-12",
+      "title": "The existing warning is still visible",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original close warning",
+        "bevy": "Later original parent"
+      },
+      "reference": {
+        "caption": "Original memory leak size0x480 warning after closing OFF options. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:26:49.395Z",
+        "path": "media/2801b5fbbf574f382b18ec1e2262bd91d475967923581b0ffec973c24df5e3ee.jpg",
+        "sha256": "2801b5fbbf574f382b18ec1e2262bd91d475967923581b0ffec973c24df5e3ee",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later observation: original parent menu returns; warning is not suppressed or repaired. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:26:53.223Z",
+        "path": "media/76ed6213830a742f2e597d9ea964b4d4895ac25a4917269b751e575dcfd5dad6.jpg",
+        "sha256": "76ed6213830a742f2e597d9ea964b4d4895ac25a4917269b751e575dcfd5dad6",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Native warning persists with game observers disabled. Cause/exact duration/ownership/original-console behavior remain unproven."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
+    {
+      "id": "2026-11-12-combined-warp-return",
+      "date": "2026-11-12",
+      "title": "Leaving Warp restores camera and HUD",
+      "feature": "DT03",
+      "scenario": "Named actual normal prototype4acf sessions: Room01 F1/F2/Warp, separate Room00 ON/OFF/death, or explicitly identified exact-source startup. No constructed scene/guest-state edits.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Warp axes after movement",
+        "bevy": "Normal original camera and HUD"
+      },
+      "reference": {
+        "caption": "Original Warp after the one finite pulse, before Start exits. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:17:36.314Z",
+        "path": "media/0dfe5c3bc2794bc3364f20ff5a5b8e7e7358311f9c876327ae07b53ab1e8111f.jpg",
+        "sha256": "0dfe5c3bc2794bc3364f20ff5a5b8e7e7358311f9c876327ae07b53ab1e8111f",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After original Start/Cross and separate F1/F2 ownership check: normal scene/HUD, no deferred panel. Unchanged lossy full owned-window JPEG, title/border retained. Host capture-completion time, not guest frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native4acf41e7 / interactive-v1, exact executable 4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7; native attachment tooling 97b774547230976d1536f7fe32d3f27cf3271c48. Separate direct normal acceptance trial; original environment builder retained from pre-profile launcher601ce740. No automatic inputs or game observers/raw exports.",
+        "revision": "97b774547230976d1536f7fe32d3f27cf3271c48",
+        "captured_at": "2026-11-12T17:18:30.965Z",
+        "path": "media/9a3d120438c182f73009f58c055f744920982b43854d582b5f9682387323fdec.jpg",
+        "sha256": "9a3d120438c182f73009f58c055f744920982b43854d582b5f9682387323fdec",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "observations": [
+        "Normal camera/HUD restoration is observed, not an undo of the Warp displacement."
+      ],
+      "limits": [
+        "Original accounting warning, earlier translation diagnostic/strictVU1/render artifacts, loading differences and partial-install/ignored-return limits remain; no graphics or cleanup fix.",
+        "Normal visual evidence is not numerical HP/vector proof, arbitrary one-shot/no-damage immunity, physical input, focus/held/repeat or every original option/room.",
+        "No complete public personal-disc prototype generation/VU/generic-source setup, full ABI/lifetime/failure recovery, audible audio, true game Save/Load or campaign-fidelity claim.",
+        "Source is original GPL continuation tooling; generated game code/raw assets/dumps/cards/binaries stay private. Selected unchanged lossy native-window screenshots have separate rights, not GPL or PS2-reference images."
+      ]
+    },
     {
       "id": "2026-11-12-room-return",
       "date": "2026-11-12",

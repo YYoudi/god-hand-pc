@@ -1,5 +1,26 @@
 # God Hand PC continuation - agent instructions
 
+## Actual combined normal UI/effects and explicit profile — 2026-11-12
+
+Read PROTOTYPE_COMBINED_INTERACTIVE.md and checkpoint/combined_interactive_current.
+UNCHANGED4acf41e7 first512.922s normal0: actual F1/F2/refusal/no-deferred, mouse
+Room01, original Warp ONE LSRight200ms/StartCross -> normalcameraHUD, optionON/OFF.
+Room01 idle is NOT survival proof. Separate546.406s normal0 Room00/Point0 actual
+F2/mouse/introStart, originalON/closeHide, enemyattack/hurt/knockdown alive/full-
+looking-health snapshots110.004s apart, actualOFF/healthloss/collapse/Continue.
+No automatic input/game observers/rawexports/watchdog. Actual close0x480warning
+persists, not fixed; strictVU1/render/ABI/lifetime/source/setup/hardware gates stay.
+ab99906 public launcher adds EXPLICIT --build room01-v1 exact4acf, separate default
+userdata prototype-room01. Defaultnative07/hash/userdata prototype-default unchanged.
+Exact-source62.547s actualF2/originalmenu/CrossHide/AltF4 launcher/native0;7real
+preflights output-free/olduserdata unchanged.336source tests/3Win skips60.247s pass.
+Native/input/source variants, old260PNGs/new75JPEGs and MIT4WIP preserved. JPEGs
+are full lossy backend originals; never infer missing pixels from tool previews.
+Normal current scoped effects are DONE, not missing; no older numericHP/vector,
+all-frame/one-shot/hardware/fullmenu/retail/setup claim. Next VU/generic source
+closure/freshfullbuild and wider options/input/reference/lifetime. Goal ACTIVE.
+No new Rust/delegation/ISO edits/game uploads or guessed flags/ready/frees/NOPs.
+
 ## Same-process prototype room return — 2026-11-12
 
 Read PROTOTYPE_ROOM_TRANSITIONS.md and checkpoint/room_transition_current.
