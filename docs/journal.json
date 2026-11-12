@@ -4,9 +4,10 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "The fresh prototype-source build has an exact-input native gate and an observed actual F1/F2 path. One ordinary Down tap still fails to move the menu cursor; full keyboard usability remains open.",
-  "next": "Build the checked personal-disc prototype workflow and separate normal visible launches from bounded probes. Regress no-death on the current stick candidate, then controlled focus/held/repeat and broader original option/room coverage. Keep private diagnostics and retail separate; no complete release/fidelity claim.",
+  "status": "Original prototype F2/mouse RoomJump, scoped Warp and current stick-build no-death effects are observed. A separate exact-input visible interactive build and adopted-binary launcher now work without diagnostic timers/auto-input/raw exports. Full prototype setup, wider coverage and retail remain incomplete.",
+  "next": "Reproduce private prototype qualification/generation from personal discs; regress effect/restoration on the normal interactive candidate, then controlled focus/held/repeat and broader original options/refusals. Preserve the original memory warning, failed strictVU1 and rendering evidence; no guessed flags or retail address transplant.",
   "known_limits": [
+    "New adopt-only prototype launcher is NOT ISO-only generation/setup. Native05 no-death shows an unresolved original memory-leak0x480 warning after OFF; Native07 normal path has not repeated no-death/Warp effect coverage.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
@@ -111,14 +112,14 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Actual F2/mouse original RoomJump1/00/Point1, Warp entry/exit and original no-death action on named exact binaries. Explicit v2 bounded LSRight moves real player, original Start/Cross restores normal camera/HUD; F1 retains ownership. Not a checked public prototype workflow, normal-launch policy, physical/focus/held/repeat release or retail backend; keep in progress."
+          "acceptance": "Actual F2/mouse RoomJump1/00/Point1 and scoped native05Warp/no-death effects are observed. NEW07 normal interactive no-script RoomJump/F1 ownership/close passes; public launcher adopts exact private executable. Prototype generation/qualification, normal-mode effect regression, focus/held/repeat/full menu and retail remain open; keep in progress."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "New same-session Warp idle/pulse/idle:12stable before/16after, actual actor/cached/target equal, about0.23942worldunit move and normal restoration. Fresh-start matched pair rejected; separate no-stick30samples and v1 compatibility pass. Prior no-death lethal-total/OFF/death evidence remains exact-build history. Current-candidate no-death regression, checked setup, focus/held/repeat, wider options/invalid states/rooms and retail remain open."
+          "acceptance": "Same05 no-death regression:19selectedONcalls/198HP,22refills; actualOFF followed by15selectedcalls/zeroHP/collapse/Continue, native0 before900s. Original memory-leak0x480 warning retained. Earlier scopedWarp/v1 controls preserved. Normal07 effect regression, checkedgeneration, focus/held/repeat and wider options/invalid states/retail remain open."
         },
         {
           "id": "RM01",
@@ -331,6 +332,30 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Visible prototype sessions and a current no-death regression",
+      "summary": "A separate explicit normal launch now runs without the old diagnostic timer, auto-input or game-memory exports. The stick build also rechecks original no-death survival and restored death, with an unresolved original warning kept visible.",
+      "changes": [
+        "Added original explicit execution selection and a hash-pinned adopt-only local launcher; personal prototype disc/ELF still required, no game or executable distributed.",
+        "Observed unscripted actualF2/mouse RoomJump to1/00/Point1, normalHUD, in-scene menu closure and F1 ownership with the host panel initially open.",
+        "Rechecked original no-death ON/refills/OFF/death/Continue on SAME05; retained original memory-leak0x480 warning and subsequent parent menu."
+      ],
+      "validation": "New native07 compile/guard/link0;10direct pre-runtime refusals. Visible197.783s normal run exits0 via actualAltF4, no game observers/raw exports; separate SAME07 hidden30s bounded compatibility exits0. Exact public8be4cd6 launcher repeats actualF2/Cross/Hide/normalclose0 with inherited diagnostics stripped and persistent controls/card hashes unchanged. Five check-only/refusal controls create no session/native process; wrong-ELF path is missing, not a retail digest control. Same05 no-death19selectedONcalls/198HP vs100max,22refills;15postOFFcalls/zeroHP/collapse/Continue;830.554s normalexit0.Final complete272synthetic tests pass after the UTF8 fix and journal preparation,3Windows symlink skips,58.576seconds; original invented fixtures only. Earlier source suite/focused checks retained.",
+      "limits": "Adopt-only private build, not ISO-only prototype installer or retail debug backend. Normal07 no-death/Warp effects are not silently inherited from05. Memory warning, strictVU1/rendering artifacts, initial white capture, transient wrong-app/stale screenshot and first transcript decode failure remain recorded. No arbitrary one-shot, full menu/hardware/audio/save/campaign/fidelity/performance claim.",
+      "evidence_comparisons": [
+        "2026-11-12-current-no-death-on",
+        "2026-11-12-current-no-death-off",
+        "2026-11-12-original-memory-warning",
+        "2026-11-12-interactive-unscripted-room",
+        "2026-11-12-interactive-f1-ownership"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_INTERACTIVE.md",
+        "label": "Interactive launch policy, current no-death observations and remaining work"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1087,6 +1112,266 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-current-no-death-on",
+      "date": "2026-11-12",
+      "title": "Current stick build: original ON and continued survival",
+      "feature": "DT03",
+      "scenario": "Same native05 Point0 test; declared initial room bootstrap, then actual F2/mouse only. No attacks/movement/game-state writes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option ON",
+        "bevy": "Alive during original refill behavior"
+      },
+      "observations": [
+        "Original matched damage/refill observations reach198HP vs100max over the complete ON phase;22positive-health refills. Image alone does not establish these counts."
+      ],
+      "limits": [
+        "Prototype only, not retail or a matched PS2/reference fidelity comparison. Action states differ; no crop, normalization or camera refit. Original game imagery is not GPL.",
+        "Private generated sources/qualified SDK/module/VU inputs remain dependencies. The public launcher adopts one exact local binary; it is not ISO-only setup or a complete developer-tools release.",
+        "Earlier strictVU1 mismatch, rendering artifacts, physical/focus/held/repeat, audible audio, genuine game Save/Load and campaign gates remain open.",
+        "Cumulative multi-hit/refill survival, not no-damage or arbitrary lethal-hit immunity. All selected ON pre-clamp HP remains positive; separate lethal-floor branch unexercised. Selected function is not every HP writer."
+      ],
+      "reference": {
+        "caption": "Actual mouse Right selects original PL NO DEATH ON. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:43:54.841Z",
+        "path": "media/3ae83a20f38f88533ab0c21dcee0b67f57bf0c0a097f64b907e9c14380a93f6e.jpg",
+        "sha256": "3ae83a20f38f88533ab0c21dcee0b67f57bf0c0a097f64b907e9c14380a93f6e",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Gene alive during the ON phase; private aggregate ultimately records19selected calls/198HP, not all at this image. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:48:35.843Z",
+        "path": "media/a3dfa84763904e2443aa0d02b84f276a94a60f7faa3107864a92c05dcac212ae.jpg",
+        "sha256": "a3dfa84763904e2443aa0d02b84f276a94a60f7faa3107864a92c05dcac212ae",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-current-no-death-off",
+      "date": "2026-11-12",
+      "title": "Actual OFF restores death and Continue",
+      "feature": "DT03",
+      "scenario": "SAME05 process after ON test; actual mouse Left restores original OFF, Cross/menu close and Hide.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option OFF",
+        "bevy": "Death / Continue restored"
+      },
+      "observations": [
+        "Fifteen selected post-OFF calls lead to zeroHP at private observed field15242, collapse and Continue. Normal AltF4 later ends0 before900s watchdog."
+      ],
+      "limits": [
+        "Prototype only, not retail or a matched PS2/reference fidelity comparison. Action states differ; no crop, normalization or camera refit. Original game imagery is not GPL.",
+        "Private generated sources/qualified SDK/module/VU inputs remain dependencies. The public launcher adopts one exact local binary; it is not ISO-only setup or a complete developer-tools release.",
+        "Earlier strictVU1 mismatch, rendering artifacts, physical/focus/held/repeat, audible audio, genuine game Save/Load and campaign gates remain open.",
+        "An original memory-leak0x480 warning appears on the way back; see retained next pair. OFF is observed, not an undo of prior room/position/actions."
+      ],
+      "reference": {
+        "caption": "Actual original PL NO DEATH restored to OFF. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:49:22.903Z",
+        "path": "media/a0783307580289c4ab93ba36979a377e718b1670998986a7d8a8adf038c67dd6.jpg",
+        "sha256": "a0783307580289c4ab93ba36979a377e718b1670998986a7d8a8adf038c67dd6",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later actual original Continue screen after zeroHP/collapse. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:53:31.566Z",
+        "path": "media/145b3c2a9c11beb25cc7a3f8e9ec9973cb918c4728fb47f33379698dec0a4af5.jpg",
+        "sha256": "145b3c2a9c11beb25cc7a3f8e9ec9973cb918c4728fb47f33379698dec0a4af5",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-original-memory-warning",
+      "date": "2026-11-12",
+      "title": "Unresolved original memory warning is retained",
+      "feature": "DT03",
+      "scenario": "SAME05 first Cross after OFF shows original warning; next observed state is original parent.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original warning after OFF",
+        "bevy": "Next observed parent menu"
+      },
+      "observations": [
+        "The original warning is visible and not hidden from publication. Execution later reaches normal game/death/Continue and exits0."
+      ],
+      "limits": [
+        "Prototype only, not retail or a matched PS2/reference fidelity comparison. Action states differ; no crop, normalization or camera refit. Original game imagery is not GPL.",
+        "Private generated sources/qualified SDK/module/VU inputs remain dependencies. The public launcher adopts one exact local binary; it is not ISO-only setup or a complete developer-tools release.",
+        "Earlier strictVU1 mismatch, rendering artifacts, physical/focus/held/repeat, audible audio, genuine game Save/Load and campaign gates remain open.",
+        "Cause and exact warning duration remain unisolated; sparse captures do not establish a one-frame warning or memory safety."
+      ],
+      "reference": {
+        "caption": "Original memory leak size0x480 warning; the historical action label says parent, but this actual image is the warning. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:49:29.518Z",
+        "path": "media/3047e372bfa470be0925094a5bbc62fd5cff96fd45e45e5ee0799fdb14907266.jpg",
+        "sha256": "3047e372bfa470be0925094a5bbc62fd5cff96fd45e45e5ee0799fdb14907266",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Next observed original parent menu, before later game/death/Continue. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; public0c4165b controller headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+        "captured_at": "2026-11-12T08:50:16.315Z",
+        "path": "media/34f2289bece43c47b26d7fb987c07c696f05e08d89e966e14a5edb84ba12c8f3.jpg",
+        "sha256": "34f2289bece43c47b26d7fb987c07c696f05e08d89e966e14a5edb84ba12c8f3",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-interactive-unscripted-room",
+      "date": "2026-11-12",
+      "title": "Visible interactive session: unscripted Room Jump",
+      "feature": "DT02",
+      "scenario": "NEW07 interactive-v1; no watchdog, scripts, external commands, raw exports or game observers. Actual F2/mouse selects1/00/Point1; actualStart skips intro.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Actual Point1 selection",
+        "bevy": "Original Point1 room/HUD"
+      },
+      "observations": [
+        "Normal session lasts197.783seconds, longer than old90s diagnostic default, then actualAltF4/native0. Actual in-sceneF2/Cross/Hide also returns normalHUD."
+      ],
+      "limits": [
+        "Prototype only, not retail or a matched PS2/reference fidelity comparison. Action states differ; no crop, normalization or camera refit. Original game imagery is not GPL.",
+        "Private generated sources/qualified SDK/module/VU inputs remain dependencies. The public launcher adopts one exact local binary; it is not ISO-only setup or a complete developer-tools release.",
+        "Earlier strictVU1 mismatch, rendering artifacts, physical/focus/held/repeat, audible audio, genuine game Save/Load and campaign gates remain open.",
+        "Native07 is not unchangednative05 or a newly repeated no-death/Warp effect trial. No game-save validation from the existence of a private memory card. Initial white capture mismatch retained privately; not repaired."
+      ],
+      "reference": {
+        "caption": "Actual mouse selects Stage1/Room00/Point1 in original Room Jump. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; Native07 interactive-v1; execution-policy bytes later committed8be4cd6; no scripted bootstrap. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T09:14:01.975Z",
+        "path": "media/d6a9e2a670c1ecc2b2a56a127d293a39c6eed95ed81ab874a41bd394b4adeebb.jpg",
+        "sha256": "d6a9e2a670c1ecc2b2a56a127d293a39c6eed95ed81ab874a41bd394b4adeebb",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Same normal session after real load/Start/Hide: original Gene and room/HUD. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; Native07 interactive-v1; execution-policy bytes later committed8be4cd6; no scripted bootstrap. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T09:14:53.239Z",
+        "path": "media/aa6a02213c9b67a98c3875d6657c9a93c272a0d98ade97cc20d5575cc2f0405d.jpg",
+        "sha256": "aa6a02213c9b67a98c3875d6657c9a93c272a0d98ade97cc20d5575cc2f0405d",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-interactive-f1-ownership",
+      "date": "2026-11-12",
+      "title": "F1 closes the open host panel without deferred F2",
+      "feature": "DT02",
+      "scenario": "SAME07 normal visible session; F1 pressed while hostpanel already visible, F2 refused underF1, F1 closes.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F1 owns input",
+        "bevy": "F1 closes; no deferred panel"
+      },
+      "observations": [
+        "This controls-owner round trip now begins with the panel already open. Subsequent explicitF2 can show it again."
+      ],
+      "limits": [
+        "Prototype only, not retail or a matched PS2/reference fidelity comparison. Action states differ; no crop, normalization or camera refit. Original game imagery is not GPL.",
+        "Private generated sources/qualified SDK/module/VU inputs remain dependencies. The public launcher adopts one exact local binary; it is not ISO-only setup or a complete developer-tools release.",
+        "Earlier strictVU1 mismatch, rendering artifacts, physical/focus/held/repeat, audible audio, genuine game Save/Load and campaign gates remain open.",
+        "F1 and host panel do not themselves pause original game. Software taps do not cover physical held/repeat/focus loss or every simultaneous event."
+      ],
+      "reference": {
+        "caption": "Actual F1 controls replace the already-open controller panel. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; Native07 interactive-v1; execution-policy bytes later committed8be4cd6; no scripted bootstrap. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T09:12:46.317Z",
+        "path": "media/5093f199690d9eaee9fe90a11f2dc12f9787f900f92700cbec5e0d07a0cba9f3.jpg",
+        "sha256": "5093f199690d9eaee9fe90a11f2dc12f9787f900f92700cbec5e0d07a0cba9f3",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After actual F2 refusal and F1 close, original parent remains with no deferred host panel. Unchanged lossy full native-window original; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6; Native07 interactive-v1; execution-policy bytes later committed8be4cd6; no scripted bootstrap. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T09:12:59.665Z",
+        "path": "media/44f66045966ffc20ea229c7b38c6ad137175153e04d06c66ae1ed5bc8bad8f0d.jpg",
+        "sha256": "44f66045966ffc20ea229c7b38c6ad137175153e04d06c66ae1ed5bc8bad8f0d",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
     {
       "id": "2026-11-12-actual-ui-room-jump",
       "date": "2026-11-12",

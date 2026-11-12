@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "date": "2026-11-12",
+  "scope": "Reviewed aggregate only; private generated game inputs, raw observations/logs, cards and executables not distributed.",
+  "source_revision": "8be4cd64fe300be51acf0ac36df002c9f0946d45",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "native_build": {
+    "exe_sha256": "0afc8392bcab3db0aeb2ef3c9d57d9530598a408c68fa707091db56ac195c2e6",
+    "steps": [
+      0,
+      0,
+      0
+    ],
+    "retained_hashes_checked": 9850,
+    "source_hashes_checked": 10,
+    "new_generation": false,
+    "limitations": "Fresh host-only relink reuses9821new source-build objects, five fresh prototype libraries and five pinned generic libraries; private generated code/qualifiedSDK remains required. Failed06compile preserved."
+  },
+  "interactive": {
+    "interactive_elapsed_seconds": 197.783086,
+    "native_exit": 0,
+    "actual_inputs": "Real F2/mouse only, no scripted bootstrap; original1/00/Point1 scene/HUD, actual in-sceneF2/Cross/Hide; F1 closes an already open host panel, F2 refused underF1/no deferred activation. AltF4 closes normally.",
+    "diagnostic_limit": "No game pad/Warp/health observers or raw exports in normal path. Operational host-key/focus/controller request and changed-button logs intentionally remain. Runtime memory/card activity is not Save/Load proof.",
+    "normal_top_level_files": [
+      "runtime.log",
+      "prototype-developer-input.txt"
+    ],
+    "user_data_files": [
+      "controls.ini",
+      "memcards\\Mcd001.ps2"
+    ],
+    "refusals": 10,
+    "legacy_same_binary": "Unset execution profile: hidden30s, normal native0 at watchdog; diagnostic raw exports deliberately present only in this separate private folder."
+  },
+  "current_no_death": {
+    "exe_sha256": "cb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85",
+    "source_file_chain_sha256": "964e8ea74b1917f0ba8b9de171f091fd6471fb5c3abe816c28010533e91440a4",
+    "native_exit": 0,
+    "started_at": "2026-11-12T08:39:52.966073+00:00",
+    "ended_at": "2026-11-12T08:53:43.519791+00:00",
+    "elapsed_seconds": 830.553718,
+    "watchdog_seconds": 900,
+    "selected_ON_calls": 19,
+    "selected_ON_HP_reduction": 198,
+    "original_positive_HP_refills": 22,
+    "selected_OFF_calls_before_ON": 7,
+    "selected_OFF_calls_after_ON": 15,
+    "HP_zero_field": 15242,
+    "all_selected_ON_pre_clamp_positive": true,
+    "original_memory_warning": "First Cross after OFF shows original memory leak size0x480; next observed state is original parent, then normal game/death/Continue. Unresolved diagnostic, preserved original image, not claimed memory-safe or fixed. Capture interval does not establish exact warning duration."
+  },
+  "public_launcher": {
+    "source_revision": "8be4cd64fe300be51acf0ac36df002c9f0946d45",
+    "sha256": "601ce74094bf397b0a07a2d69301ec29a44cf29e7e744d71099df6443419382c",
+    "native_exit": 0,
+    "scope": "Separate actualF2/Cross/Hide during original opening movie; inherited invented diagnostics stripped; no scripted boot. Initial pre-UTF8 source native0 and exact8be4cd6repeatnative0. Not another room/effect trial.",
+    "persistent_controls_card_unchanged_on_repeat": true,
+    "preflight_cases": [
+      "valid-reuse-check-only",
+      "existing-session",
+      "invalid-name",
+      "wrong-executable",
+      "missing-ELF"
+    ],
+    "preflight_exits": [
+      0,
+      2,
+      2,
+      2,
+      2
+    ],
+    "first_decode_failure_retained": true,
+    "no_output_or_native_process_from_preflight": true
+  },
+  "evidence": {
+    "native_host_originals": 10,
+    "profile": "native-host-jpeg-v1",
+    "unchanged": true,
+    "lossy": true,
+    "alignment": "unmatched action states",
+    "capture_time": "host capture completion, not guest field"
+  },
+  "synthetic": {
+    "source_full_tests": 272,
+    "Windows_symlink_skips": 3,
+    "source_full_seconds": 69.788,
+    "source_full_before_UTF8_fix": true,
+    "post_fix_focused_tests": 4,
+    "final_full": {
+      "tests": 272,
+      "skips": 3,
+      "seconds": 58.576,
+      "exit": 0,
+      "scope": "Complete original synthetic suite on final public code after UTF8 fix and journal preparation; no game fixtures or concurrent owned native process."
+    }
+  },
+  "limitations": [
+    "Initial white/gray backend capture retained; actualF2 produces visible menu. No capture/renderer fix.",
+    "Visible and muted, unbounded only explicit interactive; bounded trial observation ended after actual normal close.",
+    "Private generated source/qualifiedSDK/module/VU inputs and generic libraries remain; launcher ADOPTS exact local executable, no ISO-only public installer.",
+    "Existing strictVU1 mismatch, one room/options, no retail/hardware/audio/game-save/campaign/focus/held/repeat acceptance.",
+    "Original no-death warning remains unisolated; no arbitrary one-shot immunity.",
+    "Selected alive image is during ON, not a claim all198HP had accumulated by that image.",
+    "Only selected original native screenshots published; source-time WIP normal images accurately marked uncommitted, public policybytes later match8be4cd6.",
+    "ComputerUse transient wrong-app image not saved/acted on; stale capture refreshed, no wholemachine isolation."
+  ]
+}

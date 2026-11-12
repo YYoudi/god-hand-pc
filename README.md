@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest prototype work: [visible sessions and current no-death regression](PROTOTYPE_INTERACTIVE.md).
+The checked launcher adopts one exact **private local** prototype executable;
+it is not an ISO-only prototype installer or a retail debug backend. Original
+memory-warning evidence and remaining setup/coverage limits are explicit.
+
 Latest prototype result: [Room Jump and Player Warp through actual F2/mouse controls](PROTOTYPE_ROOM_WARP_UI.md).
 One bounded stick request moves the original target/player and normal game returns.
 The rejected fresh-start match and rendering artifacts are retained. This is not a

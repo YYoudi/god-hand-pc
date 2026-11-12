@@ -1,5 +1,31 @@
 # God Hand PC continuation - agent instructions
 
+## Interactive prototype and current no-death follow-up — 2026-11-12
+
+Read PROTOTYPE_INTERACTIVE.md and canonical checkpoint. Native05cb4d8dc5 actual
+F2/mouse ON19selectedhits/198HPvs100max,22positive refills, actualOFF15hits/HP0/
+collapse/Continue; normalAltF4/native0 after830.554s before900watchdog. Original
+memory-leak0x480 warning on firstCross afterOFF is unresolved and published, next
+originalparent/game/death observed. Not no-damage/arbitraryone-shot immunity;
+separate lethalfloor unexercised, selectedfunction is not everyHPwriter.
+NEW07exe0afc8392 has explicit interactive-v1 visible/no timer/script/gameobserver/
+rawexport path and user-data separate from fresh sessions; operationalhostlogs
+remain. Native197.783s unscripted actualF2/mouse1/00/Point1/Start/normalHUD and
+in-sceneF2/Cross/Hide pass; F1 closes alreadyopenpanel/F2refused/nodeferred, actual
+AltF4/native0. Separate SAME07 hidden30s unset-profile legacy control native0,
+diagnosticexports private;10nativepreflight refusals/nooutput pass. Native06
+_get_environ compile failure preserved,07uses actualinitialmainenvp.
+Public8be4cd6 prototype_workbench.py ADOPTS exactprivatebinary, verifiespersonal
+disc/ELF, stripsnamespaceddiagnostics, createsoriginalkeyboarddefaults onlyif
+missing, neveroverwrites existingcontrols/cards. Exactsource actualF2/Cross/Hide/
+normalexit0, persistenthashesunchanged;5preflights/nooutput/nospawn. Firstlocale
+transcriptdecodefailure and CUAwrongapp/stalescreenshot retained; noinput/save
+onwrongapp, freshactivation required. No physicalkeyboard handoff needed.
+Next reproduceprivatequalification/generation frompersonaldiscs; regressnormal07
+Warp/no-death effects before inheriting05claims, thenfocus/held/repeat/wider
+options/refusals. NOT ISO-onlysetup/fullmenu/retail/fidelity/SaveLoad/audio proof.
+Goal ACTIVE, no newRust/delegation, preserveall binaries/sources/ISOs/evidence.
+
 ## Actual RoomJump and bounded stick Warp — 2026-11-12
 
 Read PROTOTYPE_ROOM_WARP_UI.md and canonical checkpoint. Old837ee7ec NEW UI02

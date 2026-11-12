@@ -1,5 +1,14 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [visible prototype sessions and current no-death regression](PROTOTYPE_INTERACTIVE.md).
+Explicit normal interactive launches now work without the old diagnostic timer,
+automatic input or raw game-memory exports. Exact local-binary adoption is public
+tooling, NOT ISO-only prototype generation/setup. Current05 no-death now passes
+198HP cumulative/refill and restored-death controls; original memory-leak0x480
+warning is retained. New07 normal actualF2/RoomJump/F1/close passes, but normal07
+no-death/Warp effects, source qualification, focus/held/repeat, wider options and
+retail remain open. Full goal ACTIVE, not a finished debug-menu/port release.
+
 Latest scoped result: [actual Room Jump and bounded Warp input](PROTOTYPE_ROOM_WARP_UI.md).
 Real F2/mouse Room Jump now reaches the selected original Point1 without a scripted
 jump. Explicit v2 LSRight moves the actual Warp target/player; original exit restores
