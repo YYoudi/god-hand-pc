@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Latest source boundary: [fresh generic-library build and native controls](PROTOTYPE_GENERIC_REBUILD.md).
+Five historical runtime/IOP/GUI archives are now rebuilt from pinned sources in a
+separate capsule; sampled original menu/room images remain unchanged. This is not
+a full prototype installer, graphics upgrade or switch of normal launch profiles.
+
 Latest source boundary: [fresh VU capture, source replay and native controls](PROTOTYPE_VU_REPLAY.md).
 The separate build no longer consumes the old generated VU C++; selected original
 menu/room samples remain byte-identical. This is not a graphics fix or complete

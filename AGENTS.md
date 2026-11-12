@@ -1,5 +1,27 @@
 # God Hand PC continuation - agent instructions
 
+## Fresh generic5 source build and native controls — 2026-11-12
+
+Read PROTOTYPE_GENERIC_REBUILD.md and checkpoint/generic_rebuild_current.
+Historical snapshot sidecar besidefolder pins1646; clean runtime+3deps/1630files
+qualified. Original46a09e9 disconnected generic CMake helper +8invented tests.
+First strict preflight21GLFWbuild-include-path differences retained; inspected
+directories have no C/C++ headers/source. ONLYthat explicit remap +output/PDB
+exclusion; other126compile profiles equalretainedcache. RelWithDebInfo/MD, not
+different Release fastmath/AVX2. New126objects/5libs/link0/exe9c0e316c;9843parent
+inputs preserved, five replaced onlynewlink. NEW300s0ef/9c controls0after
+303.938/303.907s,5positive VUcallbacks each,9/9original PNGs exact.
+Actual menu/room/Gene/HUD viewed; knownartifacts unchanged.352tests/3Windows
+skips63.047s pass after native terminal. No compiler/suites overlapnative.
+Normal07/default and explicitroom01-v1/4acf unchanged; new9cNOTadopted and no
+inherited normal F1/F2/Warp/no-death acceptance. Existing sourcecheckouts reused,
+not newfetch/toolbootstrap/onefreshwholegame setup/installer or strictVU/PS2fix.
+BOOT/module/VU/host inputs remain explicit; original error/warnings, accounting
+0x480/render/loading/partialfailure/lifetime/widerinput/audio/save gates stay.
+Next assemble allqualified producers/fresh source-tool/setup/native acceptance;
+no guessed NOP/ready/flags/frees, Rust, delegation or game outputs public.
+Goal ACTIVE, not complete. Preserve failedpreflight and alloriginal evidence.
+
 ## Fresh VU source replay and actual native controls â€” 2026-11-12
 
 Read PROTOTYPE_VU_REPLAY.md and checkpoint/VU_replay_current. NEW450s AOT0

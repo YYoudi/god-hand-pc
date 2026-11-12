@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-12",
+  "source_revision": "46a09e9308818b157e7da723db75772bbe809879",
+  "scope": "Fresh generic5 source libraries plus separate incremental native capsule; not complete source bootstrap/setup or normal-profile adoption",
+  "source_repositories": [
+    {
+      "name": "runtime",
+      "revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+      "clean": true,
+      "tracked_files_hashed": 301
+    },
+    {
+      "name": "raylib",
+      "revision": "c1ab645ca298a2801097931d1079b10ff7eb9df8",
+      "clean": true,
+      "tracked_files_hashed": 1031
+    },
+    {
+      "name": "imgui",
+      "revision": "b1bcb12a624af7509894c8e77dd47416997777fa",
+      "clean": true,
+      "tracked_files_hashed": 268
+    },
+    {
+      "name": "rlimgui",
+      "revision": "118221c8a532501a3c2c236b62950877cbefc2b4",
+      "clean": true,
+      "tracked_files_hashed": 30
+    }
+  ],
+  "source_files_verified": 1630,
+  "historical_snapshot_sidecar_found": true,
+  "configuration": {
+    "helper": "prototype_generic.py",
+    "FetchContent": "disconnected explicit prequalified sources",
+    "build_type": "RelWithDebInfo",
+    "compiler": "MSVC19.44.35229.0",
+    "jobs": 2,
+    "FFmpeg": false,
+    "SDL_input": false
+  },
+  "compile_profile_qualification": {
+    "units": 126,
+    "initial_strict_failure": 21,
+    "reason": "GLFW generated-build include directory paths differ. Both contain only configure/install metadata and no C/C++ headers/source. Only that explicit pair and object/PDB paths are remapped; all other command bytes match retained cache.",
+    "initial_failure_preserved": true
+  },
+  "build": {
+    "configure_exit": 0,
+    "library_build_exit": 0,
+    "link_exit": 0,
+    "new_objects": 126,
+    "new_libraries": 5,
+    "parent_link_inputs_preserved": 9843,
+    "old_generic_archives_replaced_in_new_link": 5,
+    "archives_byte_equal_claim": false,
+    "native_exe_sha256": "9c0e316c83b85bbffab7920f59701f899566f8363567b814c7030cd1a1ae00ba",
+    "warning_counts": {
+      "C4005": 2,
+      "D9025": 65
+    },
+    "CMake_warnings": 3
+  },
+  "native_controls": [
+    {
+      "case": "baseline",
+      "exit": 0,
+      "elapsed_seconds": 303.9380000000019,
+      "exe_sha256": "0ef156637d67835e4a956288985e6bdca83411ef5d7f696272a701ba55f21ef7",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_pngs": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    },
+    {
+      "case": "fresh-generic",
+      "exit": 0,
+      "elapsed_seconds": 303.90699999999924,
+      "exe_sha256": "9c0e316c83b85bbffab7920f59701f899566f8363567b814c7030cd1a1ae00ba",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_pngs": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    }
+  ],
+  "sampled_original_equality": [
+    {
+      "field": 120,
+      "baseline_SHA256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "fresh_SHA256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 1560,
+      "baseline_SHA256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "fresh_SHA256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2300,
+      "baseline_SHA256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+      "fresh_SHA256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2700,
+      "baseline_SHA256": "68a28c80e844310b511702265233ac5eee53999212a0013f062059c516225e4e",
+      "fresh_SHA256": "68a28c80e844310b511702265233ac5eee53999212a0013f062059c516225e4e",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 2900,
+      "baseline_SHA256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+      "fresh_SHA256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 3300,
+      "baseline_SHA256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "fresh_SHA256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 4200,
+      "baseline_SHA256": "d75cd88d54b5ece55d406850ff9bac7a92c7ac2beaadff0d41e1a96a0d97431f",
+      "fresh_SHA256": "d75cd88d54b5ece55d406850ff9bac7a92c7ac2beaadff0d41e1a96a0d97431f",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 4501,
+      "baseline_SHA256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+      "fresh_SHA256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "field": 5001,
+      "baseline_SHA256": "c77f1c8471174220ae33806e112f09f113f5364f461267bba6191028c407b222",
+      "fresh_SHA256": "c77f1c8471174220ae33806e112f09f113f5364f461267bba6191028c407b222",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    }
+  ],
+  "normal_profiles_changed": false,
+  "new_capsule_adopted": false,
+  "tests": {
+    "focused_synthetic": 8,
+    "focused_seconds": 1.046,
+    "full_synthetic": 352,
+    "full_Windows_skips": 3,
+    "full_exit": 0,
+    "full_seconds": 63.047
+  },
+  "preserved_file_identities": 12093,
+  "limits": [
+    "Existing qualified source checkouts reused read-only, not newly downloaded or a rebuilt compiler toolchain.",
+    "Retained BOOT/module/VU/host continuation inputs remain; not one fresh whole-game source build or a complete public prototype installer.",
+    "Nine sampled original files, not every-frame timing/fidelity, arbitrary rooms/menus, strictVU or PS2 hardware equivalence.",
+    "No inherited normal F1/F2/Warp/no-death acceptance in the new9c capsule; earlier results remain scoped to their exact binaries.",
+    "Retained translation1error/1450warnings, strictVU, rendering/loading/accounting0x480/partial-failure/lifetime limits are not fixed.",
+    "Hardware, audible audio, genuine game Save/exit/Load and campaign remain open. No performance gain is claimed.",
+    "Discs/ELF/assets/raw maps/dumps/generated game or VU source/objects/archives/native binaries/cards remain private; game imagery is not GPL."
+  ]
+}

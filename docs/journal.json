@@ -5,9 +5,9 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "Two prototype native builds are explicitly selectable locally. Native07 remains the default; opt-in room01-v1 has actual normal F1/F2, Room01/Warp and separate Room00 no-death/restored-death evidence. Neither is a complete prototype installer, campaign-fidelity release or retail debug backend.",
-  "next": "Close the five generic-library source/toolchain gaps and reproduce a fresh full personal-disc prototype build with its own native acceptance. VU-only fresh capture/generation/library/native sampled controls are now observed, not a missing step or a full setup release. Continue wider original debug options, focus/held/repeat/hardware, qualified lifetime/variable-base and reference-warning evidence; preserve existing normal4acf proofs and defaultnative07.",
+  "next": "Assemble the qualified BOOT/module/VU/host/generic producer steps into one reproducible private personal-disc setup, with fresh tool/source and native/normal acceptance. The five generic libraries now have a new source build and sampled controls; neither0ef nor9c is adopted. Keep normal4acf proofs/native07 default, wider original options/input and reference/ABI/lifetime limits explicit.",
   "known_limits": [
-    "VU-only capsule0ef15663 passes new bounded menu/room samples, but is NOT adopted or a complete source build. Five historical generic libraries and other BOOT/module/host inputs remain reused; normal4acf named-action acceptance is not inherited.",
+    "Earlier VU-only0ef reused five historical generic archives. New9c rebuilds those five from pinned source and matches nine samples, but is NOT adopted or a complete fresh source/setup release; it inherits no old normal-mode effects.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
@@ -123,7 +123,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, other unload/reload paths and variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance. A separate unchanged-build same-process Room01 -> Room00 introduction -> Room01 scene return is now observed; both r101 images retain the same qualified base and complete linked bytes. Three unreached late capture requests remain explicit. The preview-based partial-label hypothesis is disproved by exact original PNG/label bytes, not a native rendering fix. This does not prove Room00 ordinary HUD, normal-mode adoption, retired-address absence or every lifetime path. Additional actual combined4acf normal acceptance now includes real F1/F2 ownership/refusal/no-deferred behavior, mouse Room01, one finite Warp response/normal camera-HUD return and separate Room00 original no-death ON/110.004s living attack endpoints/OFF/health loss/collapse/Continue. Explicit adopt-only room01-v1 profile is tested; native07 remains default, separate user data, no arbitrary-room/full-menu/source-setup/hardware/numeric-HP certificate. A separate fresh-capture VU-only replay now generates20CPPs twice, rebuilds the VU library/counted wrapper and passes two new native300s controls with five positive callbacks each and nine byte-identical sampled originals. This closes the old-generated-VU-source producer dependency for that qualified set only, not generic-library/full-source setup, normal-profile adoption, strictVU or all-frame/PS2 correctness."
+          "acceptance": "Normal07 has its separately observed F2/mouse RoomJump/Warp/no-death/OFF/death and F1 ownership scope, not inherited by new binaries. The combined prototype profile now loads original Stage1/Room01/Point0 with qualified r101 and six BOOT entries; named original scene snapshots, a finite left-stick visual response and seven unchanged Room00 control samples are observed. The two earlier unsupported trials, Start-menu trial and unexplained loading-image differences are preserved. Original menu option accounting warning, strictVU1/render artifacts, normal-mode acceptance/promotion, other unload/reload paths and variable bases, broader options/input/reference/hardware and complete source/setup remain open. Runtime callbacks, commands, compilations, image equality or bounded static source checks alone are not full ABI/ownership/lifetime/campaign/fidelity acceptance. A separate unchanged-build same-process Room01 -> Room00 introduction -> Room01 scene return is now observed; both r101 images retain the same qualified base and complete linked bytes. Three unreached late capture requests remain explicit. The preview-based partial-label hypothesis is disproved by exact original PNG/label bytes, not a native rendering fix. This does not prove Room00 ordinary HUD, normal-mode adoption, retired-address absence or every lifetime path. Additional actual combined4acf normal acceptance now includes real F1/F2 ownership/refusal/no-deferred behavior, mouse Room01, one finite Warp response/normal camera-HUD return and separate Room00 original no-death ON/110.004s living attack endpoints/OFF/health loss/collapse/Continue. Explicit adopt-only room01-v1 profile is tested; native07 remains default, separate user data, no arbitrary-room/full-menu/source-setup/hardware/numeric-HP certificate. A separate fresh-capture VU-only replay now generates20CPPs twice, rebuilds the VU library/counted wrapper and passes two new native300s controls with five positive callbacks each and nine byte-identical sampled originals. This closes the old-generated-VU-source producer dependency for that qualified set only, not generic-library/full-source setup, normal-profile adoption, strictVU or all-frame/PS2 correctness. New generic-library9c capsule compiles126units/five archives from pinned sources and passes new2x300s controls with five positive VU callbacks each/nine exact sampled originals. Old archive inputs are no longer producers for those five new libraries; complete source assembly/tool bootstrap/normal acceptance and remaining wider gates stay open. No default promotion."
         },
         {
           "id": "RM01",
@@ -336,6 +336,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Rebuilding the five generic libraries from pinned sources",
+      "summary": "A separate prototype build now uses freshly compiled runtime, IOP and GUI/graphics libraries instead of the historical snapshot archives. The sampled original menu and room stay unchanged; normal launcher profiles are not switched.",
+      "changes": [
+        "Recovered the historical snapshot sidecar and qualified clean source pins. Added original disconnected configuration tooling and eight invented tests; no upstream source is mirrored.",
+        "Compiled126units and five libraries, then linked a separate native capsule. Retained the first strict compile-profile failure; only an inspected empty GLFW build-include path and output/PDB paths are remapped.",
+        "Ran two new300s parent/new-library controls: both exit0, all five VU callbacks execute, and nine original PNG samples match byte-for-byte. The actual menu and room originals are below."
+      ],
+      "validation": "Native controls exit0 after303.938/303.907s. Full352synthetic tests pass with3Windows skips in63.047s, after native completion. Source files, earlier inputs/originals, historical Rust WIP and original discs remain preserved.",
+      "limits": "This closes five cached-archive producer dependencies, not a compiler bootstrap, one fresh whole-game build, prototype installer, normal-profile promotion, graphics improvement or full-menu/PS2 certificate. Existing artifacts/warnings and input/audio/save/campaign/ABI/lifetime gates remain.",
+      "evidence_comparisons": [
+        "2026-11-12-generic-rebuild-1560",
+        "2026-11-12-generic-rebuild-4501"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_GENERIC_REBUILD.md",
+        "label": "Pinned sources, actual compile/link/native results and remaining setup gates"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1353,6 +1374,102 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-generic-rebuild-1560",
+      "date": "2026-11-12",
+      "title": "Original menu after the generic-library rebuild",
+      "feature": "DT03",
+      "reviewed": true,
+      "alignment": "same-frame",
+      "scenario": "Two new300s AOT1 prototype controls, same finite original RoomJump Stage1/Room00/Point1/Start; actual field1560. Retained0ef VU capsule versus new9c with five fresh generic libraries. Not a PS2 or normal-mode effect comparison.",
+      "labels": {
+        "reference": "Before: retained generic libraries",
+        "bevy": "After: five freshly built libraries"
+      },
+      "observations": [
+        "The whole unchanged original PNG at this actual field is byte-identical between these runs.",
+        "Both native controls exit0; five compiled VU callbacks execute in each. Nine sampled originals match, not every-frame behavior or a graphics improvement."
+      ],
+      "limits": [
+        "Existing qualified source checkouts reused read-only, not newly downloaded or a rebuilt compiler toolchain.",
+        "Retained BOOT/module/VU/host continuation inputs remain; not one fresh whole-game source build or a complete public prototype installer.",
+        "Nine sampled original files, not every-frame timing/fidelity, arbitrary rooms/menus, strictVU or PS2 hardware equivalence.",
+        "No inherited normal F1/F2/Warp/no-death acceptance in the new9c capsule; earlier results remain scoped to their exact binaries.",
+        "Retained translation1error/1450warnings, strictVU, rendering/loading/accounting0x480/partial-failure/lifetime limits are not fixed.",
+        "Hardware, audible audio, genuine game Save/exit/Load and campaign remain open. No performance gain is claimed.",
+        "Discs/ELF/assets/raw maps/dumps/generated game or VU source/objects/archives/native binaries/cards remain private; game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Unchanged native renderer original, actual field1560; baseline run. Original five-choice menu.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL, AOT1; exact executable 0ef156637d67835e4a956288985e6bdca83411ef5d7f696272a701ba55f21ef7. Fresh-VU parent with historical generic archives.",
+        "revision": "02de3050a5975e24ec43ef573a636b61f54bff37",
+        "captured_at": "2026-11-12T18:54:22.419849+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Unchanged native renderer original, actual field1560; fresh-generic run. Original five-choice menu.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL, AOT1; exact executable 9c0e316c83b85bbffab7920f59701f899566f8363567b814c7030cd1a1ae00ba. Original configuration46a09e9;126fresh generic units/five new libraries over pinned1646 and three qualified dependency sources. BOOT/module/VU/host inputs explicitly retained.",
+        "revision": "46a09e9308818b157e7da723db75772bbe809879",
+        "captured_at": "2026-11-12T18:59:27.241601+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-generic-rebuild-4501",
+      "date": "2026-11-12",
+      "title": "Original room after the generic-library rebuild",
+      "feature": "DT03",
+      "reviewed": true,
+      "alignment": "same-frame",
+      "scenario": "Two new300s AOT1 prototype controls, same finite original RoomJump Stage1/Room00/Point1/Start; actual field4501. Retained0ef VU capsule versus new9c with five fresh generic libraries. Not a PS2 or normal-mode effect comparison.",
+      "labels": {
+        "reference": "Before: retained generic libraries",
+        "bevy": "After: five freshly built libraries"
+      },
+      "observations": [
+        "The whole unchanged original PNG at this actual field is byte-identical between these runs.",
+        "Both native controls exit0; five compiled VU callbacks execute in each. Nine sampled originals match, not every-frame behavior or a graphics improvement."
+      ],
+      "limits": [
+        "Existing qualified source checkouts reused read-only, not newly downloaded or a rebuilt compiler toolchain.",
+        "Retained BOOT/module/VU/host continuation inputs remain; not one fresh whole-game source build or a complete public prototype installer.",
+        "Nine sampled original files, not every-frame timing/fidelity, arbitrary rooms/menus, strictVU or PS2 hardware equivalence.",
+        "No inherited normal F1/F2/Warp/no-death acceptance in the new9c capsule; earlier results remain scoped to their exact binaries.",
+        "Retained translation1error/1450warnings, strictVU, rendering/loading/accounting0x480/partial-failure/lifetime limits are not fixed.",
+        "Hardware, audible audio, genuine game Save/exit/Load and campaign remain open. No performance gain is claimed.",
+        "Discs/ELF/assets/raw maps/dumps/generated game or VU source/objects/archives/native binaries/cards remain private; game imagery is not GPL."
+      ],
+      "reference": {
+        "caption": "Unchanged native renderer original, actual field4501; baseline run. Original room, Gene and HUD; existing artifacts retained.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL, AOT1; exact executable 0ef156637d67835e4a956288985e6bdca83411ef5d7f696272a701ba55f21ef7. Fresh-VU parent with historical generic archives.",
+        "revision": "02de3050a5975e24ec43ef573a636b61f54bff37",
+        "captured_at": "2026-11-12T18:56:53.238624+00:00",
+        "path": "media/2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff.png",
+        "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Unchanged native renderer original, actual field4501; fresh-generic run. Original room, Gene and HUD; existing artifacts retained.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL, AOT1; exact executable 9c0e316c83b85bbffab7920f59701f899566f8363567b814c7030cd1a1ae00ba. Original configuration46a09e9;126fresh generic units/five new libraries over pinned1646 and three qualified dependency sources. BOOT/module/VU/host inputs explicitly retained.",
+        "revision": "46a09e9308818b157e7da723db75772bbe809879",
+        "captured_at": "2026-11-12T19:01:58.944282+00:00",
+        "path": "media/2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff.png",
+        "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-vu-replay-1560",
       "date": "2026-11-12",
