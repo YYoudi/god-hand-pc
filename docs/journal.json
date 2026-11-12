@@ -5,13 +5,13 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "The fresh prototype-source build has an exact-input native gate and an observed actual F1/F2 path. One ordinary Down tap still fails to move the menu cursor; full keyboard usability remains open.",
-  "next": "Trace ordinary keyboard events, sampled host state and the original pad consumer; verify navigation and close before claiming a usable debug-menu release. Then controlled focus/held/repeat and a checked prototype workflow. Keep retail separate.",
+  "next": "Exercise Room Jump and Player Warp through the actual F2 workbench, including required stick controls, effects and exit/restoration. Then complete a checked personal-disc prototype setup and controlled focus/held/repeat cases. Mouse navigation/close and one original option do not complete the goal; keep retail separate.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The native prototype now has a fresh private source build and an in-process exact-input gate, one actual F1/F2 owner round trip, original Room Jump and earlier exact-build Warp/no-death proofs. One ordinary Down tap does not move the cursor. Full keyboard navigation/close/focus, a public prototype installer, broad menu/room coverage and retail debug backend remain open. Old baseline0x7a and failed variants are preserved.",
+    "The prototype now has actual F2/mouse original-menu navigation/close, F1 refusal/no deferred activation and original no-death refill/OFF/death evidence on the new candidate. Automated Down is GLFW_UNKNOWN, not a demonstrated hardware fault. Room Jump bootstrap is not mouse-panel Room Jump; Warp through this panel, analog controls, hardware/focus/held/repeat, broad menu/room coverage, public prototype setup and retail backend remain open. Old failures and strict VU1 mismatch are retained.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -111,14 +111,14 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Fresh private guarded source build: actual F1 controls open, F2 press/release refused while F1 owns input, F1 close, then actual F2 press/release opens original menu. One normal Down tap does not move cursor; keyboard navigation/close, controlled focus/held/repeat and checked public prototype workflow remain open. Not a retail backend."
+          "acceptance": "Actual same-candidate F2 and mouse Down/Circle/Right/Left/Cross navigate and close the ORIGINAL prototype menu; native PL NO DEATH ON/OFF/refill/restored death observed. F1 owns input, refused F2 is not deferred. This additional keyboard-only opt-in controller panel is not a keyboard fix, checked public prototype setup, hardware/focus/held/repeat acceptance or retail backend. Keep in progress."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Original Player Warp actor movement/control and camera/HUD restoration observed. Original no-death has actual matched damage/refill, original ON/OFF controls and same-process OFF/death native evidence in one prototype room. No lethal-floor-path, full menu/invalid-state/retail acceptance. Actual F1/F2 short-key/focus ownership and a checked prototype workflow remain open."
+          "acceptance": "Earlier exact-build Warp movement/control and no-death lethal-total/OFF/death proofs preserved. New actual F2/mouse option/refill/OFF/death workflow observed on another exact binary. Still prove Room Jump and Warp via current workbench with required stick inputs, invalid states, checked setup and wider menu/room coverage; no strict VU1/hardware/retail acceptance."
         },
         {
           "id": "RM01",
@@ -331,6 +331,30 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "F2 and mouse controls now navigate the original prototype menu",
+      "summary": "An opt-in host controller panel now lets actual mouse clicks navigate and close the original menu. F1 retains ownership. Original no-death refill behavior and OFF/death/Continue are observed on this same native candidate.",
+      "changes": [
+        "Added original GPL model, Raylib view and chained mouse callback integration. Requests use the existing bounded controller FIFO, not guest flags/calls or effect ACKs. Normal keyboard semantics stay unchanged.",
+        "Isolated the automated Down event as GLFW_UNKNOWN; no physical keyboard was required from the absent owner and no unknown key was aliased.",
+        "Added an explicit reviewed native-host JPEG comparison profile. Selected unchanged actual app originals below include the new panel, menu actions and limits; they are not journal screenshots or lossless fidelity images."
+      ],
+      "validation": "Compile-main/guard/link0; three pre-runtime refusals34/35/36. Actual native837ee7ec runs475.175seconds, then normal Alt-F4 after Continue exits0. F2 opens; actual mouse navigates/closes and toggles ON/OFF; F1 refuses F2 with no deferred activation. Three selected ON hits reduce25HP and five original refill events restore maximum; fourteen post-OFF selected calls reach HP0. All9841retained file hashes, original discs and scratch controls agree. Full synthetic suite267tests passes with three Windows symlink skips; invented inputs only.",
+      "limits": "Not a complete debug-menu release, keyboard fix, physical device test or public prototype installer. Room Jump used declared bootstrap, not the mouse panel; Warp and analog requests through this UI remain open.25ON HP is not a lethal-total survival proof on this binary; earlier native22 proof is separate. Strict VU1 mismatch, wider scenes/settings/save/audio/campaign and retail debug remain open. Game imagery rights remain separate.",
+      "evidence_comparisons": [
+        "2026-11-12-prototype-controller-navigation",
+        "2026-11-12-prototype-controller-option",
+        "2026-11-12-prototype-controller-close",
+        "2026-11-12-prototype-controller-off-death",
+        "2026-11-12-prototype-controller-f1-owner"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_CONTROLLER_PANEL.md",
+        "label": "Native controller panel, actual effects and remaining gates"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1040,6 +1064,267 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-prototype-controller-navigation",
+      "date": "2026-11-12",
+      "title": "Actual F2 and mouse navigation of the original prototype menu",
+      "feature": "DT02",
+      "scenario": "One fresh native475.175second prototype trial, declared room bootstrap through field2800 only; all later interaction is actual software OS F1/F2 and observed mouse clicks. Keyboard-only scratch, no external FIFO writer after bootstrap, no fakepad, no attacks or autonomous level completion.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F2: original Room Jump selected",
+        "bevy": "Mouse Down: original DEBUG OPTION selected"
+      },
+      "observations": [
+        "Actual software F2 opens the original menu and the additional host controller panel. A subsequent actual mouse Down changes the original cursor from Room Jump to DEBUG OPTION.",
+        "The panel sends the existing bounded Down input, not a game-flag write, native guest call or replacement menu."
+      ],
+      "limits": [
+        "Same prototype native executable837ee7ec; at capture time publicbasefac575f plus uncommitted host headers, later committed unchanged at6235f99. Private generated sources/modules and host integration still required. Not a public ISO-only prototype installer or retail backend.",
+        "Different times/states, unmatched rather than same-frame/camera parity. Original JPEG backend compression is retained byte-for-byte; no crop, redraw, conversion or normalization. Native app title/border retained; no unrelated app imagery.",
+        "Finite controller requests are not effect acknowledgements. Original state is accepted only where visible and corroborated by read-only diagnostics. No complete menu/room, analog-stick, hardware held/repeat/focus or strict VU1 acceptance. Game imagery is not GPL/MIT."
+      ],
+      "reference": {
+        "caption": "F2: original Room Jump selected. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:27:16.988Z",
+        "path": "media/f8e6b37c53799a744f9ab20cb4ca1d40b320b4a8fb66369cc9ecdf7477b2f24b.jpg",
+        "sha256": "f8e6b37c53799a744f9ab20cb4ca1d40b320b4a8fb66369cc9ecdf7477b2f24b",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Mouse Down: original DEBUG OPTION selected. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:27:38.607Z",
+        "path": "media/fc2ed72f68eee214fb027c41600e74941dae171e0becaabe51d21cd41bcd27ba.jpg",
+        "sha256": "fc2ed72f68eee214fb027c41600e74941dae171e0becaabe51d21cd41bcd27ba",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-prototype-controller-option",
+      "date": "2026-11-12",
+      "title": "Mouse input changes the original no-death option",
+      "feature": "DT03",
+      "scenario": "One fresh native475.175second prototype trial, declared room bootstrap through field2800 only; all later interaction is actual software OS F1/F2 and observed mouse clicks. Keyboard-only scratch, no external FIFO writer after bootstrap, no fakepad, no attacks or autonomous level completion.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original PL NO DEATH: OFF",
+        "bevy": "Original PL NO DEATH: ON"
+      },
+      "observations": [
+        "Actual mouse Circle opens the original DEBUG OPTION list; actual mouse Right changes PL NO DEATH from OFF to ON.",
+        "This pair proves option state, not survival. Later same-process read-only evidence observes three selected ON damage calls totaling25HP reduction and five original maximum-HP refills."
+      ],
+      "limits": [
+        "Same prototype native executable837ee7ec; at capture time publicbasefac575f plus uncommitted host headers, later committed unchanged at6235f99. Private generated sources/modules and host integration still required. Not a public ISO-only prototype installer or retail backend.",
+        "Different times/states, unmatched rather than same-frame/camera parity. Original JPEG backend compression is retained byte-for-byte; no crop, redraw, conversion or normalization. Native app title/border retained; no unrelated app imagery.",
+        "Finite controller requests are not effect acknowledgements. Original state is accepted only where visible and corroborated by read-only diagnostics. No complete menu/room, analog-stick, hardware held/repeat/focus or strict VU1 acceptance. Game imagery is not GPL/MIT."
+      ],
+      "reference": {
+        "caption": "Original PL NO DEATH: OFF. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:27:49.302Z",
+        "path": "media/430d62f1595fae4e371820f07347194d3f036056f46c63d0b743397718c87050.jpg",
+        "sha256": "430d62f1595fae4e371820f07347194d3f036056f46c63d0b743397718c87050",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Original PL NO DEATH: ON. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:28:13.840Z",
+        "path": "media/326b2246fd1c77b6828fef8d03b035634da9d27357a6c215097ab1d88da8f2cd.jpg",
+        "sha256": "326b2246fd1c77b6828fef8d03b035634da9d27357a6c215097ab1d88da8f2cd",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-prototype-controller-close",
+      "date": "2026-11-12",
+      "title": "Mouse Cross returns from the original menu to the real room",
+      "feature": "DT02",
+      "scenario": "One fresh native475.175second prototype trial, declared room bootstrap through field2800 only; all later interaction is actual software OS F1/F2 and observed mouse clicks. Keyboard-only scratch, no external FIFO writer after bootstrap, no fakepad, no attacks or autonomous level completion.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original parent menu after first Cross",
+        "bevy": "Original room/HUD after second Cross"
+      },
+      "observations": [
+        "Two separately observed mouse Cross requests leave options and then close the original parent menu. The actual room, player and HUD return.",
+        "The controller panel remains visible and does not itself pause the game. Hide is a separate host-only operation."
+      ],
+      "limits": [
+        "Same prototype native executable837ee7ec; at capture time publicbasefac575f plus uncommitted host headers, later committed unchanged at6235f99. Private generated sources/modules and host integration still required. Not a public ISO-only prototype installer or retail backend.",
+        "Different times/states, unmatched rather than same-frame/camera parity. Original JPEG backend compression is retained byte-for-byte; no crop, redraw, conversion or normalization. Native app title/border retained; no unrelated app imagery.",
+        "Finite controller requests are not effect acknowledgements. Original state is accepted only where visible and corroborated by read-only diagnostics. No complete menu/room, analog-stick, hardware held/repeat/focus or strict VU1 acceptance. Game imagery is not GPL/MIT."
+      ],
+      "reference": {
+        "caption": "Original parent menu after first Cross. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:28:24.775Z",
+        "path": "media/19bde8f68086a9d639c297f21acec35ca38764a52f34f050e1f6ce2dbb58c5e1.jpg",
+        "sha256": "19bde8f68086a9d639c297f21acec35ca38764a52f34f050e1f6ce2dbb58c5e1",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Original room/HUD after second Cross. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:28:32.938Z",
+        "path": "media/95be23fe02ab8a34c478b19056ee894037f75da8c39cc666be5197b5c0d61872.jpg",
+        "sha256": "95be23fe02ab8a34c478b19056ee894037f75da8c39cc666be5197b5c0d61872",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-prototype-controller-off-death",
+      "date": "2026-11-12",
+      "title": "After mouse deactivation, damage reaches death and Continue",
+      "feature": "DT03",
+      "scenario": "One fresh native475.175second prototype trial, declared room bootstrap through field2800 only; all later interaction is actual software OS F1/F2 and observed mouse clicks. Keyboard-only scratch, no external FIFO writer after bootstrap, no fakepad, no attacks or autonomous level completion.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original PL NO DEATH restored OFF",
+        "bevy": "Later original Continue prompt"
+      },
+      "observations": [
+        "After actual F2/Down/Circle, mouse Left restores the original option to OFF. Mouse Cross twice closes the original menu; Hide removes only the host panel.",
+        "Fourteen selected damage calls AFTER this deactivation accumulate to HP0 at field10728; visible collapse and Continue follow. One earlier pre-ON hit makes15OFF calls overall, not15after restoration.",
+        "The three selected ON hits total25HP, below100maximum, so this run is a refill/effect and restored-death control, not a new lethal-total ON survival proof. Earlier native22 survival evidence remains separate."
+      ],
+      "limits": [
+        "Same prototype native executable837ee7ec; at capture time publicbasefac575f plus uncommitted host headers, later committed unchanged at6235f99. Private generated sources/modules and host integration still required. Not a public ISO-only prototype installer or retail backend.",
+        "Different times/states, unmatched rather than same-frame/camera parity. Original JPEG backend compression is retained byte-for-byte; no crop, redraw, conversion or normalization. Native app title/border retained; no unrelated app imagery.",
+        "Finite controller requests are not effect acknowledgements. Original state is accepted only where visible and corroborated by read-only diagnostics. No complete menu/room, analog-stick, hardware held/repeat/focus or strict VU1 acceptance. Game imagery is not GPL/MIT."
+      ],
+      "reference": {
+        "caption": "Original PL NO DEATH restored OFF. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:30:02.316Z",
+        "path": "media/4c88567b25f5e424e6f353e05cb5b2d84e59b961b622c7758e4de39927665cbc.jpg",
+        "sha256": "4c88567b25f5e424e6f353e05cb5b2d84e59b961b622c7758e4de39927665cbc",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Later original Continue prompt. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:33:13.461Z",
+        "path": "media/a3d81787e6c9f15df0df08b388047355b8bd336b2c696fda5a539c15002f9cb3.jpg",
+        "sha256": "a3d81787e6c9f15df0df08b388047355b8bd336b2c696fda5a539c15002f9cb3",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-prototype-controller-f1-owner",
+      "date": "2026-11-12",
+      "title": "F1 owns input and refused F2 is not deferred",
+      "feature": "DT02",
+      "scenario": "One fresh native475.175second prototype trial, declared room bootstrap through field2800 only; all later interaction is actual software OS F1/F2 and observed mouse clicks. Keyboard-only scratch, no external FIFO writer after bootstrap, no fakepad, no attacks or autonomous level completion.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F1 remains open after actual F2 refusal",
+        "bevy": "Actual F1 close returns to gameplay"
+      },
+      "observations": [
+        "Actual F1 opens the existing controls screen and closes the additional controller surface. Actual F2 is refused while F1 owns input.",
+        "After actual F1 closes, gameplay returns without a deferred menu/panel. A later distinct actual F2 is accepted. Scratch controls bytes remain unchanged; no preference edit/save or game-save claim."
+      ],
+      "limits": [
+        "Same prototype native executable837ee7ec; at capture time publicbasefac575f plus uncommitted host headers, later committed unchanged at6235f99. Private generated sources/modules and host integration still required. Not a public ISO-only prototype installer or retail backend.",
+        "Different times/states, unmatched rather than same-frame/camera parity. Original JPEG backend compression is retained byte-for-byte; no crop, redraw, conversion or normalization. Native app title/border retained; no unrelated app imagery.",
+        "Finite controller requests are not effect acknowledgements. Original state is accepted only where visible and corroborated by read-only diagnostics. No complete menu/room, analog-stick, hardware held/repeat/focus or strict VU1 acceptance. Game imagery is not GPL/MIT."
+      ],
+      "reference": {
+        "caption": "F1 remains open after actual F2 refusal. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:28:53.822Z",
+        "path": "media/13daa0203d38d9b7b2241fcf784e6c6ed5205889a0c8491cf91c0c4e984b91b4.jpg",
+        "sha256": "13daa0203d38d9b7b2241fcf784e6c6ed5205889a0c8491cf91c0c4e984b91b4",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Actual F1 close returns to gameplay. Unchanged lossy owned-window original, including native title/border; capture-completion time, not a guest-frame timestamp.",
+        "profile": "prototype-june-2006",
+        "runtime": "Private guarded native OpenGL prototype, controller-panel04; exe837ee7ec, original public headers match6235f99; source chain ab42ef07. Software OS input, not physical keyboard.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T07:29:12.025Z",
+        "path": "media/bafdc85cffc8dc6b002dd51c8166e2c7868144e0b40d3e658e3007be34328769.jpg",
+        "sha256": "bafdc85cffc8dc6b002dd51c8166e2c7868144e0b40d3e658e3007be34328769",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
     {
       "id": "2026-11-12-prototype-source-room-jump",
       "date": "2026-11-12",

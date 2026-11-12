@@ -1,5 +1,12 @@
 # God Hand PC continuation tooling
 
+Latest prototype result: [F2 and mouse navigation of the original menu](PROTOTYPE_CONTROLLER_PANEL.md).
+Original no-death refill/OFF/death and F1 ownership are observed on this exact
+native candidate. It is an opt-in controller-request panel, not a keyboard fix,
+complete debug menu, checked public prototype setup or retail backend. The journal
+now includes unchanged original captures of the actual native menu and panel.
+
+
 Latest [capture investigation](CAPTURE_READBACK.md): a same-frame native control
 bounds a DPI readback bug, while a separate scene mismatch remains unresolved.
 The new candidate is isolated on its research branch, not promoted on main.

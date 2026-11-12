@@ -1,5 +1,29 @@
 # God Hand PC continuation - agent instructions
 
+## Actual prototype mouse workbench — 2026-11-12
+
+Read PROTOTYPE_CONTROLLER_PANEL.md and the canonical checkpoint. Native837ee7ec
+compiled exact public6235f99 headers, actual F2 opens original menu plus opt-in
+controller panel; real mouse navigation/close, F1 refusal/no deferred activation,
+original no-death ON/refills/OFF/HP0/collapse/Continue observed. Three ON calls25HP
+and five refills, NOT lethal-total ON survival on this executable;14post-OFF calls,
+one extra pre-ON OFF call. Normal Alt-F4 after475.175s exits0, NOT900s watchdog.
+Do not patch normal keyboard semantics: observer03 sees software DownUNKNOWN/-1,
+scan256; K62us loss belongs to observer02. Manual owner unavailable, no keyboard
+handoff pending. Panel requests are finite normal controller inputs, not effect
+ACKs, readiness/flag writes or a pause. Keyboard-only live bindings/otherpads0;
+F1 closes panel and cancels pending clicks; already sent pulse cannot be undone.
+RoomJump bootstrap is NOT mouse-panel RoomJump; Warp/analog inputs through panel,
+checked prototype setup, controlled focus/held/repeat and full menu remain open.
+Next prove these actual UI actions/effects/restoration; do not complete the goal
+on this narrower scoped success. Earlier native22/Warp binaries remain separate.
+Selected unchanged642x512 native-window JPEGs use explicit native-host-jpeg-v1
+comparison profile with source/original/lossy declarations, bounded JFIF/hash/
+dimensions; no journal-kind loophole, cropping, conversion or pixel-parity claim.
+No other-app images. Old PNG/JPEG journal policies preserved, game art not GPL.
+No new Rust/delegation/retail promotion; keep all private inputs/evidence.
+
+
 ## Fresh source build / actual keys / ordinary-key gap — 2026-11-12
 
 Read PROTOTYPE_SOURCE_BUILD.md and canonical checkpoint. Fresh build10566steps0,

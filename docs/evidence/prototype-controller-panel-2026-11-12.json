@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-12",
+  "scope": "Scoped real prototype F2/mouse navigation, original no-death refill and restored-death control, not full debug-menu completion",
+  "public_header_revision": "6235f99fea14563463c6636d90289678d10cf64e",
+  "capture_source_state": "fac575f7789192ed2533cfc5c787a20438a1e275 plus uncommitted additions, later committed unchanged",
+  "native_exe_sha256": "837ee7ec3153925d8855e02a9b13423ef1554571f7576acf64b1fe051af6905d",
+  "private_source_file_chain_sha256": "ab42ef077b5c6cd8f6b12898c83f17d565af63b9851f9a193742061c35cb392a",
+  "public_headers": {
+    "prototype_controller_panel.hpp": "5d3ffe8e0a898a4e9d104304029ca13e5bda68421551e1368e0e522fbc72e41d",
+    "prototype_controller_view.hpp": "0bf13e16d65c3da11e3faef5debb2fbdf508d023c56fcf6f4cb9927f20b6d06d",
+    "prototype_controller_native.hpp": "1e7603646ab30b3e4b1825bfac1e64aacca2d96636b17328f8033da197c7af24"
+  },
+  "build_steps": [
+    {
+      "step": "compile-main",
+      "exit": 0
+    },
+    {
+      "step": "compile-guard",
+      "exit": 0
+    },
+    {
+      "step": "link",
+      "exit": 0
+    }
+  ],
+  "original_objects_not_linked": 9793,
+  "fresh_objects_reused": 9821,
+  "generic_libraries_reused": 5,
+  "native": {
+    "started_at": "2026-11-12T07:25:32.358659+00:00",
+    "ended_at": "2026-11-12T07:33:27.533303+00:00",
+    "elapsed_seconds": 475.174644,
+    "exit": 0,
+    "watchdog_seconds": 900,
+    "termination": "Actual authorized Alt-F4 after observed Continue prompt; native0, no kill. First immediate list_windows still briefly returned closing window; actual process handle then terminal0.",
+    "native_frames": 197,
+    "retained_file_hashes_verified": 9841,
+    "all_inputs_controls_preserved": true
+  },
+  "input_refusals": [
+    {
+      "case": "invalid-version",
+      "exit": 34,
+      "no_output_created": true
+    },
+    {
+      "case": "missing-shortcut",
+      "exit": 35,
+      "no_output_created": true
+    },
+    {
+      "case": "unbounded-other-pad",
+      "exit": 36,
+      "no_output_created": true
+    }
+  ],
+  "actual_ui": [
+    "F2 opens original menu and additional panel",
+    "Mouse Down/Circle reaches original DEBUG OPTION",
+    "Mouse Right turns original PL NO DEATH ON",
+    "Mouse Cross twice restores real room/HUD",
+    "F1 refuses F2; close has no deferred activation",
+    "Later F2/mouse Left restores original option OFF",
+    "Mouse Cross twice and Hide restore ordinary unobstructed room",
+    "Original collapse and Continue after OFF"
+  ],
+  "health": {
+    "selected_ON_calls": 3,
+    "selected_ON_total_HP_reduction": 25,
+    "actual_original_positive_HP_refills": 5,
+    "selected_OFF_calls_after_deactivation": 14,
+    "selected_OFF_calls_before_ON": 1,
+    "OFF_zero_HP_field": 10728,
+    "not_new_lethal_total_ON_survival_proof": true
+  },
+  "synthetic_tests": {
+    "count": 267,
+    "Windows_skips": 3,
+    "status": "passed",
+    "inputs": "Original invented fixtures only; screenshot registry reads publication envelopes/hashes, not game rendering fixtures"
+  },
+  "comparisons": [
+    {
+      "id": "2026-11-12-prototype-controller-navigation",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "f8e6b37c53799a744f9ab20cb4ca1d40b320b4a8fb66369cc9ecdf7477b2f24b",
+          "path": "media/f8e6b37c53799a744f9ab20cb4ca1d40b320b4a8fb66369cc9ecdf7477b2f24b.jpg",
+          "captured_at": "2026-11-12T07:27:16.988Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "fc2ed72f68eee214fb027c41600e74941dae171e0becaabe51d21cd41bcd27ba",
+          "path": "media/fc2ed72f68eee214fb027c41600e74941dae171e0becaabe51d21cd41bcd27ba.jpg",
+          "captured_at": "2026-11-12T07:27:38.607Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-controller-option",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "430d62f1595fae4e371820f07347194d3f036056f46c63d0b743397718c87050",
+          "path": "media/430d62f1595fae4e371820f07347194d3f036056f46c63d0b743397718c87050.jpg",
+          "captured_at": "2026-11-12T07:27:49.302Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "326b2246fd1c77b6828fef8d03b035634da9d27357a6c215097ab1d88da8f2cd",
+          "path": "media/326b2246fd1c77b6828fef8d03b035634da9d27357a6c215097ab1d88da8f2cd.jpg",
+          "captured_at": "2026-11-12T07:28:13.840Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-controller-close",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "19bde8f68086a9d639c297f21acec35ca38764a52f34f050e1f6ce2dbb58c5e1",
+          "path": "media/19bde8f68086a9d639c297f21acec35ca38764a52f34f050e1f6ce2dbb58c5e1.jpg",
+          "captured_at": "2026-11-12T07:28:24.775Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "95be23fe02ab8a34c478b19056ee894037f75da8c39cc666be5197b5c0d61872",
+          "path": "media/95be23fe02ab8a34c478b19056ee894037f75da8c39cc666be5197b5c0d61872.jpg",
+          "captured_at": "2026-11-12T07:28:32.938Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-controller-off-death",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "4c88567b25f5e424e6f353e05cb5b2d84e59b961b622c7758e4de39927665cbc",
+          "path": "media/4c88567b25f5e424e6f353e05cb5b2d84e59b961b622c7758e4de39927665cbc.jpg",
+          "captured_at": "2026-11-12T07:30:02.316Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "a3d81787e6c9f15df0df08b388047355b8bd336b2c696fda5a539c15002f9cb3",
+          "path": "media/a3d81787e6c9f15df0df08b388047355b8bd336b2c696fda5a539c15002f9cb3.jpg",
+          "captured_at": "2026-11-12T07:33:13.461Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-prototype-controller-f1-owner",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "13daa0203d38d9b7b2241fcf784e6c6ed5205889a0c8491cf91c0c4e984b91b4",
+          "path": "media/13daa0203d38d9b7b2241fcf784e6c6ed5205889a0c8491cf91c0c4e984b91b4.jpg",
+          "captured_at": "2026-11-12T07:28:53.822Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "bafdc85cffc8dc6b002dd51c8166e2c7868144e0b40d3e658e3007be34328769",
+          "path": "media/bafdc85cffc8dc6b002dd51c8166e2c7868144e0b40d3e658e3007be34328769.jpg",
+          "captured_at": "2026-11-12T07:29:12.025Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "No keyboard input semantics changed or hardware keyboard tested. Automated Down UNKNOWN remains a tool limitation.",
+    "ON observed refills, not a lethal-total survival proof on THIS executable. Earlier900s survival is a different native22 binary.",
+    "RoomJump bootstrap reaches1/00/Point0, not RoomJump invoked by this new mouse panel. Player Warp not tested through panel.",
+    "No full original menu coverage, public ISO-only prototype setup, strict VU1 or retail result.",
+    "Host JPEGs are backend-compressed unchanged originals, not lossless renderer captures or pixel-fidelity evidence. Window border/title are retained; only owned native app reviewed."
+  ]
+}

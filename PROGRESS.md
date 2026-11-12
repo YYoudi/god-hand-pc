@@ -1,5 +1,13 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [actual prototype F2/mouse workbench](PROTOTYPE_CONTROLLER_PANEL.md).
+The original menu is now actually navigable/closable with this additional opt-in
+mouse panel, F1 keeps ownership, and original ON/refill/OFF/death/Continue is
+observed. Automated Down is GLFW_UNKNOWN, not a demonstrated hardware-key fault.
+This is not a full menu release, analog/Warp UI proof or checked prototype setup.
+Full goal remains ACTIVE. Earlier dated latest-result paragraphs are history.
+
+
 Latest scoped result: [fresh source build and actual F1/F2](PROTOTYPE_SOURCE_BUILD.md).
 Native exact-input refusals and one actual F1/F2 owner round trip are observed.
 Ordinary short Down navigation still fails; close/focus/held/repeat and the public
@@ -160,6 +168,11 @@ Register both sides, implementation labels, same-frame/same-landmark/unmatched
 alignment, original resolution, capture time/timezone, exact runtime/revision,
 SHA-256, scenario, observations and limitations in `comparisons`. Preserve each
 original byte-for-byte under docs/media/<sha256>.png, with a download link.
+The explicit native-host-jpeg-v1 profile also allows reviewed unchanged owned-app
+JPEGs under docs/media/<sha256>.jpg: declare source, unchanged original and lossy
+encoding; validate bounded baseline JFIF envelope/dimensions/hash. No conversion,
+EXIF/comments/trailing data, other-app imagery, pixel-fidelity claim or journal-
+category loophole. This does not replace PNG originals or legal rights review.
 Legacy `bevy` registry keys in imported native comparisons are schema history,
 not an implementation label. Retail and prototype claims stay separate.
 Do not manufacture image pairs for nonvisual work. No game pixels in test fixtures.

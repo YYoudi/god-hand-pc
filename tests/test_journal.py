@@ -115,12 +115,15 @@ class JournalTests(unittest.TestCase):
             (source/'.gitattributes').write_bytes((pc.ROOT/'.gitattributes').read_bytes())
             invented=b'# Invented historical text\n\nNo game data.\n'
             path=source/'docs/reports/invented.md';path.parent.mkdir(parents=True);path.write_bytes(invented)
-            git('add','--','.gitattributes','docs/reports/invented.md')
+            image=source/'docs/media/invented.jpg';image.parent.mkdir(parents=True);image.write_bytes(self.host_jpeg())
+            self.assertIn('text: unset',git('check-attr','text','--','docs/media/invented.jpg').decode())
+            git('add','--','.gitattributes','docs/reports/invented.md','docs/media/invented.jpg')
             git('-c','user.name=Synthetic Journal Test','-c','user.email=test@example.invalid',
                 'commit','-m','Invented immutable report')
             target=root/'clone'
             git('-c','core.autocrlf=true','clone',str(source),str(target))
             self.assertEqual((target/'docs/reports/invented.md').read_bytes(),invented)
+            self.assertEqual((target/'docs/media/invented.jpg').read_bytes(),self.host_jpeg())
 
     def test_broken_navigation_and_traversal_refused(self):
         for url in ['missing.html','../../outside.html']:

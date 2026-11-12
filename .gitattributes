@@ -2,4 +2,5 @@
 docs/reports/*.md -text
 docs/IMPORTED_MIT_LICENSE.txt -text
 docs/media/*.png -text
+docs/media/*.jpg -text
 docs/captures/*.jpg -text
