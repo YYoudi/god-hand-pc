@@ -1,0 +1,284 @@
+{
+  "date": "2026-11-12",
+  "source_helper_revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+  "scope": "New selected-source producer/build tree with bounded actual native evidence, not a complete public prototype setup or normal-launch promotion",
+  "source_repositories": [
+    {
+      "name": "raylib",
+      "revision": "c1ab645ca298a2801097931d1079b10ff7eb9df8",
+      "clean": true,
+      "tracked_inputs": 1031
+    },
+    {
+      "name": "imgui",
+      "revision": "b1bcb12a624af7509894c8e77dd47416997777fa",
+      "clean": true,
+      "tracked_inputs": 268
+    },
+    {
+      "name": "rlimgui",
+      "revision": "118221c8a532501a3c2c236b62950877cbefc2b4",
+      "clean": true,
+      "tracked_inputs": 30
+    },
+    {
+      "name": "elfio",
+      "revision": "8ae6cec5d60495822ecd57d736f66149da9b1830",
+      "clean": true,
+      "tracked_inputs": 222
+    },
+    {
+      "name": "fmt",
+      "revision": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+      "clean": true,
+      "tracked_inputs": 128
+    },
+    {
+      "name": "libdwarf",
+      "revision": "2e088b983562860f497b4fd789a3e61524eb857c",
+      "clean": true,
+      "tracked_inputs": 589
+    },
+    {
+      "name": "rabbitizer",
+      "revision": "d5804fa488474830a47fbf9f3693048ec1e45589",
+      "clean": true,
+      "tracked_inputs": 404
+    },
+    {
+      "name": "toml11",
+      "revision": "be08ba2be2a964edcdb3d3e3ea8d100abc26f286",
+      "clean": true,
+      "tracked_inputs": 260
+    },
+    {
+      "name": "runtime",
+      "revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+      "clean": true,
+      "tracked_inputs": 301
+    },
+    {
+      "name": "metadata",
+      "revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+      "clean": true,
+      "tracked_inputs": 8
+    }
+  ],
+  "new_tools": {
+    "recompiler": {
+      "sha256": "e558cdfb96b224b6449953bd2b268af52e57b2571ad6a5c2801c946192a06f58"
+    },
+    "VU_tool": {
+      "sha256": "10bf56c2c857522e241107bceb862a1d0264cf50f8d1cb4c89293dfdbec8bec4"
+    }
+  },
+  "generation": {
+    "fresh_disc_ELFs": 2,
+    "metadata_copy_nontext_flags_changed": 40,
+    "all_PT_LOAD_bytes_preserved": true,
+    "discovery_files": 9794,
+    "discovery_old_oracle_equal": true,
+    "selected_SDK_bindings": 103,
+    "known_direct_checks": 152,
+    "fresh_direct_ranges": 12,
+    "fresh_indirect_ranges": 21,
+    "own_ELF_instruction_relocations": 298,
+    "historical_seed_CSV_is_producer": false,
+    "BOOT_files": 9827,
+    "BOOT_old_oracle_equal": true,
+    "BOOT_errors": 1,
+    "BOOT_warnings": 1450,
+    "selected_modules": 5,
+    "module_functions": 729,
+    "raw_module_source_header_files": 744,
+    "module_generated_old_oracle_equal": true,
+    "module_errors": 0,
+    "module_warnings": 88
+  },
+  "source_plan": {
+    "original_host_sources_explicitly_reused": true,
+    "private_qualification_profiles_required": true,
+    "instrumented_game_bodies_copied_as_producer": false,
+    "new_insertion_helper": "source_inserts.py",
+    "reconstructed_insertion_only_functions": 4,
+    "full_instrumented_postimages_equal": true,
+    "original_PC_word_comment_lists_preserved": true,
+    "McPort_effective_API": "module",
+    "old_retained_direct_host_wrapper_not_replaced_by_archival_runtime_policy": true,
+    "fresh_wrapper_source_equal_effective_direct_host": true,
+    "both_new_link_maps_select_fresh_mcport_pack_object": true,
+    "map_is_all_function_execution_proof": false
+  },
+  "build": {
+    "compiler": "MSVC19.44.35229.0",
+    "jobs": 2,
+    "configure_and_corrected_whole_build_exits": [
+      0,
+      0
+    ],
+    "first_PCH_configuration_failure_preserved": true,
+    "PCH_fix": "CMake include-search spelling only, no guest edit",
+    "old_experimental_objects_or_snapshots_in_whole_input_graph": false,
+    "bootstrap_exe_sha256": "6494fe13cc3a97a9aa32c8ea9cd67bdc7df5fbe613780fe10ad314de53c43e8b",
+    "new_final_exe_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+    "same_newtree_object_files_preserved_across_final_build": 10567,
+    "object_count_caveat": "All pre-existing object artifacts including configuration/PCH/bootstrap-only, not a count of all linked functions.",
+    "new_VU_CPPs_per_generation": 20,
+    "new_VU_generations": 2,
+    "all_new_VU_CPPs_match_old_oracle_after_generation": true,
+    "counted_wrapper_bytes": 3472,
+    "counted_wrapper_source_byte_equal": true,
+    "VU_target_optimization": "/O2, including wrapper; previous separate wrapper was/O1",
+    "normal_profiles_changed": false,
+    "new_final_adopted": false
+  },
+  "bootstrap": {
+    "compiled_VU_request_exit": 29,
+    "refusal_before_input_verification_runtime_UI": true,
+    "AOT0_declared_seconds": 450,
+    "AOT0_native_exit": 0,
+    "AOT0_elapsed_seconds": 453.766,
+    "original_PNGs": 9,
+    "new_qualified_VU_images": 5,
+    "new_image_bytes": 81920,
+    "no_compiled_program_registration": true,
+    "all9_old_AOT0_originals_equal": true
+  },
+  "final_native_controls": [
+    {
+      "case": "final-control-9c",
+      "exit": 0,
+      "elapsed_seconds": 304.25,
+      "exe_sha256": "9c0e316c83b85bbffab7920f59701f899566f8363567b814c7030cd1a1ae00ba",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_exact_requested_filenames": [],
+      "additional_actual_filenames": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    },
+    {
+      "case": "final-whole-source",
+      "exit": 0,
+      "elapsed_seconds": 303.82800000000134,
+      "exe_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+      "registered": 5,
+      "positive_callbacks": 5,
+      "missing_exact_requested_filenames": [],
+      "additional_actual_filenames": [],
+      "missing_target_log_matches": 0,
+      "unimplemented_log_matches": 0,
+      "successful_window_close": true
+    }
+  ],
+  "final_sampled_originals": [
+    {
+      "actual_filename": "field-120.png",
+      "baseline_SHA256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "final_SHA256": "7a0d0a20e49a3924681f8e94da5b2c7c9662275eca227fb63dd974b2be9f6000",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-1560.png",
+      "baseline_SHA256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "final_SHA256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-2300.png",
+      "baseline_SHA256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+      "final_SHA256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-2700.png",
+      "baseline_SHA256": "68a28c80e844310b511702265233ac5eee53999212a0013f062059c516225e4e",
+      "final_SHA256": "68a28c80e844310b511702265233ac5eee53999212a0013f062059c516225e4e",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-2900.png",
+      "baseline_SHA256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+      "final_SHA256": "f126a9a68fb3e62e4e83218d268a694952d5340b1e85b3fb2ca912cd8c4a4c59",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-3300.png",
+      "baseline_SHA256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "final_SHA256": "640e71ed367bce1c2807d96d8f613cd5600eab4a3e7fe80d825824c22070db7d",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-4200.png",
+      "baseline_SHA256": "d75cd88d54b5ece55d406850ff9bac7a92c7ac2beaadff0d41e1a96a0d97431f",
+      "final_SHA256": "d75cd88d54b5ece55d406850ff9bac7a92c7ac2beaadff0d41e1a96a0d97431f",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-4501.png",
+      "baseline_SHA256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+      "final_SHA256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "actual_filename": "field-5001.png",
+      "baseline_SHA256": "c77f1c8471174220ae33806e112f09f113f5364f461267bba6191028c407b222",
+      "final_SHA256": "c77f1c8471174220ae33806e112f09f113f5364f461267bba6191028c407b222",
+      "byte_equal": true,
+      "dimensions": [
+        640,
+        480
+      ]
+    }
+  ],
+  "tests": {
+    "synthetic": 360,
+    "Windows_skips": 3,
+    "seconds": 61.642,
+    "exit": 0,
+    "new_insertion_focused_tests": 8
+  },
+  "retained_file_identities_verified": 45594,
+  "limits": [
+    "Selected BOOT/five-module source assembly, not all original rooms/options/game modules, full campaign or a complete prototype port.",
+    "Qualified original host main/IOP/controls sources, private insertion/base profiles and private orchestration remain explicit inputs; not a public ISO-only installer or independent clean-room reimplementation.",
+    "Existing clean source checkouts and installed toolchain reused; offline tools/libraries are newly compiled, not all sources newly downloaded.",
+    "Nine sampled originals, not all-frame/ISA/PS2/hardware/performance evidence. Old normal4acf effects are not inherited into newe677; no promotion.",
+    "Translation1error/1450warnings, module88warnings, strictVU mismatch, cloak/interface/loading/accounting0x480 and partial-failure/ignored-return/general ABI/lifetime limits remain.",
+    "Hardware, audible audio, genuine Save/exit/Load and human campaign testing remain open; no game, asset, dump, raw map, generated game/VU code, archive/binary or card is distributed.",
+    "Selected original game imagery has separate rights, not GPL; this is owner-requested documentation, not rights-holder authorization."
+  ]
+}

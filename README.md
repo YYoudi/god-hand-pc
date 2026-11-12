@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Latest selected-source result: [one new prototype producer/build tree](PROTOTYPE_WHOLE_SOURCE.md).
+Fresh disc generation, newly rebuilt tools/libraries and a whole selected-source
+build now reach the original menu/room. Original host/private qualification inputs
+remain; this is not a public ISO-only installer, all-room port or normal-profile
+promotion. The new executable still needs its own normal debug-action acceptance.
+
 Latest source boundary: [fresh generic-library build and native controls](PROTOTYPE_GENERIC_REBUILD.md).
 Five historical runtime/IOP/GUI archives are now rebuilt from pinned sources in a
 separate capsule; sampled original menu/room images remain unchanged. This is not

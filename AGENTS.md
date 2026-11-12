@@ -1,5 +1,34 @@
 # God Hand PC continuation - agent instructions
 
+## New selected-source tree and actual native controls - 2026-11-12
+
+Read PROTOTYPE_WHOLE_SOURCE.md and checkpoint/full_build_current. Newsource-built
+offline tools/generic libs; fresh2discELFs/9794discovery/103SDK+152directchecks/
+12direct+21indirect/298relocs/9827BOOTfiles exactoldoracle,1error1450warnings kept.
+Five freshmodules/729functions/744rawfiles/effective wrappers exact/88warnings.
+IMPORTANT: oldlink has DIRECT McPort hostpack MODULEapi in addition to archival
+RUNTIMEapi wrapper. Newrecipe regenerates effective directbehavior; do not blindly
+inherit archivalpolicy or claim earlier wrapper replay removed every hostinput.
+Original3aac129 insertion-only helper/8invented tests reconstruct4newraw observer
+bodies exactoldpostimages/allPCwords, not copied oldgamefunctions or ABI proof.
+Original host main/IOP/controls/profile sources explicit, not soleISO/publicsetup.
+FirstPCH configfailure retained; corrected include spelling. Newwholebootstrap
+6494fe13/compilelink0; actualAOT1refusal29 pre-runtime, AOT0new450s0/453.766s/
+9originals exactoldAOT0/5freshVUimages, originalmenu/room/Gene/HUD viewed.
+NEWVUtool20CPPs2x/exactold, wrapper3472bytes exact, finale677f789 compilelink0.
+10567newtree object artifacts unchanged, includesbootstrap/PCH/config not all
+linkedfunctions count. VUtarget includingwrapper/O2 differs oldwrapper/O1.
+NEW300s9c/e677 controls0/304.250+303.828s,5positiveVUcallbacks each/9PNGs exact.
+Both linkmaps selectnewMcPortpack; runtime logs showinstall, not everyABI/path.
+360tests/3Windows skips61.642s after allnative/buildterminal;45594identities kept.
+Normal07/default and explicitroom01-v1/4acf unchanged; e677NOTadopted, NO inherited
+normalF1/F2/Room01/Warp/no-death effects. Next NEWfinal normalnamed acceptance,
+then reviewed originalhost/profile/setup packaging and broaderqualified gates.
+Knownerror/strictVU/render/loading/0x480/partialfailure/lifetime/hardware/audio/
+SaveLoad/campaign limits stay. No guessed ready/flags/NOP/frees, Rust/delegation,
+or game/ELF/assets/rawmaps/generatedcode/objects/archives/binaries/cards public.
+Full goal ACTIVE, not complete; oldentries/originalmedia preserved unchanged.
+
 ## Fresh generic5 source build and native controls — 2026-11-12
 
 Read PROTOTYPE_GENERIC_REBUILD.md and checkpoint/generic_rebuild_current.
