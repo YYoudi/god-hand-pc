@@ -4,11 +4,11 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "Normal prototype sessions now reproduce scoped original RoomJump/no-death/Warp/return/death actions on unchanged07 without game observers. Fresh discovery/BOOT source and103static SDK bindings regenerate exactly from personal-disc inputs plus explicit private seeds; not a complete ISO-only setup or retail/full-fidelity release.",
-  "next": "Investigate the reproducible0x480warning against the prototype reference and actual allocation/lifecycle evidence before suppressing anything. Close remaining24seed/module/VU/generic-source dependency gaps, then fresh full build/native acceptance and controlled focus/held/repeat/wider menu coverage. Keep prototype/retail distinct.",
+  "status": "Normal07 scoped F2/mouse debug actions remain verified. Separate read-only prototype diagnostics now narrow the repeated0x480 warning to twelve option-entry records in the observed close scope; not a cleanup, retail release or complete setup.",
+  "next": "Reproduce the same empty-menu sequence with the prototype reference before attributing the accounting loss to the original console game or port, then qualify any optional cleanup. Complete remaining source/setup and focus/held/repeat/wider-menu coverage; preserve prototype/retail separation.",
   "known_limits": [
-    "Memory-leak0x480warning reproduces in normal07 with game observers disabled. Its cause and PS2reference behavior remain unknown; freshsource replay still requires24qualifiedprivateBOOTseeds/modules/VU/genericdependencies and does not produce a new executable.",
-    "New adopt-only prototype launcher is NOT ISO-only generation/setup. Native05 no-death shows an unresolved original memory-leak0x480 warning after OFF; Native07 normal path has not repeated no-death/Warp effect coverage.",
+    "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
+    "Adopt-only normal07 launcher and scoped actualF2/mouse RoomJump/no-death/Warp/return/death are observed, NOT an ISO-only public prototype installer or complete-menu/retail qualification. Remaining24private BOOTseeds/modules/VU/generic-source dependencies stay explicit.",
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
@@ -120,7 +120,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open."
         },
         {
           "id": "RM01",
@@ -333,6 +333,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Investigating the debug menu memory warning",
+      "summary": "Even two empty DEBUG OPTION visits produce the original0x480 warning. Read-only native observations connect the repeated accounting loss to twelve menu-entry records; no cleanup is applied.",
+      "changes": [
+        "Built separate bounded read/no-read capsules, preserving normal07 and the original discs. Corrected an over-frequent observer after retaining its exhausted-budget trial.",
+        "Observed three original close comparisons and entry-vector/allocation/release scope. Published selected native PNGs, including the unchanged ON/OFF return, without repairing game pixels."
+      ],
+      "validation": "Both04native cases exit0 with76PNGs each;82reader events/no budget exhaustion.75of76common actual-field originals equal; title850 differs304035decodedpixels and remains unexplained. Three closes each leave0x480, with12entry returns/vector10+2 and no selected entry-release call; candidate vector links remain1600. Source281synthetic tests/3Windows skips pass59.156s; all native runs terminal first. Final publication suite281/3skips passes59.080s after media/journal preparation.",
+      "limits": "Diagnostic, not a leak fix, all-free-path/ownership proof, PS2 reference result, new normal07 combat/F2 trial, retail menu or fresh ISO-only build. Same control still contains calls. Title mismatch retained; suspected partial preview disproved by exact original/decoded-byte equality.",
+      "evidence_comparisons": [
+        "2026-11-12-menu-empty-warning",
+        "2026-11-12-menu-on-off",
+        "2026-11-12-menu-warning-return"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_MENU_LIFETIME.md",
+        "label": "Original warning path, native controls and remaining lifetime questions"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1138,6 +1159,178 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-menu-empty-warning",
+      "date": "2026-11-12",
+      "title": "An empty option visit still warns",
+      "feature": "DT03",
+      "scenario": "Original menu lifecycle diagnostic; same native04 READ session. Field-indexed software controller inputs, declared RoomJumpPoint1 bootstrap; different action states, not per-object/camera fitting.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "No options changed",
+        "bevy": "Original warning after close"
+      },
+      "observations": [
+        "The warning occurs before any no-death toggle, with the actual comparison differing by0x480."
+      ],
+      "limits": [
+        "Same private native04 diagnostic capsule, original finite controller script; no new OS F2/mouse/hardware or normal07 combat proof.",
+        "Unchanged640x480 renderer originals, not PS2 reference images or a fidelity comparison. Game imagery is not GPL.",
+        "Observer reads only; warning remains. No cleanup or complete menu/setup/retail acceptance."
+      ],
+      "reference": {
+        "caption": "First DEBUG OPTION visit, PL NO DEATH OFF; no options toggled. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:57:13.477142+00:00",
+        "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+        "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Original0x480 warning after the first empty visit. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:57:17.959075+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-menu-repeat-warning",
+      "date": "2026-11-12",
+      "title": "The warning repeats on the second empty visit",
+      "feature": "DT03",
+      "scenario": "Original menu lifecycle diagnostic; same native04 READ session. Field-indexed software controller inputs, declared RoomJumpPoint1 bootstrap; different action states, not per-object/camera fitting.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "First empty close",
+        "bevy": "Second empty close"
+      },
+      "observations": [
+        "The two selected original warning PNGs are byte-identical. This does not mean all frames or allocations are identical."
+      ],
+      "limits": [
+        "Same private native04 diagnostic capsule, original finite controller script; no new OS F2/mouse/hardware or normal07 combat proof.",
+        "Unchanged640x480 renderer originals, not PS2 reference images or a fidelity comparison. Game imagery is not GPL.",
+        "Observer reads only; warning remains. No cleanup or complete menu/setup/retail acceptance."
+      ],
+      "reference": {
+        "caption": "Original0x480 warning after the first empty visit. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:57:17.959075+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "The same original0x480 warning after a second empty visit. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:58:17.650411+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-menu-on-off",
+      "date": "2026-11-12",
+      "title": "The original option returns to OFF",
+      "feature": "DT03",
+      "scenario": "Original menu lifecycle diagnostic; same native04 READ session. Field-indexed software controller inputs, declared RoomJumpPoint1 bootstrap; different action states, not per-object/camera fitting.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original ON text",
+        "bevy": "Original OFF after Left"
+      },
+      "observations": [
+        "The third scripted visit visibly changes ON then returns OFF; the final OFF original equals the first OFF original byte-for-byte. This is menu-state evidence, not a new combat/no-death restoration proof."
+      ],
+      "limits": [
+        "Same private native04 diagnostic capsule, original finite controller script; no new OS F2/mouse/hardware or normal07 combat proof.",
+        "Unchanged640x480 renderer originals, not PS2 reference images or a fidelity comparison. Game imagery is not GPL.",
+        "Observer reads only; warning remains. No cleanup or complete menu/setup/retail acceptance."
+      ],
+      "reference": {
+        "caption": "Third visit: original PL NO DEATH ON is visible after the planned Right input. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:59:14.727585+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "After the planned Left input, the original option reads OFF. This full original is byte-identical to the first OFF menu capture. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:59:17.227871+00:00",
+        "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+        "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-menu-warning-return",
+      "date": "2026-11-12",
+      "title": "The original room returns without hiding the warning",
+      "feature": "DT03",
+      "scenario": "Original menu lifecycle diagnostic; same native04 READ session. Field-indexed software controller inputs, declared RoomJumpPoint1 bootstrap; different action states, not per-object/camera fitting.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Third original warning",
+        "bevy": "Later room and HUD"
+      },
+      "observations": [
+        "Original game view resumes after the three closes. Accounting loss is still present; returning is not memory-safety or a cleanup fix."
+      ],
+      "limits": [
+        "Same private native04 diagnostic capsule, original finite controller script; no new OS F2/mouse/hardware or normal07 combat proof.",
+        "Unchanged640x480 renderer originals, not PS2 reference images or a fidelity comparison. Game imagery is not GPL.",
+        "Observer reads only; warning remains. No cleanup or complete menu/setup/retail acceptance."
+      ],
+      "reference": {
+        "caption": "Third close: original0x480 warning; no cleanup applied. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:59:21.549582+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Later original room/HUD after the three menu visits. Not a new combat, save or PS2 fidelity test. Unchanged renderer PNG; file-export UTC timestamp, no crop/resize/repair.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native04 diagnostic OpenGL, exe856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb; original controller script; public helper e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a plus private source capsule. Not normal07 or PS2.",
+        "revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+        "captured_at": "2026-11-12T10:59:54.341888+00:00",
+        "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+        "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-normal07-on-alive",
       "date": "2026-11-12",

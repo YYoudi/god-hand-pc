@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "date": "2026-11-12",
+  "kind": "read-only prototype-native diagnostic; not cleanup",
+  "public_helper_revision": "e2f8a68518bdbc36ffd9b54c4390dc0fcc4dc95a",
+  "native04_sha256": "856d90ed45fd286017c0293de810acaf5fd936b4cd694eed1b534f51a7b190cb",
+  "normal07_unchanged": true,
+  "runtime_checkout": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "input_policy": "Personal prototype disc/ELF read-only and identity checked. No raw address/source/trace/game material included in this aggregate.",
+  "native04": {
+    "read_exit": 0,
+    "control_exit": 0,
+    "read_started_at": "2026-11-12T10:55:14.904448+00:00",
+    "read_ended_at": "2026-11-12T10:59:54.504860+00:00",
+    "control_started_at": "2026-11-12T11:00:05.356400+00:00",
+    "control_ended_at": "2026-11-12T11:04:54.576064+00:00",
+    "read_events": 82,
+    "control_events": 0,
+    "observer_budget_exhausted": false,
+    "pngs_per_case": 76,
+    "common_actual_fields": 76,
+    "byte_identical_originals": 75,
+    "different_field": 850,
+    "different_field_decoded_pixels": 304035,
+    "remaining_title_difference": "Retained and unexplained, not normalized or parity.",
+    "fresh_build_objects_reused": 9810,
+    "replaced_selected_objects": 11,
+    "compile_steps": 14,
+    "link_exit": 0,
+    "preflight_refusals": 6
+  },
+  "cycles": [
+    {
+      "serial": 1,
+      "empty_no_toggle": true,
+      "entry_allocation_returns": 12,
+      "vector_counts": [
+        10,
+        2
+      ],
+      "selected_entry_releases_observed": 0,
+      "child_pool_release_observed": true,
+      "accounting_difference": 1152,
+      "destructor_accounting_increase": 260,
+      "warning_field": 4053,
+      "baseline_refresh_field": 4113,
+      "candidate_weighted_links": 1600
+    },
+    {
+      "serial": 2,
+      "empty_no_toggle": true,
+      "entry_allocation_returns": 12,
+      "vector_counts": [
+        10,
+        2
+      ],
+      "selected_entry_releases_observed": 0,
+      "child_pool_release_observed": true,
+      "accounting_difference": 1152,
+      "destructor_accounting_increase": 260,
+      "warning_field": 5353,
+      "baseline_refresh_field": 5413,
+      "candidate_weighted_links": 1600
+    },
+    {
+      "serial": 3,
+      "empty_no_toggle": false,
+      "entry_allocation_returns": 12,
+      "vector_counts": [
+        10,
+        2
+      ],
+      "selected_entry_releases_observed": 0,
+      "child_pool_release_observed": true,
+      "accounting_difference": 1152,
+      "destructor_accounting_increase": 260,
+      "warning_field": 6803,
+      "baseline_refresh_field": 6863,
+      "candidate_weighted_links": 1600
+    }
+  ],
+  "native03_retained": {
+    "read_exit": 0,
+    "control_exit": 0,
+    "pngs_per_case": 76,
+    "shared_actual_fields": 73,
+    "shared_byte_identical": 73,
+    "actual_filename_discrepancies": 3,
+    "observer_budget_exhausted_at_field": 5029,
+    "later_metric_coverage": false
+  },
+  "interpretation": "Repeated accounting loss is consistent with twelve unreleased option-entry records in the observed native close path, not a one-time vector-cache warm-up. Selected release coverage is not all possible free paths, lifetime or ownership proof. No cleanup, print suppression or guest mutation.",
+  "limits": [
+    "Original finite controller script, NOT new actual OS F2/mouse or combat proof.",
+    "Final OFF original equals initial OFF byte-for-byte; no new combat proof.",
+    "Same-binary no-read control still contains hook calls; not total instrumentation absence.",
+    "No PS2/PCSX2 reference reproduction, retail debug backend, full fidelity, hardware/audio/save/campaign or fresh ISO-only setup claim.",
+    "Private BOOT/module/VU/generic source dependencies remain; native07 owner launcher is not promoted to native04."
+  ],
+  "source_tests": {
+    "tests": 281,
+    "windows_skips": 3,
+    "seconds": 59.156,
+    "exit": 0
+  },
+  "preservation": {
+    "unique_files": 9925,
+    "MIT_WIP": 4,
+    "original_discs_unchanged": true
+  },
+  "selected_capture_files": [
+    {
+      "field": 3800,
+      "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+      "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:57:13.477142+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 4060,
+      "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+      "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:57:17.959075+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 5360,
+      "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+      "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:58:17.650411+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 6530,
+      "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+      "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:59:14.727585+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 6680,
+      "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+      "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:59:17.227871+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 6860,
+      "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+      "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:59:21.549582+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    },
+    {
+      "field": 7401,
+      "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+      "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+      "width": 640,
+      "height": 480,
+      "captured_at": "2026-11-12T10:59:54.341888+00:00",
+      "timestamp_kind": "Original file last-write/export UTC, not guest execution timestamp"
+    }
+  ],
+  "preview_review": "Unsupported partial/black preview interpretation rejected: original OFF files and returned imageURLs exactly equal, decoded left labels present. No image edited.",
+  "final_publication_tests": {
+    "tests": 281,
+    "windows_skips": 3,
+    "reported_seconds": 59.08,
+    "runner_elapsed_seconds": 59.21899999999914,
+    "exit": 0
+  }
+}

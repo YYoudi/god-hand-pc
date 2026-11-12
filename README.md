@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Latest prototype investigation: [the original menu's memory warning](PROTOTYPE_MENU_LIFETIME.md).
+Even empty option visits warn. Read-only native evidence narrows the accounting
+loss to menu-entry records in the observed close path; no cleanup or PS2-reference
+claim. The normal07 workbench is unchanged, and the journal includes original
+menu/warning/return PNGs rather than screenshots of the journal.
+
 Latest prototype work: [fresh inputs and normal-mode debug actions](PROTOTYPE_SOURCE_REPLAY.md).
 Normal native07 repeats scoped original actions without game observers. Source
 regeneration is reproducible for the tested inputs, but private seeds/dependencies

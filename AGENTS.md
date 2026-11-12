@@ -1,5 +1,28 @@
 # God Hand PC continuation - agent instructions
 
+## Original menu warning narrowed, not fixed — 2026-11-12
+
+Read PROTOTYPE_MENU_LIFETIME.md and canonical checkpoint/lifetime_probe_current.
+Separate native03/04 read/control jobs all terminal0,76PNGs each.03common-epilogue
+hook exhausted512events at5029: later metrics MISSING; preservefailedcoverage.
+04strictpoststore hook+factory/entry-return/close-poolrelease:82events/no cap,
+3closes each12entry returns/vector10+2,0x480actualaccountingloss; selectedrelease
+childonly/no entrypointers, candidateweightedlinks1600stable. This points to
+unreleased entryrecords in OBSERVED native close scope, NOT all-free-paths,
+ownership/memory-safety/PS2/original-console-bug proof. No cleanup or suppression.
+04SAMEexe856d90ed read/control75of76originals exact; title850diff304035decodedpixels
+retained/unexplained.03shared73exact,3actualfilename discrepancies. Original
+ON/OFF return images equal: suspectedpartialpreview DISPROVED by original/decoded
+bytes; doNOT inherit partial-frame game-defect claim.13units/1035originalELFword
+checks private, no addresses/source published. Publice2f8a68 originalopaque-link
+helper/inventedfixtures only; complete-links isNOTfree/ownership/effectack.
+Normal07/ownerlauncher unchanged,04diagnostic NOTpromoted. Source281tests/3Win
+skips pass59.156s after allnative terminal, no ownedcompiler/tests duringnative.
+Next reproduce SAMEempty-option sequence in isolatedprototype reference before
+callingoriginal-consolebug or portfault; then qualifyoptionalcleanup, never
+free guessed pointers. FullgoalACTIVE; source/setup/focusheldrepeat/wideroptions
+remainopen. No newRust/delegation/retailaddress transplant/gameuploads.
+
 ## Fresh source replay and normal07 effects — 2026-11-12
 
 Read PROTOTYPE_SOURCE_REPLAY.md/checkpoint. Newignored twofresh discELF reads/

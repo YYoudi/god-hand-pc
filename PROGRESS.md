@@ -1,5 +1,20 @@
 # Canonical progress and publication workflow
 
+## Menu accounting investigation — 12 November 2026
+
+[PROTOTYPE_MENU_LIFETIME.md](PROTOTYPE_MENU_LIFETIME.md) records a separate
+read-only native diagnostic, not a fix or an update to the normal07 launcher.
+Two empty option visits already warn0x480; three observed close scopes each
+retain the same accounting difference alongside twelve allocated entry records.
+Selected release calls omit those entries, but this is not all-free-path,
+ownership or PS2-reference proof. The no-read control preserves the warning;
+75/76common originals equal and the title mismatch is retained. Initial observer
+budget failure and rejected partial-preview interpretation are explicit.
+Only original generic host diagnostics/invented tests and reviewed unchanged
+native PNGs/aggregate findings are public. Compare the same prototype-reference
+sequence before cleanup; do not suppress the warning or guess heap flags.
+Normal07 scoped actions stay proven; full goal, setup and wider coverage stay open.
+
 Latest scoped result: [fresh source generation and normal-mode effects](PROTOTYPE_SOURCE_REPLAY.md).
 Fresh original-disc inputs now regenerate the preserved discovery/BOOT outputs
 and static SDK binding evidence. Private seeds and module/VU/generic dependencies
