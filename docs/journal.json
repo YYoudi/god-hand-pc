@@ -5,13 +5,13 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "The fresh prototype-source build has an exact-input native gate and an observed actual F1/F2 path. One ordinary Down tap still fails to move the menu cursor; full keyboard usability remains open.",
-  "next": "Exercise Room Jump and Player Warp through the actual F2 workbench, including required stick controls, effects and exit/restoration. Then complete a checked personal-disc prototype setup and controlled focus/held/repeat cases. Mouse navigation/close and one original option do not complete the goal; keep retail separate.",
+  "next": "Build the checked personal-disc prototype workflow and separate normal visible launches from bounded probes. Regress no-death on the current stick candidate, then controlled focus/held/repeat and broader original option/room coverage. Keep private diagnostics and retail separate; no complete release/fidelity claim.",
   "known_limits": [
     "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
-    "The prototype now has actual F2/mouse original-menu navigation/close, F1 refusal/no deferred activation and original no-death refill/OFF/death evidence on the new candidate. Automated Down is GLFW_UNKNOWN, not a demonstrated hardware fault. Room Jump bootstrap is not mouse-panel Room Jump; Warp through this panel, analog controls, hardware/focus/held/repeat, broad menu/room coverage, public prototype setup and retail backend remain open. Old failures and strict VU1 mismatch are retained.",
+    "Prototype actual F2/mouse RoomJump reaches1/00/Point1; explicit v2 LSRight moves real Warp target/player and original Start/Cross restores normal game. Fresh-start pose matching fails and is not a matched pair; separate within-session idle/pulse/idle proof is scoped. v1 nine-control mode retained. Public prototype setup, normal launch policy, current-candidate no-death regression, full axes/options/rooms, hardware/focus/held/repeat and retail remain open; earlier strict VU1 failure and visible artifacts retained.",
     "Widescreen, simulation-safe FPS changes, modern lighting and multiplayer each require separate evidence.",
     "Controls pause remains experimental and opt-in. Legacy v1 has a reproduced forced admitted-audio-callback race; separately selected audio-v2 excludes it. A private diagnostic also preserves one ordinary nonempty queue at an earlier retail point; PCM content, audible/device, focus, peripheral and full-machine/campaign gates remain open. Original remains unchanged.",
     "Video preferences and native-menu-v1 are explicit/restart-required; only2x/3x observed. No live scale, FPS or timing change. Requested/effective scale and framebuffer size remain distinct. Native menu is Enhanced-only; old flags/versions/defaults retain their meanings.",
@@ -111,14 +111,14 @@
           "title": "Connect one real action to the native F2 Developer section",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Actual same-candidate F2 and mouse Down/Circle/Right/Left/Cross navigate and close the ORIGINAL prototype menu; native PL NO DEATH ON/OFF/refill/restored death observed. F1 owns input, refused F2 is not deferred. This additional keyboard-only opt-in controller panel is not a keyboard fix, checked public prototype setup, hardware/focus/held/repeat acceptance or retail backend. Keep in progress."
+          "acceptance": "Actual F2/mouse original RoomJump1/00/Point1, Warp entry/exit and original no-death action on named exact binaries. Explicit v2 bounded LSRight moves real player, original Start/Cross restores normal camera/HUD; F1 retains ownership. Not a checked public prototype workflow, normal-launch policy, physical/focus/held/repeat release or retail backend; keep in progress."
         },
         {
           "id": "DT03",
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Earlier exact-build Warp movement/control and no-death lethal-total/OFF/death proofs preserved. New actual F2/mouse option/refill/OFF/death workflow observed on another exact binary. Still prove Room Jump and Warp via current workbench with required stick inputs, invalid states, checked setup and wider menu/room coverage; no strict VU1/hardware/retail acceptance."
+          "acceptance": "New same-session Warp idle/pulse/idle:12stable before/16after, actual actor/cached/target equal, about0.23942worldunit move and normal restoration. Fresh-start matched pair rejected; separate no-stick30samples and v1 compatibility pass. Prior no-death lethal-total/OFF/death evidence remains exact-build history. Current-candidate no-death regression, checked setup, focus/held/repeat, wider options/invalid states/rooms and retail remain open."
         },
         {
           "id": "RM01",
@@ -331,6 +331,29 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Room Jump and Player Warp through the actual F2 workbench",
+      "summary": "Actual F2/mouse Room Jump now reaches the selected original Point1. An explicitly selected stick row then lets one real mouse request move the original Warp target/player, followed by normal game restoration.",
+      "changes": [
+        "Proved Room Jump without a scripted jump/chord: only movie/difficulty input is declared; actual F2/mouse selects and loads1/00/Point1, then Start reaches the normal room/HUD.",
+        "Added explicit controller-v2 left-stick requests with the same pending/busy/F1/focus/profile/writer-failure gate. Actual controller-v1 still shows only the nine digital controls.",
+        "Kept a failed fresh matched-pair interpretation: manual entry poses differ. The separate prospective within-session idle/pulse/idle experiment observes actual movement without resetting or refitting coordinates."
+      ],
+      "validation": "Native04 UI-only RoomJump/Warp entry/exit:0 after290.704seconds. Native05 compile/guard/link0 and four pre-runtime refusals. Same05 no-stick/control, move and v1 compatibility runs all exit0 normally, not by watchdog. Thirty no-stick samples are stable; in the move session12stable pre-input and16stable post-input samples show about0.23942original world units displacement, actual player/cached/target equal. Original Start/Cross restore camera/HUD; later samples retain a shifted position with drift. F1 refuses F2/no deferred activation. Original discs/controls,9846retained files and eight source inputs match.268synthetic tests pass, three Windows symlink skips.",
+      "limits": "Not a complete release/public prototype setup or retail backend. Fresh runs are NOT a matched causal/image pair. Button words are not full analog state; only LSRight is natively exercised. Detached cloak-like fragment, yellow interface-gap line, initial white capture mismatch and earlier strict VU1 failure are retained, not fixed. Current-candidate no-death regression, normal launch policy, focus/held/repeat and broader options/rooms remain open.",
+      "evidence_comparisons": [
+        "2026-11-12-actual-ui-room-jump",
+        "2026-11-12-actual-ui-warp-stick",
+        "2026-11-12-actual-ui-warp-return",
+        "2026-11-12-controller-v1-v2-selection"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ROOM_WARP_UI.md",
+        "label": "Actual Room Jump, bounded Warp movement and explicit limits"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1064,6 +1087,218 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-actual-ui-room-jump",
+      "date": "2026-11-12",
+      "title": "Room Jump from actual F2/mouse controls reaches Point1",
+      "feature": "DT02",
+      "scenario": "Fresh unchanged837ee7ec run with only movie/difficulty field inputs900/1200. NO scripted room/chord/probe. Actual F2/mouse selects1/00/Point1, confirms, then Start skips original intro.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Actual UI selects1/00/Point1",
+        "bevy": "Original Point1 room/HUD"
+      },
+      "observations": [
+        "Real mouse Circle/Right/Down/Down/Right selects the original target; Circle loads original r100/Event. This is no longer inferred from a scripted Room Jump bootstrap.",
+        "Actual Start reaches the original Gene/normalHUD at the green facade. This same run also enters/leaves original Warp without stick movement, restoring camera/HUD."
+      ],
+      "limits": [
+        "Unmatched times/states, not a matched original-PS2/camera/fidelity pair. JPEG backend compression/title/border remain unchanged; no crop, conversion, refit or pixel normalization.",
+        "Original game actions through finite controller requests, not effect ACKs, guest-state writes or recovered public game code. Private prototype generated sources/modules remain required; no public personal-disc installer or retail debug backend.",
+        "Visible detached cloak-like fragment in Warp and yellow line between host boxes retained; causes unisolated, no rendering fix. Earlier strict VU1 failure remains unrepaired and is not rerun here.",
+        "One destination. RoomJump is not undo. Initial white owned-window capture mismatch is retained privately, not a game renderer failure or repaired output. Original public headers6235f99/f59fde6; exact837ee7ec binary unchanged."
+      ],
+      "reference": {
+        "caption": "Original Room Jump Stage1/Room00/Point1 chosen through actual mouse controls. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe837ee7ec3153925d8855e02a9b13423ef1554571f7576acf64b1fe051af6905d; public6235f99/f59fde6 headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "f59fde677d38fa3833b2c3db8c609f7c49bc7279",
+        "captured_at": "2026-11-12T07:55:12.753Z",
+        "path": "media/a5b687902cf6b00625b63d37af84b16bd85c43aa3f6b26db71372352dff0b350.jpg",
+        "sha256": "a5b687902cf6b00625b63d37af84b16bd85c43aa3f6b26db71372352dff0b350",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Actual original Point1 destination after confirm/load and original Start skip. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; exe837ee7ec3153925d8855e02a9b13423ef1554571f7576acf64b1fe051af6905d; public6235f99/f59fde6 headers. Actual software OS/mouse input, not physical hardware.",
+        "revision": "f59fde677d38fa3833b2c3db8c609f7c49bc7279",
+        "captured_at": "2026-11-12T07:56:05.488Z",
+        "path": "media/075e86491a3e71c16ba3d5bd9564f644382d07ade5d17912dbea2dbd6fef0b3a.jpg",
+        "sha256": "075e86491a3e71c16ba3d5bd9564f644382d07ade5d17912dbea2dbd6fef0b3a",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-actual-ui-warp-stick",
+      "date": "2026-11-12",
+      "title": "One mouse left-stick request moves the actual Warp target/player",
+      "feature": "DT03",
+      "scenario": "Samecb4d8dc5 move process, original Warp entered through actual F2/mouse.12stable post-construction samples precede ONE bounded200ms LSRight;16later samples share changed player/cached/target vectors.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Stable in-Warp baseline",
+        "bevy": "After one actual LSRight request"
+      },
+      "observations": [
+        "Within this SAME Warp session, actual player/cached/target vectors move about0.23942world units after one ordinary finite input request. The constructor shift is excluded.",
+        "Separate no-stick run has30stable in-mode samples. Its initial pose differs; the attempted fresh matched-pair interpretation was rejected BEFORE the move input, not relabeled as passing."
+      ],
+      "limits": [
+        "Unmatched times/states, not a matched original-PS2/camera/fidelity pair. JPEG backend compression/title/border remain unchanged; no crop, conversion, refit or pixel normalization.",
+        "Original game actions through finite controller requests, not effect ACKs, guest-state writes or recovered public game code. Private prototype generated sources/modules remain required; no public personal-disc installer or retail debug backend.",
+        "Visible detached cloak-like fragment in Warp and yellow line between host boxes retained; causes unisolated, no rendering fix. Earlier strict VU1 failure remains unrepaired and is not rerun here.",
+        "Not a matched-start fresh-run causal pair or analog-wire/physical-controller conformance. Button words are not full stick state. One direction/room only; other directions are source-tested but not natively exercised here."
+      ],
+      "reference": {
+        "caption": "Same move run, stable player/target after entering Warp and before any stick input. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:14:31.071Z",
+        "path": "media/f845adc4ae77feae2ee55d2814294cb5fb190cf90ee3349c28b9eaea9745b801.jpg",
+        "sha256": "f845adc4ae77feae2ee55d2814294cb5fb190cf90ee3349c28b9eaea9745b801",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Same move run after ONE bounded mouse LSRight and settled changed actor/target. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:15:32.673Z",
+        "path": "media/0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a.jpg",
+        "sha256": "0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-actual-ui-warp-return",
+      "date": "2026-11-12",
+      "title": "Original Start/Cross exit restores ordinary game after movement",
+      "feature": "DT03",
+      "scenario": "Same native05 move process; actual Start leaves Warp, Cross closes parent, Hide removes only host UI. No movement undo or direct guest call.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Warp after bounded movement",
+        "bevy": "Normal camera/HUD after exit"
+      },
+      "observations": [
+        "Original lifecycle tail restores the camera manager and retains the final in-mode player-vector bits. Original room/HUD returns.",
+        "Later ordinary-play samples differ from the pre-stick baseline by0.22270to0.29643world units, with some drift; not exact bit persistence forever or a proved cause of drift."
+      ],
+      "limits": [
+        "Unmatched times/states, not a matched original-PS2/camera/fidelity pair. JPEG backend compression/title/border remain unchanged; no crop, conversion, refit or pixel normalization.",
+        "Original game actions through finite controller requests, not effect ACKs, guest-state writes or recovered public game code. Private prototype generated sources/modules remain required; no public personal-disc installer or retail debug backend.",
+        "Visible detached cloak-like fragment in Warp and yellow line between host boxes retained; causes unisolated, no rendering fix. Earlier strict VU1 failure remains unrepaired and is not rerun here.",
+        "Leaving Warp is NOT undo. Different camera/mode and times; this is action/restoration evidence, not matched image fidelity."
+      ],
+      "reference": {
+        "caption": "Changed original Warp target/player before exiting. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:15:32.673Z",
+        "path": "media/0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a.jpg",
+        "sha256": "0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After actual Start/Cross/Hide, original room/HUD at the shifted player position. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:16:08.009Z",
+        "path": "media/9982209ba13661935f931d47f7dfac02fea4c48f09b68e974e852e60e88958bc.jpg",
+        "sha256": "9982209ba13661935f931d47f7dfac02fea4c48f09b68e974e852e60e88958bc",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-12-controller-v1-v2-selection",
+      "date": "2026-11-12",
+      "title": "Explicit v2 adds stick requests; v1 retains nine digital controls",
+      "feature": "DT02",
+      "scenario": "SAME native05 executable with explicit controller-v1 versus controller-v2 in distinct fresh runs, real F2. This is host-layout/mode selection, not a native-game pixel-parity comparison.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Explicit controller-v1",
+        "bevy": "Explicit controller-v2"
+      },
+      "observations": [
+        "Actual v1 has original nine digital controls without the stick row; Cross restores the original difficulty screen. No implicit v1 upgrade.",
+        "Actual v2 adds four bounded left-stick requests above the unchanged digital area. Both use original menu/chord and shared profile/ownership gates."
+      ],
+      "limits": [
+        "Unmatched times/states, not a matched original-PS2/camera/fidelity pair. JPEG backend compression/title/border remain unchanged; no crop, conversion, refit or pixel normalization.",
+        "Original game actions through finite controller requests, not effect ACKs, guest-state writes or recovered public game code. Private prototype generated sources/modules remain required; no public personal-disc installer or retail debug backend.",
+        "Visible detached cloak-like fragment in Warp and yellow line between host boxes retained; causes unisolated, no rendering fix. Earlier strict VU1 failure remains unrepaired and is not rerun here.",
+        "Private harness opt-in only; not a new public pc.py install/launch flag. Right-stick axes/full controller surface absent. F1 refusal/no deferred activation tested separately in v2 from a previously hidden panel; broader transitions remain open."
+      ],
+      "reference": {
+        "caption": "Actual v1 selection in the new binary: original nine digital controls only. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:19:29.983Z",
+        "path": "media/720d582f7efe4a215c37d256ce9f4c8bf6b9de8e10fa4b78584f078e53a8188a.jpg",
+        "sha256": "720d582f7efe4a215c37d256ce9f4c8bf6b9de8e10fa4b78584f078e53a8188a",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "Actual v2 selection in the same binary: extra bounded left-stick row. Unchanged lossy native-window original with title/border; capture-completion time, not guest-frame time.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL; execb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85; publicbasef59fde6 plus uncommitted headers, later committed unchanged0c4165b. Actual software OS/mouse input, not physical hardware.",
+        "revision": "uncommitted",
+        "captured_at": "2026-11-12T08:13:23.885Z",
+        "path": "media/09be6241c6e04db5907b322aba4e598da9c696f981882092c6d5ad8b7bf6c305.jpg",
+        "sha256": "09be6241c6e04db5907b322aba4e598da9c696f981882092c6d5ad8b7bf6c305",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
     {
       "id": "2026-11-12-prototype-controller-navigation",
       "date": "2026-11-12",

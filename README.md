@@ -1,5 +1,11 @@
 # God Hand PC continuation tooling
 
+Latest prototype result: [Room Jump and Player Warp through actual F2/mouse controls](PROTOTYPE_ROOM_WARP_UI.md).
+One bounded stick request moves the original target/player and normal game returns.
+The rejected fresh-start match and rendering artifacts are retained. This is not a
+complete release, public prototype setup or retail debug feature.
+
+
 Latest prototype result: [F2 and mouse navigation of the original menu](PROTOTYPE_CONTROLLER_PANEL.md).
 Original no-death refill/OFF/death and F1 ownership are observed on this exact
 native candidate. It is an opt-in controller-request panel, not a keyboard fix,

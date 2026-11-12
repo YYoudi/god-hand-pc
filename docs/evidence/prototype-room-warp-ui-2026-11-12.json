@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-12",
+  "scope": "Actual UI-only RoomJump, bounded left-stick Warp movement/return and explicit v1/v2 selection; not full developer-tools release",
+  "room_jump": {
+    "exe_sha256": "837ee7ec3153925d8855e02a9b13423ef1554571f7576acf64b1fe051af6905d",
+    "native_exit": 0,
+    "started_at": "2026-11-12T07:52:51.210997+00:00",
+    "ended_at": "2026-11-12T07:57:41.914997+00:00",
+    "elapsed_seconds": 290.704,
+    "no_scripted_room_jump_or_debug_probe": true,
+    "actual_F2_requests": 2,
+    "actual_room_jump": "Real F2/mouse Circle/Right/Down/Down/Right/Circle select Stage1Room00Point1; original r100/Event install and original scene render. Actual panel Start skips intro; Gene/normalHUD at Point1 green facade observed.",
+    "warp_sample_fields_actor_cached_target_equal": [
+      10201,
+      10261,
+      10321,
+      10381,
+      10441
+    ],
+    "camera_lifetime_restored": true,
+    "all_inputs_controls_preserved": true
+  },
+  "new_candidate": {
+    "exe_sha256": "cb4d8dc54897b88683e441cac2fd3be08c3e041b23f06762966b51219b59dc85",
+    "source_file_chain_sha256": "964e8ea74b1917f0ba8b9de171f091fd6471fb5c3abe816c28010533e91440a4",
+    "public_header_revision": "0c4165b4613b7e00c364802ff04dee336ba41c26",
+    "capture_source_state": "Publicf59fde6 plus uncommitted original host additions, later committed unchanged0c4165b",
+    "build_steps": [
+      {
+        "step": "compile-main",
+        "exit": 0
+      },
+      {
+        "step": "compile-guard",
+        "exit": 0
+      },
+      {
+        "step": "link",
+        "exit": 0
+      }
+    ],
+    "retained_file_hashes": 9846,
+    "source_input_hashes": 8,
+    "fresh_objects_reused": 9821,
+    "old_objects_not_linked": 9793,
+    "generic_libraries_reused": 5,
+    "public_headers": {
+      "prototype_controller_panel.hpp": "9ae85d1ad555c55574872674a165b28e2985c652bef2741cd27d60cd4cd3ba7e",
+      "prototype_controller_view.hpp": "9a0ba2688f59fa12a5a058ad663c9a1460a3f043cee78527a4e154bc9642b926",
+      "prototype_controller_native.hpp": "bcf534d8eec17d138867da99cc6e58d05e77e051df2250fad0c43d4e60527f41"
+    }
+  },
+  "native_cases": [
+    {
+      "case": "control",
+      "exit": 0,
+      "started_at": "2026-11-12T08:05:23.441762+00:00",
+      "ended_at": "2026-11-12T08:10:24.401979+00:00",
+      "seconds": 300.960217,
+      "watchdog_seconds": 600,
+      "native_PNGs": 114
+    },
+    {
+      "case": "move",
+      "exit": 0,
+      "started_at": "2026-11-12T08:11:29.149477+00:00",
+      "ended_at": "2026-11-12T08:17:16.504729+00:00",
+      "seconds": 347.355252,
+      "watchdog_seconds": 600,
+      "native_PNGs": 124
+    },
+    {
+      "case": "digital-v1",
+      "exit": 0,
+      "started_at": "2026-11-12T08:18:37.171272+00:00",
+      "ended_at": "2026-11-12T08:19:58.567190+00:00",
+      "native_PNGs": 76,
+      "scope": "Actual F2 nine digital controls, no stick row, Cross restores difficulty; normal AltF4 while host panel open0"
+    }
+  ],
+  "actual_refusals": [
+    {
+      "case": "unknown-v3",
+      "exit": 34,
+      "no_output_created": true
+    },
+    {
+      "case": "no-shortcut",
+      "exit": 35,
+      "no_output_created": true
+    },
+    {
+      "case": "other-pad-unqualified",
+      "exit": 36,
+      "no_output_created": true
+    },
+    {
+      "case": "wrong-input-size",
+      "exit": 27,
+      "no_output_created": true
+    }
+  ],
+  "movement": {
+    "fresh_matched_pair": false,
+    "fresh_pair_status": "REJECTED before move input; manual entry fields/poses differ. No refit/reset or matched-start causal claim.",
+    "within_move_idle_pulse_idle_delta_world_units": 0.23942185595643206,
+    "within_move_pre_samples": 12,
+    "within_move_post_samples": 16,
+    "control_stable_samples": 30,
+    "post_exit_distance_range_world_units": [
+      0.2227010390801156,
+      0.2964257415995975
+    ],
+    "controls_and_original_discs_unchanged": true
+  },
+  "synthetic_tests": {
+    "tests": 268,
+    "Windows_skipped": 3,
+    "seconds": 63.518,
+    "exit": 0,
+    "inputs": "Original invented fixtures/stubs only; approved screenshot envelopes/hashes are publication checks, not game-rendering fixtures.",
+    "final_repeat_seconds": 70.362,
+    "final_repeat_exit": 0
+  },
+  "comparisons": [
+    {
+      "id": "2026-11-12-actual-ui-room-jump",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "a5b687902cf6b00625b63d37af84b16bd85c43aa3f6b26db71372352dff0b350",
+          "path": "media/a5b687902cf6b00625b63d37af84b16bd85c43aa3f6b26db71372352dff0b350.jpg",
+          "captured_at": "2026-11-12T07:55:12.753Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "075e86491a3e71c16ba3d5bd9564f644382d07ade5d17912dbea2dbd6fef0b3a",
+          "path": "media/075e86491a3e71c16ba3d5bd9564f644382d07ade5d17912dbea2dbd6fef0b3a.jpg",
+          "captured_at": "2026-11-12T07:56:05.488Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-actual-ui-warp-stick",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "f845adc4ae77feae2ee55d2814294cb5fb190cf90ee3349c28b9eaea9745b801",
+          "path": "media/f845adc4ae77feae2ee55d2814294cb5fb190cf90ee3349c28b9eaea9745b801.jpg",
+          "captured_at": "2026-11-12T08:14:31.071Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a",
+          "path": "media/0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a.jpg",
+          "captured_at": "2026-11-12T08:15:32.673Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-actual-ui-warp-return",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a",
+          "path": "media/0c9bce65d5f2481c4bb36e80c624477372e8ede8039b730b201162b9d4a53a6a.jpg",
+          "captured_at": "2026-11-12T08:15:32.673Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "9982209ba13661935f931d47f7dfac02fea4c48f09b68e974e852e60e88958bc",
+          "path": "media/9982209ba13661935f931d47f7dfac02fea4c48f09b68e974e852e60e88958bc.jpg",
+          "captured_at": "2026-11-12T08:16:08.009Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-controller-v1-v2-selection",
+      "alignment": "unmatched",
+      "originals": [
+        {
+          "sha256": "720d582f7efe4a215c37d256ce9f4c8bf6b9de8e10fa4b78584f078e53a8188a",
+          "path": "media/720d582f7efe4a215c37d256ce9f4c8bf6b9de8e10fa4b78584f078e53a8188a.jpg",
+          "captured_at": "2026-11-12T08:19:29.983Z",
+          "width": 642,
+          "height": 512
+        },
+        {
+          "sha256": "09be6241c6e04db5907b322aba4e598da9c696f981882092c6d5ad8b7bf6c305",
+          "path": "media/09be6241c6e04db5907b322aba4e598da9c696f981882092c6d5ad8b7bf6c305.jpg",
+          "captured_at": "2026-11-12T08:13:23.885Z",
+          "width": 642,
+          "height": 512
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "Different fresh starts are NOT a matched causal/image pair. Separate within-session baseline excludes constructor shift; prospective control written before move run/input.",
+    "Button-word trace is not a full analog-wire/physical-neutral-state trace. One finite0.2srequest and settled positions observed; no analog-wire conformance claim.",
+    "Ordinary gameplay adds small actor/root-motion drift after exit; exact bits are retained at destroy tail, later distance range reported, not exact bit persistence forever.",
+    "Visible detached cloak-like artifact in Warp and interface-gap yellow line retained; no rendering repair/fidelity claim.",
+    "One left-stick direction/room, no movement undo. Other axes/options/invalid states, public prototype setup, strictVU1 and retail/hardware remain open.",
+    "Current-candidate no-death regression, checked personal-disc source setup, normal launch policy and controlled focus/held/repeat remain required; no retail feature."
+  ]
+}

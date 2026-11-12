@@ -1,5 +1,14 @@
 # Canonical progress and publication workflow
 
+Latest scoped result: [actual Room Jump and bounded Warp input](PROTOTYPE_ROOM_WARP_UI.md).
+Real F2/mouse Room Jump now reaches the selected original Point1 without a scripted
+jump. Explicit v2 LSRight moves the actual Warp target/player; original exit restores
+camera/HUD. Fresh-start matching fails and remains rejected; the independent
+within-session idle/pulse/idle proof is scoped. v1 remains digital-only. Checked
+prototype setup, normal launch policy, current-candidate no-death regression and
+focus/held/repeat/wider coverage keep the full goal ACTIVE, not complete.
+
+
 Latest scoped result: [actual prototype F2/mouse workbench](PROTOTYPE_CONTROLLER_PANEL.md).
 The original menu is now actually navigable/closable with this additional opt-in
 mouse panel, F1 keeps ownership, and original ON/refill/OFF/death/Continue is

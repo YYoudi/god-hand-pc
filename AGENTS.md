@@ -1,5 +1,30 @@
 # God Hand PC continuation - agent instructions
 
+## Actual RoomJump and bounded stick Warp — 2026-11-12
+
+Read PROTOTYPE_ROOM_WARP_UI.md and canonical checkpoint. Old837ee7ec NEW UI02
+has no scripted RoomJump/chord after difficulty: actual F2/mouse selects1/00/1,
+original scene/HUD reached, Warp enters/exits; terminal0 after290.704s. Newcb4d8dc5
+compiles exact public0c4165b headers: explicit controller-v2 adds four finite LS
+requests; v1 remains nine digital controls, actual compatibility F2/Cross passes.
+Same05control/move native0; fresh matched-start pair REJECTED before input, manual
+entry poses differ/no refit. Separate prospective within-session baseline12stable
+samples ->ONE actual LSRight0.2s ->16stable changed samples, actual player/cached/
+target equal, delta0.23942worldunits. Original Start/Cross/Hide restore camera/HUD;
+destroy tail retains actor bits, later normal samples drift0.22270..0.29643 from
+own baseline. Not undo, exact persistence forever, analog-wire/hardware proof or
+matched image fidelity. Pad words are buttons only. F1 refusal/no deferred tested
+with panel already hidden. Detached cloak/yellow gap line and earlier strictVU1
+failure retained, no graphics fix. Four actual pre-runtime refusals pass; full268
+synthetic tests/3Windows skips pass, no owned tests/compiler during native runs.
+Next checked personal-disc prototype workflow, normal visible-vs-bounded launch,
+current-candidate no-death regression and controlled focus/held/repeat/coverage.
+Do not complete goal on this milestone. No new Rust/delegation/retail transplant.
+Frozen04 public6235headers preserved privately/Git; do not compare changed active
+headers to old04 build as if old inputs were deleted. Current05public hashes match
+native build exactly. Raw generated code/modules/maps/inputs/binaries stay private.
+
+
 ## Actual prototype mouse workbench — 2026-11-12
 
 Read PROTOTYPE_CONTROLLER_PANEL.md and the canonical checkpoint. Native837ee7ec
