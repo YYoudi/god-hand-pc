@@ -28,6 +28,42 @@ class JournalTests(unittest.TestCase):
         for bad in [data[:-2], data+b'extra',data[:35]+b'x'+data[36:]]:
             with self.assertRaises(ValueError):journal.png_size(bad)
 
+    def host_jpeg(self):
+        # Original 1x1 neutral YCbCr, one DC-zero/EOB code per component.
+        # Only invented constants: no screenshot, game pixel or external fixture.
+        def segment(tag,payload):return bytes([255,tag])+struct.pack('>H',len(payload)+2)+payload
+        jfif=b'JFIF\0\x01\x01\0\0\x01\0\x01\0\0'
+        frame=b'\x08\0\x01\0\x01\x03\x01\x11\0\x02\x11\0\x03\x11\0'
+        table=b'\x01'+b'\0'*15+b'\0'
+        return (b'\xff\xd8'+segment(0xe0,jfif)+segment(0xdb,b'\0'+b'\x01'*64)+
+                segment(0xc0,frame)+segment(0xc4,b'\0'+table+b'\x10'+table)+
+                segment(0xda,b'\x03\x01\0\x02\0\x03\0\0\x3f\0')+b'\x03\xff\xd9')
+
+    def test_invented_native_jpeg_profile_and_refusals(self):
+        b=self.host_jpeg();self.assertEqual(journal.host_jpeg_size(b),(1,1))
+        for invalid in [b[:-1],b+b'extra',b.replace(b'JFIF',b'Exif'),b.replace(b'\xff\xc0',b'\xff\xc2'),
+                        b.replace(b'\xff\xd9',b'\xff\xfe\0\x04hi\xff\xd9'),b'not an image']:
+            with self.assertRaises(ValueError):journal.host_jpeg_size(invalid)
+        for i in range(2,len(b)-2):
+            with self.assertRaises(ValueError):journal.host_jpeg_size(b[:i])
+        with self.assertRaises(ValueError):journal.png_size(b)
+
+    def test_native_host_jpeg_is_not_a_journal_capture_loophole(self):
+        data,migration=self.historical_fixture();b=self.host_jpeg();h=hashlib.sha256(b).hexdigest()
+        item={'path':f'media/{h}.jpg','sha256':h,'width':1,'height':1,'revision':'a'*40,
+              'captured_at':'2026-11-12T00:00:00Z','runtime':'Invented host','caption':'Invented neutral pixel',
+              'profile':'prototype-june-2006','publication_profile':'native-host-jpeg-v1',
+              'capture_source':'computer-use-owned-window','unchanged_original':True,'lossy':True}
+        pair={'id':'invented-host-pair','reviewed':True,'alignment':'unmatched','observations':['Invented'],
+              'limits':['Not fidelity'],'labels':{'reference':'A','bevy':'B'},'reference':item.copy(),'bevy':item.copy()}
+        data['comparisons']=[pair]
+        self.assertEqual(journal.validate(data,migration,lambda p:b),{'docs/media/'+h+'.jpg':h})
+        for key in ['publication_profile','capture_source','unchanged_original','lossy']:
+            original=pair['bevy'].pop(key)
+            with self.assertRaises(ValueError):journal.validate(data,migration,lambda p:b)
+            pair['bevy'][key]=original
+        with self.assertRaises(ValueError):validate_blob('docs/media/'+h+'.jpg',b,{})
+
     def test_game_and_generated_paths_refused_even_if_allowlisted(self):
         for p in ['docs/game.iso','docs/data.dat','generated/f.cpp','.local/private.md','../x.md']:
             with self.assertRaises(ValueError):validate_paths([p],{p})

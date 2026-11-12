@@ -48,6 +48,54 @@ def png_size(blob):
     raise ValueError("Missing PNG end")
 
 
+def host_jpeg_size(blob):
+    """Bounded baseline JFIF envelope, not a JPEG decoder or pixel-fidelity test.
+
+    A separate publication profile for unchanged owned-app captures. Reject EXIF,
+    comments, trailing data and unreviewed marker types; keep old PNG rules intact.
+    """
+    require(blob.startswith(b'\xff\xd8') and len(blob)<=20*1024*1024,
+            'Invalid/oversized native host JPEG')
+    at,dimensions,quant,huffman,jfif=2,None,False,False,False
+    while at+4<=len(blob):
+        require(blob[at]==255,'JPEG marker required')
+        tag=blob[at+1];length=struct.unpack_from('>H',blob,at+2)[0]
+        end=at+2+length
+        require(length>=2 and end<=len(blob),'JPEG segment bounds')
+        payload=blob[at+4:end];at=end
+        if tag==0xe0:
+            require(not jfif and dimensions is None and len(payload)==14 and
+                    payload[:5]==b'JFIF\0' and payload[-2:]==b'\0\0','JPEG JFIF profile')
+            jfif=True
+        elif tag==0xdb:
+            require(len(payload)>0,'Empty JPEG quantization table');quant=True
+        elif tag==0xc4:
+            require(len(payload)>0,'Empty JPEG Huffman table');huffman=True
+        elif tag==0xc0:
+            require(dimensions is None and len(payload)==15 and payload[0]==8 and payload[5]==3,
+                    'Baseline 8-bit three-component JPEG required')
+            h,w=struct.unpack_from('>HH',payload,1)
+            require(0<w<=8192 and 0<h<=8192 and w*h<=16777216,'JPEG dimensions')
+            dimensions=(w,h)
+        elif tag==0xda:
+            require(jfif and dimensions and quant and huffman and len(payload)==10 and
+                    payload[0]==3 and payload[-3:]==b'\0\x3f\0','JPEG scan profile')
+            # Baseline single scan: stuffed FF00 and restart markers are allowed;
+            # a second scan, metadata, incomplete escape or appended file is not.
+            entropy_start=at
+            while at<len(blob):
+                if blob[at]!=255:at+=1;continue
+                require(at+1<len(blob),'Truncated JPEG entropy marker')
+                marker=blob[at+1]
+                if marker==0 or 0xd0<=marker<=0xd7:at+=2;continue
+                require(marker==0xd9 and at>entropy_start and at+2==len(blob),'JPEG end/scan profile')
+                return dimensions
+            raise ValueError('Missing JPEG end')
+        else:
+            raise ValueError('Unapproved native host JPEG marker')
+    raise ValueError('Missing JPEG scan')
+
+
 def validate(data, migration, read):
     """Validate reviewed metadata and bytes, not pixels as game/test fixtures."""
     require(data["schema"] == migration["schema"] == 1, "Unknown journal schema")
@@ -70,11 +118,20 @@ def validate(data, migration, read):
             item = pair[side]
             require("original" not in item, "Raw PPM requires a separately reviewed publication profile")
             digest = item["sha256"]
-            require(re.fullmatch("[a-f0-9]{64}",digest) and item["path"] == f"media/{digest}.png", "Image path/hash")
+            profile=item.get('publication_profile','native-png-v1')
+            require(profile in {'native-png-v1','native-host-jpeg-v1'},'Unknown screenshot publication profile')
+            jpeg=profile=='native-host-jpeg-v1'
+            if jpeg:
+                require(item.get('capture_source')=='computer-use-owned-window' and
+                        item.get('unchanged_original') is True and item.get('lossy') is True,
+                        'Native host JPEG source/original/lossy declaration required')
+            extension='jpg' if jpeg else 'png'
+            require(re.fullmatch("[a-f0-9]{64}",digest) and item["path"] == f"media/{digest}.{extension}", "Image path/hash")
             path = "docs/" + item["path"]
             blob = read(path)
             require(hashlib.sha256(blob).hexdigest() == digest, "Screenshot bytes differ")
-            require(png_size(blob) == (item["width"], item["height"]), "Screenshot dimensions differ")
+            size=host_jpeg_size(blob) if jpeg else png_size(blob)
+            require(size == (item["width"], item["height"]), "Screenshot dimensions differ")
             require(item["revision"] in {"unknown","uncommitted"} or
                     re.fullmatch("[0-9a-f]{40}",item["revision"]), "Exact revision required")
             timestamp = datetime.datetime.fromisoformat(item["captured_at"].replace("Z","+00:00"))
