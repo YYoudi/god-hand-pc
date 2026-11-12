@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "Adopted normal07 remains unchanged. New450s controls close scoped capture-preparation/final-endpoint gaps;20/21common originals match, loading difference retained. Public read-only76module input catalog is not an ISO-only setup or complete prototype/retail release.",
-  "next": "Investigate source/present identity or same-executable repeatability for the retained loading mismatch before attributing it to new BOOT entries. Continue reproducible public prototype generation/moduleVUgeneric-source setup and fresh full-build acceptance, with reference-warning and broader UI checks still open.",
+  "next": "Close qualified module-registration, VU and generic source dependencies, then a fresh full build with its own native acceptance. Continue broader debug UI/input and the original-reference warning comparison. Keep the loading mismatch unexplained until source/present identity or repeatability is actually established.",
   "known_limits": [
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
@@ -122,7 +122,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only. Separate NEWprepared450s native0/23images each now reach7301/7401.20/21common originals equal, loading2901diff17300retained; old330s failures unchanged. Public inputcatalog76modulebytes matchesoldreader, not module/VU/generic setup/freshfullbuild or fullparity."
+          "acceptance": "Current07normal664.865s/0 with actualF2/mouse, freshELFdirectory, no gameobservers/scripts/rawexports. Aliveendpoints90.283s apart, scopedWarpvisualresponse/restoration, actualOFF/damage/Continue. Native05numericproof separate; warning0x480reproduces. Freshdiscovery9794/BOOT9818files exact;103staticSDKbindings/152checks replay,24privateseeds remain; no newlinkedbuild/fullABI. Separate native04read/control0 narrows repeated0x480 to12entry records across3closes; not fixed/PS2-proven.75/76originals exact,title850diff; originalON/OFF return exact. Fullsetup/widercoverage remain open. Fresh original import audit now selects6direct-entry ranges/9sites and replays9818files exactly with18retained indirect seeds; not full source/setup/ABI closure or a new native result. New27entry recipe no oldseedCSVinput;9821files/5CPP+link/native0 with21actualcaptures, but first baseline0PNGs/23exportfailures and new7301/7401missing. Not a fullpair/ISO-only/freshfullbuild or07promotion; selected new original states only. Separate NEWprepared450s native0/23images each now reach7301/7401.20/21common originals equal, loading2901diff17300retained; old330s failures unchanged. Public inputcatalog76modulebytes matchesoldreader, not module/VU/generic setup/freshfullbuild or fullparity. New selected-module replay emits4modules/720raw files exactly, compiles708function units in4new libraries, links79c88f1e over9832retained inputs. Native450s0/23PNGs,21commonoriginals exact toprior run; actual filename differences and0x480warning retained. Qualifiedbases/wrappers/VU/generic/fullsetup, reference and widerUI remain open; normal07unchanged."
         },
         {
           "id": "RM01",
@@ -335,6 +335,28 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-12",
+      "kind": "progress",
+      "title": "Rebuilding the selected prototype modules from the disc",
+      "summary": "The selected modules can now be regenerated and compiled without their old game-source outputs. A separate native run reaches the same sampled room endpoint and option states. The existing warning is still present.",
+      "changes": [
+        "Added an original GPL adapter over the frozen upstream SNR2 tools. Four fresh module emissions reproduce 720 raw generated source/header files; all warnings stay recorded.",
+        "Compiled all four module libraries in new directories and linked a separate executable. BOOT/host/VU/generic inputs and qualified registration metadata are still reused.",
+        "Recorded the new build running the finite menu/room/ON/OFF sequence, including the unchanged warning. The journal shows its actual original captures and a before/after endpoint."
+      ],
+      "validation": "All nine configure/build/link steps return0. Native0 after453.781s with23originalPNGs and four module installs;21/21common actual-filename originals equal a prior separate run.314synthetic tests/3Windows skips pass58.295s after native terminal.",
+      "limits": "Not a full ISO-only installer, promoted normal07 binary, full menu or new hardware/Warp/survival/fidelity result. Two actual capture filenames differ; earlier loading mismatch, memory warning, strictVU1/artifacts and wider reference/retail gates remain open.",
+      "evidence_comparisons": [
+        "2026-11-12-module-replay-endpoint",
+        "2026-11-12-module-replay-options",
+        "2026-11-12-module-replay-warning"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_MODULE_REPLAY.md",
+        "label": "Fresh module source, compilation, native evidence and remaining dependencies"
+      }
+    },
     {
       "date": "2026-11-12",
       "kind": "progress",
@@ -1220,6 +1242,138 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-12-module-replay-endpoint",
+      "date": "2026-11-12",
+      "title": "Before and after selected-module regeneration",
+      "feature": "DT03",
+      "scenario": "NEW450s native capsule with freshly generated/compiled selected modules, original finite Point1/menu/option sequence. Exact actual capture filenames and executable named.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Previous candidate27 endpoint",
+        "bevy": "Fresh-module endpoint"
+      },
+      "observations": [
+        "The unchanged endpoint originals are byte-identical across these separately named executable/run contexts. Other times and all game state are not certified."
+      ],
+      "limits": [
+        "Single new native diagnostic after module regeneration, not a new physical-key, mouse, Warp or survival-effect test.",
+        "Qualified bases and frozen wrappers/BOOT/host/VU/generic inputs remain; not full-source setup or a promoted normal07 binary.",
+        "Memory warning, rendering artifacts, wider menu/input/reference/retail gates remain. The earlier loading difference is not resolved by sampled endpoint equality.",
+        "Full unchanged original PNGs with separate run provenance. Game imagery is not GPL; owner publication request is not rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Candidate27 original room/Gene/HUD at actual filename7401; byte-identical to baseline in this sample, not full-fidelity proof. Unchanged full renderer PNG; original file-export UTC timestamp, no crop/resize/normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype fresh27 native, exee1115bb6e58ed1a5cbd6a70324c15faa3ab5a4e4b3b17c138da0987d69a43f25; NEWprepared450s software/sharedF2 controller diagnostic. Original tooling 7d3ce40adbd95dd0ff09965722b555ee94c62566 plus private build, not a public game/source-complete setup or PS2hardware.",
+        "revision": "7d3ce40adbd95dd0ff09965722b555ee94c62566",
+        "captured_at": "2026-11-12T13:43:48.514205+00:00",
+        "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+        "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Fresh-module capsule, actual filename7401: original room, Gene and HUD. Same PNG bytes as the prior sampled endpoint, not all-frame fidelity. Unchanged full renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native capsule 79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd; four modules regenerated from original disc and freshly compiled, frozen BOOT/host/VU/generic inputs. Finite software/shared-F2 diagnostic, not OS-key/mouse or PS2 hardware. Adapter source 15beec95266e810be698ed625782de6d103e941f matches the recorded producer hash.",
+        "revision": "15beec95266e810be698ed625782de6d103e941f",
+        "captured_at": "2026-11-12T14:39:21.576061+00:00",
+        "path": "media/8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d.png",
+        "sha256": "8000e5d72221413b9ce2cfad80135f5eb74be09c8b446cdf7bc2b0712f59d86d",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-module-replay-options",
+      "date": "2026-11-12",
+      "title": "Fresh-module build: original option ON and OFF",
+      "feature": "DT03",
+      "scenario": "NEW450s native capsule with freshly generated/compiled selected modules, original finite Point1/menu/option sequence. Exact actual capture filenames and executable named.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original option ON",
+        "bevy": "Original option OFF restored"
+      },
+      "observations": [
+        "The original option-state round trip is visible in the new executable. This is not inherited normal07 health/refill/death proof."
+      ],
+      "limits": [
+        "Single new native diagnostic after module regeneration, not a new physical-key, mouse, Warp or survival-effect test.",
+        "Qualified bases and frozen wrappers/BOOT/host/VU/generic inputs remain; not full-source setup or a promoted normal07 binary.",
+        "Memory warning, rendering artifacts, wider menu/input/reference/retail gates remain. The earlier loading difference is not resolved by sampled endpoint equality.",
+        "Full unchanged original PNGs with separate run provenance. Game imagery is not GPL; owner publication request is not rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Fresh-module capsule, actual filename6530: PL NO DEATH reads ON. Option-state evidence only, not a new survival test. Unchanged full renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native capsule 79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd; four modules regenerated from original disc and freshly compiled, frozen BOOT/host/VU/generic inputs. Finite software/shared-F2 diagnostic, not OS-key/mouse or PS2 hardware. Adapter source 15beec95266e810be698ed625782de6d103e941f matches the recorded producer hash.",
+        "revision": "15beec95266e810be698ed625782de6d103e941f",
+        "captured_at": "2026-11-12T14:38:41.668209+00:00",
+        "path": "media/e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6.png",
+        "sha256": "e8f356d9ddc998513b2241e02e2514ecce334944da3d9d6db874807370d517c6",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Fresh-module capsule, actual filename6680: option reads OFF again. Original bytes equal the preserved prior OFF sample; no inferred partial-frame defect or image repair. Unchanged full renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native capsule 79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd; four modules regenerated from original disc and freshly compiled, frozen BOOT/host/VU/generic inputs. Finite software/shared-F2 diagnostic, not OS-key/mouse or PS2 hardware. Adapter source 15beec95266e810be698ed625782de6d103e941f matches the recorded producer hash.",
+        "revision": "15beec95266e810be698ed625782de6d103e941f",
+        "captured_at": "2026-11-12T14:38:44.168418+00:00",
+        "path": "media/f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6.png",
+        "sha256": "f8cc818994d0506abf093caaff0c320762667a797ade02f22c8c8a75f20a21e6",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "id": "2026-11-12-module-replay-warning",
+      "date": "2026-11-12",
+      "title": "The existing warning is still present",
+      "feature": "DT03",
+      "scenario": "NEW450s native capsule with freshly generated/compiled selected modules, original finite Point1/menu/option sequence. Exact actual capture filenames and executable named.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "Original main menu",
+        "bevy": "Warning after empty option visit"
+      },
+      "observations": [
+        "Fresh source reproduction does not fix the original warning. The same run later returns to the room/HUD; the cause and PS2-reference comparison remain open."
+      ],
+      "limits": [
+        "Single new native diagnostic after module regeneration, not a new physical-key, mouse, Warp or survival-effect test.",
+        "Qualified bases and frozen wrappers/BOOT/host/VU/generic inputs remain; not full-source setup or a promoted normal07 binary.",
+        "Memory warning, rendering artifacts, wider menu/input/reference/retail gates remain. The earlier loading difference is not resolved by sampled endpoint equality.",
+        "Full unchanged original PNGs with separate run provenance. Game imagery is not GPL; owner publication request is not rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Fresh-module capsule, actual filename1560: original five-choice main menu, Room Jump selected. Unchanged full renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native capsule 79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd; four modules regenerated from original disc and freshly compiled, frozen BOOT/host/VU/generic inputs. Finite software/shared-F2 diagnostic, not OS-key/mouse or PS2 hardware. Adapter source 15beec95266e810be698ed625782de6d103e941f matches the recorded producer hash.",
+        "revision": "15beec95266e810be698ed625782de6d103e941f",
+        "captured_at": "2026-11-12T14:35:08.647459+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480
+      },
+      "bevy": {
+        "caption": "Fresh-module capsule, actual filename4060: memory leak size0x480 warning remains after the first empty option visit. Unchanged full renderer PNG; no crop, resize or normalization.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native capsule 79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd; four modules regenerated from original disc and freshly compiled, frozen BOOT/host/VU/generic inputs. Finite software/shared-F2 diagnostic, not OS-key/mouse or PS2 hardware. Adapter source 15beec95266e810be698ed625782de6d103e941f matches the recorded producer hash.",
+        "revision": "15beec95266e810be698ed625782de6d103e941f",
+        "captured_at": "2026-11-12T14:36:41.359971+00:00",
+        "path": "media/17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1.png",
+        "sha256": "17d3c0bd8cc82e7bec53812b63c518c9840a232c044505d830a81089b4ca65a1",
+        "width": 640,
+        "height": 480
+      }
+    },
     {
       "id": "2026-11-12-prepared450-endpoint",
       "date": "2026-11-12",

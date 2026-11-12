@@ -1,5 +1,18 @@
 # Canonical progress and publication workflow
 
+## Fresh selected-module source and native run — 12 November 2026
+
+[PROTOTYPE_MODULE_REPLAY.md](PROTOTYPE_MODULE_REPLAY.md) records four fresh-disc
+module emissions and720byte-identical raw sources, followed by four new libraries
+and a separate native capsule. Its finite menu/room/ON/OFF run exits0/23originals;
+the0x480warning remains visible.21commonfilename originals equal a prior separate
+run, not full source/state/fidelity alignment.314tests/3Windows skips pass after
+native terminal. The journal contains actual new-build captures and a sampled
+before/after endpoint, not site screenshots or a new survival/hardware claim.
+Qualifiedbases/registration wrappers, BOOT/host/VU/generic inputs remain explicit;
+normal07 unchanged. Source closure/freshfullbuild, original reference and wider
+UI/input remain open. Full goal ACTIVE. Earlier scoped entries below are retained.
+
 ## Prepared endpoints and module input catalog — 12 November 2026
 
 Read PROTOTYPE_PREPARED_CONTROLS.md. NEW450s old07/candidate27 controls0/23PNGs

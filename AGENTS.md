@@ -1,5 +1,23 @@
 # God Hand PC continuation - agent instructions
 
+## Selected-module source replay and native capsule — 2026-11-12
+
+Read PROTOTYPE_MODULE_REPLAY.md and checkpoint/module_replay_current. Original
+public15beec9 adapter over pinned1930765 GPL tools emits four fresh-disc modules;
+ELF/images/CSVs exact, JSON values exact with explicit LF/CRLF difference. All720
+raw source/header files exact, generation0errors/82warnings retained. New4module
+libs/708translated units/712wrapped files exact,9build steps0/exe79c88f1e. Frozen
+qualifiedbases/registration wrappers +9832BOOT/host/VU/generic inputs remain.
+NEW450s native0/23PNGs, four installs,21/21commonfilename originals equalprior
+separate run; new2900/5360 vs old2901/5361 not renamed. Loading mismatch NOTfixed.
+Actual mainmenu/ON/OFF/0x480warning/roomHUD viewed; warning/artifacts persist.
+NOTnew hardware/OSkey/mouse/Warp/survival/ABI/allframe/PS2 proof or07promotion.
+314source tests/3Windows skips58.295s after native terminal; alloldinputs unchanged.
+Next registration/VU/generic source closure/freshfullbuild +ownnative acceptance,
+originalreference warning and broaderUI/input. Normal07proof stays scoped/done.
+No guessed frees/ready/flags/unknownNOPs, Rust/delegation/retailtransplant/gameuploads.
+Full goal ACTIVE, not complete; no owned native/compiler jobs remain.
+
 ## Prepared450 controls and public module inputs — 2026-11-12
 
 Read PROTOTYPE_PREPARED_CONTROLS.md/checkpoint/prepared_native_regression_current.

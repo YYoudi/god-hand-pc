@@ -1,5 +1,12 @@
 # God Hand PC continuation tooling
 
+Current scoped result: [selected module source replay and native build](PROTOTYPE_MODULE_REPLAY.md).
+Four selected modules are regenerated from the personal prototype disc and
+compiled into new libraries. The separate native build reaches the sampled room
+and original option states; its memory warning is still present. Qualified
+metadata and other build inputs remain. This is not a complete prototype setup
+release or a change to the normal07 launcher. Earlier dated results follow.
+
 Latest checks: [prepared native endpoints and reusable module inputs](PROTOTYPE_PREPARED_CONTROLS.md).
 New controls now capture both final endpoints. Twenty of21common originals match;
 the loading-screen difference is retained. Public read-only tooling also obtains

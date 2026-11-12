@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-12",
+  "profile": "prototype-june-2006",
+  "scope": "Fresh selected module emission/generation/compile and separate native diagnostic; not source-complete setup, full menu or retail release.",
+  "source_revision": "15beec95266e810be698ed625782de6d103e941f",
+  "adapter_sha256": "ecf0034b27fe78057c00f745dea5c3eb705aef62560e0b180b1a7c0667662acd",
+  "pinned_SNR2_tools_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+  "pinned_runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "recompiler_sha256": "506cffa76fb5eeff58ee86e08fcec1a1d79e911d9fb23565a89f088f4bb80ec4",
+  "modules": 4,
+  "generated_source_header_files": 720,
+  "all_raw_generated_bytes_equal": true,
+  "generation_errors": 0,
+  "retained_generation_warnings": 82,
+  "emitted_ELFs_images_CSVs_byte_equal": true,
+  "emitted_JSON_equal_values_with_LF_CRLF_difference": true,
+  "wrapped_source_header_files_exact": 712,
+  "fresh_translated_function_units": 708,
+  "compile_link_steps": [
+    {
+      "name": "mcport-configure",
+      "exit": 0
+    },
+    {
+      "name": "mcport-build",
+      "exit": 0
+    },
+    {
+      "name": "r020-configure",
+      "exit": 0
+    },
+    {
+      "name": "r020-build",
+      "exit": 0
+    },
+    {
+      "name": "r100-configure",
+      "exit": 0
+    },
+    {
+      "name": "r100-build",
+      "exit": 0
+    },
+    {
+      "name": "event-configure",
+      "exit": 0
+    },
+    {
+      "name": "event-build",
+      "exit": 0
+    },
+    {
+      "name": "link",
+      "exit": 0
+    }
+  ],
+  "reused_BOOT_host_VU_generic_link_inputs": 9832,
+  "qualified_bases_and_frozen_registration_wrappers_still_inputs": true,
+  "exe_sha256": "79c88f1eed19e2c187ff15d5b69fd3518f115c617156749a57027226478b05fd",
+  "normal07_unchanged": true,
+  "native": {
+    "exit": 0,
+    "watchdog_seconds": 450,
+    "elapsed_seconds": 453.78099999999904,
+    "actual_original_PNGs": 23,
+    "last_present_field": "9885",
+    "export_failures": 0,
+    "all_four_selected_module_installs_observed": true,
+    "prior_separate_run_common_actual_filenames": 21,
+    "common_originals_byte_equal": 21,
+    "old_only_actual_fields": [
+      2901,
+      5361
+    ],
+    "new_only_actual_fields": [
+      2900,
+      5360
+    ],
+    "physical_keys_mouse_Warp_survival_not_retested": true,
+    "memory_warning_retained": true,
+    "loading_mismatch_not_resolved": true
+  },
+  "synthetic_source_suite": {
+    "tests": 314,
+    "Windows_skips": 3,
+    "seconds": 58.295,
+    "exit": 0
+  },
+  "preservation": {
+    "all_match": true,
+    "checked_retained_file_identities": 11310,
+    "normal07_and_new27_unchanged": true,
+    "all_old_link_inputs_unchanged": true,
+    "all_old_module_artifacts_unchanged": true,
+    "MIT_4_WIP_status_unchanged": true,
+    "original_disc_and_ELF_unchanged": true,
+    "free_G_bytes": 19722559488,
+    "MIT_4_WIP_hashes_unchanged": true
+  },
+  "limits": [
+    "Previously qualified module bases, frozen original registration wrappers/tables, BOOT/host objects, VU and generic libraries are explicit reused inputs.",
+    "Narrow tail fallback and backend checks are not CFG/ISA/ABI/lifetime proof.",
+    "No new keyboard/mouse/Warp/survival/hardware/retail/PS2 fidelity, game Save/Load or campaign result.",
+    "Earlier translation diagnostic, memory warning, strict-VU1 failure and rendering artifacts remain.",
+    "Game-derived outputs/maps remain private; published source is original GPL host tooling and invented fixtures."
+  ],
+  "final_local_publication_checks": {
+    "tests": 314,
+    "Windows_skips": 3,
+    "seconds": 57.46,
+    "exit": 0,
+    "explicit_public_paths": 343,
+    "reviewed_original_images": 107,
+    "journal_navigation_and_hash_check": true
+  }
+}
