@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Use qualified prototype CLI scenarios as a shared-runtime testbench: inventory existing command channels, exercise a multi-room/situation matrix, diagnose a real defect and verify a significant common correction on prototype AND retail. Preserve existing menus without making their completion the deliverable. Complete or record pending publication first; new full compilation remains capacity-gated.",
+  "next": "Use the now-qualified complete-line transport to define useful room/transition CLI scenarios. Avoid more menu polish or transport-only work unless a reproduced blocker requires it; the next substantive target remains a shared-runtime defect verified on prototype AND retail. Preserve full build capacity gates and all old evidence.",
   "known_limits": [
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -219,9 +219,9 @@
         {
           "id": "RV01",
           "title": "Qualify practical CLI-driven native scenarios",
-          "status": "planned",
+          "status": "in_progress",
           "area": "validation",
-          "acceptance": "Reuse existing qualified command channels first. Real room/point, finite warp and survival controls need observed effects and restore/refusal results; no guessed flags or success from request acceptance. Preserve F1/F2 without requiring full UI coverage."
+          "acceptance": "Reuse existing qualified command channels first. Real room/point, finite warp and survival controls need observed effects and restore/refusal results; no guessed flags or success from request acceptance. Preserve F1/F2 without requiring full UI coverage. Scoped complete-line transport now has a private native1/0/1 request control and retained original menu image. This does not complete semantic scenario CLI or the multi-room matrix."
         },
         {
           "id": "RV02",
@@ -357,6 +357,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Partial commands no longer replay in the prototype trial",
+      "summary": "An isolated native host-reader fix waits for a complete line instead of repeatedly submitting an unfinished command. This qualifies one CLI prerequisite, not a shared game-engine correction or retail result.",
+      "changes": [
+        "Reproduced the old reader: one unfinished line produces480request attempts in an eight-second window. The new candidate produces zero, then one after the terminating newline arrives.",
+        "Compiled one new host main and linked separately over retained game/runtime objects. Preserved the first CMake long-command failure; the separate direct MSVC link has its own result and manifest policy.",
+        "Published original reader and exact host-edit tooling. Its newly emitted private host postimage equals the actually compiled candidate; no game code, raw logs or binaries are included."
+      ],
+      "validation": "Both bounded diagnostic native runs exit0 (93.687s old,93.703s candidate). Actual new field900/1800/2400 and old900 originals have identical menu PNG bytes. Invented reader/source controls pass; full-suite result is recorded in the report.",
+      "limits": "Only prototype diagnostic-v1, with legacy observers. Request counts are not action-effect acknowledgements. No normal launcher adoption, retail correction, new room coverage or public full setup; old profiles/pins unchanged.",
+      "evidence_comparisons": [
+        "2026-11-13-command-framing"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_COMMAND_FRAMING.md",
+        "label": "Native controls, original source recipe and retained limitations"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "direction",
@@ -6636,6 +6656,49 @@
         "capture_source": "computer-use-owned-window",
         "unchanged_original": true,
         "lossy": true
+      }
+    },
+    {
+      "id": "2026-11-13-command-framing",
+      "date": "2026-11-13",
+      "title": "Original menu retained in the command-reader trial",
+      "feature": "RV01",
+      "reviewed": true,
+      "alignment": "unmatched",
+      "scenario": "Old e677 and new290b321c, actual field900 renderer originals. Same menu image bytes, different wall-time command schedules; not a request-count or full-game fidelity comparison.",
+      "labels": {
+        "reference": "Before: existing e677 reader",
+        "bevy": "After: isolated reader candidate"
+      },
+      "observations": [
+        "Both unchanged originals show the original five-choice menu. Request replay suppression is established by separate native log windows, not these pixels."
+      ],
+      "limits": [
+        "No retail or significant common-engine fix; no default/source-v1 promotion.",
+        "Identical sampled menu image, not every-frame parity, input-latency proof or matched command timing.",
+        "Game imagery retains separate rights, not GPL/MIT or rights-holder authorization."
+      ],
+      "reference": {
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "ac1d3d79ad1ca5894e467dffc94ad0d5b93939fd",
+        "captured_at": "2026-11-13T00:35:57.063630+00:00",
+        "runtime": "Private native OpenGL diagnostic-v1, executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34; actual field900, renderer-file export UTC timestamp. Candidate helper bytes later published at e59c3a53ff63d3eb295d1b3389180c36f5ceea1e; exact postimage regeneration checked after the native trial. Not keyboard, retail or normal adoption.",
+        "caption": "Unchanged original renderer PNG showing original menu at field900. File-export time, not guest input latency; no crop, resize or conversion."
+      },
+      "bevy": {
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "e59c3a53ff63d3eb295d1b3389180c36f5ceea1e",
+        "captured_at": "2026-11-13T00:44:06.951296+00:00",
+        "runtime": "Private native OpenGL diagnostic-v1, executable 290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7; actual field900, renderer-file export UTC timestamp. Candidate helper bytes later published at e59c3a53ff63d3eb295d1b3389180c36f5ceea1e; exact postimage regeneration checked after the native trial. Not keyboard, retail or normal adoption.",
+        "caption": "Unchanged original renderer PNG showing original menu at field900. File-export time, not guest input latency; no crop, resize or conversion."
       }
     }
   ],

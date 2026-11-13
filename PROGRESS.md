@@ -1,5 +1,20 @@
 # Canonical progress and publication workflow
 
+## CLI framing native trial — 13 November 2026
+
+Read PROTOTYPE_COMMAND_FRAMING.md and checkpoint/cli_reader_native_current.
+Original reader/source recipe e59c3a5 reproduces the actual new host postimage.
+Isolated candidate290b321c native0/93.703s gives1/0/1 full/partial/completed
+requests versus old1/480; sampled menu PNG unchanged. This is a CLI prerequisite,
+NOT a shared-engine/retail fix, new room coverage or default adoption. Old e677,
+profiles and all original inputs remain unchanged. First CMake long-command
+failure retained; separate direct MSVC link uses explicit embedded manifest.
+513synthetic tests/4Windows skips62.960s pass. First publication preparation
+misdecoded old UTF8 via locale; preserved privately and restored earlier records
+exactly from Git, not changing historical evidence. Next use the working channel
+for named room/transition scenarios and an actual common runtime investigation;
+no more transport polish unless a reproduced blocker requires it. Goal active.
+
 ## Current owner priority: prototype-driven shared runtime — 13 November 2026
 
 RUNTIME_VALIDATION.md is the current execution contract. Use real prototype
