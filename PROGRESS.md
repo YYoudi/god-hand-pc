@@ -1,5 +1,23 @@
 # Canonical progress and publication workflow
 
+## Point1 diagnostics; unadopted scheduler candidate — 13 November 2026
+
+Read PROTOTYPE_POINT1_RUNTIME.md and checkpoint/point1_runtime_current. New
+emulatorPoint1 greenwall/native4501 originals SAME-LANDMARK, not equal state/
+frame/camera. Native0/303.734s,6sampled originals exact. ShortGS CPUVRAMexact,
+GPUdiffers; Endobserver comparison is NOT game fix, may inherit initialbuffer.
+Later native CRASH0xC0000005/8.140s at162 BEFORE recording, zeroPNGs/emptyGSR.
+No pending process. MatchingPDBcatch699 stale read, exact invalidation path
+unknown. Guarded generic-runtime fixtures reproduce delete/nested/sequence
+failures. First exit-only candidate still FAILS nesting. Second candidate five
+controls0, four-lane sharedVU0/next live transfer checked. NOT adopted or linked
+into game, no retail validation. Keep all failures/inputs/oldbuilds. Next review
+other retirement paths then native prototype AND retail controls after capacity
+preflight. G:roughly4GiB; small3GiB probes do NOT waive11/8GiB wholebuild/configure
+floors. Groundghost unresolved, no cloth/GPUfix/optimization claim. No Rust,
+delegation, flags/stubs/frees/autofighting or public gameinputs/dumps/code.
+Goal active; no menu polish prerequisite, existing F1/F2 preserved.
+
 ## Same named Room01 reference — 13 November 2026
 
 Read PROTOTYPE_ROOM01_REFERENCE.md and checkpoint/pcsx2_reference_current.

@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Use the now-observed same-room reference workflow for one concrete native discrepancy. Target the retained Room00/Point1 detached-cloak-like observation only after qualifying its reference point/state/camera; Room01 snapshots do not establish or fix that defect. A common correction must still pass prototype AND retail native checks. No repeated menu/transport proof as progress.
+Review the isolated scheduler retirement candidate and remaining invalidation paths. After native link capacity preflight, prove prototype startup/room transitions AND retail regression before adoption/upstream contribution. Preserve crashed run and partial candidate failures. Ground artifact still needs a longer valid GS recording; no menu polish or Rust.
 
 ## M8 — Active: verified original PC baseline
 
@@ -42,7 +42,7 @@ Keep original behavior as a control; readable original host/function replacement
 - **PC12 Decouple HD diagnostic readback without stale GPU matches — In progress:** Functional gate passes: checked explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Later unchanged-binary pilot +v1/v2/v2/v1 block has identical actual4501..4741 bounds and endpoint PNGs, but timing variation establishes no reliable speedup. Typed model is not real GL proof. Repeated broader-scene/driver/state/performance acceptance and full GL-state equality remain open; no default upgrade or persistent cache.
 - **RV01 Qualify practical CLI-driven native scenarios — In progress:** Reuse existing qualified command channels first. Real room/point, finite warp and survival controls need observed effects and restore/refusal results; no guessed flags or success from request acceptance. Preserve F1/F2 without requiring full UI coverage. Scoped complete-line transport now has a private native1/0/1 request control and retained original menu image. This does not complete semantic scenario CLI or the multi-room matrix.
 - **RV02 Exercise a prototype and retail scenario matrix — In progress:** Actually run several named rooms/situations covering loading/transition, camera/rendering and combat as available. Record exact commands, version-specific capabilities, native/reference evidence and failures; do not infer retail equivalence from prototype. One NEW290b321c CLI cycle through Room01/Room00/Room01 now has actual scene/reload observations,75originals and explicit missing late captures. No emulated-reference or retail validation yet.
-- **RV03 Correct a significant shared-runtime defect — Planned:** Start from a real reproducible failure, qualify its common boundary and implement durable original continuation source outside generated game outputs. Prove before/after and relevant regression controls on BOTH prototype and retail native builds. CLI plumbing, prototype-only results and hoped-for transfer do not complete this task.
+- **RV03 Correct a significant shared-runtime defect — In progress:** Private guarded real-runtime fixtures reproduce deletion/nested/sequence stale-context failures; candidate passes five controls with shared-VU0 and next-transfer state preservation. NOT adopted/native-game validated. Still requires maintainable integration, actual prototype AND retail regression, original evidence and rollback.
 
 ## M10 — Later research: multiplayer feasibility
 

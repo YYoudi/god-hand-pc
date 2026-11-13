@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "date": "2026-11-13",
+  "scope": "Aggregate PRIVATE experiments, no adopted correction. Source/runtime libraries unchanged; no generated game code or inputs public.",
+  "runtime_revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+  "scheduler_source_sha256": "80297ca782b38abfefc3a1e53059dab8b6e05dcf3b2d136266f13cf65b88da4f",
+  "candidate_v2_sha256": "eef04f79134fc139de2876274b028dbaee88e25496bb6707ff22eb7329b197a7",
+  "original_probe_sha256": "b8071f03f4558b956a8141f290126546a7ce318b20634171b817243f073c459a",
+  "compiler": "MSVC14.44.35207 x64 /O2 /EHsc /GL, frozen generic libraries. Candidate adds one copied scheduler object; no native game build.",
+  "cases": [
+    {
+      "name": "guarded-keep",
+      "unchanged_exit": 0,
+      "candidate_exit": 0,
+      "unchanged_seconds": 0.093,
+      "candidate_seconds": 0.078
+    },
+    {
+      "name": "guarded-delete",
+      "unchanged_exit": 3221225477,
+      "candidate_exit": 0,
+      "unchanged_seconds": 0.016,
+      "candidate_seconds": 0.078
+    },
+    {
+      "name": "ordinary-delete",
+      "unchanged_exit": 0,
+      "candidate_exit": 0,
+      "unchanged_seconds": 0.078,
+      "candidate_seconds": 0.078
+    },
+    {
+      "name": "guarded-nested",
+      "unchanged_exit": 3221225477,
+      "candidate_exit": 0,
+      "unchanged_seconds": 0.016,
+      "candidate_seconds": 0.079
+    },
+    {
+      "name": "guarded-sequence",
+      "unchanged_exit": 3221225477,
+      "candidate_exit": 0,
+      "unchanged_seconds": 0.015,
+      "candidate_seconds": 0.078
+    }
+  ],
+  "checks": "Guard allocator decommits freed large allocations, reservations retained. Passing cases check all4lanes of invented VU0 random state and separate later ordinary transfer. No game/guest flag mutations.",
+  "first_candidate": "Exit-retirement-only candidate still fails nested growth; retained.",
+  "fixture_failures": [
+    "Initial empty dispatch table refuses invented addresses, exit3 before scheduler; corrected new fixture version.",
+    "Missing explicit macro header, compile2; corrected new fixture version, failure retained."
+  ],
+  "adopted": false,
+  "native_game_candidate_validated": false,
+  "retail_candidate_validated": false,
+  "reference_exact_guestframe": null,
+  "later_native_failure": {
+    "exit": 3221225477,
+    "seconds": 8.14,
+    "last_field": 162,
+    "recording_bytes": 0,
+    "png_count": 0,
+    "site": "EeScheduler::run dispatcher-transfer catch699, saveSharedVu0Random(context)",
+    "exact_prior_invalidation_path": "unknown"
+  },
+  "gs_only": {
+    "ops": 4959,
+    "draws": 3819,
+    "field_ops": 0,
+    "initial_tick": 4501,
+    "end_tick": 4503,
+    "standard_cpu_exit": 0,
+    "standard_gpu_exit": 1,
+    "standard_gpu_vram_differences": 55781,
+    "paired_observer_comparisons": 1,
+    "paired_rgb_pixel_differences": 0,
+    "paired_postpresent_vram_byte_differences": 44221,
+    "paired_exit": 1,
+    "limit": "Different checkpoints. One displayed frame may inherit initialbuffer; not GPU parity/fix or game performance."
+  }
+}

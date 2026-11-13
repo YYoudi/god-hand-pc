@@ -5,8 +5,9 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Use the now-observed same-room reference workflow for one concrete native discrepancy. Target the retained Room00/Point1 detached-cloak-like observation only after qualifying its reference point/state/camera; Room01 snapshots do not establish or fix that defect. A common correction must still pass prototype AND retail native checks. No repeated menu/transport proof as progress.",
+  "next": "Review the isolated scheduler retirement candidate and remaining invalidation paths. After native link capacity preflight, prove prototype startup/room transitions AND retail regression before adoption/upstream contribution. Preserve crashed run and partial candidate failures. Ground artifact still needs a longer valid GS recording; no menu polish or Rust.",
   "known_limits": [
+    "NEW scheduler candidate passes five synthetic real-runtime controls ONLY. No native integration/retail validation. Longer-GS attempt crashes at162 before recording; exact earlier invalidation path unproven. Ground ghost unresolved, no GPU/parity/optimization claim.",
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
@@ -233,9 +234,9 @@
         {
           "id": "RV03",
           "title": "Correct a significant shared-runtime defect",
-          "status": "planned",
+          "status": "in_progress",
           "area": "pc",
-          "acceptance": "Start from a real reproducible failure, qualify its common boundary and implement durable original continuation source outside generated game outputs. Prove before/after and relevant regression controls on BOTH prototype and retail native builds. CLI plumbing, prototype-only results and hoped-for transfer do not complete this task."
+          "acceptance": "Private guarded real-runtime fixtures reproduce deletion/nested/sequence stale-context failures; candidate passes five controls with shared-VU0 and next-transfer state preservation. NOT adopted/native-game validated. Still requires maintainable integration, actual prototype AND retail regression, original evidence and rollback."
         }
       ]
     },
@@ -357,6 +358,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Point1 reference leads to a scheduler lifetime investigation",
+      "summary": "A new emulator reference covers the retained native ground artifact. A separate startup crash exposes stale-context reads in the shared scheduler; an isolated candidate passes synthetic controls but is not yet a corrected game build.",
+      "changes": [
+        "Compared new unchanged same-landmark emulator/native captures, no fitted camera or equal-state claim.",
+        "Short private GS replay: CPU final VRAM agrees, GPU differs. Corrected an offline zero-comparison observer trap, not the game renderer.",
+        "Preserved startup access violation/private dump. Actual generic-runtime tests reproduce deletion and nested-invocation lifetime failures. First partial candidate still fails nesting; second passes final controls and later live-transfer state checks."
+      ],
+      "validation": "Emulator0/203.625s; unchanged native0/303.734s,6sampled PNGs exact. Later nativeCRASH0xC0000005/8.140s before recording, zeroPNGs. MatchingPDB locates catch699. Baseline guarded delete/nested/sequence crash; candidate final five cases0, four-lane sharedVU0 and next ordinary transfer checked.",
+      "limits": "Synthetic candidate ONLY, no adoption/new game executable, retail regression or GPU fix. Exact earlier crash invalidation path not reconstructed; ground artifact unresolved. Low G: capacity; probes do not waive full-build gates. Hardware/audio/gameSave/campaign remain.",
+      "evidence_comparisons": [
+        "2026-11-13-point1-reference-runtime"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_POINT1_RUNTIME.md",
+        "label": "Point1 originals, GS limits and synthetic scheduler counterexamples"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -6990,6 +7011,53 @@
         "captured_at": "2026-11-13T00:54:32.136358+00:00",
         "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field3100; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
         "caption": "PREVIOUS native Stage1/Room01/Point0 entry at3100. Reused unchanged640x480 renderer original, not a new run. Native health/pose/time differ from the new emulator reference."
+      }
+    },
+    {
+      "id": "2026-11-13-point1-reference-runtime",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "same-landmark",
+      "title": "Point1: emulator reference and unchanged native output",
+      "feature": "RV03",
+      "labels": {
+        "reference": "New emulator Point1 reference",
+        "bevy": "New unchanged-native Point1 run"
+      },
+      "scenario": "RoomJump route targetsStage1/Room00/Point1; common green wall, windows, crate and Gene/HUD. Own emulator snapshot; native script has extra developer request. No state, pose, health, camera, scale or frame equality.",
+      "observations": [
+        "Actual emulator green-wall gameplay after original Start skip; first no-skip trial ends on introduction and is retained.",
+        "Native lower-ground ghost remains. Cloth/shadow/temporal/presentation origin unresolved; no repair claimed.",
+        "New native six sampled originals equal retained same-filename originals byte-for-byte; no new native binary or default switch."
+      ],
+      "limits": [
+        "827x620 display emulatorPNG vs640x480 nativePNG; unchanged bytes, no crop/rescale/color correction/fitted camera. Exact emulator guestframe unknown.",
+        "Owned snapshot-assisted recording with MTVU warning; different health/pose/time. No pixel metric, gameSaveLoad or hardware proof.",
+        "Short CPU GS replay agreesVRAM, GPU differs; paired RGB equality may inherit initialbuffer, not GPU correctness.",
+        "Later native startup trial CRASHES at162 before recording. Generic-runtime candidate passes synthetic tests only; not integrated/prototype-retail verified.",
+        "No game inputs/BIOS/states/recordings/dumps/assets/binaries/generated code public. Game imagery separate rights; owner request not rights-holder authorization."
+      ],
+      "reference": {
+        "path": "media/3a246cca3c3a9d75cc34dd87add3f9a923262205caa8ae01efc907baf742197e.png",
+        "sha256": "3a246cca3c3a9d75cc34dd87add3f9a923262205caa8ae01efc907baf742197e",
+        "width": 827,
+        "height": 620,
+        "profile": "prototype-june-2006",
+        "revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+        "captured_at": "2026-11-13T02:23:26.828393+00:00",
+        "runtime": "NEW PCSX2v2.8.2 official sourcefd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3, exe982c7c62600a999cf15a25c18349426166c785e7867b2fcc5018d733245b71a3. PrototypeSLPM-66550/CRC18E5A0CA, autoD3D12/1x512x448/display4:3. Own selector snapshot, Down/Down/Right/Circle thenStart1500..1511. Actualgreenwall2627/3273/4000. F8while running, exactguestframe unknown; file-export timestamp, not raw512x448.",
+        "caption": "NEW unchanged emulator F8 green-wall original. Snapshot-assisted reference, not equal pose/health/frame or a game save."
+      },
+      "bevy": {
+        "caption": "NEW actual4501 native original, byte-identical to retained e677 output. Existing lower-ground ghost-like artifact, not a corrected renderer.",
+        "profile": "prototype-june-2006",
+        "runtime": "NEW unchanged e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34 native run, original production helpers3aac129, AOT1, same finite RoomJump/Start script. Private GS recording wrapper around4500, actual field4501. CPU GS default inferred from pinned source, OpenGL presentation; not a logged backend-selection certificate. Renderer file-export UTC timestamp.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-13T02:31:27.839292+00:00",
+        "path": "media/2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff.png",
+        "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+        "width": 640,
+        "height": 480
       }
     }
   ],
