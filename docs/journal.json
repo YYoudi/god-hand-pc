@@ -363,7 +363,7 @@
       "date": "2026-11-13",
       "kind": "progress",
       "title": "Publish the experimental scheduler recipe and synthetic probe",
-      "summary": "The candidate can now be reconstructed with reviewed original tooling. The same generic scheduler source is confirmed in the inspected prototype and retail checkouts. No correction has been installed into either game build.",
+      "summary": "The candidate can now be reconstructed with reviewed original tooling. The same generic scheduler source is confirmed in the inspected prototype and retail checkouts. No correction has been installed into either game build. Images below reuse the previous Point1 observations; this tooling step has no new game run or screenshot.",
       "changes": [
         "Published a strict source/output-fingerprint recipe and the exact original invented-data C++ probe. Output stays in a new ignored file; existing sources, outputs and launch profiles are untouched.",
         "Actually generated identical candidates from both inspected generic-runtime sources. The newly compiled public probe/candidate passes the five retained synthetic cases, including later live-transfer state.",
