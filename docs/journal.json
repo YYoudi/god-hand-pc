@@ -5,9 +5,9 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
   "status": "The new selected-source prototype build has its own scoped normal F1/F2, Room01/Warp and Room00 no-death/OFF/Continue observations. Existing native07/default and explicit room01-v1 launch profiles remain unchanged. Public personal-disc prototype setup, wider original options/rooms and campaign fidelity are not complete; no retail debug backend is claimed.",
-  "next": "Consolidate the public stages into end-to-end orchestration and fresh native-registration acquisition/qualification, then prove a new full build and its own native acceptance once G: capacity passes. Source/data/observer/project producers and scoped e677 normal named effects are done for their stated scopes; no default adoption or public ISO-only installer claim. Review practical normal-candidate delivery against the actual goal requirements, retaining wider original menu/input/reference/ABI/lifetime/failure-warning/audio/save gates; no repeated source-component proofs as missing.",
+  "next": "The exact source-built e677 now has an explicit source-v1 adopt-only normal-launch profile with its own startup/UI evidence; native07 stays default and old profiles/data are unchanged. Reconcile the full debug-goal acceptance and choose an actually unmet native/interaction/fidelity gate, not repeated helper proofs or named effects. End-to-end fresh setup/registration acquisition and a new full build/native acceptance remain capacity-gated; wider menu/input/reference/ABI/lifetime/failure-warning/audio/save/campaign/retail claims remain open.",
   "known_limits": [
-    "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration evidence but is not adopted. SDK/entry/host/profile/observer producers and native-project emission now reproduce scoped inputs/configuration. Historical registration dependencies, end-to-end orchestration, fresh full compilation/native acceptance and low G: capacity still prevent a public ISO-only prototype installer claim.",
+    "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
@@ -123,7 +123,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. No new profile adoption: old defaults/hashes/data stay unchanged. Public SDK core/input CLI now reproduces103bindings/152checks and exact native include, with no new native run. Public direct/indirect entry producers now reproduce both native consumer CSVs with the named pinned GPL registry model, no new native run. Remaining end-to-end orchestration and fresh observation acquisition/qualification still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity. Original public host templates/IOP/F1 edit recipe now reproduce all five tested host sources exactly; all67 host parameters now derive with five qualified historical observations, not an old table as CLI input. This is not new semantic/ABI proof or fresh-base discovery; observer-source assembly now reproduces all four tested postimages and a new CMake configure matches selected source/flag inventory. End-to-end orchestration/fresh observation qualification, new full compile/native acceptance and practical adoption remain. No new native run or default adoption."
+          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. Explicit source-v1 now selects unchanged e677; old defaults/hashes/data stay unchanged. Public SDK core/input CLI now reproduces103bindings/152checks and exact native include, with no new native run. Public direct/indirect entry producers now reproduce both native consumer CSVs with the named pinned GPL registry model, no new native run. Remaining end-to-end orchestration and fresh observation acquisition/qualification still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity. Original public host templates/IOP/F1 edit recipe now reproduce all five tested host sources exactly; all67 host parameters now derive with five qualified historical observations, not an old table as CLI input. This is not new semantic/ABI proof or fresh-base discovery; observer-source assembly now reproduces all four tested postimages and a new CMake configure matches selected source/flag inventory. End-to-end orchestration/fresh observation qualification, new full compile/native acceptance remain. source-v1 now has its own exact-public-launcher normal startup/UI check (205.781s, planned180s budget overrun25.781s), not a new executable or new named effect proof; default native07 unchanged."
         },
         {
           "id": "RM01",
@@ -336,6 +336,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "A normal launch choice for the source-built prototype",
+      "summary": "The already-tested e677 prototype can now be selected explicitly with --build source-v1. This closes a launcher delivery gap, not a new native build; native07 stays the default.",
+      "changes": [
+        "Added a strict adopt-only profile and separate default data name. Eleven real preflights preserve existing files and reject cross-profile executable identities.",
+        "Ran the exact public launcher: F1 owns input, F2 is refused there, fresh F2 later opens the original menu, then Cross/Hide and normal Alt-F4 close it. The background is the original opening movie, not new gameplay.",
+        "Published four unchanged full native-window originals. Artifact-save timestamps are explicitly recorded separately from unknown capture-completion time; early white and pending-request originals remain private."
+      ],
+      "validation": "Native and launcher exit0 after205.781s;18oldworkbench files and original inputs unchanged.507tests/4Windows skips69.417s pass;4launcher and2time-provenance controls are new.",
+      "limits": "The planned180s operator budget overran25.781s; there is no native watchdog or termination guarantee. No new binary, room/effect, rendering/performance, hardware or retail acceptance; fresh setup/build and wider menu/input/reference/ABI/lifetime/audio/save gates remain.",
+      "evidence_comparisons": [
+        "2026-11-13-source-launch-f1-f2",
+        "2026-11-13-source-launch-close"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_SOURCE_LAUNCH.md",
+        "label": "Launch command, actual controls, timing overrun and exact image provenance"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -6465,6 +6486,118 @@
         "sha256": "7107cd89a0276f3b2e3d6d86c79afc231c6d85ff05842b8961bae488187fac6c",
         "width": 800,
         "height": 600
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "DT03",
+      "scenario": "Exact public source-v1 launcher startup on unchanged e677. Normal205.781s, manual Alt-F4 exit0; planned180s operator budget exceeded25.781s, no enforced deadline. Original opening/attract movie background, not new combat.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "observations": [
+        "Different actual UI states within one owned native session. The movie changes between observations; this is not a same-frame/camera or rendering comparison."
+      ],
+      "limits": [
+        "Software Windows/mouse input, not physical keyboard/gamepad, PS2 or retail acceptance.",
+        "A launcher-profile delivery check, not a new game build, fresh ISO-only installer, repeated room/effect proof or graphics/performance result.",
+        "Artifact-save timestamps are recorded after observing the returned screenshot; backend capture-completion time is not known. No guest-frame/input-latency claim.",
+        "The planned180s operator budget overran25.781s. Normal mode has no watchdog; the observed exit is a manual close, not an enforced termination guarantee.",
+        "Early white-window and Cross-pending originals are retained privately and not relabeled as later game/closure proof. Existing warnings and broader fidelity/input/audio/save gates remain.",
+        "Unchanged original JPEG bytes have separate game-imagery rights, not GPL/MIT or rights-holder authorization."
+      ],
+      "id": "2026-11-13-source-launch-f1-f2",
+      "title": "F1 ownership and original F2 through source-v1",
+      "labels": {
+        "reference": "F2 refused while F1 owns input",
+        "bevy": "Fresh F2 opens the original menu"
+      },
+      "reference": {
+        "caption": "Actual F2 is refused under F1; controls retain exclusive ownership over the continuing opening movie. Unchanged lossy full native-window JPEG; title/border retained. Recorded time is not capture completion.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1, explicit adopt-only source-v1. UNCHANGED executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Public launcher 25889a821b5f7ba62d5a78e9fa85a854e0883a0d; upstream runtime1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a and selected-source helper3aac1292c7f0535548146cb41f3f502f8adc6181 documented in PROTOTYPE_WHOLE_SOURCE.md. No binary rebuild here. Actual Windows OS/mouse; opening movie background, no new live gameplay. No watchdog/game observers/raw exports. Timestamp is artifact-save time AFTER observation; exact backend capture completion and guest frame unknown.",
+        "revision": "25889a821b5f7ba62d5a78e9fa85a854e0883a0d",
+        "recorded_at": "2026-11-12T23:47:27.206Z",
+        "timestamp_basis": "artifact-save-after-observation",
+        "path": "media/783bebab2e15f5788f2bf8033d274df4f18714d1067e89a9f09a5e98ef800d36.jpg",
+        "sha256": "783bebab2e15f5788f2bf8033d274df4f18714d1067e89a9f09a5e98ef800d36",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After F1 closes without a deferred panel, fresh F2 opens the live original five-choice debug menu and host request panel over the opening movie. Unchanged lossy full native-window JPEG; title/border retained. Recorded time is not capture completion.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1, explicit adopt-only source-v1. UNCHANGED executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Public launcher 25889a821b5f7ba62d5a78e9fa85a854e0883a0d; upstream runtime1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a and selected-source helper3aac1292c7f0535548146cb41f3f502f8adc6181 documented in PROTOTYPE_WHOLE_SOURCE.md. No binary rebuild here. Actual Windows OS/mouse; opening movie background, no new live gameplay. No watchdog/game observers/raw exports. Timestamp is artifact-save time AFTER observation; exact backend capture completion and guest frame unknown.",
+        "revision": "25889a821b5f7ba62d5a78e9fa85a854e0883a0d",
+        "recorded_at": "2026-11-12T23:48:35.366Z",
+        "timestamp_basis": "artifact-save-after-observation",
+        "path": "media/d2186b9c976390c033714cf38853be6cb7a53a5e4068f426b723f44c21a5157a.jpg",
+        "sha256": "d2186b9c976390c033714cf38853be6cb7a53a5e4068f426b723f44c21a5157a",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "feature": "DT03",
+      "scenario": "Exact public source-v1 launcher startup on unchanged e677. Normal205.781s, manual Alt-F4 exit0; planned180s operator budget exceeded25.781s, no enforced deadline. Original opening/attract movie background, not new combat.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "observations": [
+        "Different actual UI states within one owned native session. The movie changes between observations; this is not a same-frame/camera or rendering comparison."
+      ],
+      "limits": [
+        "Software Windows/mouse input, not physical keyboard/gamepad, PS2 or retail acceptance.",
+        "A launcher-profile delivery check, not a new game build, fresh ISO-only installer, repeated room/effect proof or graphics/performance result.",
+        "Artifact-save timestamps are recorded after observing the returned screenshot; backend capture-completion time is not known. No guest-frame/input-latency claim.",
+        "The planned180s operator budget overran25.781s. Normal mode has no watchdog; the observed exit is a manual close, not an enforced termination guarantee.",
+        "Early white-window and Cross-pending originals are retained privately and not relabeled as later game/closure proof. Existing warnings and broader fidelity/input/audio/save gates remain.",
+        "Unchanged original JPEG bytes have separate game-imagery rights, not GPL/MIT or rights-holder authorization."
+      ],
+      "id": "2026-11-13-source-launch-close",
+      "title": "Original menu closure and host-panel hiding",
+      "labels": {
+        "reference": "Original menu closed after Cross",
+        "bevy": "Host panel hidden afterward"
+      },
+      "reference": {
+        "caption": "A later observation after the Cross request shows the original debug menu closed; host panel still present over the movie title. Unchanged lossy full native-window JPEG; title/border retained. Recorded time is not capture completion.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1, explicit adopt-only source-v1. UNCHANGED executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Public launcher 25889a821b5f7ba62d5a78e9fa85a854e0883a0d; upstream runtime1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a and selected-source helper3aac1292c7f0535548146cb41f3f502f8adc6181 documented in PROTOTYPE_WHOLE_SOURCE.md. No binary rebuild here. Actual Windows OS/mouse; opening movie background, no new live gameplay. No watchdog/game observers/raw exports. Timestamp is artifact-save time AFTER observation; exact backend capture completion and guest frame unknown.",
+        "revision": "25889a821b5f7ba62d5a78e9fa85a854e0883a0d",
+        "recorded_at": "2026-11-12T23:48:58.235Z",
+        "timestamp_basis": "artifact-save-after-observation",
+        "path": "media/4b03ea340b8385ad954b24b2d65b4092d4a167d0c2a3611f8389de2a9ebd8958.jpg",
+        "sha256": "4b03ea340b8385ad954b24b2d65b4092d4a167d0c2a3611f8389de2a9ebd8958",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
+      },
+      "bevy": {
+        "caption": "After Hide, the host panel is gone and the original movie continues; this is not new gameplay. Unchanged lossy full native-window JPEG; title/border retained. Recorded time is not capture completion.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype PC native OpenGL / interactive-v1, explicit adopt-only source-v1. UNCHANGED executable e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Public launcher 25889a821b5f7ba62d5a78e9fa85a854e0883a0d; upstream runtime1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a and selected-source helper3aac1292c7f0535548146cb41f3f502f8adc6181 documented in PROTOTYPE_WHOLE_SOURCE.md. No binary rebuild here. Actual Windows OS/mouse; opening movie background, no new live gameplay. No watchdog/game observers/raw exports. Timestamp is artifact-save time AFTER observation; exact backend capture completion and guest frame unknown.",
+        "revision": "25889a821b5f7ba62d5a78e9fa85a854e0883a0d",
+        "recorded_at": "2026-11-12T23:49:28.724Z",
+        "timestamp_basis": "artifact-save-after-observation",
+        "path": "media/f52929003e8d090a80c5eb3ebcd4036f33c17ac4a7797d31311f4edb50664b6e.jpg",
+        "sha256": "f52929003e8d090a80c5eb3ebcd4036f33c17ac4a7797d31311f4edb50664b6e",
+        "width": 642,
+        "height": 512,
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true
       }
     }
   ],

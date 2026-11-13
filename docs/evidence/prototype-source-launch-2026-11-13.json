@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-13",
+  "launcher_source_revision": "25889a821b5f7ba62d5a78e9fa85a854e0883a0d",
+  "publication_source_revision": "2e98247606a7ecc382d235313ba1ae0d8601cf9b",
+  "launcher_sha256": "127b7fdaa615c726ca3fca78619200ecd52e40e36132cfffa8c2b30236a3d4ae",
+  "native_executable_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+  "elf_sha256": "f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e",
+  "disc_sha256": "5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e",
+  "new_game_build": false,
+  "selected_build": "source-v1",
+  "default_still": "native07",
+  "default_user_data": "prototype-source",
+  "old_native07_and_room01_profiles_unchanged": true,
+  "first_path_guard_refusal_retained": true,
+  "first_path_guard_started_native": false,
+  "preflights": [
+    {
+      "label": "source-check-only",
+      "exit": 0,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "old-default-check",
+      "exit": 0,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "old-explicit-check",
+      "exit": 0,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "combined-check",
+      "exit": 0,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "default-refuses-source",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "combined-refuses-source",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "source-refuses-old",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "source-refuses-combined",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "unknown-profile",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "unsafe-session",
+      "exit": 2,
+      "output_tree_unchanged": true
+    },
+    {
+      "label": "missing-elf",
+      "exit": 2,
+      "output_tree_unchanged": true
+    }
+  ],
+  "native_exit": 0,
+  "launcher_exit": 0,
+  "native_seconds": 205.781,
+  "planned_observer_budget_seconds": 180,
+  "planned_budget_met": false,
+  "overrun_seconds": 25.781,
+  "native_watchdog": false,
+  "actual_UI_observations": {
+    "originals_verified": 8,
+    "dimensions": [
+      642,
+      512
+    ],
+    "F1_ownership_and_F2_refusal_observed": true,
+    "F1_closed_without_deferred_panel_observed": true,
+    "fresh_F2_original_five_choice_menu_observed": true,
+    "Cross_pending_not_relabelled_as_closed": true,
+    "later_original_menu_closure_observed": true,
+    "Hide_panel_closure_observed": true,
+    "normal_AltF4_and_disappearance_observed": true,
+    "background": "Original opening/attract movie, not new live gameplay or autonomous combat",
+    "early_white": "Retained first native capture; later F1/menu/movie render, no cause/fix/parity claim",
+    "planned_observer_budget_seconds": 180,
+    "actual_native_seconds": 205.781,
+    "planned_observer_budget_met": false,
+    "overrun_seconds": 25.781,
+    "native_watchdog": false,
+    "normal_native_exit": 0,
+    "scope": "New exact-public-launcher startup/UI control only; prior named room/effect proof retains its own dated receipts."
+  },
+  "originals_verified": 8,
+  "selected_originals": 4,
+  "selected_comparison_ids": [
+    "2026-11-13-source-launch-f1-f2",
+    "2026-11-13-source-launch-close"
+  ],
+  "all_preexisting_workbench_files_unchanged": true,
+  "preexisting_workbench_files": 18,
+  "session_files": [
+    "launch.json",
+    "prototype-developer-input.txt",
+    "runtime.log"
+  ],
+  "runtime_normal_flags": "interactive-v1 watchdog=none raw_exports=0 observers=0",
+  "controls_before_sha256": "7b4c9ce55747efc798fcd10eefcbd0420080755bcfacc70e689e3efc6799d34e",
+  "controls_after_sha256": "7b4c9ce55747efc798fcd10eefcbd0420080755bcfacc70e689e3efc6799d34e",
+  "binary_elf_disc_and_launcher_hashes_preserved": true,
+  "synthetic_tests": {
+    "collected": 507,
+    "skipped_windows": 4,
+    "seconds": 69.417,
+    "new_launcher_tests": 4,
+    "new_time_provenance_tests": 2
+  },
+  "earlier_launcher_suite": {
+    "collected": 505,
+    "skipped_windows": 4,
+    "seconds": 73.257
+  },
+  "preserved_paths_unchanged": 45675,
+  "prior_launcher_bytes_retained": true,
+  "intentional_launcher_source_change_not_claimed_unchanged": true,
+  "limits": [
+    "New exact-source public normal launcher check, not new named RoomJump/Warp/no-death effects or a new executable.",
+    "Opening movie, not new gameplay; exact capture-completion timestamps unknown.",
+    "Observed manual exit does not meet planned180s budget; no watchdog guarantee.",
+    "Fresh ISO setup/registration/build, broader menu/input/reference/ABI/lifetime/warning/audio/save/campaign/retail gates remain."
+  ]
+}

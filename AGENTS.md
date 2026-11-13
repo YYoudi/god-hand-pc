@@ -1,5 +1,32 @@
 # God Hand PC continuation - agent instructions
 
+## Explicit source-v1 normal delivery — 13 November 2026
+
+Read PROTOTYPE_SOURCE_LAUNCH.md and checkpoint/source_launch_current. Goal audit
+found a real user-facing gap: exact e677 named normal effects already observed,
+but no public normal profile could select it. Launcher25889a8 adds ONLY explicit
+source-v1/e677/separateprototype-source data; native07default and room01-v1 pins/
+data unchanged. Adopt-only, no new binary or ISO-only installer.11actual readonly
+preflights pass; NEWexact-public-CLI normal0/205.781s with real F1/F2refusal/no-
+deferred/freshF2 original5choices/Cross/Hide/AltF4. Background is original MOVIE,
+not new gameplay/combat.180soperator budget OVERRAN25.781s; no deadline guarantee.
+Firstwrong-old-local-path hash refusal before launch retained; actual previous
+normal receipt supplied corrected path, not changed pin. Cross-pending and early
+white originals retained, not later-proof relabel.8originalJPEGs verified,4selected.
+Saver times are artifact-save AFTER observation, NOT capture-completion; new
+recorded_at/basis support2e98247 labels this, legacy captured_at records unchanged.
+All18oldworkbenchfiles/inputs unchanged; launcher source intentionally changed,
+exact priorc7dad bytes/Git retained (do NOT claim its worktree path unchanged).
+507tests/4Win skips69.417s after native terminal;4newlauncher+2newtime controls.
+Explicit source-v1 local delivery is DONE for its scoped startup, not fullmenu/
+hardware/retail/source-installer proof. Do not repeatedly reprove named e677
+effects or source-helper stages as missing. Next reconcile full goal acceptance
+and choose an actually unmet native/interaction/fidelity requirement; keep broader
+original options/input/reference/ABI/lifetime/failure-warning/audio/save gates.
+End-to-end fresh setup/registration and new full build remain; G:low, no configure/
+wholecompile below original capacity gates. No deletion/moves/C:research, Rust,
+delegation/autofighting/guessedflags/ready/NOP/frees/game uploads. Goal ACTIVE.
+
 ## Original source assembly and native-project graph — 13 November 2026
 
 Read PROTOTYPE_SOURCE_ASSEMBLY.md and checkpoint/source_assembly_current.

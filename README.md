@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Prototype launch follow-up: [explicit source-v1 normal profile](PROTOTYPE_SOURCE_LAUNCH.md).
+`--build source-v1` now selects the already-built e677 candidate after its own
+public-launcher F1/F2/close check. native07 stays default; no game binary is
+downloaded or distributed, and a fresh ISO-only setup is still not provided.
+
 Setup-source follow-up: [observer and native-project assembly](PROTOTYPE_SOURCE_ASSEMBLY.md).
 Four private observer sources reproduce the tested bodies, and a new CMake
 configuration retains the checked source/flag inventory. No new game executable
