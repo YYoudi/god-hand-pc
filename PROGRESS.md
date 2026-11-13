@@ -1,5 +1,17 @@
 # Canonical progress and publication workflow
 
+## CLI room-cycle evidence — 13 November 2026
+
+Read PROTOTYPE_ROOM_MATRIX.md and checkpoint/cli_room_matrix_current. NEW290b
+CLI-only Room01/Room00-introduction/Room01 cycle actually observed; module
+clear/reinstall has equal own-disc linked images. Native0/305.031s with300s
+watchdog;75originals, but last11188 means requested11200..14000 missing. Actual
+return11000 is the result, not old11300 or full coverage. No new build, retail,
+reference or shared-engine fix. Next isolated PCSX2 prototype reference for a
+named native scene, then real discrepancy/common-runtime investigation. Keep
+BIOS/disc/maps/generated code private; G:-only, no old evidence deletion or
+menu polish/transport replay as progress. Preserve original F1/F2 and profiles.
+
 ## CLI framing native trial — 13 November 2026
 
 Read PROTOTYPE_COMMAND_FRAMING.md and checkpoint/cli_reader_native_current.

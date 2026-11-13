@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "name": "prototype-room-cycle-v1",
+  "profile": "prototype-june-2006",
+  "exe_sha256": "290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7",
+  "native_deadline_seconds": 300,
+  "pad_script": "900v:start:60,1200v:cross:30,1700v:circle:12,1900v:right:12,2100v:down:12,2200v:right:12,2350v:down:12,2500v:circle:12,3400v:l2:80,3455v:r3:12,3750v:circle:12,4800v:down:12,6200v:left:12,7500v:down:12,7900v:circle:12,8500v:start:12,8700v:l2:80,8755v:r3:12,9600v:circle:12,9900v:down:12,10100v:right:12,10500v:down:12,10600v:circle:12",
+  "developer_probe_field": 1400,
+  "selected_observation_fields": [
+    3100,
+    3900,
+    7800,
+    8400,
+    10400,
+    10600,
+    11000
+  ],
+  "expected_route": "Stage1/Room01/Point0 -> Room00/Point0 introduction -> Room01/Point0",
+  "scope": "One diagnostic-v1 cycle, no attacks/game-state writes. Script is finite original controller input, not a semantic room API or retail support. Effects require actual image/loader checks.",
+  "limits": "Native watchdog300s; actual process305.031s including shutdown. Late requested fields11200..14000 missing; return is observed at11000. Different poses, no general repeatability/fidelity/performance claim."
+}

@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Use the now-qualified complete-line transport to define useful room/transition CLI scenarios. Avoid more menu polish or transport-only work unless a reproduced blocker requires it; the next substantive target remains a shared-runtime defect verified on prototype AND retail. Preserve full build capacity gates and all old evidence.",
+  "next": "Compare a named native scene against an isolated PCSX2 prototype reference, then investigate a concrete defect and verify any common-runtime correction on retail. Existing CLI transport and scoped two-room cycle are tools now, not menu-polish deliverables. Keep reference limitations, old evidence and capacity gates.",
   "known_limits": [
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -226,9 +226,9 @@
         {
           "id": "RV02",
           "title": "Exercise a prototype and retail scenario matrix",
-          "status": "planned",
+          "status": "in_progress",
           "area": "validation",
-          "acceptance": "Actually run several named rooms/situations covering loading/transition, camera/rendering and combat as available. Record exact commands, version-specific capabilities, native/reference evidence and failures; do not infer retail equivalence from prototype."
+          "acceptance": "Actually run several named rooms/situations covering loading/transition, camera/rendering and combat as available. Record exact commands, version-specific capabilities, native/reference evidence and failures; do not infer retail equivalence from prototype. One NEW290b321c CLI cycle through Room01/Room00/Room01 now has actual scene/reload observations,75originals and explicit missing late captures. No emulated-reference or retail validation yet."
         },
         {
           "id": "RV03",
@@ -357,6 +357,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "A finite CLI cycle through two prototype rooms",
+      "summary": "The existing native candidate now runs Room01, visits the Room00 introduction and returns to Room01 in one process using only finite original controller commands. This is new scenario evidence, not a new build or shared-engine correction.",
+      "changes": [
+        "Recorded actual room selectors and the original interior/Gene/enemies/HUD, exterior introduction and returned interior. No desktop controls, automatic fighting or gameplay flags.",
+        "Observed the room module clear and reinstall. Both actual linked images equal their own previously qualified personal-disc input; this is a scoped reload check, not all overlay lifetime safety.",
+        "Added the exact finite scenario metadata and selected unchanged scene/selector originals. The missing late capture targets remain explicit."
+      ],
+      "validation": "Native exits0 after305.031s with300s watchdog;75original PNGs hash-checked. Six module observations are retained privately; the reentered room image equals its own linked oracle. Original inputs/executable/controls unchanged.",
+      "limits": "Only two rooms/one cycle in prototype diagnostic-v1. Requested11200..14000 captures were not reached; actual return is seen at11000. No reference/retail/fidelity/performance or semantic CLI API claim.",
+      "evidence_comparisons": [
+        "2026-11-13-cli-room-return",
+        "2026-11-13-cli-room00"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ROOM_MATRIX.md",
+        "label": "Finite scenario, actual results and remaining reference comparison"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -6699,6 +6720,92 @@
         "captured_at": "2026-11-13T00:44:06.951296+00:00",
         "runtime": "Private native OpenGL diagnostic-v1, executable 290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7; actual field900, renderer-file export UTC timestamp. Candidate helper bytes later published at e59c3a53ff63d3eb295d1b3389180c36f5ceea1e; exact postimage regeneration checked after the native trial. Not keyboard, retail or normal adoption.",
         "caption": "Unchanged original renderer PNG showing original menu at field900. File-export time, not guest input latency; no crop, resize or conversion."
+      }
+    },
+    {
+      "id": "2026-11-13-cli-room-return",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "unmatched",
+      "title": "Room01 before and after the CLI cycle",
+      "feature": "RV02",
+      "labels": {
+        "reference": "First Room01 entry",
+        "bevy": "Room01 after Room00"
+      },
+      "scenario": "NEW native290b321c finite original controller script, one process, diagnostic-v1. This is not retail, emulated reference or a graphics improvement.",
+      "observations": [
+        "Actual original selector/scene images from the newly executed cycle. Initial and returning room poses may differ."
+      ],
+      "limits": [
+        "Only two named rooms and one finite cycle; not complete room/menu or campaign coverage.",
+        "Late requested11200..14000 fields were not reached before the watchdog. Returned room is actually captured at11000, not the earlier11300 target.",
+        "Original renderer PNGs unchanged; game imagery has separate rights, not GPL/MIT or rights-holder permission."
+      ],
+      "reference": {
+        "path": "media/31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1.png",
+        "sha256": "31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:54:32.136358+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field3100; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "First Room01 entry. Actual field3100, unchanged original renderer PNG. No crop/resize/conversion; not an emulated or retail reference."
+      },
+      "bevy": {
+        "path": "media/d75c6ff5c2b90566350ace398cb71b2ab810e0a06998a4a372d74cdbd4264d29.png",
+        "sha256": "d75c6ff5c2b90566350ace398cb71b2ab810e0a06998a4a372d74cdbd4264d29",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:58:25.647700+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field11000; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "Room01 after Room00. Actual field11000, unchanged original renderer PNG. No crop/resize/conversion; not an emulated or retail reference."
+      }
+    },
+    {
+      "id": "2026-11-13-cli-room00",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "unmatched",
+      "title": "Original selector and actual Room00 introduction",
+      "feature": "RV02",
+      "labels": {
+        "reference": "Original Room00 / Point0 selection",
+        "bevy": "Actual Room00 exterior introduction"
+      },
+      "scenario": "NEW native290b321c finite original controller script, one process, diagnostic-v1. This is not retail, emulated reference or a graphics improvement.",
+      "observations": [
+        "Actual original selector/scene images from the newly executed cycle. Initial and returning room poses may differ."
+      ],
+      "limits": [
+        "Only two named rooms and one finite cycle; not complete room/menu or campaign coverage.",
+        "Late requested11200..14000 fields were not reached before the watchdog. Returned room is actually captured at11000, not the earlier11300 target.",
+        "Original renderer PNGs unchanged; game imagery has separate rights, not GPL/MIT or rights-holder permission."
+      ],
+      "reference": {
+        "path": "media/e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d.png",
+        "sha256": "e0ec1bdc2bdeb7ebe45570e22ae00f3f87dfaf4a38e747d23ca13565d018917d",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:55:57.563846+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field7800; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "Original Room00 / Point0 selection. Actual field7800, unchanged original renderer PNG. No crop/resize/conversion; not an emulated or retail reference."
+      },
+      "bevy": {
+        "path": "media/1812847c89219761cda0d83088b732346c0e7bb3e97ac700a1f08e02d2a2df95.png",
+        "sha256": "1812847c89219761cda0d83088b732346c0e7bb3e97ac700a1f08e02d2a2df95",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:56:34.800849+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field8400; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "Actual Room00 exterior introduction. Actual field8400, unchanged original renderer PNG. No crop/resize/conversion; not an emulated or retail reference."
       }
     }
   ],
