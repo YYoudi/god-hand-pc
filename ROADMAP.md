@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Compare a named native scene against an isolated PCSX2 prototype reference, then investigate a concrete defect and verify any common-runtime correction on retail. Existing CLI transport and scoped two-room cycle are tools now, not menu-polish deliverables. Keep reference limitations, old evidence and capacity gates.
+Use the now-observed emulator controller route to qualify Room Jump and a named comparable scene, then diagnose one actual shared-runtime defect and verify its correction on prototype AND retail. Do not infer a bug from different cutscene/gameplay states or finish every menu as a prerequisite.
 
 ## M8 — Active: verified original PC baseline
 

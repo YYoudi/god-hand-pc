@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Compare a named native scene against an isolated PCSX2 prototype reference, then investigate a concrete defect and verify any common-runtime correction on retail. Existing CLI transport and scoped two-room cycle are tools now, not menu-polish deliverables. Keep reference limitations, old evidence and capacity gates.",
+  "next": "Use the now-observed emulator controller route to qualify Room Jump and a named comparable scene, then diagnose one actual shared-runtime defect and verify its correction on prototype AND retail. Do not infer a bug from different cutscene/gameplay states or finish every menu as a prerequisite.",
   "known_limits": [
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -357,6 +357,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "A real prototype reference: gameplay and the original debug menu",
+      "summary": "Finite input-recording playback in isolated PCSX2 now reaches actual gameplay and opens the original five-choice debug menu without physical input. Earlier native screenshots are explicitly reused for unmatched comparisons; no native correction is claimed.",
+      "changes": [
+        "Audited the official pinned v2.8.2 recording interface and authored finite controller-only input. No game memory flags, new BIOS download, attacks or imported saves.",
+        "Retained three failed/misaligned scenario attempts: difficulty endpoint, first introduction and second introduction. Later Start timing skips both introductions before L2/R3.",
+        "Preserved original reference JPEG/PNG and existing native originals, with separate exact runtime provenance, timestamp/encoding/resolution limitations."
+      ],
+      "validation": "Four new scenario processes exit0 in178.485/186.360/217.781/241.515s, below declared240/240/240/270s budgets. Final playback9000 auto-paused on original debug menu; gameplay/HUD observed earlier. Original disc and owner BIOS/config hashes unchanged.",
+      "limits": "Earlier Start-only route overran180s budget at419.875s, retained. Emulator working recordings appended36bytes; authored copies remain byte-identical prefixes. No matched camera/frame, retail validation, new native build, full debug-menu coverage or shared-runtime correction.",
+      "evidence_comparisons": [
+        "2026-11-13-emulated-debug-reference",
+        "2026-11-13-emulated-live-reference"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_EMULATOR_REFERENCE.md",
+        "label": "Actual reference route, failed hypotheses and limits"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -6806,6 +6827,102 @@
         "captured_at": "2026-11-13T00:56:34.800849+00:00",
         "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field8400; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
         "caption": "Actual Room00 exterior introduction. Actual field8400, unchanged original renderer PNG. No crop/resize/conversion; not an emulated or retail reference."
+      }
+    },
+    {
+      "id": "2026-11-13-emulated-debug-reference",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "unmatched",
+      "title": "An actual emulator reference for the original debug menu",
+      "feature": "RV02",
+      "labels": {
+        "reference": "New PCSX2 reference — original menu",
+        "bevy": "Previous native menu — retained evidence"
+      },
+      "scenario": "Finite power-on controller playback reaches New Game, skips two introductions and opens original in-scene L2/R3 menu. Previous native PNG retained as an explicitly unmatched functional comparison.",
+      "observations": [
+        "Both images visibly show the same five original menu choices. This is functional reference evidence, not pixel/frame equivalence.",
+        "New emulator playback reached actual Gene/enemies/HUD before the menu; no physical keypress, attacks or guessed memory flags."
+      ],
+      "limits": [
+        "Different capture dimensions, routes, timing and encoding: comparison deliberately UNMATCHED, no crop/resize/color adjustment or pixel-error claim.",
+        "Reference CPU/GS settings selectively reused from owner configuration, compatibility patches disabled warning retained; not stock emulator, PS2 hardware or full accuracy certificate.",
+        "Prototype only. No retail run, new native build, shared-runtime correction, settings/remaster/performance or campaign completion.",
+        "Original game imagery retains separate rights; owner-requested documentation is not rights-holder permission. No BIOS, disc, ELF, extracted asset, state, recording binary, dump or generated game code distributed."
+      ],
+      "reference": {
+        "path": "media/ac731510c5354ba0e48269dad71b7b1b775764c48b6c91a8ff96528a754c8d6e.jpg",
+        "sha256": "ac731510c5354ba0e48269dad71b7b1b775764c48b6c91a8ff96528a754c8d6e",
+        "width": 1052,
+        "height": 698,
+        "profile": "prototype-june-2006",
+        "revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+        "recorded_at": "2026-11-13T01:45:53.508Z",
+        "timestamp_basis": "artifact-save-after-observation",
+        "publication_profile": "native-host-jpeg-v1",
+        "capture_source": "computer-use-owned-window",
+        "unchanged_original": true,
+        "lossy": true,
+        "runtime": "Actual PCSX2 v2.8.2, official source tag pinfd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3, local executable982c7c62600a999cf15a25c18349426166c785e7867b2fcc5018d733245b71a3. Prototype SLPM-66550 CRC18E5A0CA, D3D12 automatic/1x internal512x448, display4:3. Original five-choice menu at playback9000 after finite L2/R3 chord. Full owned-emulator window JPEG unchanged; timestamp is artifact-save after observation, not exact capture completion.",
+        "caption": "NEW emulator reference: original five-choice debug menu after actual live gameplay. Unchanged full-window lossy JPEG with recording OSD/title/border; not raw framebuffer or same-frame parity."
+      },
+      "bevy": {
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "e59c3a53ff63d3eb295d1b3389180c36f5ceea1e",
+        "captured_at": "2026-11-13T00:44:06.951296+00:00",
+        "runtime": "PREVIOUS native reader trial, executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, OpenGL diagnostic-v1. Actual900, renderer-file export UTC timestamp. Public reader/integration sourcee59c3a5; native run predated its publication. No new build or native execution here.",
+        "caption": "PREVIOUS actual native original five-choice menu at900, unchanged renderer PNG. Reused evidence explicitly, not a new implementation, matched guest frame or certified emulation fidelity."
+      }
+    },
+    {
+      "id": "2026-11-13-emulated-live-reference",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "unmatched",
+      "title": "Room00 reference coverage — different gameplay states",
+      "feature": "RV02",
+      "labels": {
+        "reference": "New emulator gameplay / HUD",
+        "bevy": "Previous native exterior introduction"
+      },
+      "scenario": "Both show the original western exterior, but gameplay versus introduction, different camera, timing, pose and resolution. This pair documents reference coverage, NOT a fidelity comparison.",
+      "observations": [
+        "New original F8 screenshot shows live enemies, Gene and HUD, rather than the opening attract FMV.",
+        "Native introduction is retained dated evidence from the earlier room cycle, not a new achievement or supposedly identical state."
+      ],
+      "limits": [
+        "Different capture dimensions, routes, timing and encoding: comparison deliberately UNMATCHED, no crop/resize/color adjustment or pixel-error claim.",
+        "Reference CPU/GS settings selectively reused from owner configuration, compatibility patches disabled warning retained; not stock emulator, PS2 hardware or full accuracy certificate.",
+        "Prototype only. No retail run, new native build, shared-runtime correction, settings/remaster/performance or campaign completion.",
+        "Original game imagery retains separate rights; owner-requested documentation is not rights-holder permission. No BIOS, disc, ELF, extracted asset, state, recording binary, dump or generated game code distributed.",
+        "A matched named room, camera and state remains the next validation task; do not compare image differences as runtime defects."
+      ],
+      "reference": {
+        "path": "media/b17821727ab52cdfe0114b64124620eb303952101f3b7d620fb20a51873cfc56.png",
+        "sha256": "b17821727ab52cdfe0114b64124620eb303952101f3b7d620fb20a51873cfc56",
+        "width": 827,
+        "height": 620,
+        "profile": "prototype-june-2006",
+        "revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+        "captured_at": "2026-11-13T01:45:18.512167+00:00",
+        "runtime": "Actual PCSX2 v2.8.2, official source tag pinfd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3, local executable982c7c62600a999cf15a25c18349426166c785e7867b2fcc5018d733245b71a3. Prototype SLPM-66550 CRC18E5A0CA, D3D12 automatic/1x internal512x448, display4:3. F8 export near observed playback8134; exact captured guest frame unqualified. File-export UTC timestamp.827x620 display-sized PNG despite512x448 internal: not raw GS framebuffer.",
+        "caption": "NEW actual emulator live gameplay, Gene under enemy attack and original HUD. Unchanged F8 PNG, no recording OSD. Not the same camera/frame/state as the retained native introduction."
+      },
+      "bevy": {
+        "path": "media/1812847c89219761cda0d83088b732346c0e7bb3e97ac700a1f08e02d2a2df95.png",
+        "sha256": "1812847c89219761cda0d83088b732346c0e7bb3e97ac700a1f08e02d2a2df95",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:56:34.800849+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field8400; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "PREVIOUS native Room00 exterior introduction at8400. Reused unchanged original, not live combat or a new native run."
       }
     }
   ],

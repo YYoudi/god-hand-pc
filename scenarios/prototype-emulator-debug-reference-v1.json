@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "name": "prototype-emulator-debug-reference-v1",
+  "emulator": "PCSX2 v2.8.2",
+  "official_source_revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+  "local_emulator_sha256": "982c7c62600a999cf15a25c18349426166c785e7867b2fcc5018d733245b71a3",
+  "profile": "prototype-june-2006",
+  "recording_total_frames": 9000,
+  "events": [
+    {
+      "begin": 1800,
+      "end_exclusive": 1860,
+      "button": "start",
+      "port": 0
+    },
+    {
+      "begin": 2100,
+      "end_exclusive": 2130,
+      "button": "cross",
+      "port": 0
+    },
+    {
+      "begin": 2600,
+      "end_exclusive": 2630,
+      "button": "cross",
+      "port": 0
+    },
+    {
+      "begin": 5300,
+      "end_exclusive": 5312,
+      "button": "start",
+      "port": 0
+    },
+    {
+      "begin": 7000,
+      "end_exclusive": 7012,
+      "button": "start",
+      "port": 0
+    },
+    {
+      "begin": 8300,
+      "end_exclusive": 8380,
+      "button": "l2",
+      "port": 0
+    },
+    {
+      "begin": 8355,
+      "end_exclusive": 8367,
+      "button": "r3",
+      "port": 0
+    }
+  ],
+  "authored_recording_sha256": "e99f63ceb6154c9f53442fc0d7da98555dc5588241ea4ef8bac7473ba4306233",
+  "format_notes": "v1 header561 +totalFramesu32/undoCountu32/fromStateu8;2ports*18bytes per frame. Active-low flags, neutral sticks127, pressure255 only for pressed pressure buttons. No statefile. See pinned official implementation, not a promised generic file-format API.",
+  "actual": "Live gameplay/HUD observed7728 and8134; five original debug choices at9000, auto-paused. Menu navigation/effects/retail not established by this test.",
+  "scope": "Requires personal prototype and owner BIOS privately. Binary recordings, BIOS, config and game inputs are not distributed."
+}

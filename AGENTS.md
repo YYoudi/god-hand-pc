@@ -1,5 +1,21 @@
 # God Hand PC continuation - agent instructions
 
+## Actual emulator reference — 13 November 2026
+
+Read PROTOTYPE_EMULATOR_REFERENCE.md and checkpoint/pcsx2_reference_current.
+Actual isolated PCSX2 finite playback now reaches original gameplay/HUD and
+five-choice debug menu, no physical input. Three prior scenario endpoints are
+retained failures, not engine bugs: difficulty and two introductions. Native
+script includes extra developer request; do not blindly replay it as emulator
+input. v4 second skip/chord reaches actual9000 menu, normal0/241.515s below270s.
+Reference827x620 F8 display PNG and full-window lossy JPEG differ from native
+640x480 originals; deliberately UNMATCHED, no same-frame/pixel-fidelity claim.
+Working recording appends36bytes; authored duplicates retained, not assumed
+read-only. Owner BIOS/config/disc unchanged. No new native build/retail/common
+fix. Next qualify emulator RoomJump/named comparable scene, then diagnose real
+common-runtime issue and prove both native builds. No menu polish/transport
+replay as progress, Rust/delegation/guessed flags or public game inputs.
+
 ## CLI room-cycle evidence — 13 November 2026
 
 Read PROTOTYPE_ROOM_MATRIX.md and checkpoint/cli_room_matrix_current. NEW290b
