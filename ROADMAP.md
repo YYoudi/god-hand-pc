@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Review the isolated scheduler retirement candidate and remaining invalidation paths. After native link capacity preflight, prove prototype startup/room transitions AND retail regression before adoption/upstream contribution. Preserve crashed run and partial candidate failures. Ground artifact still needs a longer valid GS recording; no menu polish or Rust.
+Experimental scheduler recipe/probe now published and actually exercised. Complete dependency/capacity preflight before isolated game linking, preserving symbols/maps and old builds; then prototype startup/transitions AND retail native regression before adoption. Diagnose original crash path where feasible without relinking. No default change, menu polish, Rust or weaker accuracy gate.
 
 ## M8 — Active: verified original PC baseline
 

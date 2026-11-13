@@ -8,3 +8,7 @@ docs/captures/*.jpg -text
 # Hash-qualified original templates use canonical LF, including Windows clones.
 adapter/prototype_host_main.cpp.in text eol=lf
 adapter/prototype_window_bridge.hpp.in text eol=lf
+
+# Exact invented-data probe compiled in the recorded Windows experiment (CRLF).
+# Preserve its documented source fingerprint on every host; no game data here.
+tests/probes/scheduler_context_lifetime.cpp -text whitespace=trailing-space,space-before-tab,cr-at-eol

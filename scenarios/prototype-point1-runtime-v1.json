@@ -77,5 +77,80 @@
     "paired_postpresent_vram_byte_differences": 44221,
     "paired_exit": 1,
     "limit": "Different checkpoints. One displayed frame may inherit initialbuffer; not GPU parity/fix or game performance."
+  },
+  "public_recipe_followup": {
+    "date": "2026-11-13",
+    "recipe": "scheduler_retirement_candidate.py",
+    "original_probe": "tests/probes/scheduler_context_lifetime.cpp",
+    "exact_probe_sha256": "b8071f03f4558b956a8141f290126546a7ce318b20634171b817243f073c459a",
+    "candidate_sha256": "eef04f79134fc139de2876274b028dbaee88e25496bb6707ff22eb7329b197a7",
+    "both_inspected_runtime_files_same_source": true,
+    "retail_checkout_revision": "193076584e277c95644dcbbb4a6922c3a59ca2b8",
+    "new_helper_results": [
+      {
+        "name": "compile-candidate",
+        "exit": 0,
+        "seconds": 1.64
+      },
+      {
+        "name": "compile",
+        "exit": 0,
+        "seconds": 1.532
+      },
+      {
+        "name": "link",
+        "exit": 0,
+        "seconds": 4.281
+      },
+      {
+        "name": "guarded-keep",
+        "exit": 0,
+        "seconds": 0.078
+      },
+      {
+        "name": "guarded-delete",
+        "exit": 0,
+        "seconds": 0.078
+      },
+      {
+        "name": "ordinary-delete",
+        "exit": 0,
+        "seconds": 0.078
+      },
+      {
+        "name": "guarded-nested",
+        "exit": 0,
+        "seconds": 0.078
+      },
+      {
+        "name": "guarded-sequence",
+        "exit": 0,
+        "seconds": 0.078
+      }
+    ],
+    "actual_refusals": [
+      {
+        "name": "existing-output",
+        "exit": 2
+      },
+      {
+        "name": "public-output",
+        "exit": 2
+      },
+      {
+        "name": "unknown-source",
+        "exit": 2
+      }
+    ],
+    "full_tests": {
+      "count": 526,
+      "skipped": 4,
+      "seconds": 74.069,
+      "platform": "Windows"
+    },
+    "native_game_link_attempted": false,
+    "native_link_reserve_lower_bound": 5442950056,
+    "unresolved_sdk_library_tokens": 24,
+    "adopted": false
   }
 }

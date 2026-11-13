@@ -5,8 +5,9 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Review the isolated scheduler retirement candidate and remaining invalidation paths. After native link capacity preflight, prove prototype startup/room transitions AND retail regression before adoption/upstream contribution. Preserve crashed run and partial candidate failures. Ground artifact still needs a longer valid GS recording; no menu polish or Rust.",
+  "next": "Experimental scheduler recipe/probe now published and actually exercised. Complete dependency/capacity preflight before isolated game linking, preserving symbols/maps and old builds; then prototype startup/transitions AND retail native regression before adoption. Diagnose original crash path where feasible without relinking. No default change, menu polish, Rust or weaker accuracy gate.",
   "known_limits": [
+    "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
     "NEW scheduler candidate passes five synthetic real-runtime controls ONLY. No native integration/retail validation. Longer-GS attempt crashes at162 before recording; exact earlier invalidation path unproven. Ground ghost unresolved, no GPU/parity/optimization claim.",
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -358,6 +359,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Publish the experimental scheduler recipe and synthetic probe",
+      "summary": "The candidate can now be reconstructed with reviewed original tooling. The same generic scheduler source is confirmed in the inspected prototype and retail checkouts. No correction has been installed into either game build.",
+      "changes": [
+        "Published a strict source/output-fingerprint recipe and the exact original invented-data C++ probe. Output stays in a new ignored file; existing sources, outputs and launch profiles are untouched.",
+        "Actually generated identical candidates from both inspected generic-runtime sources. The newly compiled public probe/candidate passes the five retained synthetic cases, including later live-transfer state.",
+        "Kept first LF fingerprint refusal and private driver path failure. The corrected recipe uses explicit CRLF bytes; no hash gate was bypassed. Native game linking is not attempted below its conservative capacity budget."
+      ],
+      "validation": "13 invented-data recipe tests pass; full Windows suite526 tests/4skips/74.069s. Actual public-source helper compile/link0 and five controls0. Actual existing-output/public-output/unknown-source commands refuse2 and preserve inputs. Both clean upstream scheduler files match80297ca7, candidate matches eef04f79.",
+      "limits": "Experimental recipe and synthetic native helper ONLY, not native-game integration, retail regression, adoption, full fidelity or a fresh installer. Existing Point1 images are reused explicitly; no new game screenshot or fixed before/after. Game link capacity lower bound5,442,950,056bytes exceeds available roughly4GiB, with24SDKtokens still unresolved.",
+      "evidence_comparisons": [
+        "2026-11-13-point1-reference-runtime"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SCHEDULER_RETIREMENT_CANDIDATE.md",
+        "label": "Experimental recipe, exact synthetic probe and outstanding native acceptance"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",

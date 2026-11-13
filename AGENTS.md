@@ -1,5 +1,22 @@
 # God Hand PC continuation - agent instructions
 
+## Reproducible experimental scheduler recipe — 13 November 2026
+
+Read SCHEDULER_RETIREMENT_CANDIDATE.md. The hash-gated original recipe and exact
+invented C++ probe are now public; candidate output stays ignored/private. Both
+inspected prototype1646 and retail193076 scheduler source files hash80297ca7;
+actual recipe outputs match private candidate eef04f79. NEW public-source helper
+compile/link0 and five synthetic controls0, four-lane VU0/next transfer checked.
+13 recipe tests; full Windows526/4skips/74.069s. Three actual CLI refusals2 keep
+source/existing output unchanged. First LF fingerprint refusal/no output and
+private driver tab-path precompile failure retained; explicit CRLF fix, no gate
+bypass. This is NOT native-game integration/adoption or retail regression.
+Native link lower bound5,442,950,056bytes plus24unresolvedSDKtokens exceeds current
+roughly4GiB; no native link/configure/fullbuild attempted, no diagnostics removed.
+Next capacity/dependency preflight and isolated BOTH-native controls; original
+crash path may be investigated without relinking. Keep old artifacts/ISO/errors,
+no default change, Rust/delegation/guessedflags/stubs/frees/autofighting. Goalactive.
+
 ## Point1 diagnostics; unadopted scheduler candidate — 13 November 2026
 
 Read PROTOTYPE_POINT1_RUNTIME.md and checkpoint/point1_runtime_current. New
