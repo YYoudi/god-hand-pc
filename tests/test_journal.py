@@ -128,6 +128,8 @@ class JournalTests(unittest.TestCase):
         self.assertIn(url,result['docs/reports/index.html'])
         self.assertIn('Migrated historical reports',result['docs/reports/index.html'])
         self.assertIn('new experiments and preserved historical records',result['docs/comparisons.html'])
+        self.assertIn('Reviewed native PC outputs and emulator references',result['docs/comparisons.html'])
+        self.assertIn('Emulator references are not native-port output or PS2 hardware captures',result['docs/comparisons.html'])
         self.assertNotIn('Previously reviewed original screenshots, migrated byte-for-byte.',result['docs/comparisons.html'])
 
     def test_fresh_autocrlf_checkout_preserves_original_report_bytes(self):
