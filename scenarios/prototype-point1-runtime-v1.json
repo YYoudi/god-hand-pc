@@ -211,5 +211,226 @@
       "native_link_attempted": false
     },
     "retail_candidate_validated": false
+  },
+  "six_checkpoint_gs_followup": {
+    "date": "2026-11-13",
+    "native_exit": 0,
+    "seconds": 303.89,
+    "watchdog_seconds": 300,
+    "native_pngs": 9,
+    "three_overlap_pngs_equal": true,
+    "private_record_sha256": "e32ad3be3521c5af9000cdffdeaa7ad2dfe8283b938a69b90a8a5249d2491b66",
+    "record_bytes": 42229278,
+    "records_including_initial_state": 29686,
+    "replay_records_after_state": 29685,
+    "draws": 22860,
+    "checkpoint_ticks": [
+      4501,
+      4503,
+      4505,
+      4507,
+      4509,
+      4511,
+      4513
+    ],
+    "initial_checkpoint_equal": true,
+    "earlier4503_checkpoint_equal": true,
+    "operation_prefix_equal": false,
+    "prefix_ignoring_mxcsr_also_equal": false,
+    "cpu_recorded_vram_all_six_exact": true,
+    "gpu_standard_exit": 1,
+    "gpu_standard_first_mismatch_tick": 4503,
+    "gpu_standard_first_vram_difference_bytes": 43490,
+    "paired_cases": [
+      {
+        "name": "cpu-gpu",
+        "exit": 1,
+        "checkpoints": [
+          {
+            "index": 0,
+            "tick": 4503,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 0,
+            "max_rgb_difference": 0,
+            "vram_bytes_differing_after_presentation": 43714
+          },
+          {
+            "index": 1,
+            "tick": 4505,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 124,
+            "max_rgb_difference": 3,
+            "vram_bytes_differing_after_presentation": 67171
+          },
+          {
+            "index": 2,
+            "tick": 4507,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7269,
+            "max_rgb_difference": 46,
+            "vram_bytes_differing_after_presentation": 85184
+          },
+          {
+            "index": 3,
+            "tick": 4509,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7525,
+            "max_rgb_difference": 52,
+            "vram_bytes_differing_after_presentation": 85959
+          },
+          {
+            "index": 4,
+            "tick": 4511,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7640,
+            "max_rgb_difference": 48,
+            "vram_bytes_differing_after_presentation": 86381
+          },
+          {
+            "index": 5,
+            "tick": 4513,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7624,
+            "max_rgb_difference": 50,
+            "vram_bytes_differing_after_presentation": 87192
+          }
+        ]
+      },
+      {
+        "name": "no-page-cache",
+        "exit": 1,
+        "checkpoints": [
+          {
+            "index": 0,
+            "tick": 4503,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 0,
+            "max_rgb_difference": 0,
+            "vram_bytes_differing_after_presentation": 44383
+          },
+          {
+            "index": 1,
+            "tick": 4505,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 474,
+            "max_rgb_difference": 4,
+            "vram_bytes_differing_after_presentation": 68456
+          },
+          {
+            "index": 2,
+            "tick": 4507,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7498,
+            "max_rgb_difference": 46,
+            "vram_bytes_differing_after_presentation": 85739
+          },
+          {
+            "index": 3,
+            "tick": 4509,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7566,
+            "max_rgb_difference": 52,
+            "vram_bytes_differing_after_presentation": 85512
+          },
+          {
+            "index": 4,
+            "tick": 4511,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7476,
+            "max_rgb_difference": 48,
+            "vram_bytes_differing_after_presentation": 85625
+          },
+          {
+            "index": 5,
+            "tick": 4513,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7505,
+            "max_rgb_difference": 50,
+            "vram_bytes_differing_after_presentation": 86459
+          }
+        ]
+      },
+      {
+        "name": "no-cache-no-fast-setup",
+        "exit": 1,
+        "checkpoints": [
+          {
+            "index": 0,
+            "tick": 4503,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 0,
+            "max_rgb_difference": 0,
+            "vram_bytes_differing_after_presentation": 44185
+          },
+          {
+            "index": 1,
+            "tick": 4505,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 244,
+            "max_rgb_difference": 3,
+            "vram_bytes_differing_after_presentation": 68283
+          },
+          {
+            "index": 2,
+            "tick": 4507,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7595,
+            "max_rgb_difference": 46,
+            "vram_bytes_differing_after_presentation": 85957
+          },
+          {
+            "index": 3,
+            "tick": 4509,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7589,
+            "max_rgb_difference": 52,
+            "vram_bytes_differing_after_presentation": 85798
+          },
+          {
+            "index": 4,
+            "tick": 4511,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7572,
+            "max_rgb_difference": 48,
+            "vram_bytes_differing_after_presentation": 85761
+          },
+          {
+            "index": 5,
+            "tick": 4513,
+            "width": 512,
+            "height": 448,
+            "rgb_pixels_differing": 7472,
+            "max_rgb_difference": 50,
+            "vram_bytes_differing_after_presentation": 86606
+          }
+        ]
+      }
+    ],
+    "cpu_png_controls_all_six_equal": true,
+    "independent_final_png_rgb_check": {
+      "pixels_differing": 7624,
+      "maximum": 50,
+      "mean_absolute": 0.10943748837425596
+    },
+    "candidate_installed": false,
+    "retail_validated": false,
+    "fix_claimed": false
   }
 }

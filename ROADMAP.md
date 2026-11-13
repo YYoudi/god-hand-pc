@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-The unchanged native game now demonstrably exercises the retirement/read pattern; no candidate game build yet. After capacity preflight passes, create an isolated corrected variant and test prototype transitions AND retail non-regression. Preserve ordinary/deadline/debugger failures; no new helper/menu polish or Rust as a substitute.
+Bound same-backend repeatability and investigate meaningful command/state differences; use qualified native CPU/GPU controls if fresh runtime/output capacity allows. Do not call the first identical RGB image GPU parity or hide the later failures. Scheduler correction still needs isolated prototype AND retail native acceptance after its independent link-capacity gate passes; no helper/menu polish or Rust substitute.
 
 ## M8 — Active: verified original PC baseline
 

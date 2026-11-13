@@ -1,5 +1,23 @@
 # God Hand PC continuation - agent instructions
 
+## Six-checkpoint GS window; no GPU fix — 13 November 2026
+
+Read PROTOTYPE_POINT1_GS_WINDOW.md. NEW unchanged e677 native0/303.890s,
+9PNGs,3overlap originals exact; State4501/fiveField/End4513,29686records/
+22860draws. CPU standalone0/all6recordedVRAMexact; GPU standard1atfirst4503,
+not a completed6checkpoint timing. Existing Endobserver actually compares6:
+RGB0at4503 becomes7624pixels/max50at4513. Both retain lower-ground ghost.
+Page-cache-off/no-fast-setup controls still fail; six CPU PNGs across controls
+equal. New published originals are explicitly GS-only OFFLINE renderer output,
+not native-game/emulator screenshots or a corrected build. Old/new initial/4503
+states equal, but raw command prefixes differ even ignoringMXCSR; meaning open,
+do NOT call harmless padding or discard records. Earlier startupcrash retained,
+no scheduler candidate installed/retail acceptance/default or FPS claim.
+Next same-backend repeatability/state correspondence, qualified native CPU/GPU
+controls only after fresh runtime/output preflight. Full link/candidate BOTH-
+native gate remains blocked on space; no new Rust/menu/helper polish as substitute.
+All original evidence/discs preserved; no raw GSR/VRAM/assets/code/binaries public.
+
 ## Actual unchanged-native retirement/read pairs — 13 November 2026
 
 Read the follow-up in SCHEDULER_RETIREMENT_CANDIDATE.md and the canonical private

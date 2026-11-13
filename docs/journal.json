@@ -5,8 +5,9 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "The unchanged native game now demonstrably exercises the retirement/read pattern; no candidate game build yet. After capacity preflight passes, create an isolated corrected variant and test prototype transitions AND retail non-regression. Preserve ordinary/deadline/debugger failures; no new helper/menu polish or Rust as a substitute.",
+  "next": "Bound same-backend repeatability and investigate meaningful command/state differences; use qualified native CPU/GPU controls if fresh runtime/output capacity allows. Do not call the first identical RGB image GPU parity or hide the later failures. Scheduler correction still needs isolated prototype AND retail native acceptance after its independent link-capacity gate passes; no helper/menu polish or Rust substitute.",
   "known_limits": [
+    "New six-checkpoint GS replay exposes later CPU/GPU RGB differences; cache-off/no-fast-setup still fail and both retain the ground artifact. These are OFFLINE replay images, not corrected game builds or recommended GPU settings. No full fidelity/performance/candidate adoption claim.",
     "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
     "NEW scheduler candidate passes five synthetic real-runtime controls ONLY. No native integration/retail validation. Longer-GS attempt crashes at162 before recording; exact earlier invalidation path unproven. Ground ghost unresolved, no GPU/parity/optimization claim.",
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
@@ -359,6 +360,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "A longer Point1 replay exposes later CPU/GPU differences",
+      "summary": "A new original-native recording now supports six GS checkpoints. CPU replay matches the recorded VRAM throughout; the GPU image initially matches RGB, then diverges. Neither backend removes the retained ground artifact.",
+      "changes": [
+        "Recorded a new closed12tick GS window after a normal unchanged-native run. Earlier startup crash and lifetime findings remain, not relabeled as fixed.",
+        "Actually replayed all6checkpoints with the corrected observer. Published unchanged512x448 CPU/GPU renderer originals at4513, explicitly OFFLINE replay rather than native-game or emulator captures.",
+        "Page-cache-off and no-fast-setup controls still differ. Six CPU originals remain byte-identical across the controls; no setting is promoted as a fix."
+      ],
+      "validation": "Native0/303.890s,9PNGs,3overlapping originals exact. Actual State4501/fiveField/End4513,29686records/22860draws. CPU standalone0/6VRAMchecks exact; GPU standalone1atfirst4503. Paired6images: RGB0at4503,7624pixels/max50at4513, exit1. PNG analysis independently confirms final RGB counts.",
+      "limits": "No candidate installed, renderer repair, retail result, full fidelity or performance claim. GPU standard replay returns at first mismatch, so its timing is not comparable work or game FPS. Old/new command prefixes differ despite equal boundary states; do not assume harmless padding. Ground artifact remains in both originals.",
+      "evidence_comparisons": [
+        "2026-11-13-point1-six-checkpoint-gs-replay"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_POINT1_GS_WINDOW.md",
+        "label": "Six actual checkpoints, original images and negative controls"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -7096,6 +7117,54 @@
         "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
         "width": 640,
         "height": 480
+      }
+    },
+    {
+      "id": "2026-11-13-point1-six-checkpoint-gs-replay",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "same-frame",
+      "title": "Point1: CPU and GPU replay at the same recorded GS checkpoint",
+      "feature": "RV03",
+      "labels": {
+        "reference": "CPU GS-only replay control",
+        "bevy": "GPU GS-only replay diagnostic"
+      },
+      "scenario": "Same private GS command stream and presentation request at4513,512x448. Same-frame applies ONLY to this recorded GS checkpoint pair, not a simultaneous emulator/native-game screenshot or equal game-save state. No rescale, camera fit or asset/color edit.",
+      "observations": [
+        "CPU standalone replay matches recorded VRAM at all6checkpoints. Paired observer compares6actual presentations; RGB0differences at4503 becomes7624pixels/max50 at4513.",
+        "Both originals retain the lower-ground ghost-like shape. No cloth diagnosis, GPU quick fix or renderer-default change.",
+        "CPU originals are byte-identical across three paired controls. Disabling page cache and then fast setup still leaves GPU RGB differences; cause/repeatability unresolved."
+      ],
+      "limits": [
+        "OFFLINE GS-only renderer originals. No EE/game functions execute; not a corrected native-game build, emulator reference, full PS2 parity or game FPS.",
+        "Same command checkpoint is not whole-game state equivalence. RGB PNGs do not certify alpha/depth/GS semantics or camera/gameplay.",
+        "Recorded start/4503 states and3native sample PNGs equal earlier controls, but old/new command prefixes are NOT byte-identical; semantic meaning unqualified.",
+        "Native original run0/303.890s with300s ownwatchdog,9captures; earlier long-record startup crash remains failed. No scheduler candidate installed or retail acceptance.",
+        "Neither cache-off nor no-fast-setup diagnostic is recommended as an accuracy mode. Raw GSR/VRAM/assets/dumps/binaries/generated game source remain private.",
+        "Selected game imagery has separate rights, not GPL; owner-requested publication is not rights-holder authorization."
+      ],
+      "reference": {
+        "path": "media/f32c663386e01ae25bff722bad7bc626844282d4843cb382409ddfab9e838e94.png",
+        "sha256": "f32c663386e01ae25bff722bad7bc626844282d4843cb382409ddfab9e838e94",
+        "width": 512,
+        "height": 448,
+        "profile": "prototype-june-2006",
+        "revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+        "captured_at": "2026-11-13T04:03:22.044517+00:00",
+        "runtime": "NEW OFFLINE GS-only CPU replay, not a native-game or emulator screenshot. Same private prototype record SHAe32ad3be3521c5af9000cdffdeaa7ad2dfe8283b938a69b90a8a5249d2491b66, final recorded tick4513,512x448 RGB. Pinned source1646d885; existing helper6b5f7fa3ca427e64430bfbc9cd873c28336e8caf82fbff843cef13c58ae2ba0a with explicit End observer. No EE/game functions execute. File-export UTC timestamp, not original game capture time.",
+        "caption": "NEW unchanged CPU GS-only replay original at final checkpoint4513. Lower-ground ghost remains; not a repaired game image or PS2 accuracy certificate."
+      },
+      "bevy": {
+        "path": "media/6d81332bcd27b2f1e57476c1737ee16c905295448cf9298657993a94910b0931.png",
+        "sha256": "6d81332bcd27b2f1e57476c1737ee16c905295448cf9298657993a94910b0931",
+        "width": 512,
+        "height": 448,
+        "profile": "prototype-june-2006",
+        "revision": "1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a",
+        "captured_at": "2026-11-13T04:03:22.048562+00:00",
+        "runtime": "NEW OFFLINE GS-only GPU replay, not a native-game or emulator screenshot. Same private prototype record SHAe32ad3be3521c5af9000cdffdeaa7ad2dfe8283b938a69b90a8a5249d2491b66, final recorded tick4513,512x448 RGB. Pinned source1646d885; existing helper6b5f7fa3ca427e64430bfbc9cd873c28336e8caf82fbff843cef13c58ae2ba0a with explicit End observer. No EE/game functions execute. File-export UTC timestamp, not original game capture time.",
+        "caption": "NEW unchanged GPU GS-only replay original at final checkpoint4513. Lower-ground ghost remains; not a repaired game image or PS2 accuracy certificate."
       }
     }
   ],
