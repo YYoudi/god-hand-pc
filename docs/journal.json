@@ -238,7 +238,7 @@
           "title": "Correct a significant shared-runtime defect",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Private guarded real-runtime fixtures reproduce deletion/nested/sequence stale-context failures; candidate passes five controls with shared-VU0 and next-transfer state preservation. NOT adopted/native-game validated. Still requires maintainable integration, actual prototype AND retail regression, original evidence and rollback."
+          "acceptance": "Five guarded synthetic controls pass. Four isolated native links and qualified startup retirement/VU0 paths (prototype6,retail9) now have bounded both-profile scene evidence. New prototype original-control catch-read crash and matching private dump retained; candidate scene matches a separately dated frozen original. Still experimental, not adopted. Full acceptance requires maintainable build integration, F1/F2 and rollback, native ordinary-transfer/sequence coverage and representative non-regression; no full-game or default promotion."
         }
       ]
     },
