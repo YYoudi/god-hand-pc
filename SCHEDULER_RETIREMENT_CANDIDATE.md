@@ -100,6 +100,35 @@ controls cover sequence growth and the subsequent ordinary transfer. Longer
 prototype scenes, both-profile F1/F2/rollback and broader non-regression remain
 open. The candidate is still experimental and no default is promoted.
 
+### Longer prototype control fails in the original catch read
+
+The subsequent 180-second-budget **new original-control** run instead terminates
+with access violation `0xc0000005` after9.219s, before any planned screenshot.
+Its new Windows minidump, exact executable, matching map and PDB are preserved
+privately. The matching symbol/line resolves to the original scheduler transfer
+catch; disassembly proves the failed instruction reads the saved context's
+VU0 field, and its effective address equals the dump's reported failed address.
+This is no longer merely a suspicious last log line.
+
+The dump does not contain the needed scheduler/context heap bytes, so the exact
+preceding invalidation path is still unknown. A short original-control run had
+passed earlier: do not claim deterministic reproduction or full crash causality.
+The separately executed candidate with the same 180-second budget exits0 after
+184.938s and exports one menu sample equal to its previous original. It does
+not reach the requested4501/6203/9000 images; this is not a prototype-scene pass.
+A new separately identified 300-second candidate scene experiment follows;
+it is not a restart of a still-running or timed-out process. No result is
+inferred until its own watchdog and receipt complete.
+
+That new 300-second candidate experiment now completes: native0/303.922s,
+two PNGs. Its actualfield4501 room image and field2300 menu image are
+byte-identical to the separately dated12November frozen e677 baseline.
+The journal publishes the unchanged room original with both dated provenances.
+It does **not** turn the failed new control into a successful one. Requested
+6203/9000 images are absent, and more room transitions, F1/F2 and rollback
+remain open. This is native integration evidence on both profiles, not full
+acceptance or a default-profile change.
+
 - `scheduler_retirement_candidate.py`: original, hash-gated transformation of
   one **generic GPL runtime** source file, not generated game code.
 - `tests/probes/scheduler_context_lifetime.cpp`: the exact original synthetic

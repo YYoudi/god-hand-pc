@@ -4,7 +4,7 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
-  "status": "Isolated scheduler variants now run in both profiles. New native observers verify bounded save-before-retirement and catch-skip paths with shared VU0 preservation; the retail opening scene matches its control. Longer prototype scenes, F1/F2, rollback and broader non-regression remain open. The candidate is experimental and original launch defaults are unchanged.",
+  "status": "Both isolated native candidates now have actual scene samples and qualified startup retirement/VU0 observations. The longer prototype original-control crashes in the original catch read; the new candidate survives and its room picture matches a separately dated preserved original. This is bounded evidence, not full crash-cause, F1/F2, rollback or full-game acceptance. Defaults remain unchanged.",
   "next": "Finish actual candidate native lifetime/VU0 observations and longer prototype scene controls; verify F1/F2 and rollback before adoption. Keep retail diagnostics, renderer failures, genuine Save/Load, hardware/audio and human campaign gates explicit.",
   "known_limits": [
     "New six-checkpoint GS replay exposes later CPU/GPU RGB differences; cache-off/no-fast-setup still fail and both retain the ground artifact. These are OFFLINE replay images, not corrected game builds or recommended GPU settings. No full fidelity/performance/candidate adoption claim.",
@@ -369,12 +369,14 @@
         "Composed the same lifetime edits onto the exact saved retail scheduler, preserving existing pause/probe/audio hooks instead of accidentally replacing them with pristine upstream source.",
         "Built four private native variants without changing old objects, libraries, executables, discs or default profiles. Checked five direct class layouts and four core method link owners for each profile.",
         "Retained the failed empty-channel retail trial, then used the existing real owned menu broker for frozen/control/candidate startup tests. Published the new unchanged original first-scene comparison, not a screenshot of this journal.",
-        "Observed actual candidate save-before-retirement and catch-skip paths with shared VU0 preservation on BOTH native profiles:6prototype and9retail paths; no forced guest state. A first wrong-slot retail observer is retained and excluded; the second run uses retail-qualified slots."
+        "Observed actual candidate save-before-retirement and catch-skip paths with shared VU0 preservation on BOTH native profiles:6prototype and9retail paths; no forced guest state. A first wrong-slot retail observer is retained and excluded; the second run uses retail-qualified slots.",
+        "Subsequent longer prototype original-control actually crashes after9.219s. Matching private dump/PDB/disassembly proves the failed original catch VU0 read; preceding invalidation remains unknown because heap bytes are absent. The180s candidate exits0/184.938s, but only a menu sample is produced, not a prototype scene pass."
       ],
-      "validation": "Prototype control/candidate45s: both native0,48.672s/48.688s,twoPNGs exact against frozen samples. Retail frozen/control/candidate45s: all124 at own limit,all9PNGs exact. Retail180s control/candidate:124,180.218s/180.422s,all6PNGs exact,actualfield4501 first scene. Full Windows530tests/4skips;17recipe tests. Qualified candidate debugger runs: prototype debugger0/native0/49.156s,2invoke+4exit; retail debugger0/native124/45.391s,5invoke+4exit. Every observed pre-mutation four-lane save and retired-catch skip preserves shared state, no stale catch reads/errors/signals.",
-      "limits": "No default promotion, complete lifetime proof, F1/F2 acceptance, audible audio, real Save/Load, full-game fidelity or performance result. Later requested6500/9000 images absent within180s. Retail FORCE/PlaySound/linkwarnings retained and documented; equal import bindings are not audio validation.",
+      "validation": "Prototype control/candidate45s: both native0,48.672s/48.688s,twoPNGs exact against frozen samples. Retail frozen/control/candidate45s: all124 at own limit,all9PNGs exact. Retail180s control/candidate:124,180.218s/180.422s,all6PNGs exact,actualfield4501 first scene. Full Windows530tests/4skips;17recipe tests. Qualified candidate debugger runs: prototype debugger0/native0/49.156s,2invoke+4exit; retail debugger0/native124/45.391s,5invoke+4exit. Every observed pre-mutation four-lane save and retired-catch skip preserves shared state, no stale catch reads/errors/signals. NEW prototype300s candidate0/303.922s,2PNGs; actual room4501 and menu2300 byte-identical to separately dated12November e677 baseline, NOT the failed new original-control.",
+      "limits": "No default promotion, complete lifetime proof, F1/F2 acceptance, audible audio, real Save/Load, full-game fidelity or performance result. Later requested6500/9000 images absent within180s. Retail FORCE/PlaySound/linkwarnings retained and documented; equal import bindings are not audio validation. Retain the new original-control access violation; one surviving candidate run is not proof of the complete crash cause. Actual prototype4501 scene sample now passes; later6203/9000 samples are absent, F1/F2 and rollback remain open.",
       "evidence_comparisons": [
-        "2026-11-13-retail-scheduler-first-scene-control"
+        "2026-11-13-retail-scheduler-first-scene-control",
+        "2026-11-13-prototype-scheduler-scene-candidate"
       ],
       "link": {
         "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SCHEDULER_RETIREMENT_CANDIDATE.md",
@@ -1750,6 +1752,55 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-13-prototype-scheduler-scene-candidate",
+      "date": "2026-11-13",
+      "title": "Prototype candidate scene against the preserved original",
+      "feature": "Shared-runtime lifetime candidate",
+      "scenario": "NEW300s candidate native run compared with the dated12November preserved e677 original. The new original-control failed before pictures; the reference below is explicitly that earlier successful baseline, NOT a fresh successful control.",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Preserved original, 12 November",
+        "bevy": "New candidate, 13 November"
+      },
+      "observations": [
+        "The300s candidate exits0/303.922s and exports actualfield4501 in the room; its originalPNG equals the preserved baseline byte-for-byte.",
+        "Its menu2300 original also equals the preserved baseline. No scene-resource edits, forced ready flags, fake pads, imported state or attack loop."
+      ],
+      "limits": [
+        "The new180s original-control crashes in the original catch VU0 read; it is retained, not replaced or relabeled as successful. This reference is a separate dated earlier run.",
+        "Matching pixels at one field are sampled non-regression, not proof of every scheduler path, full-game fidelity or the exact preceding invalidation cause.",
+        "Later requested6203/9000 samples are not produced within300s. No F1/F2, rollback, realSave/Load, hardware/audio or performance certificate.",
+        "Whole640x480 native-window PNG, not a native512x448 GSbuffer or offline renderer replay. Original game imagery has rights separate from the code license."
+      ],
+      "reference": {
+        "caption": "Earlier successful e677 original,12November; not the new failed control. Actualfield4501, no crop/resize or correction.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL640x480 directwindow export; exactexeSHA e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34. Same retained finite input/developer1400/perport-binding profile; no guest flags/readiness writes.",
+        "revision": "3aac1292c7f0535548146cb41f3f502f8adc6181",
+        "captured_at": "2026-11-12T20:28:47.428214+00:00",
+        "path": "media/2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff.png",
+        "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Actual separately dated native renderer output, unchanged original bytes. Timestamp original exported filemtime, not exact guest timing. New revision identifies public scheduler tooling; preserved selected-source producer3aac1292 and generic runtime1646 remain separate from retail193076. No default promotion."
+      },
+      "bevy": {
+        "caption": "New lifetime candidate actual room capture,13November; unchanged PNG. Actualfield4501, no crop/resize or correction.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL640x480 directwindow export; exactexeSHA 22c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689. Same retained finite input/developer1400/perport-binding profile; no guest flags/readiness writes.",
+        "revision": "0be15761f28f97cbba347798f3f0c1eac09f9e84",
+        "captured_at": "2026-11-13T20:46:25.990117+00:00",
+        "path": "media/2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff.png",
+        "sha256": "2b4a8071ea670c7a0d88b4d35f36cb6cf61ec0c5c96aebddc7164cd1b3aa21ff",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Actual separately dated native renderer output, unchanged original bytes. Timestamp original exported filemtime, not exact guest timing. New revision identifies public scheduler tooling; preserved selected-source producer3aac1292 and generic runtime1646 remain separate from retail193076. No default promotion."
+      }
+    },
     {
       "id": "2026-11-13-retail-scheduler-first-scene-control",
       "date": "2026-11-13",

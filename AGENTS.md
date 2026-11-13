@@ -10,7 +10,11 @@ mutation4laneVU0 saves equal and retired catchskips preserved;0stale catchreads,
 errors or signals. First wrong-slot retail observer excluded; NEW run uses
 retail+90/+98, not prototype+80/+90. Not full crashcause/sequence/reentry/F1F2/
 rollback or defaultadoption proof. 530Windows tests/4skips,17recipe tests.
-Prototype180s scene pair now pending: read canonical checkpoint for handles.
+New prototype180s original-control AV9.219s at proven original catch VU0 read;
+matching private dump/PDB retained, heap fields absent, preceding invalidation
+unknown. Candidate180s0/184.938s menuonly; NEW300s candidate0/303.922s,2PNGs,
+room4501/menu2300 exact dated12Nov frozen e677 originals. Not a new passing
+control; targets6203/9000 absent. All native handles terminal; read checkpoint.
 Keep candidate experimental and goal active.
 
 ## Active scheduler native integration goal — 13 November 2026
