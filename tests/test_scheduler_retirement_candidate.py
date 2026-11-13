@@ -30,6 +30,36 @@ class SchedulerCandidateTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             candidate.render_candidate(b'invented source, not an upstream fixture')
 
+    def test_unknown_profile_refused(self):
+        with self.assertRaisesRegex(ValueError, 'profile'):
+            candidate.render_candidate(b'invented', 'unknown')
+
+    def test_retail_profile_explicit(self):
+        import hashlib
+        data = b'pause hook\r\nalpha\r\naudio hook\r\n'
+        expected = b'pause hook\r\nbeta\r\naudio hook\r\n'
+        with mock.patch.object(candidate, 'RETAIL_SOURCE_SHA256', hashlib.sha256(data).hexdigest()), \
+             mock.patch.object(candidate, 'RETAIL_CANDIDATE_SHA256', hashlib.sha256(expected).hexdigest()), \
+             mock.patch.object(candidate, 'EDITS', [('alpha', 'beta')]):
+            self.assertEqual(candidate.render_candidate(data, 'retail-readback34-v1'), expected)
+            with self.assertRaises(ValueError):
+                candidate.render_candidate(data)
+
+    def test_no_retail_fallback_to_upstream(self):
+        import hashlib
+        data = b'alpha\r\n'
+        with mock.patch.object(candidate, 'SOURCE_SHA256', hashlib.sha256(data).hexdigest()):
+            with self.assertRaises(ValueError):
+                candidate.render_candidate(data, 'retail-readback34-v1')
+
+    def test_retail_candidate_fingerprint_checked(self):
+        import hashlib
+        data = b'alpha\r\n'
+        with mock.patch.object(candidate, 'RETAIL_SOURCE_SHA256', hashlib.sha256(data).hexdigest()), \
+             mock.patch.object(candidate, 'EDITS', [('alpha', 'beta')]):
+            with self.assertRaisesRegex(ValueError, 'fingerprint'):
+                candidate.render_candidate(data, 'retail-readback34-v1')
+
     def test_candidate_fingerprint_checked(self):
         import hashlib
         data = b'alpha\r\n'

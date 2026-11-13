@@ -1,10 +1,104 @@
 # Experimental scheduler retirement candidate
 
-13 November 2026. This makes the previous synthetic experiment reproducible
-from public original tooling. It does **not** install a correction into the game.
-Original and current launch profiles, executables and F1/F2 remain unchanged.
+13 November 2026. The initial public recipe reproduced the synthetic experiment
+without changing a game executable. The follow-up below now builds separate
+native diagnostic variants; original launch profiles and default executables
+remain unchanged. F1/F2 regression on these variants still requires validation.
 
 ## Published source
+
+### Native integration follow-up — 13 November 2026
+
+The isolated native follow-up now has original-control and candidate executables
+for **both** profiles. These are private diagnostic builds, not a default
+promotion. The short prototype control/candidate runs terminate normally and
+their two planned images equal the frozen originals byte-for-byte. The retail
+frozen/control/candidate runs each reach their own 45-second limit (exit124);
+all nine exported PNGs agree across all three runs. These are opening/menu
+samples, not completed gameplay, lifetime or F1/F2 acceptance.
+
+The subsequent retail pair actually ran for 180.218s (control) and 180.422s
+(candidate), each returning124 at its own requested 180-second limit. Both
+reached the opening first-fight scene. All six PNGs agree byte-for-byte, including
+the direct 640x480 native-window export at actual field4501, published in the
+journal. The requested4500 became4501 in this exporter; later requested6500 and
+9000 samples were not reached within the bound and are not declared tested.
+Finite opening inputs are scripted virtual input, not physical-controller proof;
+no attacks, autonomous level beating, imported state or forced guest flags.
+This remains a sampled non-regression check, not a complete game or fix verdict.
+
+An important source distinction surfaced during the integration. The restored
+retail checkout is pristine, but the retained retail object cache corresponds
+to the separately preserved 34-file continuation postimage, including pause,
+input-probe and audio hooks. Substituting pristine scheduler source would
+silently remove those hooks. The new explicit `retail-readback34-v1` recipe
+composes the same six lifetime edits onto the exact saved generic scheduler
+instead. It has no automatic fallback to the upstream profile.
+
+Retail source SHA-256:
+`59f0744303b6899ea6765e0e40a6ee295c8c86db4b9066d57a36e9166e4e4f32`.
+Retail candidate SHA-256:
+`06413bf7f31394a53b251f8d9ffc35bf98cbf2fcfdee46faf1e31872763525bc`.
+Select it explicitly with `--source-profile retail-readback34-v1`; it refuses
+unrecognized bytes and never edits the supplied source or existing output.
+The default upstream fingerprint and output remain unchanged.
+
+For each profile, five direct PDB class layouts agree between frozen original,
+new control and candidate: scheduler, thread, invocation, EE context and runtime.
+The four core scheduler methods resolve to the new override object. This is a
+bounded ABI/link audit, not full behavioral equivalence. All old link inputs,
+original executables and disc inputs remain unchanged.
+
+Retail linking retains `/FORCE:MULTIPLE` and three warnings: incremental linking
+disabled by LTCG, duplicate `PlaySound`, and a potentially non-runnable image.
+They are not suppressed. The frozen/control/candidate import sets and actual
+WinMM `PlaySound` binding agree; this does not certify audible audio. The short
+native tests are additional evidence, not permission to ignore the warnings.
+
+The first retail control failed before rendering: the private test driver
+supplied an invalid empty menu channel. That failure is retained. A new driver
+uses the existing original Broker/Service and a fresh owned scratch channel;
+it succeeds for frozen, control and candidate without self-tests or preferences
+from the user's data. A separate driver variable error occurred before native
+launch and is also retained. Neither is a candidate crash or a hidden fix.
+
+Four additional invented-data tests cover the explicit retail profile, hook
+preservation and rejection boundaries: 17 recipe tests; the full Windows suite
+passes 530 tests with four skips. No game fixtures are supplied to tests/CI.
+
+Remaining gates: longer native scenes and transitions, actual retirement and
+invocation observation with shared VU0 preservation, F1/F2 non-regression and
+rollback. Non-crash and equal menu pictures alone do not establish the fix.
+The goal remains active and original launch defaults remain unchanged.
+
+### Actual candidate retirement observations
+
+New ordinary GDB runs now observe the actual linked candidates, using their
+own maps/disassembly and matching PDB layouts rather than transplanted game
+addresses. Prototype: debugger0/native0,49.156s against its own45s watchdog;
+two `invokeCurrent` and four `exitCurrent` paths. Retail: debugger0/native124,
+45.391s at its own45s bound; five `invokeCurrent` and four `exitCurrent` paths.
+Each observed path has a save before context mutation, a return with all four
+shared VU0 lanes equal, a retired-context catch branch and preserved shared
+state after the skip. No retired catch-context read, observer error or signal
+was recorded in these qualified runs. No game registers, flags, readiness or
+returns were forced. Native software breakpoints can perturb timing.
+
+The first retail observer reused prototype stack-slot offsets and is **not**
+accepted as context-identity evidence, even though some values happened to
+agree. Retail disassembly proves different slots; the new second run uses those
+retail-qualified offsets. Both original traces are retained privately. Earlier
+metadata guards also rejected overlapping disassembly slices before launch;
+the qualified metadata distinguishes actual unique sites. Do not treat a
+non-crash or a coincidentally equal pointer as source/ABI qualification.
+
+This is positive evidence for these actual startup retirement paths, not proof
+of the original crash's complete cause or every scheduler path. Native
+`invokeCurrentSequence`, ordinary-transfer re-entry and nontrivial VU0 values
+are not all established by these startup runs; the separate five invented-data
+controls cover sequence growth and the subsequent ordinary transfer. Longer
+prototype scenes, both-profile F1/F2/rollback and broader non-regression remain
+open. The candidate is still experimental and no default is promoted.
 
 - `scheduler_retirement_candidate.py`: original, hash-gated transformation of
   one **generic GPL runtime** source file, not generated game code.

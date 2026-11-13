@@ -1,7 +1,7 @@
 """Original GPL-3.0-only experimental generic-runtime patch, NOT game adoption.
 
-Only the pinned upstream EeScheduler.cpp is accepted. Generated game source is
-not an input. The candidate is written to a NEW ignored .local file; neither
+Only explicitly fingerprinted generic EeScheduler.cpp profiles are accepted.
+Generated game source is not an input. The candidate is written to a NEW ignored .local file; neither
 the supplied source nor existing builds/libraries/profiles are changed.
 """
 from pathlib import Path
@@ -12,6 +12,10 @@ ROOT = Path(__file__).resolve().parent
 SOURCE_SHA256 = '80297ca782b38abfefc3a1e53059dab8b6e05dcf3b2d136266f13cf65b88da4f'
 CANDIDATE_SHA256 = 'eef04f79134fc139de2876274b028dbaee88e25496bb6707ff22eb7329b197a7'
 UPSTREAM_REVISION = '1646d8854e1c3e16e5ec9bb7aeddebe0fe0fa14a'
+# Exact saved retail continuation postimage: keep its pre-existing pause,
+# controls probe and audio hooks. Never substitute the stock source silently.
+RETAIL_SOURCE_SHA256 = '59f0744303b6899ea6765e0e40a6ee295c8c86db4b9066d57a36e9166e4e4f32'
+RETAIL_CANDIDATE_SHA256 = '06413bf7f31394a53b251f8d9ffc35bf98cbf2fcfdee46faf1e31872763525bc'
 
 # Context is GPL upstream runtime, not game-derived source or an address map.
 # Save the shared state while its owner still exists; skip only that retired
@@ -60,14 +64,20 @@ def apply_unique_edits(text, edits):
     return text
 
 
-def render_candidate(source):
-    if hashlib.sha256(source).hexdigest() != SOURCE_SHA256:
+def render_candidate(source, source_profile='upstream'):
+    if source_profile == 'upstream':
+        expected_source, expected_candidate = SOURCE_SHA256, CANDIDATE_SHA256
+    elif source_profile == 'retail-readback34-v1':
+        expected_source, expected_candidate = RETAIL_SOURCE_SHA256, RETAIL_CANDIDATE_SHA256
+    else:
+        raise ValueError('Unknown scheduler source profile')
+    if hashlib.sha256(source).hexdigest() != expected_source:
         raise ValueError('Unrecognized generic runtime revision; source left unchanged')
     text = source.decode('utf-8').replace('\r\n', '\n')
     # Explicit byte policy of the actually compiled Windows candidate. Do not
     # let the host platform silently choose LF/CRLF or bypass a failed hash.
     result = apply_unique_edits(text, EDITS).replace('\n', '\r\n').encode('utf-8')
-    if hashlib.sha256(result).hexdigest() != CANDIDATE_SHA256:
+    if hashlib.sha256(result).hexdigest() != expected_candidate:
         raise ValueError('Candidate fingerprint mismatch; no output written')
     return result
 
@@ -91,17 +101,19 @@ def main(argv=None):
                         help='Pinned upstream generic EeScheduler.cpp, never game code')
     parser.add_argument('--output', type=Path, required=True,
                         help='NEW .cpp path within this checkout\'s ignored .local directory')
+    parser.add_argument('--source-profile', choices=('upstream', 'retail-readback34-v1'),
+                        default='upstream', help='Explicit source identity; no automatic profile fallback')
     args = parser.parse_args(argv)
     try:
         original = args.source.read_bytes()
-        candidate = render_candidate(original)
+        candidate = render_candidate(original, args.source_profile)
         if args.source.resolve() == args.output.resolve():
             raise ValueError('Never overwrite the supplied source')
         write_new_candidate(args.output, candidate)
     except (OSError, UnicodeError, ValueError) as error:
         parser.exit(2, str(error) + '\n')
     print('Experimental scheduler candidate written; no game/build/profile was modified.')
-    print('Candidate SHA-256: ' + CANDIDATE_SHA256)
+    print('Candidate SHA-256: ' + hashlib.sha256(candidate).hexdigest())
     return 0
 
 

@@ -1,5 +1,39 @@
 # Canonical progress and publication workflow
 
+## Native candidate integration checkpoint - 13 November 2026
+
+Four isolated links pass. Prototype45s control/candidate0; retail45s frozen/
+control/candidate124, sampled PNGs exact. Retail180s control/candidate124 reaches
+first scene,6PNGs exact; targets6500/9000 not reached. Qualified native candidate
+GDB: prototype6paths (2invoke/4exit), retail9paths (5invoke/4exit), all pre-
+mutation4laneVU0 saves equal and retired catchskips preserved;0stale catchreads,
+errors or signals. First wrong-slot retail observer excluded; NEW run uses
+retail+90/+98, not prototype+80/+90. Not full crashcause/sequence/reentry/F1F2/
+rollback or defaultadoption proof. 530Windows tests/4skips,17recipe tests.
+Prototype180s scene pair now pending: read canonical checkpoint for handles.
+Keep candidate experimental and goal active.
+
+## Active scheduler native integration goal — 13 November 2026
+
+Owner freed G: space and explicitly started a NEW goal. Work on branch
+codex/scheduler-retirement-native; canonical private checkpoint now contains
+scheduler_native_integration_current. Old goal was cleared, not achieved. Old
+low-disk observations below are historical; fresh preflights are mandatory.
+Integrate original retirement correction in isolated prototype AND retail
+variants and prove startup/scenes/controls/lifetimes/VU0/non-regression/rollback.
+Preserve F1/F2, all original builds/maps/PDBs/ISO/user data and diagnostics. No
+new Rust/delegation/default promotion or guessed guest flags/readiness/returns.
+IMPORTANT: actual cached RETAIL variant is the preserved private readback pair,
+not restored pristine/default source. Its saved EeScheduler canonical da30485a
+(raw59f07443) includes existing pause/probe/audio additions; do NOT replace with
+stock80297ca7 and silently drop them. Recover verified saved postimages, qualify
+ABI/source/objects, then compose retirement edits with strict fingerprints.
+Prototype stock80297ca7 remains a separate qualified source profile. Do not
+claim a linked candidate or non-crash fixes the issue; real BOTH-native tests,
+original evidence, publication tests/CI/actual free Pages verification required.
+See ignored scheduler-native-integration-2026-11-13/CONTRACT.json. Do not erase
+historical failures or publish generated game code/inputs/dumps/binaries.
+
 ## Six-checkpoint GS window; no GPU fix — 13 November 2026
 
 Read PROTOTYPE_POINT1_GS_WINDOW.md. NEW unchanged e677 native0/303.890s,

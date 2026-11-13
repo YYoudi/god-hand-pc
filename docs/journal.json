@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
-  "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Bound same-backend repeatability and investigate meaningful command/state differences; use qualified native CPU/GPU controls if fresh runtime/output capacity allows. Do not call the first identical RGB image GPU parity or hide the later failures. Scheduler correction still needs isolated prototype AND retail native acceptance after its independent link-capacity gate passes; no helper/menu polish or Rust substitute.",
+  "status": "Isolated scheduler variants now run in both profiles. New native observers verify bounded save-before-retirement and catch-skip paths with shared VU0 preservation; the retail opening scene matches its control. Longer prototype scenes, F1/F2, rollback and broader non-regression remain open. The candidate is experimental and original launch defaults are unchanged.",
+  "next": "Finish actual candidate native lifetime/VU0 observations and longer prototype scene controls; verify F1/F2 and rollback before adoption. Keep retail diagnostics, renderer failures, genuine Save/Load, hardware/audio and human campaign gates explicit.",
   "known_limits": [
     "New six-checkpoint GS replay exposes later CPU/GPU RGB differences; cache-off/no-fast-setup still fail and both retain the ground artifact. These are OFFLINE replay images, not corrected game builds or recommended GPU settings. No full fidelity/performance/candidate adoption claim.",
     "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
@@ -360,6 +360,27 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "The scheduler candidate now links in both native builds",
+      "summary": "Separate prototype and retail controls now exist. The retail pair reaches the first scene with identical sampled images; this is a nonvisual regression check, not a completed lifetime fix.",
+      "changes": [
+        "Composed the same lifetime edits onto the exact saved retail scheduler, preserving existing pause/probe/audio hooks instead of accidentally replacing them with pristine upstream source.",
+        "Built four private native variants without changing old objects, libraries, executables, discs or default profiles. Checked five direct class layouts and four core method link owners for each profile.",
+        "Retained the failed empty-channel retail trial, then used the existing real owned menu broker for frozen/control/candidate startup tests. Published the new unchanged original first-scene comparison, not a screenshot of this journal.",
+        "Observed actual candidate save-before-retirement and catch-skip paths with shared VU0 preservation on BOTH native profiles:6prototype and9retail paths; no forced guest state. A first wrong-slot retail observer is retained and excluded; the second run uses retail-qualified slots."
+      ],
+      "validation": "Prototype control/candidate45s: both native0,48.672s/48.688s,twoPNGs exact against frozen samples. Retail frozen/control/candidate45s: all124 at own limit,all9PNGs exact. Retail180s control/candidate:124,180.218s/180.422s,all6PNGs exact,actualfield4501 first scene. Full Windows530tests/4skips;17recipe tests. Qualified candidate debugger runs: prototype debugger0/native0/49.156s,2invoke+4exit; retail debugger0/native124/45.391s,5invoke+4exit. Every observed pre-mutation four-lane save and retired-catch skip preserves shared state, no stale catch reads/errors/signals.",
+      "limits": "No default promotion, complete lifetime proof, F1/F2 acceptance, audible audio, real Save/Load, full-game fidelity or performance result. Later requested6500/9000 images absent within180s. Retail FORCE/PlaySound/linkwarnings retained and documented; equal import bindings are not audio validation.",
+      "evidence_comparisons": [
+        "2026-11-13-retail-scheduler-first-scene-control"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SCHEDULER_RETIREMENT_CANDIDATE.md",
+        "label": "Exact profiles, source preservation, native controls and remaining gates"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -1729,6 +1750,56 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-13-retail-scheduler-first-scene-control",
+      "date": "2026-11-13",
+      "title": "Isolated retail scheduler variants: the same opening scene",
+      "feature": "Shared-runtime lifetime candidate",
+      "scenario": "New180s original-control and candidate retail native runs. Same finite four opening input pulses, fresh scratch user data and real menu broker. No attacks, fake pads, imported save or guest flag writes.",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "New original-control native build",
+        "bevy": "New lifetime-candidate native build"
+      },
+      "observations": [
+        "Both native runs reached their own180s limit (exit124), not a crash.",
+        "The current direct640x480 export at actual field4501 is byte-identical; all six exported PNGs across both runs agree.",
+        "A same-frame nonvisual-regression sample, not a visible graphics improvement or proof of complete lifetime correctness."
+      ],
+      "limits": [
+        "Requested4500 exported as actual4501; later requested6500/9000 samples were not produced within the bound. Do not label them tested.",
+        "No F1/F2 invocation, hardware input, audible audio, genuine Save/Load, campaign completion or full fidelity certificate. Hidden muted diagnostic runs.",
+        "These are whole native-window render exports, not native512x448 GS buffers or offline GS replay. Old legacy before/after diagnostic exports remain private.",
+        "Game imagery is not covered by the code GPL; owner-selected evidence does not constitute rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Unchanged original direct native-window PNG, actual exported field4501. Control; same pixels expected for this nonvisual scheduler change.",
+        "profile": "retail-usa",
+        "runtime": "Windows OpenGL native retail, 1x diagnostic; exe SHA256 1bf07dbac48ffb5f15c0073d2b118f9aed5b5b2317d3b6748101656e6ef9d564. Source continuation37035065dd5547816febcdd6606e9528b5cf4a38; generic scheduler explicit saved-retail profile. Finite scripted virtual input, FakePads0, muted, no selftests.",
+        "revision": "37035065dd5547816febcdd6606e9528b5cf4a38",
+        "captured_at": "2026-11-13T20:30:21.090984+00:00",
+        "path": "media/47ce9b0179d19b11ce1cdef035800e0f7e1a076ad9263d3e6a7e8733a38b33e6.png",
+        "sha256": "47ce9b0179d19b11ce1cdef035800e0f7e1a076ad9263d3e6a7e8733a38b33e6",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "New native-run renderer export, copied byte-for-byte. Timestamp is original file modification time after export, not guest-frame timing. The source revision identifies the preserved continuation; exact scheduler profile and image digest identify the separate new link. No default promotion."
+      },
+      "bevy": {
+        "caption": "Unchanged original direct native-window PNG, actual exported field4501. Candidate; same pixels expected for this nonvisual scheduler change.",
+        "profile": "retail-usa",
+        "runtime": "Windows OpenGL native retail, 1x diagnostic; exe SHA256 ccbf40e7c21704d7946745a5fba8cc5cd5e1a94474dda2720e5985abc27a3926. Source continuation37035065dd5547816febcdd6606e9528b5cf4a38; generic scheduler explicit saved-retail profile. Finite scripted virtual input, FakePads0, muted, no selftests.",
+        "revision": "37035065dd5547816febcdd6606e9528b5cf4a38",
+        "captured_at": "2026-11-13T20:33:23.947174+00:00",
+        "path": "media/47ce9b0179d19b11ce1cdef035800e0f7e1a076ad9263d3e6a7e8733a38b33e6.png",
+        "sha256": "47ce9b0179d19b11ce1cdef035800e0f7e1a076ad9263d3e6a7e8733a38b33e6",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "New native-run renderer export, copied byte-for-byte. Timestamp is original file modification time after export, not guest-frame timing. The source revision identifies the preserved continuation; exact scheduler profile and image digest identify the separate new link. No default promotion."
+      }
+    },
     {
       "id": "2026-11-12-whole-normal-f1-f2",
       "date": "2026-11-12",
