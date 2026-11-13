@@ -39,7 +39,8 @@ class PrototypeWorkbenchTests(unittest.TestCase):
         self.assertEqual(w.build_profile('room01-v1'),{
             'sha256':'4acf41e7d0495dbb883629dc9a12b15dc7e0b33b6bee10ea6a97bbeef8f047f7',
             'default_user_data':'prototype-room01'})
-        self.assertEqual(len({w.build_profile(n)['default_user_data'] for n in w.BUILD_PROFILES}),3)
+        self.assertEqual(len({w.build_profile(n)['default_user_data']
+                             for n in ('native07','room01-v1','source-v1')}),3)
         profile['sha256']='invented mutation'
         self.assertNotEqual(w.build_profile('source-v1')['sha256'],profile['sha256'])
 
@@ -73,6 +74,25 @@ class PrototypeWorkbenchTests(unittest.TestCase):
 
     def test_source_check_only_uses_explicit_build_without_output_or_process(self):
         self.check_only_profile('source-v1')
+
+    def test_scheduler_profiles_have_exact_separate_identities_and_data(self):
+        expected = {
+            'scheduler-control-v1': 'c79d9019733355a9e3bf1f73b237ceac790d732c1eff4c2e849cacb606e6e657',
+            'scheduler-candidate-v1': '22c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689',
+        }
+        for name, digest in expected.items():
+            profile = w.build_profile(name)
+            self.assertEqual(profile['sha256'], digest)
+            profile['sha256'] = 'invented mutation'
+            self.assertEqual(w.build_profile(name)['sha256'], digest)
+        self.assertEqual(len({w.build_profile(n)['default_user_data']
+                              for n in w.BUILD_PROFILES}), len(w.BUILD_PROFILES))
+
+    def test_scheduler_candidate_check_only_never_launches_or_creates_data(self):
+        self.check_only_profile('scheduler-candidate-v1')
+
+    def test_scheduler_control_check_only_never_launches_or_creates_data(self):
+        self.check_only_profile('scheduler-control-v1')
 
     def test_source_profile_explicit_userdata_stays_owner_choice(self):
         self.check_only_profile('source-v1','invented-explicit-source-user')

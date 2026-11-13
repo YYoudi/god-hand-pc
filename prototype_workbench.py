@@ -28,6 +28,16 @@ BUILD_PROFILES = {
         'sha256': 'e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34',
         'default_user_data': 'prototype-source',
     },
+    # Explicit experimental adoption of separately linked local diagnostics.
+    # These are not default upgrades, downloaded builds or a fresh installer.
+    'scheduler-control-v1': {
+        'sha256': 'c79d9019733355a9e3bf1f73b237ceac790d732c1eff4c2e849cacb606e6e657',
+        'default_user_data': 'prototype-scheduler-control',
+    },
+    'scheduler-candidate-v1': {
+        'sha256': '22c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689',
+        'default_user_data': 'prototype-scheduler-candidate',
+    },
 }
 ELF = (3450144, 'f9974f97a7c38a6f1d0fcdd66e0f9424bbe109ecca745493628b468d8ce5242e')
 DISC = (1261928448, '5871f717ea7f3239cbc75e49790d5202c0b5041c392d1317e616ee1d344ceb7e')
@@ -132,7 +142,7 @@ def launch_environment(parent, user):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--build', choices=tuple(BUILD_PROFILES), default='native07',
-                        help='Pinned private build; native07 stays default, room01-v1/source-v1 are explicit')
+                        help='Pinned private build; native07 stays default, scheduler-* are explicit experimental builds')
     parser.add_argument('--exe', required=True, help='Qualified PRIVATE executable for the selected build; exact hash required')
     parser.add_argument('--elf', required=True, help='Personal June-2006 prototype ELF, read only')
     parser.add_argument('--disc', required=True, help='Personal June-2006 prototype disc, read only')
@@ -161,6 +171,8 @@ def main(argv=None):
         env = launch_environment(os.environ, user)
         print('Qualified PRIVATE prototype build. Visible, muted; F1 controls / F2 original debug menu and mouse panel.')
         print('Selected build:', args.build, '(adopt-only; no executable is downloaded or generated)')
+        if args.build.startswith('scheduler-'):
+            print('Experimental scheduler integration; not default adoption or full regression acceptance.')
         print('No deadline, automatic input, snapshots or game-memory export. Close the window to exit.')
         print('Existing controls/cards preserved; these are not verified game Save/Load or hardware tests.')
         if args.check_only:

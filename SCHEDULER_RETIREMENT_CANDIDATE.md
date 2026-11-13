@@ -129,6 +129,105 @@ It does **not** turn the failed new control into a successful one. Requested
 remain open. This is native integration evidence on both profiles, not full
 acceptance or a default-profile change.
 
+## Existing UI command regression and rollback
+
+13 November 2026 follow-up. These menus already existed; this work reruns their
+original command paths on the isolated scheduler variants. It does **not** add
+a new debug/settings menu or test a physical keyboard. No desktop focus/input
+was taken. Ordinary launch self-tests remain disabled; these cases explicitly
+opt into diagnostic scripts with fresh scratch controls/preferences only.
+
+### Retail
+
+Both original-control and candidate run to their own240s limit (native124,
+240.218s/240.375s). The original controls script opens/closes F1 and passes its
+input-hold release check. Acknowledged holds preserve the per-run EE/IOP probe
+hashes. F1 parks at2301 versus2308, so its two pictures are **not** same-frame
+cross-run evidence; the state hashes also are not claimed equal across runs.
+
+The original F2 Host command diagnostic parks at4501 in both runs, holds the
+field for1.5s, saves a fresh scratch **next-launch** preference of2x, then closes
+and resumes. The original Broker/Service acknowledges the save. Both report
+`PASS save-ack-close`, `shutdown done=1 failed=0`; within each hold the EE/IOP
+probe hashes match before/after. Final present fields5065/5027 establish later
+presentation, not a game-FPS measurement. Corresponding F2 originals agree
+byte-for-byte across variants; each held-before/held-again image also agrees.
+
+The requested run remains1x in the menu model; the menu explicitly says it does
+**not** observe effective GL scale. This is neither observed live HD nor game
+Save/Load. The journal shows unchanged before/save-ack originals with that
+limitation visible. The v1 private receipt's copied descriptive45s/three-target
+phrase is stale: its actual command is240s/four targets. Exact commands, active
+environment and terminal receipts qualify the result; that old text is retained
+and separately audited rather than silently rewritten.
+
+### Prototype
+
+The first100s diagnostic pair passes F1 but a private observer incorrectly
+expects13CSV columns; the actual present header has12. It consequently never
+sends the post-close request. Both original cases are retained, **not** called
+post-close F2 passes. A separately named v2 validates the exact actual header
+and complete rows, never interleaved log-digit maxima.
+
+V2 sends `open-debug` through the existing original diagnostic host channel
+while F1 owns input: original request status0 and no FIFO pulses. F1 closes with
+holdcheckPASS. Before the fresh post-close request the FIFO is still empty:
+there is no deferred chord. That new request has original status1 and produces
+exactly one finite L2/R3 chord; the original game menu is actually visible at
+field1560. Requests follow observed complete CSV rows1456/1462, not assumed
+identical delivery ticks. The100s candidate completes native0/103.953s.
+
+The new original-control captures the same1560/2300 PNGs, then crashes with
+access violation after55.391s. A second preserved Windows dump and matching
+PDB resolve the same original catch VU0 read, with the same failed effective
+address relationship. This remains a **failed full control run**, not a pass
+inferred from its earlier pictures. The exact preceding invalidation is not
+established. The candidate's survival is supporting evidence, not a complete
+crash-cause proof by itself.
+
+Prototype F1 owns input but is **not** retail's safe-pause feature. Its retained
+screen says the game keeps running. Its F1 screenshot uses the existing legacy
+800x600 exporter with DPI/readback limitations; the1560 menu is a640x480 direct
+field export. Their journal pairing is deliberately unmatched UI states, not
+pixel-fidelity evidence or a repaired screenshot. Both original files remain
+unchanged and downloadable.
+
+### Explicit local selectors and rollback
+
+`prototype_workbench.py` now recognizes the separately linked private binaries
+as explicit `scheduler-control-v1` and `scheduler-candidate-v1` choices. Each
+has its own exact executable fingerprint and separate default user data.
+`native07` is still the default; `source-v1` still requires e677. The normal
+interactive environment remains free of diagnostic scripts/deadlines. This is
+**adoption of an existing private build**, not generation, a download, a fresh
+ISO-only installer or full normal-interactive acceptance.
+
+For a read-only check with your qualified private paths:
+
+```powershell
+python prototype_workbench.py --build scheduler-candidate-v1 `
+  --exe "$Candidate" --elf "$PrototypeElf" --disc "$PrototypeDisc" `
+  --session scheduler-candidate-check --check-only
+```
+
+Actual CLI checks of both new choices return0 without creating sessions; trying
+the candidate under old `source-v1` returns2 without creating one. Three new
+invented-data tests cover exact independent identities/data and read-only
+selection; the full Windows suite passes533 tests/four skips in180.131s.
+
+After the candidates, the preserved frozen retail binary is actually rerun with
+fresh data and no UI diagnostic: native124/180.312s, all six exported PNGs equal
+the earlier original-control samples including firstscene4501. The preserved
+e677 prototype also reruns: native0/50.407s, two startup/menu originals equal
+its earlier samples. The latter is a **startup/menu rollback**, not a new
+prototype room/campaign validation. No original executable/library/source,
+disc or normal profile is overwritten to perform either rollback.
+
+Remaining work includes durable reproducible build integration and wider
+version-qualified room transitions, native ordinary-transfer/sequence cases,
+and normal-interactive/hardware gates. Keep the candidate experimental and the
+goal active; do not turn these UI/scoped rollback results into full adoption.
+
 - `scheduler_retirement_candidate.py`: original, hash-gated transformation of
   one **generic GPL runtime** source file, not generated game code.
 - `tests/probes/scheduler_context_lifetime.cpp`: the exact original synthetic

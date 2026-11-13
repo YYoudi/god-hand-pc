@@ -1,5 +1,28 @@
 # Canonical progress and publication workflow
 
+## Current UI-command regression checkpoint - 13 November 2026
+
+Read the new UI/rollback follow-up in SCHEDULER_RETIREMENT_CANDIDATE.md.
+Retail control/candidate240s124, existing F1/F2 hold/preference commands pass;
+F2field4501 PNGs equal, per-hold EE/IOP hashes preserved, NOT cross-run identity.
+F1parkfields2301/2308 differ. Savednext2 is scratch preference, not observed
+liveGLscale, gameSave/Load or physicalkeys. Prototypev1 observer had13vs12CSV
+bug; v1 NOT postcloseF2 passes. NEWv2 original commands0then1, zeroFIFO before
+freshrequest, originalmenu1560 visible, candidate0/103.953s. ControlAV55.391s
+at matching originalcatchread retained, not fullcontrolPASS. Prototype F1 is
+inputownership, NOT retail pause; original legacy800x600 F1 and direct640x480
+F2 screenshots are UNMATCHED UIstates, never screenshot repair/fidelity.
+Frozen rollback aftercandidates: retail124/180.312s sixPNGs exact priorcontrol;
+prototype0/50.407s two startup/menu originals exact, NOT newroomvalidation.
+Explicit scheduler-control-v1/candidate-v1 workbench choices are adopt-only
+existing-private-build selectors; native07 default/source-v1 e677 unchanged,
+separate default user data, no new diagnostic normal-launch flags/deadlines.
+533Windows tests/4skips pass; actual readonly selectorCLI0/0 and oldsource-v1
+rejectscandidate2, no sessions created. Old source-v1 launcher bytes retained.
+No Rust/delegation/defaultpromotion; goal stays ACTIVE: durable build integration
+and wider actual room/sequence/ordinary-transfer regressions still required.
+Read canonical checkpoint for current publication handles before more nativework.
+
 ## Native candidate integration checkpoint - 13 November 2026
 
 Four isolated links pass. Prototype45s control/candidate0; retail45s frozen/

@@ -4,8 +4,8 @@
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
-  "status": "Both isolated native candidates now have actual scene samples and qualified startup retirement/VU0 observations. The longer prototype original-control crashes in the original catch read; the new candidate survives and its room picture matches a separately dated preserved original. This is bounded evidence, not full crash-cause, F1/F2, rollback or full-game acceptance. Defaults remain unchanged.",
-  "next": "Finish actual candidate native lifetime/VU0 observations and longer prototype scene controls; verify F1/F2 and rollback before adoption. Keep retail diagnostics, renderer failures, genuine Save/Load, hardware/audio and human campaign gates explicit.",
+  "status": "The scheduler candidate has bounded both-native lifetime, scene and existing UI-command regression evidence. Retail hold/preferences pass; prototype rejects under F1 then opens its original menu after a fresh request, while the original-control later crashes. Frozen rollback controls pass for their stated scene/startup scopes. Candidate remains experimental; broad room coverage and durable build integration are still open.",
+  "next": "Exercise qualified multi-room transitions and more lifetime paths on the candidate, then make the explicit build integration reproducible without depending on a restored-source/object-cache assumption. Retain all original failures; no default promotion or full port/remaster/FPS claims.",
   "known_limits": [
     "New six-checkpoint GS replay exposes later CPU/GPU RGB differences; cache-off/no-fast-setup still fail and both retain the ground artifact. These are OFFLINE replay images, not corrected game builds or recommended GPU settings. No full fidelity/performance/candidate adoption claim.",
     "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
@@ -238,7 +238,7 @@
           "title": "Correct a significant shared-runtime defect",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Five guarded synthetic controls pass. Four isolated native links and qualified startup retirement/VU0 paths (prototype6,retail9) now have bounded both-profile scene evidence. New prototype original-control catch-read crash and matching private dump retained; candidate scene matches a separately dated frozen original. Still experimental, not adopted. Full acceptance requires maintainable build integration, F1/F2 and rollback, native ordinary-transfer/sequence coverage and representative non-regression; no full-game or default promotion."
+          "acceptance": "Five guarded synthetic controls pass. Four isolated links, actual prototype6/retail9 startup lifetime paths and bounded both-profile scene/UI-command evidence now exist. Frozen rollback controls pass for stated scopes; original prototype control still crashes in its catch read and is retained. Candidate remains experimental. Completion still requires durable build integration and broader native room/sequence/ordinary-transfer regression; physical input/full-game gates remain separate."
         }
       ]
     },
@@ -360,6 +360,28 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Checking the existing menus after the scheduler change",
+      "summary": "The two native profiles now exercise their existing UI command paths. Retail pause and scratch-preference checks pass; the prototype refuses a request under F1, then displays the original debug menu after a fresh request. These are regression tests, not newly implemented menus.",
+      "changes": [
+        "Reused compiled original diagnostic commands and fresh scratch data, without desktop focus/input, guest flag writes or rebinding owner controls. Published unchanged actual native UI originals, not journal screenshots.",
+        "Retained the prototype original-control AV after55.391s and its matching private dump/PDB. The candidate completes103.953s; matching pictures before the control failure do not make that control a full pass.",
+        "Added explicit hash-gated scheduler-control-v1 and scheduler-candidate-v1 prototype workbench selectors with separate default user data. native07 stays default; source-v1 stays pinned to e677. This adopts existing private executables, not a fresh build/installer.",
+        "Retained the failed13-column observer and corrected only a separately named v2 experiment to the actual12-column structured CSV; old cases are not relabeled."
+      ],
+      "validation": "Retail control/candidate240s: native124/240.218s/240.375s; F1holdcheckPASS, F2field4501held1.5s/scratchnext2ack/close/resumePASS, EE/IOPprobe hashes preserved within eachhold, corresponding F2PNGs exact. F1parkfields2301/2308 differ, not matched images. Prototypev2 request0then1, zero FIFO beforefreshrequest, exactlyonefinitechord, actualmenu1560 and2300PNGexact across variants beforecontrolAV; candidate0. Frozen rollbackaftercandidates: retail124/180.312s,all6PNGs exact priorcontrol; prototype0/50.407s,2startup/menuPNGs exact. FullWindows533tests/4skips/180.131s; actual readonly selector CLI0/0 and oldsource-v1rejects candidate2, no sessions created.",
+      "limits": "Injected original UI commands are NOT physical keyboard tests. PrototypeF1 is not retail pause. Savednext2 is a scratch startup preference, not game Save/Load or observed effectiveGLscale/liveHD. The original-control crash, missingheap cause, wider room/sequence/re-entry coverage, durable build integration and full port gates remain open. Defaults are not promoted.",
+      "evidence_comparisons": [
+        "2026-11-13-retail-scheduler-menu-regression",
+        "2026-11-13-prototype-scheduler-menu-regression"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SCHEDULER_RETIREMENT_CANDIDATE.md",
+        "label": "Native menu commands, retained failures, selectors and rollback scope"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -1752,6 +1774,106 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-13-prototype-scheduler-menu-regression",
+      "date": "2026-11-13",
+      "title": "Prototype F1 ownership and a fresh original debug-menu request",
+      "feature": "Scheduler UI regression",
+      "scenario": "NEW100s candidate diagnostic. An original open-debug host request is refused while F1 owns input, with zero FIFO pulses; after F1 closes a fresh request emits exactly one finite original L2/R3 chord. Original game menu is actually visible atfield1560.",
+      "alignment": "unmatched",
+      "reviewed": true,
+      "labels": {
+        "reference": "F1 owns input; request refused",
+        "bevy": "Fresh request opens original menu"
+      },
+      "observations": [
+        "Actual controls selftest closes with holdcheckPASS. Original request markers are0then1; FIFO remains empty until the fresh post-close request, then contains one finite chord. No deferred command delivery.",
+        "The candidate finishes100s budget native0/103.953s. Its field1560/2300 originals equal the new original-control images captured BEFORE that control crashes after55.391s.",
+        "F1 is input ownership here, NOT the retail safe-pause feature: the prototype screen retains its game-keeps-running warning."
+      ],
+      "limits": [
+        "Unmatched UI states and different existing exporters: F1 is the legacy800x600 screenshot with DPI/readback limitations; F2 is the640x480 direct field export. No crop/resize/repair or pixel-fidelity comparison.",
+        "The new original-control later AV is retained. Matching private PDB/dump locates the same original catch VU0 read; this is not a full successful control run or a complete preceding-invalidation proof.",
+        "First v1 observer used an incorrect13-column CSV assumption and never sent its second request. Those cases are retained, not post-close-F2 passes. V2 validates the actual12-column header and complete rows; never interleaved log digit maxima.",
+        "No physical F1/F2-key proof, normal interactive acceptance, full menu/function coverage, room-matrix completion, game Save/Load, hardware/audio or game-FPS result.",
+        "Selected original game imagery is separate from the GPL code license."
+      ],
+      "reference": {
+        "caption": "Actual candidate F1 screenshot, original legacy800x600 exporter; known DPI/readback limitations retained.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL, fresh cloned keyboard-only controls; original non-pausing controls UI diagnostic Exact private exe SHA256 22c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689. Generic scheduler recipe 6eac15d435c3c120a1be77103ff2baa254a04efb; prototype selected-source producer3aac1292 / retail continuation37035065 remain separate.",
+        "revision": "6eac15d435c3c120a1be77103ff2baa254a04efb",
+        "captured_at": "2026-11-13T21:12:04.547417+00:00",
+        "path": "media/6f646bc99db26818953e7fcf7e863d10f9e58f14b5dfb4c15fa51b01c8d22d11.png",
+        "sha256": "6f646bc99db26818953e7fcf7e863d10f9e58f14b5dfb4c15fa51b01c8d22d11",
+        "width": 800,
+        "height": 600,
+        "publication_profile": "native-png-v1",
+        "provenance": "Original native PNG copied byte-for-byte. Original export filemtime is not precise guest timing. Existing UI command diagnostics, not OS keyboard input. No guest flag/state/return writes, cropped/resized pictures, default promotion or new renderer feature."
+      },
+      "bevy": {
+        "caption": "Actual original prototype debug menu atfield1560 after a fresh accepted original input request; no fake menu or guest-function call.",
+        "profile": "prototype-june-2006",
+        "runtime": "Prototype native OpenGL direct640x480 field PNG; original host request channel, automatic developer probe0 Exact private exe SHA256 22c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689. Generic scheduler recipe 6eac15d435c3c120a1be77103ff2baa254a04efb; prototype selected-source producer3aac1292 / retail continuation37035065 remain separate.",
+        "revision": "6eac15d435c3c120a1be77103ff2baa254a04efb",
+        "captured_at": "2026-11-13T21:12:30.211446+00:00",
+        "path": "media/9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825.png",
+        "sha256": "9ffa9423527357d18c542fbff39bcaeaf597cadfce9f54fb467ed027ee272825",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Original native PNG copied byte-for-byte. Original export filemtime is not precise guest timing. Existing UI command diagnostics, not OS keyboard input. No guest flag/state/return writes, cropped/resized pictures, default promotion or new renderer feature."
+      }
+    },
+    {
+      "id": "2026-11-13-retail-scheduler-menu-regression",
+      "date": "2026-11-13",
+      "title": "Retail candidate: the existing restart-only preference flow",
+      "feature": "Scheduler UI regression",
+      "scenario": "NEW240s diagnostic candidate run, original F2 Host command workflow at parkedfield4501. Fresh owned scratch broker/preferences only; pre-existing UI, not a newly added settings feature.",
+      "alignment": "same-frame",
+      "reviewed": true,
+      "labels": {
+        "reference": "Before: scratch saved-next 1x",
+        "bevy": "After: scratch saved-next 2x"
+      },
+      "observations": [
+        "Existing native menu opens, holds field4501 across1.5s and acknowledges a scratch preference save for the next launch.",
+        "Both captures retain requested run1x; the menu explicitly does NOT observe effective GL scale. No live resolution/FPS change is applied or claimed.",
+        "Control/candidate F2 originals are byte-identical for corresponding states; per-run held-before/held-again images also match. EE/IOP probe hashes agree before/after each acknowledged hold, not across whole separate runs."
+      ],
+      "limits": [
+        "Not physical F2-key input, performance, HD validation, full renderer fidelity, game Save/Load or a new menu implementation.",
+        "This pair intentionally differs in UI notice/selection, not renderer quality; unchanged whole640x480 native-window exports, no extracted assets.",
+        "Game imagery remains separately copyrighted, not covered by the code GPL; owner-selected evidence is not rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Actual candidate menu before its original command-driven scratch save,field4501.",
+        "profile": "retail-usa",
+        "runtime": "Windows native OpenGL, fresh scratch requested1x, real original Broker/Service, scale2 diagnostic Exact private exe SHA256 ccbf40e7c21704d7946745a5fba8cc5cd5e1a94474dda2720e5985abc27a3926. Generic scheduler recipe 6eac15d435c3c120a1be77103ff2baa254a04efb; prototype selected-source producer3aac1292 / retail continuation37035065 remain separate.",
+        "revision": "6eac15d435c3c120a1be77103ff2baa254a04efb",
+        "captured_at": "2026-11-13T21:05:30.863417+00:00",
+        "path": "media/e8be10dc2a8d168514214ebb8c0b73cc27207d43386a02b0227df719fad7e6a5.png",
+        "sha256": "e8be10dc2a8d168514214ebb8c0b73cc27207d43386a02b0227df719fad7e6a5",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Original native PNG copied byte-for-byte. Original export filemtime is not precise guest timing. Existing UI command diagnostics, not OS keyboard input. No guest flag/state/return writes, cropped/resized pictures, default promotion or new renderer feature."
+      },
+      "bevy": {
+        "caption": "Actual same candidate/field after scratch saved-next2x acknowledgment; no live rendering enhancement.",
+        "profile": "retail-usa",
+        "runtime": "Windows native OpenGL, same diagnostic candidate/field; saved-next2x only Exact private exe SHA256 ccbf40e7c21704d7946745a5fba8cc5cd5e1a94474dda2720e5985abc27a3926. Generic scheduler recipe 6eac15d435c3c120a1be77103ff2baa254a04efb; prototype selected-source producer3aac1292 / retail continuation37035065 remain separate.",
+        "revision": "6eac15d435c3c120a1be77103ff2baa254a04efb",
+        "captured_at": "2026-11-13T21:05:32.545605+00:00",
+        "path": "media/4fb28e247a3099ec64fb8a7fbbf6767e10b4a3a72aceb97e1c00cdbf339c3557.png",
+        "sha256": "4fb28e247a3099ec64fb8a7fbbf6767e10b4a3a72aceb97e1c00cdbf339c3557",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Original native PNG copied byte-for-byte. Original export filemtime is not precise guest timing. Existing UI command diagnostics, not OS keyboard input. No guest flag/state/return writes, cropped/resized pictures, default promotion or new renderer feature."
+      }
+    },
     {
       "id": "2026-11-13-prototype-scheduler-scene-candidate",
       "date": "2026-11-13",

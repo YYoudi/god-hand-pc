@@ -1,5 +1,22 @@
 # Shared-runtime validation using the prototype
 
+## Observed integration follow-up - 13 November 2026
+
+The scheduler candidate now has separately qualified prototype/retail startup
+lifetime observations, scene samples, existing UI-command regressions and frozen
+rollback controls. Read SCHEDULER_RETIREMENT_CANDIDATE.md and the canonical
+private checkpoint for exact revisions, failures, commands and original images.
+This is bounded progress against the workflow below, not its completion.
+
+Retail F1/F2 diagnostic commands preserve acknowledged-hold probe state and
+scratch-next-launch preference semantics. Prototype F1 refuses an original
+debug request; a fresh request after close actually displays its original menu.
+Prototype F1 is not retail pause; injected commands are not physical keys.
+The prototype original-control still crashes in the original catch read, while
+the candidate completes the stated100s case. Retain that failed control.
+The wider room matrix, durable build integration and native sequence/ordinary
+transfer coverage remain open; do not substitute UI checks for those tasks.
+
 Owner direction, 13 November 2026. This changes the work priority; it does not
 announce a new runtime correction or mark the previous menu work complete.
 
