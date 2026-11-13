@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "provenance": "Original continuation host edits only; qualified private e677 host input, never guest bodies. No normal profile promotion.",
+  "input_sha256": "9f89d279f26a6340dfd81e7e29dae32ca4b4bf55319b7eaca8e81615dbe35f04",
+  "output_sha256": "77bc40517510b6e8cdd4f96b92faa4b35deda2b5a0a551098f122317bf83e874",
+  "edits": [
+    {
+      "old": "#include \"G:/God-Hand-PC/.local/prototype-debug-tools-main/adapter/locked_input_file.hpp\"\n",
+      "new": "#include \"command_line_reader.hpp\"\n#include \"G:/God-Hand-PC/.local/prototype-debug-tools-main/adapter/locked_input_file.hpp\"\n"
+    },
+    {
+      "old": "static std::streamoff developerRequestOffset=0;",
+      "new": "static godhand_pc::command_lines::Reader developerRequestReader;\nstatic bool developerRequestFaultReported=false;"
+    },
+    {
+      "old": "  std::ifstream f(developerRequests,std::ios::binary);f.seekg(developerRequestOffset);\n  std::string line;\n  if(std::getline(f,line)){\n   const auto at=f.tellg();if(at>=0)developerRequestOffset=at;\n   if(line==\"open-debug\")queueDeveloperRequest(\"explicit-native-command\");\n   else std::cerr<<\"PROTOTYPE_COMMAND_REFUSED unknown line\\n\";\n  }",
+      "new": "  std::ifstream f(developerRequests,std::ios::binary);\n  std::string line;\n  const auto result=developerRequestReader.poll(f,line);\n  if(result==godhand_pc::command_lines::Result::Line){\n   if(line==\"open-debug\")queueDeveloperRequest(\"explicit-native-command\");\n   else std::cerr<<\"PROTOTYPE_COMMAND_REFUSED unknown line\\n\";\n  }else if(result==godhand_pc::command_lines::Result::Fault&&!developerRequestFaultReported){\n   developerRequestFaultReported=true;\n   std::cerr<<\"PROTOTYPE_COMMAND_REFUSED framing fault; new session required\\n\";\n  }"
+    }
+  ]
+}
