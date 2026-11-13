@@ -152,5 +152,64 @@
     "native_link_reserve_lower_bound": 5442950056,
     "unresolved_sdk_library_tokens": 24,
     "adopted": false
+  },
+  "unchanged_native_lifecycle_followup": {
+    "date": "2026-11-13",
+    "candidate_installed": false,
+    "native_exe_sha256": "e677f789c9f51400ba054b5a72ab7807f363a5bd4c099ba10f5c2c07edcc8e34",
+    "cases": [
+      {
+        "version": 2,
+        "debugger_exit": 0,
+        "native_exit": 0,
+        "seconds": 49.015,
+        "watchdog_seconds": 45,
+        "last_logged_field": null,
+        "invoke_current_entries": 2,
+        "exit_current_entries": 4,
+        "catch_reads": 6,
+        "paired_retired_reads": 0,
+        "actual_crash_reproduced": false,
+        "png_count": 0,
+        "inputs_before_after_equal": true,
+        "field_limit": "Native stdout is interleaved; no qualified endpoint field/CSV or screenshot. Lifecycle observations and terminal native exit come from serialized GDB trace, not these text tokens."
+      },
+      {
+        "version": 3,
+        "debugger_exit": 0,
+        "native_exit": 0,
+        "seconds": 49.031,
+        "watchdog_seconds": 45,
+        "last_logged_field": null,
+        "invoke_current_entries": 2,
+        "exit_current_entries": 4,
+        "catch_reads": 6,
+        "paired_retired_reads": 4,
+        "actual_crash_reproduced": false,
+        "png_count": 0,
+        "inputs_before_after_equal": true,
+        "field_limit": "Native stdout is interleaved; no qualified endpoint field/CSV or screenshot. Lifecycle observations and terminal native exit come from serialized GDB trace, not these text tokens."
+      }
+    ],
+    "paired_meaning": "Four exit-delete entries followed by same saved-context catch reads with scheduler currentThread0. Original source retirement/deletion precedes transfer. Readability under debugger not a lifetime guarantee; exact old crash not reproduced.",
+    "dump_stack_frames": 10,
+    "dump_scheduler_heap_available": false,
+    "endpoint_field": null,
+    "no_new_screenshot": true,
+    "first_failures": [
+      "Unsupported debugger option before native launch; retained, new diagnostic scripts used.",
+      "Interleaved native log field maxima rejected; no qualified endpoint, serialized debugger records only."
+    ],
+    "capacity": {
+      "resolved_count": 9866,
+      "resolved_input_bytes": 703355692,
+      "unresolved_count": 0,
+      "prospective_reserve": 5525798488,
+      "free_bytes": 4077285376,
+      "capacity_pass": false,
+      "shortfall_bytes": 1448513112,
+      "native_link_attempted": false
+    },
+    "retail_candidate_validated": false
   }
 }

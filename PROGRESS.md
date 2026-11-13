@@ -1,5 +1,23 @@
 # Canonical progress and publication workflow
 
+## Actual unchanged-native retirement/read pairs — 13 November 2026
+
+Read the follow-up in SCHEDULER_RETIREMENT_CANDIDATE.md and the canonical private
+checkpoint. New original e677 GDB runs native0/debugger0,49.015s/49.031s against
+45s own watchdog plus startup/cleanup. Each2invoke/4exit/6catch. Paired observer
+proves4same saved-context reads after delete requests, scheduler currentThread0;
+original exit retires/deletes before transfer. Readable memory is NOT lifetime.
+Candidate NOT installed, no access violation reproduced, no retail acceptance.
+Original dump walks10frames but needed scheduler heap fields are absent. Old
+invalidation path remains unknown. First unsupported GDB option stopped BEFORE
+native launch. First log-field maxima parser admitted interleaved digits: reject
+its maxima, endpoint UNKNOWN; serialized debugger lifecycle records qualify.
+No new game screenshot/room/menu/visual fix; all originals/inputs preserved.
+All native/debugger handles terminal; no new compiler/test overlap. Resolved
+native link reserve5,525,798,488bytes exceeds available~4GiB, no link/adoption.
+Next isolated corrected prototype AND retail controls once capacity passes;
+no further helper/menu polish as progress, Rust/delegation/flags/stubs/frees.
+
 ## Reproducible experimental scheduler recipe — 13 November 2026
 
 Read SCHEDULER_RETIREMENT_CANDIDATE.md. The hash-gated original recipe and exact

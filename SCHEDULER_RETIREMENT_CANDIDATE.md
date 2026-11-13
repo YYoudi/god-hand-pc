@@ -104,11 +104,11 @@ boundary. This source review is not an exhaustive lifetime/ABI proof,
 and does not reconstruct the earlier game's precise invalidation path. See
 PROTOTYPE_POINT1_RUNTIME.md for the preserved startup crash and visual findings.
 
-The private native link preflight counts9842 resolved input files/682,643,584
+The initial private native link preflight counted9842 resolved input files/682,643,584
 bytes, plus24 unresolved SDK-library tokens. Preserving a candidate executable,
 PDB and map gives a conservative budget LOWER BOUND of5,442,950,056 bytes under
 the four-times-input/output-plus1GiB policy, before resolving those SDK tokens.
-G: has roughly4GiB free. No native game link is attempted. No diagnostics are
+At that check G: had roughly4GiB free. No native game link was attempted. No diagnostics are
 removed, originals deleted, or full-build/configure capacity gates weakened.
 
 Next: complete native dependency/capacity preflight when space permits, integrate
@@ -117,3 +117,58 @@ regression controls. Only those results can support adoption/upstream submission
 The ground artifact, full fidelity, game Save/Load, physical input, audible audio
 and human campaign gates remain open. The previous Point1 comparison is retained;
 this tooling step produces no new game screenshot or corrected before/after.
+
+## Follow-up: the unchanged native game exercises the lifetime path
+
+Later on13 November, two NEW bounded debugger runs use the same frozen e677f789
+native executable, ELF, disc and scratch-controls identities. Neither contains
+the candidate. Existing GDB18.1r3 uses native-runtime-only software breakpoints;
+no game flags, register values, return values or on-disk program bytes are changed.
+Debugger timing/heap perturbation prevents treating these runs as ordinary play
+or as a deterministic reproduction of the earlier access violation.
+
+The first diagnostic exits normally: debugger0/native0 after49.015s with the
+existing45s native watchdog. It records two invokeCurrent entries, four
+exitCurrent entries and six dispatcher-catch reads. A separately specified
+second diagnostic records the actual before/after context relation, rather than
+inferring it from those counts. It exits debugger0/native0 after49.031s.
+Those wall times include debugger startup and native cleanup, not guaranteed
+45s deadlines. No kills, timeout restarts, compiler, emulator or replay overlap.
+
+In the paired run, all FOUR exit calls have the delete argument set. At each
+subsequent catch, the original read uses the SAME saved context pointer as the
+entry observation, while the scheduler's current-thread identifier is zero.
+The inspected original exit implementation retires and deletes that non-main
+thread before throwing the dispatcher transfer. Thus the native game actually
+exercises the retirement/read pattern targeted by the synthetic candidate.
+Readability of the freed storage under this debugger is not object lifetime.
+The two invokeCurrent/unchanged-main-context pairs remain separate controls.
+Six catch observations, no debugger errors or actual access violations.
+
+This is evidence from the ORIGINAL native game, not candidate-game acceptance.
+It does not prove which earlier invalidation caused the retained crash, nested
+growth in this game run, candidate correctness on retail, or full scheduler ABI
+safety. No room, combat, menu, frame-fidelity or performance result is inferred.
+No new game screenshot is produced; the earlier Point1 images stay unchanged.
+
+The preserved dump was also unwound offline through ten frames using matching
+local images/PDB and serialized memory callbacks. The scheduler heap fields
+needed to distinguish the earlier invalidation are NOT in that dump; missing
+bytes are unknown, not zero. See Microsoft's
+[StackWalk64 reference](https://learn.microsoft.com/en-us/windows/win32/api/dbghelp/nf-dbghelp-stackwalk64)
+for the offline-callback interface. This is ordinary local dump/debugger work,
+not REA Evidence; no network symbols or system settings are changed.
+
+The first GDB driver refused an unsupported startup-with-shell option BEFORE
+launching a native process; that failure remains. A first text-log audit also
+mistook interleaved field-number digits for a frame endpoint. Its maxima are
+rejected, not heuristically clamped: endpoint frame is UNKNOWN. The paired
+lifecycle evidence is instead the debugger's serialized records. Raw stacks,
+addresses, dumps, registers and recordings stay private; only aggregates publish.
+
+The later dependency inspection resolves all24 SDK tokens:9866 inputs,
+703,355,692 bytes, conservative reserve5,525,798,488 bytes, versus4,077,285,376
+free at that check. This still FAILS the native link capacity gate. No native
+game link or adoption is attempted, and the separate whole-build/configure
+floors remain. Next acceptance is an isolated corrected build with actual
+prototype AND retail regression, not another source-helper or menu-polish pass.

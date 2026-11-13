@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Experimental scheduler recipe/probe now published and actually exercised. Complete dependency/capacity preflight before isolated game linking, preserving symbols/maps and old builds; then prototype startup/transitions AND retail native regression before adoption. Diagnose original crash path where feasible without relinking. No default change, menu polish, Rust or weaker accuracy gate.
+The unchanged native game now demonstrably exercises the retirement/read pattern; no candidate game build yet. After capacity preflight passes, create an isolated corrected variant and test prototype transitions AND retail non-regression. Preserve ordinary/deadline/debugger failures; no new helper/menu polish or Rust as a substitute.
 
 ## M8 — Active: verified original PC baseline
 

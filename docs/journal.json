@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Experimental scheduler recipe/probe now published and actually exercised. Complete dependency/capacity preflight before isolated game linking, preserving symbols/maps and old builds; then prototype startup/transitions AND retail native regression before adoption. Diagnose original crash path where feasible without relinking. No default change, menu polish, Rust or weaker accuracy gate.",
+  "next": "The unchanged native game now demonstrably exercises the retirement/read pattern; no candidate game build yet. After capacity preflight passes, create an isolated corrected variant and test prototype transitions AND retail non-regression. Preserve ordinary/deadline/debugger failures; no new helper/menu polish or Rust as a substitute.",
   "known_limits": [
     "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
     "NEW scheduler candidate passes five synthetic real-runtime controls ONLY. No native integration/retail validation. Longer-GS attempt crashes at162 before recording; exact earlier invalidation path unproven. Ground ghost unresolved, no GPU/parity/optimization claim.",
@@ -359,6 +359,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Observe the retirement/read pattern in the unchanged native game",
+      "summary": "Two bounded debugger runs exercise the original native scheduler. Four paired observations show the same saved context read after thread retirement/deletion. The candidate is still not installed, and the earlier crash is not reproduced.",
+      "changes": [
+        "Used the frozen original executable and runtime-only software breakpoints, not a synthetic game or replacement callback. No guest flags/register values or program files are patched.",
+        "Paired four delete requests with subsequent same-context catch reads while current-thread ID is zero; two main-context invocation pairs remain distinct. Readable freed storage does not preserve an object lifetime.",
+        "Kept the prelaunch debugger-option failure and rejected interleaved-log frame maxima. Endpoint frame stays unknown; lifecycle observations use serialized debugger records. No new game screenshot or visual-fix claim."
+      ],
+      "validation": "Both debugger/native exits0,49.015s and49.031s with45s native watchdog plus startup/cleanup. Each has2invoke,4exit,6catch observations; paired run has4same-context post-retirement reads, no debugger errors/signals. Original disc/executable/ELF/controls hashes preserved.",
+      "limits": "Unchanged binary under debugger, NOT corrected-game acceptance, an exact earlier-crash reproduction, retail regression, menu/room/combat proof or optimization. Ten-frame old dump lacks scheduler heap fields, so original invalidation path remains unknown. Resolved native link capacity gate still fails; no adoption.",
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/SCHEDULER_RETIREMENT_CANDIDATE.md",
+        "label": "Actual native lifecycle observations and outstanding correction acceptance"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
