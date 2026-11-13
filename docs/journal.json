@@ -5,7 +5,7 @@
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
   "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
-  "next": "Use the now-observed emulator controller route to qualify Room Jump and a named comparable scene, then diagnose one actual shared-runtime defect and verify its correction on prototype AND retail. Do not infer a bug from different cutscene/gameplay states or finish every menu as a prerequisite.",
+  "next": "Use the now-observed same-room reference workflow for one concrete native discrepancy. Target the retained Room00/Point1 detached-cloak-like observation only after qualifying its reference point/state/camera; Room01 snapshots do not establish or fix that defect. A common correction must still pass prototype AND retail native checks. No repeated menu/transport proof as progress.",
   "known_limits": [
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
@@ -357,6 +357,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "progress",
+      "title": "Room Jump reaches the same named Room01 in the emulator",
+      "summary": "The original emulator debug menu now reaches Stage1/Room01/Point0. A new unchanged reference image is compared with the previously published native interior, using common room landmarks rather than claiming identical game state.",
+      "changes": [
+        "Observed the actual selector, then Down/Right/Down/Circle and the original interior/Gene/enemies/HUD. No guessed state flags, attacks or scripted level completion.",
+        "Captured and restored our own private emulator selector snapshot for the bounded follow-up. Kept the MTVU warning, initial black paused load and later visible restoration evidence; not game-save validation.",
+        "Published the new reference original next to retained dated native output. Different health/pose/time/resolution and the capture-flush continuation remain explicit."
+      ],
+      "validation": "v5 normal0/296.750s within300s; snapshot-assistedv6 normal0/212.860s versus180s budget, overrun32.860s. Actual selector300 beforeconfirm400; original room2400. Disc, ownerBIOS/config and authoredrecordings preserved; no concurrent compiler/native.",
+      "limits": "Snapshot-assisted reference and same-landmark only. F8 requestedpaused2400 but exportedafterresume, exactframe unknown; neutralport0 continuation, disabledport1 zero, terminalheader2892. First generic all-port-neutral assertion failed and was corrected explicitly, not silently passed. No new native/retail/common correction.",
+      "evidence_comparisons": [
+        "2026-11-13-room01-emulator-reference"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_ROOM01_REFERENCE.md",
+        "label": "Actual Room Jump, private snapshot boundary and comparison limits"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -6923,6 +6943,53 @@
         "captured_at": "2026-11-13T00:56:34.800849+00:00",
         "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field8400; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
         "caption": "PREVIOUS native Room00 exterior introduction at8400. Reused unchanged original, not live combat or a new native run."
+      }
+    },
+    {
+      "id": "2026-11-13-room01-emulator-reference",
+      "date": "2026-11-13",
+      "reviewed": true,
+      "alignment": "same-landmark",
+      "title": "Room01: emulator reference and retained native output",
+      "feature": "RV02",
+      "labels": {
+        "reference": "New emulator Room01 reference",
+        "bevy": "Previous native Room01 entry"
+      },
+      "scenario": "Same observed original Stage1/Room01/Point0 destination; common interior arches, carpet, vases and enemies. No image/camera fitting or asset edits. Different runtime, capture dimensions, animation, health and time.",
+      "observations": [
+        "Original emulator selector300 visibly showsStage1/Room01/Point0 beforeCircle400; actual2400 shows the destination interior/Gene/enemies/HUD.",
+        "Common named room landmarks are visible in both originals. The earlier native image is deliberately reused with original provenance; no new native build/run, rendering fix or pixel-equivalence claim.",
+        "The new emulator health reflects priorRoom00 attacks before jumping; this is not evidence of a native health bug. No player attack or movement inputs."
+      ],
+      "limits": [
+        "Same-landmark does NOT mean matched camera parameters, game frame, health, actor pose, capture scale or deterministic guest state. No rescale/crop/registration or image-error metric.",
+        "Own private emulator snapshot; MTVU instability warning retained. Paused initial load rendersblack; the later actual selector and destination, not file/log acceptance, establish scoped effect. Not genuine game Save/exit/Load.",
+        "F8 export needs another presented frame. After paused2400, resume/close is observed2891, terminalrecordingheader2892;493extra complete records have neutralport0 and zero disabledport1. Exact PNG guestframe unknown. Original authored frame data remains unchanged, working header/file grows.",
+        "v5 normal0/296.750s within300s; v6 normal0/212.860s OVERRUN32.860s against180s operatorbudget. No timeout guarantee, kills, hidden restart or attack loop.",
+        "No retail comparison, new native build, remaster/performance result, all-menu/fidelity certificate or shared-runtime correction. Game imagery separate rights; no disc/BIOS/state/recordingbinary/assets/dump/generated source distributed."
+      ],
+      "reference": {
+        "path": "media/053cc3cb4da2f29fd20472b890c9ca958158227658ee13f251d0579b265600f9.png",
+        "sha256": "053cc3cb4da2f29fd20472b890c9ca958158227658ee13f251d0579b265600f9",
+        "width": 827,
+        "height": 620,
+        "profile": "prototype-june-2006",
+        "revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+        "captured_at": "2026-11-13T02:07:27.384780+00:00",
+        "runtime": "NEW PCSX2v2.8.2, pinned official sourcefd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3; local executable982c7c62600a999cf15a25c18349426166c785e7867b2fcc5018d733245b71a3. PrototypeSLPM-66550/CRC18E5A0CA, automaticD3D12/1x512x448/display4:3. Own fresh selector snapshot restored, original Down/Right/Down/Circle toStage1/Room01/Point0. F8 requested atpaused2400, exported only afterresume; exact guestframe unknown. File-export timestamp;827x620 display-sized, not rawGS.",
+        "caption": "NEW actual emulator Room01 interior, Gene, two enemies and HUD after original Room Jump. Unchanged F8 PNG. Own snapshot-assisted reference, not fresh-room boot, matched simulation state or game Save/Load."
+      },
+      "bevy": {
+        "path": "media/31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1.png",
+        "sha256": "31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1",
+        "width": 640,
+        "height": 480,
+        "profile": "prototype-june-2006",
+        "revision": "55af067f502f630c82645dd06fe75bb7b9b19b75",
+        "captured_at": "2026-11-13T00:54:32.136358+00:00",
+        "runtime": "Native OpenGL diagnostic-v1, unchanged private executable290b321c332d757b44d2e0c9f53535c65ce0f6a95fd5b88511ef259db86edce7, original finite pad script, VU AOT1. Actual field3100; renderer-file export UTC timestamp, not input latency. Public source recipe at e59c3a5, publication55af067; no new build in this cycle.",
+        "caption": "PREVIOUS native Stage1/Room01/Point0 entry at3100. Reused unchanged640x480 renderer original, not a new run. Native health/pose/time differ from the new emulator reference."
       }
     }
   ],

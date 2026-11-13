@@ -4,7 +4,7 @@
 
 Done applies only to the stated evidence, not full-game coverage.
 
-Use the now-observed emulator controller route to qualify Room Jump and a named comparable scene, then diagnose one actual shared-runtime defect and verify its correction on prototype AND retail. Do not infer a bug from different cutscene/gameplay states or finish every menu as a prerequisite.
+Use the now-observed same-room reference workflow for one concrete native discrepancy. Target the retained Room00/Point1 detached-cloak-like observation only after qualifying its reference point/state/camera; Room01 snapshots do not establish or fix that defect. A common correction must still pass prototype AND retail native checks. No repeated menu/transport proof as progress.
 
 ## M8 — Active: verified original PC baseline
 

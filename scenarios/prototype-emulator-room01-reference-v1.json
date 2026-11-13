@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "name": "prototype-emulator-room01-reference-v1",
+  "profile": "prototype-june-2006",
+  "emulator_source_revision": "fd9d310ccbb6b8b62c976da8886a3c8fd3a10ff3",
+  "requires": "Own private selector snapshot obtained via actual power-on v5, exact emulator/disc/config guards. Never download/import a save or publish the snapshot.",
+  "selector_snapshot_sha256": "4c63d8655eeae6b0ae1ac6a35b4cd18462cfdda56a9cde05ec3807b027bd9a2e",
+  "recording_total_frames": 2400,
+  "events": [
+    {
+      "begin": 100,
+      "end_exclusive": 112,
+      "button": "down"
+    },
+    {
+      "begin": 200,
+      "end_exclusive": 212,
+      "button": "right"
+    },
+    {
+      "begin": 300,
+      "end_exclusive": 312,
+      "button": "down"
+    },
+    {
+      "begin": 400,
+      "end_exclusive": 412,
+      "button": "circle"
+    }
+  ],
+  "actual": "Selector300Stage1/Room01/Point0; original room2400. Pending F8 exported afterresume, exactguestframe unknown.",
+  "limitations": "Snapshot-assisted reference, MTVU warning retained; not fresh boot, state equivalence, gameSaveLoad or retail proof. Overrun212.860vs180s. Port0 neutral capture-flush continuation, disabledport1 zero. See report."
+}

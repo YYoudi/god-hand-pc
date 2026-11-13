@@ -1,5 +1,21 @@
 # Canonical progress and publication workflow
 
+## Same named Room01 reference — 13 November 2026
+
+Read PROTOTYPE_ROOM01_REFERENCE.md and checkpoint/pcsx2_reference_current.
+Actual emulator original RoomJump selectorStage1/Room01/Point0 at300 and
+interior/Gene/enemies/HUD2400 now observed, same room as PREVIOUS native3100.
+Original827x620 F8 PNG versus640x480 native: SAME-LANDMARK, not state/camera/
+frame/health equality. Own private snapshot assistedv6; MTVU warning and initial
+pausedblack retained. v5 normal0/296.750s within300;v6 normal0/212.860s OVER180
+by32.860s. F8requestedpaused2400 onlyexportsafterresume; closure2891/header2892,
+493extra neutralport0/zero disabledport1 records; genericall-port-neutral check
+FAILED, then qualified port-specific. No rawframe/exactcaptureframe claim.
+No new native build/run, retail/common fix or gameSaveLoad. Next investigate
+one real discrepancy, e.g. retained Room00/Point1 detached-cloak-like case with
+qualified reference point/state, not another menu/transport repeat. Both-native
+regression remains mandatory for common corrections; retain all old evidence.
+
 ## Actual emulator reference — 13 November 2026
 
 Read PROTOTYPE_EMULATOR_REFERENCE.md and checkpoint/pcsx2_reference_current.
