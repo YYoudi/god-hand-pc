@@ -1,5 +1,24 @@
 # God Hand PC continuation - agent instructions
 
+## Current owner priority: prototype-driven shared runtime — 13 November 2026
+
+Read RUNTIME_VALIDATION.md and checkpoint/shared_runtime_direction_current.
+The prototype is an instrumented testbench for the retail PC port, not a second
+engine project. Prefer qualified CLI scenarios over completing the debug UI.
+Preserve existing F1/F2; neither a complete menu nor its retail transplant is a
+prerequisite. Share diagnosed runtime fixes, qualify only version-specific
+bindings and prove each common correction on BOTH native builds. Do not blindly
+reuse addresses or infer retail success from prototype tests.
+Next deliverable: usable native CLI scenarios, a multi-room/situation matrix,
+and a significant common-runtime correction with original before/after and
+retail regression evidence. No newly verified feature is claimed by this change
+of direction. Previously scoped menu/effect proofs remain their dated results,
+not work to repeat or a certificate for untested options. Finish/record pending
+publication first. Broader faithful-PC/save/hardware/audio/campaign gates remain.
+Keep original ISO/evidence/variants/MIT lab, GPL provenance, G:-only capacity
+policy, no deletion/moves, Rust, delegation, autofighting or generated-game
+uploads. Dated menu-completion priorities below are superseded, not achieved.
+
 ## Explicit source-v1 normal delivery — 13 November 2026
 
 Read PROTOTYPE_SOURCE_LAUNCH.md and checkpoint/source_launch_current. Goal audit

@@ -1,5 +1,19 @@
 # Canonical progress and publication workflow
 
+## Current owner priority: prototype-driven shared runtime — 13 November 2026
+
+RUNTIME_VALIDATION.md is the current execution contract. Use real prototype
+debug capabilities through CLI/scripts when useful, rather than pursuing every
+menu option. Maintain a common runtime with qualified per-version inputs; fix a
+real defect and prove its benefit on prototype AND retail. The next milestone
+requires executable native scenarios, actual multi-room/situation results and a
+significant shared correction with regression evidence. This is an editorial
+direction change, not a newly implemented feature or achieved port. Preserve
+all prior results and evidence; no repeat of completed scoped source/menu tests
+as progress. Finish/record pending publication, then audit the existing command
+channel and choose the first falsifiable runtime investigation. See canonical
+checkpoint/shared_runtime_direction_current for current goal replacement state.
+
 ## Explicit source-v1 normal delivery — 13 November 2026
 
 Read PROTOTYPE_SOURCE_LAUNCH.md and checkpoint/source_launch_current. Goal audit

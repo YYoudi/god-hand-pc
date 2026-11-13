@@ -3,6 +3,13 @@
 This is an original GPL continuation layer around privately fetched LasVola,
 not a vendored fork, a clean-room game engine or a published game-code tree.
 
+Owner direction, 13 November: target one shared runtime and qualified prototype/
+retail bindings. The prototype is a CLI-friendly investigation/testbench input,
+not a second engine project. Share corrections only after identifying the common
+boundary and verifying actual native results in both versions. See
+[RUNTIME_VALIDATION.md](RUNTIME_VALIDATION.md); this is the execution priority,
+not a claim that every existing prototype host patch already applies to retail.
+
 ```text
 Personal retail ISO + pinned upstream/dependencies
   -> private generation and build -> original logic + compatibility runtime
@@ -86,7 +93,14 @@ No game function replacement registry is implemented by the launch-policy change
 No decompiled code may be relabeled as independent MIT work. If source-derived
 code is ever used, record that provenance and review licensing/distribution first.
 
-## Developer tools boundary (target, not implemented)
+## Developer tools boundary — contract and historical starting state
+
+The paragraph below retains the initial integration contract and black-screen
+trial; it is not the latest implementation status. The later native prototype
+observations and explicit source-v1 launch are in PROTOTYPE_WHOLE_INTERACTIVE.md
+and PROTOTYPE_SOURCE_LAUNCH.md. CLI/script access is now preferred for research;
+finishing or transplanting the entire UI is not the goal. Retail action bindings
+still require their own qualification. Keep the thread/lifetime safety contract.
 
 The [prototype investigation](PROTOTYPE_DEBUG.md) now targets real game actions,
 not just labels. F1 remains the controls screen; an explicit F2 Developer section

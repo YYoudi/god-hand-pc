@@ -18,6 +18,17 @@ progress commits. Its original pages/evidence remain available. Selected earlier
 port reports are migrated unchanged and explicitly marked historical, not rerun.
 This document defines acceptance, not a competing completion ledger or schedule.
 
+## Current execution priority — 13 November 2026
+
+Use the prototype as an instrumented testbench for the same shared runtime.
+Prefer executable CLI scenarios over completing/transplanting its debug menu.
+The next milestone is multi-room native validation and a significant common
+runtime correction verified on prototype AND retail. Per-version identities and
+bindings remain qualified; the engines' similarity is not address/ABI proof.
+Read [the current workflow and acceptance](RUNTIME_VALIDATION.md).
+This supersedes older menu-completion priorities, not the faithful-PC baseline
+or later reversible-enhancement goals. No new correction is claimed here.
+
 ## 1. Original baseline gate
 
 - Reproduce ISO-required generation/build/startup while retaining all diagnostics.
@@ -59,7 +70,12 @@ upstream settings/timing are not frozen or validated by that policy.
 | Graphics/lighting | Distinguish postprocessing from new material/light semantics. Replace the renderer incrementally if evidence requires it, preserving original gameplay; no promise that a GS stream directly provides modern materials. |
 | Multiplayer | Separate feasibility milestone: second-player semantics, camera, targeting and progression as well as synchronization/networking. Snapshot support does not prove determinism or rollback. Not a promised feature. |
 
-## Prototype research boundary
+## Prototype research boundary — historical 11 November starting state
+
+The startup blockers below describe the original trial, not the current state.
+Later source-built native F1/F2, Room Jump, Warp and no-death observations are
+recorded in PROTOTYPE_WHOLE_INTERACTIVE.md and PROTOTYPE_SOURCE_LAUNCH.md.
+The current research priority is RUNTIME_VALIDATION.md, not completing the menu.
 
 Owner priority, 11 November: move beyond metadata-only mining toward actual
 developer functions in PC F1/F2. See [the current experiment](PROTOTYPE_DEBUG.md).

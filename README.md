@@ -1,5 +1,10 @@
 # God Hand PC continuation tooling
 
+Current direction: [prototype-driven shared-runtime validation](RUNTIME_VALIDATION.md).
+Use the prototype's debug capabilities as a CLI-friendly testbench for the retail
+port. Completing the menu is no longer the goal; common fixes need actual native
+evidence on both versions. This is a priority change, not a new runtime feature.
+
 Prototype launch follow-up: [explicit source-v1 normal profile](PROTOTYPE_SOURCE_LAUNCH.md).
 `--build source-v1` now selects the already-built e677 candidate after its own
 public-launcher F1/F2/close check. native07 stays default; no game binary is

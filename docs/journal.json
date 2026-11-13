@@ -3,16 +3,16 @@
   "updated": "2026-11-13",
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
-  "goal": "Faithful original PC baseline on the LasVola continuation, then readable, reversible PC improvements; no whole-engine rewrite by default.",
-  "status": "The new selected-source prototype build has its own scoped normal F1/F2, Room01/Warp and Room00 no-death/OFF/Continue observations. Existing native07/default and explicit room01-v1 launch profiles remain unchanged. Public personal-disc prototype setup, wider original options/rooms and campaign fidelity are not complete; no retail debug backend is claimed.",
-  "next": "The exact source-built e677 now has an explicit source-v1 adopt-only normal-launch profile with its own startup/UI evidence; native07 stays default and old profiles/data are unchanged. Reconcile the full debug-goal acceptance and choose an actually unmet native/interaction/fidelity gate, not repeated helper proofs or named effects. End-to-end fresh setup/registration acquisition and a new full build/native acceptance remain capacity-gated; wider menu/input/reference/ABI/lifetime/failure-warning/audio/save/campaign/retail claims remain open.",
+  "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
+  "status": "Current priority is prototype-driven shared-runtime validation, with CLI/scripts preferred to completing the debug menu. Exact-e677 scoped menu/effect observations and explicit source-v1 delivery remain dated results. No new common-runtime correction, retail-debug backend, full-game fidelity or fresh ISO-only installer is established by this editorial change.",
+  "next": "Use qualified prototype CLI scenarios as a shared-runtime testbench: inventory existing command channels, exercise a multi-room/situation matrix, diagnose a real defect and verify a significant common correction on prototype AND retail. Preserve existing menus without making their completion the deliverable. Complete or record pending publication first; new full compilation remains capacity-gated.",
   "known_limits": [
     "Current e677 has its own dated normal F1/F2/Room01/Warp/no-death OFF/restoration proof and is now explicitly selectable as source-v1; native07 remains default. The new public-launcher startup has its own UI/normal exit evidence, not a new binary/gameplay or all-menu certificate. Historical registration dependencies, fresh setup/full compilation/native acceptance and low G: capacity still prevent an ISO-only installer claim.",
     "NEW450s prepared controls each exit0with23PNGs and7301/7401present;20/21common actualfilename originals equal. Loading2901differs17300RGBApixels and CSVhas no valid per-present image identity. Not fullimageparity/performance/source-cause proof or normal07promotion.",
     "The previous330s capture failure/partial coverage remains historical: baseline0PNGs/23FILEIOfailures, candidate21/23andmissedendpoints. Separate NEW450s controls close preparation/endpoints only, not retroactively those old trials.",
     "Prototype menu accounting loses0x480 on each of three observed closes, including two empty visits. Twelve entry allocations match actual vectors; no release for them is observed in the selected close scope. No cleanup/all-free-path/ownership/PS2 proof. Native04title850 also differs in the no-read control; OFF images equal byte-for-byte; no preview-based defect claim.",
     "Normal07adopt-only/F2mouse/effects remain separate. New27entry BOOT metadata has no historicalseedCSVinput, but decoding/integration remains private research and module/VU/generic source dependencies stay open. Incremental capsule is not a public ISO-only setup/freshfullbuild; three new candidates have no execution coverage.",
-    "Genuine in-game Save \u2192 process exit \u2192 Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
+    "Genuine in-game Save → process exit → Load is unverified. The owner no longer has a personal save; runtime snapshots and downloaded saves are not substitutes.",
     "Physical keyboard/controller usability, audible audio, later stages and complete campaign fidelity remain open. No autonomous level-beating is planned.",
     "Two named128x128 sources in one room render original512x512 test images through explicit existing variants. Aliases/formats/scenes/performance remain open. Only tested explicit composites are permitted; unsupported combinations refuse. Historical800x600 originals remain unchanged; same-draw evidence now bounds the current DPI capture defect, not historical full-scene fidelity.",
     "Retained generation errors/warnings remain visible. A bounded C++ reachability result is not full guest coverage or an implemented unknown instruction.",
@@ -123,7 +123,7 @@
           "title": "Extend and validate the developer test workbench",
           "status": "in_progress",
           "area": "validation",
-          "acceptance": "Use genuine original prototype input transport, F2 access with F1 exclusive ownership, and prove original menu opening/navigation/closure plus Room Jump, Player Warp and no-death effects with OFF/restoration. Normal07/combined4acf retain their separate scoped evidence. New selected-sourcee677 now has its OWN actual normal F1/F2/refusal/no-deferred, original Room01/Gene/HUD, one Warp200ms visual response/StartCross camera-HUD return, and separate Room00 ON/alive attack endpoints116.181s apart/OFF/health loss/Continue. First stale screenshot-saving outputs excluded; new corrected Room01/survival originals preserved. Explicit source-v1 now selects unchanged e677; old defaults/hashes/data stay unchanged. Public SDK core/input CLI now reproduces103bindings/152checks and exact native include, with no new native run. Public direct/indirect entry producers now reproduce both native consumer CSVs with the named pinned GPL registry model, no new native run. Remaining end-to-end orchestration and fresh observation acquisition/qualification still need public personal-disc setup; wider options/rooms/focus/held/repeat, reference/ABI/lifetime/failure recovery/hardware remain open. Translation diagnostic, strictVU/render/loading/accounting warning persist; selected screenshots/compilation are not numericHP/vector, continuous video, separately captured collapse or full-game/PS2 fidelity. Original public host templates/IOP/F1 edit recipe now reproduce all five tested host sources exactly; all67 host parameters now derive with five qualified historical observations, not an old table as CLI input. This is not new semantic/ABI proof or fresh-base discovery; observer-source assembly now reproduces all four tested postimages and a new CMake configure matches selected source/flag inventory. End-to-end orchestration/fresh observation qualification, new full compile/native acceptance remain. source-v1 now has its own exact-public-launcher normal startup/UI check (205.781s, planned180s budget overrun25.781s), not a new executable or new named effect proof; default native07 unchanged."
+          "acceptance": "Owner priority changed on13Nov: preserve this task's dated menu/effect/source results, but do not pursue complete original-menu coverage as the next deliverable. Current work follows RV01-RV03 and RUNTIME_VALIDATION.md. Previous scoped evidence remains in unchanged historical entries/reports; this direction change does not mark DT03 achieved."
         },
         {
           "id": "RM01",
@@ -215,6 +215,27 @@
           "status": "in_progress",
           "area": "rendering",
           "acceptance": "Functional gate passes: checked explicit gpu-v2, per-batch reset/classification/barrier with no CPU match-result readback; actual valid/absent/invalid/reference-negative PNG controls and old-version startup rollback. Later unchanged-binary pilot +v1/v2/v2/v1 block has identical actual4501..4741 bounds and endpoint PNGs, but timing variation establishes no reliable speedup. Typed model is not real GL proof. Repeated broader-scene/driver/state/performance acceptance and full GL-state equality remain open; no default upgrade or persistent cache."
+        },
+        {
+          "id": "RV01",
+          "title": "Qualify practical CLI-driven native scenarios",
+          "status": "planned",
+          "area": "validation",
+          "acceptance": "Reuse existing qualified command channels first. Real room/point, finite warp and survival controls need observed effects and restore/refusal results; no guessed flags or success from request acceptance. Preserve F1/F2 without requiring full UI coverage."
+        },
+        {
+          "id": "RV02",
+          "title": "Exercise a prototype and retail scenario matrix",
+          "status": "planned",
+          "area": "validation",
+          "acceptance": "Actually run several named rooms/situations covering loading/transition, camera/rendering and combat as available. Record exact commands, version-specific capabilities, native/reference evidence and failures; do not infer retail equivalence from prototype."
+        },
+        {
+          "id": "RV03",
+          "title": "Correct a significant shared-runtime defect",
+          "status": "planned",
+          "area": "pc",
+          "acceptance": "Start from a real reproducible failure, qualify its common boundary and implement durable original continuation source outside generated game outputs. Prove before/after and relevant regression controls on BOTH prototype and retail native builds. CLI plumbing, prototype-only results and hoped-for transfer do not complete this task."
         }
       ]
     },
@@ -336,6 +357,23 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-13",
+      "kind": "direction",
+      "title": "Use the prototype to test the shared runtime",
+      "summary": "The prototype is an instrumented testbench for the retail PC port, not a second engine project. CLI scenarios are preferred to completing the debug-menu UI. This entry records an owner-directed priority change, not a new gameplay result.",
+      "changes": [
+        "Defined a workflow from a named native scenario to a diagnosed runtime defect, a maintainable common correction and actual prototype AND retail regression checks.",
+        "Kept version-qualified game inputs/bindings and all existing menu/source evidence. Similar engines do not establish identical addresses or structures.",
+        "Added explicit acceptance for practical CLI scenarios, a multi-room/situation matrix and a significant correction demonstrated on both native profiles."
+      ],
+      "validation": "Reviewed the current source/evidence boundaries and preserved all earlier journal and comparison records unchanged. No new native execution, build, performance measurement or common correction is claimed.",
+      "limits": "The previous menu objective is superseded as a work priority, not declared achieved. Fresh setup/private input dependencies, capacity limits and broader Save/Load, hardware/audio and campaign gates remain.",
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/RUNTIME_VALIDATION.md",
+        "label": "Current workflow, shared boundaries and milestone acceptance"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -890,7 +928,7 @@
       "date": "2026-11-11",
       "kind": "progress",
       "title": "In-scene debug access and an original option round trip",
-      "summary": "Room Jump Point1 and the original Start skip reach the room/HUD. The original chord opens debug from there; PL NO DEATH changes OFF \u2192 ON \u2192 OFF. Survival behavior is not tested yet.",
+      "summary": "Room Jump Point1 and the original Start skip reach the room/HUD. The original chord opens debug from there; PL NO DEATH changes OFF → ON → OFF. Survival behavior is not tested yet.",
       "changes": [
         "Generated five captured prototype VU1 programs privately, behind an explicit diagnostic option; no retail address reuse or default change.",
         "Observed the original in-scene menu, entered DEBUG OPTION and toggled/restored its first option through ordinary game input.",
@@ -1429,9 +1467,9 @@
       "title": "Checking the screenshot before blaming the renderer",
       "summary": "A game-free probe reproduced the black padding in our PNGs. The local native screenshot path now reads the actual framebuffer dimensions; this is not a game-rendering or fidelity improvement.",
       "changes": [
-        "At 125% desktop scale, a normal 640 \u00d7 480 synthetic framebuffer was read as 800 \u00d7 600 by the old screenshot helper. Direct render-size readback fixes that case and remains byte-identical in the high-DPI 800 \u00d7 600 control.",
+        "At 125% desktop scale, a normal 640 × 480 synthetic framebuffer was read as 800 × 600 by the old screenshot helper. Direct render-size readback fixes that case and remains byte-identical in the high-DPI 800 × 600 control.",
         "Compiled the installed private GPL helper into the original synthetic probe; both normal and high-DPI cases pass. No game pixels or data are test fixtures.",
-        "Rebuilt the native runtime and restored the same paused retail state: new original PNGs are 640 \u00d7 480. Seven of eight shared captures have identical content-region pixels; the early transient difference is retained.",
+        "Rebuilt the native runtime and restored the same paused retail state: new original PNGs are 640 × 480. Seven of eight shared captures have identical content-region pixels; the early transient difference is retained.",
         "Retail combat progressed into the saloon and a regular-enemy defeat/demon emergence, but later attempts failed. Real game saving/loading is still open; runtime snapshots are separate."
       ],
       "validation": "Incremental native build completed; bounded 15-second hidden control exited normally. Two installed-helper synthetic configurations pass. Public documentation/publication tests are rerun separately. Existing originals are not rewritten or cropped.",
@@ -1514,7 +1552,7 @@
     {
       "date": "2026-11-03",
       "title": "First ps2-native-recomp trial",
-      "summary": "The third-party backend built from our ISO reaches God Hand\u2019s first fight. This is a ps2-native-recomp result, not a Rust/Bevy engine result.",
+      "summary": "The third-party backend built from our ISO reaches God Hand’s first fight. This is a ps2-native-recomp result, not a Rust/Bevy engine result.",
       "changes": [
         "Built the local runner without changing backend sources.",
         "Observed the title, cinematic and first fight.",
@@ -6215,8 +6253,8 @@
       "alignment": "same-landmark",
       "reviewed": true,
       "labels": {
-        "reference": "Same native build \u2014 host pause disabled",
-        "bevy": "Same native build \u2014 experimental host pause enabled"
+        "reference": "Same native build — host pause disabled",
+        "bevy": "Same native build — experimental host pause enabled"
       },
       "scenario": "Two new 240-second retail processes, same private native executable, no asset pack and only title/start inputs. Injected controls steps begin after native field 4800; no attacks or autonomous level-completion. Reused warm private shader cache, scratch cards/preferences. The two displayed controls captures are not the same game frame.",
       "observations": [
@@ -6264,7 +6302,7 @@
       "reviewed": true,
       "labels": {
         "reference": "Upstream default controls",
-        "bevy": "Saved binding \u2014 reloaded upstream controls"
+        "bevy": "Saved binding — reloaded upstream controls"
       },
       "observations": [
         "The same native controls layout shows an additional U binding in the Combo/Square row after reading the saved preferences. Both full original images are 800x600.",
@@ -6354,8 +6392,8 @@
       "alignment": "same-landmark",
       "reviewed": true,
       "labels": {
-        "reference": "Earlier evaluated build \u2014 corrected capture",
-        "bevy": "Fresh ISO build \u2014 upstream capture"
+        "reference": "Earlier evaluated build — corrected capture",
+        "bevy": "Fresh ISO build — upstream capture"
       },
       "observations": [
         "The fresh executable actually reaches the opening and first-fight scene after the complete corrected build recipe, not just successful generation or linking.",
@@ -6402,8 +6440,8 @@
       "alignment": "same-frame",
       "reviewed": true,
       "labels": {
-        "reference": "Original assets \u2014 restoration control",
-        "bevy": "Named plan \u2014 original diagnostic texture"
+        "reference": "Original assets — restoration control",
+        "bevy": "Named plan — original diagnostic texture"
       },
       "observations": [
         "Both original captures show the same opening viewpoint, actors and HUD. All 191,360 pixels in the top299 rows are byte-identical.",
@@ -6449,7 +6487,7 @@
       "alignment": "same-landmark",
       "reviewed": true,
       "labels": {
-        "reference": "Original assets \u2014 control",
+        "reference": "Original assets — control",
         "bevy": "External original test texture"
       },
       "observations": [
