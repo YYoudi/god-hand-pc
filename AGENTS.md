@@ -1,5 +1,28 @@
 # God Hand PC continuation - agent instructions
 
+## Current room-cycle checkpoint - 14 November 2026
+
+Read PROTOTYPE_SCHEDULER_ROOMS.md and canonical checkpoint. NEW original
+prototype_scenarios.py with exact qualified private build/disc guards and fresh
+scratch sessions actually completes one Room01->Room00intro->Room01 cycle:
+publicCLI control0/484.531s, candidate0/484.062s,13PNGs and6module identities
+equal, first+return r10115,206B/samebase. SourceCLI blob9ddcd088 equals actual
+executed/guarded source; commitd0fa2e8 follows capture without changing bytes.
+No direct guestflag/PC/readiness edits or attackloop. Earlier original-control
+AV9.219s/55.391s retained; a passing control here does NOT disprove old UAF.
+Old13Nov CLIcontrol lacks terminalexit afterprocessloss/laterreboot, causeunknown;
+NOTpass/crash.14Nov cases fresh after authoritativeidle/identitycheck, not a
+restart for observationexpiry. No owned native/build/debug/fulltest handles live.
+543Windows tests/4skips pass, actualreadonlyCLI0/2/2,nooutputs. CLI adopts existing
+private binaries, NOT builder/ISOinstaller/semanticroomAPI/retailbinding. Diagnostic
+sessions contain raw private observers: publish only reviewedoriginalPNGs.
+Next actual work: durable explicit generic-runtime source/relink integration and
+BOTH-native acceptance, preserving all saved-retail pause/probe/audio postimages,
+source/ABI/link identities, oldsource/caches/exes/discs and diagnostics. Do NOT
+repeat this completed cycle/menu test as new progress, or promote defaults.
+Candidate stays EXPERIMENTAL; goal ACTIVE, widernativepaths/finalPCgates open.
+No Rust/delegation. Read checkpoint for latest publication handles before launch.
+
 ## Current UI-command regression checkpoint - 13 November 2026
 
 Read the new UI/rollback follow-up in SCHEDULER_RETIREMENT_CANDIDATE.md.

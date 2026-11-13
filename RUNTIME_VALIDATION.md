@@ -1,5 +1,19 @@
 # Shared-runtime validation using the prototype
 
+## Two-room CLI regression - 14 November 2026
+
+Read PROTOTYPE_SCHEDULER_ROOMS.md. A new original bounded scenario CLI actually
+executes Room01 -> Room00 introduction -> Room01 on the original-control and
+candidate capsules, with complete native0 receipts,13 matching PNGs and six
+matching linked-module observations. Earlier original-control access violations
+and an interrupted/unfinalized case are preserved, not relabeled as passes.
+This completes a named prototype-cycle regression, not the entire workflow.
+Do not replay it or polish its UI as substitute progress. The next concrete gap
+is durable generic-runtime source/build/relink integration and its BOTH-native
+acceptance, including the saved retail continuation source rather than restored
+pristine source/cache assumptions. Keep the candidate experimental and defaults
+unchanged. Native wider-path and final PC gates remain explicit.
+
 ## Observed integration follow-up - 13 November 2026
 
 The scheduler candidate now has separately qualified prototype/retail startup

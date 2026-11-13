@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "migration_date": "2026-11-09",
   "repo": "https://github.com/YYoudi/god-hand-pc",
   "goal": "A faithful, reproducible and modifiable native retail PC baseline, using the prototype as an instrumented shared-runtime testbench before reversible enhancements.",
-  "status": "The scheduler candidate has bounded both-native lifetime, scene and existing UI-command regression evidence. Retail hold/preferences pass; prototype rejects under F1 then opens its original menu after a fresh request, while the original-control later crashes. Frozen rollback controls pass for their stated scene/startup scopes. Candidate remains experimental; broad room coverage and durable build integration are still open.",
-  "next": "Exercise qualified multi-room transitions and more lifetime paths on the candidate, then make the explicit build integration reproducible without depending on a restored-source/object-cache assumption. Retain all original failures; no default promotion or full port/remaster/FPS claims.",
+  "status": "Both isolated prototype scheduler variants complete a named same-process two-room return through the new bounded original CLI; earlier original-control catch-read failures remain. Separate retail lifetime/scene/UI/rollback evidence is retained, not relabeled as retail level coverage. Candidate remains experimental with unchanged defaults; durable generic-runtime build/relink integration is the next gap.",
+  "next": "Implement and actually test explicit generic-runtime source/relink integration for both profiles, preserving saved retail pause/audio/probe postimages and old binaries. Do not repeat the completed menu/room case as standalone progress. Wider native sequence/ordinary-transfer and full-port/hardware/save gates remain bounded/open.",
   "known_limits": [
     "New six-checkpoint GS replay exposes later CPU/GPU RGB differences; cache-off/no-fast-setup still fail and both retain the ground artifact. These are OFFLINE replay images, not corrected game builds or recommended GPU settings. No full fidelity/performance/candidate adoption claim.",
     "The public scheduler recipe reproduces the private candidate and standalone synthetic controls only. No game binary is patched or adopted. Both inspected generic-source files are identical, but retail/prototype native behavior must still be tested. Current native link capacity preflight fails a conservative lower bound; no diagnostics or originals removed to squeeze it through.",
@@ -238,7 +238,7 @@
           "title": "Correct a significant shared-runtime defect",
           "status": "in_progress",
           "area": "pc",
-          "acceptance": "Five guarded synthetic controls pass. Four isolated links, actual prototype6/retail9 startup lifetime paths and bounded both-profile scene/UI-command evidence now exist. Frozen rollback controls pass for stated scopes; original prototype control still crashes in its catch read and is retained. Candidate remains experimental. Completion still requires durable build integration and broader native room/sequence/ordinary-transfer regression; physical input/full-game gates remain separate."
+          "acceptance": "Synthetic lifetime and both-native startup/VU0/scene/UI/rollback evidence pass for stated scopes. New originalCLI control/candidate also complete prototype Room01->Room00intro->Room01,13PNGs/sixmoduleidentities equal, earlier controlAVs retained. Candidate experimental; durable reproducible generic source/relink integration remains required, wider sequence/ordinary-transfer/full-port gates remain bounded."
         }
       ]
     },
@@ -360,6 +360,26 @@
     }
   ],
   "updates": [
+    {
+      "date": "2026-11-14",
+      "kind": "progress",
+      "title": "A same-process room return on the scheduler variants",
+      "summary": "The original-control and corrected prototype now complete a named two-room cycle through an original bounded CLI. Actual interiors and the exterior introduction are visible; the earlier original-control crashes remain evidence, not erased by this passing case.",
+      "changes": [
+        "Added original prototype_scenarios.py and an explicit480s scenario with pinned existing private builds, personal input verification, fresh scratch data and complete receipts. Ordinary interactive defaults are unchanged.",
+        "Observed Room01 entry, Room00 introduction, and Room01 return in the same process; all13 control/candidate original PNGs and six private linked module snapshots agree. Published unchanged entry/return originals, with actor differences and source provenance retained.",
+        "Preserved an earlier incomplete control receipt after process loss/later reboot, with unknown exit/cause. It is neither a pass nor a diagnosed crash; fresh14November sessions are separately identified."
+      ],
+      "validation": "Actual publicCLI control0/484.531s andcandidate0/484.062s,13original PNGs each, alloriginalinputs/clonedcontrols unchanged. Two15,206BRoom01 snapshots samebase/equal own-disc oracle; all6 module identities match. Tennewinvented tests; fullWindows543tests/4skips/101.947s after nativehandles terminal. Actual readonlyCLI0,wrongselector2,existing-session2,no newoutputs. Earlier privatecandidate13Nov0/484.219s/13PNGs is separately dated, not used as a producer.",
+      "limits": "One named prototype cycle, not a retail level, whole campaign or every callback/cleanup/ISA/renderer proof. Control passing here does not invalidate prior9.219s/55.391s catch-read crashes. No game-FPS, hardware/audio/SaveLoad, default promotion or new renderer feature. Durable generic-runtime build/relink integration remains open; the scenario CLI only adopts qualified private binaries.",
+      "evidence_comparisons": [
+        "2026-11-14-scheduler-native-room-return"
+      ],
+      "link": {
+        "url": "https://github.com/YYoudi/god-hand-pc/blob/main/PROTOTYPE_SCHEDULER_ROOMS.md",
+        "label": "Actual route, reproducible CLI, retained failures and scope"
+      }
+    },
     {
       "date": "2026-11-13",
       "kind": "progress",
@@ -1774,6 +1794,57 @@
     }
   ],
   "comparisons": [
+    {
+      "id": "2026-11-14-scheduler-native-room-return",
+      "date": "2026-11-14",
+      "title": "Scheduler candidate: Room01 entry and same-process return",
+      "feature": "Natural room-cycle regression",
+      "scenario": "NEW actual public-source CLI candidate480s, Stage1/Room01/Point0 -> Room00/Point0 introduction -> Room01/Point0. One finite original input cycle, no attacks, guessed game flags/PC/readiness or imported state.",
+      "alignment": "same-landmark",
+      "reviewed": true,
+      "labels": {
+        "reference": "Room01 initial entry, field3100",
+        "bevy": "Room01 returned, field11000"
+      },
+      "observations": [
+        "Actual same native process returns to the named interior with Gene, enemies and HUD after the Room00 introduction. Different actor poses are retained; no renderer fix or better-than-original claim.",
+        "All13 corresponding original-control/candidate PNGs agree; the six selected module identities also agree. These are NEW14November CLI runs, not inherited290b acceptance.",
+        "Original-control completes this case but its earlier catch-read access violations remain unchanged evidence; no absence-of-crash correctness inference."
+      ],
+      "limits": [
+        "Same-landmark different-time original states, not identical poses or every-frame/fidelity/performance evidence. No camera fitting, cropping, resizing or screenshot repair.",
+        "Same-base module return only; no general callback/cleanup/variable-base proof. Raw module/RAM/maps/game source/binaries remain private.",
+        "The earlier interrupted13November CLI control has no native exit proof and is not counted as a pass or diagnosed crash.",
+        "A bounded prototype regression, not a retail room test, complete prototype/retail port, physical input, audible audio, Save/Load or remaster feature.",
+        "Game imagery has separate rights; the code GPL is not rights-holder permission."
+      ],
+      "reference": {
+        "caption": "Unchanged actual candidate direct640x480 PNG, field3100; initial Room01 entry.",
+        "profile": "prototype-june-2006",
+        "runtime": "Windows native OpenGL, prototype scheduler candidate SHA25622c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689. Selected-source capsule3aac1292, original generic recipe6eac15d; NEW diagnostic-v1 scenarioCLI d0fa2e892de6bf9f7539c15e721309e7d9a259bf. No renderer modification or default promotion.",
+        "revision": "d0fa2e892de6bf9f7539c15e721309e7d9a259bf",
+        "captured_at": "2026-11-13T23:36:38.007721+00:00",
+        "path": "media/31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1.png",
+        "sha256": "31ebc0f76144c3deccdb7ede363e081406cadc891f125fa33f29f8e938f9fae1",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Actual14November EuropeParis diagnostic run, original filemtime recorded inUTC (not precise guest timing). Source was committed after capture; its Git blob hash exactly equals the executed/guarded producer9ddcd088. Image copied byte-for-byte after manual review of byte-identical first private candidate originals. No desktop or journal capture."
+      },
+      "bevy": {
+        "caption": "Unchanged actual candidate direct640x480 PNG, field11000; same-process Room01 return, different actor pose.",
+        "profile": "prototype-june-2006",
+        "runtime": "Windows native OpenGL, prototype scheduler candidate SHA25622c5064961224fd13227c858ebc6621b30a712c82a7f3b7306ead0298c062689. Selected-source capsule3aac1292, original generic recipe6eac15d; NEW diagnostic-v1 scenarioCLI d0fa2e892de6bf9f7539c15e721309e7d9a259bf. No renderer modification or default promotion.",
+        "revision": "d0fa2e892de6bf9f7539c15e721309e7d9a259bf",
+        "captured_at": "2026-11-13T23:40:51.614837+00:00",
+        "path": "media/d75c6ff5c2b90566350ace398cb71b2ab810e0a06998a4a372d74cdbd4264d29.png",
+        "sha256": "d75c6ff5c2b90566350ace398cb71b2ab810e0a06998a4a372d74cdbd4264d29",
+        "width": 640,
+        "height": 480,
+        "publication_profile": "native-png-v1",
+        "provenance": "Actual14November EuropeParis diagnostic run, original filemtime recorded inUTC (not precise guest timing). Source was committed after capture; its Git blob hash exactly equals the executed/guarded producer9ddcd088. Image copied byte-for-byte after manual review of byte-identical first private candidate originals. No desktop or journal capture."
+      }
+    },
     {
       "id": "2026-11-13-prototype-scheduler-menu-regression",
       "date": "2026-11-13",
